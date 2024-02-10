@@ -1,0 +1,11 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    >
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source=".\Icons\Glyphs.xaml" />
+        <ResourceDictionary Source=".\ControlOverrides.xaml" />
+        <ResourceDictionary Source=".\Shared\Brushes.xaml" />
+        <ResourceDictionary Source=".\Shared\Colors.Light.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+</ResourceDictionary>

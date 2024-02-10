@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    
+    <Color x:Key="CalciteBackground0Color_Dark">#353535</Color>
+    <Color x:Key="CalciteForeground0Color_Dark">#FFFFFF</Color>
+    <Color x:Key="CalciteBorder0Color_Dark">#555555</Color>
+
+    <Color x:Key="CalciteBackground1Color_Dark">#2B2B2B</Color>
+    <Color x:Key="CalciteForeground1Color_Dark">#FFF</Color>
+    <Color x:Key="CalciteBorder1Color_Dark">#555555</Color>
+
+    <Color x:Key="CalciteBackground2Color_Dark">#202020</Color>
+    <Color x:Key="CalciteForeground2Color_Dark">#BFBFBF</Color>
+    <Color x:Key="CalciteBorder2Color_Dark">#4A4A4A</Color>
+
+    <Color x:Key="CalciteBackground3Color_Dark">#151515</Color>
+    <Color x:Key="CalciteForeground3Color_Dark">#9F9F9F</Color>
+    <Color x:Key="CalciteBorder3Color_Dark">#404040</Color>
+
+    <Color x:Key="CalciteBackgroundInputColor_Dark">#2B2B2B</Color>
+    <Color x:Key="CalciteForegroundInputColor_Dark">#FFF</Color>
+    <Color x:Key="CalciteBorderInputColor_Dark">#757575</Color>
+
+    <Color x:Key="CalciteForegroundInverseColor_Dark">#151515</Color>
+    <!--  Semantic colors  -->
+    <Color x:Key="CalciteTintNormalColor_Dark">#00619B</Color>
+    <Color x:Key="CalciteTintHoverColor_Dark">#007AC2</Color>
+    <Color x:Key="CalciteTintPressColor_Dark">#00619B</Color>
+
+
+    <Color x:Key="CalciteInfoNormalColor_Dark">#00A0FF</Color>
+    <Color x:Key="CalciteSuccessNormalColor_Dark">#36DA43</Color>
+    <Color x:Key="CalciteWarningNormalColor_Dark">#FFC900</Color>
+
+    <Color x:Key="CalciteDangerNormalColor_Dark">#FE583E</Color>
+    <Color x:Key="CalciteDangerHoverColor_Dark">#FF0015</Color>
+    <Color x:Key="CalciteDangerPressColor_Dark">#D90012</Color>
+
+    <Color x:Key="CalciteControlFillColorDefault_Dark">#b3000000</Color>
+</ResourceDictionary>

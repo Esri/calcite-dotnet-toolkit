@@ -1,0 +1,4 @@
+<StackPanel xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <Slider Maximum="100" Minimum="0" />
+    <Slider Orientation="Vertical" Height="128" />
+</StackPanel>

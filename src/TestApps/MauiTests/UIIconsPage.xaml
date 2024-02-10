@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiTests.UIIconsPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Entry x:Name="search" Placeholder="Filter" TextChanged="search_TextChanged" />
+        <CollectionView x:Name="collectionView" Grid.Row="1" Margin="20,5" ItemSizingStrategy="MeasureFirstItem" >
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <HorizontalStackLayout>
+                        <Label Text="{Binding Glyph16}" WidthRequest="80" ToolTipProperties.Text="{Binding GlyphHex16}"
+                            FontSize="40" HorizontalOptions="Center" VerticalOptions="Start"
+                            FontFamily="calcite-ui-icons" />
+                        <Label Text="{Binding Glyph24}" WidthRequest="80" ToolTipProperties.Text="{Binding GlyphHex24}"
+                            FontSize="40" HorizontalOptions="Center" VerticalOptions="Start"
+                            FontFamily="calcite-ui-icons" />
+                        <Label Text="{Binding Glyph32}" WidthRequest="80" ToolTipProperties.Text="{Binding GlyphHex32}"
+                            FontSize="40" HorizontalOptions="Center" VerticalOptions="Start"
+                            FontFamily="calcite-ui-icons" />
+                        <Label Text="{Binding Name}" VerticalOptions="Center" />
+                    </HorizontalStackLayout>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+    </Grid>
+</ContentPage>

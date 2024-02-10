@@ -1,0 +1,80 @@
+<!-- Copyright (c) Microsoft Corporation and Contributors. -->
+<!-- Licensed under the MIT License. -->
+
+<Page
+    x:Class="WinUITests.Samples.TestPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WinUITests.Samples"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:cal="using:Esri.Calcite.WinUI"
+    mc:Ignorable="d">
+
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            
+            <!--<TextBlock Text="AppBarButton:" />
+        <AppBarButton>
+            <AppBarButton.Icon>
+                <FontIcon Glyph="{StaticResource Calcite_UIIcons_Glyph_Map_24}" FontFamily="{StaticResource Calcite-UI-Icons}"/>
+            </AppBarButton.Icon>
+        </AppBarButton>-->
+            <TextBlock Text="CommandBar/AppBarButton using CalciteFontIconSource:" />
+            <CommandBar IsOpen="True">
+                <CommandBar.PrimaryCommands>
+                    <AppBarButton Label="Layers">
+                        <AppBarButton.Icon>
+                            <IconSourceElement >
+                                <IconSourceElement.IconSource>
+                                    <cal:CalciteFontIconSource Icon="Layers" FontSize="16" Scale="Small" />
+                                </IconSourceElement.IconSource>
+                            </IconSourceElement>
+                        </AppBarButton.Icon>
+                    </AppBarButton>
+                    <AppBarButton Label="Zoom In">
+                        <AppBarButton.Icon>
+                            <IconSourceElement >
+                                <IconSourceElement.IconSource>
+                                    <cal:CalciteFontIconSource Icon="ZoomInFixed" FontSize="16" Scale="Small" />
+                                </IconSourceElement.IconSource>
+                            </IconSourceElement>
+                        </AppBarButton.Icon>
+                    </AppBarButton>
+                    <AppBarButton Label="Zoom Out">
+                        <AppBarButton.Icon>
+                            <IconSourceElement >
+                                <IconSourceElement.IconSource>
+                                    <cal:CalciteFontIconSource Icon="ZoomOutFixed" FontSize="16" Scale="Small" />
+                                </IconSourceElement.IconSource>
+                            </IconSourceElement>
+                        </AppBarButton.Icon>
+                    </AppBarButton>
+                </CommandBar.PrimaryCommands>
+            </CommandBar>
+            <!--<Path Data="{StaticResource Calcite_UIIcons_Glyph_1_8x_32}" Width="100" Height="100" Fill="Blue" />-->
+            <TextBlock Text="IconSourceElement:" Margin="0,20,0,0" />
+            <Border BorderBrush="{StaticResource CalciteTintNormal}" BorderThickness="1" HorizontalAlignment="Left">
+                <IconSourceElement Width="32" Height="32">
+                    <IconSourceElement.IconSource>
+                        <cal:CalciteFontIconSource Icon="Map" FontSize="32" Scale="Large" />
+                    </IconSourceElement.IconSource>
+                </IconSourceElement>
+            </Border>
+
+            <TextBlock Text="CalciteIconSourceElementExtension:" Margin="0,20,0,0" />
+            <AppBarButton Icon="{cal:CalciteIconSourceElement SymbolSize=22, Icon=Map, Scale=Small}" Label="Map" BorderThickness="1" BorderBrush="Black"/>
+
+            <TextBlock Text="CalciteIconSourceElementExtension:" Margin="0,20,0,0" />
+            <IconSourceElement Width="32" Height="32" IconSource="{cal:CalciteIconSource Icon=Map, Scale=Small}" />
+
+            <!--<IconSourceElement IconSource="{StaticResource calcite_pathicon_lock_f_32}" />-->
+            <!--<cal:CalciteFontIconSource Icon="LayerBasemap" FontSize="24" Scale="Medium" />
+            <IconSourceElement.IconSource>
+                <cal:CalciteSymbolIconSource Symbol="LayerBasemap" />
+            </IconSourceElement.IconSource>
+        </IconSourceElement>-->
+
+        </StackPanel>
+    </Grid>
+</Page>

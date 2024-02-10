@@ -1,2 +1,197 @@
-# CalciteDotNet
-Esri Calcite Design Experiments for XAML UI Frameworks
+# Calcite
+Esri Calcite styles for various .NET XAML Frameworks
+
+# Usage
+Add the CalciteResources ResourceDictionary to your App.xaml Merged Directionary resources to get access
+to default styles and resources. Dark/Light mode is automatically handled and adjust to system or app settings.
+
+### WPF
+
+```xml
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <CalciteResources xmlns="clr-namespace:Esri.Calcite.WPF;assembly=Esri.Calcite.WPF" Theme="Light" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+```
+### WinUI
+```xml
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+                <CalciteResources xmlns="using:Esri.Calcite.WinUI" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+```
+
+### .NET MAUI
+
+```xml
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+                <CalciteResources xmlns="clr-namespace:Esri.Calcite.Maui;assembly=Esri.Calcite.Maui"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+```
+Also register calcite in `MauiProgram.cs`:
+```cs
+using Esri.Calcite.Maui;
+
+namespace MauiTests
+{
+    public static class MauiProgram
+    {
+        public static MauiApp CreateMauiApp()
+        {
+            var builder = MauiApp.CreateBuilder();
+            builder
+                .UseMauiApp<App>()
+                .ConfigureFonts(fonts =>
+                {
+                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                }).UseCalcite(); // Register Calcite
+
+            return builder.Build();
+        }
+    }
+}
+```
+# Resources
+
+Color and brush resources naming refers to levels, input, state and semantic use:
+
+- Levels: 0, 1, 2, 3
+     - 0: Application background; null areas; window areas; chrome
+     - 1: Application "foreground"; content, meat of the application, what the user is there for
+     - 2: Secondary "foreground"; subtle content; guidance;
+     - 3: Tertiary = foreground for neutral interactive items (e.g. neutral/chrome button)
+- Input: special level for user input elements (textbox, combobox)
+- State: Normal, Hover, Press (note: only applies to semantic colors, not levels)
+- Semantic: Tint, Info, Danger, Warning, Success
+
+## Colors
+For brushes, remove "Color" from the name.
+Note: For .NET MAUI, append `_Dark` or `_Light` for dark and light mode colors (does not apply to brush resource keys which automatically update based on application theme).
+
+| Resource Key | Light Mode | Dark Mode |
+| --- | --- | --- |
+| CalciteBackground0Color | ![#F8F8F8](https://placehold.co/15x15/F8F8F8/F8F8F8.png)`#F8F8F8` | ![#353535](https://placehold.co/15x15/353535/353535.png)`#353535` |
+| CalciteForeground0Color | ![#151515](https://placehold.co/15x15/151515/151515.png)`#151515` | ![#FFFFFF](https://placehold.co/15x15/FFFFFF/FFFFFF.png)`#FFFFFF` |
+| CalciteBorder0Color | ![#CACACA](https://placehold.co/15x15/CACACA/CACACA.png)`#CACACA` | ![#555555](https://placehold.co/15x15/555555/555555.png)`#555555` |
+| CalciteBackground1Color | ![#FFF](https://placehold.co/15x15/FFF/FFF.png)`#FFF` | ![#2B2B2B](https://placehold.co/15x15/2B2B2B/2B2B2B.png)`#2B2B2B` |
+| CalciteForeground1Color | ![#151515](https://placehold.co/15x15/151515/151515.png)`#151515` | ![#FFF](https://placehold.co/15x15/FFF/FFF.png)`#FFF` |
+| CalciteBorder1Color | ![#CACACA](https://placehold.co/15x15/CACACA/CACACA.png)`#CACACA` | ![#555555](https://placehold.co/15x15/555555/555555.png)`#555555` |
+| CalciteBackground2Color | ![#F3F3F3](https://placehold.co/15x15/F3F3F3/F3F3F3.png)`#F3F3F3` | ![#202020](https://placehold.co/15x15/202020/202020.png)`#202020` |
+| CalciteForeground2Color | ![#4A4A4A](https://placehold.co/15x15/4A4A4A/4A4A4A.png)`#4A4A4A` | ![#BFBFBF](https://placehold.co/15x15/BFBFBF/BFBFBF.png)`#BFBFBF` |
+| CalciteBorder2Color | ![#D4D4D4](https://placehold.co/15x15/D4D4D4/D4D4D4.png)`#D4D4D4` | ![#4A4A4A](https://placehold.co/15x15/4A4A4A/4A4A4A.png)`#4A4A4A` |
+| CalciteBackground3Color | ![#EAEAEA](https://placehold.co/15x15/EAEAEA/EAEAEA.png)`#EAEAEA` | ![#151515](https://placehold.co/15x15/151515/151515.png)`#151515` |
+| CalciteForeground3Color | ![#6A6A6A](https://placehold.co/15x15/6A6A6A/6A6A6A.png)`#6A6A6A` | ![#9F9F9F](https://placehold.co/15x15/9F9F9F/9F9F9F.png)`#9F9F9F` |
+| CalciteBorder3Color | ![#DFDFDF](https://placehold.co/15x15/DFDFDF/DFDFDF.png)`#DFDFDF` | ![#404040](https://placehold.co/15x15/404040/404040.png)`#404040` |
+| CalciteBackgroundInputColor | ![#FFF](https://placehold.co/15x15/FFF/FFF.png)`#FFF` | ![#2B2B2B](https://placehold.co/15x15/2B2B2B/2B2B2B.png)`#2B2B2B` |
+| CalciteForegroundInputColor | ![#151515](https://placehold.co/15x15/151515/151515.png)`#151515` | ![#FFF](https://placehold.co/15x15/FFF/FFF.png)`#FFF` |
+| CalciteBorderInputColor | ![#949494](https://placehold.co/15x15/949494/949494.png)`#949494` | ![#757575](https://placehold.co/15x15/757575/757575.png)`#757575` |
+| CalciteForegroundInverseColor | ![#FFF](https://placehold.co/15x15/FFF/FFF.png)`#FFF` | ![#151515](https://placehold.co/15x15/151515/151515.png)`#151515` |
+| CalciteTintNormalColor | ![#007AC2](https://placehold.co/15x15/007AC2/007AC2.png)`#007AC2` | ![#00619B](https://placehold.co/15x15/00619B/00619B.png)`#00619B` |
+| CalciteTintHoverColor | ![#00619B](https://placehold.co/15x15/00619B/00619B.png)`#00619B` | ![#007AC2](https://placehold.co/15x15/007AC2/007AC2.png)`#007AC2` |
+| CalciteTintPressColor | ![#004874](https://placehold.co/15x15/004874/004874.png)`#004874` | ![#00619B](https://placehold.co/15x15/00619B/00619B.png)`#00619B` |
+| CalciteInfoNormalColor | ![#00619B](https://placehold.co/15x15/00619B/00619B.png)`#00619B` | ![#00A0FF](https://placehold.co/15x15/00A0FF/00A0FF.png)`#00A0FF` |
+| CalciteSuccessNormalColor | ![#35AC46](https://placehold.co/15x15/35AC46/35AC46.png)`#35AC46` | ![#36DA43](https://placehold.co/15x15/36DA43/36DA43.png)`#36DA43` |
+| CalciteWarningNormalColor | ![#EDD317](https://placehold.co/15x15/EDD317/EDD317.png)`#EDD317` | ![#FFC900](https://placehold.co/15x15/FFC900/FFC900.png)`#FFC900` |
+| CalciteDangerNormalColor | ![#D83020](https://placehold.co/15x15/D83020/D83020.png)`#D83020` | ![#FE583E](https://placehold.co/15x15/FE583E/FE583E.png)`#FE583E` |
+| CalciteDangerHoverColor | ![#A82B1E](https://placehold.co/15x15/A82B1E/A82B1E.png)`#A82B1E` | ![#FF0015](https://placehold.co/15x15/FF0015/FF0015.png)`#FF0015` |
+| CalciteDangerPressColor | ![#7C1D13](https://placehold.co/15x15/7C1D13/7C1D13.png)`#7C1D13` | ![#D90012](https://placehold.co/15x15/D90012/D90012.png)`#D90012` |
+| CalciteControlFillColorDefault | ![#b3ffffff](https://placehold.co/15x15/b3ffffff/b3ffffff.png)`#b3ffffff` | ![#b3000000](https://placehold.co/15x15/b3000000/b3000000.png)`#b3000000` |
+
+
+## Symbol Font
+`Calcite-UI-Icons` FontFamily is a font with a set of symbols generated from the [Calcite UI Icons repo](https://github.com/Esri/calcite-ui-icons).
+In WPF and WinUI this font can be referred to with the resource key `Calcite-UI-Icons`.
+In .NET MAUI the FontFamily can directly be referred to by its name `calcite-ui-icons`.
+
+### WPF and WinUI:
+```xml
+<TextBlock Text="{StaticResource Calcite_UIIcons_Glyph_Map_24}" 
+           FontFamily="{StaticResource Calcite-UI-Icons}" />
+```
+### .NET MAUI:
+```xml
+<Label Text="{StaticResource Calcite_UIIcons_Glyph_Map_24}" 
+	   FontFamily="calcite-ui-icons" />
+```
+
+For a fill list of Glyph Resource IDs refer to the sample apps and the [Calcite-UI-Icons](https://github.com/Esri/calcite-ui-icons) repo.
+
+
+# Extensions and helpers
+
+## WPF
+#### Markup Extensions:
+`CalciteIconGeometryExtension` : Convert an Icon to a Path Geometry. Example:
+```xml
+<Path Data="{c:CalciteIconGeometry Icon=ChevronLeft, Scale=Small}" Fill="Green" Width="32" Height="32" Stretch="Uniform" />
+```
+
+`CalciteIconImageExtension` : Convert an Icon to an Image Source. Example:
+```xml
+<Image Source="{calcite:CalciteIconImage Icon=AddLayer, Scale=Large, SymbolSize=32, Brush=Blue}" Width="32" Height="32" />
+```
+
+## WinUI
+`CalciteFontIconSource` : Converts an Icon to an IconSource. Example:
+```
+  <IconSourceElement Width="32" Height="32" >
+      <IconSourceElement.IconSource>
+          <cal:CalciteFontIconSource Icon="Map" FontSize="32" Scale="Large" />
+      </IconSourceElement.IconSource>
+  </IconSourceElement>
+```
+Using in AppBarButtons in a command bar:
+```xml
+  <CommandBar IsOpen="True">
+      <CommandBar.PrimaryCommands>
+          <AppBarButton Label="Zoom In">
+              <AppBarButton.Icon>
+                  <IconSourceElement >
+                      <IconSourceElement.IconSource>
+                          <cal:CalciteFontIconSource Icon="ZoomInFixed" FontSize="16" Scale="Small" />
+                      </IconSourceElement.IconSource>
+                  </IconSourceElement>
+              </AppBarButton.Icon>
+          </AppBarButton>
+          <AppBarButton Label="Zoom Out">
+              <AppBarButton.Icon>
+                  <IconSourceElement >
+                      <IconSourceElement.IconSource>
+                          <cal:CalciteFontIconSource Icon="ZoomOutFixed" FontSize="16" Scale="Small" />
+                      </IconSourceElement.IconSource>
+                  </IconSourceElement>
+              </AppBarButton.Icon>
+          </AppBarButton>
+      </CommandBar.PrimaryCommands>
+  </CommandBar>
+```
+
+## .NET MAUI
+
+`CalciteIconImageSource` : Converts an Icon to an Image Source. Example:
+```xml
+<Image>
+    <Image.Source>
+        <calcite:CalciteIconImageSource Color="Blue" Icon="MagnifyingGlass" Size="40" Scale="Large" />
+    </Image.Source>
+</Image>
+```
+
+`CalciteIconImageExtension` : Markup extension converting an Icon to an `CalciteIconImageSource`. Example:
+```xml
+<Image Source="{calcite:CalciteIconImage Color=Blue, Icon=MagnifyingGlass,Size=40, Scale=Large}" />
+```

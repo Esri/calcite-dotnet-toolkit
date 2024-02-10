@@ -1,0 +1,59 @@
+<Window
+    x:Class="WinUITests.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WinUITests"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:cal="using:Esri.Calcite.WinUI"
+    mc:Ignorable="d" Title="Esri.Calcite.WinUI">
+    <Grid>
+        <NavigationView IsPaneOpen="True" PaneTitle="Pane here" PaneDisplayMode="Left" OpenPaneLength="200" SelectionChanged="NavigationView_SelectionChanged">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="Icons" Tag="UIIconsPage"  >
+                    <NavigationViewItem.Icon>
+                        <IconSourceElement>
+                            <FontIconSource Glyph="&#xECAA;" FontFamily="Segoe MDL2 Assets" />
+                        </IconSourceElement>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem Content="Glyphs" Tag="GlyphResourcesPage" >
+                    <NavigationViewItem.Icon>
+                        <IconSourceElement>
+                            <FontIconSource Glyph="&#xE8C1;" FontFamily="Segoe MDL2 Assets" />
+                        </IconSourceElement>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem Content="Colors" Tag="ColorResourcesPage" >
+                    <NavigationViewItem.Icon>
+                        <IconSourceElement>
+                            <FontIconSource Glyph="&#xe790;" FontFamily="Segoe MDL2 Assets" />
+                        </IconSourceElement>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem Content="Brushes" Tag="BrushesResourcesPage" >
+                    <NavigationViewItem.Icon>
+                        <IconSourceElement Height="24" >
+                            <IconSourceElement.IconSource>
+                                <cal:CalciteFontIconSource Icon="BrushTip" FontSize="24" Scale="Small" />
+                            </IconSourceElement.IconSource>
+                        </IconSourceElement>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem Content="Control Styles" Tag="ControlStylesPage" Icon="Bullets" />
+
+                <NavigationViewItem Content="Tests" Tag="TestPage" >
+                    <NavigationViewItem.Icon>
+                        <IconSourceElement>
+                            <FontIconSource Glyph="&#xe90f;" FontFamily="Segoe MDL2 Assets" />
+                        </IconSourceElement>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+            </NavigationView.MenuItems>
+            <Frame Margin="0,0,0,0" x:Name="contentFrame" />
+        </NavigationView>
+    
+        <ToggleSwitch Header="Dark Mode" HorizontalAlignment="Left" VerticalAlignment="Bottom" Toggled="ToggleSwitch_Toggled" Margin="10,0,0,50" />
+
+    </Grid>
+</Window>

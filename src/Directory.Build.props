@@ -1,0 +1,24 @@
+<Project>
+    <PropertyGroup>
+        <Version>0.1.0</Version>
+        <Company>Esri</Company>
+        <CommonProductName>Esri Calcite</CommonProductName>
+        <Copyright>Copyright © 2024-$([System.DateTime]::Now.ToString('yyyy')) Esri.</Copyright>
+        <Authors>Esri Inc.</Authors>
+        <Description>ESRI Calcite design resources</Description>
+        <NugetProductPackageId>Esri.Calcite</NugetProductPackageId>
+        <PackageTags>ArcGIS Cartography Geo Geographic Geography Geolocation Geospatial GIS Latitude Location Longitude Map Mapping Maps Places Spatial</PackageTags>
+        <PackageIconFilePath>$(MSBuildThisFileDirectory)..\sdk\icons\ArcGIS_SDK_128.png</PackageIconFilePath>
+        <PackageProjectUrl>https://github.com/dotMorten/Calcite/</PackageProjectUrl> 
+        <PackageIcon>icon.png</PackageIcon>
+        <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+        <PackageVersion>$(Version)-preview1</PackageVersion>
+        <GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">True</GeneratePackageOnBuild>
+        <PackageOutputPath>$(MSBuildThisFileDirectory)..\artifacts\NuGet\$(Configuration)\</PackageOutputPath>
+    </PropertyGroup>
+
+    <ItemGroup Condition="'$(IsPackable)'=='true'">
+        <None Include="$(MSBuildThisFileDirectory)icon.png" Pack="True" PackagePath="\$(PackageIcon)" />
+        <None Include="$(MSBuildThisFileDirectory)..\LICENSE.md" Pack="True" PackagePath="\LICENSE.md" />
+    </ItemGroup>
+</Project>

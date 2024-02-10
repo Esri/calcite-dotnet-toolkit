@@ -1,0 +1,82 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:calcite="clr-namespace:Esri.Calcite.WPF">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source=".\Controls\Buttons.xaml" />
+        <ResourceDictionary Source=".\Controls\Calendar.xaml" />
+        <ResourceDictionary Source=".\Controls\CheckBox.xaml" />
+        <ResourceDictionary Source=".\Controls\ComboBox.xaml" />
+        <ResourceDictionary Source=".\Controls\DataGrid.xaml" />
+        <ResourceDictionary Source=".\Controls\ListView.xaml" />
+        <ResourceDictionary Source=".\Controls\Progress.xaml" />
+        <ResourceDictionary Source=".\Controls\RadioButton.xaml" />
+        <ResourceDictionary Source=".\Controls\Slider.xaml" />
+        <ResourceDictionary Source=".\Controls\Tabs.xaml" />
+        <ResourceDictionary Source=".\Controls\TextBox.xaml" />
+        <ResourceDictionary Source=".\Controls\TreeView.xaml" />
+        <ResourceDictionary Source=".\Controls\Text.xaml" />
+        <ResourceDictionary Source=".\Controls\DatePicker.xaml" />
+        <ResourceDictionary Source=".\Controls\StatusBar.xaml" />
+        <ResourceDictionary Source=".\Patterns\Alerts.xaml" />
+        <ResourceDictionary Source=".\Controls\ScrollBar.xaml" />
+        <ResourceDictionary Source=".\Controls\ListBox.xaml" />
+        <ResourceDictionary Source=".\Controls\GroupBox.xaml" />
+        <ResourceDictionary Source=".\Patterns\MapEmbed.xaml" />
+        <ResourceDictionary Source=".\Patterns\Forms.xaml" />
+        <!-- <ResourceDictionary Source=".\Controls\DialogWindow.xaml" /> -->
+        <ResourceDictionary Source=".\Controls\Expander.xaml" />
+        <ResourceDictionary Source=".\Shared\Sizes.xaml" />
+        <ResourceDictionary Source=".\Shared\Cursor.xaml" />
+        <ResourceDictionary Source=".\Controls\ContentPresenter.xaml" />
+        <ResourceDictionary Source=".\Controls\ToolTip.xaml" />
+        <ResourceDictionary Source=".\Controls\ToolBar.xaml" />
+        <!-- <ResourceDictionary Source=".\Controls\CalciteColorPicker.xaml" /> -->
+        <ResourceDictionary Source=".\Controls\DocumentViewer.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    <Style BasedOn="{StaticResource CalciteTreeView}" TargetType="TreeView" />
+    <Style BasedOn="{StaticResource Calcite.TextBox}" TargetType="TextBox" />
+    <Style BasedOn="{StaticResource Calcite.PasswordBox}" TargetType="PasswordBox" />
+    <Style BasedOn="{StaticResource CalciteTabStyle}" TargetType="TabControl" />
+    <Style BasedOn="{StaticResource CalciteSliderBase}" TargetType="Slider" />
+    <Style BasedOn="{StaticResource CalciteRadioButtonBase}" TargetType="RadioButton" />
+    <Style BasedOn="{StaticResource CalciteProgressBarBase}" TargetType="ProgressBar" />
+    <Style BasedOn="{StaticResource CalciteListView}" TargetType="ListView" />
+    <Style BasedOn="{StaticResource CalciteComboBox}" TargetType="ComboBox" />
+    <Style BasedOn="{StaticResource CalciteCheckboxBase}" TargetType="CheckBox" />
+    <Style BasedOn="{StaticResource CalciteCalendarBase}" TargetType="Calendar" />
+    <Style BasedOn="{StaticResource CalcitePrimaryBtn}" TargetType="Button" />
+    <Style BasedOn="{StaticResource CalcitePrimaryBtn}" TargetType="ToggleButton" />
+    <Style BasedOn="{StaticResource TextBlockStyle}" TargetType="TextBlock" />
+    <Style BasedOn="{StaticResource CalciteDatePicker}" TargetType="DatePicker" />
+    <Style BasedOn="{StaticResource CalciteStatusBar}" TargetType="StatusBar" />
+    <Style BasedOn="{StaticResource CalciteExpander}" TargetType="Expander" />
+    <Style BasedOn="{StaticResource CalciteToolTip}" TargetType="ToolTip" />
+    <Style BasedOn="{StaticResource CalciteDataGrid}" TargetType="DataGrid" />
+    <!--<Style BasedOn="{StaticResource CalciteColorPickerStyle}" TargetType="calcite:CalciteColorPicker" />-->
+    <Style BasedOn="{StaticResource CalciteToolBar}" TargetType="ToolBar" />
+    <Style BasedOn="{StaticResource CalciteDocumentViewer}" TargetType="DocumentViewer" />
+    <Style
+        x:Key="{x:Static StatusBar.SeparatorStyleKey}"
+        BasedOn="{StaticResource CalciteSeparator}"
+        TargetType="{x:Type Separator}" />
+    <Style BasedOn="{StaticResource CalciteStatusBarItem}" TargetType="StatusBarItem" />
+
+    <Style
+        x:Key="BtnSecondary"
+        BasedOn="{StaticResource CalciteSecondaryBtn}"
+        TargetType="ButtonBase" />
+    <Style
+        x:Key="BtnDanger"
+        BasedOn="{StaticResource CalcateDangerBtn}"
+        TargetType="ButtonBase" />
+    <Style
+        x:Key="BtnDangerSecondary"
+        BasedOn="{StaticResource CalciteDangerSecondaryBtn}"
+        TargetType="ButtonBase" />
+    <Style
+        x:Key="BtnChrome"
+        BasedOn="{StaticResource CalciteChromeBtn}"
+        TargetType="ButtonBase" />
+
+</ResourceDictionary>

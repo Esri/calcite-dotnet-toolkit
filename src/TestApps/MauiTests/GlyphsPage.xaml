@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:calcite="clr-namespace:Esri.Calcite.Maui;assembly=Esri.Calcite.Maui"
+             x:Class="MauiTests.GlyphsPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+    <Entry x:Name="search" Placeholder="Filter" TextChanged="search_TextChanged" />
+        <CollectionView x:Name="collectionView" Grid.Row="1" Margin="20,5" ItemSizingStrategy="MeasureFirstItem" >
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <HorizontalStackLayout>
+                    <Label Text="{Binding Value}" FontFamily="calcite-ui-icons" WidthRequest="50" FontSize="32" />
+                    <Label Text="{Binding Key}" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+    </Grid>
+</ContentPage>

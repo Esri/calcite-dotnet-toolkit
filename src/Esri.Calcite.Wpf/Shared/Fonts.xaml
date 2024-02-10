@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--  https://blog.jayway.com/2012/10/31/using-custom-otf-fonts-in-windows-8-xaml/  -->
+    <FontFamily x:Key="Calcite-UI-Icons">pack://application:,,,/Esri.Calcite.WPF;component/Fonts/calcite-ui-icons.ttf#calcite-ui-icons</FontFamily>
+    <FontFamily x:Key="AvenirNext-Light">pack://application:,,,/Esri.Calcite.WPF;component/Fonts/AvenirNextW1G-Light.otf#Avenir Next W1G</FontFamily>
+    <FontFamily x:Key="AvenirNext-Regular">pack://application:,,,/Esri.Calcite.WPF;component/Fonts/AvenirNextW1G-Regular.otf#Avenir Next W1G</FontFamily>
+    <FontFamily x:Key="AvenirNext-Medium">pack://application:,,,/Esri.Calcite.WPF;component/Fonts/AvenirNextW1G-Medium.otf#Avenir Next W1G</FontFamily>
+    <FontFamily x:Key="AvenirNext-Demi">pack://application:,,,/Esri.Calcite.WPF;component/Fonts/AvenirNextW1G-Demi.otf#Avenir Next W1G</FontFamily>
+
+    <FontFamily x:Key="AvenirNext-Light-Oblique">pack://application:,,,/Esri.Calcite.WPF;component/Fonts/AvenirNextW1G-Light.otf#Avenir Next W1G Light Oblique</FontFamily>
+    <FontFamily x:Key="AvenirNext-Regular-Oblique">pack://application:,,,/Esri.Calcite.WPF;component/Fonts/AvenirNextW1G-Regular.otf#Avenir Next W1G Oblique</FontFamily>
+    <FontFamily x:Key="AvenirNext-Medium-Oblique">pack://application:,,,/Esri.Calcite.WPF;component/Fonts/AvenirNextW1G-Medium.otf#Avenir Next W1G Medium Oblique</FontFamily>
+    <FontFamily x:Key="AvenirNext-Demi-Oblique">pack://application:,,,/Esri.Calcite.WPF;component/Fonts/AvenirNextW1G-Demi.otf#Avenir Next W1G Demi Oblique</FontFamily>
+</ResourceDictionary>

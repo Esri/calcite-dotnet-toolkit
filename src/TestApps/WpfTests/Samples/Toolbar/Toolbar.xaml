@@ -1,0 +1,14 @@
+<ToolBar
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:ca="clr-namespace:Esri.Calcite.WPF.Helpers;assembly=Esri.Calcite.WPF"
+    VerticalAlignment="Top">
+    <Button ca:Calcite.Symbol="Home" />
+    <Button ca:Calcite.Symbol="Infographic" />
+    <Button ca:Calcite.Symbol="Trash" Content="Button" />
+    <Separator />
+    <Button
+        ca:Calcite.Symbol="Console"
+        Content="Disabled"
+        IsEnabled="False" />
+    <ToggleButton ca:Calcite.Symbol="Gauge" Content="ToggleButton" />
+</ToolBar>

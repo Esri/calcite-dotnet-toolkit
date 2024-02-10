@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472;net6.0-windows7.0</TargetFrameworks>
+    <!--<SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>-->
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU</Platforms>
+    <LangVersion>10.0</LangVersion>
+    <Description>$(Description) for WPF</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="..\..\.Generated\*.ttf" Link="Fonts\%(Filename)%(Extension)" />
+    <None Include="README.txt" Pack="True" PackagePath="\" />
+    <Page Include="..\..\.Generated\WPF\*.xaml" Link="Icons\%(Filename).xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="..\..\.Generated\Wpf\*.cs" Link=".generated\%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+
+  <Target Name="GenerateResources" BeforeTargets="PreBuildEvent" Condition="!Exists('$(MSBuildThisFileDirectory)..\..\.Generated\Wpf\Glyphs.xaml') ">
+      <Exec Command="dotnet run --project $(MSBuildThisFileDirectory)..\..\Tools\ResourceGenerator\ResourceGenerator.csproj $(MSBuildThisFileDirectory)..\..\calcite-ui-icons\docs\icons.json  $(MSBuildThisFileDirectory)..\..\Tools\calcite-ui-icons-codepoints.json $(MSBuildThisFileDirector)..\..\.Generated\Wpf\ WPF" />
+  </Target>
+
+</Project>

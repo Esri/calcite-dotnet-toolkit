@@ -1,0 +1,4 @@
+<StackPanel xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <ProgressBar Margin="0,0,0,8" IsIndeterminate="True" />
+    <ProgressBar IsIndeterminate="False" Value="70" />
+</StackPanel>

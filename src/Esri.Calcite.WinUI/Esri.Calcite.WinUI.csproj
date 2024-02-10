@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows10.0.17763</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <UseWinUI>true</UseWinUI>
+    <Description>$(Description) for WinUI</Description>
+    <GenerateLibraryLayout>True</GenerateLibraryLayout>
+    <IncludeXamlFilesInNugetPackage>False</IncludeXamlFilesInNugetPackage>
+    <DisableEmbeddedXbf>false</DisableEmbeddedXbf>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+      <Content Include="..\..\.Generated\*.ttf" Link="Fonts\%(Filename)%(Extension)" PackagePath="resources\Fonts\%(Filename)%(Extension)" />
+      <None Remove="Styles\Controls\TreeView.xaml" />
+    <Compile Include="..\..\.Generated\WinUI\*.cs" Link=".generated\%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+
+  <ItemGroup>
+
+      <Page Include="..\..\.Generated\WinUI\*.xaml" PackagePath="lib\$(TargetFramework)\$(PackageId)\Icons\%(Filename).xaml">
+          <Generator>MSBuild:Compile</Generator>
+          <Link>Icons\%(Filename).xaml</Link>
+      </Page>
+
+      <None Include="README.txt" Pack="True" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+      <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.3.230331000" />
+      <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.755" />
+  </ItemGroup>
+
+  <ItemGroup>
+      <None Include="build\**\*.*" PackagePath="build\$(TargetFramework)\%(RecursiveDir)%(Filename)%(Extension);buildTransitive\$(TargetFramework)\%(RecursiveDir)%(Filename)%(Extension)" Pack="true" />
+  </ItemGroup>
+
+    <Target Name="GenerateResources" BeforeTargets="PreBuildEvent" Condition="!Exists('$(MSBuildThisFileDirectory)..\..\.Generated\WinUI\Glyphs.xaml') ">
+        <Exec Command="dotnet run --project $(MSBuildThisFileDirectory)..\..\Tools\ResourceGenerator\ResourceGenerator.csproj $(MSBuildThisFileDirectory)..\..\calcite-ui-icons\docs\icons.json  $(MSBuildThisFileDirectory)..\..\Tools\calcite-ui-icons-codepoints.json $(MSBuildThisFileDirector)..\..\.Generated\WinUI\ WinUI" />
+    </Target>
+</Project>

@@ -1,0 +1,48 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Styles/Colors.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    
+    <!--  Levels: 0, 1, 2, 3  -->
+    <!--  - 0: Application background; null areas; window areas; chrome  -->
+    <!--  - 1: Application "foreground"; content, meat of the application, what the user is there for  -->
+    <!--  - 2: Secondary "foreground"; subtle content; guidance;  -->
+    <!--  - 3: Tertiary = foreground for neutral interactive items (e.g. neutral/chrome button)  -->
+    <!--  - Input: special level for user input elements (textbox, combobox)  -->
+    <!--  State: Normal, Hover, Press (note: only applies to semantic colors, not levels)  -->
+    <!--  Semantic: Tint, Info, Danger, Warning, Success  -->
+
+    <!--  Surface levels  -->
+    <SolidColorBrush x:Key="CalciteBackground0" Color="{ThemeResource CalciteBackground0Color}" />
+    <SolidColorBrush x:Key="CalciteForeground0" Color="{ThemeResource CalciteForeground0Color}" />
+    <SolidColorBrush x:Key="CalciteBorder0" Color="{ThemeResource CalciteBorder0Color}" />
+    <SolidColorBrush x:Key="CalciteBackground1" Color="{ThemeResource CalciteBackground1Color}" />
+    <SolidColorBrush x:Key="CalciteForeground1" Color="{ThemeResource CalciteForeground1Color}" />
+    <SolidColorBrush x:Key="CalciteBorder1" Color="{ThemeResource CalciteBorder1Color}" />
+    <SolidColorBrush x:Key="CalciteBackground2" Color="{ThemeResource CalciteBackground2Color}" />
+    <SolidColorBrush x:Key="CalciteForeground2" Color="{ThemeResource CalciteForeground2Color}" />
+    <SolidColorBrush x:Key="CalciteBorder2" Color="{ThemeResource CalciteBorder2Color}" />
+    <SolidColorBrush x:Key="CalciteBackground3" Color="{ThemeResource CalciteBackground3Color}" />
+    <SolidColorBrush x:Key="CalciteForeground3" Color="{ThemeResource CalciteForeground3Color}" />
+    <SolidColorBrush x:Key="CalciteBorder3" Color="{ThemeResource CalciteBorder3Color}" />
+    <SolidColorBrush x:Key="CalciteBackgroundInput" Color="{ThemeResource CalciteBackgroundInputColor}" />
+    <SolidColorBrush x:Key="CalciteForegroundInput" Color="{ThemeResource CalciteForegroundInputColor}" />
+    <SolidColorBrush x:Key="CalciteBorderInput" Color="{ThemeResource CalciteBorderInputColor}" />
+    <SolidColorBrush x:Key="CalciteForegroundInverse" Color="{ThemeResource CalciteForegroundInverseColor}" />
+    <SolidColorBrush x:Key="CalciteForegroundAlwaysLight" Color="#FFF" />
+    <!--  Semantic colors  -->
+    <SolidColorBrush x:Key="CalciteTintNormal" Color="{ThemeResource CalciteTintNormalColor}" />
+    <SolidColorBrush x:Key="CalciteTintHover" Color="{ThemeResource CalciteTintHoverColor}" />
+    <SolidColorBrush x:Key="CalciteTintPress" Color="{ThemeResource CalciteTintPressColor}" />
+    <SolidColorBrush x:Key="CalciteInfoNormal" Color="{ThemeResource CalciteInfoNormalColor}" />
+    <SolidColorBrush x:Key="CalciteSuccessNormal" Color="{ThemeResource CalciteSuccessNormalColor}" />
+    <SolidColorBrush x:Key="CalciteWarningNormal" Color="{ThemeResource CalciteWarningNormalColor}" />
+    <SolidColorBrush x:Key="CalciteDangerNormal" Color="{ThemeResource CalciteDangerNormalColor}" />
+    <SolidColorBrush x:Key="CalciteDangerHover" Color="{ThemeResource CalciteDangerHoverColor}" />
+    <SolidColorBrush x:Key="CalciteDangerPress" Color="{ThemeResource CalciteDangerPressColor}" />
+
+
+    <StaticResource x:Key="SystemControlForegroundBaseHighBrush" ResourceKey="CalciteForeground0" />
+    
+
+</ResourceDictionary>

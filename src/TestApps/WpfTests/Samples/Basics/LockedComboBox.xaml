@@ -1,0 +1,8 @@
+<ComboBox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" IsEditable="False">
+    <ComboBox.Items>
+        <ComboBoxItem Content="Item One" />
+        <ComboBoxItem Content="Item Two" />
+        <ComboBoxItem Content="Item Three" />
+        <ComboBoxItem Content="Item Four" />
+    </ComboBox.Items>
+</ComboBox>

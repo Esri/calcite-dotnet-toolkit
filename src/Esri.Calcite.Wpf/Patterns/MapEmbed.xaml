@@ -1,0 +1,81 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ca="clr-namespace:Esri.Calcite.WPF.Helpers">
+    <ControlTemplate x:Key="CalciteFormBodyGroupboxTemplate" TargetType="GroupBox">
+        <Grid Margin="{TemplateBinding Margin}" VerticalAlignment="{TemplateBinding VerticalAlignment}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Border
+                x:Name="bd_header"
+                Grid.Row="0"
+                Padding="8"
+                Background="{TemplateBinding Background}"
+                BorderBrush="{TemplateBinding BorderBrush}"
+                BorderThickness="{TemplateBinding BorderThickness}">
+                <ContentPresenter
+                    ContentSource="Header"
+                    TextElement.FontFamily="{DynamicResource AvenirNext-Regular}"
+                    TextElement.FontSize="14"
+                    TextElement.Foreground="{DynamicResource CalciteForeground1}" />
+            </Border>
+            <Border
+                x:Name="bd_body"
+                Grid.Row="1"
+                Margin="0,-1,0,0"
+                Padding="{TemplateBinding Padding}"
+                VerticalAlignment="Stretch"
+                Background="{TemplateBinding Background}"
+                BorderBrush="{TemplateBinding BorderBrush}"
+                BorderThickness="{TemplateBinding BorderThickness}">
+                <ContentPresenter
+                    Margin="0"
+                    VerticalAlignment="Top"
+                    TextBlock.TextAlignment="Center" />
+            </Border>
+        </Grid>
+
+        <ControlTemplate.Triggers>
+            <Trigger Property="Header" Value="{x:Null}">
+                <Setter TargetName="bd_header" Property="Visibility" Value="Collapsed" />
+            </Trigger>
+            <Trigger Property="ca:AttachedFormData.IsInForm" Value="True">
+                <Setter TargetName="bd_body" Property="Padding" Value="{DynamicResource FormParentPadding}" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <Style x:Key="Patterns.Panel.OverMap" TargetType="GroupBox">
+        <Setter Property="HorizontalAlignment" Value="Right" />
+        <Setter Property="Background" Value="{DynamicResource CalciteBackground1}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteBorder3}" />
+        <Setter Property="VerticalAlignment" Value="Top" />
+        <Setter Property="Margin" Value="8" />
+        <Setter Property="Padding" Value="8" />
+        <Setter Property="MinWidth" Value="200" />
+        <Setter Property="Template" Value="{StaticResource CalciteFormBodyGroupboxTemplate}" />
+    </Style>
+    <Style x:Key="Pattern.Panel.SideOfMap" TargetType="GroupBox">
+        <Setter Property="Background" Value="{DynamicResource CalciteBackground1}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteBorder3}" />
+        <Setter Property="HorizontalAlignment" Value="Right" />
+        <Setter Property="VerticalAlignment" Value="Stretch" />
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="MinWidth" Value="200" />
+        <Setter Property="Template" Value="{StaticResource CalciteFormBodyGroupboxTemplate}" />
+    </Style>
+    <Style
+        x:Key="Pattern.Panel.SideOfMapWithForm"
+        BasedOn="{StaticResource Pattern.Panel.SideOfMap}"
+        TargetType="GroupBox">
+        <Setter Property="ca:AttachedFormData.IsInForm" Value="True" />
+    </Style>
+    <Style
+        x:Key="Patterns.Panel.OverMapWithForm"
+        BasedOn="{StaticResource Patterns.Panel.OverMap}"
+        TargetType="GroupBox">
+        <Setter Property="ca:AttachedFormData.IsInForm" Value="True" />
+    </Style>
+</ResourceDictionary>
