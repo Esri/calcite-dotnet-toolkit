@@ -11,7 +11,6 @@
         <PackageProjectUrl>https://github.com/dotMorten/CalciteDotNet/</PackageProjectUrl> 
         <PackageIcon>icon.png</PackageIcon>
         <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
-        <PackageVersion>$(Version)-preview1</PackageVersion>
         <GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">True</GeneratePackageOnBuild>
         <PackageOutputPath>$(MSBuildThisFileDirectory)..\artifacts\NuGet\$(Configuration)\</PackageOutputPath>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
