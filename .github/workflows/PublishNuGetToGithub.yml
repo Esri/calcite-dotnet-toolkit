@@ -35,4 +35,4 @@ jobs:
 
     - name: Publish
       run: |
-        dotnet nuget push artifacts\NuGet/Release\*.nupkg --api-key  ${{ secrets.GithubPushPackagesSecret }} --source https://nuget.pkg.github.com/dotMorten/index.json 
+        dotnet nuget push artifacts\NuGet\Release\*.nupkg --api-key  ${{ secrets.GithubPushPackagesSecret }} --source https://nuget.pkg.github.com/dotMorten/index.json 
