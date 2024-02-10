@@ -573,12 +573,12 @@
     "code-16": 62267,
     "code-24": 62268,
     "code-32": 62269,
-    "code-brand-16": 62270,
-    "code-brand-24": 62271,
-    "code-brand-32": 62272,
-    "code-brand-edit-16": 62273,
-    "code-brand-edit-24": 62274,
-    "code-brand-edit-32": 62275,
+    "code-branch-16": 62270,
+    "code-branch-24": 62271,
+    "code-branch-32": 62272,
+    "code-branch-edit-16": 62273,
+    "code-branch-edit-24": 62274,
+    "code-branch-edit-32": 62275,
     "collaboration-16": 62276,
     "collaboration-24": 62277,
     "collaboration-32": 62278,
@@ -3260,6 +3260,22 @@
     "zoom-out-fixed-32": 64954,
     "zoom-to-object-16": 64955,
     "zoom-to-object-24": 64956,
-    "zoom-to-object-32": 64957
+    "zoom-to-object-32": 64957,
+		
+	"folder-f-16": 64958,
+	"folder-f-24": 64959,
+	"folder-f-32": 64960,
+	
+	"folder-open-f-16": 64961,
+	"folder-open-f-24": 64962,
+	"folder-open-f-32": 64963,	
+	
+	"rss-16": 64964,
+	"rss-24": 64965,
+	"rss-32": 64966,
+		
+	"rss-f-16": 64967,
+	"rss-f-24": 64968,
+	"rss-f-32": 64969,
   }
 }
