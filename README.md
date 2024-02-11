@@ -1,5 +1,5 @@
 # Calcite
-Esri Calcite styles for various .NET XAML Frameworks
+Esri Calcite styles for various .NET XAML Frameworks inspired by the [Calcite Design System](https://github.com/Esri/calcite-design-system).
 
 # Usage
 Add the CalciteResources ResourceDictionary to your App.xaml Merged Directionary resources to get access
@@ -81,6 +81,7 @@ Color and brush resources naming refers to levels, input, state and semantic use
 ## Colors
 For brushes, remove "Color" from the name.
 Note: For .NET MAUI, append `_Dark` or `_Light` for dark and light mode colors (does not apply to brush resource keys which automatically update based on application theme).
+See https://github.com/Esri/calcite-colors/ for more information about the predefined Calcite colors.
 
 | Resource Key | Light Mode | Dark Mode |
 | --- | --- | --- |
