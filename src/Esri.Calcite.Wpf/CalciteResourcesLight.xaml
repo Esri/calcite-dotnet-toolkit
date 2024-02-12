@@ -2,11 +2,14 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     >
     <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source=".\Colors\Colors.xaml" />
+        <ResourceDictionary Source=".\Colors\Colors.Light.xaml" />
+        <ResourceDictionary Source=".\Colors\Brushes.xaml" />
         <ResourceDictionary Source=".\Shared\Fonts.xaml" />
         <ResourceDictionary Source=".\Icons\Glyphs.xaml" />
         <ResourceDictionary Source=".\ControlOverrides.xaml" />
-        <ResourceDictionary Source=".\Shared\Brushes.xaml" />
-        <ResourceDictionary Source=".\Shared\Colors.Light.xaml" />
+        <ResourceDictionary Source=".\Shared\Brushes.xaml" /> <!--deprecated-->
+        <ResourceDictionary Source=".\Shared\Colors.Light.xaml" /> <!--deprecated-->
     </ResourceDictionary.MergedDictionaries>
 
 </ResourceDictionary>

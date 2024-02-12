@@ -1,27 +1,154 @@
-﻿using IconXamlGenerator;
+﻿using Carbon.Css;
+using IconXamlGenerator;
 
 var pathToJson = args[0];
 var pathToGlyphList = args[1];
-var pathToOutput = args[2];
-var format = args[3];
+var colorsSccs = args[2];
+var pathToOutput = args[3];
+var format = args[4];
 
 var icons = IconEntry.LoadFromJson(pathToJson, pathToGlyphList);
 
 if(!Directory.Exists(pathToOutput))
     Directory.CreateDirectory(pathToOutput);
+if(!Directory.Exists(Path.Combine(pathToOutput, "Colors")))
+    Directory.CreateDirectory(Path.Combine(pathToOutput, "Colors"));
 
-//GenerateIconsXaml(icons, Path.Combine(pathToOutput, $"Icons.xaml"), format);
-GenerateGlyphsXaml(icons, Path.Combine(pathToOutput, $"Glyphs.xaml"), format);
+GenerateColors(colorsSccs, Path.Combine(pathToOutput, "Colors"), format);
+
+if(!Directory.Exists(Path.Combine(pathToOutput, "Icons")))
+    Directory.CreateDirectory(Path.Combine(pathToOutput, "Icons"));
+//GenerateIconsXaml(icons, Path.Combine(pathToOutput, "Icons", $"Icons.xaml"), format);
+GenerateGlyphsXaml(icons, Path.Combine(pathToOutput, "Icons", "Glyphs.xaml"), format);
 GenerateCalciteIconEnum(icons, Path.Combine(pathToOutput, $"Icons.cs"), "Esri.Calcite." + format);
 GenerateCalciteHelper(icons, Path.Combine(pathToOutput, $"IconHelpers.cs"), "Esri.Calcite." + format);
 
+void GenerateColors(string colorsScss, string pathToOutput, string format)
+{
+    var scss = StyleSheet.FromFile(new FileInfo(colorsScss));
+    var darkColors = new Dictionary<string, CssAssignment>();
+    var lightColors = new Dictionary<string, CssAssignment>();
+    string xamlHeader = GetXamlHeader(format);
+    using StreamWriter xamlOutput = new StreamWriter(Path.Combine(pathToOutput, "Colors.xaml"));
+    xamlOutput.WriteLine(xamlHeader);
+    Func<string, string, string> toResourceName = (cssname, resourceType) => {
+        //return $"calcite-{cssname}-{resourceType.ToLower()}";
+        var parts = cssname.Replace("ui-", "UI-").Split("-");
+        var name = string.Join("", parts.Select(p =>
+         p switch {
+             "v" => "ChartVibrant",
+             "h" => "ChartHigh",
+             "m" => "ChartMedium",
+             "l" => "ChartLow",
+             "d" => "ChartDark",
+             "blk" => "ChartGray",
+             "bb" => "Blue",
+             "br" => "Brown",
+             "gb" => "GreenBlue",
+             "gg" => "Green",
+             "yg" => "YellowGreen",
+             "yy" => "Yellow",
+             "oy" => "OrangeYellow",
+             "oo" => "Orange",
+             "ro" => "RedOrange",
+             "rr" => "Red",
+             "pk" => "Pink",
+             "vr"=> "VioletRed",
+             "vv" => "Violet",
+             _ => p.Substring(0, 1).ToUpper() + p.Substring(1)
+         }));
+        return $"Calcite{name}{resourceType}";
+    };
+    foreach (var c in scss.Children.OfType<CssAssignment>())
+    {
+        if (c.Name.EndsWith("-dark"))
+            darkColors.Add(c.Name, c);
+        if (c.Name.EndsWith("-light"))
+            lightColors.Add(c.Name, c);
+        xamlOutput.WriteLine($"    <Color x:Key=\"{toResourceName(c.Name, "Color")}\">{c.Value}</Color>");
+        xamlOutput.Flush();
+    }
+    if (format == "WinUI" || format == "UWP")
+    {
+        xamlOutput.WriteLine("    <ResourceDictionary.ThemeDictionaries>");
+        xamlOutput.WriteLine("        <ResourceDictionary x:Key =\"Default\" >");
+        foreach (var c in darkColors)
+        {
+            xamlOutput.WriteLine($"            <StaticResource x:Key=\"{toResourceName(c.Key.Replace("-dark", ""), "Color")}\" ResourceKey=\"{toResourceName(c.Key, "Color")}\" />");
+        }
+        xamlOutput.WriteLine("        </ResourceDictionary>");
+        xamlOutput.WriteLine("        <ResourceDictionary x:Key =\"Light\" >");
+        foreach (var c in lightColors)
+        {
+            xamlOutput.WriteLine($"            <StaticResource x:Key=\"{toResourceName(c.Key.Replace("-light",""), "Color")}\" ResourceKey=\"{toResourceName(c.Key, "Color")}\" />");
+        }
+        xamlOutput.WriteLine("        </ResourceDictionary>");
+        xamlOutput.WriteLine("    </ResourceDictionary.ThemeDictionaries>");
+    }
+    xamlOutput.WriteLine("</ResourceDictionary>");
+    xamlOutput.Flush();
+    xamlOutput.Close();
+    xamlOutput.Dispose();
+
+    if (format == "WPF")
+    {
+        Action<Dictionary<string, CssAssignment>, string> writeXaml = (colors, filename) =>
+        {
+            using StreamWriter output = new StreamWriter(Path.Combine(pathToOutput, filename));
+            output.WriteLine(xamlHeader);
+            foreach (var c in colors)
+            {
+                var name = c.Key.Replace("-dark", "").Replace("-light", "");
+                output.WriteLine($"    <Color x:Key=\"{toResourceName(name, "Color")}\">{c.Value.Value}</Color>");
+                output.Flush();
+            }
+            output.WriteLine("</ResourceDictionary>");
+            output.Flush();
+            output.Dispose();
+        };
+        writeXaml(darkColors, "Colors.Dark.xaml");
+        writeXaml(lightColors, "Colors.Light.xaml");
+    }
+    // Brushes
+    using var brushOutput = new StreamWriter(Path.Combine(pathToOutput, "Brushes.xaml"));
+    brushOutput.WriteLine(xamlHeader);
+    brushOutput.WriteLine("    <ResourceDictionary.MergedDictionaries>");
+    if (format == "WinUI" || format == "UWP")
+        brushOutput.WriteLine($"        <ResourceDictionary Source=\"ms-appx:///Esri.Calcite.{format}/Colors/Colors.xaml\" />");
+    else if(format == "Maui")
+        brushOutput.WriteLine($"        <ResourceDictionary Source=\"Colors.xaml\" />");
+    brushOutput.WriteLine("    </ResourceDictionary.MergedDictionaries>");
+    foreach (var dark in darkColors)
+    {
+        var name = dark.Key.Replace("-dark", "");
+        if (!lightColors.ContainsKey(name + "-light")) continue;
+        var light = lightColors[name + "-light"];
+        if (format == "Maui")
+            brushOutput.WriteLine($"    <SolidColorBrush x:Key=\"{toResourceName(name, "Brush")}\" Color=\"{{AppThemeBinding Dark={{StaticResource {toResourceName(dark.Key, "Color")}}}, Light={{StaticResource {toResourceName(name + "-light", "Color")}}}}}\" />");
+        else if(format == "WPF")
+            brushOutput.WriteLine($"    <SolidColorBrush x:Key=\"{toResourceName(name, "Brush")}\" Color=\"{{DynamicResource {toResourceName(name, "Color")}}}\" />");
+        else
+            brushOutput.WriteLine($"    <SolidColorBrush x:Key=\"{toResourceName(name, "Brush")}\" Color=\"{{StaticResource {toResourceName(name, "Color")}}}\" />");
+    }
+
+    brushOutput.WriteLine("</ResourceDictionary>");
+    brushOutput.Flush();
+    brushOutput.Dispose();
+}
+
+static string GetXamlHeader(string format)
+{
+    if (format == "WPF")
+        return "<ResourceDictionary\n    xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"\n    xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"\n    xmlns:system=\"clr-namespace:System;assembly=mscorlib\">";
+    if (format == "WinUI" || format == "UWP")
+        return "<ResourceDictionary\n    xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\" xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\">";
+    else if (format == "Maui")
+        return "<?xml version=\"1.0\" encoding=\"UTF-8\" ?><?xaml-comp compile=\"true\" ?><ResourceDictionary\n    xmlns=\"http://schemas.microsoft.com/dotnet/2021/maui\"\n    xmlns:x=\"http://schemas.microsoft.com/winfx/2009/xaml\">";
+    throw new NotSupportedException("Fomat " + format);
+}
 void GenerateGlyphsXaml(IList<IconEntry> icons, string filename, string format)
 {
-    string xamlHeader = "<ResourceDictionary\n    xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"\n    xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"\n    xmlns:system=\"clr-namespace:System;assembly=mscorlib\">";
-    if (format == "WinUI" || format == "UWP")
-        xamlHeader = "<ResourceDictionary\n    xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\" xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\">";
-    else if (format == "Maui")
-        xamlHeader = "<?xml version=\"1.0\" encoding=\"UTF-8\" ?><?xaml-comp compile=\"true\" ?><ResourceDictionary\n    xmlns=\"http://schemas.microsoft.com/dotnet/2021/maui\"\n    xmlns:x=\"http://schemas.microsoft.com/winfx/2009/xaml\">";
+    string xamlHeader = GetXamlHeader(format);
     string xamlType = format == "WPF" ? "system:String" : "x:String";
     using StreamWriter xamlOutput = new StreamWriter(filename);
     xamlOutput.WriteLine(xamlHeader);
@@ -36,7 +163,7 @@ void GenerateGlyphsXaml(IList<IconEntry> icons, string filename, string format)
     xamlOutput.Flush();
     xamlOutput.Dispose();
 }
-
+/*
 void GenerateIconsXaml(IList<IconEntry> icons, string filename, string format)
 {
     string xamlHeader = "<ResourceDictionary xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\" xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\">";
@@ -85,7 +212,7 @@ void GenerateIconsXaml(IList<IconEntry> icons, string filename, string format)
     xamlOutput.Flush();
     xamlOutput.Dispose();
 }
-
+*/
 void GenerateCalciteIconEnum(IList<IconEntry> icons, string filename, string _namespace)
 {
     using StreamWriter iconsEnumOutput = new StreamWriter(filename);

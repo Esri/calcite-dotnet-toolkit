@@ -17,10 +17,9 @@
   </ItemGroup>
 
   <ItemGroup>
-
-      <Page Include="..\..\.Generated\WinUI\*.xaml" PackagePath="lib\$(TargetFramework)\$(PackageId)\Icons\%(Filename).xaml">
+      <Page Include="..\..\.Generated\WinUI\**\*.xaml" PackagePath="lib\$(TargetFramework)\$(PackageId)\%(RecursiveDir)\%(Filename).xaml">
           <Generator>MSBuild:Compile</Generator>
-          <Link>Icons\%(Filename).xaml</Link>
+          <Link>%(RecursiveDir)\%(Filename).xaml</Link>
       </Page>
 
       <None Include="README.txt" Pack="True" PackagePath="\" />
@@ -35,7 +34,7 @@
       <None Include="build\**\*.*" PackagePath="build\$(TargetFramework)\%(RecursiveDir)%(Filename)%(Extension);buildTransitive\$(TargetFramework)\%(RecursiveDir)%(Filename)%(Extension)" Pack="true" />
   </ItemGroup>
 
-    <Target Name="GenerateResources" BeforeTargets="PreBuildEvent" Condition="!Exists('$(MSBuildThisFileDirectory)..\..\.Generated\WinUI\Glyphs.xaml') ">
-        <Exec Command="dotnet run --project $(MSBuildThisFileDirectory)..\..\Tools\ResourceGenerator\ResourceGenerator.csproj $(MSBuildThisFileDirectory)..\..\calcite-ui-icons\docs\icons.json  $(MSBuildThisFileDirectory)..\..\Tools\calcite-ui-icons-codepoints.json $(MSBuildThisFileDirector)..\..\.Generated\WinUI\ WinUI" />
+    <Target Name="GenerateResources" BeforeTargets="PreBuildEvent" Condition="!Exists('$(MSBuildThisFileDirectory)..\..\.Generated\WinUI\Icons\Glyphs.xaml') ">
+        <Exec Command="dotnet run --project $(MSBuildThisFileDirectory)..\..\Tools\ResourceGenerator\ResourceGenerator.csproj $(MSBuildThisFileDirectory)..\..\calcite-ui-icons\docs\icons.json  $(MSBuildThisFileDirectory)..\..\Tools\calcite-ui-icons-codepoints.json $(MSBuildThisFileDirectory)..\..\calcite-colors\dist\colors.scss $(MSBuildThisFileDirector)..\..\.Generated\WinUI\ WinUI" />
     </Target>
 </Project>

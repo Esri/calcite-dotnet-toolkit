@@ -7,8 +7,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Styles/Colors.xaml" />
-        <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Styles/Brushes.xaml" />
+        <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Colors/Colors.xaml" />
+        <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Colors/Brushes.xaml" />
+        <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Styles/Colors.xaml" /> <!--deprecated-->
+        <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Styles/Brushes.xaml" /> <!--deprecated-->
         <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Styles/Sizes.xaml" />
         <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Styles/Fonts.xaml" />
         <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Icons/Glyphs.xaml" />
