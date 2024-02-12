@@ -1,5 +1,5 @@
 # Calcite
-Esri Calcite styles for various .NET XAML Frameworks inspired by the [Calcite Design System](https://github.com/Esri/calcite-design-system).
+Unofficial implementation of the Esri Calcite styles for various .NET XAML Frameworks inspired by the [Calcite Design System](https://github.com/Esri/calcite-design-system).
 
 # Usage
 Add the CalciteResources ResourceDictionary to your App.xaml Merged Directionary resources to get access
