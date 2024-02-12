@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiTests.ColorsPage">
 
-    <Grid ColumnDefinitions="*,*">
+    <Grid>
         <CollectionView x:Name="collectionView" Grid.Row="1" Margin="20,5" ItemSizingStrategy="MeasureFirstItem"
                         Background="{StaticResource CalciteBackground0Color_Dark}">
             <CollectionView.ItemTemplate>
@@ -11,16 +11,6 @@
                     <HorizontalStackLayout>
                         <Border WidthRequest="100" HeightRequest="40" BackgroundColor="{Binding Color}" />
                         <Label Text="{Binding Name}" VerticalOptions="Center" TextColor="White"/>
-                    </HorizontalStackLayout>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-        <CollectionView x:Name="collectionView2" Grid.Column="1" Margin="20,5" ItemSizingStrategy="MeasureFirstItem">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <HorizontalStackLayout>
-                        <Border WidthRequest="100" HeightRequest="40" BackgroundColor="{Binding Color}" />
-                        <Label Text="{Binding Name}" VerticalOptions="Center"/>
                     </HorizontalStackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>

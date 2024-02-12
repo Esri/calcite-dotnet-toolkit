@@ -18,10 +18,6 @@
                 </StackPanel>
             </DataTemplate>
         </Grid.Resources>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
         <ListView x:Name="gridView" ItemTemplate="{StaticResource BrushTemplate}" Margin="10" />
     </Grid>
 </Page>

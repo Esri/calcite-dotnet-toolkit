@@ -10,7 +10,7 @@
         mc:Ignorable="d"
             Style="{DynamicResource CalciteWindow}"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Background="{DynamicResource Background0}">
+    <Grid Background="{DynamicResource CalciteBackground0}">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
@@ -24,6 +24,12 @@
             </TabItem>-->
             <TabItem Header="Glyphs">
                 <samples1:GlyphsPage />
+            </TabItem>
+            <TabItem Header="Colors">
+                <samples1:ColorsPage />
+            </TabItem>
+            <TabItem Header="Brushes">
+                <samples1:BrushesPage />
             </TabItem>
             <!--<TabItem Header="ColorPicker">
                 <calcite:CalciteColorPicker />

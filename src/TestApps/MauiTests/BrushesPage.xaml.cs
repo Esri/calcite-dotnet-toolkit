@@ -17,10 +17,7 @@ public partial class BrushesPage : ContentPage
         if (brushes is null)
         {
             ResourceDictionary dic = App.Current.Resources.MergedDictionaries.OfType<CalciteResources>().First();
-            dic = dic.MergedDictionaries.Where(m => m.Source.OriginalString == "Resources/Styles/Styles.xaml;assembly=Esri.Calcite.Maui").First();
-            var dic2 = typeof(ResourceDictionary).GetField("_mergedInstance", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic).
-                GetValue(dic) as ResourceDictionary;
-            var brushDic = dic2.MergedDictionaries.Where(m => m.Source.OriginalString == "Brushes.xaml;assembly=Esri.Calcite.Maui").First();
+            var brushDic = dic.MergedDictionaries.Where(m => m.Source.OriginalString == "Resources/Colors/Brushes.xaml;assembly=Esri.Calcite.Maui").First();
             brushes = new List<BrushEntry>();
             foreach (var key in brushDic.Keys)
                 brushes.Add(new BrushEntry() { Name = key, Brush= (Brush)brushDic[key] });

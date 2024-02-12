@@ -18,7 +18,7 @@
                             <SolidColorBrush Color="{Binding Value}" />
                         </Border.Background>
                     </Border>
-                    <TextBlock Text="{Binding Key}" VerticalAlignment="Center" />
+                    <TextBlock Text="{Binding Key}" VerticalAlignment="Center" Foreground="{StaticResource CalciteUIText1Brush}" />
                 </StackPanel>
             </DataTemplate>
         </Grid.Resources>
