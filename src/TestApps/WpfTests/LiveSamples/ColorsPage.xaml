@@ -22,7 +22,7 @@
                 <DataGridTemplateColumn >
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Border Height="25" Margin="0,-3" Width="100" BorderBrush="{DynamicResource CalciteUIBackground1Brush}" >
+                            <Border Height="25" Margin="0,-3" Width="100" BorderBrush="{DynamicResource CalciteUIText1Brush}" BorderThickness="1">
                                 <Border.Background>
                                     <SolidColorBrush Color="{Binding Value}" />
                                 </Border.Background>

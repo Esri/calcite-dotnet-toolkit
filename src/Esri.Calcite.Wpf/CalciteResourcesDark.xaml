@@ -3,7 +3,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source=".\Colors\Colors.xaml" />
-        <ResourceDictionary Source=".\Colors\Colors.Light.xaml" />
+        <ResourceDictionary Source=".\Colors\Colors.Dark.xaml" />
         <ResourceDictionary Source=".\Colors\Brushes.xaml" />
         <ResourceDictionary Source=".\Shared\Fonts.xaml" />
         <ResourceDictionary Source=".\Icons\Glyphs.xaml" />
