@@ -65,21 +65,9 @@ namespace MauiTests
     }
 }
 ```
-# Resources
 
-Color and brush resources naming refers to levels, input, state and semantic use:
-
-- Levels: 0, 1, 2, 3
-     - 0: Application background; null areas; window areas; chrome
-     - 1: Application "foreground"; content, meat of the application, what the user is there for
-     - 2: Secondary "foreground"; subtle content; guidance;
-     - 3: Tertiary = foreground for neutral interactive items (e.g. neutral/chrome button)
-- Input: special level for user input elements (textbox, combobox)
-- State: Normal, Hover, Press (note: only applies to semantic colors, not levels)
-- Semantic: Tint, Info, Danger, Warning, Success
-
-## Colors
-For brushes, place `Color` in the name with `Brush`.
+## Color and Brush resources:
+For brushes, replace the `Color` postfix with `Brush`.
 Append `Dark` or `Light` before `Color` for dark and light mode colors (does not apply to brush resource keys which automatically update based on application theme).
 See https://github.com/Esri/calcite-colors/ for more information about the predefined Calcite colors, as well as the [Calcite Colors & Theming documentation](https://developers.arcgis.com/calcite-design-system/foundations/colors/).
 
@@ -109,6 +97,32 @@ See https://github.com/Esri/calcite-colors/ for more information about the prede
 | CalciteUIDangerHoverColor | ![#A82B1E](https://placehold.co/15x15/A82B1E/A82B1E.png)`#A82B1E` | ![#FF0015](https://placehold.co/15x15/FF0015/FF0015.png)`#FF0015` |
 | CalciteUIDangerPressColor | ![#7C1D13](https://placehold.co/15x15/7C1D13/7C1D13.png)`#7C1D13` | ![#D90012](https://placehold.co/15x15/D90012/D90012.png)`#D90012` |
 
+#### Example WPF:
+```xml
+<Border Background="{StaticResource CalciteUIBrandBrush}">
+  <TextBlock Text="Hello Calcite">
+     <TextBlock.Foreground>
+        <SolidColorBrush Color="{StaticResource CalciteUITextInverseColor} />
+     </TextBlock.Foreground>
+  </TextBlock>
+</Border>
+```
+#### Example WinUI:
+```xml
+<Border Background="{ThemeResource CalciteUIBrandBrush}">
+  <TextBlock Text="Hello Calcite">
+     <TextBlock.Foreground>
+        <SolidColorBrush Color="{ThemeResource CalciteUITextInverseColor} />
+     </TextBlock.Foreground>
+  </TextBlock>
+</Border>
+```
+#### Example .NET MAUI:
+```xml
+<Border Background="{StaticResource CalciteUIBrandBrush}">
+  <Label Text="Hello Calcite" TextColor="{AppThemeBinding Light={StaticResource CalciteUITextInverseLightColor}, Dark={StaticResource CalciteUITextInverseDarkColor}}" />
+</Border>
+```
 
 ## Symbol Font
 `Calcite-UI-Icons` FontFamily is a font with a set of symbols generated from the [Calcite UI Icons repo](https://github.com/Esri/calcite-ui-icons).
