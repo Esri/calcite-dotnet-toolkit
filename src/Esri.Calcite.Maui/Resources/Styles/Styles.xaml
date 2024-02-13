@@ -8,10 +8,6 @@
         <ResourceDictionary Source="Brushes.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
-    <Color x:Key="Primary">#007AC2</Color>
-    <Color x:Key="Secondary">#00619B</Color>
-    <Color x:Key="Tertiary">#004874</Color>
-    
     <Style TargetType="ActivityIndicator">
         <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource CalciteUIBrandLightColor}, Dark={StaticResource CalciteUIBrandDarkColor}}" />
     </Style>
@@ -160,10 +156,10 @@
             </VisualStateGroupList>
         </Setter>
     </Style>
-
+    -->
     <Style TargetType="ProgressBar">
-        <Setter Property="ProgressColor" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
-        <Setter Property="VisualStateManager.VisualStateGroups">
+        <Setter Property="ProgressColor" Value="{AppThemeBinding Light={StaticResource CalciteUIBrandLightColor}, Dark={StaticResource CalciteUIBrandDarkColor}}" />
+        <!--<Setter Property="VisualStateManager.VisualStateGroups">
             <VisualStateGroupList>
                 <VisualStateGroup x:Name="CommonStates">
                     <VisualState x:Name="Normal" />
@@ -174,9 +170,9 @@
                     </VisualState>
                 </VisualStateGroup>
             </VisualStateGroupList>
-        </Setter>
+        </Setter>-->
     </Style>
-
+<!--
     <Style TargetType="RadioButton">
         <Setter Property="BackgroundColor" Value="Transparent"/>
         <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />
@@ -253,12 +249,12 @@
         <Setter Property="Brush" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource White}}" />
         <Setter Property="Offset" Value="10,10" />
     </Style>
-
+-->
     <Style TargetType="Slider">
-        <Setter Property="MinimumTrackColor" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
-        <Setter Property="MaximumTrackColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray600}}" />
-        <Setter Property="ThumbColor" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
-        <Setter Property="VisualStateManager.VisualStateGroups">
+        <Setter Property="MinimumTrackColor" Value="{AppThemeBinding Light={StaticResource CalciteUIBrandLightColor}, Dark={StaticResource CalciteUIBrandDarkColor}}" />
+        <!--<Setter Property="MaximumTrackColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray600}}" />-->
+        <Setter Property="ThumbColor" Value="{AppThemeBinding Light={StaticResource CalciteUIBrandLightColor}, Dark={StaticResource CalciteUIBrandDarkColor}}" />
+        <!--<Setter Property="VisualStateManager.VisualStateGroups">
             <VisualStateGroupList>
                 <VisualStateGroup x:Name="CommonStates">
                     <VisualState x:Name="Normal" />
@@ -271,9 +267,9 @@
                     </VisualState>
                 </VisualStateGroup>
             </VisualStateGroupList>
-        </Setter>
+        </Setter>-->
     </Style>
-
+<!--
     <Style TargetType="SwipeItem">
         <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Black}}" />
     </Style>
@@ -340,7 +336,7 @@
         <Setter Property="Shell.UnselectedColor" Value="{AppThemeBinding Light={StaticResource CalciteUIText3LightColor}, Dark={StaticResource CalciteUIText2DarkColor}}" />
         <!--<Setter Property="Shell.NavBarHasShadow" Value="False" />-->
         <Setter Property="Shell.TabBarBackgroundColor" Value="{AppThemeBinding Light={StaticResource CalciteUIForeground3LightColor}, Dark={StaticResource CalciteUIForeground3DarkColor}}" />
-        <!--<Setter Property="Shell.TabBarForegroundColor" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />-->
+        <Setter Property="Shell.TabBarForegroundColor" Value="{AppThemeBinding Light={StaticResource CalciteUIBrandLightColor}, Dark={StaticResource CalciteUIBrandDarkColor}}" />
         <Setter Property="Shell.TabBarTitleColor" Value="{AppThemeBinding Light={StaticResource CalciteUIText1LightColor}, Dark={StaticResource CalciteUIText1DarkColor}}" />
         <!--<Setter Property="Shell.TabBarUnselectedColor" Value="{AppThemeBinding Light={StaticResource Gray900}, Dark={StaticResource Gray200}}" />-->
     </Style>
@@ -349,13 +345,12 @@
         <Setter Property="BarTextColor" Value="{AppThemeBinding Light={StaticResource CalciteUITextInverseLightColor}, Dark={StaticResource CalciteUIBackgroundDarkColor}}" />
         <Setter Property="IconColor" Value="{AppThemeBinding Light={StaticResource CalciteUITextInverseLightColor}, Dark={StaticResource CalciteUIBackgroundDarkColor}}" />
     </Style>
-    <!--
     
     <Style TargetType="TabbedPage">
-        <Setter Property="BarBackgroundColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray950}}" />
-        <Setter Property="BarTextColor" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
-        <Setter Property="UnselectedTabColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray950}}" />
-        <Setter Property="SelectedTabColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource Gray200}}" />
-    </Style>-->
+        <!--<Setter Property="BarBackgroundColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray950}}" />-->
+        <Setter Property="BarTextColor" Value="{AppThemeBinding Light={StaticResource CalciteUIBrandLightColor}, Dark={StaticResource CalciteUIBrandDarkColor}}" />
+        <!--<Setter Property="UnselectedTabColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray950}}" />
+        <Setter Property="SelectedTabColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource Gray200}}" />-->
+    </Style>
 
 </ResourceDictionary>

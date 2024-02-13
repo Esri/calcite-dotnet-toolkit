@@ -6,11 +6,12 @@
     <ScrollView>
         <VerticalStackLayout
             Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+            Padding="30"
+            VerticalOptions="Start">
 
             <Button Text="Button" />
-            <HorizontalStackLayout><CheckBox />
+            <HorizontalStackLayout>
+                <CheckBox IsChecked="True" />
                 <Label Text="Checkbox" VerticalOptions="Center" />
             </HorizontalStackLayout>
             <VerticalStackLayout>
@@ -21,7 +22,10 @@
                 <Label Text="Label in border" />
             </Border>
             <ActivityIndicator WidthRequest="100" />
-            <Switch />
+            <Switch IsToggled="True" />
+            <Slider WidthRequest="200" Minimum="0" Maximum="100" HorizontalOptions="Start" />
+            <ProgressBar Progress=".5" WidthRequest="200" HorizontalOptions="Start" />
+            
         </VerticalStackLayout>
     </ScrollView>
 
