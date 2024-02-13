@@ -1,7 +1,14 @@
 # Calcite
 Unofficial implementation of the Esri Calcite styles for various .NET XAML Frameworks inspired by the [Calcite Design System](https://github.com/Esri/calcite-design-system).
 
-# Usage
+## Index
+ - [Usage](#usage)
+ - [Color and Brush resources](#color-and-brush-resources)
+ - [Symbol Font](#symbol-font)
+ - [Extensions and helpers](#extensions-and-helpers)
+
+
+## Usage<a name="usage" />
 Add the CalciteResources ResourceDictionary to your App.xaml Merged Directionary resources to get access
 to default styles and resources. Dark/Light mode is automatically handled and adjust to system or app settings.
 
@@ -66,7 +73,7 @@ namespace MauiTests
 }
 ```
 
-## Color and Brush resources:
+## Color and Brush resources
 For brushes, replace the `Color` postfix with `Brush`.
 Append `Dark` or `Light` before `Color` for dark and light mode colors (does not apply to brush resource keys which automatically update based on application theme).
 See https://github.com/Esri/calcite-colors/ for more information about the predefined Calcite colors, as well as the [Calcite Colors & Theming documentation](https://developers.arcgis.com/calcite-design-system/foundations/colors/).
