@@ -52,6 +52,15 @@
     <Color x:Key="SystemListLowColor">#19FFFFFF</Color>
     <Color x:Key="SystemListMediumColor">#33FFFFFF</Color>-->
     <StaticResource x:Key="SystemErrorTextColor" ResourceKey="CalciteUIDangerColor" />
+
+    <!--ProgressRing-->
+    <StaticResource x:Key="ProgressRingForegroundThemeBrush" ResourceKey="CalciteUIBrandBrush" />
+
+    <!--TabView-->
+    <StaticResource x:Key="TabViewItemHeaderBackgroundSelected" ResourceKey="CalciteUIBrandBrush" />
+    <SolidColorBrush x:Key="TabViewItemHeaderForegroundSelected" Color="White" />
+    <SolidColorBrush x:Key="TabViewItemHeaderSelectedCloseButtonForeground" Color="White" />
+    <SolidColorBrush x:Key="TabViewItemIconForegroundSelected" Color="White" />
     
     
 </ResourceDictionary>
