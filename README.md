@@ -178,6 +178,20 @@ Using in AppBarButtons in a command bar:
   </CommandBar>
 ```
 
+The markup extensions `CalciteIconSourceElementExtension` and `CalciteIconSourceExtension` can simplify creating IconSourceElement and IconSource even further:
+```xml
+  <CommandBar IsOpen="True">
+      <CommandBar.PrimaryCommands>
+          <AppBarButton Label="Zoom In" Icon="{cal:CalciteIconSourceElement SymbolSize=22, Icon=ZoomInFixed, Scale=Small}" />
+          <AppBarButton Label="Zoom Out">
+              <AppBarButton.Icon>
+                  <IconSourceElement IconSource="{cal:CalciteIconSource Icon=ZoomOutFixed, Scale=Small}" />
+              </AppBarButton.Icon>
+          </AppBarButton>
+      </CommandBar.PrimaryCommands>
+  </CommandBar>
+```
+
 ## .NET MAUI
 
 `CalciteIconImageSource` : Converts an Icon to an Image Source. Example:
