@@ -5,8 +5,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="Colors.Light.xaml" />
-        <ResourceDictionary Source="Colors.Dark.xaml" />
         <ResourceDictionary Source="Brushes.xaml" />
     </ResourceDictionary.MergedDictionaries>
     
@@ -15,25 +13,25 @@
     <Color x:Key="Tertiary">#004874</Color>
     
     <Style TargetType="ActivityIndicator">
-        <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource CalciteTintNormalColor_Light}, Dark={StaticResource CalciteTintNormalColor_Dark}}" />
+        <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource CalciteUIBrandLightColor}, Dark={StaticResource CalciteUIBrandDarkColor}}" />
     </Style>
 
     <Style TargetType="IndicatorView">
-        <Setter Property="IndicatorColor" Value="{AppThemeBinding Light={StaticResource CalciteTintNormalColor_Light}, Dark={StaticResource CalciteTintNormalColor_Dark}}"/>
+        <Setter Property="IndicatorColor" Value="{AppThemeBinding Light={StaticResource CalciteUIBrandLightColor}, Dark={StaticResource CalciteUIBrandDarkColor}}"/>
         <!--<Setter Property="SelectedIndicatorColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource Gray100}}"/>-->
     </Style>
 
     <Style TargetType="BoxView">
-        <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource CalciteTintNormalColor_Light}, Dark={StaticResource CalciteTintNormalColor_Dark}}" />
+        <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource CalciteUIBrandLightColor}, Dark={StaticResource CalciteUIBrandDarkColor}}" />
     </Style>
 
     <Style TargetType="Button">
         <Setter Property="TextColor" Value="White" />
-        <Setter Property="Background" Value="{StaticResource CalciteTintNormal}" />
+        <Setter Property="Background" Value="{StaticResource CalciteUIBrandBrush}" />
     </Style>
 
     <Style TargetType="CheckBox">
-        <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource CalciteTintNormalColor_Light}, Dark={StaticResource CalciteTintNormalColor_Dark}}" />
+        <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource CalciteUIBrandLightColor}, Dark={StaticResource CalciteUIBrandDarkColor}}" />
     </Style>
 
     <!--<Style TargetType="DatePicker">
@@ -129,7 +127,7 @@
     </Style>-->
 
     <Style TargetType="Label">
-        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource CalciteForeground0Color_Light}, Dark={StaticResource CalciteForeground0Color_Dark}}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource CalciteUIText1LightColor}, Dark={StaticResource CalciteUIText1DarkColor}}" />
         <Setter Property="BackgroundColor" Value="Transparent" />
         <!--<Setter Property="FontFamily" Value="OpenSansRegular" />-->
         
@@ -281,7 +279,7 @@
     </Style>
 -->
     <Style TargetType="Switch">
-        <Setter Property="OnColor" Value="{AppThemeBinding Light={StaticResource CalciteTintNormalColor_Light}, Dark={StaticResource CalciteTintNormalColor_Dark}}" />
+        <Setter Property="OnColor" Value="{AppThemeBinding Light={StaticResource CalciteUIBrandLightColor}, Dark={StaticResource CalciteUIBrandDarkColor}}" />
         <Setter Property="ThumbColor" Value="White" />
         <Setter Property="VisualStateManager.VisualStateGroups">
             <VisualStateGroupList>
@@ -289,14 +287,14 @@
                     <VisualState x:Name="Normal" />
                     <VisualState x:Name="Disabled">
                         <VisualState.Setters>
-                            <Setter Property="OnColor" Value="{AppThemeBinding Light={StaticResource CalciteForeground3Color_Light}, Dark={StaticResource CalciteForeground3Color_Dark}}" />
+                            <Setter Property="OnColor" Value="{AppThemeBinding Light={StaticResource CalciteUIText3LightColor}, Dark={StaticResource CalciteUIText3DarkColor}}" />
                             <Setter Property="ThumbColor" Value="White" />
                         </VisualState.Setters>
                     </VisualState>
                     <VisualState x:Name="On">
                         <VisualState.Setters>
-                            <Setter Property="OnColor" Value="{AppThemeBinding Light={StaticResource CalciteTintNormalColor_Light}, Dark={StaticResource CalciteTintNormalColor_Dark}}" />
-                            <Setter Property="ThumbColor" Value="{AppThemeBinding Light={StaticResource CalciteForegroundInverseColor_Light}, Dark={StaticResource CalciteForegroundInverseColor_Dark}}" />
+                            <Setter Property="OnColor" Value="{AppThemeBinding Light={StaticResource CalciteUIBrandLightColor}, Dark={StaticResource CalciteUIBrandDarkColor}}" />
+                            <Setter Property="ThumbColor" Value="{AppThemeBinding Light={StaticResource CalciteUITextInverseLightColor}, Dark={StaticResource CalciteUITextInverseDarkColor}}" />
                         </VisualState.Setters>
                     </VisualState>
                     <VisualState x:Name="Off">
@@ -331,25 +329,25 @@
     </Style>-->
 
     <Style TargetType="Page" ApplyToDerivedTypes="True">
-        <Setter Property="Background" Value="{StaticResource CalciteBackground0}" />
+        <Setter Property="Background" Value="{StaticResource CalciteUIBackgroundBrush}" />
     </Style>
 
     <Style TargetType="Shell" ApplyToDerivedTypes="True">
-        <Setter Property="Shell.BackgroundColor" Value="{AppThemeBinding Light={StaticResource CalciteTintNormalColor_Light}, Dark={StaticResource CalciteTintNormalColor_Dark}}" />
-        <Setter Property="Shell.ForegroundColor" Value="{AppThemeBinding Light={StaticResource CalciteTintNormalColor_Light}, Dark={StaticResource CalciteTintNormalColor_Dark}}" />
+        <Setter Property="Shell.BackgroundColor" Value="{AppThemeBinding Light={StaticResource CalciteUIBrandLightColor}, Dark={StaticResource CalciteUIBrandDarkColor}}" />
+        <Setter Property="Shell.ForegroundColor" Value="{AppThemeBinding Light={StaticResource CalciteUIBrandLightColor}, Dark={StaticResource CalciteUIBrandDarkColor}}" />
         <Setter Property="Shell.TitleColor" Value="White" />
         <!--<Setter Property="Shell.DisabledColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray950}}" />-->
-        <Setter Property="Shell.UnselectedColor" Value="{AppThemeBinding Light={StaticResource CalciteForeground3Color_Light}, Dark={StaticResource CalciteForeground2Color_Dark}}" />
+        <Setter Property="Shell.UnselectedColor" Value="{AppThemeBinding Light={StaticResource CalciteUIText3LightColor}, Dark={StaticResource CalciteUIText2DarkColor}}" />
         <!--<Setter Property="Shell.NavBarHasShadow" Value="False" />-->
-        <Setter Property="Shell.TabBarBackgroundColor" Value="{AppThemeBinding Light={StaticResource CalciteBackground3Color_Light}, Dark={StaticResource CalciteBackground3Color_Dark}}" />
+        <Setter Property="Shell.TabBarBackgroundColor" Value="{AppThemeBinding Light={StaticResource CalciteUIForeground3LightColor}, Dark={StaticResource CalciteUIForeground3DarkColor}}" />
         <!--<Setter Property="Shell.TabBarForegroundColor" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />-->
-        <Setter Property="Shell.TabBarTitleColor" Value="{AppThemeBinding Light={StaticResource CalciteForeground1Color_Light}, Dark={StaticResource CalciteForeground1Color_Dark}}" />
+        <Setter Property="Shell.TabBarTitleColor" Value="{AppThemeBinding Light={StaticResource CalciteUIText1LightColor}, Dark={StaticResource CalciteUIText1DarkColor}}" />
         <!--<Setter Property="Shell.TabBarUnselectedColor" Value="{AppThemeBinding Light={StaticResource Gray900}, Dark={StaticResource Gray200}}" />-->
     </Style>
     <Style TargetType="NavigationPage">
-        <Setter Property="BarBackgroundColor" Value="{AppThemeBinding Light={StaticResource CalciteTintNormalColor_Light}, Dark={StaticResource CalciteTintNormalColor_Dark}}" />
-        <Setter Property="BarTextColor" Value="{AppThemeBinding Light={StaticResource CalciteForegroundInverseColor_Light}, Dark={StaticResource CalciteBackground0Color_Dark}}" />
-        <Setter Property="IconColor" Value="{AppThemeBinding Light={StaticResource CalciteForegroundInverseColor_Light}, Dark={StaticResource CalciteBackground0Color_Dark}}" />
+        <Setter Property="BarBackgroundColor" Value="{AppThemeBinding Light={StaticResource CalciteUIBrandLightColor}, Dark={StaticResource CalciteUIBrandDarkColor}}" />
+        <Setter Property="BarTextColor" Value="{AppThemeBinding Light={StaticResource CalciteUITextInverseLightColor}, Dark={StaticResource CalciteUIBackgroundDarkColor}}" />
+        <Setter Property="IconColor" Value="{AppThemeBinding Light={StaticResource CalciteUITextInverseLightColor}, Dark={StaticResource CalciteUIBackgroundDarkColor}}" />
     </Style>
     <!--
     

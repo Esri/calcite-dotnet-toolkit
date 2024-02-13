@@ -9,8 +9,8 @@
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <HorizontalStackLayout>
-                        <Border WidthRequest="100" HeightRequest="40" BackgroundColor="{Binding Color}" />
-                        <Label Text="{Binding Name}" VerticalOptions="Center" TextColor="White"/>
+                        <Border WidthRequest="100" HeightRequest="40" BackgroundColor="{Binding Color}" Margin="0,2,5,2" StrokeThickness="0" />
+                        <Label Text="{Binding Name}" VerticalOptions="Center" />
                     </HorizontalStackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>

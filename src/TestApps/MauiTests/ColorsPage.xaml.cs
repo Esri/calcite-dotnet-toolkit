@@ -17,7 +17,7 @@ public partial class ColorsPage : ContentPage
         if (colors is null)
         {
             ResourceDictionary dic = App.Current.Resources.MergedDictionaries.OfType<CalciteResources>().First();
-            dic = dic.MergedDictionaries.Where(m => m.Source.OriginalString == "Resources/Colors/Brushes.xaml;assembly=Esri.Calcite.Maui").First();
+            dic = dic.MergedDictionaries.Where(m => m.Source.OriginalString == "Resources/Styles/Brushes.xaml;assembly=Esri.Calcite.Maui").First();
             var dic2 = typeof(ResourceDictionary).GetField("_mergedInstance", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic).
                 GetValue(dic) as ResourceDictionary;
             var colorsDic = dic2.MergedDictionaries.Where(m => m.Source.OriginalString == "Colors.xaml;assembly=Esri.Calcite.Maui").First();
