@@ -3,7 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Styles/Fonts.xaml" />
-        <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Styles/Brushes.xaml" />
+        <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Colors/Brushes.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
 
@@ -59,9 +59,9 @@
     <StaticResource x:Key="CheckBoxCheckBackgroundFillUncheckedPointerOver" ResourceKey="SystemControlTransparentBrush" />
     <StaticResource x:Key="CheckBoxCheckBackgroundFillUncheckedPressed" ResourceKey="SystemControlBackgroundBaseMediumBrush" />
     <StaticResource x:Key="CheckBoxCheckBackgroundFillUncheckedDisabled" ResourceKey="SystemControlTransparentBrush" />-->
-    <StaticResource x:Key="CheckBoxCheckBackgroundFillChecked" ResourceKey="CalciteTintNormal" />
-    <StaticResource x:Key="CheckBoxCheckBackgroundFillCheckedPointerOver" ResourceKey="CalciteTintHover" />
-    <StaticResource x:Key="CheckBoxCheckBackgroundFillCheckedPressed" ResourceKey="CalciteTintPress" />
+    <StaticResource x:Key="CheckBoxCheckBackgroundFillChecked" ResourceKey="CalciteUIBrandBrush" />
+    <StaticResource x:Key="CheckBoxCheckBackgroundFillCheckedPointerOver" ResourceKey="CalciteUIBrandHoverBrush" />
+    <StaticResource x:Key="CheckBoxCheckBackgroundFillCheckedPressed" ResourceKey="CalciteUIBrandPressBrush" />
     <!--<StaticResource x:Key="CheckBoxCheckBackgroundFillCheckedDisabled" ResourceKey="SystemControlTransparentBrush" />
     <StaticResource x:Key="CheckBoxCheckBackgroundFillIndeterminate" ResourceKey="SystemControlHighlightTransparentBrush" />
     <StaticResource x:Key="CheckBoxCheckBackgroundFillIndeterminatePointerOver" ResourceKey="SystemControlHighlightTransparentBrush" />

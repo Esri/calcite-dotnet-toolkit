@@ -3,7 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Styles/Fonts.xaml" />
-        <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Styles/Brushes.xaml" />
+        <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Colors/Brushes.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <!--<Style TargetType="RadioButton">
@@ -41,9 +41,9 @@
     <StaticResource x:Key="RadioButtonOuterEllipseCheckedFillPointerOver" ResourceKey="SystemControlHighlightTransparentBrush" />
     <StaticResource x:Key="RadioButtonOuterEllipseCheckedFillPressed" ResourceKey="SystemControlHighlightTransparentBrush" />
     <StaticResource x:Key="RadioButtonOuterEllipseCheckedFillDisabled" ResourceKey="SystemControlTransparentBrush" />-->
-    <StaticResource x:Key="RadioButtonCheckGlyphFill" ResourceKey="CalciteTintNormal" />
-    <StaticResource x:Key="RadioButtonCheckGlyphFillPointerOver" ResourceKey="CalciteTintHover" />
-    <StaticResource x:Key="RadioButtonCheckGlyphFillPressed" ResourceKey="CalciteTintPress" />
+    <StaticResource x:Key="RadioButtonCheckGlyphFill" ResourceKey="CalciteUIBrandBrush" />
+    <StaticResource x:Key="RadioButtonCheckGlyphFillPointerOver" ResourceKey="CalciteUIBrandHoverBrush" />
+    <StaticResource x:Key="RadioButtonCheckGlyphFillPressed" ResourceKey="CalciteUIBrandPressBrush" />
     <!--<StaticResource x:Key="RadioButtonCheckGlyphFillDisabled" ResourceKey="SystemControlDisabledBaseMediumLowBrush" />
     <StaticResource x:Key="RadioButtonCheckGlyphStroke" ResourceKey="SystemControlTransparentBrush" />
     <StaticResource x:Key="RadioButtonCheckGlyphStrokePointerOver" ResourceKey="SystemControlTransparentBrush" />

@@ -54,7 +54,7 @@
             </CommandBar>
             <!--<Path Data="{StaticResource Calcite_UIIcons_Glyph_1_8x_32}" Width="100" Height="100" Fill="Blue" />-->
             <TextBlock Text="IconSourceElement:" Margin="0,20,0,0" />
-            <Border BorderBrush="{StaticResource CalciteTintNormal}" BorderThickness="1" HorizontalAlignment="Left">
+            <Border BorderBrush="{StaticResource CalciteUIBrandBrush}" BorderThickness="1" HorizontalAlignment="Left">
                 <IconSourceElement Width="32" Height="32">
                     <IconSourceElement.IconSource>
                         <cal:CalciteFontIconSource Icon="Map" FontSize="32" Scale="Large" />

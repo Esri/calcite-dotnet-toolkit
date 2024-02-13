@@ -12,13 +12,13 @@
     <Grid>
         <Grid.Resources>
             <DataTemplate x:Key="ColorTemplate">
-                <StackPanel Orientation="Horizontal" BorderThickness="0,0,0,1" BorderBrush="Black">
+                <StackPanel Orientation="Horizontal" BorderThickness="0,0,0,1" BorderBrush="{ThemeResource CalciteUIBorder1Brush}">
                     <Border Width="100" Height="50" BorderBrush="{ThemeResource ApplicationForegroundThemeBrush}" BorderThickness="1" Margin="0,5,5,5">
                         <Border.Background>
                             <SolidColorBrush Color="{Binding Value}" />
                         </Border.Background>
                     </Border>
-                    <TextBlock Text="{Binding Key}" VerticalAlignment="Center" Foreground="{StaticResource CalciteUIText1Brush}" />
+                    <TextBlock Text="{Binding Key}" VerticalAlignment="Center" />
                 </StackPanel>
             </DataTemplate>
         </Grid.Resources>

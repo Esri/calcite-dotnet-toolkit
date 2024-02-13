@@ -3,7 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Styles/Fonts.xaml" />
-        <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Styles/Brushes.xaml" />
+        <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Colors/Brushes.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <!--<StaticResource x:Key="ToggleSwitchContentForeground" ResourceKey="SystemControlForegroundBaseHighBrush" />
@@ -22,9 +22,9 @@
     <StaticResource x:Key="ToggleSwitchStrokeOffPointerOver" ResourceKey="SystemControlHighlightBaseHighBrush" />
     <StaticResource x:Key="ToggleSwitchStrokeOffPressed" ResourceKey="SystemControlForegroundBaseMediumHighBrush" />
     <StaticResource x:Key="ToggleSwitchStrokeOffDisabled" ResourceKey="SystemControlDisabledBaseMediumLowBrush" />-->
-    <StaticResource x:Key="ToggleSwitchFillOn" ResourceKey="CalciteTintNormal" />
-    <StaticResource x:Key="ToggleSwitchFillOnPointerOver" ResourceKey="CalciteTintHover" />
-    <StaticResource x:Key="ToggleSwitchFillOnPressed" ResourceKey="CalciteTintPress" />
+    <StaticResource x:Key="ToggleSwitchFillOn" ResourceKey="CalciteUIBrandBrush" />
+    <StaticResource x:Key="ToggleSwitchFillOnPointerOver" ResourceKey="CalciteUIBrandHoverBrush" />
+    <StaticResource x:Key="ToggleSwitchFillOnPressed" ResourceKey="CalciteUIBrandPressBrush" />
     <!--<StaticResource x:Key="ToggleSwitchFillOnDisabled" ResourceKey="SystemControlDisabledBaseLowBrush" />
     <StaticResource x:Key="ToggleSwitchStrokeOn" ResourceKey="SystemControlHighlightBaseHighBrush" />
     <StaticResource x:Key="ToggleSwitchStrokeOnPointerOver" ResourceKey="SystemControlHighlightListAccentHighBrush" />

@@ -3,10 +3,10 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Styles/Fonts.xaml" />
-        <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Styles/Brushes.xaml" />
+        <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Colors/Brushes.xaml" />
     </ResourceDictionary.MergedDictionaries>
     <Style TargetType="TextBox">
-        <Setter Property="Background" Value="{ThemeResource CalciteBackground1}" />
+        <Setter Property="Background" Value="{ThemeResource CalciteUIForeground1Brush}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="FontSize" Value="12" />
         <Setter Property="Padding" Value="4" />
@@ -17,7 +17,7 @@
         <!--<Setter Property="Cursor" Value="IBeam" />-->
         <Setter Property="TextWrapping" Value="Wrap" />
         <!--<Setter Property="CaretBrush" Value="{StaticResource TintNormal}" />-->
-        <Setter Property="BorderBrush" Value="{ThemeResource CalciteBorder2}" />
+        <Setter Property="BorderBrush" Value="{ThemeResource CalciteUIBorder2Brush}" />
         <!--<Setter Property="Foreground" Value="{StaticResource Foreground1}" />-->
         <!--<Setter Property="SelectionBrush" Value="{StaticResource TintNormal}" />-->
     </Style>

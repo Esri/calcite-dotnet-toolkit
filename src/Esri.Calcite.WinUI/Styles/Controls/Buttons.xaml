@@ -7,9 +7,9 @@
         <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Styles/Brushes.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
-    <StaticResource x:Key="ButtonBackground" ResourceKey="CalciteTintNormal" />
-    <StaticResource x:Key="ButtonBackgroundPointerOver" ResourceKey="CalciteTintHover" />
-    <StaticResource x:Key="ButtonBackgroundPressed" ResourceKey="CalciteTintPress" />
+    <StaticResource x:Key="ButtonBackground" ResourceKey="CalciteUIBrandBrush" />
+    <StaticResource x:Key="ButtonBackgroundPointerOver" ResourceKey="CalciteUIBrandHoverBrush" />
+    <StaticResource x:Key="ButtonBackgroundPressed" ResourceKey="CalciteUIBrandPressBrush" />
     <!--<StaticResource x:Key="ButtonBackgroundDisabled" ResourceKey="SystemControlBackgroundBaseLowBrush" />-->
     <StaticResource x:Key="ButtonForeground" ResourceKey="CalciteForegroundAlwaysLight" />
     <StaticResource x:Key="ButtonForegroundPointerOver" ResourceKey="CalciteForegroundAlwaysLight" />
