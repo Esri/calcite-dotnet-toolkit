@@ -14,7 +14,7 @@
             builder.ConfigureMauiHandlers(delegate (IMauiHandlersCollection a)
             {
             }).ConfigureFonts(fonts =>
-                 fonts.AddFont("calcite-ui-icons.ttf", "calcite-ui-icons")
+                 fonts.AddEmbeddedResourceFont(typeof(AppHostBuilderExtensions).Assembly, "calcite-ui-icons.ttf", "calcite-ui-icons")
                       //.AddFont("AvenirNextW1G-Demi.otf", "AvenirNextW1G-Demi")
                       //.AddFont("AvenirNextW1G-Light.otf", "AvenirNextW1G-Light")
                       //.AddFont("AvenirNextW1G-Medium.otf", "AvenirNextW1G-Medium")

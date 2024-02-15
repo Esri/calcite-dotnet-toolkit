@@ -156,8 +156,8 @@
         <Setter Property="VerticalAlignment" Value="Top" />
         <Setter Property="Height" Value="28" />
         <Setter Property="Focusable" Value="True" />
-        <Setter Property="Background" Value="{DynamicResource CalciteBackgroundInputBrush}" />
-        <Setter Property="Foreground" Value="{DynamicResource CalciteForegroundInputBrush}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder2Brush}" />
         <Setter Property="Template" Value="{StaticResource CalciteDatePickerTemplate}" />
 

@@ -10,7 +10,7 @@
     </PropertyGroup>
 
     <ItemGroup>    
-      <MauiFont Include="..\..\GeneratedResources\*.ttf" Link="Resources\Fonts\%(Filename)%(Extension)" />
+      <EmbeddedResource Include="..\..\GeneratedResources\*.ttf" Link="Resources\Fonts\%(Filename)%(Extension)" />
       <Compile Include="..\..\GeneratedResources\Maui\*.cs" Link="GeneratedResources\%(RecursiveDir)%(Filename)%(Extension)" />
       <None Include="README.txt" Pack="True" PackagePath="\" />
 

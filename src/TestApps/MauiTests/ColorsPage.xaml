@@ -5,7 +5,7 @@
 
     <Grid>
         <CollectionView x:Name="collectionView" Grid.Row="1" Margin="20,5" ItemSizingStrategy="MeasureFirstItem"
-                        Background="{StaticResource CalciteBackground0Color_Dark}">
+                        Background="{StaticResource CalciteUIBackgroundColor_Dark}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <HorizontalStackLayout>

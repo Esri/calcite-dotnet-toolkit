@@ -2,22 +2,6 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Colors/Brushes.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    <ResourceDictionary.ThemeDictionaries>
-        <ResourceDictionary x:Key="Default">
-            <Color x:Key="CalciteBackgroundInputColor">#2B2B2B</Color>
-            <Color x:Key="CalciteForegroundInputColor">#FFF</Color>
-            <Color x:Key="CalciteControlFillColorDefault">#b3000000</Color>
-        </ResourceDictionary>
-        <ResourceDictionary x:Key="Light">
-            <Color x:Key="CalciteBackgroundInputColor">#FFF</Color>
-            <Color x:Key="CalciteForegroundInputColor">#151515</Color>
-            <Color x:Key="CalciteControlFillColorDefault">#b3ffffff</Color>
-        </ResourceDictionary>
-    </ResourceDictionary.ThemeDictionaries>
-
-    <SolidColorBrush x:Key="CalciteBackgroundInput" Color="{ThemeResource CalciteBackgroundInputColor}" />
-    <SolidColorBrush x:Key="CalciteForegroundInput" Color="{ThemeResource CalciteForegroundInputColor}" />
-    <SolidColorBrush x:Key="CalciteForegroundAlwaysLight" Color="#FFF" />
 
     <StaticResource x:Key="SystemControlForegroundBaseHighBrush" ResourceKey="CalciteUIText1Brush" />
 
