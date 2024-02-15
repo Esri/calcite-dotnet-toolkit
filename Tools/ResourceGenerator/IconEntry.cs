@@ -14,29 +14,31 @@ namespace IconXamlGenerator
         public static IList<IconEntry> LoadFromJson(string pathToJson, string pathToGlyphList)
         {
             var inputText = System.IO.File.ReadAllText(pathToJson);
-            var output = JsonConvert.DeserializeObject(inputText) as JObject;
+            var output = (JObject)JsonConvert.DeserializeObject(inputText)!;
 
-            JObject icons = (JObject)output["icons"];
+            JObject icons = (JObject)(output["icons"] ?? throw new InvalidOperationException("'icons' not found in json"));
             List<IconEntry> iconEntries = new List<IconEntry>();
             foreach (var icon in icons)
             {
+                if (icon.Value is null) continue;
                 var name = icon.Key;
-                var entry = new IconEntry() { Key = name };
-                
-                entry.S16 = icon.Value["16"].ToString();
-                entry.S24 = icon.Value["24"].ToString();
-                entry.S32 = icon.Value["32"].ToString();
-                entry.Alias = string.Join(", ", icon.Value["alias"].ToArray().Select(v => v.ToString()));
-                //entry.Alias = icon.Value["alias"]?.ToString().Replace("\n", ",");
-                entry.Category = icon.Value["category"]?.ToString();
-                entry.Release = icon.Value["release"]?.ToString();
-                entry.MultiPath = icon.Value["multiPath"]?.Value<bool>() == true;
+                var entry = new IconEntry() {
+                    Key = name,
+
+                    S16 = icon.Value["16"]?.ToString() ?? throw new InvalidOperationException("'16' not found in json"),
+                    S24 = icon.Value["24"]?.ToString() ?? throw new InvalidOperationException("'24' not found in json"),
+                    S32 = icon.Value["32"]?.ToString() ?? throw new InvalidOperationException("'32' not found in json"),
+                    Alias = string.Join(", ", icon.Value["alias"]!.ToArray().Select(v => v.ToString())),
+                    Category = icon.Value["category"]?.ToString(),
+                    Release = icon.Value["release"]?.ToString(),
+                    MultiPath = icon.Value["multiPath"]?.Value<bool>() == true,
+                };
                 iconEntries.Add(entry);
             }
             inputText = System.IO.File.ReadAllText(pathToGlyphList);
             output = JsonConvert.DeserializeObject(inputText) as JObject;
-            var codepoints = output["codepoints"] as JObject;
-            foreach(var item in codepoints!)
+            var codepoints = output!["codepoints"] as JObject ?? throw new InvalidOperationException("'codepoints' not found in json");
+            foreach (var item in codepoints!)
             {
                 var key = item.Key;
                 bool isFilled = key.EndsWith("-f");
@@ -113,10 +115,10 @@ namespace IconXamlGenerator
             return name;
         }
         public string ResourceName => CamelCase(Name, true) + (IsFilled ? "Filled" : "");
-        public string Key { get; set; }
-        public string S16 { get; set; }
-        public string S24 { get; set; }
-        public string S32 { get; set; }
+        public required string Key { get; set; }
+        public required string S16 { get; set; }
+        public required string S24 { get; set; }
+        public required string S32 { get; set; }
         public string CSName
         {
             get
@@ -134,9 +136,9 @@ namespace IconXamlGenerator
             }
         }
         public string PrettyName => CamelCase(Name, false) + (IsFilled ? " (Filled)" : "");
-        public string Alias { get; set; }
-        public string Category { get; set; }
-        public string Release { get; set; }
+        public string? Alias { get; set; }
+        public string? Category { get; set; }
+        public string? Release { get; set; }
 
         static string CamelCase(string name, bool SkipSpaces)
         {
