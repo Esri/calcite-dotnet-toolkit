@@ -41,7 +41,7 @@
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
                                 Data="{c:CalciteIconGeometry Icon=ChevronRight, Scale=Small}"
-                                Fill="{DynamicResource CalciteForeground0}"
+                                Fill="{DynamicResource CalciteUIText1Brush}"
                                 Stretch="Uniform">
                                 <Path.LayoutTransform>
                                     <TransformGroup>
@@ -78,7 +78,7 @@
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsChecked" Value="True">
-                            <Setter TargetName="ChevronIcon" Property="Fill" Value="{DynamicResource CalciteTintNormal}" />
+                            <Setter TargetName="ChevronIcon" Property="Fill" Value="{DynamicResource CalciteUIBrandBrush}" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -94,7 +94,7 @@
                         <Rectangle
                             x:Name="FocusRectangle"
                             Opacity="1"
-                            Stroke="{DynamicResource CalciteTintNormal}"
+                            Stroke="{DynamicResource CalciteUIBrandBrush}"
                             StrokeThickness="2" />
                     </Border>
                 </ControlTemplate>
@@ -106,8 +106,8 @@
         <Setter Property="Cursor" Value="{DynamicResource CalciteActionCursor}" />
         <Setter Property="Margin" Value="0,7,0,0" />
         <Setter Property="FocusVisualStyle" Value="{StaticResource TreeViewItemFocusVisual}" />
-        <Setter Property="Foreground" Value="{DynamicResource CalciteForeground3}" />
-        <Setter Property="Background" Value="{DynamicResource CalciteBackground1}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText3Brush}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type TreeViewItem}">
@@ -126,7 +126,7 @@
                             Height="4"
                             HorizontalAlignment="Center"
                             VerticalAlignment="Center"
-                            Fill="{DynamicResource CalciteForeground0}"
+                            Fill="{DynamicResource CalciteUIText1Brush}"
                             Visibility="Collapsed" />
                         <Ellipse
                             x:Name="SelectionEllipse"
@@ -134,7 +134,7 @@
                             Height="4"
                             HorizontalAlignment="Center"
                             VerticalAlignment="Center"
-                            Fill="{DynamicResource CalciteTintNormal}"
+                            Fill="{DynamicResource CalciteUIBrandBrush}"
                             Visibility="Collapsed" />
                         <ToggleButton
                             x:Name="Expander"
@@ -188,12 +188,12 @@
                                 <Condition Property="HasItems" Value="False" />
                             </MultiTrigger.Conditions>
                             <MultiTrigger.Setters>
-                                <Setter Property="Foreground" Value="{DynamicResource CalciteForeground0}" />
+                                <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
                                 <Setter TargetName="SelectionEllipse" Property="Visibility" Value="Visible" />
                             </MultiTrigger.Setters>
                         </MultiTrigger>
                         <Trigger Property="IsSelected" Value="True">
-                            <Setter TargetName="PART_Header" Property="TextElement.Foreground" Value="{DynamicResource CalciteForeground1}" />
+                            <Setter TargetName="PART_Header" Property="TextElement.Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
                         </Trigger>
                         <Trigger Property="IsExpanded" Value="True">
                             <Setter TargetName="ItemsHost" Property="Visibility" Value="Visible" />
@@ -224,7 +224,7 @@
             <Trigger Property="ca:AttachedFormData.IsInForm" Value="True">
                 <Setter Property="Margin" Value="{DynamicResource FormChildMargin}" />
                 <Setter Property="BorderThickness" Value="1" />
-                <Setter Property="BorderBrush" Value="{DynamicResource CalciteBorder1}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder1Brush}" />
             </Trigger>
         </Style.Triggers>
     </Style>

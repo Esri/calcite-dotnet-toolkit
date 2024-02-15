@@ -8,8 +8,6 @@
         <ResourceDictionary Source=".\Shared\Fonts.xaml" />
         <ResourceDictionary Source=".\Icons\Glyphs.xaml" />
         <ResourceDictionary Source=".\ControlOverrides.xaml" />
-        <ResourceDictionary Source=".\Shared\Brushes.xaml" /> <!--deprecated-->
-        <ResourceDictionary Source=".\Shared\Colors.Dark.xaml" /> <!--deprecated-->
     </ResourceDictionary.MergedDictionaries>
 
 </ResourceDictionary>

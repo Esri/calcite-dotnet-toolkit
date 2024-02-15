@@ -15,7 +15,7 @@
         <Setter Property="HorizontalContentAlignment" Value="Stretch" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="Margin" Value="0" />
-        <Setter Property="Foreground" Value="{DynamicResource CalciteForeground0}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ListBoxItem}">
@@ -38,14 +38,14 @@
                             <MultiTrigger.Conditions>
                                 <Condition Property="IsMouseOver" Value="True" />
                             </MultiTrigger.Conditions>
-                            <Setter Property="Background" Value="{DynamicResource CalciteBackground2}" />
+                            <Setter Property="Background" Value="{DynamicResource CalciteUIBackground2Brush}" />
                         </MultiTrigger>
                         <MultiTrigger>
                             <MultiTrigger.Conditions>
                                 <Condition Property="Selector.IsSelectionActive" Value="False" />
                                 <Condition Property="IsSelected" Value="True" />
                             </MultiTrigger.Conditions>
-                            <Setter TargetName="Bd" Property="Background" Value="{DynamicResource CalciteTintPress}" />
+                            <Setter TargetName="Bd" Property="Background" Value="{DynamicResource CalciteUIBrandPressBrush}" />
                             <Setter TargetName="ContentPart" Property="TextElement.Foreground" Value="{DynamicResource CalciteForegroundAlwaysLight}" />
                         </MultiTrigger>
                         <MultiTrigger>
@@ -53,11 +53,11 @@
                                 <Condition Property="Selector.IsSelectionActive" Value="True" />
                                 <Condition Property="IsSelected" Value="True" />
                             </MultiTrigger.Conditions>
-                            <Setter TargetName="Bd" Property="Background" Value="{DynamicResource CalciteTintNormal}" />
+                            <Setter TargetName="Bd" Property="Background" Value="{DynamicResource CalciteUIBrandBrush}" />
                             <Setter TargetName="ContentPart" Property="TextElement.Foreground" Value="{DynamicResource CalciteForegroundAlwaysLight}" />
                         </MultiTrigger>
                         <Trigger Property="IsEnabled" Value="False">
-                            <Setter TargetName="Bd" Property="TextElement.Foreground" Value="{DynamicResource CalciteForeground3}" />
+                            <Setter TargetName="Bd" Property="TextElement.Foreground" Value="{DynamicResource CalciteUIText3Brush}" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -69,8 +69,8 @@
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="Margin" Value="0" />
         <Setter Property="VerticalAlignment" Value="Top" />
-        <Setter Property="Background" Value="{DynamicResource CalciteBackground0}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource CalciteBorder3}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteUIBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder3Brush}" />
         <Style.Triggers>
             <Trigger Property="ca:AttachedFormData.IsInForm" Value="True">
                 <Setter Property="Margin" Value="{DynamicResource FormChildMargin}" />

@@ -2,7 +2,7 @@
     <Style TargetType="ContentPresenter">
         <Setter Property="TextElement.FontFamily" Value="{DynamicResource AvenirNext-Regular}" />
         <Setter Property="TextElement.FontSize" Value="12" />
-        <Setter Property="TextElement.Foreground" Value="{DynamicResource CalciteForeground0}" />
+        <Setter Property="TextElement.Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
         <Setter Property="TextBlock.LineHeight" Value="16.2" />
         <!--<Setter Property="TextBlock.LineStackingStrategy" Value="BlockLineHeight" />
         <Setter Property="TextOptions.TextFormattingMode" Value="Ideal" />

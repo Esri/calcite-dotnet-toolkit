@@ -16,7 +16,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     Data="M8 11.207l-4-4V5.793l4 4 4-4v1.414z"
-                    Fill="{DynamicResource CalciteForeground0}"
+                    Fill="{DynamicResource CalciteUIText1Brush}"
                     Stretch="Uniform" />
                 <Path
                     x:Name="ExpandededArrow"
@@ -26,7 +26,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     Data="M8 6.207l-4 4V8.793l4-4 4 4v1.414z"
-                    Fill="{DynamicResource CalciteForeground0}"
+                    Fill="{DynamicResource CalciteUIText1Brush}"
                     Stretch="Uniform"
                     Visibility="Collapsed" />
             </Grid>
@@ -50,9 +50,9 @@
     </ControlTemplate>
 
     <Style x:Key="CalciteExpander" TargetType="{x:Type Expander}">
-        <Setter Property="Background" Value="{DynamicResource CalciteBackground1}" />
-        <Setter Property="Foreground" Value="{DynamicResource CalciteForeground1}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource CalciteBorder2}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder2Brush}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="Padding" Value="0" />
         <Setter Property="Template">
@@ -81,7 +81,7 @@
                                     HorizontalAlignment="Stretch"
                                     VerticalAlignment="Stretch"
                                     ca:AttachedFormData.IsInForm="False"
-                                    Background="{DynamicResource CalciteBackground1}"
+                                    Background="{DynamicResource CalciteUIBackground1Brush}"
                                     IsChecked="{Binding IsExpanded, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
                                     OverridesDefaultStyle="True"
                                     Template="{StaticResource ExpanderToggleButton}" />

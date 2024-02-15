@@ -6,20 +6,20 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type RepeatButton}">
-                    <Border x:Name="Border" Background="{DynamicResource CalciteBackground0}">
+                    <Border x:Name="Border" Background="{DynamicResource CalciteUIBackgroundBrush}">
                         <Path
                             x:Name="Arrow"
                             HorizontalAlignment="Center"
                             VerticalAlignment="Center"
                             Data="{Binding Content, RelativeSource={RelativeSource TemplatedParent}}"
-                            Fill="{DynamicResource CalciteForeground0}" />
+                            Fill="{DynamicResource CalciteUIText1Brush}" />
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="Border" Property="Background" Value="{DynamicResource CalciteBackground2}" />
+                            <Setter TargetName="Border" Property="Background" Value="{DynamicResource CalciteUIBackground2Brush}" />
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">
-                            <Setter TargetName="Arrow" Property="Fill" Value="{DynamicResource CalciteTintNormal}" />
+                            <Setter TargetName="Arrow" Property="Fill" Value="{DynamicResource CalciteUIBrandBrush}" />
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="False">
                             <Setter Property="Opacity" Value="0" />
@@ -50,20 +50,20 @@
         <Setter Property="IsTabStop" Value="false" />
         <Setter Property="Focusable" Value="false" />
         <Setter Property="Cursor" Value="{DynamicResource CalciteActionCursor}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource CalciteTintNormal}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Thumb}">
                     <Border
                         x:Name="bd"
-                        Background="{DynamicResource CalciteBackground0}"
-                        BorderBrush="{DynamicResource CalciteBorder3}"
+                        Background="{DynamicResource CalciteUIBackgroundBrush}"
+                        BorderBrush="{DynamicResource CalciteUIBorder3Brush}"
                         BorderThickness="1"
                         CornerRadius="4" />
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="bd" Property="Background" Value="{DynamicResource CalciteBackground2}" />
-                            <Setter TargetName="bd" Property="BorderBrush" Value="{DynamicResource CalciteTintNormal}" />
+                            <Setter TargetName="bd" Property="Background" Value="{DynamicResource CalciteUIBackground2Brush}" />
+                            <Setter TargetName="bd" Property="BorderBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -78,7 +78,7 @@
                 <RowDefinition Height="0.000001*" />
                 <RowDefinition MaxHeight="16" />
             </Grid.RowDefinitions>
-            <Border Grid.RowSpan="3" Background="{DynamicResource CalciteBackground0}" />
+            <Border Grid.RowSpan="3" Background="{DynamicResource CalciteUIBackgroundBrush}" />
             <RepeatButton
                 Grid.Row="0"
                 Command="ScrollBar.LineUpCommand"
@@ -95,9 +95,9 @@
                 <Track.Thumb>
                     <Thumb
                         Margin="1,0,1,0"
-                        Background="{DynamicResource CalciteBackground0}"
-                        BorderBrush="{DynamicResource CalciteBorder3}"
-                        Foreground="{DynamicResource CalciteTintNormal}"
+                        Background="{DynamicResource CalciteUIBackgroundBrush}"
+                        BorderBrush="{DynamicResource CalciteUIBorder3Brush}"
+                        Foreground="{DynamicResource CalciteUIBrandBrush}"
                         Style="{StaticResource ScrollBarThumb}" />
                 </Track.Thumb>
                 <Track.IncreaseRepeatButton>
@@ -137,9 +137,9 @@
                 <Track.Thumb>
                     <Thumb
                         Margin="0,1,0,1"
-                        Background="{DynamicResource CalciteBackground0}"
-                        BorderBrush="{DynamicResource CalciteBorder3}"
-                        Foreground="{DynamicResource CalciteForeground0}"
+                        Background="{DynamicResource CalciteUIBackgroundBrush}"
+                        BorderBrush="{DynamicResource CalciteUIBorder3Brush}"
+                        Foreground="{DynamicResource CalciteUIText1Brush}"
                         Style="{StaticResource ScrollBarThumb}" />
                 </Track.Thumb>
                 <Track.IncreaseRepeatButton>

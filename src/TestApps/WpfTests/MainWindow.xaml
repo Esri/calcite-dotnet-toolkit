@@ -10,7 +10,7 @@
         mc:Ignorable="d"
             Style="{DynamicResource CalciteWindow}"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Background="{DynamicResource CalciteBackground0}">
+    <Grid Background="{DynamicResource CalciteUIBackgroundBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />

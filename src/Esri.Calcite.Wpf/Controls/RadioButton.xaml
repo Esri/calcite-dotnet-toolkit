@@ -10,7 +10,7 @@
                     Width="12"
                     Height="12"
                     Fill="Transparent"
-                    Stroke="{DynamicResource CalciteForeground3}"
+                    Stroke="{DynamicResource CalciteUIText3Brush}"
                     StrokeThickness="1" />
             </BulletDecorator.Bullet>
             <ContentPresenter
@@ -28,21 +28,21 @@
                     <Condition Property="IsMouseOver" Value="True" />
                 </MultiTrigger.Conditions>
                 <MultiTrigger.Setters>
-                    <Setter TargetName="Border" Property="Stroke" Value="{DynamicResource CalciteTintHover}" />
+                    <Setter TargetName="Border" Property="Stroke" Value="{DynamicResource CalciteUIBrandHoverBrush}" />
                     <Setter TargetName="Border" Property="StrokeThickness" Value="2" />
                 </MultiTrigger.Setters>
             </MultiTrigger>
             <!--  Checked, light, small  -->
             <Trigger Property="IsChecked" Value="True">
                 <Setter TargetName="Border" Property="StrokeThickness" Value="4" />
-                <Setter TargetName="Border" Property="Stroke" Value="{DynamicResource CalciteTintNormal}" />
+                <Setter TargetName="Border" Property="Stroke" Value="{DynamicResource CalciteUIBrandBrush}" />
             </Trigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
                     <Condition Property="IsMouseOver" Value="False" />
                     <Condition Property="IsChecked" Value="False" />
                 </MultiTrigger.Conditions>
-                <Setter TargetName="Border" Property="Stroke" Value="{DynamicResource CalciteForeground3}" />
+                <Setter TargetName="Border" Property="Stroke" Value="{DynamicResource CalciteUIText3Brush}" />
                 <Setter TargetName="Border" Property="StrokeThickness" Value="1" />
             </MultiTrigger>
             <!--  Basic theme triggers  -->

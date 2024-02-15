@@ -14,7 +14,7 @@
                     Width="12"
                     Height="12"
                     Background="Transparent"
-                    BorderBrush="{DynamicResource CalciteBorder0}"
+                    BorderBrush="{DynamicResource CalciteUIBorder1Brush}"
                     BorderThickness="1"
                     SnapsToDevicePixels="True">
                     <Grid>
@@ -53,8 +53,8 @@
                 <Setter TargetName="Border" Property="BorderThickness" Value="0" />
                 <Setter TargetName="CheckMark" Property="Fill" Value="{DynamicResource CalciteForegroundAlwaysLight}" />
                 <Setter TargetName="InderminateMark" Property="Fill" Value="{DynamicResource CalciteForegroundAlwaysLight}" />
-                <Setter TargetName="Border" Property="Background" Value="{DynamicResource CalciteTintNormal}" />
-                <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource CalciteTintNormal}" />
+                <Setter TargetName="Border" Property="Background" Value="{DynamicResource CalciteUIBrandBrush}" />
+                <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
             </Trigger>
             <!--  Indeterminate, light  -->
             <Trigger Property="IsChecked" Value="{x:Null}">
@@ -62,8 +62,8 @@
                 <Setter TargetName="Border" Property="BorderThickness" Value="0" />
                 <Setter TargetName="CheckMark" Property="Fill" Value="{DynamicResource CalciteForegroundAlwaysLight}" />
                 <Setter TargetName="InderminateMark" Property="Fill" Value="{DynamicResource CalciteForegroundAlwaysLight}" />
-                <Setter TargetName="Border" Property="Background" Value="{DynamicResource CalciteTintNormal}" />
-                <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource CalciteTintNormal}" />
+                <Setter TargetName="Border" Property="Background" Value="{DynamicResource CalciteUIBrandBrush}" />
+                <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
             </Trigger>
             <!--  Unchecked, not hovered, light  -->
             <MultiTrigger>
@@ -72,7 +72,7 @@
                     <Condition Property="IsChecked" Value="False" />
                 </MultiTrigger.Conditions>
                 <Setter TargetName="Border" Property="Background" Value="Transparent" />
-                <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource CalciteBorderInput}" />
+                <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource CalciteUIBorderInputBrush}" />
                 <Setter TargetName="Border" Property="BorderThickness" Value="1" />
             </MultiTrigger>
             <MultiTrigger>
@@ -81,7 +81,7 @@
                     <Condition Property="IsMouseOver" Value="True" />
                 </MultiTrigger.Conditions>
                 <MultiTrigger.Setters>
-                    <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource CalciteTintNormal}" />
+                    <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
                     <Setter TargetName="Border" Property="BorderThickness" Value="2" />
                 </MultiTrigger.Setters>
             </MultiTrigger>
@@ -92,8 +92,8 @@
                     <Condition Property="IsMouseOver" Value="True" />
                 </MultiTrigger.Conditions>
                 <MultiTrigger.Setters>
-                    <Setter TargetName="Border" Property="Background" Value="{DynamicResource CalciteTintHover}" />
-                    <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource CalciteTintHover}" />
+                    <Setter TargetName="Border" Property="Background" Value="{DynamicResource CalciteUIBrandHoverBrush}" />
+                    <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource CalciteUIBrandHoverBrush}" />
                     <Setter TargetName="Border" Property="BorderThickness" Value="0" />
                 </MultiTrigger.Setters>
             </MultiTrigger>
@@ -104,7 +104,7 @@
                     <Condition Property="IsMouseOver" Value="True" />
                 </MultiTrigger.Conditions>
                 <MultiTrigger.Setters>
-                    <Setter TargetName="Border" Property="Background" Value="{DynamicResource CalciteTintHover}" />
+                    <Setter TargetName="Border" Property="Background" Value="{DynamicResource CalciteUIBrandHoverBrush}" />
                 </MultiTrigger.Setters>
             </MultiTrigger>
             <!--  Disabled  -->

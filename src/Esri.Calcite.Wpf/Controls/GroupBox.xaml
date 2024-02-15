@@ -6,8 +6,8 @@
     <ControlTemplate x:Key="GroupBoxBasixTemplate" TargetType="GroupBox">
         <Border
             Padding="8"
-            Background="{DynamicResource CalciteBackground1}"
-            BorderBrush="{DynamicResource CalciteBorder3}"
+            Background="{DynamicResource CalciteUIBackground1Brush}"
+            BorderBrush="{DynamicResource CalciteUIBorder3Brush}"
             BorderThickness="1">
 
             <Grid>
@@ -20,7 +20,7 @@
                     RecognizesAccessKey="True"
                     TextElement.FontFamily="{StaticResource AvenirNext-Medium}"
                     TextElement.FontSize="14"
-                    TextElement.Foreground="{DynamicResource CalciteTintNormal}" />
+                    TextElement.Foreground="{DynamicResource CalciteUIBrandBrush}" />
                 <ContentPresenter Grid.Row="1" Margin="0,8,0,0" />
             </Grid>
         </Border>
@@ -35,8 +35,8 @@
             <Border
                 Grid.Row="0"
                 Padding="8"
-                Background="{DynamicResource CalciteBackground0}"
-                BorderBrush="{DynamicResource CalciteBorder3}"
+                Background="{DynamicResource CalciteUIBackgroundBrush}"
+                BorderBrush="{DynamicResource CalciteUIBorder3Brush}"
                 BorderThickness="1">
                 <ContentPresenter
                     ContentSource="Header"
@@ -46,8 +46,8 @@
             <Border
                 Grid.Row="1"
                 Padding="8"
-                Background="{DynamicResource CalciteBackground1}"
-                BorderBrush="{DynamicResource CalciteBorder3}"
+                Background="{DynamicResource CalciteUIBackground1Brush}"
+                BorderBrush="{DynamicResource CalciteUIBorder3Brush}"
                 BorderThickness="1,0,1,1">
                 <ContentPresenter />
             </Border>
@@ -55,12 +55,12 @@
     </ControlTemplate>
     <Style TargetType="GroupBox">
         <Setter Property="Template" Value="{StaticResource GroupBoxBasixTemplate}" />
-        <Setter Property="Foreground" Value="{DynamicResource CalciteForeground1}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
         <Setter Property="FontFamily" Value="{StaticResource AvenirNext-Regular}" />
     </Style>
     <Style x:Key="PanelGroupBox" TargetType="GroupBox">
         <Setter Property="Template" Value="{StaticResource GroupBoxPanelTemplate}" />
-        <Setter Property="Foreground" Value="{DynamicResource CalciteForeground1}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
         <Setter Property="FontFamily" Value="{StaticResource AvenirNext-Regular}" />
     </Style>
 </ResourceDictionary>

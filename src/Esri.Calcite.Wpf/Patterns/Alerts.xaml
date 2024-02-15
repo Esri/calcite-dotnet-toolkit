@@ -11,7 +11,7 @@
         <Setter Property="VerticalAlignment" Value="Bottom" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="MinWidth" Value="80" />
-        <Setter Property="Background" Value="{DynamicResource CalciteBackground1}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
         <Setter Property="BorderThickness" Value="{StaticResource AlertBorderThickness}" />
         <Setter Property="Template">
             <Setter.Value>
@@ -59,24 +59,24 @@
         x:Key="Pattern.Alert.Tint"
         BasedOn="{StaticResource AlertBorderBase}"
         TargetType="GroupBox">
-        <Setter Property="BorderBrush" Value="{DynamicResource CalciteTintNormal}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
     </Style>
     <Style
         x:Key="Pattern.Alert.Danger"
         BasedOn="{StaticResource AlertBorderBase}"
         TargetType="GroupBox">
-        <Setter Property="BorderBrush" Value="{DynamicResource CalciteDangerNormal}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIDangerBrush}" />
     </Style>
     <Style
         x:Key="Pattern.Alert.Warning"
         BasedOn="{StaticResource AlertBorderBase}"
         TargetType="GroupBox">
-        <Setter Property="BorderBrush" Value="{DynamicResource CalciteWarningNormal}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIWarningBrush}" />
     </Style>
     <Style
         x:Key="Pattern.Alert.Success"
         BasedOn="{StaticResource AlertBorderBase}"
         TargetType="GroupBox">
-        <Setter Property="BorderBrush" Value="{DynamicResource CalciteSuccessNormal}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteUISuccessBrush}" />
     </Style>
 </ResourceDictionary>

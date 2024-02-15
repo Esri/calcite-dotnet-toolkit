@@ -19,7 +19,7 @@
                     ContentSource="Header"
                     TextElement.FontFamily="{DynamicResource AvenirNext-Regular}"
                     TextElement.FontSize="14"
-                    TextElement.Foreground="{DynamicResource CalciteForeground1}" />
+                    TextElement.Foreground="{DynamicResource CalciteUIText1Brush}" />
             </Border>
             <Border
                 x:Name="bd_body"
@@ -48,8 +48,8 @@
     </ControlTemplate>
     <Style x:Key="Patterns.Panel.OverMap" TargetType="GroupBox">
         <Setter Property="HorizontalAlignment" Value="Right" />
-        <Setter Property="Background" Value="{DynamicResource CalciteBackground1}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource CalciteBorder3}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder3Brush}" />
         <Setter Property="VerticalAlignment" Value="Top" />
         <Setter Property="Margin" Value="8" />
         <Setter Property="Padding" Value="8" />
@@ -57,8 +57,8 @@
         <Setter Property="Template" Value="{StaticResource CalciteFormBodyGroupboxTemplate}" />
     </Style>
     <Style x:Key="Pattern.Panel.SideOfMap" TargetType="GroupBox">
-        <Setter Property="Background" Value="{DynamicResource CalciteBackground1}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource CalciteBorder3}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder3Brush}" />
         <Setter Property="HorizontalAlignment" Value="Right" />
         <Setter Property="VerticalAlignment" Value="Stretch" />
         <Setter Property="Margin" Value="0" />

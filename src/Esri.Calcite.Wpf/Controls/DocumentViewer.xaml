@@ -6,13 +6,13 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="..\Shared\Fonts.xaml" />
         <ResourceDictionary Source=".\Buttons.xaml" />
-        <ResourceDictionary Source="..\Shared\Brushes.xaml" />
+        <ResourceDictionary Source="..\Colors\Brushes.xaml" />
     </ResourceDictionary.MergedDictionaries>
     <ca:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
     <Style x:Key="CalciteDocumentViewer" TargetType="{x:Type DocumentViewer}">
-        <Setter Property="Foreground" Value="{DynamicResource CalciteForeground0}" />
-        <Setter Property="Background" Value="{DynamicResource CalciteBackground0}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource CalciteBorder0}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteUIBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder1Brush}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="Template">
@@ -62,7 +62,7 @@
                             <ScrollViewer
                                 x:Name="PART_ContentHost"
                                 Grid.Row="1"
-                                Background="{DynamicResource CalciteBackground0}"
+                                Background="{DynamicResource CalciteUIBackgroundBrush}"
                                 CanContentScroll="true"
                                 HorizontalScrollBarVisibility="Auto"
                                 IsTabStop="true" />

@@ -12,7 +12,7 @@
         <Setter Property="Width" Value="16" />
         <Setter Property="Height" Value="16" />
         <Setter Property="Fill" Value="Transparent" />
-        <Setter Property="Stroke" Value="{DynamicResource CalciteBorder3}" />
+        <Setter Property="Stroke" Value="{DynamicResource CalciteUIBorder3Brush}" />
         <Setter Property="Margin" Value="4" />
         <Setter Property="HorizontalAlignment" Value="Center" />
         <Setter Property="VerticalAlignment" Value="Center" />
@@ -23,8 +23,8 @@
         <Setter Property="VerticalAlignment" Value="Stretch" />
         <Setter Property="OverridesDefaultStyle" Value="true" />
         <Setter Property="Cursor" Value="{DynamicResource CalciteActionCursor}" />
-        <Setter Property="Background" Value="{DynamicResource CalciteBackground1}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource CalciteBorder3}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder3Brush}" />
         <Setter Property="BorderThickness" Value="1,0,1,1" />
         <Setter Property="Padding" Value="8" />
         <Setter Property="Cursor" Value="{DynamicResource CalciteActionCursor}" />
@@ -42,7 +42,7 @@
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsHighlighted" Value="true">
-                            <Setter TargetName="Border" Property="Background" Value="{DynamicResource CalciteBackground2}" />
+                            <Setter TargetName="Border" Property="Background" Value="{DynamicResource CalciteUIBackground2Brush}" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -52,8 +52,8 @@
     <Style BasedOn="{StaticResource InternalComboboxItem}" TargetType="{x:Type ComboBoxItem}" />
     <!--  Not an override but used by ComboBox template  -->
     <Style x:Key="ComboBoxToggleButton" TargetType="ToggleButton">
-        <Setter Property="BorderBrush" Value="{DynamicResource CalciteBorder3}" />
-        <Setter Property="Background" Value="{DynamicResource CalciteBackground1}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder3Brush}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="Cursor" Value="{DynamicResource CalciteActionCursor}" />
         <Setter Property="Padding" Value="7,7,7,6.5" />
@@ -91,7 +91,7 @@
                                 VerticalAlignment="Center"
                                 Data="{c:CalciteIconGeometry Icon=CaretDown, Scale=Small}"
                                 Stretch="Uniform"
-                                Stroke="{DynamicResource CalciteForeground0}"
+                                Stroke="{DynamicResource CalciteUIText1Brush}"
                                 Style="{StaticResource PathIconBase}" />
                         </Border>
                     </Grid>
@@ -100,7 +100,7 @@
                             <Setter TargetName="OuterGrid" Property="Opacity" Value="0.5" />
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" Value="{DynamicResource CalciteBackground2}" />
+                            <Setter Property="Background" Value="{DynamicResource CalciteUIBackground2Brush}" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -138,13 +138,13 @@
         </ControlTemplate.Triggers>
     </ControlTemplate>
     <Style x:Key="CalciteComboBox" TargetType="{x:Type ComboBox}">
-        <Setter Property="Foreground" Value="{DynamicResource CalciteForeground0}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource CalciteBorder2}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder2Brush}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="MinHeight" Value="28" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="VerticalAlignment" Value="Top" />
-        <Setter Property="Background" Value="{DynamicResource CalciteBackground1}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
         <Setter Property="OverridesDefaultStyle" Value="true" />
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto" />
         <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto" />
@@ -194,12 +194,12 @@
                             HorizontalAlignment="Stretch"
                             VerticalAlignment="Center"
                             Background="{TemplateBinding Background}"
-                            CaretBrush="{DynamicResource CalciteTintNormal}"
+                            CaretBrush="{DynamicResource CalciteUIBrandBrush}"
                             Cursor="IBeam"
                             Focusable="True"
                             FontFamily="{StaticResource AvenirNext-Regular}"
                             FontSize="12"
-                            Foreground="{DynamicResource CalciteForeground1}"
+                            Foreground="{DynamicResource CalciteUIText1Brush}"
                             IsReadOnly="{TemplateBinding IsReadOnly}"
                             Style="{x:Null}"
                             Template="{StaticResource ComboBoxTextBox}"
@@ -218,8 +218,8 @@
                                 SnapsToDevicePixels="True">
                                 <Border
                                     x:Name="DropDownBorder"
-                                    Background="{DynamicResource CalciteBackground0}"
-                                    BorderBrush="{DynamicResource CalciteBorder3}"
+                                    Background="{DynamicResource CalciteUIBackgroundBrush}"
+                                    BorderBrush="{DynamicResource CalciteUIBorder3Brush}"
                                     BorderThickness="1" />
                                 <ScrollViewer SnapsToDevicePixels="True">
                                     <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained" />
@@ -242,13 +242,13 @@
                             <Setter TargetName="DropDownBorder" Property="Margin" Value="0,2,0,0" />
                         </Trigger>
                         <Trigger SourceName="PART_EditableTextBox" Property="IsFocused" Value="true">
-                            <Setter Property="BorderBrush" Value="{DynamicResource CalciteTintNormal}" />
+                            <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
                         </Trigger>
                         <Trigger Property="IsFocused" Value="True">
-                            <Setter Property="BorderBrush" Value="{DynamicResource CalciteTintNormal}" />
+                            <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
                         </Trigger>
                         <Trigger Property="IsDropDownOpen" Value="True">
-                            <Setter Property="BorderBrush" Value="{DynamicResource CalciteTintNormal}" />
+                            <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
                         </Trigger>
                         <Trigger Property="IsEditable" Value="true">
                             <Setter Property="IsTabStop" Value="false" />

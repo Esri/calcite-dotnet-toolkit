@@ -6,7 +6,7 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="..\Shared\Fonts.xaml" />
         <ResourceDictionary Source=".\Buttons.xaml" />
-        <ResourceDictionary Source="..\Shared\Brushes.xaml" />
+        <ResourceDictionary Source="..\Colors\Brushes.xaml" />
     </ResourceDictionary.MergedDictionaries>
     <ca:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
     <Style
@@ -18,12 +18,12 @@
         <Setter Property="Margin" Value="0" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="HorizontalContentAlignment" Value="Left" />
-        <Setter Property="ca:AttachedBrushes.BackgroundHover" Value="{DynamicResource CalciteBackground2}" />
-        <Setter Property="ca:AttachedBrushes.ForegroundNormal" Value="{DynamicResource CalciteForeground3}" />
-        <Setter Property="ca:AttachedBrushes.ForegroundHover" Value="{DynamicResource CalciteForeground0}" />
-        <Setter Property="ca:AttachedBrushes.BackgroundNormal" Value="{DynamicResource CalciteBackground1}" />
-        <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteForeground0}" />
-        <Setter Property="ca:AttachedBrushes.BackgroundPress" Value="{DynamicResource CalciteBackground3}" />
+        <Setter Property="ca:AttachedBrushes.BackgroundHover" Value="{DynamicResource CalciteUIBackground2Brush}" />
+        <Setter Property="ca:AttachedBrushes.ForegroundNormal" Value="{DynamicResource CalciteUIText3Brush}" />
+        <Setter Property="ca:AttachedBrushes.ForegroundHover" Value="{DynamicResource CalciteUIText1Brush}" />
+        <Setter Property="ca:AttachedBrushes.BackgroundNormal" Value="{DynamicResource CalciteUIBackground1Brush}" />
+        <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteUIText1Brush}" />
+        <Setter Property="ca:AttachedBrushes.BackgroundPress" Value="{DynamicResource CalciteUIBackground3Brush}" />
 
         <Setter Property="Template">
             <Setter.Value>
@@ -110,11 +110,11 @@
         <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="HorizontalContentAlignment" Value="Left" />
         <Setter Property="ca:AttachedBrushes.BackgroundHover" Value="#40eaeaea" />
-        <Setter Property="ca:AttachedBrushes.ForegroundNormal" Value="{DynamicResource CalciteForeground3}" />
-        <Setter Property="ca:AttachedBrushes.ForegroundHover" Value="{DynamicResource CalciteForeground0}" />
+        <Setter Property="ca:AttachedBrushes.ForegroundNormal" Value="{DynamicResource CalciteUIText3Brush}" />
+        <Setter Property="ca:AttachedBrushes.ForegroundHover" Value="{DynamicResource CalciteUIText1Brush}" />
         <Setter Property="ca:AttachedBrushes.BackgroundNormal" Value="Transparent" />
         <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteForegroundAlwaysLight}" />
-        <Setter Property="ca:AttachedBrushes.BackgroundPress" Value="{DynamicResource CalciteTintNormal}" />
+        <Setter Property="ca:AttachedBrushes.BackgroundPress" Value="{DynamicResource CalciteUIBrandBrush}" />
     </Style>
 
     <Style
@@ -126,7 +126,7 @@
         BasedOn="{StaticResource CalciteToolBarButtonBase}"
         TargetType="{x:Type ToggleButton}" />
     <Style x:Key="{x:Static ToolBar.SeparatorStyleKey}" TargetType="{x:Type Separator}">
-        <Setter Property="Foreground" Value="{DynamicResource CalciteBorder2}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteUIBorder2Brush}" />
         <Setter Property="Margin" Value="0" />
     </Style>
     <Style x:Key="{x:Static ToolBar.TextBoxStyleKey}" TargetType="{x:Type TextBox}">
@@ -176,8 +176,8 @@
         <Setter Property="SnapsToDevicePixels" Value="true" />
         <Setter Property="OverridesDefaultStyle" Value="true" />
         <Setter Property="Height" Value="32" />
-        <Setter Property="Background" Value="{DynamicResource CalciteBackground1}" />
-        <Setter Property="Foreground" Value="{DynamicResource CalciteForeground1}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ToolBar}">
@@ -227,8 +227,8 @@
         <Setter Property="MinWidth" Value="32" />
         <Setter Property="HorizontalAlignment" Value="Left" />
         <Setter Property="MinHeight" Value="32" />
-        <Setter Property="Background" Value="{DynamicResource CalciteBackground1}" />
-        <Setter Property="Foreground" Value="{DynamicResource CalciteForeground0}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ToolBar}">
@@ -285,7 +285,7 @@
                 <ControlTemplate TargetType="{x:Type ToolBar}">
                     <Border
                         x:Name="Border"
-                        Background="{DynamicResource CalciteBackground1}"
+                        Background="{DynamicResource CalciteUIBackground1Brush}"
                         BorderThickness="0"
                         CornerRadius="4">
                         <Border.OpacityMask>
@@ -347,6 +347,6 @@
 
     <Style x:Key="{x:Type ToolBarTray}" TargetType="{x:Type ToolBarTray}">
         <Setter Property="HorizontalAlignment" Value="Stretch" />
-        <Setter Property="Background" Value="{DynamicResource CalciteBackground1}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
     </Style>
 </ResourceDictionary>

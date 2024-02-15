@@ -8,7 +8,7 @@
     </Style>
     <Style TargetType="Label">
         <!--<Setter Property="FontFamily" Value="{StaticResource AvenirNext-Regular}" />-->
-        <Setter Property="Foreground" Value="{DynamicResource CalciteForeground1}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
         <Setter Property="FontSize" Value="12" />
     </Style>
 </ResourceDictionary>

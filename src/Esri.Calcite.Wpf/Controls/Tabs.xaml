@@ -15,7 +15,7 @@
                                 VerticalAlignment="Center"
                                 ContentSource="Header"
                                 RecognizesAccessKey="True"
-                                TextElement.Foreground="{DynamicResource CalciteForeground2}" />
+                                TextElement.Foreground="{DynamicResource CalciteUIText2Brush}" />
                         </Border>
                     </Grid>
                     <ControlTemplate.Triggers>
@@ -26,11 +26,11 @@
                             <Setter Property="Opacity" Value="0.4" />
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="ContentSite" Property="TextElement.Foreground" Value="{DynamicResource CalciteForeground1}" />
+                            <Setter TargetName="ContentSite" Property="TextElement.Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
                         </Trigger>
                         <Trigger Property="IsSelected" Value="True">
-                            <Setter TargetName="ContentSite" Property="TextElement.Foreground" Value="{DynamicResource CalciteForeground1}" />
-                            <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource CalciteTintNormal}" />
+                            <Setter TargetName="ContentSite" Property="TextElement.Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
+                            <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
                         </Trigger>
                         <Trigger Property="TabStripPlacement" Value="Left">
                             <Setter TargetName="Border" Property="BorderThickness" Value="0,0,2,0" />
