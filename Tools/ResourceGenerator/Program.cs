@@ -20,7 +20,7 @@ if(!Directory.Exists(Path.Combine(pathToOutput, "Icons")))
     Directory.CreateDirectory(Path.Combine(pathToOutput, "Icons"));
 //GenerateIconsXaml(icons, Path.Combine(pathToOutput, "Icons", $"Icons.xaml"), format);
 GenerateGlyphsXaml(icons, Path.Combine(pathToOutput, "Icons", "Glyphs.xaml"), format);
-GenerateCalciteIconEnum(icons, Path.Combine(pathToOutput, $"Icons.cs"), "Esri.Calcite." + format);
+GenerateCalciteIconEnum(icons, Path.Combine(pathToOutput, $"CalciteIcon.cs"), "Esri.Calcite." + format);
 GenerateCalciteHelper(icons, Path.Combine(pathToOutput, $"IconHelpers.cs"), "Esri.Calcite." + format);
 
 void GenerateColors(string colorsScss, string pathToOutput, string format)
