@@ -84,9 +84,9 @@ See https://github.com/Esri/calcite-colors/ for more information about the prede
 | CalciteUIBrandHoverColor | ![#00619B](https://placehold.co/15x15/00619B/00619B.png)`#00619B` | ![#007AC2](https://placehold.co/15x15/007AC2/007AC2.png)`#007AC2` |
 | CalciteUIBrandPressColor | ![#004874](https://placehold.co/15x15/004874/004874.png)`#004874` | ![#00619B](https://placehold.co/15x15/00619B/00619B.png)`#00619B` |
 | CalciteUIBackgroundColor | ![#F8F8F8](https://placehold.co/15x15/F8F8F8/F8F8F8.png)`#F8F8F8` | ![#353535](https://placehold.co/15x15/353535/353535.png)`#353535` |
-| CalciteUIForeground1Color | ![#FFFFFF](https://placehold.co/15x15/FFFFFF/FFFFFF.png)`#FFFFFF` | ![#2B2B2B](https://placehold.co/15x15/2B2B2B/2B2B2B.png)`#2B2B2B` |
-| CalciteUIForeground2Color | ![#F3F3F3](https://placehold.co/15x15/F3F3F3/F3F3F3.png)`#F3F3F3` | ![#202020](https://placehold.co/15x15/202020/202020.png)`#202020` |
-| CalciteUIForeground3Color | ![#EAEAEA](https://placehold.co/15x15/EAEAEA/EAEAEA.png)`#EAEAEA` | ![#151515](https://placehold.co/15x15/151515/151515.png)`#151515` |
+| CalciteUIBackground1Color | ![#FFFFFF](https://placehold.co/15x15/FFFFFF/FFFFFF.png)`#FFFFFF` | ![#2B2B2B](https://placehold.co/15x15/2B2B2B/2B2B2B.png)`#2B2B2B` |
+| CalciteUIBackground2Color | ![#F3F3F3](https://placehold.co/15x15/F3F3F3/F3F3F3.png)`#F3F3F3` | ![#202020](https://placehold.co/15x15/202020/202020.png)`#202020` |
+| CalciteUIBackground3Color | ![#EAEAEA](https://placehold.co/15x15/EAEAEA/EAEAEA.png)`#EAEAEA` | ![#151515](https://placehold.co/15x15/151515/151515.png)`#151515` |
 | CalciteUIText1Color | ![#151515](https://placehold.co/15x15/151515/151515.png)`#151515` | ![#FFFFFF](https://placehold.co/15x15/FFF/FFF.png)`#FFFFFF` |
 | CalciteUIText2Color | ![#4A4A4A](https://placehold.co/15x15/4A4A4A/4A4A4A.png)`#4A4A4A` | ![#BFBFBF](https://placehold.co/15x15/BFBFBF/BFBFBF.png)`#BFBFBF` |
 | CalciteUIText3Color | ![#6A6A6A](https://placehold.co/15x15/6A6A6A/6A6A6A.png)`#6A6A6A` | ![#9F9F9F](https://placehold.co/15x15/9F9F9F/9F9F9F.png)`#9F9F9F` |
