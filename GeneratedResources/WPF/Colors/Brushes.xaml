@@ -1,0 +1,30 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary.MergedDictionaries>
+    <SolidColorBrush x:Key="CalciteUIBrandBrush" Color="{DynamicResource CalciteUIBrandColor}" />
+    <SolidColorBrush x:Key="CalciteUIBrandHoverBrush" Color="{DynamicResource CalciteUIBrandHoverColor}" />
+    <SolidColorBrush x:Key="CalciteUIBrandPressBrush" Color="{DynamicResource CalciteUIBrandPressColor}" />
+    <SolidColorBrush x:Key="CalciteUIBackgroundBrush" Color="{DynamicResource CalciteUIBackgroundColor}" />
+    <SolidColorBrush x:Key="CalciteUIForeground1Brush" Color="{DynamicResource CalciteUIForeground1Color}" />
+    <SolidColorBrush x:Key="CalciteUIForeground2Brush" Color="{DynamicResource CalciteUIForeground2Color}" />
+    <SolidColorBrush x:Key="CalciteUIForeground3Brush" Color="{DynamicResource CalciteUIForeground3Color}" />
+    <SolidColorBrush x:Key="CalciteUIText1Brush" Color="{DynamicResource CalciteUIText1Color}" />
+    <SolidColorBrush x:Key="CalciteUIText2Brush" Color="{DynamicResource CalciteUIText2Color}" />
+    <SolidColorBrush x:Key="CalciteUIText3Brush" Color="{DynamicResource CalciteUIText3Color}" />
+    <SolidColorBrush x:Key="CalciteUITextHighlightBrush" Color="{DynamicResource CalciteUITextHighlightColor}" />
+    <SolidColorBrush x:Key="CalciteUITextInverseBrush" Color="{DynamicResource CalciteUITextInverseColor}" />
+    <SolidColorBrush x:Key="CalciteUITextLinkBrush" Color="{DynamicResource CalciteUITextLinkColor}" />
+    <SolidColorBrush x:Key="CalciteUIBorder1Brush" Color="{DynamicResource CalciteUIBorder1Color}" />
+    <SolidColorBrush x:Key="CalciteUIBorder2Brush" Color="{DynamicResource CalciteUIBorder2Color}" />
+    <SolidColorBrush x:Key="CalciteUIBorder3Brush" Color="{DynamicResource CalciteUIBorder3Color}" />
+    <SolidColorBrush x:Key="CalciteUIBorderInputBrush" Color="{DynamicResource CalciteUIBorderInputColor}" />
+    <SolidColorBrush x:Key="CalciteUIInfoBrush" Color="{DynamicResource CalciteUIInfoColor}" />
+    <SolidColorBrush x:Key="CalciteUISuccessBrush" Color="{DynamicResource CalciteUISuccessColor}" />
+    <SolidColorBrush x:Key="CalciteUIWarningBrush" Color="{DynamicResource CalciteUIWarningColor}" />
+    <SolidColorBrush x:Key="CalciteUIDangerBrush" Color="{DynamicResource CalciteUIDangerColor}" />
+    <SolidColorBrush x:Key="CalciteUIDangerHoverBrush" Color="{DynamicResource CalciteUIDangerHoverColor}" />
+    <SolidColorBrush x:Key="CalciteUIDangerPressBrush" Color="{DynamicResource CalciteUIDangerPressColor}" />
+</ResourceDictionary>

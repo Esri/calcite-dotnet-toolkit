@@ -18,14 +18,11 @@ jobs:
     - name: Clone Code
       uses: actions/checkout@v3
       with:
-        submodules: true
+        submodules: false
         fetch-depth: 0
     
     - name: Setup Visual Studio Command Prompt
       uses: microsoft/setup-msbuild@v2.0.0
-      
-    - name: Generate Font and Resources
-      run: ./GenerateResources.cmd
       
     - name: Build WPF
       run: |
@@ -45,9 +42,3 @@ jobs:
         name: NuGet Packages
         path: artifacts/NuGet/Release
       
-    - name: Upload Font artifacts
-      uses: actions/upload-artifact@v1
-      with:
-        name: Calcite UI Icons Font
-        path: .Generated\calcite-ui-icons.ttf
-        

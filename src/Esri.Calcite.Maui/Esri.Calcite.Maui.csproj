@@ -10,22 +10,17 @@
     </PropertyGroup>
 
     <ItemGroup>    
-      <MauiFont Include="..\..\.Generated\*.ttf" Link="Resources\Fonts\%(Filename)%(Extension)" />
-      <Compile Include="..\..\.Generated\Maui\*.cs" Link=".generated\%(RecursiveDir)%(Filename)%(Extension)" />
+      <MauiFont Include="..\..\GeneratedResources\*.ttf" Link="Resources\Fonts\%(Filename)%(Extension)" />
+      <Compile Include="..\..\GeneratedResources\Maui\*.cs" Link="GeneratedResources\%(RecursiveDir)%(Filename)%(Extension)" />
       <None Include="README.txt" Pack="True" PackagePath="\" />
 
-        <MauiXaml Include="..\..\.Generated\Maui\Icons\*.xaml">
+        <MauiXaml Include="..\..\GeneratedResources\Maui\Icons\*.xaml">
         <Generator>MSBuild:Compile</Generator>
         <Link>Resources\Icons\%(Filename).xaml</Link>
       </MauiXaml>
-        <MauiXaml Include="..\..\.Generated\Maui\Colors\*.xaml">
+        <MauiXaml Include="..\..\GeneratedResources\Maui\Colors\*.xaml">
             <Generator>MSBuild:Compile</Generator>
             <Link>Resources\Styles\%(Filename).xaml</Link>
         </MauiXaml>
     </ItemGroup>
-
-    <Target Name="GenerateResources" BeforeTargets="PreBuildEvent" Condition="!Exists('$(MSBuildThisFileDirectory)..\..\.Generated\Maui\Icons\Glyphs.xaml') ">
-        <Exec Command="dotnet run --project $(MSBuildThisFileDirectory)..\..\Tools\ResourceGenerator\ResourceGenerator.csproj $(MSBuildThisFileDirectory)..\..\calcite-ui-icons\docs\icons.json  $(MSBuildThisFileDirectory)..\..\Tools\calcite-ui-icons-codepoints.json $(MSBuildThisFileDirectory)..\..\calcite-colors\dist\colors.scss $(MSBuildThisFileDirector)..\..\.Generated\Maui\ Maui" />
-    </Target>
-
 </Project>
