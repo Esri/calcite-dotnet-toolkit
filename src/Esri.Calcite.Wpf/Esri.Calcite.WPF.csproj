@@ -16,6 +16,6 @@
     <Page Include="..\..\GeneratedResources\WPF\**\*.xaml" Link="%(RecursiveDir)\%(Filename).xaml">
         <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Compile Include="..\..\GeneratedResources\Wpf\*.cs" Link="GeneratedResources\%(RecursiveDir)%(Filename)%(Extension)" />
+    <Compile Include="..\..\GeneratedResources\Wpf\*.cs" Link="%(RecursiveDir)%(Filename)%(Extension)" />
   </ItemGroup>
 </Project>
