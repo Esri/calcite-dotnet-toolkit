@@ -32,7 +32,14 @@ void GenerateColors(string colorsScss, string pathToOutput, string format)
     using StreamWriter xamlOutput = new StreamWriter(Path.Combine(pathToOutput, "Colors.xaml"));
     xamlOutput.WriteLine(xamlHeader);
     Func<string, string, string> toResourceName = (cssname, resourceType) => {
-        //return $"calcite-{cssname}-{resourceType.ToLower()}";
+        if(cssname.StartsWith("ui-foreground-"))
+        {
+            // Foreground colors are actually background colors
+            // meant for cards, panels etc. This is confusing in a XAML context
+            // where 'foreground' is usally referring to text color so renaming
+            // the color resources here
+            cssname = cssname.Replace("ui-foreground-", "ui-background-");
+        }
         var parts = cssname.Replace("ui-", "UI-").Split("-");
         var name = string.Join("", parts.Select(p =>
          p switch {

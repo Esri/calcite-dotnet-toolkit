@@ -6,7 +6,7 @@
         <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Colors/Brushes.xaml" />
     </ResourceDictionary.MergedDictionaries>
     <Style TargetType="TextBox">
-        <Setter Property="Background" Value="{ThemeResource CalciteUIForeground1Brush}" />
+        <Setter Property="Background" Value="{ThemeResource CalciteUIBackground1Brush}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="FontSize" Value="12" />
         <Setter Property="Padding" Value="4" />

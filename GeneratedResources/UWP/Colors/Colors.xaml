@@ -481,9 +481,9 @@
     <Color x:Key="CalciteUIBrandHoverLightColor">#00619B</Color>
     <Color x:Key="CalciteUIBrandPressLightColor">#004874</Color>
     <Color x:Key="CalciteUIBackgroundLightColor">#f8f8f8</Color>
-    <Color x:Key="CalciteUIForeground1LightColor">#ffffff</Color>
-    <Color x:Key="CalciteUIForeground2LightColor">#f3f3f3</Color>
-    <Color x:Key="CalciteUIForeground3LightColor">#eaeaea</Color>
+    <Color x:Key="CalciteUIBackground1LightColor">#ffffff</Color>
+    <Color x:Key="CalciteUIBackground2LightColor">#f3f3f3</Color>
+    <Color x:Key="CalciteUIBackground3LightColor">#eaeaea</Color>
     <Color x:Key="CalciteUIText1LightColor">#151515</Color>
     <Color x:Key="CalciteUIText2LightColor">#4a4a4a</Color>
     <Color x:Key="CalciteUIText3LightColor">#6a6a6a</Color>
@@ -504,9 +504,9 @@
     <Color x:Key="CalciteUIBrandHoverDarkColor">#007AC2</Color>
     <Color x:Key="CalciteUIBrandPressDarkColor">#00619B</Color>
     <Color x:Key="CalciteUIBackgroundDarkColor">#353535</Color>
-    <Color x:Key="CalciteUIForeground1DarkColor">#2b2b2b</Color>
-    <Color x:Key="CalciteUIForeground2DarkColor">#202020</Color>
-    <Color x:Key="CalciteUIForeground3DarkColor">#151515</Color>
+    <Color x:Key="CalciteUIBackground1DarkColor">#2b2b2b</Color>
+    <Color x:Key="CalciteUIBackground2DarkColor">#202020</Color>
+    <Color x:Key="CalciteUIBackground3DarkColor">#151515</Color>
     <Color x:Key="CalciteUIText1DarkColor">#ffffff</Color>
     <Color x:Key="CalciteUIText2DarkColor">#bfbfbf</Color>
     <Color x:Key="CalciteUIText3DarkColor">#9f9f9f</Color>
@@ -529,9 +529,9 @@
             <StaticResource x:Key="CalciteUIBrandHoverColor" ResourceKey="CalciteUIBrandHoverDarkColor" />
             <StaticResource x:Key="CalciteUIBrandPressColor" ResourceKey="CalciteUIBrandPressDarkColor" />
             <StaticResource x:Key="CalciteUIBackgroundColor" ResourceKey="CalciteUIBackgroundDarkColor" />
-            <StaticResource x:Key="CalciteUIForeground1Color" ResourceKey="CalciteUIForeground1DarkColor" />
-            <StaticResource x:Key="CalciteUIForeground2Color" ResourceKey="CalciteUIForeground2DarkColor" />
-            <StaticResource x:Key="CalciteUIForeground3Color" ResourceKey="CalciteUIForeground3DarkColor" />
+            <StaticResource x:Key="CalciteUIBackground1Color" ResourceKey="CalciteUIBackground1DarkColor" />
+            <StaticResource x:Key="CalciteUIBackground2Color" ResourceKey="CalciteUIBackground2DarkColor" />
+            <StaticResource x:Key="CalciteUIBackground3Color" ResourceKey="CalciteUIBackground3DarkColor" />
             <StaticResource x:Key="CalciteUIText1Color" ResourceKey="CalciteUIText1DarkColor" />
             <StaticResource x:Key="CalciteUIText2Color" ResourceKey="CalciteUIText2DarkColor" />
             <StaticResource x:Key="CalciteUIText3Color" ResourceKey="CalciteUIText3DarkColor" />
@@ -554,9 +554,9 @@
             <StaticResource x:Key="CalciteUIBrandHoverColor" ResourceKey="CalciteUIBrandHoverLightColor" />
             <StaticResource x:Key="CalciteUIBrandPressColor" ResourceKey="CalciteUIBrandPressLightColor" />
             <StaticResource x:Key="CalciteUIBackgroundColor" ResourceKey="CalciteUIBackgroundLightColor" />
-            <StaticResource x:Key="CalciteUIForeground1Color" ResourceKey="CalciteUIForeground1LightColor" />
-            <StaticResource x:Key="CalciteUIForeground2Color" ResourceKey="CalciteUIForeground2LightColor" />
-            <StaticResource x:Key="CalciteUIForeground3Color" ResourceKey="CalciteUIForeground3LightColor" />
+            <StaticResource x:Key="CalciteUIBackground1Color" ResourceKey="CalciteUIBackground1LightColor" />
+            <StaticResource x:Key="CalciteUIBackground2Color" ResourceKey="CalciteUIBackground2LightColor" />
+            <StaticResource x:Key="CalciteUIBackground3Color" ResourceKey="CalciteUIBackground3LightColor" />
             <StaticResource x:Key="CalciteUIText1Color" ResourceKey="CalciteUIText1LightColor" />
             <StaticResource x:Key="CalciteUIText2Color" ResourceKey="CalciteUIText2LightColor" />
             <StaticResource x:Key="CalciteUIText3Color" ResourceKey="CalciteUIText3LightColor" />

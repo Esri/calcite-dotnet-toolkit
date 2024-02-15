@@ -8,9 +8,9 @@
     <SolidColorBrush x:Key="CalciteUIBrandHoverBrush" Color="{AppThemeBinding Dark={StaticResource CalciteUIBrandHoverDarkColor}, Light={StaticResource CalciteUIBrandHoverLightColor}}" />
     <SolidColorBrush x:Key="CalciteUIBrandPressBrush" Color="{AppThemeBinding Dark={StaticResource CalciteUIBrandPressDarkColor}, Light={StaticResource CalciteUIBrandPressLightColor}}" />
     <SolidColorBrush x:Key="CalciteUIBackgroundBrush" Color="{AppThemeBinding Dark={StaticResource CalciteUIBackgroundDarkColor}, Light={StaticResource CalciteUIBackgroundLightColor}}" />
-    <SolidColorBrush x:Key="CalciteUIForeground1Brush" Color="{AppThemeBinding Dark={StaticResource CalciteUIForeground1DarkColor}, Light={StaticResource CalciteUIForeground1LightColor}}" />
-    <SolidColorBrush x:Key="CalciteUIForeground2Brush" Color="{AppThemeBinding Dark={StaticResource CalciteUIForeground2DarkColor}, Light={StaticResource CalciteUIForeground2LightColor}}" />
-    <SolidColorBrush x:Key="CalciteUIForeground3Brush" Color="{AppThemeBinding Dark={StaticResource CalciteUIForeground3DarkColor}, Light={StaticResource CalciteUIForeground3LightColor}}" />
+    <SolidColorBrush x:Key="CalciteUIBackground1Brush" Color="{AppThemeBinding Dark={StaticResource CalciteUIBackground1DarkColor}, Light={StaticResource CalciteUIBackground1LightColor}}" />
+    <SolidColorBrush x:Key="CalciteUIBackground2Brush" Color="{AppThemeBinding Dark={StaticResource CalciteUIBackground2DarkColor}, Light={StaticResource CalciteUIBackground2LightColor}}" />
+    <SolidColorBrush x:Key="CalciteUIBackground3Brush" Color="{AppThemeBinding Dark={StaticResource CalciteUIBackground3DarkColor}, Light={StaticResource CalciteUIBackground3LightColor}}" />
     <SolidColorBrush x:Key="CalciteUIText1Brush" Color="{AppThemeBinding Dark={StaticResource CalciteUIText1DarkColor}, Light={StaticResource CalciteUIText1LightColor}}" />
     <SolidColorBrush x:Key="CalciteUIText2Brush" Color="{AppThemeBinding Dark={StaticResource CalciteUIText2DarkColor}, Light={StaticResource CalciteUIText2LightColor}}" />
     <SolidColorBrush x:Key="CalciteUIText3Brush" Color="{AppThemeBinding Dark={StaticResource CalciteUIText3DarkColor}, Light={StaticResource CalciteUIText3LightColor}}" />

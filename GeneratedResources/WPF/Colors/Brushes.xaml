@@ -8,9 +8,9 @@
     <SolidColorBrush x:Key="CalciteUIBrandHoverBrush" Color="{DynamicResource CalciteUIBrandHoverColor}" />
     <SolidColorBrush x:Key="CalciteUIBrandPressBrush" Color="{DynamicResource CalciteUIBrandPressColor}" />
     <SolidColorBrush x:Key="CalciteUIBackgroundBrush" Color="{DynamicResource CalciteUIBackgroundColor}" />
-    <SolidColorBrush x:Key="CalciteUIForeground1Brush" Color="{DynamicResource CalciteUIForeground1Color}" />
-    <SolidColorBrush x:Key="CalciteUIForeground2Brush" Color="{DynamicResource CalciteUIForeground2Color}" />
-    <SolidColorBrush x:Key="CalciteUIForeground3Brush" Color="{DynamicResource CalciteUIForeground3Color}" />
+    <SolidColorBrush x:Key="CalciteUIBackground1Brush" Color="{DynamicResource CalciteUIBackground1Color}" />
+    <SolidColorBrush x:Key="CalciteUIBackground2Brush" Color="{DynamicResource CalciteUIBackground2Color}" />
+    <SolidColorBrush x:Key="CalciteUIBackground3Brush" Color="{DynamicResource CalciteUIBackground3Color}" />
     <SolidColorBrush x:Key="CalciteUIText1Brush" Color="{DynamicResource CalciteUIText1Color}" />
     <SolidColorBrush x:Key="CalciteUIText2Brush" Color="{DynamicResource CalciteUIText2Color}" />
     <SolidColorBrush x:Key="CalciteUIText3Brush" Color="{DynamicResource CalciteUIText3Color}" />

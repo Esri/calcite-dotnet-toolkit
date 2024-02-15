@@ -6,9 +6,9 @@
     <Color x:Key="CalciteUIBrandHoverColor">#00619B</Color>
     <Color x:Key="CalciteUIBrandPressColor">#004874</Color>
     <Color x:Key="CalciteUIBackgroundColor">#f8f8f8</Color>
-    <Color x:Key="CalciteUIForeground1Color">#ffffff</Color>
-    <Color x:Key="CalciteUIForeground2Color">#f3f3f3</Color>
-    <Color x:Key="CalciteUIForeground3Color">#eaeaea</Color>
+    <Color x:Key="CalciteUIBackground1Color">#ffffff</Color>
+    <Color x:Key="CalciteUIBackground2Color">#f3f3f3</Color>
+    <Color x:Key="CalciteUIBackground3Color">#eaeaea</Color>
     <Color x:Key="CalciteUIText1Color">#151515</Color>
     <Color x:Key="CalciteUIText2Color">#4a4a4a</Color>
     <Color x:Key="CalciteUIText3Color">#6a6a6a</Color>
