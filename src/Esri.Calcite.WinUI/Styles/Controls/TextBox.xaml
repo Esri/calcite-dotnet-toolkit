@@ -16,10 +16,10 @@
         <Setter Property="HorizontalAlignment" Value="Stretch" />
         <!--<Setter Property="Cursor" Value="IBeam" />-->
         <Setter Property="TextWrapping" Value="Wrap" />
-        <!--<Setter Property="CaretBrush" Value="{StaticResource TintNormal}" />-->
+        <!--<Setter Property="CaretBrush" Value="{StaticResource CalciteUIBrandBrush}" />-->
         <Setter Property="BorderBrush" Value="{ThemeResource CalciteUIBorder2Brush}" />
-        <!--<Setter Property="Foreground" Value="{StaticResource Foreground1}" />-->
-        <!--<Setter Property="SelectionBrush" Value="{StaticResource TintNormal}" />-->
+        <!--<Setter Property="Foreground" Value="{StaticResource CalciteUIBackground1Brush}" />-->
+        <!--<Setter Property="SelectionBrush" Value="{StaticResource CalciteUIBrandBrush}" />-->
     </Style>
 
 </ResourceDictionary>
