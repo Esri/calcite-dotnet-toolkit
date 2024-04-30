@@ -34,6 +34,8 @@
         <!-- <ResourceDictionary Source=".\Controls\CalciteColorPicker.xaml" /> -->
         <ResourceDictionary Source=".\Controls\DocumentViewer.xaml" />
     </ResourceDictionary.MergedDictionaries>
+    <Color x:Key="CalciteUIForegroundAlwaysLightColor">#FFFFFF</Color>
+    <SolidColorBrush x:Key="CalciteUIForegroundAlwaysLightBrush" Color="{StaticResource CalciteUIForegroundAlwaysLightColor}" />
     <Style BasedOn="{StaticResource CalciteTreeView}" TargetType="TreeView" />
     <Style BasedOn="{StaticResource Calcite.TextBox}" TargetType="TextBox" />
     <Style BasedOn="{StaticResource Calcite.PasswordBox}" TargetType="PasswordBox" />

@@ -223,7 +223,7 @@
                                 TextBlock.TextAlignment="Center"
                                 TextElement.FontFamily="{StaticResource AvenirNext-Light}"
                                 TextElement.FontSize="{StaticResource CalendarMonthButtonFontSize}"
-                                TextElement.Foreground="{DynamicResource CalciteForegroundAlwaysLight}" />
+                                TextElement.Foreground="{DynamicResource CalciteUIForegroundAlwaysLightBrush}" />
 
                         </Grid>
                     </Grid>

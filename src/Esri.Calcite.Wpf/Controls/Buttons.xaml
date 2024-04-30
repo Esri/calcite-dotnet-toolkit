@@ -104,9 +104,9 @@
         <Setter Property="ca:AttachedBrushes.BorderNormal" Value="{DynamicResource CalciteUIBrandBrush}" />
         <Setter Property="ca:AttachedBrushes.BorderHover" Value="{DynamicResource CalciteUIBrandHoverBrush}" />
         <Setter Property="ca:AttachedBrushes.BorderPress" Value="{DynamicResource CalciteUIBrandPressBrush}" />
-        <Setter Property="ca:AttachedBrushes.ForegroundNormal" Value="{DynamicResource CalciteForegroundAlwaysLight}" />
-        <Setter Property="ca:AttachedBrushes.ForegroundHover" Value="{DynamicResource CalciteForegroundAlwaysLight}" />
-        <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteForegroundAlwaysLight}" />
+        <Setter Property="ca:AttachedBrushes.ForegroundNormal" Value="{DynamicResource CalciteUIForegroundAlwaysLightBrush}" />
+        <Setter Property="ca:AttachedBrushes.ForegroundHover" Value="{DynamicResource CalciteUIForegroundAlwaysLightBrush}" />
+        <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteUIForegroundAlwaysLightBrush}" />
     </Style>
     <Style
         x:Key="CalciteSecondaryBtn"
@@ -133,7 +133,7 @@
         <Setter Property="ca:AttachedBrushes.BorderHover" Value="{DynamicResource CalciteUIDangerHoverBrush}" />
         <Setter Property="ca:AttachedBrushes.BorderPress" Value="{DynamicResource CalciteUIDangerPressBrush}" />
         <!--  TODO if needed: DangerOffsetBrush  -->
-        <Setter Property="ca:AttachedBrushes.ForegroundNormal" Value="{DynamicResource CalciteForegroundAlwaysLight}" />
+        <Setter Property="ca:AttachedBrushes.ForegroundNormal" Value="{DynamicResource CalciteUIForegroundAlwaysLightBrush}" />
         <Setter Property="ca:AttachedBrushes.ForegroundHover" Value="{DynamicResource CalciteUITextInverseBrush}" />
         <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteUITextInverseBrush}" />
     </Style>

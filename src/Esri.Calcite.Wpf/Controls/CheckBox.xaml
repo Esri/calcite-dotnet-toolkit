@@ -52,7 +52,7 @@
                 <Setter TargetName="CheckMark" Property="Visibility" Value="Visible" />
                 <Setter TargetName="Border" Property="BorderThickness" Value="0" />
                 <Setter TargetName="CheckMark" Property="Fill" Value="White" />
-                <Setter TargetName="InderminateMark" Property="Fill" Value="{DynamicResource CalciteForegroundAlwaysLight}" />
+                <Setter TargetName="InderminateMark" Property="Fill" Value="{DynamicResource CalciteUIForegroundAlwaysLightBrush}" />
                 <Setter TargetName="Border" Property="Background" Value="{DynamicResource CalciteUIBrandBrush}" />
                 <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
             </Trigger>
@@ -61,7 +61,7 @@
                 <Setter TargetName="InderminateMark" Property="Visibility" Value="Visible" />
                 <Setter TargetName="Border" Property="BorderThickness" Value="0" />
                 <Setter TargetName="CheckMark" Property="Fill" Value="White" />
-                <Setter TargetName="InderminateMark" Property="Fill" Value="{DynamicResource CalciteForegroundAlwaysLight}" />
+                <Setter TargetName="InderminateMark" Property="Fill" Value="{DynamicResource CalciteUIForegroundAlwaysLightBrush}" />
                 <Setter TargetName="Border" Property="Background" Value="{DynamicResource CalciteUIBrandBrush}" />
                 <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
             </Trigger>
