@@ -9,7 +9,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
-                <CalciteResources xmlns="clr-namespace:Esri.Calcite.Maui;assembly=Esri.Calcite.Maui"/>
+                <CalciteResources xmlns="http://schemas.esri.com/calcite/2024"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
