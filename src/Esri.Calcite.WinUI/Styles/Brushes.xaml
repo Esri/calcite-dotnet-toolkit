@@ -37,12 +37,11 @@
     <Color x:Key="SystemListMediumColor">#33FFFFFF</Color>-->
     <StaticResource x:Key="SystemErrorTextColor" ResourceKey="CalciteUIDangerColor" />
 
-    <!--ProgressRing-->
-    <!--<StaticResource x:Key="ProgressRingForegroundThemeBrush" ResourceKey="CalciteUIBrandBrush" />-->
+
     <StaticResource x:Key="TextFillColorPrimaryBrush" ResourceKey="CalciteUIText1Brush" />
     <StaticResource x:Key="TextFillColorSecondaryBrush" ResourceKey="CalciteUIText2Brush" />
     <StaticResource x:Key="TextFillColorTertiaryBrush" ResourceKey="CalciteUIText3Brush" />
-        
+
     <!--Accent Text - recommended for links-->
     <StaticResource x:Key="AccentTextFillColorPrimaryBrush" ResourceKey="CalciteUIBrandBrush" />
     <StaticResource x:Key="AccentTextFillColorSecondaryBrush" ResourceKey="CalciteUIBrandHoverBrush" />

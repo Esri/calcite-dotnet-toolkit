@@ -10,10 +10,11 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" >
+                    <!-- Merge in XAML resource overrides -->
                     <XamlControlsResources.MergedDictionaries>
                         <CalciteResources xmlns="using:Esri.Calcite.WinUI" />
                     </XamlControlsResources.MergedDictionaries>
-                </XamlControlsResources>                
+                </XamlControlsResources>
             </ResourceDictionary.MergedDictionaries>
             <!-- Other app resources here -->
         </ResourceDictionary>

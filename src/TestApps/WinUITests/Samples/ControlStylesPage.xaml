@@ -23,9 +23,9 @@
             <Slider Width="200" Minimum="0" Maximum="100" />
             <ProgressBar Maximum="100" Value="50" />
             <ProgressRing />
-            <TabView Height="100" >
+            <TabView Height="200" >
                 <TabViewItem Header="Tab 1" IconSource="{cal:CalciteIconSource Icon=Map}" >
-                    <TextBlock Text="Tab 1 Content" />
+                    <RichEditBox Header="RichEditBox" PlaceholderText="Tab 1 Content" />
                 </TabViewItem>
                 <TabViewItem Header="Tab 2" IconSource="{cal:CalciteIconSource Icon=Layers}" >
                     <TextBlock Text="Tab 2 Content" />

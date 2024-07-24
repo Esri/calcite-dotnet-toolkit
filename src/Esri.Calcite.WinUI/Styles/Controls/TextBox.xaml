@@ -9,6 +9,7 @@
     <StaticResource x:Key="ContentControlThemeFontFamily" ResourceKey="AvenirNext-Regular" />
     <StaticResource x:Key="TextControlBorderBrush" ResourceKey="CalciteUIBorder2Brush" />
     <StaticResource x:Key="TextControlBackground" ResourceKey="CalciteUIBackground1Brush" />
+    <StaticResource x:Key="TextControlSelectionHighlightColor" ResourceKey="CalciteUIBrandBrush" />
     <x:Double x:Key="BodyTextBlockFontSize">12</x:Double>
     <x:Double x:Key="ControlContentThemeFontSize">12</x:Double>
     <Thickness x:Key="TextControlBorderThemeThickness">1</Thickness>
