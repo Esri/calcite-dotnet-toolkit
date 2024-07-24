@@ -18,7 +18,7 @@ to default styles and resources. Dark/Light mode is automatically handled and ad
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <CalciteResources xmlns="clr-namespace:Esri.Calcite.WPF;assembly=Esri.Calcite.WPF" Theme="Light" />
+                <CalciteResources xmlns="http://schemas.esri.com/calcite/2024" Theme="Light" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
@@ -155,7 +155,7 @@ For a fill list of Glyph Resource IDs refer to the sample apps and the [Calcite-
 #### Markup Extensions:
 `CalciteIconGeometryExtension` : Convert an Icon to a Path Geometry. Example:
 ```xml
-<Path Data="{c:CalciteIconGeometry Icon=ChevronLeft, Scale=Small}" Fill="Green" Width="32" Height="32" Stretch="Uniform" />
+<Path Data="{calcite:CalciteIconGeometry Icon=ChevronLeft, Scale=Small}" Fill="Green" Width="32" Height="32" Stretch="Uniform" />
 ```
 
 `CalciteIconImageExtension` : Convert an Icon to an Image Source. Example:

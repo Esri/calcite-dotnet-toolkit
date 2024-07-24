@@ -5,7 +5,7 @@ Reference the Calcite style in **App.xaml**:
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <CalciteResources xmlns="clr-namespace:Esri.Calcite.WPF;assembly=Esri.Calcite.WPF" Theme="Light" />
+                <CalciteResources xmlns="http://schemas.esri.com/calcite/2024" Theme="Light" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

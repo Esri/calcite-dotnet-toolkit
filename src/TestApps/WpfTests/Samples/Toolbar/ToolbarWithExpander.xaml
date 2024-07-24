@@ -1,6 +1,6 @@
 <ToolBar
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:ca="clr-namespace:Esri.Calcite.WPF.Helpers;assembly=Esri.Calcite.WPF"
+    xmlns:ca="http://schemas.esri.com/calcite/2024"
     VerticalAlignment="Top"
     ca:ToolBarHelpers.ShowExpander="True">
     <Button ca:Calcite.Symbol="Home" />

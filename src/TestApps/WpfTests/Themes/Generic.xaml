@@ -5,7 +5,7 @@
 
 
     <ResourceDictionary.MergedDictionaries>
-        <calcite:CalciteResources xmlns:calcite="clr-namespace:Esri.Calcite.WPF;assembly=Esri.Calcite.WPF" Theme="Light" />
+        <calcite:CalciteResources xmlns:calcite="http://schemas.esri.com/calcite/2024" Theme="Light" />
     </ResourceDictionary.MergedDictionaries>
     
     <Style TargetType="{x:Type local:DemoWell}">

@@ -8,3 +8,6 @@ using System.Windows;
                                               //(used if a resource is not found in the page,
                                               // app, or any theme specific resource dictionaries)
 )]
+[assembly: System.Windows.Markup.XmlnsPrefix("http://schemas.esri.com/calcite/2024", "calcite")]
+[assembly: System.Windows.Markup.XmlnsDefinition("http://schemas.esri.com/calcite/2024", "Esri.Calcite.WPF")]
+[assembly: System.Windows.Markup.XmlnsDefinition("http://schemas.esri.com/calcite/2024", "Esri.Calcite.WPF.Helpers")]
