@@ -31,8 +31,9 @@ void GenerateColors(string colorsScss, string pathToOutput, string format)
     string xamlHeader = GetXamlHeader(format);
     using StreamWriter xamlOutput = new StreamWriter(Path.Combine(pathToOutput, "Colors.xaml"));
     xamlOutput.WriteLine(xamlHeader);
-    Func<string, string, string> toResourceName = (cssname, resourceType) => {
-        if(cssname.StartsWith("ui-foreground-"))
+    Func<string, string, string> toResourceName = (cssname, resourceType) =>
+    {
+        if (cssname.StartsWith("ui-foreground-"))
         {
             // Foreground colors are actually background colors
             // meant for cards, panels etc. This is confusing in a XAML context
@@ -42,7 +43,8 @@ void GenerateColors(string colorsScss, string pathToOutput, string format)
         }
         var parts = cssname.Replace("ui-", "UI-").Split("-");
         var name = string.Join("", parts.Select(p =>
-         p switch {
+         p switch
+         {
              "v" => "ChartVibrant",
              "h" => "ChartHigh",
              "m" => "ChartMedium",
@@ -60,7 +62,7 @@ void GenerateColors(string colorsScss, string pathToOutput, string format)
              "ro" => "RedOrange",
              "rr" => "Red",
              "pk" => "Pink",
-             "vr"=> "VioletRed",
+             "vr" => "VioletRed",
              "vv" => "Violet",
              _ => p.Substring(0, 1).ToUpper() + p.Substring(1)
          }));
@@ -87,7 +89,7 @@ void GenerateColors(string colorsScss, string pathToOutput, string format)
         xamlOutput.WriteLine("        <ResourceDictionary x:Key =\"Light\" >");
         foreach (var c in lightColors)
         {
-            xamlOutput.WriteLine($"            <StaticResource x:Key=\"{toResourceName(c.Key.Replace("-light",""), "Color")}\" ResourceKey=\"{toResourceName(c.Key, "Color")}\" />");
+            xamlOutput.WriteLine($"            <StaticResource x:Key=\"{toResourceName(c.Key.Replace("-light", ""), "Color")}\" ResourceKey=\"{toResourceName(c.Key, "Color")}\" />");
         }
         xamlOutput.WriteLine("        </ResourceDictionary>");
         xamlOutput.WriteLine("    </ResourceDictionary.ThemeDictionaries>");
@@ -122,9 +124,14 @@ void GenerateColors(string colorsScss, string pathToOutput, string format)
     brushOutput.WriteLine("    <ResourceDictionary.MergedDictionaries>");
     if (format == "WinUI" || format == "UWP")
         brushOutput.WriteLine($"        <ResourceDictionary Source=\"ms-appx:///Esri.Calcite.{format}/Colors/Colors.xaml\" />");
-    else if(format == "Maui")
+    else if (format == "Maui")
         brushOutput.WriteLine($"        <ResourceDictionary Source=\"Colors.xaml\" />");
     brushOutput.WriteLine("    </ResourceDictionary.MergedDictionaries>");
+    if (format == "WinUI" || format == "UWP")
+    {
+        brushOutput.WriteLine("    <ResourceDictionary.ThemeDictionaries>");
+        brushOutput.WriteLine("        <ResourceDictionary x:Key=\"Default\">");
+    }
     foreach (var dark in darkColors)
     {
         var name = dark.Key.Replace("-dark", "");
@@ -134,10 +141,14 @@ void GenerateColors(string colorsScss, string pathToOutput, string format)
             brushOutput.WriteLine($"    <SolidColorBrush x:Key=\"{toResourceName(name, "Brush")}\" Color=\"{{AppThemeBinding Dark={{StaticResource {toResourceName(dark.Key, "Color")}}}, Light={{StaticResource {toResourceName(name + "-light", "Color")}}}}}\" />");
         else if(format == "WPF")
             brushOutput.WriteLine($"    <SolidColorBrush x:Key=\"{toResourceName(name, "Brush")}\" Color=\"{{DynamicResource {toResourceName(name, "Color")}}}\" />");
-        else
-            brushOutput.WriteLine($"    <SolidColorBrush x:Key=\"{toResourceName(name, "Brush")}\" Color=\"{{StaticResource {toResourceName(name, "Color")}}}\" />");
+        else if(format == "WinUI" || format == "UWP")
+            brushOutput.WriteLine($"            <SolidColorBrush x:Key=\"{toResourceName(name, "Brush")}\" Color=\"{{ThemeResource {toResourceName(name, "Color")}}}\" />");
     }
-
+    if (format == "WinUI" || format == "UWP")
+    {
+        brushOutput.WriteLine("        </ResourceDictionary>");
+        brushOutput.WriteLine("    </ResourceDictionary.ThemeDictionaries>");
+    }
     brushOutput.WriteLine("</ResourceDictionary>");
     brushOutput.Flush();
     brushOutput.Dispose();
