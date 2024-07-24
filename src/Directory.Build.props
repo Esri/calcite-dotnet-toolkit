@@ -13,13 +13,15 @@
         <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
         <GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">True</GeneratePackageOnBuild>
         <PackageOutputPath>$(MSBuildThisFileDirectory)..\artifacts\NuGet\$(Configuration)\</PackageOutputPath>
-		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+        <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     </PropertyGroup>
 
     <ItemGroup Condition="'$(IsPackable)'=='true'">
         <None Include="$(MSBuildThisFileDirectory)icon.png" Pack="True" PackagePath="\$(PackageIcon)" IsVisible="false" />
         <None Include="$(MSBuildThisFileDirectory)..\LICENSE.md" Pack="True" PackagePath="\LICENSE.md" IsVisible="false" />
-		
+        
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
         <PackageReference Include="Nerdbank.GitVersioning" Version="3.6.133" PrivateAssets="all" />
     </ItemGroup>
