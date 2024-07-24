@@ -17,7 +17,7 @@
             <!--<TextBlock Text="AppBarButton:" />
         <AppBarButton>
             <AppBarButton.Icon>
-                <FontIcon Glyph="{StaticResource Calcite_UIIcons_Glyph_Map_24}" FontFamily="{StaticResource CalciteUIIconsFontFamily}"/>
+                <FontIcon Glyph="{StaticResource CalciteUIIcons_Glyph_Map_24}" FontFamily="{StaticResource CalciteUIIconsFontFamily}"/>
             </AppBarButton.Icon>
         </AppBarButton>-->
             <TextBlock Text="CommandBar/AppBarButton using CalciteFontIconSource:" />
@@ -52,7 +52,7 @@
                     </AppBarButton>
                 </CommandBar.PrimaryCommands>
             </CommandBar>
-            <!--<Path Data="{StaticResource Calcite_UIIcons_Glyph_1_8x_32}" Width="100" Height="100" Fill="Blue" />-->
+            <!--<Path Data="{StaticResource CalciteUIIcons_Glyph_1_8x_32}" Width="100" Height="100" Fill="Blue" />-->
             <TextBlock Text="IconSourceElement:" Margin="0,20,0,0" />
             <Border BorderBrush="{StaticResource CalciteUIBrandBrush}" BorderThickness="1" HorizontalAlignment="Left">
                 <IconSourceElement Width="32" Height="32">

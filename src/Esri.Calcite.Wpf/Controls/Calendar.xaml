@@ -512,7 +512,7 @@
                     VerticalAlignment="Stretch"
                     Focusable="False"
                     Template="{StaticResource NextPreviousButtonTemplate}">
-                    <!--<TextBlock Text="{StaticResource Calcite_UIIcons_Glyph_Chevron_Left_16}" FontFamily="{StaticResource CalciteUIIconsFontFamily}"
+                    <!--<TextBlock Text="{StaticResource CalciteUIIcons_Glyph_Chevron_Left_16}" FontFamily="{StaticResource CalciteUIIconsFontFamily}"
                        />-->
                     <Path Data="{c:CalciteIconGeometry Icon=ChevronLeft, Scale=Small}" Style="{StaticResource pathButtonStyle}" />
                 </Button>

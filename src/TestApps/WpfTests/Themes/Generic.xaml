@@ -74,7 +74,7 @@
                             HorizontalAlignment="Right"
                             VerticalAlignment="Top"
                             ToolTip="Copy">
-                            <TextBlock Text="{StaticResource Calcite_UIIcons_Glyph_Copy_16}" FontSize="16"
+                            <TextBlock Text="{StaticResource CalciteUIIcons_Glyph_Copy_16}" FontSize="16"
                                 FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
                         </Button>
                         <Popup

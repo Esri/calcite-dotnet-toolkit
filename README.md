@@ -137,12 +137,12 @@ In .NET MAUI the FontFamily can directly be referred to by its name `CalciteUIIc
 
 ### WPF and WinUI:
 ```xml
-<TextBlock Text="{StaticResource Calcite_UIIcons_Glyph_Map_24}" 
+<TextBlock Text="{StaticResource CalciteUIIcons_Glyph_Map_24}" 
            FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
 ```
 ### .NET MAUI:
 ```xml
-<Label Text="{StaticResource Calcite_UIIcons_Glyph_Map_24}" 
+<Label Text="{StaticResource CalciteUIIcons_Glyph_Map_24}" 
 	   FontFamily="CalciteUIIconsFontFamily" />
 ```
 
