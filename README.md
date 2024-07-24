@@ -42,12 +42,12 @@ to default styles and resources. Dark/Light mode is automatically handled and ad
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
-                <CalciteResources xmlns="clr-namespace:Esri.Calcite.Maui;assembly=Esri.Calcite.Maui"/>
+                <CalciteResources xmlns="http://schemas.esri.com/calcite/2024"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
 ```
-Also register calcite in `MauiProgram.cs`:
+Next register Calcite in `MauiProgram.cs`:
 ```cs
 using Esri.Calcite.Maui;
 

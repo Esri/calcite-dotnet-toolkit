@@ -1,4 +1,7 @@
-﻿namespace Esri.Calcite.Maui
+﻿[assembly: Microsoft.Maui.Controls.XmlnsPrefix("http://schemas.esri.com/calcite/2024", "calcite")]
+[assembly: XmlnsDefinition("http://schemas.esri.com/calcite/2024", "Esri.Calcite.Maui")]
+
+namespace Esri.Calcite.Maui
 {
     /// <summary>
     /// Extensions used to configure ArcGIS Calcite resources
