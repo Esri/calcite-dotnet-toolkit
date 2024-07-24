@@ -24,7 +24,7 @@ namespace WinUITests.Samples
         public ColorResourcesPage()
         {
             this.InitializeComponent();
-            var calciteResource = App.Current.Resources.MergedDictionaries.OfType<CalciteResources>().First();
+            var calciteResource = App.Current.Resources.MergedDictionaries.OfType<XamlControlsResources>().First().MergedDictionaries.OfType<CalciteResources>().First();
             var rd = calciteResource.MergedDictionaries.Where(m => m.Source.OriginalString == "ms-appx:///Esri.Calcite.WinUI/Colors/Colors.xaml")?.First();
             var rdDark = ((ResourceDictionary)rd.ThemeDictionaries["Default"]);
             var rdLight = ((ResourceDictionary)rd.ThemeDictionaries["Light"]);

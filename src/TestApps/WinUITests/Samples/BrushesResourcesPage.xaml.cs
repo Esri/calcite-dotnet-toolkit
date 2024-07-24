@@ -27,7 +27,7 @@ namespace WinUITests.Samples
         public BrushesResourcesPage()
         {
             this.InitializeComponent();
-            var calciteResource = App.Current.Resources.MergedDictionaries.OfType<CalciteResources>().First();
+            var calciteResource = App.Current.Resources.MergedDictionaries.OfType<XamlControlsResources>().First().MergedDictionaries.OfType<CalciteResources>().First();
             var rd = calciteResource.MergedDictionaries.Where(m => m.Source.OriginalString == "ms-appx:///Esri.Calcite.WinUI/Colors/Brushes.xaml")?.First();
             gridView.ItemsSource = rd.OrderBy(r => r.Key);
         }

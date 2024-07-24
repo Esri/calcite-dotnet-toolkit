@@ -25,14 +25,13 @@ to default styles and resources. Dark/Light mode is automatically handled and ad
 ```
 ### WinUI
 ```xml
-    <Application.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+    <ResourceDictionary.MergedDictionaries>
+        <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" >
+            <XamlControlsResources.MergedDictionaries>
                 <CalciteResources xmlns="using:Esri.Calcite.WinUI" />
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </Application.Resources>
+            </XamlControlsResources.MergedDictionaries>
+        </XamlControlsResources>
+    </ResourceDictionary.MergedDictionaries>
 ```
 
 ### .NET MAUI

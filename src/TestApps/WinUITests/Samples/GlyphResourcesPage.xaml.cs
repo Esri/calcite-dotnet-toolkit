@@ -27,7 +27,7 @@ namespace WinUITests.Samples
         public GlyphResourcesPage()
         {
             this.InitializeComponent();
-            var calciteResource = App.Current.Resources.MergedDictionaries.OfType<CalciteResources>().First();
+            var calciteResource = App.Current.Resources.MergedDictionaries.OfType<XamlControlsResources>().First().MergedDictionaries.OfType<CalciteResources>().First();
             var rd = calciteResource.MergedDictionaries.Where(m => m.Source.OriginalString == "ms-appx:///Esri.Calcite.WinUI/Icons/Glyphs.xaml")?.First();
             gridView.ItemsSource = rd;
         }

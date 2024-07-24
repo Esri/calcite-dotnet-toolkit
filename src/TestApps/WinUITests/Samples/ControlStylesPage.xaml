@@ -15,7 +15,8 @@
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button Content="Calcite style button" />
             <CheckBox Content="CheckBox" />
-            <RadioButton Content="RadioButton" />
+            <RadioButton Content="RadioButton" GroupName="group1" IsChecked="True" />
+            <RadioButton Content="RadioButton" GroupName="group1" />
             <TextBlock Text="TextBlock" />
             <TextBox Text="TextBox" Header="TextBlock" />
             <ToggleSwitch Header="Toggle Switch" />

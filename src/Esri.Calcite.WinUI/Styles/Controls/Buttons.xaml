@@ -11,9 +11,9 @@
     <StaticResource x:Key="ButtonBackgroundPointerOver" ResourceKey="CalciteUIBrandHoverBrush" />
     <StaticResource x:Key="ButtonBackgroundPressed" ResourceKey="CalciteUIBrandPressBrush" />
     <!--<StaticResource x:Key="ButtonBackgroundDisabled" ResourceKey="SystemControlBackgroundBaseLowBrush" />-->
-    <StaticResource x:Key="ButtonForeground" ResourceKey="CalciteForegroundAlwaysLight" />
-    <StaticResource x:Key="ButtonForegroundPointerOver" ResourceKey="CalciteForegroundAlwaysLight" />
-    <StaticResource x:Key="ButtonForegroundPressed" ResourceKey="CalciteForegroundAlwaysLight" />
+    <StaticResource x:Key="ButtonForeground" ResourceKey="TextOnAccentFillColorPrimaryBrush" />
+    <StaticResource x:Key="ButtonForegroundPointerOver" ResourceKey="TextOnAccentFillColorPrimaryBrush" />
+    <StaticResource x:Key="ButtonForegroundPressed" ResourceKey="TextOnAccentFillColorPrimaryBrush" />
     <!--<StaticResource x:Key="ButtonForegroundDisabled" ResourceKey="SystemControlDisabledBaseMediumLowBrush" />
     <StaticResource x:Key="ButtonBorderBrush" ResourceKey="SystemControlForegroundTransparentBrush" />
     <StaticResource x:Key="ButtonBorderBrushPointerOver" ResourceKey="SystemControlHighlightBaseMediumLowBrush" />

@@ -5,21 +5,21 @@
         <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Styles/Fonts.xaml" />
         <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Colors/Brushes.xaml" />
     </ResourceDictionary.MergedDictionaries>
+
+    <StaticResource x:Key="ContentControlThemeFontFamily" ResourceKey="AvenirNext-Regular" />
+    <StaticResource x:Key="TextControlBorderBrush" ResourceKey="CalciteUIBorder2Brush" />
+    <StaticResource x:Key="TextControlBackground" ResourceKey="CalciteUIBackground1Brush" />
+    <x:Double x:Key="BodyTextBlockFontSize">12</x:Double>
+    <x:Double x:Key="ControlContentThemeFontSize">12</x:Double>
+    <Thickness x:Key="TextControlBorderThemeThickness">1</Thickness>
+    <Thickness x:Key="TextControlThemePadding">4</Thickness>
+    <x:Double x:Key="TextControlThemeMinWidth">64</x:Double>
+    <x:Double x:Key="TextControlThemeMinHeight">28</x:Double>
+
     <Style TargetType="TextBox">
-        <Setter Property="Background" Value="{ThemeResource CalciteUIBackground1Brush}" />
-        <Setter Property="BorderThickness" Value="1" />
-        <Setter Property="FontSize" Value="12" />
-        <Setter Property="Padding" Value="4" />
-        <Setter Property="MinWidth" Value="64" />
-        <Setter Property="MinHeight" Value="28" />
-        <Setter Property="FontFamily" Value="{StaticResource AvenirNext-Regular}" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
         <!--<Setter Property="Cursor" Value="IBeam" />-->
         <Setter Property="TextWrapping" Value="Wrap" />
-        <!--<Setter Property="CaretBrush" Value="{StaticResource CalciteUIBrandBrush}" />-->
-        <Setter Property="BorderBrush" Value="{ThemeResource CalciteUIBorder2Brush}" />
-        <!--<Setter Property="Foreground" Value="{StaticResource CalciteUIBackground1Brush}" />-->
-        <!--<Setter Property="SelectionBrush" Value="{StaticResource CalciteUIBrandBrush}" />-->
     </Style>
 
 </ResourceDictionary>

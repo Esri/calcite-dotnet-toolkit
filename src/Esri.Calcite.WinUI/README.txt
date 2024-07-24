@@ -1,6 +1,12 @@
 ﻿
-In App.xaml below `XamlControlsResources` tag, add:
+In App.xaml below `XamlControlsResources` tag, add the CalciteResources to the XamlControlsResources merged dictionary:
 
 ```
-         <CalcitesResources xmlns="using:Esri.Calcite.WinUI" />
+<ResourceDictionary.MergedDictionaries>
+    <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" >
+        <XamlControlsResources.MergedDictionaries>
+            <CalciteResources xmlns="using:Esri.Calcite.WinUI" />
+        </XamlControlsResources.MergedDictionaries>
+    </XamlControlsResources>
+</ResourceDictionary.MergedDictionaries>
 ```

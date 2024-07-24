@@ -23,4 +23,7 @@
     <FontFamily x:Key="SymbolThemeFontFamily">Segoe Fluent Icons,Segoe MDL2 Assets</FontFamily>
     <FontFamily x:Key="KeyTipFontFamily">ms-appx:///Esri.Calcite.WinUI/Fonts/AvenirNextW1G-Regular.otf#Avenir Next W1G</FontFamily>
 
+    <StaticResource x:Key="XamlAutoFontFamily" ResourceKey="AvenirNext-Regular" />
+    
+    
 </ResourceDictionary>
