@@ -26,7 +26,8 @@
             <Switch IsToggled="True" />
             <Slider WidthRequest="200" Minimum="0" Maximum="100" HorizontalOptions="Start" />
             <ProgressBar Progress=".5" WidthRequest="200" HorizontalOptions="Start" />
-            
+            <Entry Text="Entry" />
+            <Editor Text="Editor" WidthRequest="200" HeightRequest="100" />
         </VerticalStackLayout>
     </ScrollView>
 
