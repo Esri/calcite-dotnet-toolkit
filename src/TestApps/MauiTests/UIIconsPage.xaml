@@ -15,13 +15,13 @@
                 <HorizontalStackLayout>
                         <Label Text="{Binding Glyph16}" WidthRequest="80" ToolTipProperties.Text="{Binding GlyphHex16}"
                             FontSize="40" HorizontalOptions="Center" VerticalOptions="Start"
-                            FontFamily="calcite-ui-icons" />
+                            FontFamily="CalciteUIIconsFontFamily" />
                         <Label Text="{Binding Glyph24}" WidthRequest="80" ToolTipProperties.Text="{Binding GlyphHex24}"
                             FontSize="40" HorizontalOptions="Center" VerticalOptions="Start"
-                            FontFamily="calcite-ui-icons" />
+                            FontFamily="CalciteUIIconsFontFamily" />
                         <Label Text="{Binding Glyph32}" WidthRequest="80" ToolTipProperties.Text="{Binding GlyphHex32}"
                             FontSize="40" HorizontalOptions="Center" VerticalOptions="Start"
-                            FontFamily="calcite-ui-icons" />
+                            FontFamily="CalciteUIIconsFontFamily" />
                         <Label Text="{Binding Name}" VerticalOptions="Center" />
                     </HorizontalStackLayout>
             </DataTemplate>

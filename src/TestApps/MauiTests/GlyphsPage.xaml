@@ -14,7 +14,7 @@
         <CollectionView.ItemTemplate>
             <DataTemplate>
                 <HorizontalStackLayout>
-                    <Label Text="{Binding Value}" FontFamily="calcite-ui-icons" WidthRequest="50" FontSize="32" />
+                    <Label Text="{Binding Value}" FontFamily="CalciteUIIconsFontFamily" WidthRequest="50" FontSize="32" />
                     <Label Text="{Binding Key}" VerticalOptions="Center"/>
                 </HorizontalStackLayout>
             </DataTemplate>

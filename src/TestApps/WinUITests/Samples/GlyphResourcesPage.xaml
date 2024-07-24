@@ -16,7 +16,7 @@
                         <StackPanel Orientation="Horizontal" BorderThickness="0,0,0,1" BorderBrush="Black">
                             <FontIcon Glyph="{Binding Value}"  Width="100"
                                    FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top"
-                                   FontFamily="{StaticResource Calcite-UI-Icons}" />
+                                   FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
                             <TextBlock Text="{Binding Key}" VerticalAlignment="Center" />
                         </StackPanel>
                     <!--<IconSourceElement Width="16" Height="16" Foreground="Red" >

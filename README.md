@@ -131,19 +131,19 @@ See https://github.com/Esri/calcite-colors/ for more information about the prede
 ```
 
 ## Symbol Font
-`Calcite-UI-Icons` FontFamily is a font with a set of symbols generated from the [Calcite UI Icons repo](https://github.com/Esri/calcite-ui-icons).
-In WPF and WinUI this font can be referred to with the resource key `Calcite-UI-Icons`.
-In .NET MAUI the FontFamily can directly be referred to by its name `calcite-ui-icons`.
+`CalciteUIIconsFontFamily` FontFamily is a font with a set of symbols generated from the [Calcite UI Icons repo](https://github.com/Esri/calcite-ui-icons).
+In WPF and WinUI this font can be referred to with the resource key `CalciteUIIconsFontFamily`.
+In .NET MAUI the FontFamily can directly be referred to by its name `CalciteUIIconsFontFamily`.
 
 ### WPF and WinUI:
 ```xml
 <TextBlock Text="{StaticResource Calcite_UIIcons_Glyph_Map_24}" 
-           FontFamily="{StaticResource Calcite-UI-Icons}" />
+           FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
 ```
 ### .NET MAUI:
 ```xml
 <Label Text="{StaticResource Calcite_UIIcons_Glyph_Map_24}" 
-	   FontFamily="calcite-ui-icons" />
+	   FontFamily="CalciteUIIconsFontFamily" />
 ```
 
 For a fill list of Glyph Resource IDs refer to the sample apps and the [Calcite-UI-Icons](https://github.com/Esri/calcite-ui-icons) repo.

@@ -27,13 +27,13 @@
                         </IconSourceElement>-->
                         <TextBlock Text="{x:Bind Glyph16}" Width="80" ToolTipService.ToolTip="{x:Bind GlyphHex16}"
                            FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top"
-                           FontFamily="{StaticResource Calcite-UI-Icons}" />
+                           FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
                         <TextBlock Text="{x:Bind Glyph24}" Width="80" ToolTipService.ToolTip="{x:Bind GlyphHex24}"
                            FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top"
-                           FontFamily="{StaticResource Calcite-UI-Icons}" />
+                           FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
                         <TextBlock Text="{x:Bind Glyph32}" Width="80" ToolTipService.ToolTip="{x:Bind GlyphHex32}"
                                    FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top"
-                                   FontFamily="{StaticResource Calcite-UI-Icons}" />
+                                   FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
                         <TextBlock Text="{x:Bind Name}" VerticalAlignment="Center" />
                     </StackPanel>
                 </DataTemplate>

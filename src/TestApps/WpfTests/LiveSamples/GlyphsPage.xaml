@@ -22,15 +22,15 @@
                 <DataGridTextColumn
                     Binding="{Binding Glyph16}"
                     Header="Small" FontSize="40" 
-                    IsReadOnly="True"  FontFamily="{StaticResource Calcite-UI-Icons}" />
+                    IsReadOnly="True"  FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
                 <DataGridTextColumn
                     Binding="{Binding Glyph24}"
                     Header="Medium" FontSize="40" 
-                    IsReadOnly="True"  FontFamily="{StaticResource Calcite-UI-Icons}" />
+                    IsReadOnly="True"  FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
                 <DataGridTextColumn
                     Binding="{Binding Glyph32}"
                     Header="Large" FontSize="40" 
-                    IsReadOnly="True"  FontFamily="{StaticResource Calcite-UI-Icons}" />
+                    IsReadOnly="True"  FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
             </DataGrid.Columns>
         </DataGrid>
         <!--<ListView x:Name="MyGridView" SelectionMode="Single" Grid.Row="1">
@@ -39,13 +39,13 @@
                     <StackPanel Orientation="Horizontal" >
                         <TextBlock Text="{Binding Glyph16}" Width="80" ToolTipService.ToolTip="{Binding GlyphHex16}"
      FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top"
-     FontFamily="{StaticResource Calcite-UI-Icons}" />
+     FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
                         <TextBlock Text="{Binding Glyph24}" Width="80" ToolTipService.ToolTip="{Binding GlyphHex24}"
      FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top"
-     FontFamily="{StaticResource Calcite-UI-Icons}" />
+     FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
                         <TextBlock Text="{Binding Glyph32}" Width="80" ToolTipService.ToolTip="{Binding GlyphHex32}"
              FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top"
-             FontFamily="{StaticResource Calcite-UI-Icons}" />
+             FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
                         <TextBlock Text="{Binding Name}" VerticalAlignment="Center" />
                     </StackPanel>
                 </DataTemplate>

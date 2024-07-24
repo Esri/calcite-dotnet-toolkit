@@ -1,29 +1,5 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <FontFamily x:Key="Calcite-UI-Icons">ms-appx:///Esri.Calcite.WinUI/Fonts/calcite-ui-icons.ttf#calcite-ui-icons</FontFamily>
+    <FontFamily x:Key="CalciteUIIconsFontFamily">ms-appx:///Esri.Calcite.WinUI/Fonts/calcite-ui-icons.ttf#calcite-ui-icons</FontFamily>
 
-    <!--  https://blog.jayway.com/2012/10/31/using-custom-otf-fonts-in-windows-8-xaml/  -->
-    <FontFamily x:Key="AvenirNext-Light">ms-appx:///Esri.Calcite.WinUI/Fonts/AvenirNextW1G-Light.otf#Avenir Next W1G</FontFamily>
-    <FontFamily x:Key="AvenirNext-Regular">ms-appx:///Esri.Calcite.WinUI/Fonts/AvenirNextW1G-Regular.otf#Avenir Next W1G</FontFamily>
-    <FontFamily x:Key="AvenirNext-Medium">ms-appx:///Esri.Calcite.WinUI/Fonts/AvenirNextW1G-Medium.otf#Avenir Next W1G</FontFamily>
-    <FontFamily x:Key="AvenirNext-Demi">ms-appx:///Esri.Calcite.WinUI/Fonts/AvenirNextW1G-Demi.otf#Avenir Next W1G</FontFamily>
-
-    <FontFamily x:Key="AvenirNext-Light-Oblique">ms-appx:///Fonts/AvenirNextW1G-Light.otf#Avenir Next W1G Light Oblique</FontFamily>
-    <FontFamily x:Key="AvenirNext-Regular-Oblique">ms-appx:///Esri.Calcite.WinUI/Fonts/AvenirNextW1G-Regular.otf#Avenir Next W1G Oblique</FontFamily>
-    <FontFamily x:Key="AvenirNext-Medium-Oblique">ms-appx:///Esri.Calcite.WinUI/Fonts/AvenirNextW1G-Medium.otf#Avenir Next W1G Medium Oblique</FontFamily>
-    <FontFamily x:Key="AvenirNext-Demi-Oblique">ms-appx:///Esri.Calcite.WinUI/Fonts/AvenirNextW1G-Demi.otf#Avenir Next W1G Demi Oblique</FontFamily>
-
-    <!-- Default resources -->
-    <FontFamily x:Key="ContentControlThemeFontFamily">ms-appx:///Esri.Calcite.WinUI/Fonts/AvenirNextW1G-Regular.otf#Avenir Next W1G</FontFamily>
-    <FontFamily x:Key="MTCMediaFontFamily">ms-appx:///Esri.Calcite.WinUI/Fonts/AvenirNextW1G-Regular.otf#Avenir Next W1G</FontFamily>
-    <FontFamily x:Key="PhoneFontFamilyNormal">Segoe WP</FontFamily>
-    <FontFamily x:Key="PhoneFontFamilySemiLight">Segoe WP SemiLight</FontFamily>
-    <FontFamily x:Key="PivotHeaderItemFontFamily">ms-appx:///Esri.Calcite.WinUI/Fonts/AvenirNextW1G-Regular.otf#Avenir Next W1G</FontFamily>
-    <FontFamily x:Key="PivotTitleFontFamily">ms-appx:///Esri.Calcite.WinUI/Fonts/AvenirNextW1G-Regular.otf#Avenir Next W1G</FontFamily>
-    <FontFamily x:Key="SymbolThemeFontFamily">Segoe Fluent Icons,Segoe MDL2 Assets</FontFamily>
-    <FontFamily x:Key="KeyTipFontFamily">ms-appx:///Esri.Calcite.WinUI/Fonts/AvenirNextW1G-Regular.otf#Avenir Next W1G</FontFamily>
-
-    <StaticResource x:Key="XamlAutoFontFamily" ResourceKey="AvenirNext-Regular" />
-    
-    
 </ResourceDictionary>

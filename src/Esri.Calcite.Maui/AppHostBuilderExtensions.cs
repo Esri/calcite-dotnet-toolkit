@@ -17,7 +17,7 @@ namespace Esri.Calcite.Maui
             builder.ConfigureMauiHandlers(delegate (IMauiHandlersCollection a)
             {
             }).ConfigureFonts(fonts =>
-                 fonts.AddEmbeddedResourceFont(typeof(AppHostBuilderExtensions).Assembly, "calcite-ui-icons.ttf", "calcite-ui-icons")
+                 fonts.AddEmbeddedResourceFont(typeof(AppHostBuilderExtensions).Assembly, "calcite-ui-icons.ttf", "CalciteUIIconsFontFamily")
                       //.AddFont("AvenirNextW1G-Demi.otf", "AvenirNextW1G-Demi")
                       //.AddFont("AvenirNextW1G-Light.otf", "AvenirNextW1G-Light")
                       //.AddFont("AvenirNextW1G-Medium.otf", "AvenirNextW1G-Medium")

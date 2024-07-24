@@ -75,7 +75,7 @@
                             VerticalAlignment="Top"
                             ToolTip="Copy">
                             <TextBlock Text="{StaticResource Calcite_UIIcons_Glyph_Copy_16}" FontSize="16"
-                                FontFamily="{StaticResource Calcite-UI-Icons}" />
+                                FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
                         </Button>
                         <Popup
                             x:Name="PART_StatusPopup"

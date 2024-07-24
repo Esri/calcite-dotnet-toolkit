@@ -59,7 +59,7 @@
     <StaticResource x:Key="AccentFillColorTertiaryBrush" ResourceKey="CalciteUIBrandPressBrush" />
     <!--<StaticResource x:Key="AccentFillColorDisabledBrush" ResourceKey="CalciteUIBrandBrush" />-->
     <StaticResource x:Key="AccentFillColorSelectedTextBackgroundBrush" ResourceKey="CalciteUIBrandHoverBrush" />
-    
+
     <!--TabView-->
     <StaticResource x:Key="TabViewItemHeaderBackgroundSelected" ResourceKey="CalciteUIBrandBrush" />
     <!--<SolidColorBrush x:Key="TabViewItemHeaderBackgroundSelected" Color="Green" />-->
