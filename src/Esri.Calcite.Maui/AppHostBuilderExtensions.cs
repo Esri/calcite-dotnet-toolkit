@@ -20,7 +20,7 @@ namespace Esri.Calcite.Maui
             builder = builder.ConfigureMauiHandlers(delegate (IMauiHandlersCollection a)
             {
             }).ConfigureFonts(fonts =>
-                 fonts.AddEmbeddedResourceFont(typeof(AppHostBuilderExtensions).Assembly, "calcite-ui-icons.ttf", "CalciteUIIconsFontFamily");
+                 fonts.AddEmbeddedResourceFont(typeof(AppHostBuilderExtensions).Assembly, "calcite-ui-icons.ttf", "CalciteUIIconsFontFamily"));
 #if WINDOWS
             builder = builder.ConfigureLifecycleEvents(events =>
             {
