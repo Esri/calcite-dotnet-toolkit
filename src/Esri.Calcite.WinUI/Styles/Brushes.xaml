@@ -15,10 +15,10 @@
     <Color x:Key="SystemAltMediumColor">#99000000</Color>
     <Color x:Key="SystemAltMediumHighColor">#CC000000</Color>
     <Color x:Key="SystemAltMediumLowColor">#66000000</Color>-->
-    <StaticResource x:Key="SystemBaseHighColor" ResourceKey="CalciteUIText1Color" />
-    <StaticResource x:Key="SystemBaseLowColor" ResourceKey="CalciteUIText2Color" />
-    <StaticResource x:Key="SystemBaseMediumColor" ResourceKey="CalciteUIBrandHoverColor" />
-    <StaticResource x:Key="SystemBaseMediumHighColor" ResourceKey="CalciteUIBrandPressColor" />
+    <ThemeResource x:Key="SystemBaseHighColor" ResourceKey="CalciteUIText1Color" />
+    <ThemeResource x:Key="SystemBaseLowColor" ResourceKey="CalciteUIText2Color" />
+    <ThemeResource x:Key="SystemBaseMediumColor" ResourceKey="CalciteUIBrandHoverColor" />
+    <ThemeResource x:Key="SystemBaseMediumHighColor" ResourceKey="CalciteUIBrandPressColor" />
     <!--<Color x:Key="SystemBaseMediumLowColor">#66FFFFFF</Color>
     <Color x:Key="SystemChromeAltLowColor">#FFF2F2F2</Color>
     <Color x:Key="SystemChromeBlackHighColor">#FF000000</Color>
@@ -35,17 +35,17 @@
     <Color x:Key="SystemChromeGrayColor">#FF767676</Color>
     <Color x:Key="SystemListLowColor">#19FFFFFF</Color>
     <Color x:Key="SystemListMediumColor">#33FFFFFF</Color>-->
-    <StaticResource x:Key="SystemErrorTextColor" ResourceKey="CalciteUIDangerColor" />
+    <ThemeResource x:Key="SystemErrorTextColor" ResourceKey="CalciteUIDangerColor" />
 
 
-    <StaticResource x:Key="TextFillColorPrimaryBrush" ResourceKey="CalciteUIText1Brush" />
-    <StaticResource x:Key="TextFillColorSecondaryBrush" ResourceKey="CalciteUIText2Brush" />
-    <StaticResource x:Key="TextFillColorTertiaryBrush" ResourceKey="CalciteUIText3Brush" />
+    <ThemeResource x:Key="TextFillColorPrimaryBrush" ResourceKey="CalciteUIText1Brush" />
+    <ThemeResource x:Key="TextFillColorSecondaryBrush" ResourceKey="CalciteUIText2Brush" />
+    <ThemeResource x:Key="TextFillColorTertiaryBrush" ResourceKey="CalciteUIText3Brush" />
 
     <!--Accent Text - recommended for links-->
-    <StaticResource x:Key="AccentTextFillColorPrimaryBrush" ResourceKey="CalciteUIBrandBrush" />
-    <StaticResource x:Key="AccentTextFillColorSecondaryBrush" ResourceKey="CalciteUIBrandHoverBrush" />
-    <StaticResource x:Key="AccentTextFillColorTertiaryBrush" ResourceKey="CalciteUIBrandPressBrush" />
+    <ThemeResource x:Key="AccentTextFillColorPrimaryBrush" ResourceKey="CalciteUIBrandBrush" />
+    <ThemeResource x:Key="AccentTextFillColorSecondaryBrush" ResourceKey="CalciteUIBrandHoverBrush" />
+    <ThemeResource x:Key="AccentTextFillColorTertiaryBrush" ResourceKey="CalciteUIBrandPressBrush" />
     <!--<StaticResource x:Key="AccentTextFillColorDisabledBrush" ResourceKey="CalciteUIBrandBrush" />-->
     <!--Text on Accent - Used for text on accent colored controls or fills-->
     <SolidColorBrush x:Key="TextOnAccentFillColorPrimaryBrush" Color="White" />
@@ -66,14 +66,4 @@
     <StaticResource x:Key="TabViewItemHeaderForegroundSelected" ResourceKey="TextOnAccentFillColorPrimaryBrush" />
     <StaticResource x:Key="TabViewItemHeaderSelectedCloseButtonForeground" ResourceKey="TextOnAccentFillColorPrimaryBrush" />
     <StaticResource x:Key="TabViewItemIconForegroundSelected" ResourceKey="TextOnAccentFillColorPrimaryBrush" />
-
-    <LinearGradientBrush x:Key="TextControlElevationBorderFocusedBrush" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,2">
-        <LinearGradientBrush.RelativeTransform>
-            <ScaleTransform ScaleY="-1" CenterY="0.5" />
-        </LinearGradientBrush.RelativeTransform>
-        <LinearGradientBrush.GradientStops>
-            <GradientStop Offset="1.0" Color="{ThemeResource CalciteUIBrandColor}" />
-            <GradientStop Offset="1.0" Color="{StaticResource ControlStrokeColorDefault}" />
-        </LinearGradientBrush.GradientStops>
-    </LinearGradientBrush>
 </ResourceDictionary>

@@ -1,6 +1,3 @@
-<!-- Copyright (c) Microsoft Corporation and Contributors. -->
-<!-- Licensed under the MIT License. -->
-
 <Page
     x:Class="WinUITests.Samples.ControlStylesPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -9,10 +6,10 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:cal="using:Esri.Calcite.WinUI"
-    mc:Ignorable="d">
+mc:Ignorable="d">
 
     <Grid>
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20">
             <Button Content="Calcite style button" />
             <CheckBox Content="CheckBox" />
             <RadioButton Content="RadioButton" GroupName="group1" IsChecked="True" />
@@ -23,14 +20,15 @@
             <Slider Width="200" Minimum="0" Maximum="100" />
             <ProgressBar Maximum="100" Value="50" />
             <ProgressRing />
-            <TabView Height="200" >
-                <TabViewItem Header="Tab 1" IconSource="{cal:CalciteIconSource Icon=Map}" >
-                    <RichEditBox Header="RichEditBox" PlaceholderText="Tab 1 Content" />
+            <TabView Height="200" BorderBrush="{ThemeResource TabViewBorderBrush}" BorderThickness="1,0,1,1" >
+                <TabViewItem Header="Tab 1" IconSource="{cal:CalciteIconSource Icon=Map}">
+                    <RichEditBox Header="RichEditBox" PlaceholderText="Tab 1 Content" Margin="10" UseSystemFocusVisuals="False" />
                 </TabViewItem>
                 <TabViewItem Header="Tab 2" IconSource="{cal:CalciteIconSource Icon=Layers}" >
-                    <TextBlock Text="Tab 2 Content" />
+                    <TextBlock Text="Tab 2 Content" Margin="10" />
                 </TabViewItem>
             </TabView>
+
         </StackPanel>
     </Grid>
 </Page>
