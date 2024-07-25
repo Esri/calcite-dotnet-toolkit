@@ -67,5 +67,13 @@
     <StaticResource x:Key="TabViewItemHeaderSelectedCloseButtonForeground" ResourceKey="TextOnAccentFillColorPrimaryBrush" />
     <StaticResource x:Key="TabViewItemIconForegroundSelected" ResourceKey="TextOnAccentFillColorPrimaryBrush" />
 
-
+    <LinearGradientBrush x:Key="TextControlElevationBorderFocusedBrush" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,2">
+        <LinearGradientBrush.RelativeTransform>
+            <ScaleTransform ScaleY="-1" CenterY="0.5" />
+        </LinearGradientBrush.RelativeTransform>
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Offset="1.0" Color="{ThemeResource CalciteUIBrandColor}" />
+            <GradientStop Offset="1.0" Color="{StaticResource ControlStrokeColorDefault}" />
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
 </ResourceDictionary>
