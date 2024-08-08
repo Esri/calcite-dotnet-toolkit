@@ -11,26 +11,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-      <Content Include="..\..\GeneratedResources\*.ttf" Link="Fonts\%(Filename)%(Extension)" PackagePath="resources\Fonts\%(Filename)%(Extension)" />
+      <Content Include="..\..\GeneratedResources\*.ttf" Link="Fonts\%(Filename)%(Extension)" PackagePath="lib\$(TargetFramework)\$(PackageId)\Fonts\%(Filename)%(Extension)" />
       <None Remove="Styles\Controls\TreeView.xaml" />
     <Compile Include="..\..\GeneratedResources\WinUI\*.cs" Link="GeneratedResources\%(RecursiveDir)%(Filename)%(Extension)" />
   </ItemGroup>
 
   <ItemGroup>
-      <Page Include="..\..\GeneratedResources\WinUI\**\*.xaml" PackagePath="lib\$(TargetFramework)\$(PackageId)\%(RecursiveDir)\%(Filename).xaml">
+      <Page Include="..\..\GeneratedResources\WinUI\**\*.xaml" PackagePath="lib\$(TargetFramework)\$(PackageId)\" Pack="True">
           <Generator>MSBuild:Compile</Generator>
           <Link>%(RecursiveDir)\%(Filename).xaml</Link>
       </Page>
-
+      <Page Update="**\*.xaml" PackagePath="lib\$(TargetFramework)\$(PackageId)\" Pack="True" />
       <None Include="README.txt" Pack="True" PackagePath="\" />
   </ItemGroup>
 
   <ItemGroup>
       <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.3.230331000" />
       <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.755" />
-  </ItemGroup>
-
-  <ItemGroup>
-      <None Include="build\**\*.*" PackagePath="build\$(TargetFramework)\%(RecursiveDir)%(Filename)%(Extension);buildTransitive\$(TargetFramework)\%(RecursiveDir)%(Filename)%(Extension)" Pack="true" />
   </ItemGroup>
 </Project>
