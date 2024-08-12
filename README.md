@@ -1,5 +1,5 @@
 # Calcite
-Unofficial implementation of the Esri Calcite styles for various .NET XAML Frameworks inspired by the [Calcite Design System](https://github.com/Esri/calcite-design-system).
+Esri Calcite styles resources for .NET XAML Frameworks (WPF, WinUI & .NET MAUI) inspired by the [Calcite Design System](https://github.com/Esri/calcite-design-system).
 
 ## Index
  - [Usage](#usage)
