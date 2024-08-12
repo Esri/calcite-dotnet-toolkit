@@ -8,7 +8,7 @@
         <NugetProductPackageId>Esri.Calcite</NugetProductPackageId>
         <PackageTags>ArcGIS Cartography Geo Geographic Geography Geolocation Geospatial GIS Latitude Location Longitude Map Mapping Maps Places Spatial</PackageTags>
         <PackageIconFilePath>$(MSBuildThisFileDirectory)..\sdk\icons\ArcGIS_SDK_128.png</PackageIconFilePath>
-        <PackageProjectUrl>https://github.com/dotMorten/CalciteDotNet/</PackageProjectUrl> 
+        <PackageProjectUrl>https://github.com/esri/calcite-dotnet/</PackageProjectUrl> 
         <PackageIcon>icon.png</PackageIcon>
         <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
         <GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">True</GeneratePackageOnBuild>
