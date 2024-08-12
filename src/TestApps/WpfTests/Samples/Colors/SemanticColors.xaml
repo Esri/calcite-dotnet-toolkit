@@ -1,0 +1,8 @@
+<StackPanel xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <TextBlock Foreground="{DynamicResource CalciteUIText1Brush}" Text="Example Content Foreground" />
+    <TextBlock Foreground="{DynamicResource CalciteUIText3Brush}" Text="Subtle content" />
+    <TextBlock Foreground="{DynamicResource CalciteUIInfoBrush}" Text="Info" />
+    <TextBlock Foreground="{DynamicResource CalciteUIWarningBrush}" Text="Warning" />
+    <TextBlock Foreground="{DynamicResource CalciteUIDangerBrush}" Text="Danger" />
+    <TextBlock Foreground="{DynamicResource CalciteUISuccessBrush}" Text="Success" />
+</StackPanel>

@@ -1,0 +1,6 @@
+
+<StackPanel xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <RadioButton>Option A</RadioButton>
+    <RadioButton>Option B</RadioButton>
+    <RadioButton IsEnabled="False">Option C</RadioButton>
+</StackPanel>

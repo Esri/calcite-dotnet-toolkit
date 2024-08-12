@@ -1,0 +1,25 @@
+<Border xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Style="{DynamicResource Pattern.Forms.Container}">
+    <StackPanel>
+        <CheckBox Content="Example other control" />
+        <ListView>
+            <ListView.Items>
+                <ListViewItem Content="Item One" />
+                <ListViewItem Content="Item Two" />
+                <ListViewItem Content="Item One Two Three Four" />
+                <ListViewItem Content="Item Five" />
+                <ListViewItem Content="Item Six Seven Eight" />
+            </ListView.Items>
+        </ListView>
+        <CheckBox Content="Example other control" />
+        <ListBox>
+            <ListBox.Items>
+                <ListBoxItem Content="Item One" />
+                <ListBoxItem Content="Item Two" />
+                <ListBoxItem Content="Item One Two Three Four" />
+                <ListBoxItem Content="Item Five" />
+                <ListBoxItem Content="Item Six Seven Eight" />
+            </ListBox.Items>
+        </ListBox>
+        <CheckBox Content="Example other control" />
+    </StackPanel>
+</Border>

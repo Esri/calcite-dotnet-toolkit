@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c="http://schemas.esri.com/calcite/2024"
+             x:Class="MauiTests.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30"
+            VerticalOptions="Start">
+
+            <Button Text="Button" />
+            <HorizontalStackLayout>
+                <CheckBox IsChecked="True" />
+                <Label Text="Checkbox" VerticalOptions="Center" />
+            </HorizontalStackLayout>
+            <VerticalStackLayout>
+                <RadioButton Content="Radio Button 1" IsChecked="True" GroupName="group" />
+                <RadioButton Content="Radio Button 2" GroupName="group" />
+            </VerticalStackLayout>
+            <Border>
+                <Label Text="Label in border" />
+            </Border>
+            <ActivityIndicator WidthRequest="30" HeightRequest="30" HorizontalOptions="Start" IsRunning="True" />
+            <Switch IsToggled="True" />
+            <Slider WidthRequest="200" Minimum="0" Maximum="100" HorizontalOptions="Start" />
+            <ProgressBar Progress=".5" WidthRequest="200" HorizontalOptions="Start" />
+            <Entry Text="Entry" />
+            <Editor Text="Editor" WidthRequest="200" HeightRequest="100" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

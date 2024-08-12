@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiTests.ColorsPage">
+
+    <Grid>
+        <CollectionView x:Name="collectionView" Grid.Row="1" Margin="20,5" ItemSizingStrategy="MeasureFirstItem"
+                        Background="{StaticResource CalciteUIBackgroundColor_Dark}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <HorizontalStackLayout>
+                        <Border WidthRequest="100" HeightRequest="40" BackgroundColor="{Binding Color}" Margin="0,2,5,2" StrokeThickness="0" />
+                        <Label Text="{Binding Name}" VerticalOptions="Center" />
+                    </HorizontalStackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

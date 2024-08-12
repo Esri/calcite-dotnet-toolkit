@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Carbon.Css" Version="0.70.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <Target Name="GenerateFont" AfterTargets="Build">
+     <PropertyGroup>
+         <NpmVersion>v20.11.0</NpmVersion>
+     </PropertyGroup>
+     <Message Text="Downloading Node..." Importance="high" Condition="!Exists('$(BaseIntermediateOutputPath)\node-$(NpmVersion)-win-x64.zip')" />
+     <DownloadFile SourceUrl="https://nodejs.org/dist/$(NpmVersion)/node-$(NpmVersion)-win-x64.zip" DestinationFolder="$(BaseIntermediateOutputPath)" Condition="!Exists('$(BaseIntermediateOutputPath)\node-$(NpmVersion)-win-x64.zip')" />
+     <Message Text="Unzipping Node..." Importance="high" Condition="!Exists('$(BaseIntermediateOutputPath)\node-$(NpmVersion)-win-x64.zip')" />
+     <Unzip SourceFiles="$(BaseIntermediateOutputPath)\node-$(NpmVersion)-win-x64.zip" DestinationFolder="$(BaseIntermediateOutputPath)\" Condition="!Exists('$(BaseIntermediateOutputPath)\node-$(NpmVersion)-win-x64\node.exe')" SkipUnchangedFiles="true" />
+     <Message Text="Installing fantasticon..." Importance="high" Condition="!Exists('$(BaseIntermediateOutputPath)\node-$(NpmVersion)-win-x64\node_modules\fantasticon')" />
+     <Exec Command="npm install -g fantasticon@1.2.3" WorkingDirectory="$(BaseIntermediateOutputPath)\node-$(NpmVersion)-win-x64\" Condition="!Exists('$(BaseIntermediateOutputPath)\node-$(NpmVersion)-win-x64\node_modules\fantasticon')" />
+     <MakeDir Directories="$(MSBuildThisFileDirectory)..\..\GeneratedResources" />
+     <Message Text="Generating Calcite UI Icons Font..." Importance="high" Condition="!Exists('$(MSBuildThisFileDirectory)..\..\GeneratedResources\calcite-ui-icons.ttf')" />
+     <Exec Command="fantasticon $(MSBuildThisFileDirectory)..\..\calcite-ui-icons\icons\ -n calcite-ui-icons --normalize true -o $(MSBuildThisFileDirectory)..\..\GeneratedResources -t ttf -g json --config $(MSBuildThisFileDirectory)..\calcite-ui-icons-codepoints.json" WorkingDirectory="$(BaseIntermediateOutputPath)\node-$(NpmVersion)-win-x64\" Condition="!Exists('$(MSBuildThisFileDirectory)..\..\GeneratedResources\calcite-ui-icons.ttf')" />
+  </Target>
+  <Target Name="CleanFonts" BeforeTargets="Clean;Rebuild">
+    <Delete Files="$(MSBuildThisFileDirectory)..\..\GeneratedResources\calcite-ui-icons.ttf" />
+  </Target>
+</Project>

@@ -1,0 +1,9 @@
+﻿<Border xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Style="{DynamicResource Pattern.Forms.Container}">
+    <StackPanel>
+        <Button>Primary</Button>
+        <Button Style="{DynamicResource BtnSecondary}">Secondary</Button>
+        <Button Style="{DynamicResource BtnDanger}">Danger</Button>
+        <Button Style="{DynamicResource BtnDangerSecondary}">Danger2</Button>
+        <Button Style="{DynamicResource BtnChrome}">Chrome</Button>
+    </StackPanel>
+</Border>

@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:local="clr-namespace:Esri.Calcite.WPF"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source=".\Colors\Colors.xaml" />
+        <ResourceDictionary Source=".\Colors\Colors.Dark.xaml" />
+        <ResourceDictionary Source=".\Colors\Brushes.xaml" />
+        <ResourceDictionary Source=".\Shared\Fonts.xaml" />
+        <ResourceDictionary Source=".\Icons\Glyphs.xaml" />
+        <ResourceDictionary Source=".\ControlOverrides.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+</ResourceDictionary>

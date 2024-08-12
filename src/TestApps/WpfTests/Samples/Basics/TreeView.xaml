@@ -1,0 +1,14 @@
+<TreeView xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <TreeViewItem Header="Child 1" />
+    <TreeViewItem Header="Child 2">
+        <TreeViewItem Header="Grandchild 1" />
+        <TreeViewItem Header="Grandchild 2">
+            <TreeViewItem Header="Great-Grandchild really long name that will be useful for demonstrating wrapping behavior." />
+            <TreeViewItem Header="Great-Grandchild 2" />
+        </TreeViewItem>
+    </TreeViewItem>
+    <TreeViewItem Header="Child 3">
+        <TreeViewItem Header="Grandchild 1" />
+        <TreeViewItem Header="Grandchild 2" />
+    </TreeViewItem>
+</TreeView>

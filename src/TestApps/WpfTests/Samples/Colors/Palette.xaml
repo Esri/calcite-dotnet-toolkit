@@ -1,0 +1,14 @@
+<Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Width="400" Height="400" HorizontalAlignment="Left" VerticalAlignment="Top">
+    <Rectangle Canvas.Left="8" Canvas.Top="8" Width="64" Height="64" Fill="{DynamicResource CalciteUIBrandBrush}" />
+    <Rectangle Canvas.Left="78" Canvas.Top="8" Width="64" Height="64" Fill="{DynamicResource CalciteUIBrandHoverBrush}" />
+    <Rectangle Canvas.Left="150" Canvas.Top="8" Width="64" Height="64" Fill="{DynamicResource CalciteUIBrandPressBrush}" />
+    <Rectangle Canvas.Left="8" Canvas.Top="78" Width="64" Height="64" Fill="{DynamicResource CalciteUIDangerBrush}" />
+    <Rectangle Canvas.Left="78" Canvas.Top="78" Width="64" Height="64" Fill="{DynamicResource CalciteUIDangerHoverBrush}" />
+    <Rectangle Canvas.Left="150" Canvas.Top="78" Width="64" Height="64" Fill="{DynamicResource CalciteUIDangerPressBrush}" />
+    <Rectangle Canvas.Left="8" Canvas.Top="150" Width="64" Height="64" Fill="{DynamicResource CalciteUIWarningBrush}" />
+    <Rectangle Canvas.Left="8" Canvas.Top="222" Width="64" Height="64" Fill="{DynamicResource CalciteUISuccessBrush}" />
+    <Rectangle Canvas.Left="8" Canvas.Top="290" Width="32" Height="8" Fill="{DynamicResource CalciteUIText1Brush}" />
+    <Rectangle Canvas.Left="8" Canvas.Top="320" Width="64" Height="8" Fill="{DynamicResource CalciteUIText1Brush}" />
+    <Rectangle Canvas.Left="8" Canvas.Top="350" Width="128" Height="8" Fill="{DynamicResource CalciteUIText1Brush}" />
+    <Rectangle Canvas.Left="8" Canvas.Top="380" Width="160" Height="8" Fill="{DynamicResource CalciteUIText1Brush}" />
+</Canvas>

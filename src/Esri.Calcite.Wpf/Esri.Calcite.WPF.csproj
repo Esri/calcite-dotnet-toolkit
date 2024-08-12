@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472;net6.0-windows7.0</TargetFrameworks>
+    <!--<SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>-->
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU</Platforms>
+    <LangVersion>10.0</LangVersion>
+    <Description>$(Description) for WPF</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="..\..\GeneratedResources\*.ttf" Link="Fonts\%(Filename)%(Extension)" />
+    <None Include="README.txt" Pack="True" PackagePath="\" />
+    <Page Include="..\..\GeneratedResources\WPF\**\*.xaml" Link="%(RecursiveDir)\%(Filename).xaml">
+        <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="..\..\GeneratedResources\Wpf\*.cs" Link="%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

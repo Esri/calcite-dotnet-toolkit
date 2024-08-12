@@ -1,0 +1,6 @@
+[submodule "calcite-ui-icons"]
+	path = calcite-ui-icons
+	url = https://github.com/Esri/calcite-ui-icons
+[submodule "calcite-colors"]
+	path = calcite-colors
+	url = https://github.com/Esri/calcite-colors

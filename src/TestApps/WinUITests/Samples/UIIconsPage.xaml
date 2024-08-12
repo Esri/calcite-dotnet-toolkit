@@ -1,0 +1,43 @@
+<Page
+    x:Class="WinUITests.Samples.UIIconsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WinUITests.Samples"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:cal="using:Esri.Calcite.WinUI"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBox x:Name="search" PlaceholderText="Search Filter" KeyDown="OnFilterKeyDown" />
+
+        <ListView x:Name="gridView" Grid.Row="1">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="local:IconEntry">
+                    <StackPanel Orientation="Horizontal" BorderBrush="Black" BorderThickness="0,0,0,1" >
+                        <!--<IconSourceElement Width="50" Height="50" Foreground="Red">
+                            <IconSourceElement.IconSource>
+                                <cal:CalciteFontIconSource Icon="{x:Bind Icon}" FontSize="16" Scale="Small" />
+                            </IconSourceElement.IconSource>
+                        </IconSourceElement>-->
+                        <TextBlock Text="{x:Bind Glyph16}" Width="80" ToolTipService.ToolTip="{x:Bind GlyphHex16}"
+                           FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top"
+                           FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
+                        <TextBlock Text="{x:Bind Glyph24}" Width="80" ToolTipService.ToolTip="{x:Bind GlyphHex24}"
+                           FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top"
+                           FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
+                        <TextBlock Text="{x:Bind Glyph32}" Width="80" ToolTipService.ToolTip="{x:Bind GlyphHex32}"
+                                   FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top"
+                                   FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
+                        <TextBlock Text="{x:Bind Name}" VerticalAlignment="Center" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Page>

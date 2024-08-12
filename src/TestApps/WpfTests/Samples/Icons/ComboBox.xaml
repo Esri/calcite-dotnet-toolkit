@@ -1,0 +1,5 @@
+﻿<StackPanel xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:ca="http://schemas.esri.com/calcite/2024">
+    <ComboBox IsEditable="True" ca:Calcite.Symbol="Trash">
+        <ComboBoxItem Content="Item One" />
+    </ComboBox>
+</StackPanel>

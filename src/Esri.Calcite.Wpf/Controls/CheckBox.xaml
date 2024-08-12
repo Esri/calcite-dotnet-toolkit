@@ -1,0 +1,129 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:c="clr-namespace:Esri.Calcite.WPF"
+    xmlns:ca="clr-namespace:Esri.Calcite.WPF.Helpers">
+    <Geometry x:Key="icon-check-sb-16">M12.753 3l-7.319 7.497L3.252 8.31 2 9.373l3.434 3.434L14 4.24z</Geometry>
+    <Geometry x:Key="icon-indeterminate-sb-16">M4 7h8v2H4z</Geometry>
+    <Duration x:Key="commonAnimationDuration">0:0:0.1</Duration>
+    <ControlTemplate x:Key="CalciteCheckboxTemplate" TargetType="{x:Type CheckBox}">
+        <BulletDecorator Background="Transparent" UseLayoutRounding="True">
+            <BulletDecorator.Bullet>
+                <Border
+                    x:Name="Border"
+                    Width="12"
+                    Height="12"
+                    Background="Transparent"
+                    BorderBrush="{DynamicResource CalciteUIBorder1Brush}"
+                    BorderThickness="1"
+                    SnapsToDevicePixels="True">
+                    <Grid>
+                        <Path
+                            x:Name="CheckMark"
+                            Width="9"
+                            Height="7.36667"
+                            Data="{c:CalciteIconGeometry Icon=Check}"
+                            SnapsToDevicePixels="True"
+                            Stretch="Uniform"
+                            Visibility="Collapsed" />
+                        <Path
+                            x:Name="InderminateMark"
+                            Width="6"
+                            Height="1.5"
+                            Data="{c:CalciteIconGeometry Icon=Square}"
+                            SnapsToDevicePixels="True"
+                            Stretch="Uniform"
+                            Visibility="Collapsed" />
+                    </Grid>
+                </Border>
+            </BulletDecorator.Bullet>
+            <ContentPresenter
+                x:Name="ContentPresenterPart"
+                Margin="{DynamicResource BulletControlInnerMargin}"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                RecognizesAccessKey="True" />
+        </BulletDecorator>
+        <ControlTemplate.Triggers>
+            <!--  Hover, unchecked  -->
+
+            <!--  Checked, light  -->
+            <Trigger Property="IsChecked" Value="True">
+                <Setter TargetName="CheckMark" Property="Visibility" Value="Visible" />
+                <Setter TargetName="Border" Property="BorderThickness" Value="0" />
+                <Setter TargetName="CheckMark" Property="Fill" Value="White" />
+                <Setter TargetName="InderminateMark" Property="Fill" Value="{DynamicResource CalciteUIForegroundAlwaysLightBrush}" />
+                <Setter TargetName="Border" Property="Background" Value="{DynamicResource CalciteUIBrandBrush}" />
+                <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
+            </Trigger>
+            <!--  Indeterminate, light  -->
+            <Trigger Property="IsChecked" Value="{x:Null}">
+                <Setter TargetName="InderminateMark" Property="Visibility" Value="Visible" />
+                <Setter TargetName="Border" Property="BorderThickness" Value="0" />
+                <Setter TargetName="CheckMark" Property="Fill" Value="White" />
+                <Setter TargetName="InderminateMark" Property="Fill" Value="{DynamicResource CalciteUIForegroundAlwaysLightBrush}" />
+                <Setter TargetName="Border" Property="Background" Value="{DynamicResource CalciteUIBrandBrush}" />
+                <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
+            </Trigger>
+            <!--  Unchecked, not hovered, light  -->
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsMouseOver" Value="False" />
+                    <Condition Property="IsChecked" Value="False" />
+                </MultiTrigger.Conditions>
+                <Setter TargetName="Border" Property="Background" Value="Transparent" />
+                <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource CalciteUIBorderInputBrush}" />
+                <Setter TargetName="Border" Property="BorderThickness" Value="1" />
+            </MultiTrigger>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsChecked" Value="False" />
+                    <Condition Property="IsMouseOver" Value="True" />
+                </MultiTrigger.Conditions>
+                <MultiTrigger.Setters>
+                    <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
+                    <Setter TargetName="Border" Property="BorderThickness" Value="2" />
+                </MultiTrigger.Setters>
+            </MultiTrigger>
+            <!--  Hover, checked  -->
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsChecked" Value="True" />
+                    <Condition Property="IsMouseOver" Value="True" />
+                </MultiTrigger.Conditions>
+                <MultiTrigger.Setters>
+                    <Setter TargetName="Border" Property="Background" Value="{DynamicResource CalciteUIBrandHoverBrush}" />
+                    <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource CalciteUIBrandHoverBrush}" />
+                    <Setter TargetName="Border" Property="BorderThickness" Value="0" />
+                </MultiTrigger.Setters>
+            </MultiTrigger>
+            <!--  Hover, indeterminate, light  -->
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsChecked" Value="{x:Null}" />
+                    <Condition Property="IsMouseOver" Value="True" />
+                </MultiTrigger.Conditions>
+                <MultiTrigger.Setters>
+                    <Setter TargetName="Border" Property="Background" Value="{DynamicResource CalciteUIBrandHoverBrush}" />
+                </MultiTrigger.Setters>
+            </MultiTrigger>
+            <!--  Disabled  -->
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Opacity" Value="0.4" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <Style x:Key="CalciteCheckboxBase" TargetType="{x:Type CheckBox}">
+        <Setter Property="SnapsToDevicePixels" Value="true" />
+        <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Setter Property="Cursor" Value="{DynamicResource CalciteActionCursor}" />
+        <Setter Property="FocusVisualStyle" Value="{DynamicResource CheckBoxFocusVisual}" />
+        <Setter Property="Template" Value="{StaticResource CalciteCheckboxTemplate}" />
+        <Style.Triggers>
+            <Trigger Property="ca:AttachedFormData.IsInForm" Value="True">
+                <Setter Property="Margin" Value="{DynamicResource FormChildMargin}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+</ResourceDictionary>

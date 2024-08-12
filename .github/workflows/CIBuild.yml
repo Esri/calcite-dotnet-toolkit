@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches:
+    - main
+    - release/*
+  pull_request:
+    branches:
+    - main
+    
+jobs:
+  build:
+
+    runs-on: windows-latest
+    
+    steps:
+    - name: Clone Code
+      uses: actions/checkout@v3
+      with:
+        submodules: false
+        fetch-depth: 0
+    
+    - name: Setup Visual Studio Command Prompt
+      uses: microsoft/setup-msbuild@v2.0.0
+      
+    - name: Build WPF
+      run: |
+        msbuild /restore /t:Build src\Esri.Calcite.WPF\Esri.Calcite.WPF.csproj /p:Configuration=Release
+        
+    - name: Build WinUI
+      run: |
+        msbuild /restore /t:Build src\Esri.Calcite.WinUI\Esri.Calcite.WinUI.csproj /p:Configuration=Release
+        
+    - name: Build MAUI
+      run: |
+        msbuild /restore /t:Build src\Esri.Calcite.Maui\Esri.Calcite.Maui.csproj /p:Configuration=Release
+
+    - name: Upload NuGet artifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: NuGet Packages
+        path: artifacts/NuGet/Release
+      

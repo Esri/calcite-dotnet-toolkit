@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "IconXamlGenerator": {
+      "commandName": "Project",
+      "commandLineArgs": "..\\..\\..\\..\\..\\calcite-ui-icons\\docs\\icons.json ..\\..\\..\\..\\calcite-ui-icons-codepoints.json ..\\..\\..\\..\\..\\GeneratedResources\\Wpf\\ WPF"
+    }
+  }
+}

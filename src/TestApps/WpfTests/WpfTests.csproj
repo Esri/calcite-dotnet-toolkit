@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Esri.Calcite.WPF\Esri.Calcite.WPF.csproj" />
+  </ItemGroup>
+    <ItemGroup>
+        <Page Remove="Samples\**\*.xaml" />
+        <Content Include="Samples\**\*.xaml" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+</Project>

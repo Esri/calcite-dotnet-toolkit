@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style TargetType="ContentPresenter">
+        <Setter Property="TextElement.FontFamily" Value="{DynamicResource AvenirNext-Regular}" />
+        <Setter Property="TextElement.FontSize" Value="12" />
+        <Setter Property="TextElement.Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
+        <Setter Property="TextBlock.LineHeight" Value="16.2" />
+        <!--<Setter Property="TextBlock.LineStackingStrategy" Value="BlockLineHeight" />
+        <Setter Property="TextOptions.TextFormattingMode" Value="Ideal" />
+        <Setter Property="TextOptions.TextHintingMode" Value="Animated" />
+        <Setter Property="TextOptions.TextRenderingMode" Value="ClearType" />
+        <Setter Property="UseLayoutRounding" Value="True" />-->
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,5 @@
+<StackPanel xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <TextBox Text="Input text" />
+    <TextBox />
+    <TextBox IsEnabled="False" Text="Disabled" />
+</StackPanel>

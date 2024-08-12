@@ -1,0 +1,15 @@
+<ToolBar
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:ca="http://schemas.esri.com/calcite/2024"
+    VerticalAlignment="Top"
+    Style="{DynamicResource CalciteActionPad}">
+    <Button ca:Calcite.Symbol="Home" />
+    <Button ca:Calcite.Symbol="Infographic" />
+    <Button ca:Calcite.Symbol="Trash" Content="Button" />
+    <Separator />
+    <Button
+        ca:Calcite.Symbol="Console"
+        Content="Disabled"
+        IsEnabled="False" />
+    <ToggleButton ca:Calcite.Symbol="Gauge" Content="ToggleButton" />
+</ToolBar>

@@ -1,0 +1,23 @@
+<Page
+    x:Class="WinUITests.Samples.BrushesResourcesPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WinUITests.Samples"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:cal="using:Esri.Calcite.WinUI"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Resources>
+            <DataTemplate x:Key="BrushTemplate">
+                <StackPanel Orientation="Horizontal" BorderThickness="0,0,0,1" BorderBrush="Black">
+                    <Border Width="100" Height="50" BorderBrush="{ThemeResource ApplicationForegroundThemeBrush}" BorderThickness="1" Margin="0,5,5,5" Background="{Binding Value}"/>
+                    <TextBlock Text="{Binding Key}" VerticalAlignment="Center" />
+                </StackPanel>
+            </DataTemplate>
+        </Grid.Resources>
+        <ListView x:Name="gridView" ItemTemplate="{StaticResource BrushTemplate}" Margin="10" />
+    </Grid>
+</Page>
