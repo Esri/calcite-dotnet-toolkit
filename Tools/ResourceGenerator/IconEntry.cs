@@ -62,27 +62,42 @@ namespace IconXamlGenerator
                 else if (size == "32")
                     entry.Glyph32 = glyph;
             }
-            bool hasErrors = false;
+            List<string> missingIds = new List<string>();
             foreach (var entry in iconEntries)
             {
                 if (entry.Glyph16 == 0 && !string.IsNullOrEmpty(entry.S16))
                 {
-                    hasErrors = true;
-                    Console.WriteLine($"ERROR: {entry.Key}-16 is missing a codepoint");
+                    missingIds.Add($"{entry.Key}-16");
                 }
-                else if (entry.Glyph24 == 0 && !string.IsNullOrEmpty(entry.S24))
+                if (entry.Glyph24 == 0 && !string.IsNullOrEmpty(entry.S24))
                 {
-                    hasErrors = true;
-                    Console.WriteLine($"ERROR: {entry.Key}-24 is missing a codepoint");
+                    missingIds.Add($"{entry.Key}-24");
                 }
-                else if (entry.Glyph32 == 0 && !string.IsNullOrEmpty(entry.S32))
+                if (entry.Glyph32 == 0 && !string.IsNullOrEmpty(entry.S32))
                 {
-                    hasErrors = true;
-                    Console.WriteLine($"ERROR: {entry.Key}-32 is missing a codepoint");
+                    missingIds.Add($"{entry.Key}-32");
                 }
             }
-            if (hasErrors)
-                throw new InvalidOperationException();
+            Console.ResetColor();
+            if (missingIds.Count > 0)
+            {
+                Console.WriteLine("*** Missing entries ***");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                var nextGlyphID = iconEntries.Max(i => Math.Max(Math.Max(i.Glyph16, i.Glyph24), i.Glyph32)) + 1;
+                foreach(var id in missingIds.OrderBy(s=>s))
+                {
+                    Console.WriteLine($"    \"{id}\": {nextGlyphID++}, ");
+                }
+                Console.WriteLine("***");
+
+                Console.ForegroundColor = ConsoleColor.Red;
+                foreach (var id in missingIds.OrderBy(s => s))
+                {
+                    Console.WriteLine($"ERROR: {id} is missing a codepoint");
+                }
+                Console.ResetColor();
+                throw new InvalidOperationException("Missing codepoints logged to the console");
+            }
             return iconEntries;
         }
         public bool IsFilled => Key.EndsWith("-f");
@@ -163,6 +178,8 @@ namespace IconXamlGenerator
                 {
                     uppercase = true;
                 }
+                if (name.Contains("arcgis", StringComparison.OrdinalIgnoreCase))
+                    name = name.Replace("arcgis", "ArcGIS");
                 if (uppercase)
                     sb.Append(name[i].ToString().ToUpper());
                 else
