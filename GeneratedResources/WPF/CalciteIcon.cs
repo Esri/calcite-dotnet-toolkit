@@ -1128,7 +1128,7 @@ public enum CalciteIcon : ushort
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.28.8, generic, shape, button, circle, bold</remarks>
 	/// <release>3.28.8</release>
-	CircleInsetLarge = 65006,
+	CircleInsetLarge = 65012,
 
 	/// <summary>Circle Inset Medium</summary>
 	/// <remarks>Category: Generic<br/>
@@ -1140,7 +1140,7 @@ public enum CalciteIcon : ushort
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.28.8, generic, shape, symbol, circle, filled</remarks>
 	/// <release>3.28.8</release>
-	CircleInsetSmall = 65012,
+	CircleInsetSmall = 65006,
 
 	/// <summary>Circle Pause (Filled)</summary>
 	/// <remarks>Category: Symbols<br/>
@@ -1698,7 +1698,7 @@ public enum CalciteIcon : ushort
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.28.8, generic, shape, diamond, type, symbol, glyph</remarks>
 	/// <release>3.28.8</release>
-	DiamondInsetLarge = 65033,
+	DiamondInsetLarge = 65039,
 
 	/// <summary>Diamond Inset Medium</summary>
 	/// <remarks>Category: Generic<br/>
@@ -1710,7 +1710,7 @@ public enum CalciteIcon : ushort
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.28.8, generic, shape, symbol, diamond, filled</remarks>
 	/// <release>3.28.8</release>
-	DiamondInsetSmall = 65039,
+	DiamondInsetSmall = 65033,
 
 	/// <summary>Dimensions</summary>
 	/// <remarks>Category:  Generic<br/>
@@ -2970,7 +2970,7 @@ public enum CalciteIcon : ushort
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.28.8, generic, shape, symbol, filled, bold</remarks>
 	/// <release>3.28.8</release>
-	Hexagon2InsetLarge = 65066,
+	Hexagon2InsetLarge = 65072,
 
 	/// <summary>Hexagon 2 Inset Medium</summary>
 	/// <remarks>Category: Generic<br/>
@@ -2982,13 +2982,13 @@ public enum CalciteIcon : ushort
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.28.8, generic, shape, symbol, hexagon</remarks>
 	/// <release>3.28.8</release>
-	Hexagon2InsetSmall = 65072,
+	Hexagon2InsetSmall = 65066,
 
 	/// <summary>Hexagon Inset Large</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.28.8, generic, shape, symbol, hexagon, geometry</remarks>
 	/// <release>3.28.8</release>
-	HexagonInsetLarge = 65075,
+	HexagonInsetLarge = 65081,
 
 	/// <summary>Hexagon Inset Medium</summary>
 	/// <remarks>Category: Generic<br/>
@@ -3000,7 +3000,7 @@ public enum CalciteIcon : ushort
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.28.8, generic, shape, symbol, hexagon, filled</remarks>
 	/// <release>3.28.8</release>
-	HexagonInsetSmall = 65081,
+	HexagonInsetSmall = 65075,
 
 	/// <summary>Hide Derived Value</summary>
 	/// <remarks>Category: Forms<br/>
@@ -5988,7 +5988,7 @@ public enum CalciteIcon : ushort
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.28.8, generic, shape, symbol, square</remarks>
 	/// <release>3.28.8</release>
-	SquareInsetLarge = 65144,
+	SquareInsetLarge = 65150,
 
 	/// <summary>Square Inset Medium</summary>
 	/// <remarks>Category: Generic<br/>
@@ -6000,7 +6000,7 @@ public enum CalciteIcon : ushort
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.28.8, generic, shape, symbol, square, bold</remarks>
 	/// <release>3.28.8</release>
-	SquareInsetSmall = 65150,
+	SquareInsetSmall = 65144,
 
 	/// <summary>Stairs</summary>
 	/// <remarks>Category: Directions<br/>

@@ -19,6 +19,10 @@ internal static class IconHelpers
 			case CalciteIcon.AZ: return "AZ";
 			case CalciteIcon.AZDown: return "AZDown";
 			case CalciteIcon.AZUp: return "AZUp";
+			case CalciteIcon.A3Landscape: return "A3Landscape";
+			case CalciteIcon.A3Portrait: return "A3Portrait";
+			case CalciteIcon.A4Landscape: return "A4Landscape";
+			case CalciteIcon.A4Portrait: return "A4Portrait";
 			case CalciteIcon.AbsoluteDirection: return "AbsoluteDirection";
 			case CalciteIcon.AbsoluteElevation: return "AbsoluteElevation";
 			case CalciteIcon.AccessStringResults: return "AccessStringResults";
@@ -37,6 +41,7 @@ internal static class IconHelpers
 			case CalciteIcon.AddRasters: return "AddRasters";
 			case CalciteIcon.AddReaction: return "AddReaction";
 			case CalciteIcon.AddText: return "AddText";
+			case CalciteIcon.AddToModel: return "AddToModel";
 			case CalciteIcon.AddressBook: return "AddressBook";
 			case CalciteIcon.AlertOffCircleFilled: return "AlertOffCircleFilled";
 			case CalciteIcon.AllServers: return "AllServers";
@@ -44,6 +49,10 @@ internal static class IconHelpers
 			case CalciteIcon.Analysis: return "Analysis";
 			case CalciteIcon.AnalysisOverlay: return "AnalysisOverlay";
 			case CalciteIcon.AnnotateTool: return "AnnotateTool";
+			case CalciteIcon.AnsiALandscape: return "AnsiALandscape";
+			case CalciteIcon.AnsiAPortrait: return "AnsiAPortrait";
+			case CalciteIcon.AnsiBLandscape: return "AnsiBLandscape";
+			case CalciteIcon.AnsiBPortrait: return "AnsiBPortrait";
 			case CalciteIcon.AntennaHeight: return "AntennaHeight";
 			case CalciteIcon.AppGear: return "AppGear";
 			case CalciteIcon.AppLauncher: return "AppLauncher";
@@ -53,7 +62,8 @@ internal static class IconHelpers
 			case CalciteIcon.ApplyChanges: return "ApplyChanges";
 			case CalciteIcon.ApplySelectionToExistingView: return "ApplySelectionToExistingView";
 			case CalciteIcon.Apps: return "Apps";
-			case CalciteIcon.ArcgisOnline: return "ArcgisOnline";
+			case CalciteIcon.ArcGISDataStore: return "ArcGISDataStore";
+			case CalciteIcon.ArcGISOnline: return "ArcGISOnline";
 			case CalciteIcon.ArrowBoldDown: return "ArrowBoldDown";
 			case CalciteIcon.ArrowBoldLeft: return "ArrowBoldLeft";
 			case CalciteIcon.ArrowBoldRight: return "ArrowBoldRight";
@@ -99,6 +109,7 @@ internal static class IconHelpers
 			case CalciteIcon.BellOff: return "BellOff";
 			case CalciteIcon.Beta: return "Beta";
 			case CalciteIcon.Biking: return "Biking";
+			case CalciteIcon.Binary: return "Binary";
 			case CalciteIcon.Blank: return "Blank";
 			case CalciteIcon.Blog: return "Blog";
 			case CalciteIcon.Bluetooth: return "Bluetooth";
@@ -112,6 +123,7 @@ internal static class IconHelpers
 			case CalciteIcon.BorderRadiusSharp: return "BorderRadiusSharp";
 			case CalciteIcon.BoxChart: return "BoxChart";
 			case CalciteIcon.BoxChartSeries: return "BoxChartSeries";
+			case CalciteIcon.Brackets: return "Brackets";
 			case CalciteIcon.BracketsCurly: return "BracketsCurly";
 			case CalciteIcon.BreakRecurrence: return "BreakRecurrence";
 			case CalciteIcon.Brightness: return "Brightness";
@@ -181,6 +193,9 @@ internal static class IconHelpers
 			case CalciteIcon.Circle: return "Circle";
 			case CalciteIcon.CircleArea: return "CircleArea";
 			case CalciteIcon.CircleDisallowed: return "CircleDisallowed";
+			case CalciteIcon.CircleInsetLarge: return "CircleInsetLarge";
+			case CalciteIcon.CircleInsetMedium: return "CircleInsetMedium";
+			case CalciteIcon.CircleInsetSmall: return "CircleInsetSmall";
 			case CalciteIcon.CirclePauseFilled: return "CirclePauseFilled";
 			case CalciteIcon.CirclePause: return "CirclePause";
 			case CalciteIcon.CircleStopFilled: return "CircleStopFilled";
@@ -189,11 +204,14 @@ internal static class IconHelpers
 			case CalciteIcon.ClassifyPixels: return "ClassifyPixels";
 			case CalciteIcon.ClearSelection: return "ClearSelection";
 			case CalciteIcon.Clipboard: return "Clipboard";
+			case CalciteIcon.ClipboardBrackets: return "ClipboardBrackets";
 			case CalciteIcon.Clock: return "Clock";
 			case CalciteIcon.ClockDown: return "ClockDown";
 			case CalciteIcon.ClockForward: return "ClockForward";
 			case CalciteIcon.ClockUp: return "ClockUp";
 			case CalciteIcon.Cloud: return "Cloud";
+			case CalciteIcon.CloudData: return "CloudData";
+			case CalciteIcon.CloudServer: return "CloudServer";
 			case CalciteIcon.Cloudy: return "Cloudy";
 			case CalciteIcon.Clustering: return "Clustering";
 			case CalciteIcon.Code: return "Code";
@@ -216,6 +234,7 @@ internal static class IconHelpers
 			case CalciteIcon.ConditionalRulesPath: return "ConditionalRulesPath";
 			case CalciteIcon.ConferenceRoom: return "ConferenceRoom";
 			case CalciteIcon.Configure: return "Configure";
+			case CalciteIcon.ConfigureEditing: return "ConfigureEditing";
 			case CalciteIcon.ConfigureGridUnit: return "ConfigureGridUnit";
 			case CalciteIcon.ConfigurePopup: return "ConfigurePopup";
 			case CalciteIcon.Console: return "Console";
@@ -246,6 +265,7 @@ internal static class IconHelpers
 			case CalciteIcon.CursorPlus: return "CursorPlus";
 			case CalciteIcon.CursorSelection: return "CursorSelection";
 			case CalciteIcon.Curve: return "Curve";
+			case CalciteIcon.CustomPrint: return "CustomPrint";
 			case CalciteIcon.CutAndFillVolumeCalculation: return "CutAndFillVolumeCalculation";
 			case CalciteIcon.Dashboard: return "Dashboard";
 			case CalciteIcon.Data: return "Data";
@@ -266,7 +286,11 @@ internal static class IconHelpers
 			case CalciteIcon.Description: return "Description";
 			case CalciteIcon.Desk: return "Desk";
 			case CalciteIcon.Desktop: return "Desktop";
+			case CalciteIcon.DeveloperCredentials: return "DeveloperCredentials";
 			case CalciteIcon.Diamond: return "Diamond";
+			case CalciteIcon.DiamondInsetLarge: return "DiamondInsetLarge";
+			case CalciteIcon.DiamondInsetMedium: return "DiamondInsetMedium";
+			case CalciteIcon.DiamondInsetSmall: return "DiamondInsetSmall";
 			case CalciteIcon.Dimensions: return "Dimensions";
 			case CalciteIcon.DimensionsUnit: return "DimensionsUnit";
 			case CalciteIcon.DimensionsWall: return "DimensionsWall";
@@ -281,6 +305,7 @@ internal static class IconHelpers
 			case CalciteIcon.DockBottom: return "DockBottom";
 			case CalciteIcon.DockLeft: return "DockLeft";
 			case CalciteIcon.DockRight: return "DockRight";
+			case CalciteIcon.DoubleFloat: return "DoubleFloat";
 			case CalciteIcon.Download: return "Download";
 			case CalciteIcon.DownloadTo: return "DownloadTo";
 			case CalciteIcon.Drag: return "Drag";
@@ -325,6 +350,8 @@ internal static class IconHelpers
 			case CalciteIcon.ExclamationMarkCircle: return "ExclamationMarkCircle";
 			case CalciteIcon.ExclamationMarkTriangleFilled: return "ExclamationMarkTriangleFilled";
 			case CalciteIcon.ExclamationMarkTriangle: return "ExclamationMarkTriangle";
+			case CalciteIcon.ExclamationPointFilled: return "ExclamationPointFilled";
+			case CalciteIcon.ExclamationPoint: return "ExclamationPoint";
 			case CalciteIcon.ExitHighwayLeft: return "ExitHighwayLeft";
 			case CalciteIcon.ExitHighwayRight: return "ExitHighwayRight";
 			case CalciteIcon.Expand: return "Expand";
@@ -355,6 +382,7 @@ internal static class IconHelpers
 			case CalciteIcon.FilePitemx: return "FilePitemx";
 			case CalciteIcon.FilePpt: return "FilePpt";
 			case CalciteIcon.FileReport: return "FileReport";
+			case CalciteIcon.FileReportGeneric: return "FileReportGeneric";
 			case CalciteIcon.FileShape: return "FileShape";
 			case CalciteIcon.FileSound: return "FileSound";
 			case CalciteIcon.FileSqlite: return "FileSqlite";
@@ -362,6 +390,7 @@ internal static class IconHelpers
 			case CalciteIcon.FileUser: return "FileUser";
 			case CalciteIcon.FileVideo: return "FileVideo";
 			case CalciteIcon.FileWord: return "FileWord";
+			case CalciteIcon.FileXml: return "FileXml";
 			case CalciteIcon.FileZip: return "FileZip";
 			case CalciteIcon.Files: return "Files";
 			case CalciteIcon.FilesCsvCollection: return "FilesCsvCollection";
@@ -377,6 +406,7 @@ internal static class IconHelpers
 			case CalciteIcon.FolderFilled: return "FolderFilled";
 			case CalciteIcon.Folder: return "Folder";
 			case CalciteIcon.FolderArchive: return "FolderArchive";
+			case CalciteIcon.FolderMagnifyingGlass: return "FolderMagnifyingGlass";
 			case CalciteIcon.FolderMove: return "FolderMove";
 			case CalciteIcon.FolderNew: return "FolderNew";
 			case CalciteIcon.FolderOpenFilled: return "FolderOpenFilled";
@@ -404,6 +434,7 @@ internal static class IconHelpers
 			case CalciteIcon.FourByOneGrid: return "FourByOneGrid";
 			case CalciteIcon.FourByThreeGrid: return "FourByThreeGrid";
 			case CalciteIcon.FourByTwoGrid: return "FourByTwoGrid";
+			case CalciteIcon.FrameExport: return "FrameExport";
 			case CalciteIcon.Freehand: return "Freehand";
 			case CalciteIcon.FreehandArea: return "FreehandArea";
 			case CalciteIcon.Frown: return "Frown";
@@ -468,6 +499,13 @@ internal static class IconHelpers
 			case CalciteIcon.HeavyRain: return "HeavyRain";
 			case CalciteIcon.HeavySnow: return "HeavySnow";
 			case CalciteIcon.Hexagon: return "Hexagon";
+			case CalciteIcon.Hexagon2: return "Hexagon2";
+			case CalciteIcon.Hexagon2InsetLarge: return "Hexagon2InsetLarge";
+			case CalciteIcon.Hexagon2InsetMedium: return "Hexagon2InsetMedium";
+			case CalciteIcon.Hexagon2InsetSmall: return "Hexagon2InsetSmall";
+			case CalciteIcon.HexagonInsetLarge: return "HexagonInsetLarge";
+			case CalciteIcon.HexagonInsetMedium: return "HexagonInsetMedium";
+			case CalciteIcon.HexagonInsetSmall: return "HexagonInsetSmall";
 			case CalciteIcon.HideDerivedValue: return "HideDerivedValue";
 			case CalciteIcon.HideEmpty: return "HideEmpty";
 			case CalciteIcon.HideLayers: return "HideLayers";
@@ -518,6 +556,7 @@ internal static class IconHelpers
 			case CalciteIcon.KnowledgeGraph: return "KnowledgeGraph";
 			case CalciteIcon.KnowledgeGraphDashboard: return "KnowledgeGraphDashboard";
 			case CalciteIcon.KnowledgeGraphDataModel: return "KnowledgeGraphDataModel";
+			case CalciteIcon.KnowledgeGraphDataStore: return "KnowledgeGraphDataStore";
 			case CalciteIcon.KnowledgeGraphExport: return "KnowledgeGraphExport";
 			case CalciteIcon.KnowledgeGraphImport: return "KnowledgeGraphImport";
 			case CalciteIcon.KnowledgeGraphNew: return "KnowledgeGraphNew";
@@ -552,6 +591,7 @@ internal static class IconHelpers
 			case CalciteIcon.LayerZoomTo: return "LayerZoomTo";
 			case CalciteIcon.Layers: return "Layers";
 			case CalciteIcon.LayersEditable: return "LayersEditable";
+			case CalciteIcon.LayersFilled: return "LayersFilled";
 			case CalciteIcon.LayersReference: return "LayersReference";
 			case CalciteIcon.LayoutCompact: return "LayoutCompact";
 			case CalciteIcon.LayoutHorizontal: return "LayoutHorizontal";
@@ -592,6 +632,7 @@ internal static class IconHelpers
 			case CalciteIcon.ListRadio: return "ListRadio";
 			case CalciteIcon.ListRectangle: return "ListRectangle";
 			case CalciteIcon.ListShowAll: return "ListShowAll";
+			case CalciteIcon.LivestreamVideoLayer: return "LivestreamVideoLayer";
 			case CalciteIcon.LocationSharingFilled: return "LocationSharingFilled";
 			case CalciteIcon.LocationSharing: return "LocationSharing";
 			case CalciteIcon.LocationSharingOff: return "LocationSharingOff";
@@ -624,6 +665,7 @@ internal static class IconHelpers
 			case CalciteIcon.MeasureLine: return "MeasureLine";
 			case CalciteIcon.MediaLayer: return "MediaLayer";
 			case CalciteIcon.MegaPhone: return "MegaPhone";
+			case CalciteIcon.MembersBrackets: return "MembersBrackets";
 			case CalciteIcon.Merge: return "Merge";
 			case CalciteIcon.Merge2: return "Merge2";
 			case CalciteIcon.MergeDetails: return "MergeDetails";
@@ -647,6 +689,8 @@ internal static class IconHelpers
 			case CalciteIcon.MobileOff: return "MobileOff";
 			case CalciteIcon.MobileVibrate: return "MobileVibrate";
 			case CalciteIcon.Model: return "Model";
+			case CalciteIcon.ModelEdit: return "ModelEdit";
+			case CalciteIcon.ModifyAssociations: return "ModifyAssociations";
 			case CalciteIcon.Monitor: return "Monitor";
 			case CalciteIcon.Moon: return "Moon";
 			case CalciteIcon.Move: return "Move";
@@ -697,6 +741,7 @@ internal static class IconHelpers
 			case CalciteIcon.NumberCircle9: return "NumberCircle9";
 			case CalciteIcon.NumberOfTerritories: return "NumberOfTerritories";
 			case CalciteIcon.ObjectDetection: return "ObjectDetection";
+			case CalciteIcon.ObjectstoreDataStore: return "ObjectstoreDataStore";
 			case CalciteIcon.Octagon: return "Octagon";
 			case CalciteIcon.Offline: return "Offline";
 			case CalciteIcon.OnTheGroundElevation: return "OnTheGroundElevation";
@@ -709,6 +754,7 @@ internal static class IconHelpers
 			case CalciteIcon.OverlapFeatures: return "OverlapFeatures";
 			case CalciteIcon.Overview: return "Overview";
 			case CalciteIcon.OverwriteFeatures: return "OverwriteFeatures";
+			case CalciteIcon.OverwriteProject: return "OverwriteProject";
 			case CalciteIcon.Package: return "Package";
 			case CalciteIcon.PaintBucket: return "PaintBucket";
 			case CalciteIcon.Palette: return "Palette";
@@ -719,6 +765,8 @@ internal static class IconHelpers
 			case CalciteIcon.PartlyCloudy: return "PartlyCloudy";
 			case CalciteIcon.Partner: return "Partner";
 			case CalciteIcon.Paste: return "Paste";
+			case CalciteIcon.PasteWithAttribute: return "PasteWithAttribute";
+			case CalciteIcon.PasteWithoutAttribute: return "PasteWithoutAttribute";
 			case CalciteIcon.PauseFilled: return "PauseFilled";
 			case CalciteIcon.Pause: return "Pause";
 			case CalciteIcon.Pen: return "Pen";
@@ -782,7 +830,7 @@ internal static class IconHelpers
 			case CalciteIcon.Question: return "Question";
 			case CalciteIcon.QuestionMark: return "QuestionMark";
 			case CalciteIcon.Quote: return "Quote";
-			case CalciteIcon.RadialTreeLinkChartYayout: return "RadialTreeLinkChartYayout";
+			case CalciteIcon.RadialTreeLinkChartLayout: return "RadialTreeLinkChartLayout";
 			case CalciteIcon.Rain: return "Rain";
 			case CalciteIcon.RainSnow: return "RainSnow";
 			case CalciteIcon.RainThunder: return "RainThunder";
@@ -804,15 +852,20 @@ internal static class IconHelpers
 			case CalciteIcon.Refresh: return "Refresh";
 			case CalciteIcon.RefreshFilled: return "RefreshFilled";
 			case CalciteIcon.Register: return "Register";
+			case CalciteIcon.RelationalDataStore: return "RelationalDataStore";
 			case CalciteIcon.RelativeDirection: return "RelativeDirection";
 			case CalciteIcon.RelativeToGroundElevation: return "RelativeToGroundElevation";
 			case CalciteIcon.RelativeToSceneElevation: return "RelativeToSceneElevation";
+			case CalciteIcon.RemoveFromList: return "RemoveFromList";
 			case CalciteIcon.RemoveLinkchart: return "RemoveLinkchart";
 			case CalciteIcon.ReorderCards: return "ReorderCards";
 			case CalciteIcon.ReorderGrid: return "ReorderGrid";
 			case CalciteIcon.ReorderStack: return "ReorderStack";
 			case CalciteIcon.ReplaceImage: return "ReplaceImage";
 			case CalciteIcon.Reset: return "Reset";
+			case CalciteIcon.ReshapeAddGeometry: return "ReshapeAddGeometry";
+			case CalciteIcon.ReshapeSubtractGeometry: return "ReshapeSubtractGeometry";
+			case CalciteIcon.ReshapeTool: return "ReshapeTool";
 			case CalciteIcon.ResizeArea: return "ResizeArea";
 			case CalciteIcon.Retrain: return "Retrain";
 			case CalciteIcon.ReverseFilled: return "ReverseFilled";
@@ -865,6 +918,7 @@ internal static class IconHelpers
 			case CalciteIcon.ScanCrosshatch: return "ScanCrosshatch";
 			case CalciteIcon.ScanPerimeter: return "ScanPerimeter";
 			case CalciteIcon.ScanVertical: return "ScanVertical";
+			case CalciteIcon.Schema: return "Schema";
 			case CalciteIcon.Scissors: return "Scissors";
 			case CalciteIcon.ScreenshotMode: return "ScreenshotMode";
 			case CalciteIcon.Script: return "Script";
@@ -872,7 +926,9 @@ internal static class IconHelpers
 			case CalciteIcon.Search: return "Search";
 			case CalciteIcon.Security: return "Security";
 			case CalciteIcon.Select: return "Select";
+			case CalciteIcon.SelectByAttributes: return "SelectByAttributes";
 			case CalciteIcon.SelectCategory: return "SelectCategory";
+			case CalciteIcon.SelectColumn: return "SelectColumn";
 			case CalciteIcon.SelectRange: return "SelectRange";
 			case CalciteIcon.SelectVisible: return "SelectVisible";
 			case CalciteIcon.SelectedItemsFilter: return "SelectedItemsFilter";
@@ -931,6 +987,7 @@ internal static class IconHelpers
 			case CalciteIcon.SoundLow: return "SoundLow";
 			case CalciteIcon.SoundOff: return "SoundOff";
 			case CalciteIcon.SoundUnavailable: return "SoundUnavailable";
+			case CalciteIcon.SpatiotemporalDataStore: return "SpatiotemporalDataStore";
 			case CalciteIcon.SpeechBubble: return "SpeechBubble";
 			case CalciteIcon.SpeechBubbleCheck: return "SpeechBubbleCheck";
 			case CalciteIcon.SpeechBubbleExclamation: return "SpeechBubbleExclamation";
@@ -946,6 +1003,9 @@ internal static class IconHelpers
 			case CalciteIcon.SquareFilled: return "SquareFilled";
 			case CalciteIcon.Square: return "Square";
 			case CalciteIcon.SquareArea: return "SquareArea";
+			case CalciteIcon.SquareInsetLarge: return "SquareInsetLarge";
+			case CalciteIcon.SquareInsetMedium: return "SquareInsetMedium";
+			case CalciteIcon.SquareInsetSmall: return "SquareInsetSmall";
 			case CalciteIcon.Stairs: return "Stairs";
 			case CalciteIcon.StairsDown: return "StairsDown";
 			case CalciteIcon.StairsUp: return "StairsUp";
@@ -962,6 +1022,8 @@ internal static class IconHelpers
 			case CalciteIcon.Stretch: return "Stretch";
 			case CalciteIcon.Strikethrough: return "Strikethrough";
 			case CalciteIcon.String: return "String";
+			case CalciteIcon.Styling: return "Styling";
+			case CalciteIcon.SubFields: return "SubFields";
 			case CalciteIcon.Subheading1: return "Subheading1";
 			case CalciteIcon.Subheading: return "Subheading";
 			case CalciteIcon.Subheading2: return "Subheading2";
@@ -971,6 +1033,7 @@ internal static class IconHelpers
 			case CalciteIcon.SubheadingRtl: return "SubheadingRtl";
 			case CalciteIcon.Submit: return "Submit";
 			case CalciteIcon.Subscript: return "Subscript";
+			case CalciteIcon.Subtype: return "Subtype";
 			case CalciteIcon.SuitabilityAnalysisOutput: return "SuitabilityAnalysisOutput";
 			case CalciteIcon.SummarizeCenterAndDispersion1: return "SummarizeCenterAndDispersion1";
 			case CalciteIcon.SummarizeCenterAndDispersion2: return "SummarizeCenterAndDispersion2";
@@ -988,11 +1051,13 @@ internal static class IconHelpers
 			case CalciteIcon.Tablet: return "Tablet";
 			case CalciteIcon.Tag: return "Tag";
 			case CalciteIcon.TakePedestrianRamp: return "TakePedestrianRamp";
+			case CalciteIcon.Templates: return "Templates";
 			case CalciteIcon.Temporary: return "Temporary";
 			case CalciteIcon.Terminal: return "Terminal";
 			case CalciteIcon.TerritoryBufferDistance: return "TerritoryBufferDistance";
 			case CalciteIcon.TestData: return "TestData";
 			case CalciteIcon.Text: return "Text";
+			case CalciteIcon.TextBold: return "TextBold";
 			case CalciteIcon.TextButton: return "TextButton";
 			case CalciteIcon.TextDashedUnderline: return "TextDashedUnderline";
 			case CalciteIcon.TextLarge: return "TextLarge";
@@ -1005,6 +1070,7 @@ internal static class IconHelpers
 			case CalciteIcon.ThreeByTwoGrid: return "ThreeByTwoGrid";
 			case CalciteIcon.ThumbsDown: return "ThumbsDown";
 			case CalciteIcon.ThumbsUp: return "ThumbsUp";
+			case CalciteIcon.TileCacheDataStore: return "TileCacheDataStore";
 			case CalciteIcon.TileLayer: return "TileLayer";
 			case CalciteIcon.TiledImageryLayer: return "TiledImageryLayer";
 			case CalciteIcon.TimeFilter: return "TimeFilter";
@@ -1054,7 +1120,9 @@ internal static class IconHelpers
 			case CalciteIcon.UserUp: return "UserUp";
 			case CalciteIcon.UserX: return "UserX";
 			case CalciteIcon.Users: return "Users";
+			case CalciteIcon.UtilityNetwork: return "UtilityNetwork";
 			case CalciteIcon.UtilityNetworkTrace: return "UtilityNetworkTrace";
+			case CalciteIcon.ValidateUtilityNetworkTopology: return "ValidateUtilityNetworkTopology";
 			case CalciteIcon.VertexCheck: return "VertexCheck";
 			case CalciteIcon.VertexEdit: return "VertexEdit";
 			case CalciteIcon.VertexGps: return "VertexGps";
@@ -1063,6 +1131,7 @@ internal static class IconHelpers
 			case CalciteIcon.VertexX: return "VertexX";
 			case CalciteIcon.VerticalDistribute: return "VerticalDistribute";
 			case CalciteIcon.Video: return "Video";
+			case CalciteIcon.VideoLayer: return "VideoLayer";
 			case CalciteIcon.VideoPlus: return "VideoPlus";
 			case CalciteIcon.VideoServer: return "VideoServer";
 			case CalciteIcon.VideoSingleServer: return "VideoSingleServer";
