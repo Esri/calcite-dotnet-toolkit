@@ -22,7 +22,7 @@ public enum CalciteIcon : ushort
 
 	/// <summary>One Time</summary>
 	/// <remarks>Category: Numbers<br/>
-	/// Alias: 3.19.9, numbers, playback speed, one time, slowed down, spead up</remarks>
+	/// Alias: 3.19.9, numbers, playback speed, one time, slowed down, speed up</remarks>
 	/// <release>3.19.9</release>
 	OneTime = 61706,
 
@@ -34,7 +34,7 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Two Times</summary>
 	/// <remarks>Category: Numbers<br/>
-	/// Alias: 3.19.9, numbers, two times, spead up, second, double time</remarks>
+	/// Alias: 3.19.9, numbers, two times, speed up, second, double time</remarks>
 	/// <release>3.19.9</release>
 	TwoTimes = 61712,
 
@@ -52,13 +52,13 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Four Times</summary>
 	/// <remarks>Category: Numbers<br/>
-	/// Alias: 3.19.9, numbers, playback speed, four times, spead up</remarks>
+	/// Alias: 3.19.9, numbers, playback speed, four times, speed up</remarks>
 	/// <release>3.19.9</release>
 	FourTimes = 61721,
 
 	/// <summary>Eigth Times</summary>
 	/// <remarks>Category: Numbers<br/>
-	/// Alias: 3.19.9, numbers, playback speed, eight times, spead up</remarks>
+	/// Alias: 3.19.9, numbers, playback speed, eight times, speed up</remarks>
 	/// <release>3.19.9</release>
 	EigthTimes = 61724,
 
@@ -79,6 +79,30 @@ public enum CalciteIcon : ushort
 	/// Alias: 1.5.0, text, sort, alphabetical, ascending</remarks>
 	/// <release>1.5</release>
 	AZUp = 61733,
+
+	/// <summary>A3 Landscape</summary>
+	/// <remarks>Category: Document<br/>
+	/// Alias: 3.28.7, document, text, file, page, letter, number</remarks>
+	/// <release>3.28.7</release>
+	A3Landscape = 64970,
+
+	/// <summary>A3 Portrait</summary>
+	/// <remarks>Category: Document<br/>
+	/// Alias: 3.28.7, document, file, text, portrait</remarks>
+	/// <release>3.28.7</release>
+	A3Portrait = 64973,
+
+	/// <summary>A4 Landscape</summary>
+	/// <remarks>Category: Document<br/>
+	/// Alias: 3.28.7, document, number, file, text, landscape</remarks>
+	/// <release>3.28.7</release>
+	A4Landscape = 64976,
+
+	/// <summary>A4 Portrait</summary>
+	/// <remarks>Category: Document<br/>
+	/// Alias: 3.28.7, document, file, text, portrait, letter</remarks>
+	/// <release>3.28.7</release>
+	A4Portrait = 64979,
 
 	/// <summary>Absolute Direction</summary>
 	/// <remarks>Category: GIS<br/>
@@ -188,6 +212,12 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	AddText = 61787,
 
+	/// <summary>Add To Model</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 3.27.2, knowledge graph, add, model, edit</remarks>
+	/// <release>3.27.2</release>
+	AddToModel = 64982,
+
 	/// <summary>Address Book</summary>
 	/// <remarks>Category: Objects<br/>
 	/// Alias: 3.0.0, contacts, address book, person, people, spiral notebook, users, contact information, phone number, addresses</remarks>
@@ -229,6 +259,30 @@ public enum CalciteIcon : ushort
 	/// Alias: 2.5.1, image, pencil, edit, note, imagery, mark-up, draw, photo, picture</remarks>
 	/// <release>2.5.1</release>
 	AnnotateTool = 61808,
+
+	/// <summary>Ansi A Landscape</summary>
+	/// <remarks>Category: Document<br/>
+	/// Alias: 3.28.7, document, file, text, landscape, letter, alphabet</remarks>
+	/// <release>3.28.7</release>
+	AnsiALandscape = 64985,
+
+	/// <summary>Ansi A Portrait</summary>
+	/// <remarks>Category: Document<br/>
+	/// Alias: 3.28.7, document, file, text, portrait, letter</remarks>
+	/// <release>3.28.7</release>
+	AnsiAPortrait = 64988,
+
+	/// <summary>Ansi B Landscape</summary>
+	/// <remarks>Category: Document<br/>
+	/// Alias: 3.28.7, document, letter, file, text, alphabet, landscape</remarks>
+	/// <release>3.28.7</release>
+	AnsiBLandscape = 64991,
+
+	/// <summary>Ansi B Portrait</summary>
+	/// <remarks>Category: Document<br/>
+	/// Alias: 3.28.7, document, file, letter, page, portrait</remarks>
+	/// <release>3.28.7</release>
+	AnsiBPortrait = 64994,
 
 	/// <summary>Antenna Height</summary>
 	/// <remarks>Category: GIS<br/>
@@ -284,11 +338,17 @@ public enum CalciteIcon : ushort
 	/// <release>2.7.0</release>
 	Apps = 61835,
 
-	/// <summary>Arcgis Online</summary>
+	/// <summary>ArcGIS Data Store</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.28.3, gis, data, storage, stored, shapes, square, triangle, circle, enterprise, technology</remarks>
+	/// <release>3.28.3</release>
+	ArcGISDataStore = 64997,
+
+	/// <summary>ArcGIS Online</summary>
 	/// <remarks>Category: Brand<br/>
 	/// Alias: 1.5.0, brand, agol</remarks>
 	/// <release>1.5</release>
-	ArcgisOnline = 61838,
+	ArcGISOnline = 61838,
 
 	/// <summary>Arrow Bold Down</summary>
 	/// <remarks>Category: Arrows<br/>
@@ -560,6 +620,12 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	Biking = 61973,
 
+	/// <summary>Binary</summary>
+	/// <remarks>Category: Text<br/>
+	/// Alias: 3.28.1, text, digits, data, numbers, calculate</remarks>
+	/// <release>3.28.1</release>
+	Binary = 65000,
+
 	/// <summary>Blank</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.0.0, placeholder, blank, empty, replacement, spacer, toggle off, off state, empty state</remarks>
@@ -637,6 +703,12 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.24.6, charts and graphs, data, plot, box plot, summarize, interval scales, analysis, variability, values, charts</remarks>
 	/// <release>3.24.6</release>
 	BoxChartSeries = 62012,
+
+	/// <summary>Brackets</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.28.1, generic, code, coding, programmer, syntax, script, html</remarks>
+	/// <release>3.28.1</release>
+	Brackets = 65003,
 
 	/// <summary>Brackets Curly</summary>
 	/// <remarks>Category: Generic<br/>
@@ -868,8 +940,8 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Change Font Size</summary>
 	/// <remarks>Category: Text<br/>
-	/// Alias: 1.5.0, text, increase, decrease</remarks>
-	/// <release>1.5</release>
+	/// Alias: 3.26.6, text, font, size, change, edit, increase, decrease</remarks>
+	/// <release>3.26.6</release>
 	ChangeFontSize = 62129,
 
 	/// <summary>Channels</summary>
@@ -1052,6 +1124,24 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	CircleDisallowed = 62219,
 
+	/// <summary>Circle Inset Large</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.28.8, generic, shape, button, circle, bold</remarks>
+	/// <release>3.28.8</release>
+	CircleInsetLarge = 65006,
+
+	/// <summary>Circle Inset Medium</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.28.8, generic, shape, circle, bold, filled</remarks>
+	/// <release>3.28.8</release>
+	CircleInsetMedium = 65009,
+
+	/// <summary>Circle Inset Small</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.28.8, generic, shape, symbol, circle, filled</remarks>
+	/// <release>3.28.8</release>
+	CircleInsetSmall = 65012,
+
 	/// <summary>Circle Pause (Filled)</summary>
 	/// <remarks>Category: Symbols<br/>
 	/// Alias: 3.23.0, symbols, stop, hold, pausing, waiting, slow, status</remarks>
@@ -1100,6 +1190,12 @@ public enum CalciteIcon : ushort
 	/// <release>3.18.2</release>
 	Clipboard = 62243,
 
+	/// <summary>Clipboard Brackets</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 3.27.7, objects, select, clipboard, frame</remarks>
+	/// <release>3.27.7</release>
+	ClipboardBrackets = 65015,
+
 	/// <summary>Clock</summary>
 	/// <remarks>Category: Objects<br/>
 	/// Alias: 1.5.0, objects, time, history, date</remarks>
@@ -1129,6 +1225,18 @@ public enum CalciteIcon : ushort
 	/// Alias: symbols, 3.16.5, connected, internet, connection, syncing, the cloud, service, hosting</remarks>
 	/// <release>3.16.5</release>
 	Cloud = 62258,
+
+	/// <summary>Cloud Data</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.28.3, gis, cloud, data, canister, storage</remarks>
+	/// <release>3.28.3</release>
+	CloudData = 65018,
+
+	/// <summary>Cloud Server</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.28.3, gis, storage, servers, syncing</remarks>
+	/// <release>3.28.3</release>
+	CloudServer = 65021,
 
 	/// <summary>Cloudy</summary>
 	/// <remarks>Category: Weather<br/>
@@ -1261,6 +1369,12 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.19.1, generic, data, window, gear, tool, settings, manage, tools, wrench, options, list, menu</remarks>
 	/// <release> 3.19.1</release>
 	Configure = 62324,
+
+	/// <summary>Configure Editing</summary>
+	/// <remarks>Category: Lists<br/>
+	/// Alias: 3.27.0, lists, edit, write, note, settings</remarks>
+	/// <release>3.27.0</release>
+	ConfigureEditing = 65024,
 
 	/// <summary>Configure Grid Unit</summary>
 	/// <remarks>Category: GIS<br/>
@@ -1442,6 +1556,12 @@ public enum CalciteIcon : ushort
 	/// <release>3.25.2</release>
 	Curve = 62414,
 
+	/// <summary>Custom Print</summary>
+	/// <remarks>Category: Document<br/>
+	/// Alias: 3.28.7, document, file, page, customize, print, pencil, edit</remarks>
+	/// <release>3.28.7</release>
+	CustomPrint = 65027,
+
 	/// <summary>Cut And Fill Volume Calculation</summary>
 	/// <remarks>Category: GIS<br/>
 	/// Alias: 1.6.1, space, void, difference</remarks>
@@ -1562,11 +1682,35 @@ public enum CalciteIcon : ushort
 	/// <release>1.6</release>
 	Desktop = 62474,
 
+	/// <summary>Developer Credentials</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.28.2, generic, key, token, access, apps</remarks>
+	/// <release>3.28.2</release>
+	DeveloperCredentials = 65030,
+
 	/// <summary>Diamond</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.16.8, generic, shape, symbol, glyph</remarks>
 	/// <release>3.16.8</release>
 	Diamond = 62477,
+
+	/// <summary>Diamond Inset Large</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.28.8, generic, shape, diamond, type, symbol, glyph</remarks>
+	/// <release>3.28.8</release>
+	DiamondInsetLarge = 65033,
+
+	/// <summary>Diamond Inset Medium</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.28.8, generic, shape, diamond, filled</remarks>
+	/// <release>3.28.8</release>
+	DiamondInsetMedium = 65036,
+
+	/// <summary>Diamond Inset Small</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.28.8, generic, shape, symbol, diamond, filled</remarks>
+	/// <release>3.28.8</release>
+	DiamondInsetSmall = 65039,
 
 	/// <summary>Dimensions</summary>
 	/// <remarks>Category:  Generic<br/>
@@ -1651,6 +1795,12 @@ public enum CalciteIcon : ushort
 	/// Alias: 1.5.0, windows, sidebar, panel</remarks>
 	/// <release>1.5</release>
 	DockRight = 62519,
+
+	/// <summary>Double Float</summary>
+	/// <remarks>Category: Text<br/>
+	/// Alias: 3.27.2, text, precision, digits, data, type</remarks>
+	/// <release>3.27.2</release>
+	DoubleFloat = 65042,
 
 	/// <summary>Download</summary>
 	/// <remarks>Category: Generic<br/>
@@ -1749,8 +1899,8 @@ public enum CalciteIcon : ushort
 	EditAttributes = 62567,
 
 	/// <summary>Edit Geometry</summary>
-	/// <remarks>Category: Geometry Editor<br/>
-	/// Alias: 3.23.8, geometry editor, modify, shapes, polygon, edit, correct</remarks>
+	/// <remarks>Category: Geometry Editing<br/>
+	/// Alias: 3.23.8, geometry editing, modify, shapes, polygon, edit, correct</remarks>
 	/// <release>3.23.8</release>
 	EditGeometry = 62570,
 
@@ -1762,8 +1912,8 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Effects</summary>
 	/// <remarks>Category: Objects<br/>
-	/// Alias: 3.16.3, objects, flash, sparkles, filters, stars, constellations, flashy, shiny</remarks>
-	/// <release>3.16.3</release>
+	/// Alias: 3.27.4, objects, ai, sparkle, system, machine learning</remarks>
+	/// <release>3.27.1</release>
 	Effects = 62576,
 
 	/// <summary>Elevator</summary>
@@ -1916,6 +2066,18 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	ExclamationMarkTriangle = 62648,
 
+	/// <summary>Exclamation Point (Filled)</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 3.29.0, symbols, sign, text, type, attribution, warning, invalid, high priority, important, error</remarks>
+	/// <release>3.29.0</release>
+	ExclamationPointFilled = 65048,
+
+	/// <summary>Exclamation Point</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 3.29.0, symbols, sign, text, type, attribution, warning, invalid, high priority, important, error</remarks>
+	/// <release>3.29.0</release>
+	ExclamationPoint = 65045,
+
 	/// <summary>Exit Highway Left</summary>
 	/// <remarks>Category: Directions<br/>
 	/// Alias: 1.5.0, directions, freeway, navigate, navigation, arrow</remarks>
@@ -1953,8 +2115,8 @@ public enum CalciteIcon : ushort
 	ExpressionDefinedColor = 62669,
 
 	/// <summary>Extend Trim</summary>
-	/// <remarks>Category: Geometry Editor<br/>
-	/// Alias: 3.23.8, geometry editor, continue, stop, lines, edges, points, trimming, extending</remarks>
+	/// <remarks>Category: Geometry Editing<br/>
+	/// Alias: 3.23.8, geometry editing, continue, stop, lines, edges, points, trimming, extending</remarks>
 	/// <release>3.23.8</release>
 	ExtendTrim = 62672,
 
@@ -2096,6 +2258,12 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	FileReport = 62741,
 
+	/// <summary>File Report Generic</summary>
+	/// <remarks>Category: Files<br/>
+	/// Alias: 3.26.5, files, documents, text, information, archive, data</remarks>
+	/// <release>3.26.5</release>
+	FileReportGeneric = 65051,
+
 	/// <summary>File Shape</summary>
 	/// <remarks>Category: Files<br/>
 	/// Alias: 3.16.0, files, file type, file format, vector file, shapefile, vector data</remarks>
@@ -2137,6 +2305,12 @@ public enum CalciteIcon : ushort
 	/// Alias: 1.5.0, files, word document, text, write, note, documentation, word file</remarks>
 	/// <release>1.5</release>
 	FileWord = 62762,
+
+	/// <summary>File Xml</summary>
+	/// <remarks>Category: Files<br/>
+	/// Alias: 3.27.5, files, xml, extensive markup language, file format, file type</remarks>
+	/// <release>3.27.5</release>
+	FileXml = 65054,
 
 	/// <summary>File Zip</summary>
 	/// <remarks>Category: Files<br/>
@@ -2227,6 +2401,12 @@ public enum CalciteIcon : ushort
 	/// Alias: 1.5.0, files, directory, storage, record, history, legacy</remarks>
 	/// <release>1.5</release>
 	FolderArchive = 62804,
+
+	/// <summary>Folder Magnifying Glass</summary>
+	/// <remarks>Category: Files<br/>
+	/// Alias: 3.26.8, files, find files, search files, locate documents, folder, research</remarks>
+	/// <release>3.26.8</release>
+	FolderMagnifyingGlass = 65057,
 
 	/// <summary>Folder Move</summary>
 	/// <remarks>Category: Files<br/>
@@ -2389,6 +2569,12 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.25.7, windows, screen, gallery, select, multiple, row, columns, images</remarks>
 	/// <release>3.25.7</release>
 	FourByTwoGrid = 62882,
+
+	/// <summary>Frame Export</summary>
+	/// <remarks>Category: Media<br/>
+	/// Alias: 3.26.5, media, video, film, arrow, clip, tape, extract, mp4, file, save, motion, play</remarks>
+	/// <release>3.26.5</release>
+	FrameExport = 65060,
 
 	/// <summary>Freehand</summary>
 	/// <remarks>Category: GIS<br/>
@@ -2687,7 +2873,7 @@ public enum CalciteIcon : ushort
 	/// <summary>H3 Hexagon</summary>
 	/// <remarks>Category: GIS<br/>
 	/// Alias: 3.22.9, gis, shapes, map, area, angles, pattern, tile, square, indexing, coordinates, square meter, resolution, datasets, precision, modeling flow</remarks>
-	/// <release></release>
+	/// <release>3.22.9</release>
 	H3Hexagon = 63032,
 
 	/// <summary>Halo</summary>
@@ -2773,6 +2959,48 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.25.1, symbols, shapes, single shape, glyphs, generic, geometry</remarks>
 	/// <release>3.25.1</release>
 	Hexagon = 63074,
+
+	/// <summary>Hexagon 2</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.28.8, generic, shape, symbol, single shape, geometry</remarks>
+	/// <release>3.28.8</release>
+	Hexagon2 = 65063,
+
+	/// <summary>Hexagon 2 Inset Large</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.28.8, generic, shape, symbol, filled, bold</remarks>
+	/// <release>3.28.8</release>
+	Hexagon2InsetLarge = 65066,
+
+	/// <summary>Hexagon 2 Inset Medium</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.28.8, generic, shape, symbol, hexagon, bold, filled</remarks>
+	/// <release>3.28.8</release>
+	Hexagon2InsetMedium = 65069,
+
+	/// <summary>Hexagon 2 Inset Small</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.28.8, generic, shape, symbol, hexagon</remarks>
+	/// <release>3.28.8</release>
+	Hexagon2InsetSmall = 65072,
+
+	/// <summary>Hexagon Inset Large</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.28.8, generic, shape, symbol, hexagon, geometry</remarks>
+	/// <release>3.28.8</release>
+	HexagonInsetLarge = 65075,
+
+	/// <summary>Hexagon Inset Medium</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.28.8, generic, shape, symbol, hexagon, bold</remarks>
+	/// <release>3.28.8</release>
+	HexagonInsetMedium = 65078,
+
+	/// <summary>Hexagon Inset Small</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.28.8, generic, shape, symbol, hexagon, filled</remarks>
+	/// <release>3.28.8</release>
+	HexagonInsetSmall = 65081,
 
 	/// <summary>Hide Derived Value</summary>
 	/// <remarks>Category: Forms<br/>
@@ -3074,6 +3302,12 @@ public enum CalciteIcon : ushort
 	/// <release> 3.20.6</release>
 	KnowledgeGraphDataModel = 63224,
 
+	/// <summary>Knowledge Graph Data Store</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.28.3, gis, database, storage, stored, technology, data, link charts, connection, data source</remarks>
+	/// <release>3.28.3</release>
+	KnowledgeGraphDataStore = 65084,
+
 	/// <summary>Knowledge Graph Export</summary>
 	/// <remarks>Category: Knowledge Graph<br/>
 	/// Alias:  3.20.6, knowledge graph, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model, scale, link, up, arrow</remarks>
@@ -3278,6 +3512,12 @@ public enum CalciteIcon : ushort
 	/// <release>3.0.0-beta.6</release>
 	LayersEditable = 63326,
 
+	/// <summary>Layers (Filled)</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 3.27.6, layers, arcgis, filled</remarks>
+	/// <release>3.27.6</release>
+	LayersFilled = 65087,
+
 	/// <summary>Layers Reference</summary>
 	/// <remarks>Category: Layers<br/>
 	/// Alias: 3.0.0, layers reference, reference layers, book layer, authoritative layers</remarks>
@@ -3387,8 +3627,8 @@ public enum CalciteIcon : ushort
 	Lightbulb = 63380,
 
 	/// <summary>Line</summary>
-	/// <remarks>Category: Geometry<br/>
-	/// Alias: 3.25.2, geometry, gis, feature, draw, points</remarks>
+	/// <remarks>Category: Geometry Editing<br/>
+	/// Alias: 3.25.2, geometry editing, gis, feature, draw, points</remarks>
 	/// <release>3.25.2</release>
 	Line = 63383,
 
@@ -3423,8 +3663,8 @@ public enum CalciteIcon : ushort
 	LineSolid = 63398,
 
 	/// <summary>Line Straight</summary>
-	/// <remarks>Category: Geometry<br/>
-	/// Alias: 3.25.2, geometry, gis, diagonal, points, feature</remarks>
+	/// <remarks>Category: Geometry Editing<br/>
+	/// Alias: 3.25.2, geometry editing, gis, diagonal, points, feature</remarks>
 	/// <release>3.25.2</release>
 	LineStraight = 63401,
 
@@ -3517,6 +3757,12 @@ public enum CalciteIcon : ushort
 	/// Alias: 1.5.0, lists, drop down, more, extend, total, sub, items</remarks>
 	/// <release>1.5</release>
 	ListShowAll = 63446,
+
+	/// <summary>Livestream Video Layer</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 3.27.5, layers, video, livestream, file, media, images, picture</remarks>
+	/// <release>3.27.5</release>
+	LivestreamVideoLayer = 65090,
 
 	/// <summary>Location Sharing (Filled)</summary>
 	/// <remarks>Category: GIS<br/>
@@ -3710,6 +3956,12 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	MegaPhone = 63542,
 
+	/// <summary>Members Brackets</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 3.27.7, objects, frame, select, member</remarks>
+	/// <release>3.27.7</release>
+	MembersBrackets = 65093,
+
 	/// <summary>Merge</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.0.0, combine, unite, consolidate</remarks>
@@ -3847,6 +4099,18 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.25.2, gis, online model builder, models, shapes, lines, circles, squares</remarks>
 	/// <release>3.25.2</release>
 	Model = 63611,
+
+	/// <summary>Model Edit</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 3.27.2, knowledge graph, edit, model, change, modify</remarks>
+	/// <release>3.27.2</release>
+	ModelEdit = 65096,
+
+	/// <summary>Modify Associations</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.28.0, gis, gear, changes, adjusting, associated, modified</remarks>
+	/// <release>3.28.0</release>
+	ModifyAssociations = 65099,
 
 	/// <summary>Monitor</summary>
 	/// <remarks>Category: Objects<br/>
@@ -4148,6 +4412,12 @@ public enum CalciteIcon : ushort
 	/// <release>2.5.4</release>
 	ObjectDetection = 63761,
 
+	/// <summary>Objectstore Data Store</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.28.3, gis, data, object, storage, cubes, scene layers, 3d tiles, blobs</remarks>
+	/// <release>3.28.3</release>
+	ObjectstoreDataStore = 65102,
+
 	/// <summary>Octagon</summary>
 	/// <remarks>Category: Symbols<br/>
 	/// Alias: 3.25.1, symbols, shapes, single shape, glyphs, generic, geometry</remarks>
@@ -4220,6 +4490,12 @@ public enum CalciteIcon : ushort
 	/// <release>3.22.4</release>
 	OverwriteFeatures = 63797,
 
+	/// <summary>Overwrite Project</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 3.28.9, objects, raster, briefcase, clear, remove, write, project</remarks>
+	/// <release>3.28.9</release>
+	OverwriteProject = 65105,
+
 	/// <summary>Package</summary>
 	/// <remarks>Category: Objects<br/>
 	/// Alias: 3.17.0, Objects, stack, sdk, api, programming, software, kit, development, build, blocks, deliver, group</remarks>
@@ -4279,6 +4555,18 @@ public enum CalciteIcon : ushort
 	/// Alias: 1.5.0, objects</remarks>
 	/// <release>1.5</release>
 	Paste = 63827,
+
+	/// <summary>Paste With Attribute</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.28.0, generic, pasting, copy, pasted, added, attributes</remarks>
+	/// <release>3.28.0</release>
+	PasteWithAttribute = 65108,
+
+	/// <summary>Paste Without Attribute</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.28.0, generic, pasting, copy, pasted, added, removed, attributes</remarks>
+	/// <release>3.28.0</release>
+	PasteWithoutAttribute = 65111,
 
 	/// <summary>Pause (Filled)</summary>
 	/// <remarks>Category: Media<br/>
@@ -4467,8 +4755,8 @@ public enum CalciteIcon : ushort
 	Point = 63920,
 
 	/// <summary>Point Line</summary>
-	/// <remarks>Category: Geometry Editor<br/>
-	/// Alias: 3.23.8, geometry editor, edge, points, lines, focus, extend</remarks>
+	/// <remarks>Category: Geometry Editing<br/>
+	/// Alias: 3.23.8, geometry editing, edge, points, lines, focus, extend</remarks>
 	/// <release>3.23.8</release>
 	PointLine = 63923,
 
@@ -4658,11 +4946,11 @@ public enum CalciteIcon : ushort
 	/// <release>3.3.0</release>
 	Quote = 64016,
 
-	/// <summary>Radial Tree Link Chart Yayout</summary>
+	/// <summary>Radial Tree Link Chart Layout</summary>
 	/// <remarks>Category: Knowledge Graph<br/>
-	/// Alias: 3.23.6, knowledge graph, link chart, spatial anamysis, data, data model</remarks>
+	/// Alias: 3.23.6, knowledge graph, link chart, spatial analysis, data, data model</remarks>
 	/// <release>3.23.6</release>
-	RadialTreeLinkChartYayout = 64019,
+	RadialTreeLinkChartLayout = 65114,
 
 	/// <summary>Rain</summary>
 	/// <remarks>Category: Weather<br/>
@@ -4763,7 +5051,7 @@ public enum CalciteIcon : ushort
 	/// <summary>Recycle Bin</summary>
 	/// <remarks>Category: Objects<br/>
 	/// Alias: 3.23.1, objects, delete, store, move, remove, reuse, arrows</remarks>
-	/// <release></release>
+	/// <release>3.23.1</release>
 	RecycleBin = 64070,
 
 	/// <summary>Redo</summary>
@@ -4790,6 +5078,12 @@ public enum CalciteIcon : ushort
 	/// <release>3.20.1</release>
 	Register = 64082,
 
+	/// <summary>Relational Data Store</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.28.3, gis, gis database, generic, technology, map pin, location</remarks>
+	/// <release>3.28.3</release>
+	RelationalDataStore = 65117,
+
 	/// <summary>Relative Direction</summary>
 	/// <remarks>Category: Geometry Editing<br/>
 	/// Alias: 3.25.3, geometry editing, arrows, movement, points, lines, directions</remarks>
@@ -4807,6 +5101,12 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.25.3, gis, elevate, measure, height, depth, scenic, scene, buildings, measurements</remarks>
 	/// <release>3.25.3</release>
 	RelativeToSceneElevation = 64091,
+
+	/// <summary>Remove From List</summary>
+	/// <remarks>Category: Lists<br/>
+	/// Alias: 3.27.2, lists, remove, list, disappear, items</remarks>
+	/// <release>3.27.2</release>
+	RemoveFromList = 65120,
 
 	/// <summary>Remove Linkchart</summary>
 	/// <remarks>Category: Knowledge Graph<br/>
@@ -4843,6 +5143,24 @@ public enum CalciteIcon : ushort
 	/// Alias: 1.5.0, arrows, previous, backwards, clear, restart, reboot</remarks>
 	/// <release>1.5</release>
 	Reset = 64109,
+
+	/// <summary>Reshape Add Geometry</summary>
+	/// <remarks>Category: Geometry Editing<br/>
+	/// Alias: 3.27.3, geometry editing, lines, points, reshape, add, angles</remarks>
+	/// <release>3.27.3</release>
+	ReshapeAddGeometry = 65123,
+
+	/// <summary>Reshape Subtract Geometry</summary>
+	/// <remarks>Category: Geometry Editing<br/>
+	/// Alias: 3.27.3, geometry editing, subtract, reshape, lines, points, angles</remarks>
+	/// <release>3.27.3</release>
+	ReshapeSubtractGeometry = 65126,
+
+	/// <summary>Reshape Tool</summary>
+	/// <remarks>Category: Geometry Editing<br/>
+	/// Alias: 3.27.3, geometry editing, lines, points, reshape, movement</remarks>
+	/// <release>3.27.3</release>
+	ReshapeTool = 65129,
 
 	/// <summary>Resize Area</summary>
 	/// <remarks>Category: Windows<br/>
@@ -4905,8 +5223,8 @@ public enum CalciteIcon : ushort
 	RightAlign = 64139,
 
 	/// <summary>Right Angle</summary>
-	/// <remarks>Category: Geometry Editor<br/>
-	/// Alias: 3.23.8, geometry editor, lines, points, angles, curves, degrees</remarks>
+	/// <remarks>Category: Geometry Editing<br/>
+	/// Alias: 3.23.8, geometry editing, lines, points, angles, curves, degrees</remarks>
 	/// <release>3.23.8</release>
 	RightAngle = 64142,
 
@@ -5156,6 +5474,12 @@ public enum CalciteIcon : ushort
 	/// <release>3.25.2</release>
 	ScanVertical = 64259,
 
+	/// <summary>Schema</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.26.7, generic, preview, data, features, data set, tree</remarks>
+	/// <release>3.26.7</release>
+	Schema = 65132,
+
 	/// <summary>Scissors</summary>
 	/// <remarks>Category: Objects<br/>
 	/// Alias: 1.5.0, objects, cut</remarks>
@@ -5198,11 +5522,23 @@ public enum CalciteIcon : ushort
 	/// <release>3.18.3</release>
 	Select = 64280,
 
+	/// <summary>Select By Attributes</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.27.3, gis, select, select text, attributes, tags</remarks>
+	/// <release>3.27.3</release>
+	SelectByAttributes = 65135,
+
 	/// <summary>Select Category</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 1.5.0, generic, qualitative, checkboxes, tiles, grid, choices, categories</remarks>
 	/// <release>1.5</release>
 	SelectCategory = 64283,
+
+	/// <summary>Select Column</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.27.2, generic, select, columns, choose, table</remarks>
+	/// <release>3.27.2</release>
+	SelectColumn = 65138,
 
 	/// <summary>Select Range</summary>
 	/// <remarks>Category: Generic<br/>
@@ -5552,6 +5888,12 @@ public enum CalciteIcon : ushort
 	/// <release>3.7.0</release>
 	SoundUnavailable = 64457,
 
+	/// <summary>Spatiotemporal Data Store</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.28.3, gis, data, server, storage, group, connection, technology, record</remarks>
+	/// <release>3.28.3</release>
+	SpatiotemporalDataStore = 65141,
+
 	/// <summary>Speech Bubble</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 1.5.0, generic, speech bubble, comment, chat, message</remarks>
@@ -5613,8 +5955,8 @@ public enum CalciteIcon : ushort
 	SplitFeatures = 64487,
 
 	/// <summary>Split Geometry</summary>
-	/// <remarks>Category: Geometry Editor<br/>
-	/// Alias: 3.23.8, web editor, cut, splitting, slice, points, lines, shapes, divide</remarks>
+	/// <remarks>Category: Geometry Editing<br/>
+	/// Alias: 3.23.8, geometry editing, cut, splitting, slice, points, lines, shapes, divide</remarks>
 	/// <release>3.23.8</release>
 	SplitGeometry = 64490,
 
@@ -5641,6 +5983,24 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.10.0, square area</remarks>
 	/// <release>3.10.0</release>
 	SquareArea = 64502,
+
+	/// <summary>Square Inset Large</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.28.8, generic, shape, symbol, square</remarks>
+	/// <release>3.28.8</release>
+	SquareInsetLarge = 65144,
+
+	/// <summary>Square Inset Medium</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.28.8, generic, shape, symbol, sqaure</remarks>
+	/// <release>3.28.8</release>
+	SquareInsetMedium = 65147,
+
+	/// <summary>Square Inset Small</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.28.8, generic, shape, symbol, square, bold</remarks>
+	/// <release>3.28.8</release>
+	SquareInsetSmall = 65150,
 
 	/// <summary>Stairs</summary>
 	/// <remarks>Category: Directions<br/>
@@ -5721,15 +6081,15 @@ public enum CalciteIcon : ushort
 	Straight = 64541,
 
 	/// <summary>Stretch</summary>
-	/// <remarks>Category: Geometry Editor<br/>
-	/// Alias: 3.23.8, geometry editor, extend, expand, edges, stretching, arrows, lines, shapes, squares, parameters</remarks>
+	/// <remarks>Category: Geometry Editing<br/>
+	/// Alias: 3.23.8, geometry editing, extend, expand, edges, stretching, arrows, lines, shapes, squares, parameters</remarks>
 	/// <release>3.23.8</release>
 	Stretch = 64544,
 
 	/// <summary>Strikethrough</summary>
 	/// <remarks>Category: Text<br/>
 	/// Alias: 3.22.6, text, s, cross out, cut, x-out, delete, omit, remove, eliminate, line, edit, formatting, void</remarks>
-	/// <release></release>
+	/// <release>3.22.6</release>
 	Strikethrough = 64547,
 
 	/// <summary>String</summary>
@@ -5737,6 +6097,18 @@ public enum CalciteIcon : ushort
 	/// Alias: 2.5.3, datatype, text, abc, alphabet, type, letters</remarks>
 	/// <release>2.5.3</release>
 	String = 64550,
+
+	/// <summary>Styling</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 3.27.4, objects, paint, color, tool</remarks>
+	/// <release>3.27.0</release>
+	Styling = 65153,
+
+	/// <summary>Sub Fields</summary>
+	/// <remarks>Category: Forms<br/>
+	/// Alias: 3.28.1, forms, items, elements, fields, table, levels</remarks>
+	/// <release>3.28.1</release>
+	SubFields = 65156,
 
 	/// <summary>Subheading 1</summary>
 	/// <remarks>Category: Text<br/>
@@ -5791,6 +6163,12 @@ public enum CalciteIcon : ushort
 	/// Alias: text, 3.17.3, copy, letter, character, type, format, alignment</remarks>
 	/// <release>3.17.3</release>
 	Subscript = 64577,
+
+	/// <summary>Subtype</summary>
+	/// <remarks>Category: Charts and Graphs<br/>
+	/// Alias: 3.27.8, charts and graphs, data, type, subordinate, secondary, form</remarks>
+	/// <release>3.27.8</release>
+	Subtype = 65159,
 
 	/// <summary>Suitability Analysis Output</summary>
 	/// <remarks>Category: Windows<br/>
@@ -5894,6 +6272,12 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	TakePedestrianRamp = 64628,
 
+	/// <summary>Templates</summary>
+	/// <remarks>Category: Lists<br/>
+	/// Alias: 3.27.0, lists, items, create, lines</remarks>
+	/// <release>3.27.0</release>
+	Templates = 65162,
+
 	/// <summary>Temporary</summary>
 	/// <remarks>Category: GIS<br/>
 	/// Alias: 3.25.2, gis, online model builder, time, arrow, fraction, clock, limit, short term</remarks>
@@ -5923,6 +6307,12 @@ public enum CalciteIcon : ushort
 	/// Alias: 1.5.0, text</remarks>
 	/// <release>1.5</release>
 	Text = 64643,
+
+	/// <summary>Text Bold</summary>
+	/// <remarks>Category: Text<br/>
+	/// Alias: 3.26.9, text, letter</remarks>
+	/// <release>3.26.9</release>
+	TextBold = 65165,
 
 	/// <summary>Text Button</summary>
 	/// <remarks>Category: Text<br/>
@@ -5995,6 +6385,12 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.14.0, generic, thumbs up, hand, satisfied, like, satisfactory, encouragement, yes, approve, pass, verify, positive</remarks>
 	/// <release>3.14.0</release>
 	ThumbsUp = 64679,
+
+	/// <summary>Tile Cache Data Store</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.28.3, gis, gis database, storage, stored, technology, 3d, three dimensional</remarks>
+	/// <release>3.28.3</release>
+	TileCacheDataStore = 65168,
 
 	/// <summary>Tile Layer</summary>
 	/// <remarks>Category: Layers<br/>
@@ -6083,7 +6479,7 @@ public enum CalciteIcon : ushort
 	/// <summary>Transverse Hexagon</summary>
 	/// <remarks>Category: GIS<br/>
 	/// Alias: 3.22.9, gis, shapes, map, area, angles, pattern, tile, square, indexing, coordinates, resolution, datasets, precision</remarks>
-	/// <release></release>
+	/// <release>3.22.9</release>
 	TransverseHexagon = 64724,
 
 	/// <summary>Trapezoid Area</summary>
@@ -6173,7 +6569,7 @@ public enum CalciteIcon : ushort
 	/// <summary>Unmerge</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.23.1, generic, unmerging, disconnect, separate, split, arrows</remarks>
-	/// <release></release>
+	/// <release>3.23.1</release>
 	Unmerge = 64769,
 
 	/// <summary>Unpin</summary>
@@ -6290,11 +6686,23 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	Users = 64826,
 
+	/// <summary>Utility Network</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.28.0, generic, networking, points, dots, lines, circles, connected, connection, selection, collecting data, running analysis</remarks>
+	/// <release>3.28.0</release>
+	UtilityNetwork = 65171,
+
 	/// <summary>Utility Network Trace</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.18.6, generic, points, dots, lines, circles, geometric quantitative, network, connected, connection, selection, collecting data, running analysis</remarks>
 	/// <release>3.18.6</release>
 	UtilityNetworkTrace = 64829,
+
+	/// <summary>Validate Utility Network Topology</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.28.0, generic, networking, points, dots, lines, circles, connected, connection, selection, collecting data, running analysis, confirm, check, approved, validated</remarks>
+	/// <release>3.28.0</release>
+	ValidateUtilityNetworkTopology = 65174,
 
 	/// <summary>Vertex Check</summary>
 	/// <remarks>Category: GIS<br/>
@@ -6343,6 +6751,12 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.13.0, media, camera, video camera, film camera, record, clip, mp4, motion, tape, watch, add video, upload video, record video</remarks>
 	/// <release>3.13.0</release>
 	Video = 64853,
+
+	/// <summary>Video Layer</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 3.27.5, layers, video, media, images, picture, media, file, feature</remarks>
+	/// <release>3.27.5</release>
+	VideoLayer = 65177,
 
 	/// <summary>Video Plus</summary>
 	/// <remarks>Category: Media<br/>
