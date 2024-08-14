@@ -21,7 +21,12 @@ namespace Esri.Calcite.WinUI
 
         public double SymbolSize { get; set; } = 24;
 
-        protected override object ProvideValue() =>
-            new SymbolIcon() {  Symbol = Icon, IconScale = Scale, Width = SymbolSize, Height = SymbolSize, Foreground = Foreground };
+        protected override object ProvideValue()
+        {
+            var icon = new SymbolIcon() { Symbol = Icon, IconScale = Scale, Width = SymbolSize, Height = SymbolSize};
+            if (Foreground != null)
+                icon.Foreground = Foreground;
+            return icon;
+        }
     }
 }
