@@ -228,6 +228,11 @@ The markup extensions `CalciteIconSourceElementExtension` and `CalciteIconSource
 <Image Source="{calcite:CalciteIconImage Color=Blue, Icon=MagnifyingGlass,Size=40, Scale=Large}" />
 ```
 
+## Examples
+WinUI 3 app using Calcite styles, color resources and icons:
+
+![image](https://github.com/user-attachments/assets/63722dd5-4a72-4eef-bae4-e0f87ce968b2)
+
 # License
 
 COPYRIGHT © 2024 Esri
