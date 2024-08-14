@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Esri.Calcite.WinUI
+﻿namespace Esri.Calcite.WinUI
 {
     /// <summary>
     /// Calcite Icon scale. Why 3 Sizes? More info on what happens when you scale vector based icons <see cref="https://github.com/Esri/calcite-ui-icons/wiki/What-Happens-When-You-Scale-Vector-Based-Icons">here</see>.

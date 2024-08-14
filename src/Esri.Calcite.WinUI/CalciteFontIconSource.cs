@@ -23,7 +23,6 @@ namespace Esri.Calcite.WinUI
             DependencyProperty.Register(nameof(Icon), typeof(CalciteIcon), typeof(CalciteFontIconSource),
                 new PropertyMetadata(default(CalciteIcon), (s, e) => ((CalciteFontIconSource)s).OnIconPropertyChanged()));
 
-
         public CalciteIconScale Scale
         {
             get { return (CalciteIconScale)GetValue(ScaleProperty); }

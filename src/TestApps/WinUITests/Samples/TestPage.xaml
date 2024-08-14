@@ -68,6 +68,9 @@
             <TextBlock Text="CalciteIconSourceElementExtension:" Margin="0,20,0,0" />
             <IconSourceElement Width="32" Height="32" IconSource="{cal:CalciteIconSource Icon=Map, Scale=Small}" />
 
+            <TextBlock Text="CalciteSymbolIcon" />
+            <cal:SymbolIcon Symbol="Map" IconScale="Large"  />
+
             <!--<IconSourceElement IconSource="{StaticResource calcite_pathicon_lock_f_32}" />-->
             <!--<cal:CalciteFontIconSource Icon="LayerBasemap" FontSize="24" Scale="Medium" />
             <IconSourceElement.IconSource>

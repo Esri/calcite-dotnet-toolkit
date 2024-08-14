@@ -7,7 +7,7 @@ using System;
 namespace Esri.Calcite.WinUI
 {
     /// <summary>
-    /// Converts a <see cref="CalciteIcon"/> to a <see cref="CalciteFontIconSource"/> that you can use as an <see cref="IconSource"/> on an <see cref="IconSourceElement"/>.
+    /// Markup extension that converts a <see cref="CalciteIcon"/> to a <see cref="CalciteFontIconSource"/> that you can use as an <see cref="IconSource"/> on an <see cref="IconSourceElement"/>.
     /// </summary>
     [MarkupExtensionReturnType(ReturnType = typeof(CalciteFontIconSource))]
     public class CalciteIconSourceExtension : MarkupExtension
@@ -16,10 +16,9 @@ namespace Esri.Calcite.WinUI
 
         public Brush? Foreground { get; set; }
 
-        private static SolidColorBrush DefaultBrush = new SolidColorBrush(Microsoft.UI.Colors.Black);
+        public CalciteIconScale Scale { get; set; } = CalciteIconScale.Medium;
 
-        public CalciteIconScale Scale { get; set; } = CalciteIconScale.Small;
-        public double SymbolSize { get; set; } = 16;
+        public double SymbolSize { get; set; } = 24;
 
         protected override object? ProvideValue()
         {
