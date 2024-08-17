@@ -209,7 +209,7 @@
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
-    <Style x:Key="CalciteSliderBase" TargetType="{x:Type Slider}">
+    <Style x:Key="CalciteSliderStyle" TargetType="{x:Type Slider}">
         <Setter Property="SnapsToDevicePixels" Value="true" />
         <Setter Property="OverridesDefaultStyle" Value="true" />
         <Setter Property="Cursor" Value="{DynamicResource CalciteActionCursor}" />

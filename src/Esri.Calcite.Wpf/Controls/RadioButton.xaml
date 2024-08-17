@@ -52,7 +52,7 @@
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
-    <Style x:Key="CalciteRadioButtonBase" TargetType="{x:Type RadioButton}">
+    <Style x:Key="CalciteRadioButtonStyle" TargetType="{x:Type RadioButton}">
         <Setter Property="SnapsToDevicePixels" Value="true" />
         <Setter Property="OverridesDefaultStyle" Value="true" />
         <Setter Property="FocusVisualStyle" Value="{DynamicResource RadioButtonFocusVisual}" />

@@ -43,7 +43,7 @@
             </VisualStateManager.VisualStateGroups>
         </Grid>
     </ControlTemplate>
-    <Style x:Key="CalciteProgressBarBase" TargetType="ProgressBar">
+    <Style x:Key="CalciteProgressBarStyle" TargetType="ProgressBar">
         <Setter Property="Height" Value="2" />
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="BorderBrush" Value="Transparent" />

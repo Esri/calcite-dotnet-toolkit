@@ -95,7 +95,7 @@
         </Style.Triggers>
     </Style>
     <Style
-        x:Key="CalcitePrimaryBtn"
+        x:Key="CalcitePrimaryButtonBaseStyle"
         BasedOn="{StaticResource InternalButtonBaseStyle}"
         TargetType="ButtonBase">
         <Setter Property="ca:AttachedBrushes.BackgroundHover" Value="{DynamicResource CalciteUIBrandHoverBrush}" />
@@ -109,7 +109,7 @@
         <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteUIForegroundBrandContrastBrush}" />
     </Style>
     <Style
-        x:Key="CalciteSecondaryBtn"
+        x:Key="CalciteSecondaryButtonBaseStyle"
         BasedOn="{StaticResource InternalButtonBaseStyle}"
         TargetType="ButtonBase">
         <Setter Property="ca:AttachedBrushes.BackgroundHover" Value="Transparent" />
@@ -123,7 +123,7 @@
         <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteUIBrandPressBrush}" />
     </Style>
     <Style
-        x:Key="CalcateDangerBtn"
+        x:Key="CalcateDangerButtonBaseStyle"
         BasedOn="{StaticResource InternalButtonBaseStyle}"
         TargetType="ButtonBase">
         <Setter Property="ca:AttachedBrushes.BackgroundHover" Value="{DynamicResource CalciteUIDangerHoverBrush}" />
@@ -138,7 +138,7 @@
         <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteUITextInverseBrush}" />
     </Style>
     <Style
-        x:Key="CalciteDangerSecondaryBtn"
+        x:Key="CalciteDangerSecondaryButtonBaseStyle"
         BasedOn="{StaticResource InternalButtonBaseStyle}"
         TargetType="ButtonBase">
         <Setter Property="ca:AttachedBrushes.BackgroundHover" Value="Transparent" />
@@ -153,7 +153,7 @@
 
     </Style>
     <Style
-        x:Key="CalciteChromeBtn"
+        x:Key="CalciteChromeButtonBaseStyle"
         BasedOn="{StaticResource InternalButtonBaseStyle}"
         TargetType="ButtonBase">
         <Setter Property="cm:AttachedBrushes.BackgroundHover" Value="{DynamicResource CalciteUIBackground2Brush}" />

@@ -669,7 +669,7 @@
         </StackPanel>
     </ControlTemplate>
 
-    <Style x:Key="CalciteCalendarBase" TargetType="{x:Type Calendar}">
+    <Style x:Key="CalciteCalendarStyle" TargetType="{x:Type Calendar}">
         <Setter Property="Template" Value="{StaticResource InnerCalendarTemplate}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="HorizontalAlignment" Value="Left" />
@@ -689,8 +689,8 @@
         </Style.Triggers>
     </Style>
     <Style
-        x:Key="CalciteCalendarRound"
-        BasedOn="{StaticResource CalciteCalendarBase}"
+        x:Key="CalciteCalendarRoundStyle"
+        BasedOn="{StaticResource CalciteCalendarStyle}"
         TargetType="{x:Type Calendar}">
         <Setter Property="Template" Value="{StaticResource InnerCalendarRoundedTemplate}" />
     </Style>

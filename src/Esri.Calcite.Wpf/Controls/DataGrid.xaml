@@ -31,7 +31,7 @@
         </Setter>
         <Setter Property="cm:GridHelpers.CheckBoxColumnStyle">
             <Setter.Value>
-                <Style BasedOn="{StaticResource CalciteCheckboxBase}" TargetType="CheckBox">
+                <Style BasedOn="{StaticResource CalciteCheckboxStyle}" TargetType="CheckBox">
                     <Setter Property="HorizontalAlignment" Value="Center" />
                 </Style>
             </Setter.Value>
@@ -167,7 +167,7 @@
         </Setter>
     </Style>
     <Style TargetType="{x:Type DataGridCheckBoxColumn}">
-        <Setter Property="ElementStyle" Value="{DynamicResource CalciteCheckboxBase}" />
+        <Setter Property="ElementStyle" Value="{DynamicResource CalciteCheckboxStyle}" />
     </Style>
 
     <!--  Style and template for the DataGridRow.  -->

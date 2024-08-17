@@ -43,7 +43,7 @@
                     x:Name="LightToggle"
                     Content="Dark Mode"
                     ca:Calcite.Symbol="Moon"
-                    Style="{DynamicResource BtnChrome}" />
+                    Style="{DynamicResource CalciteChromeButtonBaseStyle}" />
             </StatusBarItem>
         </StatusBar>
         <!--<Path Data="{calcite:CalciteIconGeometry Icon=Map, SymbolSize=16}" Fill="Red" Width="100" Height="100"/>-->

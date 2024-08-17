@@ -161,7 +161,7 @@
         <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder2Brush}" />
         <Setter Property="Template" Value="{StaticResource CalciteDatePickerTemplate}" />
 
-        <Setter Property="CalendarStyle" Value="{StaticResource CalciteCalendarRound}" />
+        <Setter Property="CalendarStyle" Value="{StaticResource CalciteCalendarRoundStyle}" />
         <Style.Triggers>
             <Trigger Property="ca:AttachedFormData.IsInForm" Value="True">
                 <Setter Property="Margin" Value="{DynamicResource FormChildMargin}" />

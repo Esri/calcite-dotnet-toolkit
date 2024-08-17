@@ -11,7 +11,7 @@
     <ca:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
     <Style
         x:Key="CalciteToolBarButtonBase"
-        BasedOn="{StaticResource CalciteChromeBtn}"
+        BasedOn="{StaticResource CalciteChromeButtonBaseStyle}"
         TargetType="{x:Type ButtonBase}">
         <Setter Property="MinWidth" Value="32" />
         <Setter Property="Height" Value="32" />

@@ -137,7 +137,7 @@
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
-    <Style x:Key="CalciteComboBox" TargetType="{x:Type ComboBox}">
+    <Style x:Key="CalciteComboBoxStyle" TargetType="{x:Type ComboBox}">
         <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder2Brush}" />
         <Setter Property="BorderThickness" Value="1" />

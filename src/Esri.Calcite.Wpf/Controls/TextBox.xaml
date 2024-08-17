@@ -6,7 +6,7 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="..\Shared\Fonts.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    <Style x:Key="Calcite.TextBox" TargetType="TextBox">
+    <Style x:Key="CalciteTextBoxStyle" TargetType="TextBox">
         <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="FontSize" Value="12" />

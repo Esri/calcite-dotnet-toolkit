@@ -1,0 +1,45 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:calcite="clr-namespace:Esri.Calcite.WPF">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source=".\Controls\Buttons.xaml" />
+        <ResourceDictionary Source=".\Controls\Calendar.xaml" />
+        <ResourceDictionary Source=".\Controls\CheckBox.xaml" />
+        <ResourceDictionary Source=".\Controls\ComboBox.xaml" />
+        <ResourceDictionary Source=".\Controls\DataGrid.xaml" />
+        <ResourceDictionary Source=".\Controls\ListView.xaml" />
+        <ResourceDictionary Source=".\Controls\Progress.xaml" />
+        <ResourceDictionary Source=".\Controls\RadioButton.xaml" />
+        <ResourceDictionary Source=".\Controls\Slider.xaml" />
+        <ResourceDictionary Source=".\Controls\Tabs.xaml" />
+        <ResourceDictionary Source=".\Controls\TextBox.xaml" />
+        <ResourceDictionary Source=".\Controls\TreeView.xaml" />
+        <ResourceDictionary Source=".\Controls\Text.xaml" />
+        <ResourceDictionary Source=".\Controls\DatePicker.xaml" />
+        <ResourceDictionary Source=".\Controls\StatusBar.xaml" />
+        <ResourceDictionary Source=".\Patterns\Alerts.xaml" />
+        <ResourceDictionary Source=".\Controls\ScrollBar.xaml" />
+        <ResourceDictionary Source=".\Controls\ListBox.xaml" />
+        <ResourceDictionary Source=".\Controls\GroupBox.xaml" />
+        <ResourceDictionary Source=".\Patterns\MapEmbed.xaml" />
+        <ResourceDictionary Source=".\Patterns\Forms.xaml" />
+        <!-- <ResourceDictionary Source=".\Controls\DialogWindow.xaml" /> -->
+        <ResourceDictionary Source=".\Controls\Expander.xaml" />
+        <ResourceDictionary Source=".\Shared\Sizes.xaml" />
+        <ResourceDictionary Source=".\Shared\Cursor.xaml" />
+        <ResourceDictionary Source=".\Controls\ContentPresenter.xaml" />
+        <ResourceDictionary Source=".\Controls\ToolTip.xaml" />
+        <ResourceDictionary Source=".\Controls\ToolBar.xaml" />
+        <!-- <ResourceDictionary Source=".\Controls\CalciteColorPicker.xaml" /> -->
+        <ResourceDictionary Source=".\Controls\DocumentViewer.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    <!--<Style BasedOn="{StaticResource CalciteColorPickerStyle}" TargetType="calcite:CalciteColorPicker" />-->
+    <Style
+        x:Key="{x:Static StatusBar.SeparatorStyleKey}"
+        BasedOn="{StaticResource CalciteSeparator}"
+        TargetType="{x:Type Separator}" />
+    
+
+  
+</ResourceDictionary>

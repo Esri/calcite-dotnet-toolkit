@@ -65,7 +65,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style x:Key="CalciteListView" TargetType="{x:Type ListView}">
+    <Style x:Key="CalciteListViewStyle" TargetType="{x:Type ListView}">
         <Setter Property="ItemContainerStyle" Value="{StaticResource ListViewContainerStyle}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="Margin" Value="0" />

@@ -26,8 +26,8 @@
             </ComboBox>
             <CheckBox Content="Enable phasers" />
             <StackPanel Orientation="Horizontal">
-                <Button Style="{DynamicResource BtnDangerSecondary}">Delete</Button>
-                <Button Style="{DynamicResource BtnSecondary}">Cancel</Button>
+                <Button Style="{DynamicResource CalciteDangerSecondaryButtonBaseStyle}">Delete</Button>
+                <Button Style="{DynamicResource CalciteSecondaryButtonBaseStyle}">Cancel</Button>
                 <Button>Submit</Button>
             </StackPanel>
         </StackPanel>

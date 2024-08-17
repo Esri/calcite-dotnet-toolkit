@@ -2,5 +2,5 @@
     <Button
         ca:Calcite.Symbol="Trash"
         Content="Delete"
-        Style="{DynamicResource BtnDanger}" />
+        Style="{DynamicResource CalcateDangerButtonBaseStyle}" />
 </StackPanel>
