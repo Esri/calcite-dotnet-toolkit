@@ -27,4 +27,5 @@
     <SolidColorBrush x:Key="CalciteUIDangerBrush" Color="{DynamicResource CalciteUIDangerColor}" />
     <SolidColorBrush x:Key="CalciteUIDangerHoverBrush" Color="{DynamicResource CalciteUIDangerHoverColor}" />
     <SolidColorBrush x:Key="CalciteUIDangerPressBrush" Color="{DynamicResource CalciteUIDangerPressColor}" />
+    <SolidColorBrush x:Key="CalciteUIForegroundBrandContrastBrush" Color="White" />
 </ResourceDictionary>

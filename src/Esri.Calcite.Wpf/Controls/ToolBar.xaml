@@ -113,7 +113,7 @@
         <Setter Property="ca:AttachedBrushes.ForegroundNormal" Value="{DynamicResource CalciteUIText3Brush}" />
         <Setter Property="ca:AttachedBrushes.ForegroundHover" Value="{DynamicResource CalciteUIText1Brush}" />
         <Setter Property="ca:AttachedBrushes.BackgroundNormal" Value="Transparent" />
-        <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteUIForegroundAlwaysLightBrush}" />
+        <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteUIForegroundBrandContrastBrush}" />
         <Setter Property="ca:AttachedBrushes.BackgroundPress" Value="{DynamicResource CalciteUIBrandBrush}" />
     </Style>
 

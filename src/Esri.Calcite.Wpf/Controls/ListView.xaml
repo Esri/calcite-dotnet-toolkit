@@ -47,7 +47,7 @@
                                 <Condition Property="IsSelected" Value="True" />
                             </MultiTrigger.Conditions>
                             <Setter TargetName="Bd" Property="Background" Value="{DynamicResource CalciteUIBrandPressBrush}" />
-                            <Setter TargetName="ContentPart" Property="TextElement.Foreground" Value="{DynamicResource CalciteUIForegroundAlwaysLightBrush}" />
+                            <Setter TargetName="ContentPart" Property="TextElement.Foreground" Value="{DynamicResource CalciteUIForegroundBrandContrastBrush}" />
                         </MultiTrigger>
                         <MultiTrigger>
                             <MultiTrigger.Conditions>
@@ -55,7 +55,7 @@
                                 <Condition Property="IsSelected" Value="True" />
                             </MultiTrigger.Conditions>
                             <Setter TargetName="Bd" Property="Background" Value="{DynamicResource CalciteUIBrandBrush}" />
-                            <Setter TargetName="ContentPart" Property="TextElement.Foreground" Value="{DynamicResource CalciteUIForegroundAlwaysLightBrush}" />
+                            <Setter TargetName="ContentPart" Property="TextElement.Foreground" Value="{DynamicResource CalciteUIForegroundBrandContrastBrush}" />
                         </MultiTrigger>
                         <Trigger Property="IsEnabled" Value="False">
                             <Setter TargetName="Bd" Property="TextElement.Foreground" Value="{DynamicResource CalciteUIText3Brush}" />
