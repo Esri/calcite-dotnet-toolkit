@@ -26,6 +26,8 @@ namespace WpfTests
             InitializeComponent();
             LightToggle.Unchecked += LightToggle_Checked;
             LightToggle.Checked += LightToggle_Checked;
+            StyleToggle.Checked += StyleToggle_Checked;
+            StyleToggle.Unchecked += StyleToggle_Checked;
             LoadSampleContent();
         }
 
@@ -33,6 +35,12 @@ namespace WpfTests
         {
             var resource = Application.Current.Resources.MergedDictionaries.OfType<CalciteResources>().First();
             resource.Theme = LightToggle.IsChecked != true ? AppTheme.Light : AppTheme.Dark;
+        }
+
+        private void StyleToggle_Checked(object sender, RoutedEventArgs e)
+        {
+            var resource = Application.Current.Resources.MergedDictionaries.OfType<CalciteResources>().First();
+            resource.ApplyDefaultStyling = StyleToggle.IsChecked == true ? true : false;
         }
 
         private void LoadSampleContent()

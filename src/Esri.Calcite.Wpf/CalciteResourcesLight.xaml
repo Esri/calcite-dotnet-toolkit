@@ -7,7 +7,6 @@
         <ResourceDictionary Source=".\Colors\Brushes.xaml" />
         <ResourceDictionary Source=".\Shared\Fonts.xaml" />
         <ResourceDictionary Source=".\Icons\Glyphs.xaml" />
-        <ResourceDictionary Source=".\ControlStyles.xaml" />
         <ResourceDictionary Source=".\ControlOverrides.xaml" />
     </ResourceDictionary.MergedDictionaries>
 

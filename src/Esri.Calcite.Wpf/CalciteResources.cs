@@ -66,6 +66,36 @@ namespace Esri.Calcite.WPF
                 Source = new Uri("/Esri.Calcite.WPF;component/CalciteResourcesLight.xaml", UriKind.RelativeOrAbsolute);
             }
         }
+
+        private bool m_ApplyDefaultStyling = true;
+
+        /// <summary>
+        /// Gets or sets a property indicating whether default control styling should applied.
+        /// </summary>
+        public bool ApplyDefaultStyling
+        {
+            get { return m_ApplyDefaultStyling; }
+            set
+            {
+                if (m_ApplyDefaultStyling != value)
+                {
+                    m_ApplyDefaultStyling = value;
+                    var resourceoverride = MergedDictionaries.FirstOrDefault(d => d.Source.OriginalString.EndsWith("Overrides.xaml"));
+                    if (resourceoverride is not null)
+                    {
+                        if (value)
+                        {
+                            resourceoverride.Source = new Uri("/Esri.Calcite.WPF;component/ControlOverrides.xaml", UriKind.RelativeOrAbsolute);
+                        }
+                        else if (!value)
+                        {
+                            resourceoverride.Source = new Uri("/Esri.Calcite.WPF;component/ControlNoOverrides.xaml", UriKind.RelativeOrAbsolute);
+                        }
+                    }
+                }
+            }
+        }
+
     }
 
     public enum AppTheme

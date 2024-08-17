@@ -7,7 +7,7 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <CalciteResources xmlns="http://schemas.esri.com/calcite/2024" Theme="Light" />
+                <CalciteResources xmlns="http://schemas.esri.com/calcite/2024" Theme="Light" ApplyDefaultStyling="True" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
