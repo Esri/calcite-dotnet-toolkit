@@ -67,19 +67,19 @@ namespace Esri.Calcite.WPF
             }
         }
 
-        private bool m_ApplyDefaultStyling = true;
+        private bool m_IsCalciteImplicitStylingEnabled = true;
 
         /// <summary>
-        /// Gets or sets a property indicating whether default control styling should applied.
+        /// Gets or sets a property indicating whether default calcite styling should be applied implicitly.
         /// </summary>
-        public bool ApplyDefaultStyling
+        public bool IsCalciteImplicitStylingEnabled
         {
-            get { return m_ApplyDefaultStyling; }
+            get { return m_IsCalciteImplicitStylingEnabled; }
             set
             {
-                if (m_ApplyDefaultStyling != value)
+                if (m_IsCalciteImplicitStylingEnabled != value)
                 {
-                    m_ApplyDefaultStyling = value;
+                    m_IsCalciteImplicitStylingEnabled = value;
                     var resourceoverride = MergedDictionaries.FirstOrDefault(d => d.Source.OriginalString.EndsWith("Overrides.xaml"));
                     if (resourceoverride is not null)
                     {
