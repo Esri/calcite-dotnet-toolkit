@@ -19,7 +19,7 @@
             <GradientStop Offset="1.0" Color="{StaticResource ControlStrokeColorDefault}" />
         </LinearGradientBrush.GradientStops>
     </LinearGradientBrush>
-    
+
     <x:Double x:Key="BodyTextBlockFontSize">12</x:Double>
     <x:Double x:Key="ControlContentThemeFontSize">12</x:Double>
     <Thickness x:Key="TextControlBorderThemeThickness">1</Thickness>
@@ -27,10 +27,11 @@
     <x:Double x:Key="TextControlThemeMinWidth">64</x:Double>
     <x:Double x:Key="TextControlThemeMinHeight">28</x:Double>
 
-    <Style TargetType="TextBox">
+    <Style TargetType="TextBox" x:Key="CalciteTextBoxStyle" BasedOn="{StaticResource DefaultTextBoxStyle}" >
         <Setter Property="HorizontalAlignment" Value="Stretch" />
-        <!--<Setter Property="Cursor" Value="IBeam" />-->
         <Setter Property="TextWrapping" Value="Wrap" />
     </Style>
+    
+    <Style TargetType="TextBox" BasedOn="{StaticResource CalciteTextBoxStyle}" />
 
 </ResourceDictionary>

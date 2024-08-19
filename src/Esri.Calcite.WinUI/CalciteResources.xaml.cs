@@ -19,4 +19,32 @@ public sealed partial class CalciteResources : ResourceDictionary
         //    Add("calcite_glyphicon_" + icon.ToString(), IconFileNameConverter.GetGlyph((CalciteIcon)icon));// "&#x" + ((int)icon).ToString("x2"));
         //}
     }
+
+    public static ResourceDictionary GetStyleResources(DependencyObject obj)
+    {
+        return (ResourceDictionary)obj.GetValue(StyleResourcesProperty);
+    }
+
+    public static void SetStyleResources(DependencyObject obj, ResourceDictionary value)
+    {
+        obj.SetValue(StyleResourcesProperty, value);
+    }
+
+    public static readonly DependencyProperty StyleResourcesProperty =
+        DependencyProperty.RegisterAttached("StyleResources", typeof(ResourceDictionary), typeof(CalciteResources),
+            new PropertyMetadata(null, (s, e) => OnStyleResourcesChanged(s, e.OldValue as ResourceDictionary, e.NewValue as ResourceDictionary)));
+
+    private static void OnStyleResourcesChanged(DependencyObject s, ResourceDictionary? oldDictionary, ResourceDictionary? newDictionary)
+    {
+        if (s is FrameworkElement element)
+        {
+            if (newDictionary is not null)
+            {
+                ResourceDictionary rd = new ResourceDictionary(); // Clone the dictionary
+                foreach (var r in newDictionary)
+                    rd.Add(r);
+                element.Resources.MergedDictionaries.Add(rd);
+            }
+        }
+    }
 }

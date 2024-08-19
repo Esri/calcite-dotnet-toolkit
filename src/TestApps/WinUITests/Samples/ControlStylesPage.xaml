@@ -19,6 +19,12 @@
                 <StackPanel Orientation="Horizontal" >
                     <Button Content="Calcite style button" />
                     <Button Content="Calcite style button" IsEnabled="False" />
+                    <ToggleButton Content="Toggle Button Checked" IsChecked="True" />
+                    <ToggleButton Content="Toggle Button Unchecked" />
+                    <Button Style="{StaticResource CalciteDangerButtonStyle}" Content="CalciteDangerButtonStyle" />
+                    <Button Style="{StaticResource CalciteDangerButtonStyle}" Content="CalciteDangerButtonStyle" />
+                    <Button Style="{StaticResource CalciteDangerSecondaryButtonStyle}" Content="CalciteDangerSecondaryButtonStyle" />
+                    
                 </StackPanel>
                 <TextBlock Text="CheckBox" />
                 <StackPanel Orientation="Horizontal" >
