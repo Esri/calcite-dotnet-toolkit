@@ -2,7 +2,7 @@
     <StackPanel>
         <Button>Primary</Button>
         <Button Style="{DynamicResource CalciteSecondaryButtonBaseStyle}">Secondary</Button>
-        <Button Style="{DynamicResource CalcateDangerButtonBaseStyle}">Danger</Button>
+        <Button Style="{DynamicResource CalciteDangerButtonBaseStyle}">Danger</Button>
         <Button Style="{DynamicResource CalciteDangerSecondaryButtonBaseStyle}">Danger2</Button>
         <Button Style="{DynamicResource CalciteChromeButtonBaseStyle}">Chrome</Button>
     </StackPanel>

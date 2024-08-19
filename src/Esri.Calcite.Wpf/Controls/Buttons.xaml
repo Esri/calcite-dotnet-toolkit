@@ -123,7 +123,7 @@
         <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteUIBrandPressBrush}" />
     </Style>
     <Style
-        x:Key="CalcateDangerButtonBaseStyle"
+        x:Key="CalciteDangerButtonBaseStyle"
         BasedOn="{StaticResource InternalButtonBaseStyle}"
         TargetType="ButtonBase">
         <Setter Property="ca:AttachedBrushes.BackgroundHover" Value="{DynamicResource CalciteUIDangerHoverBrush}" />
