@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Styles.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style TargetType="ActivityIndicator" BasedOn="{StaticResource CalciteActivityIndicatorStyle}" />
+
+    <Style TargetType="IndicatorView" BasedOn="{StaticResource CalciteIndicatorViewStyle}" />
+
+    <Style TargetType="BoxView" BasedOn="{StaticResource CalciteBoxViewStyle}"/>
+    
+    <Style TargetType="Button" BasedOn="{StaticResource CalciteButtonStyle}" />
+
+    <Style TargetType="CheckBox" BasedOn="{StaticResource CalciteCheckBoxStyle}" />
+
+    <Style TargetType="Label" BasedOn="{StaticResource CalciteLabelStyle}" />
+
+    <Style TargetType="ProgressBar" BasedOn="{StaticResource CalciteProgressBarStyle}" />
+
+    <Style TargetType="Slider" BasedOn="{StaticResource CalciteSliderStyle}" />
+
+    <Style TargetType="Switch" BasedOn="{StaticResource CalciteSwitchStyle}" />
+
+    <Style TargetType="Page" ApplyToDerivedTypes="True" BasedOn="{StaticResource CalcitePageStyle}" />
+
+    <Style TargetType="Shell" ApplyToDerivedTypes="True" BasedOn="{StaticResource CalciteShellStyle}" />
+
+    <Style TargetType="NavigationPage" BasedOn="{StaticResource CalciteNavigationPageStyle}" />
+
+    <Style TargetType="TabbedPage" BasedOn="{StaticResource CalciteTabbedPageStyle}" />
+
+</ResourceDictionary>
