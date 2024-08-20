@@ -10,7 +10,21 @@
             Padding="30"
             VerticalOptions="Start">
 
-            <Button Text="Button" />
+            <HorizontalStackLayout>
+                <Button Text="Default Button Style" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Button Text="CalcitePrimaryButtonStyle" Style="{StaticResource CalcitePrimaryButtonStyle}" />
+                <Button Text="CalciteSecondaryButtonStyle" Style="{StaticResource CalciteSecondaryButtonStyle}" />
+                <Button Text="CalcitePrimaryButtonStyle" Style="{StaticResource CalcitePrimaryButtonStyle}" IsEnabled="False" />
+                <Button Text="CalciteSecondaryButtonStyle" Style="{StaticResource CalciteSecondaryButtonStyle}" IsEnabled="False" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Button Text="CalciteDangerButtonStyle" Style="{StaticResource CalciteDangerButtonStyle}" />
+                <Button Text="CalciteDangerSecondaryButtonStyle" Style="{StaticResource CalciteDangerSecondaryButtonStyle}" />
+                <Button Text="CalciteDangerButtonStyle" Style="{StaticResource CalciteDangerButtonStyle}" IsEnabled="False" />
+                <Button Text="CalciteDangerSecondaryButtonStyle" Style="{StaticResource CalciteDangerSecondaryButtonStyle}" IsEnabled="False" />
+            </HorizontalStackLayout>
             <HorizontalStackLayout>
                 <CheckBox IsChecked="True" />
                 <Label Text="Checkbox" VerticalOptions="Center" />
