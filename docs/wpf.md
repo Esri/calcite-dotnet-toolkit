@@ -33,6 +33,7 @@ Brushes and colors can be referenced as dynamic resources.
 </Border>
 ```
 
+For a full list of calcite brushes and colors see [Color and Brush resources](brushes.md).
 
 ## Symbol Font
 `CalciteUIIconsFontFamily` FontFamily is a font with a set of symbols generated from the [Calcite UI Icons repo](https://github.com/Esri/calcite-ui-icons).

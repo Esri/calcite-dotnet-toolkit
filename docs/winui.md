@@ -14,8 +14,6 @@ to default styles and resources. Dark/Light mode is automatically handled and ad
     </ResourceDictionary.MergedDictionaries>
 ```
 
-
-
 ## Using Brush resources
 
 Brushes and colors can be referenced as static resources.
@@ -29,6 +27,8 @@ Brushes and colors can be referenced as static resources.
   </TextBlock>
 </Border>
 ```
+
+For a full list of calcite brushes and colors see [Color and Brush resources](brushes.md).
 
 ## Symbol Font
 `CalciteUIIconsFontFamily` FontFamily is a font with a set of symbols generated from the [Calcite UI Icons repo](https://github.com/Esri/calcite-ui-icons).
