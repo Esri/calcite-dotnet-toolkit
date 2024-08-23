@@ -62,9 +62,26 @@ For a full list of Glyph Resource IDs refer to the sample apps and the [Calcite-
 
 ## Control styles
 
-### Buttons
-
-- `CalcitePrimaryButtonStyle`
-- `CalciteSecondaryButtonStyle`
-- `CalciteDangerButtonStyle`
-- `CalciteDangerSecondaryButtonStyle`
+- Buttons: `CalcitePrimaryButtonStyle`, `CalciteSecondaryButtonStyle`, `CalciteDangerButtonStyle`, `CalciteDangerSecondaryButtonStyle`
+- TreeView: `CalciteTreeViewStyle`
+- TextBox: `CalciteTextBoxStyle`
+- PasswordBox: `CalcitePasswordBoxStyle`
+- TabControl: `CalciteTabStyle`
+- Slider: `CalciteSliderStyle`
+- RadioButton: `CalciteRadioButtonStyle`
+- ProgressBar: `CalciteProgressBarStyle`
+- ListView: `CalciteListViewStyle`
+- ComboBox: `CalciteComboBoxStyle`
+- CheckBox: `CalciteCheckboxStyle`
+- Calendar: `CalciteCalendarStyle`
+- Button: `CalcitePrimaryButtonBaseStyle`
+- ToggleButton: `CalcitePrimaryButtonBaseStyle`
+- TextBlock: `TextBlockStyle`
+- DatePicker: `CalciteDatePicker`
+- StatusBar: `CalciteStatusBar`
+- Expander: `CalciteExpander`
+- ToolTip: `CalciteToolTip`
+- DataGrid: `CalciteDataGrid`
+- ToolBar: `CalciteToolBar`
+- DocumentViewer: `CalciteDocumentViewer`
+- StatusBarItem: `CalciteStatusBarItem`

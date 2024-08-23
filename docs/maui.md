@@ -85,9 +85,16 @@ For a full list of Glyph Resource IDs refer to the sample apps and the [Calcite-
 
 ## Control styles
 
-### Buttons
-
-- `CalcitePrimaryButtonStyle`
-- `CalciteSecondaryButtonStyle`
-- `CalciteDangerButtonStyle`
-- `CalciteDangerSecondaryButtonStyle`
+- Buttons: `CalcitePrimaryButtonStyle`, `CalciteSecondaryButtonStyle`, `CalciteDangerButtonStyle`, `CalciteDangerSecondaryButtonStyle`
+- ActivityIndicator: `CalciteActivityIndicatorStyle`
+- IndicatorView: `CalciteIndicatorViewStyle`
+- BoxView: `CalciteBoxViewStyle`
+- CheckBox: `CalciteCheckBoxStyle`
+- Label: `CalciteLabelStyle`
+- ProgressBar: `CalciteProgressBarStyle`
+- Slider: `CalciteSliderStyle`
+- Switch: `CalciteSwitchStyle`
+- Page: `CalcitePageStyle`
+- Shell: `CalciteShellStyle`
+- NavigationPage: `CalciteNavigationPageStyle`
+- TabbedPage: `CalciteTabbedPageStyle`
