@@ -95,9 +95,5 @@ The markup extensions `CalciteIconSourceElementExtension` and `CalciteIconSource
 
 ## Control styles
 
-### Buttons
-
-- `CalcitePrimaryButtonStyle`
-- `CalciteSecondaryButtonStyle`
-- `CalciteDangerButtonStyle`
-- `CalciteDangerSecondaryButtonStyle`
+- Buttons: `CalcitePrimaryButtonStyle`, `CalciteSecondaryButtonStyle`, `CalciteDangerButtonStyle`, `CalciteDangerSecondaryButtonStyle`
+- TextBox: `CalciteTextBoxStyle`
