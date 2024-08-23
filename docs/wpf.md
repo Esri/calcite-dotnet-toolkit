@@ -47,7 +47,7 @@ Example:
 
 For a full list of Glyph Resource IDs refer to the sample apps and the [Calcite-UI-Icons](https://github.com/Esri/calcite-ui-icons) repo.
 
-# Markup Extensions
+## Markup Extensions
 
 `CalciteIconGeometryExtension` : Convert an Icon to a Path Geometry. Example:
 
@@ -59,3 +59,12 @@ For a full list of Glyph Resource IDs refer to the sample apps and the [Calcite-
 ```xml
 <Image Source="{calcite:CalciteIconImage Icon=AddLayer, Scale=Large, SymbolSize=32, Brush=Blue}" Width="32" Height="32" />
 ```
+
+## Control styles
+
+### Buttons
+
+- `CalcitePrimaryButtonStyle`
+- `CalciteSecondaryButtonStyle`
+- `CalciteDangerButtonStyle`
+- `CalciteDangerSecondaryButtonStyle`

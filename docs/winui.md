@@ -43,7 +43,7 @@ Example:
 For a full list of Glyph Resource IDs refer to the sample apps and the [Calcite-UI-Icons](https://github.com/Esri/calcite-ui-icons) repo.
 
 
-# Markup Extensions
+## Markup Extensions
 
 `CalciteFontIconSource` : Converts an Icon to an IconSource. Example:
 ```
@@ -92,3 +92,12 @@ The markup extensions `CalciteIconSourceElementExtension` and `CalciteIconSource
       </CommandBar.PrimaryCommands>
   </CommandBar>
 ```
+
+## Control styles
+
+### Buttons
+
+- `CalcitePrimaryButtonStyle`
+- `CalciteSecondaryButtonStyle`
+- `CalciteDangerButtonStyle`
+- `CalciteDangerSecondaryButtonStyle`

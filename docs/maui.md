@@ -67,7 +67,7 @@ Example:
 For a full list of Glyph Resource IDs refer to the sample apps and the [Calcite-UI-Icons](https://github.com/Esri/calcite-ui-icons) repo.
 
 
-# Markup Extensions
+## Markup Extensions
 
 `CalciteIconImageSource` : Converts an Icon to an Image Source. Example:
 ```xml
@@ -82,3 +82,12 @@ For a full list of Glyph Resource IDs refer to the sample apps and the [Calcite-
 ```xml
 <Image Source="{calcite:CalciteIconImage Color=Blue, Icon=MagnifyingGlass,Size=40, Scale=Large}" />
 ```
+
+## Control styles
+
+### Buttons
+
+- `CalcitePrimaryButtonStyle`
+- `CalciteSecondaryButtonStyle`
+- `CalciteDangerButtonStyle`
+- `CalciteDangerSecondaryButtonStyle`
