@@ -26,6 +26,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{CF67EB23-E
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{6FBC302E-D94B-4786-8494-C7D2F5447C06}"
+	ProjectSection(SolutionItems) = preProject
+		docs\brushes.md = docs\brushes.md
+		docs\maui.md = docs\maui.md
+		docs\winui.md = docs\winui.md
+		docs\wpf.md = docs\wpf.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -175,6 +183,7 @@ Global
 		{C806DC34-DB43-4ACD-A4AB-1DD77FA82B9D} = {091B83D1-FB57-4E24-ACD8-8F082D001CE0}
 		{0619276A-929C-4499-94D0-6349281454FA} = {091B83D1-FB57-4E24-ACD8-8F082D001CE0}
 		{71DE80FB-D23B-4048-839D-04A2077718FE} = {091B83D1-FB57-4E24-ACD8-8F082D001CE0}
+		{6FBC302E-D94B-4786-8494-C7D2F5447C06} = {CF67EB23-E1B7-4E01-B086-38F6A0F9CF24}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A321D794-099A-403D-8724-D5983969F735}
