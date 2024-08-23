@@ -3,6 +3,17 @@
         <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Colors/Brushes.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key ="Default" >
+            <Color x:Key="CalciteUITextOnBrandColor">White</Color>
+            <SolidColorBrush x:Key="CalciteUITextOnBrandBrush" Color="{StaticResource CalciteUITextOnBrandColor}" />
+        </ResourceDictionary>
+        <ResourceDictionary x:Key ="Light" >
+            <Color x:Key="CalciteUITextOnBrandColor">White</Color>
+            <SolidColorBrush x:Key="CalciteUITextOnBrandBrush" Color="{StaticResource CalciteUITextOnBrandColor}" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+    
     <!--<StaticResource x:Key="SystemControlForegroundBaseHighBrush" ResourceKey="CalciteUIText1Brush" />
 
 
@@ -47,10 +58,10 @@
     <ThemeResource x:Key="AccentTextFillColorTertiaryBrush" ResourceKey="CalciteUIBrandPressBrush" />
     <!--<StaticResource x:Key="AccentTextFillColorDisabledBrush" ResourceKey="CalciteUIBrandBrush" />-->
     <!--Text on Accent - Used for text on accent colored controls or fills-->
-    <SolidColorBrush x:Key="TextOnAccentFillColorPrimaryBrush" Color="White" />
-    <SolidColorBrush x:Key="TextOnAccentFillColorSecondaryBrush" Color="White" />
-    <SolidColorBrush x:Key="TextOnAccentFillColorDisabledBrush" Color="White" />
-    <SolidColorBrush x:Key="TextOnAccentFillColorSelectedTextBrush" Color="White" />
+    <StaticResource x:Key="TextOnAccentFillColorPrimaryBrush" ResourceKey="CalciteUITextOnBrandBrush" />
+    <StaticResource x:Key="TextOnAccentFillColorSecondaryBrush" ResourceKey="CalciteUITextOnBrandBrush" />
+    <StaticResource x:Key="TextOnAccentFillColorDisabledBrush" ResourceKey="CalciteUITextOnBrandBrush" />
+    <StaticResource x:Key="TextOnAccentFillColorSelectedTextBrush" ResourceKey="CalciteUITextOnBrandBrush" />
 
     <!--Accent Fill Used for accent fills on controls-->
     <StaticResource x:Key="AccentFillColorDefaultBrush" ResourceKey="CalciteUIBrandBrush" />

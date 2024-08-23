@@ -14,6 +14,8 @@ to default styles and resources. Dark/Light mode is automatically handled and ad
     </ResourceDictionary.MergedDictionaries>
 ```
 
+If you don't want the default implicit Calcite styles, place the `CalciteResources` entry in App.xaml outside and before the `XamlControlsResources` entry.
+
 ## Using Brush resources
 
 Brushes and colors can be referenced as static resources.

@@ -13,9 +13,9 @@
     <StaticResource x:Key="ButtonBackgroundPointerOver" ResourceKey="CalciteUIBrandHoverBrush" />
     <StaticResource x:Key="ButtonBackgroundPressed" ResourceKey="CalciteUIBrandPressBrush" />
     <!--<StaticResource x:Key="ButtonBackgroundDisabled" ResourceKey="SystemControlBackgroundBaseLowBrush" />-->
-    <StaticResource x:Key="ButtonForeground" ResourceKey="TextOnAccentFillColorPrimaryBrush" />
-    <StaticResource x:Key="ButtonForegroundPointerOver" ResourceKey="TextOnAccentFillColorPrimaryBrush" />
-    <StaticResource x:Key="ButtonForegroundPressed" ResourceKey="TextOnAccentFillColorPrimaryBrush" />
+    <StaticResource x:Key="ButtonForeground" ResourceKey="CalciteUITextOnBrandBrush" />
+    <StaticResource x:Key="ButtonForegroundPointerOver" ResourceKey="CalciteUITextOnBrandBrush" />
+    <StaticResource x:Key="ButtonForegroundPressed" ResourceKey="CalciteUITextOnBrandBrush" />
     <!--<StaticResource x:Key="ButtonForegroundDisabled" ResourceKey="SystemControlDisabledBaseMediumLowBrush" />-->
     <StaticResource x:Key="ButtonBorderBrush" ResourceKey="CalciteUIBrandBrush" />
     <StaticResource x:Key="ButtonBorderBrushPointerOver" ResourceKey="CalciteUIBrandHoverBrush" />
@@ -31,8 +31,23 @@
         <Setter Property="Padding" Value="{StaticResource ButtonPadding}" />
         <Setter Property="MinHeight" Value="28" />
         <Setter Property="CornerRadius" Value="0" />
+        <Setter Property="cal:CalciteResources.StyleResources">
+            <Setter.Value>
+                <ResourceDictionary>
+                    <StaticResource x:Key="ButtonBackground" ResourceKey="CalciteUIBrandBrush" />
+                    <StaticResource x:Key="ButtonBackgroundPointerOver" ResourceKey="CalciteUIBrandHoverBrush"/>
+                    <StaticResource x:Key="ButtonBackgroundPressed" ResourceKey="CalciteUIBrandPressBrush"/>
+                    <StaticResource x:Key="ButtonBorderBrush" ResourceKey="CalciteUIBrandBrush" />
+                    <StaticResource x:Key="ButtonBorderBrushPointerOver" ResourceKey="CalciteUIBrandHoverBrush" />
+                    <StaticResource x:Key="ButtonBorderBrushPressed" ResourceKey="CalciteUIBrandPressBrush" />
+                    <StaticResource x:Key="ButtonForeground" ResourceKey="CalciteUITextOnBrandBrush" />
+                    <StaticResource x:Key="ButtonForegroundPointerOver" ResourceKey="CalciteUITextOnBrandBrush" />
+                    <StaticResource x:Key="ButtonForegroundPressed" ResourceKey="CalciteUITextOnBrandBrush" />
+                </ResourceDictionary>
+            </Setter.Value>
+        </Setter>
     </Style>
-    
+
     <Style TargetType="Button" x:Key="CalcitePrimaryButtonStyle" BasedOn="{StaticResource CalciteButtonStyle}" />
 
     <Style TargetType="Button" x:Key="CalciteSecondaryButtonStyle" BasedOn="{StaticResource CalciteButtonStyle}">
@@ -63,6 +78,9 @@
                     <StaticResource x:Key="ButtonBorderBrush" ResourceKey="CalciteUIDangerBrush" />
                     <StaticResource x:Key="ButtonBorderBrushPointerOver" ResourceKey="CalciteUIDangerHoverBrush" />
                     <StaticResource x:Key="ButtonBorderBrushPressed" ResourceKey="CalciteUIDangerPressBrush" />
+                    <StaticResource x:Key="ButtonForeground" ResourceKey="CalciteUITextOnBrandBrush" />
+                    <StaticResource x:Key="ButtonForegroundPointerOver" ResourceKey="CalciteUITextOnBrandBrush" />
+                    <StaticResource x:Key="ButtonForegroundPressed" ResourceKey="CalciteUITextOnBrandBrush" />
                 </ResourceDictionary>
             </Setter.Value>
         </Setter>
@@ -87,5 +105,5 @@
     </Style>
 
     <!-- Implicit style -->
-    <Style TargetType="Button" BasedOn="{StaticResource CalciteButtonStyle}" />
+    <Style TargetType="Button" BasedOn="{StaticResource CalcitePrimaryButtonStyle}" />
 </ResourceDictionary>
