@@ -1,6 +1,7 @@
 # WinUI 3
 
 ## Usage<a name="usage" />
+
 Add the CalciteResources ResourceDictionary to your App.xaml Merged Directionary resources inside the default `XamlControlsResources` to get access
 to default styles and resources. Dark/Light mode is automatically handled and adjust to system or app settings.
 

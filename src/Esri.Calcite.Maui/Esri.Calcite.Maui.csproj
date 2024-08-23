@@ -7,12 +7,14 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Description>$(Description) for .NET MAUI</Description>
         <SkipValidateMauiImplicitPackageReferences>true</SkipValidateMauiImplicitPackageReferences>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
     <ItemGroup>    
       <EmbeddedResource Include="..\..\GeneratedResources\*.ttf" Link="Resources\Fonts\%(Filename)%(Extension)" />
       <Compile Include="..\..\GeneratedResources\Maui\*.cs" Link="GeneratedResources\%(RecursiveDir)%(Filename)%(Extension)" />
       <None Include="README.txt" Pack="True" PackagePath="\" />
+      <None Include="..\..\docs\maui.md" Link="README.md" Pack="True" PackagePath="\README.md" />
 
         <MauiXaml Include="..\..\GeneratedResources\Maui\Icons\*.xaml">
         <Generator>MSBuild:Compile</Generator>
@@ -28,14 +30,6 @@
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\Esri.Calcite.WinUI\Esri.Calcite.WinUI.csproj" Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'" />
-    </ItemGroup>
-    <ItemGroup>
-      <MauiXaml Update="Resources\Styles\ImplicitStyles.xaml">
-        <Generator>MSBuild:Compile</Generator>
-      </MauiXaml>
-      <MauiXaml Update="Resources\Styles\Styles.xaml">
-        <Generator>MSBuild:Compile</Generator>
-      </MauiXaml>
     </ItemGroup>
 
 </Project>

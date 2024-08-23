@@ -8,6 +8,7 @@
     <IncludeXamlFilesInNugetPackage>False</IncludeXamlFilesInNugetPackage>
     <DisableEmbeddedXbf>false</DisableEmbeddedXbf>
     <Nullable>enable</Nullable>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,6 +24,7 @@
       </Page>
       <Page Update="**\*.xaml" PackagePath="lib\$(TargetFramework)\$(PackageId)\" Pack="True" />
       <None Include="README.txt" Pack="True" PackagePath="\" />
+      <None Include="..\..\docs\winui.md" Link="README.md" Pack="True" PackagePath="\README.md" />
   </ItemGroup>
 
   <ItemGroup>

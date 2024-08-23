@@ -1,9 +1,9 @@
 # .NET MAUI
 
 ## Usage<a name="usage" />
+
 Add the CalciteResources ResourceDictionary to your App.xaml Merged Directionary resources inside the default `XamlControlsResources` to get access
 to default styles and resources. Dark/Light mode is automatically handled and adjust to system or app settings.
-
 
 ```xml
     <Application.Resources>
@@ -16,7 +16,9 @@ to default styles and resources. Dark/Light mode is automatically handled and ad
         </ResourceDictionary>
     </Application.Resources>
 ```
+
 Next register Calcite in `MauiProgram.cs`:
+
 ```cs
 using Esri.Calcite.Maui;
 
@@ -40,6 +42,7 @@ namespace MauiTests
     }
 }
 ```
+
 If you don't want the default implicit Calcite styles, place the `CalciteResources` entry in App.xaml right before the `Styles.xaml` entry.
 
 ## Using Brush resources

@@ -10,7 +10,6 @@
         <PackageIconFilePath>$(MSBuildThisFileDirectory)..\sdk\icons\ArcGIS_SDK_128.png</PackageIconFilePath>
         <PackageProjectUrl>https://github.com/esri/calcite-dotnet/</PackageProjectUrl> 
         <PackageIcon>icon.png</PackageIcon>
-        <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
         <GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">True</GeneratePackageOnBuild>
         <PackageOutputPath>$(MSBuildThisFileDirectory)..\artifacts\NuGet\$(Configuration)\</PackageOutputPath>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>

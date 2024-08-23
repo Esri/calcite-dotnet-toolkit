@@ -8,11 +8,13 @@
     <Platforms>AnyCPU</Platforms>
     <LangVersion>10.0</LangVersion>
     <Description>$(Description) for WPF</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
     <Resource Include="..\..\GeneratedResources\*.ttf" Link="Fonts\%(Filename)%(Extension)" />
     <None Include="README.txt" Pack="True" PackagePath="\" />
+    <None Include="..\..\docs\wpf.md" Link="README.md" Pack="True" PackagePath="\README.md" />
     <Page Include="..\..\GeneratedResources\WPF\**\*.xaml" Link="%(RecursiveDir)\%(Filename).xaml">
         <Generator>MSBuild:Compile</Generator>
     </Page>
