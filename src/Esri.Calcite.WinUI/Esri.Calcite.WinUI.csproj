@@ -12,7 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-      <Content Include="..\..\GeneratedResources\*.ttf" Link="Fonts\%(Filename)%(Extension)" PackagePath="lib\$(TargetFramework)\$(PackageId)\Fonts\%(Filename)%(Extension)" />
+      <Content Include="..\..\GeneratedResources\*.ttf" Link="Fonts\%(Filename)%(Extension)" PackagePath="lib\$(TargetFramework)\$(PackageId)\Fonts\%(Filename)%(Extension);contentFiles\any\$(TargetFramework)\$(PackageId)\Fonts\%(Filename)%(Extension)" />
       <None Remove="Styles\Controls\TreeView.xaml" />
     <Compile Include="..\..\GeneratedResources\WinUI\*.cs" Link="GeneratedResources\%(RecursiveDir)%(Filename)%(Extension)" />
   </ItemGroup>
