@@ -17,7 +17,7 @@ to default styles and resources. Dark/Light mode is automatically handled and ad
 
 You can set the Theme to `Light`, `Dark` or `Default`, where Default will automatically follow the system styling.
 
-If you just want access to the resources and explicit styles, but not inherit any implicit styling, set `IsCalciteImplicitStylingEnabled="True"` on the `CalciteResources` entry.
+If you just want access to the resources and explicit styles, but not inherit any implicit styling, set `IsCalciteImplicitStylingEnabled="False"` on the `CalciteResources` entry.
 
 ## Using Brush resources
 
