@@ -2,7 +2,6 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:ca="clr-namespace:Esri.Calcite.WPF.Helpers">
-    <Duration x:Key="commonAnimationDuration">0:0:0.1</Duration>
     <Style x:Key="CalciteSliderButtonStyle" TargetType="{x:Type RepeatButton}">
         <Setter Property="SnapsToDevicePixels" Value="true" />
         <Setter Property="OverridesDefaultStyle" Value="true" />
@@ -46,7 +45,7 @@
                                 Storyboard.TargetName="Ellipse"
                                 Storyboard.TargetProperty="StrokeThickness"
                                 To="3"
-                                Duration="{StaticResource commonAnimationDuration}" />
+                                Duration="0:0:0.1" />
                         </Storyboard>
                     </BeginStoryboard>
                 </MultiTrigger.EnterActions>
@@ -57,7 +56,7 @@
                                 Storyboard.TargetName="Ellipse"
                                 Storyboard.TargetProperty="StrokeThickness"
                                 To="2"
-                                Duration="{StaticResource commonAnimationDuration}" />
+                                Duration="0:0:0.1" />
                         </Storyboard>
                     </BeginStoryboard>
                 </MultiTrigger.ExitActions>

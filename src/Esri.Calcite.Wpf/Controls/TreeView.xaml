@@ -3,7 +3,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:ca="clr-namespace:Esri.Calcite.WPF.Helpers"
     xmlns:c="clr-namespace:Esri.Calcite.WPF">
-    <Duration x:Key="commonAnimationDuration">0:0:0.1</Duration>
     <!--  Adapted from reference styles and templates at https://docs.microsoft.com/en-us/dotnet/desktop/wpf/controls/treeview-styles-and-templates?view=netframeworkdesktop-4.8  -->
     <ControlTemplate x:Key="CalciteTreeViewTemplate" TargetType="TreeView">
         <Border
@@ -55,7 +54,7 @@
                                             Storyboard.TargetProperty="(Path.LayoutTransform).(TransformGroup.Children)[0].(RotateTransform.Angle)"
                                             From="0"
                                             To="90"
-                                            Duration="{StaticResource commonAnimationDuration}" />
+                                            Duration="0:0:0.1" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="Unchecked">
@@ -65,7 +64,7 @@
                                             Storyboard.TargetProperty="(Path.LayoutTransform).(TransformGroup.Children)[0].(RotateTransform.Angle)"
                                             From="90"
                                             To="0"
-                                            Duration="{StaticResource commonAnimationDuration}" />
+                                            Duration="0:0:0.1" />
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="Indeterminate" />

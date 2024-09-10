@@ -325,15 +325,6 @@
             </Setter.Value>
         </Setter>
     </Style>
-
-    <Style x:Key="pathButtonStyle" TargetType="{x:Type Path}">
-        <Setter Property="Height" Value="{StaticResource CalendarButtonInnerPathHeight}" />
-        <Setter Property="Width" Value="{StaticResource CalendarButtonInnerPathWidth}" />
-        <Setter Property="Fill" Value="{DynamicResource CalciteUIText3Brush}" />
-        <Setter Property="Stretch" Value="Uniform" />
-        <Setter Property="HorizontalAlignment" Value="Center" />
-        <Setter Property="VerticalAlignment" Value="Center" />
-    </Style>
     <!--  Button to go to the next or previous month or year.  -->
     <ControlTemplate x:Key="NextPreviousButtonTemplate" TargetType="{x:Type Button}">
         <Grid
@@ -487,12 +478,20 @@
                 TextOptions.TextFormattingMode="Ideal"
                 TextOptions.TextRenderingMode="Aliased" />
                         </DataTemplate>
+                        <Style x:Key="pathButtonStyle" TargetType="{x:Type Path}">
+                            <Setter Property="Height" Value="{StaticResource CalendarButtonInnerPathHeight}" />
+                            <Setter Property="Width" Value="{StaticResource CalendarButtonInnerPathWidth}" />
+                            <Setter Property="Fill" Value="{DynamicResource CalciteUIText3Brush}" />
+                            <Setter Property="Stretch" Value="Uniform" />
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                            <Setter Property="VerticalAlignment" Value="Center" />
+                        </Style>
                     </ControlTemplate.Resources>
                     <Grid
-        x:Name="PART_Root"
-        Width="216"
-        Height="236"
-        Margin="0">
+                        x:Name="PART_Root"
+                        Width="216"
+                        Height="236"
+                        Margin="0">
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="32" />
@@ -505,49 +504,47 @@
                                 <RowDefinition Height="*" />
                             </Grid.RowDefinitions>
                             <Button
-                x:Name="PART_PreviousButton"
-                Grid.Row="0"
-                VerticalAlignment="Stretch"
-                Focusable="False"
-                Template="{StaticResource NextPreviousButtonTemplate}">
-                                <!--<TextBlock Text="{StaticResource CalciteUIIcons_Glyph_Chevron_Left_16}" FontFamily="{StaticResource CalciteUIIconsFontFamily}"
-                   />-->
+                                x:Name="PART_PreviousButton"
+                                Grid.Row="0"
+                                VerticalAlignment="Stretch"
+                                Focusable="False"
+                                Template="{StaticResource NextPreviousButtonTemplate}">
                                 <Path Data="{c:CalciteIconGeometry Icon=ChevronLeft, Scale=Small}" Style="{StaticResource pathButtonStyle}" />
                             </Button>
                             <!--  TODO - update sizes for different scales, themes  -->
                             <Button
-                x:Name="PART_HeaderButton"
-                Grid.Row="0"
-                Grid.Column="1"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Center"
-                Focusable="False"
-                FontFamily="{TemplateBinding FontFamily}"
-                FontWeight="{TemplateBinding FontWeight}"
-                Foreground="{DynamicResource CalciteUIText1Brush}"
-                Template="{StaticResource HeaderButtonTemplate}" />
+                                x:Name="PART_HeaderButton"
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Focusable="False"
+                                FontFamily="{TemplateBinding FontFamily}"
+                                FontWeight="{TemplateBinding FontWeight}"
+                                Foreground="{DynamicResource CalciteUIText1Brush}"
+                                Template="{StaticResource HeaderButtonTemplate}" />
                             <Button
-                x:Name="PART_NextButton"
-                Grid.Row="0"
-                Grid.Column="2"
-                Margin="0"
-                VerticalAlignment="Stretch"
-                Focusable="False"
-                Template="{StaticResource NextPreviousButtonTemplate}">
+                                x:Name="PART_NextButton"
+                                Grid.Row="0"
+                                Grid.Column="2"
+                                Margin="0"
+                                VerticalAlignment="Stretch"
+                                Focusable="False"
+                                Template="{StaticResource NextPreviousButtonTemplate}">
                                 <Path Data="{c:CalciteIconGeometry Icon=ChevronRight, Scale=Small}" Style="{StaticResource pathButtonStyle}" />
                             </Button>
                             <Border
-                Grid.Row="1"
-                Grid.ColumnSpan="3"
-                BorderBrush="{DynamicResource CalciteUIBorder1Brush}"
-                BorderThickness="0,1,0,0" />
+                                Grid.Row="1"
+                                Grid.ColumnSpan="3"
+                                BorderBrush="{DynamicResource CalciteUIBorder1Brush}"
+                                BorderThickness="0,1,0,0" />
                             <Grid
-                x:Name="PART_MonthView"
-                Grid.Row="2"
-                Grid.ColumnSpan="3"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"
-                Visibility="Visible">
+                                x:Name="PART_MonthView"
+                                Grid.Row="2"
+                                Grid.ColumnSpan="3"
+                                HorizontalAlignment="Stretch"
+                                VerticalAlignment="Stretch"
+                                Visibility="Visible">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*" />
                                     <ColumnDefinition Width="*" />
@@ -568,12 +565,12 @@
                                 </Grid.RowDefinitions>
                             </Grid>
                             <Grid
-                x:Name="PART_YearView"
-                Grid.Row="2"
-                Grid.ColumnSpan="3"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"
-                Visibility="Hidden">
+                                x:Name="PART_YearView"
+                                Grid.Row="2"
+                                Grid.ColumnSpan="3"
+                                HorizontalAlignment="Stretch"
+                                VerticalAlignment="Stretch"
+                                Visibility="Hidden">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*" />
                                     <ColumnDefinition Width="*" />

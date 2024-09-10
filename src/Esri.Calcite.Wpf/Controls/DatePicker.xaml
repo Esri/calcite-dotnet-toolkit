@@ -87,14 +87,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style x:Key="calendarDropdownPathStyle" TargetType="{x:Type Path}">
-        <Setter Property="Stretch" Value="Uniform" />
-        <Setter Property="HorizontalAlignment" Value="Center" />
-        <Setter Property="VerticalAlignment" Value="Center" />
-        <Setter Property="Width" Value="12" />
-        <Setter Property="Fill" Value="{DynamicResource CalciteUIText1Brush}" />
-        <!--<Setter Property="Data" Value="{c:CalciteIconGeometry Icon=Calendar}" /> --><!-- CRASH -->
-    </Style>
+    
     <ControlTemplate x:Key="CalciteDatePickerTemplate" TargetType="DatePicker">
         <Border
             x:Name="PART_Border"
@@ -117,7 +110,10 @@
                         x:Name="PathIcon"
                         Fill="{DynamicResource CalciteUIText1Brush}"
                         Data="{c:CalciteIconGeometry Icon=Calendar}"
-                        Style="{StaticResource calendarDropdownPathStyle}" />
+                        Stretch="Uniform"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Width="12" />
                 </Button>
                 <DatePickerTextBox
                     x:Name="PART_TextBox"
