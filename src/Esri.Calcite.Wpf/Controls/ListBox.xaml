@@ -63,7 +63,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style TargetType="ListBox">
+    <Style TargetType="ListBox" x:Key="CalciteListBoxStyle">
         <Setter Property="ItemContainerStyle" Value="{StaticResource ListBoxItemStyle}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="Margin" Value="0" />

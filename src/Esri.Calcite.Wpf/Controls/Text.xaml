@@ -5,7 +5,7 @@
     <Style x:Key="TextBlockStyle" TargetType="TextBlock">
         <Setter Property="TextWrapping" Value="Wrap" />
     </Style>
-    <Style TargetType="Label">
+    <Style TargetType="Label" x:Key="CalciteLabelStyle">
         <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
         <Setter Property="FontSize" Value="12" />
     </Style>

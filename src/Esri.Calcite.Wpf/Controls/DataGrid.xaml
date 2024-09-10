@@ -117,7 +117,7 @@
     </Style>
 
     <!--  Style and template for the DataGridCell.  -->
-    <Style TargetType="{x:Type DataGridCell}">
+    <Style TargetType="{x:Type DataGridCell}" x:Key="CalciteDataGridCellStyle">
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="Template">
             <Setter.Value>
@@ -156,22 +156,8 @@
         </Setter>
     </Style>
 
-    <Style TargetType="{x:Type DataGridTextColumn}">
-        <Setter Property="MinWidth" Value="200" />
-        <Setter Property="ElementStyle">
-            <Setter.Value>
-                <Style TargetType="TextBlock">
-                    <Setter Property="Foreground" Value="Red" />
-                </Style>
-            </Setter.Value>
-        </Setter>
-    </Style>
-    <Style TargetType="{x:Type DataGridCheckBoxColumn}">
-        <Setter Property="ElementStyle" Value="{DynamicResource CalciteCheckboxStyle}" />
-    </Style>
-
     <!--  Style and template for the DataGridRow.  -->
-    <Style TargetType="{x:Type DataGridRow}">
+    <Style TargetType="{x:Type DataGridRow}" x:Key="CalciteDataGridRowStyle">
         <Setter Property="SnapsToDevicePixels" Value="true" />
         <Setter Property="Validation.ErrorTemplate" Value="{x:Null}" />
         <Setter Property="ValidationErrorTemplate">
@@ -309,8 +295,6 @@
         </Setter>
     </Style>
 
-    <!--  Style and template for the DataGridRowHeader.  -->
-
     <!--  Style and template for the resize control on the DataGridColumnHeader.  -->
     <Style x:Key="ColumnHeaderGripperStyle" TargetType="{x:Type Thumb}">
         <Setter Property="Width" Value="8" />
@@ -324,9 +308,8 @@
             </Setter.Value>
         </Setter>
     </Style>
-
     <!--  Style and template for the DataGridColumnHeader.  -->
-    <Style TargetType="{x:Type DataGridColumnHeader}">
+    <Style TargetType="{x:Type DataGridColumnHeader}" x:Key="CalciteDataGridColumnHeaderStyle">
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="Padding" Value="8" />
         <Setter Property="Template">
@@ -360,7 +343,7 @@
     </Style>
 
     <!--  Style and template for the DataGridColumnHeadersPresenter.  -->
-    <Style TargetType="{x:Type DataGridColumnHeadersPresenter}">
+    <Style TargetType="{x:Type DataGridColumnHeadersPresenter}" x:Key="CalciteDataGridColumnHeadersPresenterStyle">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type DataGridColumnHeadersPresenter}">

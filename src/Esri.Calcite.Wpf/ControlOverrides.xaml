@@ -24,10 +24,17 @@
     <Style BasedOn="{StaticResource CalciteStatusBar}" TargetType="StatusBar" />
     <Style BasedOn="{StaticResource CalciteExpander}" TargetType="Expander" />
     <Style BasedOn="{StaticResource CalciteToolTip}" TargetType="ToolTip" />
+    <Style BasedOn="{StaticResource CalciteDataGridCellStyle}" TargetType="DataGridCell" />
+    <Style BasedOn="{StaticResource CalciteDataGridColumnHeaderStyle}" TargetType="{x:Type DataGridColumnHeader}" />
+    <Style BasedOn="{StaticResource CalciteDataGridRowStyle}" TargetType="DataGridRow" />
+    <Style BasedOn="{StaticResource CalciteDataGridColumnHeadersPresenterStyle}" TargetType="{x:Type DataGridColumnHeadersPresenter}" />
     <Style BasedOn="{StaticResource CalciteDataGrid}" TargetType="DataGrid" />
+    <Style BasedOn="{StaticResource CalciteContentPresenterStyle}" TargetType="ContentPresenter" />
     <!--<Style BasedOn="{StaticResource CalciteColorPickerStyle}" TargetType="calcite:CalciteColorPicker" />-->
     <Style BasedOn="{StaticResource CalciteToolBar}" TargetType="ToolBar" />
     <Style BasedOn="{StaticResource CalciteDocumentViewer}" TargetType="DocumentViewer" />
     <Style BasedOn="{StaticResource CalciteStatusBarItem}" TargetType="StatusBarItem" />
-    
+    <Style BasedOn="{StaticResource CalciteGroupBoxStyle}" TargetType="GroupBox" />
+    <Style BasedOn="{StaticResource CalciteLabelStyle}" TargetType="Label" />
+    <Style BasedOn="{StaticResource CalciteListBoxStyle}" TargetType="ListBox" />
 </ResourceDictionary>
