@@ -6,6 +6,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Threading;
 
 namespace Esri.Calcite.WPF
 {
@@ -16,18 +17,25 @@ namespace Esri.Calcite.WPF
     {
         internal static readonly System.Windows.Media.FontFamily CalciteUIFont = new System.Windows.Media.FontFamily(new Uri("pack://application:,,,/Esri.Calcite.WPF;component/Fonts/"), "./calcite-ui-icons.ttf#calcite-ui-icons");
 
+        private readonly WeakEventListener<CalciteResources, object, object, Microsoft.Win32.UserPreferenceChangingEventArgs> userPreferenceHandler;
+        private readonly Dispatcher _CurrentDispatcher;
+
         public CalciteResources()
         {
-            //TODO: Use weak event handler
-            Microsoft.Win32.SystemEvents.UserPreferenceChanging += SystemEvents_UserPreferenceChanging;
+            userPreferenceHandler = new WeakEventListener<CalciteResources, object, object, Microsoft.Win32.UserPreferenceChangingEventArgs>(this, null);
+            userPreferenceHandler.OnEventAction = (instance, sender, e) => SystemEvents_UserPreferenceChanging(e);
+            userPreferenceHandler.OnDetachAction = (instance, source, weakListener) => Microsoft.Win32.SystemEvents.UserPreferenceChanging -= userPreferenceHandler.OnEvent;
+            Microsoft.Win32.SystemEvents.UserPreferenceChanging += userPreferenceHandler.OnEvent;
+            _CurrentDispatcher = Dispatcher.CurrentDispatcher;
             UpdateResources();
         }
 
-        private void SystemEvents_UserPreferenceChanging(object sender, Microsoft.Win32.UserPreferenceChangingEventArgs e)
+        private void SystemEvents_UserPreferenceChanging(Microsoft.Win32.UserPreferenceChangingEventArgs e)
         {
-            if (e.Category == Microsoft.Win32.UserPreferenceCategory.General)
+            if (e.Category == Microsoft.Win32.UserPreferenceCategory.General && m_Theme == AppTheme.Default &&
+                _CurrentDispatcher != null && !_CurrentDispatcher.HasShutdownStarted && !_CurrentDispatcher.HasShutdownFinished)
             {
-                UpdateResources();
+                _CurrentDispatcher.BeginInvoke(new Action(() => UpdateResources()));
             }
         }
 
