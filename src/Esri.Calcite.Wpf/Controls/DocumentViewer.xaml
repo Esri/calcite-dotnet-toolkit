@@ -8,7 +8,7 @@
         <ResourceDictionary Source=".\Buttons.xaml" />
         <ResourceDictionary Source="..\Colors\Brushes.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    <ca:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+
     <Style x:Key="CalciteDocumentViewer" TargetType="{x:Type DocumentViewer}">
         <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
         <Setter Property="Background" Value="{DynamicResource CalciteUIBackgroundBrush}" />

@@ -3,9 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:c="clr-namespace:Esri.Calcite.WPF"
     xmlns:ca="clr-namespace:Esri.Calcite.WPF.Helpers">
-    <Geometry x:Key="icon-check-sb-16">M12.753 3l-7.319 7.497L3.252 8.31 2 9.373l3.434 3.434L14 4.24z</Geometry>
-    <Geometry x:Key="icon-indeterminate-sb-16">M4 7h8v2H4z</Geometry>
-    <Duration x:Key="commonAnimationDuration">0:0:0.1</Duration>
+    
     <ControlTemplate x:Key="CalciteCheckboxTemplate" TargetType="{x:Type CheckBox}">
         <BulletDecorator Background="Transparent" UseLayoutRounding="True">
             <BulletDecorator.Bullet>

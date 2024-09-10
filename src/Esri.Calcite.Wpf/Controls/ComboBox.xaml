@@ -6,7 +6,6 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="..\Shared\Fonts.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    <Geometry x:Key="icon-caret-down-16">M 13.1,6 8,11.1 2.9,6 Z</Geometry>
     <Style x:Key="PathIconBase" TargetType="Path">
         <Setter Property="Stretch" Value="Uniform" />
         <Setter Property="Width" Value="16" />
@@ -197,7 +196,6 @@
                             CaretBrush="{DynamicResource CalciteUIBrandBrush}"
                             Cursor="IBeam"
                             Focusable="True"
-                            FontFamily="{StaticResource AvenirNext-Regular}"
                             FontSize="12"
                             Foreground="{DynamicResource CalciteUIText1Brush}"
                             IsReadOnly="{TemplateBinding IsReadOnly}"

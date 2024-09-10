@@ -8,7 +8,7 @@
         <ResourceDictionary Source=".\Buttons.xaml" />
         <ResourceDictionary Source="..\Colors\Brushes.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    <ca:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+
     <Style
         x:Key="CalciteToolBarButtonBase"
         BasedOn="{StaticResource CalciteChromeButtonBaseStyle}"
@@ -36,6 +36,9 @@
                         BorderThickness="0"
                         Cursor="{DynamicResource CalciteActionCursor}"
                         ToolTip="{TemplateBinding Content}">
+                        <Border.Resources>
+                            <ca:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+                        </Border.Resources>
                         <Grid
                             Margin="8,8,8,8"
                             HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
@@ -61,8 +64,7 @@
                                     TextBlock.FontSize="12"
                                     TextBlock.Foreground="{TemplateBinding Foreground}"
                                     TextBlock.LineHeight="16"
-                                    TextBlock.LineStackingStrategy="BlockLineHeight"
-                                    TextElement.FontFamily="AvenirNext-Medium"
+                                    TextBlock.LineStackingStrategy="BlockLineHeight" TextBlock.FontWeight="Medium"
                                     Visibility="{Binding (ca:ToolBarHelpers.IsExpanded), Mode=OneWay, RelativeSource={RelativeSource AncestorType=ToolBar}, Converter={StaticResource BoolToVisibilityConverter}}" />
                             </Grid>
                         </Grid>

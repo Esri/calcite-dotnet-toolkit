@@ -17,7 +17,6 @@
                 BorderThickness="{TemplateBinding BorderThickness}">
                 <ContentPresenter
                     ContentSource="Header"
-                    TextElement.FontFamily="{DynamicResource AvenirNext-Regular}"
                     TextElement.FontSize="14"
                     TextElement.Foreground="{DynamicResource CalciteUIText1Brush}" />
             </Border>

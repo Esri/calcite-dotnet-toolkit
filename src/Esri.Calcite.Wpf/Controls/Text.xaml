@@ -3,11 +3,9 @@
         <ResourceDictionary Source="..\Shared\Fonts.xaml" />
     </ResourceDictionary.MergedDictionaries>
     <Style x:Key="TextBlockStyle" TargetType="TextBlock">
-        <!--<Setter Property="FontFamily" Value="{StaticResource AvenirNext-Regular}" />-->
         <Setter Property="TextWrapping" Value="Wrap" />
     </Style>
     <Style TargetType="Label">
-        <!--<Setter Property="FontFamily" Value="{StaticResource AvenirNext-Regular}" />-->
         <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
         <Setter Property="FontSize" Value="12" />
     </Style>

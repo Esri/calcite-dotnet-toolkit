@@ -18,7 +18,7 @@
                 <ContentPresenter
                     ContentSource="Header"
                     RecognizesAccessKey="True"
-                    TextElement.FontFamily="{StaticResource AvenirNext-Medium}"
+                    TextElement.FontWeight="Medium"
                     TextElement.FontSize="14"
                     TextElement.Foreground="{DynamicResource CalciteUIBrandBrush}" />
                 <ContentPresenter Grid.Row="1" Margin="0,8,0,0" />
@@ -56,11 +56,9 @@
     <Style TargetType="GroupBox">
         <Setter Property="Template" Value="{StaticResource GroupBoxBasixTemplate}" />
         <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
-        <Setter Property="FontFamily" Value="{StaticResource AvenirNext-Regular}" />
     </Style>
     <Style x:Key="PanelGroupBox" TargetType="GroupBox">
         <Setter Property="Template" Value="{StaticResource GroupBoxPanelTemplate}" />
         <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
-        <Setter Property="FontFamily" Value="{StaticResource AvenirNext-Regular}" />
     </Style>
 </ResourceDictionary>

@@ -13,7 +13,6 @@
         <Setter Property="Padding" Value="4" />
         <Setter Property="MinWidth" Value="56" />
         <Setter Property="MinHeight" Value="28" />
-        <Setter Property="FontFamily" Value="{StaticResource AvenirNext-Regular}" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="Cursor" Value="IBeam" />
         <Setter Property="TextWrapping" Value="Wrap" />
@@ -89,7 +88,6 @@
         <Setter Property="Padding" Value="4" />
         <Setter Property="MinWidth" Value="56" />
         <Setter Property="MinHeight" Value="28" />
-        <Setter Property="FontFamily" Value="{StaticResource AvenirNext-Regular}" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="Cursor" Value="IBeam" />
         <Setter Property="CaretBrush" Value="{DynamicResource CalciteUIBrandBrush}" />

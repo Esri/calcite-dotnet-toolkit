@@ -4,10 +4,6 @@
     xmlns:ca="clr-namespace:Esri.Calcite.WPF.Helpers"
     xmlns:c="clr-namespace:Esri.Calcite.WPF">
     <Duration x:Key="commonAnimationDuration">0:0:0.1</Duration>
-    <Geometry x:Key="icon-chevron-left-16">M10.207 4l-4 4 4 4H8.793l-4-4 4-4z</Geometry>
-    <Geometry x:Key="icon-chevron-right-16">M5.793 12l4-4-4-4h1.414l4 4-4 4z</Geometry>
-    <Geometry x:Key="icon-chevron-up-16">M8 6.207l-4 4V8.793l4-4 4 4v1.414z</Geometry>
-    <Geometry x:Key="icon-chevron-down-16">M8 11.207l-4-4V5.793l4 4 4-4v1.414z</Geometry>
     <!--  Adapted from reference styles and templates at https://docs.microsoft.com/en-us/dotnet/desktop/wpf/controls/treeview-styles-and-templates?view=netframeworkdesktop-4.8  -->
     <ControlTemplate x:Key="CalciteTreeViewTemplate" TargetType="TreeView">
         <Border

@@ -31,8 +31,7 @@
                             x:Name="ContentPart"
                             HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                             VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
-                            TextBlock.FontFamily="{StaticResource AvenirNext-Light}" />
+                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" TextBlock.FontWeight="Light"/>
                     </Border>
                     <ControlTemplate.Triggers>
                         <MultiTrigger>

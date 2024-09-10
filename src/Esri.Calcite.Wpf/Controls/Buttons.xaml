@@ -8,7 +8,7 @@
         <ResourceDictionary Source="..\Shared\Fonts.xaml" />
         <ResourceDictionary Source="..\Shared\Sizes.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    <ControlTemplate x:Key="BaseButtonTemplate" TargetType="ButtonBase">
+    <ControlTemplate x:Key="CalciteBaseButtonTemplate" TargetType="ButtonBase">
         <Border
             x:Name="bg"
             Padding="{StaticResource ButtonBorderOffset}"
@@ -87,7 +87,7 @@
         <Setter Property="Padding" Value="{StaticResource ButtonPadding}" />
         <Setter Property="MinHeight" Value="28" />
         <Setter Property="Cursor" Value="{DynamicResource CalciteActionCursor}" />
-        <Setter Property="Template" Value="{StaticResource BaseButtonTemplate}" />
+        <Setter Property="Template" Value="{StaticResource CalciteBaseButtonTemplate}" />
         <Style.Triggers>
             <Trigger Property="ca:AttachedFormData.IsInForm" Value="True">
                 <Setter Property="Margin" Value="{DynamicResource FormChildMargin}" />

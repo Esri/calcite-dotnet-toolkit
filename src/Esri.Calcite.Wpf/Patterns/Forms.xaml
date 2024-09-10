@@ -17,14 +17,13 @@
                 <ContentPresenter
                     ContentSource="Header"
                     TextBlock.TextAlignment="Left"
-                    TextElement.FontFamily="{DynamicResource AvenirNext-Medium}"
+                    TextBlock.FontWeight="Medium"
                     TextElement.FontSize="12"
                     TextElement.Foreground="{DynamicResource CalciteUIText1Brush}" />
             </Border>
             <Border x:Name="bd_body" Grid.Row="1">
                 <ContentPresenter
                     TextBlock.TextAlignment="Center"
-                    TextElement.FontFamily="{DynamicResource AvenirNext-Regular}"
                     TextElement.FontSize="12"
                     TextElement.Foreground="{DynamicResource CalciteUIText1Brush}" />
             </Border>

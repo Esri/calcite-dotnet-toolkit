@@ -44,7 +44,7 @@
                                 <ContentPresenter
                                     ContentSource="Header"
                                     TextBlock.TextAlignment="Left"
-                                    TextElement.FontFamily="{DynamicResource AvenirNext-Medium}" />
+                                    TextBlock.FontWeight="Medium" />
                             </Border>
                             <Border x:Name="bd_body" Grid.Row="1">
                                 <ContentPresenter />
