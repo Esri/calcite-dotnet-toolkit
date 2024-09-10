@@ -9,7 +9,7 @@ namespace Esri.Calcite.WPF.Helpers
 {
     public static class AttachedWindowData
     {
-        public static FrameworkElement GetWindowTitleBarCenteredInset (DependencyObject obj) => obj.GetValue(WindowTitleBarCenteredInsetProperty) as FrameworkElement;
+        public static FrameworkElement? GetWindowTitleBarCenteredInset (DependencyObject obj) => obj.GetValue(WindowTitleBarCenteredInsetProperty) as FrameworkElement;
         public static void SetWindowTitleBarCenteredInset (DependencyObject obj, FrameworkElement value) => obj.SetValue(WindowTitleBarCenteredInsetProperty, value);
         public static readonly DependencyProperty WindowTitleBarCenteredInsetProperty =
             DependencyProperty.RegisterAttached("WindowTitleBarCenteredInset", typeof(FrameworkElement), typeof(AttachedWindowData), new FrameworkPropertyMetadata(null));

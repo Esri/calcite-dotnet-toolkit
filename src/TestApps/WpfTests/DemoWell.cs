@@ -59,7 +59,7 @@ namespace WpfTests
         private Grid? _renderDisplay;
         private Button? _copyButton;
         private UIElement? _renderedContent;
-        private Popup _statusPopup;
+        private Popup? _statusPopup;
         private string? _textContent;
         static DemoWell()
         {
@@ -108,7 +108,7 @@ namespace WpfTests
 
         private void _copyButton_Click(object sender, RoutedEventArgs e)
         {
-            if (_richText?.Text != null)
+            if (_richText?.Text != null && _statusPopup != null)
             {
                 Clipboard.SetText(_richText.Text);
                 _statusPopup.IsOpen = true;

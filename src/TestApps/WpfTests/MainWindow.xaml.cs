@@ -50,7 +50,7 @@ namespace WpfTests
             rootPath = System.IO.Path.GetDirectoryName(rootPath);
 
             // Create a tab for each sample folder
-            var categories = System.IO.Directory.EnumerateDirectories(System.IO.Path.Combine(rootPath, "Samples"));
+            var categories = System.IO.Directory.EnumerateDirectories(System.IO.Path.Combine(rootPath!, "Samples"));
             foreach (var categoryPath in categories)
             {
                 var categoryName = System.IO.Path.GetFileName(categoryPath);

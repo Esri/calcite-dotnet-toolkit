@@ -39,7 +39,7 @@ namespace WpfTests.Samples
                 return list;
             }
             public int ID { get; set; }
-            public string Title { get; set; }
+            public string? Title { get; set; }
             public DateTime TimeStamp { get; set; }
             public double CurrencyValue { get; set; }
             public int CountValue { get; set; }
