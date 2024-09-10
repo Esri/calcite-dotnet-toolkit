@@ -3,7 +3,7 @@
         <ResourceDictionary Source="..\Shared\Fonts.xaml" />
         <ResourceDictionary Source=".\Text.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    <ControlTemplate x:Key="GroupBoxBasixTemplate" TargetType="GroupBox">
+    <ControlTemplate x:Key="GroupBoxBasicTemplate" TargetType="GroupBox">
         <Border
             Padding="8"
             Background="{DynamicResource CalciteUIBackground1Brush}"
@@ -53,8 +53,8 @@
             </Border>
         </Grid>
     </ControlTemplate>
-    <Style TargetType="GroupBox">
-        <Setter Property="Template" Value="{StaticResource GroupBoxBasixTemplate}" />
+    <Style TargetType="GroupBox" x:Key="CalciteGroupBoxStyle">
+        <Setter Property="Template" Value="{StaticResource GroupBoxBasicTemplate}" />
         <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
     </Style>
     <Style x:Key="PanelGroupBox" TargetType="GroupBox">
