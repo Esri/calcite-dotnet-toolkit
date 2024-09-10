@@ -19,7 +19,7 @@
     <Style BasedOn="{StaticResource CalciteCalendarStyle}" TargetType="Calendar" />
     <Style BasedOn="{StaticResource CalcitePrimaryButtonBaseStyle}" TargetType="Button" />
     <Style BasedOn="{StaticResource CalcitePrimaryButtonBaseStyle}" TargetType="ToggleButton" />
-    <Style BasedOn="{StaticResource TextBlockStyle}" TargetType="TextBlock" />
+    <Style BasedOn="{StaticResource CalciteTextBlockStyle}" TargetType="TextBlock" />
     <Style BasedOn="{StaticResource CalciteDatePicker}" TargetType="DatePicker" />
     <Style BasedOn="{StaticResource CalciteStatusBar}" TargetType="StatusBar" />
     <Style BasedOn="{StaticResource CalciteExpanderStyle}" TargetType="Expander" />

@@ -81,7 +81,7 @@
             </Trigger>
         </Style.Triggers>
     </Style>
-    <Style x:Key="Calcite.PasswordBox" TargetType="PasswordBox">
+    <Style x:Key="CalcitePasswordBoxStyle" TargetType="PasswordBox">
         <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="FontSize" Value="12" />

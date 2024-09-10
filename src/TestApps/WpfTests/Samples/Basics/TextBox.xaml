@@ -2,4 +2,5 @@
     <TextBox Text="Input text" />
     <TextBox />
     <TextBox IsEnabled="False" Text="Disabled" />
+    <PasswordBox Password="Passw0rd" />
 </StackPanel>

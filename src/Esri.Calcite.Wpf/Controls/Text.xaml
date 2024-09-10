@@ -2,7 +2,7 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="..\Shared\Fonts.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    <Style x:Key="TextBlockStyle" TargetType="TextBlock">
+    <Style x:Key="CalciteTextBlockStyle" TargetType="TextBlock">
         <Setter Property="TextWrapping" Value="Wrap" />
     </Style>
     <Style TargetType="Label" x:Key="CalciteLabelStyle">
