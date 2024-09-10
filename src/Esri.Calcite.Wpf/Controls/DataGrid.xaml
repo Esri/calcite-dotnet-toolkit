@@ -8,7 +8,6 @@
         <ResourceDictionary Source=".\Text.xaml" />
         <ResourceDictionary Source=".\CheckBox.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    <BooleanToVisibilityConverter x:Key="bool2VisibilityConverter" />
 
     <!--  Style and template for the DataGrid.  -->
     <Style x:Key="CalciteDataGrid" TargetType="DataGrid">
