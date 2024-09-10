@@ -22,7 +22,7 @@
     <Style BasedOn="{StaticResource TextBlockStyle}" TargetType="TextBlock" />
     <Style BasedOn="{StaticResource CalciteDatePicker}" TargetType="DatePicker" />
     <Style BasedOn="{StaticResource CalciteStatusBar}" TargetType="StatusBar" />
-    <Style BasedOn="{StaticResource CalciteExpander}" TargetType="Expander" />
+    <Style BasedOn="{StaticResource CalciteExpanderStyle}" TargetType="Expander" />
     <Style BasedOn="{StaticResource CalciteToolTip}" TargetType="ToolTip" />
     <Style BasedOn="{StaticResource CalciteDataGridCellStyle}" TargetType="DataGridCell" />
     <Style BasedOn="{StaticResource CalciteDataGridColumnHeaderStyle}" TargetType="{x:Type DataGridColumnHeader}" />
@@ -37,4 +37,6 @@
     <Style BasedOn="{StaticResource CalciteGroupBoxStyle}" TargetType="GroupBox" />
     <Style BasedOn="{StaticResource CalciteLabelStyle}" TargetType="Label" />
     <Style BasedOn="{StaticResource CalciteListBoxStyle}" TargetType="ListBox" />
+    <Style BasedOn="{StaticResource CalciteScrollBarStyle}" TargetType="{x:Type ScrollBar}"/>
+    <Style BasedOn="{StaticResource CalciteScrollViewerStyle}" TargetType="{x:Type ScrollViewer}"/>
 </ResourceDictionary>

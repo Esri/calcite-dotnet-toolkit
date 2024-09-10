@@ -3,62 +3,67 @@
         <ResourceDictionary Source="..\Shared\Fonts.xaml" />
         <ResourceDictionary Source=".\Text.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    <ControlTemplate x:Key="GroupBoxBasicTemplate" TargetType="GroupBox">
-        <Border
-            Padding="8"
-            Background="{DynamicResource CalciteUIBackground1Brush}"
-            BorderBrush="{DynamicResource CalciteUIBorder3Brush}"
-            BorderThickness="1">
 
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
-                <ContentPresenter
-                    ContentSource="Header"
-                    RecognizesAccessKey="True"
-                    TextElement.FontWeight="Medium"
-                    TextElement.FontSize="14"
-                    TextElement.Foreground="{DynamicResource CalciteUIBrandBrush}" />
-                <ContentPresenter Grid.Row="1" Margin="0,8,0,0" />
-            </Grid>
-        </Border>
-
-    </ControlTemplate>
-    <ControlTemplate x:Key="GroupBoxPanelTemplate" TargetType="GroupBox">
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
-            <Border
-                Grid.Row="0"
-                Padding="8"
-                Background="{DynamicResource CalciteUIBackgroundBrush}"
-                BorderBrush="{DynamicResource CalciteUIBorder3Brush}"
-                BorderThickness="1">
-                <ContentPresenter
-                    ContentSource="Header"
-                    RecognizesAccessKey="True"
-                    TextElement.FontSize="14" />
-            </Border>
-            <Border
-                Grid.Row="1"
-                Padding="8"
-                Background="{DynamicResource CalciteUIBackground1Brush}"
-                BorderBrush="{DynamicResource CalciteUIBorder3Brush}"
-                BorderThickness="1,0,1,1">
-                <ContentPresenter />
-            </Border>
-        </Grid>
-    </ControlTemplate>
     <Style TargetType="GroupBox" x:Key="CalciteGroupBoxStyle">
-        <Setter Property="Template" Value="{StaticResource GroupBoxBasicTemplate}" />
+        <Setter Property="Template" >
+            <Setter.Value>
+                <ControlTemplate TargetType="GroupBox">
+                    <Border
+                        Padding="8"
+                        Background="{DynamicResource CalciteUIBackground1Brush}"
+                        BorderBrush="{DynamicResource CalciteUIBorder3Brush}"
+                        BorderThickness="1">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <ContentPresenter
+                                ContentSource="Header"
+                                RecognizesAccessKey="True"
+                                TextElement.FontWeight="Medium"
+                                TextElement.FontSize="14"
+                                TextElement.Foreground="{DynamicResource CalciteUIBrandBrush}" />
+                            <ContentPresenter Grid.Row="1" Margin="0,8,0,0" />
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
         <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
     </Style>
     <Style x:Key="PanelGroupBox" TargetType="GroupBox">
-        <Setter Property="Template" Value="{StaticResource GroupBoxPanelTemplate}" />
+        <Setter Property="Template" >
+            <Setter.Value>
+                <ControlTemplate TargetType="GroupBox">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Border
+                            Grid.Row="0"
+                            Padding="8"
+                            Background="{DynamicResource CalciteUIBackgroundBrush}"
+                            BorderBrush="{DynamicResource CalciteUIBorder3Brush}"
+                            BorderThickness="1">
+                            <ContentPresenter
+                    ContentSource="Header"
+                    RecognizesAccessKey="True"
+                    TextElement.FontSize="14" />
+                        </Border>
+                        <Border
+                            Grid.Row="1"
+                            Padding="8"
+                            Background="{DynamicResource CalciteUIBackground1Brush}"
+                            BorderBrush="{DynamicResource CalciteUIBorder3Brush}"
+                            BorderThickness="1,0,1,1">
+                            <ContentPresenter />
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
         <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
     </Style>
 </ResourceDictionary>

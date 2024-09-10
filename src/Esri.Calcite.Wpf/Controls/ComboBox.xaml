@@ -107,7 +107,7 @@
         </Setter>
     </Style>
     <!--  Not an override but used by ComboBox template  -->
-    <ControlTemplate x:Key="ComboBoxTextBox" TargetType="TextBox">
+    <ControlTemplate x:Key="CalciteComboBoxInnerTextBoxStyle" TargetType="TextBox">
         <Border
             Name="Border"
             Padding="{TemplateBinding Padding}"
@@ -200,7 +200,7 @@
                             Foreground="{DynamicResource CalciteUIText1Brush}"
                             IsReadOnly="{TemplateBinding IsReadOnly}"
                             Style="{x:Null}"
-                            Template="{StaticResource ComboBoxTextBox}"
+                            Template="{StaticResource CalciteComboBoxInnerTextBoxStyle}"
                             Visibility="Hidden" />
                         <Popup
                             Name="Popup"

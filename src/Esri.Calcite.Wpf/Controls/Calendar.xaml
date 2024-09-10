@@ -456,155 +456,159 @@
     </ControlTemplate>
 
     <!--  Calendar item control template; calendar item does the heavy lifting for the overall calendar  -->
-    <ControlTemplate x:Key="CalendarItemTemplate" TargetType="{x:Type CalendarItem}">
-        <ControlTemplate.Resources>
-            <Style x:Key="TextBlockStyle" TargetType="TextBlock">
-                <Setter Property="FontSize" Value="12" />
-                <Setter Property="LineHeight" Value="12" />
-                <Setter Property="FontWeight" Value="Light" />
-                <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
-            </Style>
-            <!--  TODO - adjust size for different control sizes  -->
-            <DataTemplate x:Key="{x:Static CalendarItem.DayTitleTemplateResourceKey}">
-                <!--  TODO: verify linestackingstrategy is set correctly (here and throughout)  -->
-                <TextBlock
-                    x:Name="HeaderLabel"
-                    Margin="4,8,4,12"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    FontWeight="Medium"
-                    Foreground="{DynamicResource CalciteUIText2Brush}"
-                    LineHeight="12"
-                    LineStackingStrategy="BlockLineHeight"
-                    Style="{StaticResource TextBlockStyle}"
-                    Text="{Binding}"
-                    TextAlignment="Center"
-                    TextOptions.TextFormattingMode="Ideal"
-                    TextOptions.TextRenderingMode="Aliased" />
-            </DataTemplate>
-        </ControlTemplate.Resources>
-        <Grid
-            x:Name="PART_Root"
-            Width="216"
-            Height="236"
-            Margin="0">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="32" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="32" />
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="36" />
-                    <RowDefinition Height="1" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <Button
-                    x:Name="PART_PreviousButton"
-                    Grid.Row="0"
-                    VerticalAlignment="Stretch"
-                    Focusable="False"
-                    Template="{StaticResource NextPreviousButtonTemplate}">
-                    <!--<TextBlock Text="{StaticResource CalciteUIIcons_Glyph_Chevron_Left_16}" FontFamily="{StaticResource CalciteUIIconsFontFamily}"
-                       />-->
-                    <Path Data="{c:CalciteIconGeometry Icon=ChevronLeft, Scale=Small}" Style="{StaticResource pathButtonStyle}" />
-                </Button>
-                <!--  TODO - update sizes for different scales, themes  -->
-                <Button
-                    x:Name="PART_HeaderButton"
-                    Grid.Row="0"
-                    Grid.Column="1"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    Focusable="False"
-                    FontFamily="{TemplateBinding FontFamily}"
-                    FontWeight="{TemplateBinding FontWeight}"
-                    Foreground="{DynamicResource CalciteUIText1Brush}"
-                    Template="{StaticResource HeaderButtonTemplate}" />
-                <Button
-                    x:Name="PART_NextButton"
-                    Grid.Row="0"
-                    Grid.Column="2"
-                    Margin="0"
-                    VerticalAlignment="Stretch"
-                    Focusable="False"
-                    Template="{StaticResource NextPreviousButtonTemplate}">
-                    <Path Data="{c:CalciteIconGeometry Icon=ChevronRight, Scale=Small}" Style="{StaticResource pathButtonStyle}" />
-                </Button>
-                <Border
-                    Grid.Row="1"
-                    Grid.ColumnSpan="3"
-                    BorderBrush="{DynamicResource CalciteUIBorder1Brush}"
-                    BorderThickness="0,1,0,0" />
-                <Grid
-                    x:Name="PART_MonthView"
-                    Grid.Row="2"
-                    Grid.ColumnSpan="3"
-                    HorizontalAlignment="Stretch"
-                    VerticalAlignment="Stretch"
-                    Visibility="Visible">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="*" />
-                        <RowDefinition Height="*" />
-                        <RowDefinition Height="*" />
-                        <RowDefinition Height="*" />
-                        <RowDefinition Height="*" />
-                        <RowDefinition Height="*" />
-                    </Grid.RowDefinitions>
-                </Grid>
-                <Grid
-                    x:Name="PART_YearView"
-                    Grid.Row="2"
-                    Grid.ColumnSpan="3"
-                    HorizontalAlignment="Stretch"
-                    VerticalAlignment="Stretch"
-                    Visibility="Hidden">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*" />
-                        <RowDefinition Height="*" />
-                        <RowDefinition Height="*" />
-                    </Grid.RowDefinitions>
-                </Grid>
-            </Grid>
-            <!--  Kept only because it is a named part; will never be shown  -->
-            <Rectangle x:Name="PART_DisabledVisual" Visibility="Collapsed" />
-        </Grid>
-        <ControlTemplate.Triggers>
-            <!--  Implement disabled appearance  -->
-            <Trigger Property="IsEnabled" Value="False">
-                <Setter Property="Opacity" Value="0.8" />
-            </Trigger>
-            <!--  Implements month/year view control  -->
-            <DataTrigger Binding="{Binding DisplayMode, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Calendar}}}" Value="Year">
-                <Setter TargetName="PART_MonthView" Property="Visibility" Value="Hidden" />
-                <Setter TargetName="PART_YearView" Property="Visibility" Value="Visible" />
-            </DataTrigger>
-            <!--  Implements decade view option  -->
-            <DataTrigger Binding="{Binding DisplayMode, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Calendar}}}" Value="Decade">
-                <Setter TargetName="PART_MonthView" Property="Visibility" Value="Hidden" />
-                <Setter TargetName="PART_YearView" Property="Visibility" Value="Visible" />
-            </DataTrigger>
-        </ControlTemplate.Triggers>
-    </ControlTemplate>
+    
 
-    <Style x:Key="CalendarItemStyle" TargetType="{x:Type CalendarItem}">
-        <Setter Property="Template" Value="{StaticResource CalendarItemTemplate}" />
+    <Style x:Key="CalciteCalendarItemStyle" TargetType="{x:Type CalendarItem}">
+        <Setter Property="Template" >
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type CalendarItem}">
+                    <ControlTemplate.Resources>
+                        <Style x:Key="TextBlockStyle" TargetType="TextBlock">
+                            <Setter Property="FontSize" Value="12" />
+                            <Setter Property="LineHeight" Value="12" />
+                            <Setter Property="FontWeight" Value="Light" />
+                            <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
+                        </Style>
+                        <!--  TODO - adjust size for different control sizes  -->
+                        <DataTemplate x:Key="{x:Static CalendarItem.DayTitleTemplateResourceKey}">
+                            <!--  TODO: verify linestackingstrategy is set correctly (here and throughout)  -->
+                            <TextBlock
+                x:Name="HeaderLabel"
+                Margin="4,8,4,12"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontWeight="Medium"
+                Foreground="{DynamicResource CalciteUIText2Brush}"
+                LineHeight="12"
+                LineStackingStrategy="BlockLineHeight"
+                Style="{StaticResource TextBlockStyle}"
+                Text="{Binding}"
+                TextAlignment="Center"
+                TextOptions.TextFormattingMode="Ideal"
+                TextOptions.TextRenderingMode="Aliased" />
+                        </DataTemplate>
+                    </ControlTemplate.Resources>
+                    <Grid
+        x:Name="PART_Root"
+        Width="216"
+        Height="236"
+        Margin="0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="32" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="32" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="36" />
+                                <RowDefinition Height="1" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Button
+                x:Name="PART_PreviousButton"
+                Grid.Row="0"
+                VerticalAlignment="Stretch"
+                Focusable="False"
+                Template="{StaticResource NextPreviousButtonTemplate}">
+                                <!--<TextBlock Text="{StaticResource CalciteUIIcons_Glyph_Chevron_Left_16}" FontFamily="{StaticResource CalciteUIIconsFontFamily}"
+                   />-->
+                                <Path Data="{c:CalciteIconGeometry Icon=ChevronLeft, Scale=Small}" Style="{StaticResource pathButtonStyle}" />
+                            </Button>
+                            <!--  TODO - update sizes for different scales, themes  -->
+                            <Button
+                x:Name="PART_HeaderButton"
+                Grid.Row="0"
+                Grid.Column="1"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Focusable="False"
+                FontFamily="{TemplateBinding FontFamily}"
+                FontWeight="{TemplateBinding FontWeight}"
+                Foreground="{DynamicResource CalciteUIText1Brush}"
+                Template="{StaticResource HeaderButtonTemplate}" />
+                            <Button
+                x:Name="PART_NextButton"
+                Grid.Row="0"
+                Grid.Column="2"
+                Margin="0"
+                VerticalAlignment="Stretch"
+                Focusable="False"
+                Template="{StaticResource NextPreviousButtonTemplate}">
+                                <Path Data="{c:CalciteIconGeometry Icon=ChevronRight, Scale=Small}" Style="{StaticResource pathButtonStyle}" />
+                            </Button>
+                            <Border
+                Grid.Row="1"
+                Grid.ColumnSpan="3"
+                BorderBrush="{DynamicResource CalciteUIBorder1Brush}"
+                BorderThickness="0,1,0,0" />
+                            <Grid
+                x:Name="PART_MonthView"
+                Grid.Row="2"
+                Grid.ColumnSpan="3"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Visibility="Visible">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                            </Grid>
+                            <Grid
+                x:Name="PART_YearView"
+                Grid.Row="2"
+                Grid.ColumnSpan="3"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Visibility="Hidden">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                            </Grid>
+                        </Grid>
+                        <!--  Kept only because it is a named part; will never be shown  -->
+                        <Rectangle x:Name="PART_DisabledVisual" Visibility="Collapsed" />
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <!--  Implement disabled appearance  -->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Opacity" Value="0.8" />
+                        </Trigger>
+                        <!--  Implements month/year view control  -->
+                        <DataTrigger Binding="{Binding DisplayMode, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Calendar}}}" Value="Year">
+                            <Setter TargetName="PART_MonthView" Property="Visibility" Value="Hidden" />
+                            <Setter TargetName="PART_YearView" Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                        <!--  Implements decade view option  -->
+                        <DataTrigger Binding="{Binding DisplayMode, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Calendar}}}" Value="Decade">
+                            <Setter TargetName="PART_MonthView" Property="Visibility" Value="Hidden" />
+                            <Setter TargetName="PART_YearView" Property="Visibility" Value="Visible" />
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
         <Setter Property="Margin" Value="0" />
     </Style>
 
@@ -670,7 +674,7 @@
         <Setter Property="FontWeight" Value="Light" />
         <Setter Property="CalendarDayButtonStyle" Value="{StaticResource CalendarDayButtonStyleBase}" />
         <Setter Property="CalendarButtonStyle" Value="{StaticResource CalendarButtonStyle}" />
-        <Setter Property="CalendarItemStyle" Value="{StaticResource CalendarItemStyle}" />
+        <Setter Property="CalendarItemStyle" Value="{StaticResource CalciteCalendarItemStyle}" />
         <Setter Property="Foreground" Value="{DynamicResource CalciteUIText3Brush}" />
         <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder3Brush}" />
