@@ -11,10 +11,10 @@
 
     <Grid>
         <Grid.Resources>
-            <DataTemplate x:Key="BrushTemplate">
+            <DataTemplate x:Key="BrushTemplate" x:DataType="local:BrushItem">
                 <StackPanel Orientation="Horizontal" BorderThickness="0,0,0,1" BorderBrush="Black">
-                    <Border Width="100" Height="50" BorderBrush="{ThemeResource ApplicationForegroundThemeBrush}" BorderThickness="1" Margin="0,5,5,5" Background="{Binding Value}"/>
-                    <TextBlock Text="{Binding Key}" VerticalAlignment="Center" />
+                    <Border Width="100" Height="50" BorderBrush="{ThemeResource ApplicationForegroundThemeBrush}" BorderThickness="1" Margin="0,5,5,5" Background="{x:Bind Value}"/>
+                    <TextBlock Text="{x:Bind Key}" VerticalAlignment="Center" />
                 </StackPanel>
             </DataTemplate>
         </Grid.Resources>

@@ -11,14 +11,14 @@
 
     <Grid>
         <Grid.Resources>
-            <DataTemplate x:Key="ColorTemplate">
+            <DataTemplate x:Key="ColorTemplate" x:DataType="local:ColorItem">
                 <StackPanel Orientation="Horizontal" BorderThickness="0,0,0,1" BorderBrush="{ThemeResource CalciteUIBorder1Brush}">
                     <Border Width="100" Height="50" BorderBrush="{ThemeResource ApplicationForegroundThemeBrush}" BorderThickness="1" Margin="0,5,5,5">
                         <Border.Background>
-                            <SolidColorBrush Color="{Binding Value}" />
+                            <SolidColorBrush Color="{x:Bind Value}" />
                         </Border.Background>
                     </Border>
-                    <TextBlock Text="{Binding Key}" VerticalAlignment="Center" />
+                    <TextBlock Text="{x:Bind Key}" VerticalAlignment="Center" />
                 </StackPanel>
             </DataTemplate>
         </Grid.Resources>
@@ -28,28 +28,28 @@
         </Grid.ColumnDefinitions>
         <ListView x:Name="gridView" RequestedTheme="Light" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="10" >
             <ListView.ItemTemplate>
-                <DataTemplate>
+                <DataTemplate x:DataType="local:ColorItem">
                     <StackPanel Orientation="Horizontal" BorderThickness="0,0,0,1" BorderBrush="{ThemeResource CalciteUIBorder1Brush}">
                         <Border Width="100" Height="50" BorderBrush="{ThemeResource ApplicationForegroundThemeBrush}" BorderThickness="1" Margin="0,5,5,5">
                             <Border.Background>
-                                <SolidColorBrush Color="{Binding Value}" />
+                                <SolidColorBrush Color="{x:Bind Value}" />
                             </Border.Background>
                         </Border>
-                        <TextBlock Text="{Binding Key}" VerticalAlignment="Center" />
+                        <TextBlock Text="{x:Bind Key}" VerticalAlignment="Center" />
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
         <ListView x:Name="gridView2" Grid.Column="1" RequestedTheme="Dark" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="10">
             <ListView.ItemTemplate>
-                <DataTemplate>
+                <DataTemplate x:DataType="local:ColorItem">
                     <StackPanel Orientation="Horizontal" BorderThickness="0,0,0,1" BorderBrush="{ThemeResource CalciteUIBorder1Brush}">
                         <Border Width="100" Height="50" BorderBrush="{ThemeResource ApplicationForegroundThemeBrush}" BorderThickness="1" Margin="0,5,5,5">
                             <Border.Background>
-                                <SolidColorBrush Color="{Binding Value}" />
+                                <SolidColorBrush Color="{x:Bind Value}" />
                             </Border.Background>
                         </Border>
-                        <TextBlock Text="{Binding Key}" VerticalAlignment="Center" />
+                        <TextBlock Text="{x:Bind Key}" VerticalAlignment="Center" />
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>

@@ -28,8 +28,14 @@ namespace WinUITests.Samples
             var rd = calciteResource.MergedDictionaries.Where(m => m.Source.OriginalString == "ms-appx:///Esri.Calcite.WinUI/Colors/Colors.xaml")?.First();
             var rdDark = ((ResourceDictionary)rd.ThemeDictionaries["Default"]);
             var rdLight = ((ResourceDictionary)rd.ThemeDictionaries["Light"]);
-            gridView.ItemsSource = rdLight.OrderBy(r => r.Key).Concat(rd.OrderBy(r=>r.Key));
-            gridView2.ItemsSource = rdDark.OrderBy(r => r.Key).Concat(rd.OrderBy(r => r.Key));
+            gridView.ItemsSource = rdLight.OrderBy(r => r.Key).Concat(rd.OrderBy(r=>r.Key)).Select(r=> new ColorItem() {  Key = (string)r.Key, Value = (Windows.UI.Color)r.Value }).ToList(); //ToList to avoid exception in AoT mode;
+            gridView2.ItemsSource = rdDark.OrderBy(r => r.Key).Concat(rd.OrderBy(r => r.Key)).Select(r => new ColorItem() { Key = (string)r.Key, Value = (Windows.UI.Color)r.Value }).ToList(); //ToList to avoid exception in AoT mode;
         }
+    }
+
+    public class ColorItem
+    {
+        public string Key { get; set; }
+        public Windows.UI.Color Value { get; set; }
     }
 }
