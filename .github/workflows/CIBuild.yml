@@ -37,7 +37,7 @@ jobs:
         msbuild /restore /t:Build src\Esri.Calcite.Maui\Esri.Calcite.Maui.csproj /p:Configuration=Release
 
     - name: Upload NuGet artifacts
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v4
       with:
         name: NuGet Packages
         path: artifacts/NuGet/Release
