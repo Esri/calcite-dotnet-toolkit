@@ -8,6 +8,7 @@
         <Description>$(Description) for .NET MAUI</Description>
         <SkipValidateMauiImplicitPackageReferences>true</SkipValidateMauiImplicitPackageReferences>
         <PackageReadmeFile>README.md</PackageReadmeFile>
+        <WindowsSdkPackageVersion>10.0.19041.38</WindowsSdkPackageVersion>
     </PropertyGroup>
 
     <ItemGroup>    

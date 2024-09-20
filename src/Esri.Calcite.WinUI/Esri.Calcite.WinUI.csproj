@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net6.0-windows10.0.17763</TargetFramework>
+    <TargetFramework>net8.0-windows10.0.19041</TargetFramework>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <UseWinUI>true</UseWinUI>
     <Description>$(Description) for WinUI</Description>
@@ -9,7 +9,7 @@
     <DisableEmbeddedXbf>false</DisableEmbeddedXbf>
     <Nullable>enable</Nullable>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <WindowsSdkPackageVersion>10.0.17763.38</WindowsSdkPackageVersion>
+    <WindowsSdkPackageVersion>10.0.19041.38</WindowsSdkPackageVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -35,5 +35,6 @@
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
+      <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2651.64" IncludeAssets="none" /> <!-- Work around bug in webview package, and we don't really need this anyway -->
   </ItemGroup>
 </Project>
