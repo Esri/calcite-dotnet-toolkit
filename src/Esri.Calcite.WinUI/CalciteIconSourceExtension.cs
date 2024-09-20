@@ -10,7 +10,7 @@ namespace Esri.Calcite.WinUI
     /// Markup extension that converts a <see cref="CalciteIcon"/> to a <see cref="CalciteFontIconSource"/> that you can use as an <see cref="IconSource"/> on an <see cref="IconSourceElement"/>.
     /// </summary>
     [MarkupExtensionReturnType(ReturnType = typeof(CalciteFontIconSource))]
-    public class CalciteIconSourceExtension : MarkupExtension
+    public partial class CalciteIconSourceExtension : MarkupExtension
     {
         public CalciteIcon Icon { get; set; }
 

@@ -3,7 +3,7 @@ using Microsoft.UI.Xaml.Controls;
 
 namespace Esri.Calcite.WinUI
 {
-    public class CalciteFontIconSource : FontIconSource
+    public partial class CalciteFontIconSource : FontIconSource
     {
         public CalciteFontIconSource()
         {

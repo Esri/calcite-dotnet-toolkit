@@ -11,7 +11,7 @@ namespace Esri.Calcite.WinUI
     /// for instance an <see cref="AppBarButton"/>'s <see cref="AppBarButton.Icon"/> property.
     /// </summary>
     [MarkupExtensionReturnType(ReturnType = typeof(IconSourceElement))]
-    public class CalciteIconSourceElementExtension : MarkupExtension
+    public partial class CalciteIconSourceElementExtension : MarkupExtension
     {
         public CalciteIcon Icon { get; set; }
 

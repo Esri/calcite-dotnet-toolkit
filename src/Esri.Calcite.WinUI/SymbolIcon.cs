@@ -7,7 +7,7 @@ namespace Esri.Calcite.WinUI
     /// <summary>
     /// Represents an icon that uses a glyph from the Calcite UI Symbols font as its content.
     /// </summary>
-    public class SymbolIcon : IconSourceElement
+    public partial class SymbolIcon : IconSourceElement
     {
         public SymbolIcon() : base()
         {
