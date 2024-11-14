@@ -4,7 +4,7 @@ namespace MauiTests;
 
 public partial class GlyphsPage : ContentPage
 {
-    private static List<KeyValuePair<string, object>>? glyphs;
+    private static List<Glyph>? glyphs;
 
     public GlyphsPage()
     {
@@ -16,12 +16,12 @@ public partial class GlyphsPage : ContentPage
     {
         if (glyphs is null)
         {
-            ResourceDictionary dic = App.Current.Resources.MergedDictionaries.OfType<CalciteResources>().First();
+            ResourceDictionary dic = App.Current!.Resources.MergedDictionaries.OfType<CalciteResources>().First();
             dic = dic.MergedDictionaries.Where(m => m.Source.OriginalString == "Resources/Icons/Glyphs.xaml;assembly=Esri.Calcite.Maui").First();
-            glyphs = new List<KeyValuePair<string, object>>(dic.Count);
+            glyphs = new List<Glyph>(dic.Count);
             foreach (var key in dic.Keys)
             {
-                glyphs.Add(new KeyValuePair<string, object>(key, dic[key]));
+                glyphs.Add(new Glyph() { Name = key, Value = dic[key] });
             }
         }
         collectionView.ItemsSource =  glyphs;
@@ -31,4 +31,10 @@ public partial class GlyphsPage : ContentPage
     {
         
     }
+}
+public class Glyph
+{
+    public string? Name { get; set; }
+    public object? Value { get; set; }
+
 }
