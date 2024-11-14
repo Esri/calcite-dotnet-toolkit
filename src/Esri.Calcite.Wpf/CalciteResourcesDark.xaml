@@ -1,6 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:local="clr-namespace:Esri.Calcite.WPF"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Brush x:Key="CalciteUIForegroundBrandContrastBrush">White</Brush>
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source=".\Colors\Colors.xaml" />
         <ResourceDictionary Source=".\Colors\Colors.Dark.xaml" />
