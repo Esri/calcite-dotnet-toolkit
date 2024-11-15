@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0-windows10.0.19041</TargetFramework>
+    <ShortTargetFramework>net8.0-windows10.0.19041</ShortTargetFramework>
+    <TargetFramework>$(ShortTargetFramework).0</TargetFramework>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <UseWinUI>true</UseWinUI>
     <Description>$(Description) for WinUI</Description>
@@ -9,32 +10,32 @@
     <DisableEmbeddedXbf>false</DisableEmbeddedXbf>
     <Nullable>enable</Nullable>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <IsAotCompatible Condition="$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net7.0'))">true</IsAotCompatible>
+    <IsAotCompatible>true</IsAotCompatible>
+    <EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
+    <WindowsSdkPackageVersion>10.0.19041.38</WindowsSdkPackageVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <PublishAot>True</PublishAot>
   </PropertyGroup>
 
   <ItemGroup>
-      <Content Include="..\..\fonts\*.ttf" Link="Fonts\%(Filename)%(Extension)" PackagePath="lib\$(TargetFramework)\$(PackageId)\Fonts\%(Filename)%(Extension);contentFiles\any\$(TargetFramework)\$(PackageId)\Fonts\%(Filename)%(Extension)" />
+      <Content Include="..\..\fonts\*.ttf" Link="Fonts\%(Filename)%(Extension)" PackagePath="lib\$(ShortTargetFramework)\$(PackageId)\Fonts\%(Filename)%(Extension);contentFiles\any\$(ShortTargetFramework)\$(PackageId)\Fonts\%(Filename)%(Extension)" />
       <None Remove="Styles\Controls\TreeView.xaml" />
     <Compile Include="..\..\GeneratedResources\WinUI\*.cs" Link="GeneratedResources\%(RecursiveDir)%(Filename)%(Extension)" />
   </ItemGroup>
 
   <ItemGroup>
-      <Page Include="..\..\GeneratedResources\WinUI\**\*.xaml" PackagePath="lib\$(TargetFramework)\$(PackageId)\" Pack="True">
+      <Page Include="..\..\GeneratedResources\WinUI\**\*.xaml" PackagePath="lib\$(ShortTargetFramework)\$(PackageId)\" Pack="True">
           <Generator>MSBuild:Compile</Generator>
           <Link>%(RecursiveDir)\%(Filename).xaml</Link>
       </Page>
-      <Page Update="**\*.xaml" PackagePath="lib\$(TargetFramework)\$(PackageId)\" Pack="True" />
+      <Page Update="**\*.xaml" PackagePath="lib\$(ShortTargetFramework)\$(PackageId)\" Pack="True" />
       <None Include="README.txt" Pack="True" PackagePath="\" />
       <None Include="..\..\docs\winui.md" Link="README.md" Pack="True" PackagePath="\README.md" />
   </ItemGroup>
 
   <ItemGroup>
-      <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.240923002" />
+      <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.240829007" />
       <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.756" />
-      <PackageReference Include="Microsoft.Windows.CsWinRT" Version="2.2.0" >
-          <PrivateAssets>all</PrivateAssets>
-          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      </PackageReference>
       <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2651.64" IncludeAssets="none" /> <!-- Work around bug in webview package, and we don't really need this anyway -->
   </ItemGroup>
 </Project>

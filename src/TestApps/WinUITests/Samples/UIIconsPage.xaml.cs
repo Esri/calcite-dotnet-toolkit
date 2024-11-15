@@ -29,7 +29,7 @@ namespace WinUITests.Samples
         {
             this.InitializeComponent();
             icons = new List<IconEntry>();
-            foreach (var i in Enum.GetValues(typeof(CalciteIcon)))
+            foreach (var i in Enum.GetValues<CalciteIcon>())
             {
                 icons.Add(new IconEntry() { Icon = (CalciteIcon)i });
             }
