@@ -6,12 +6,11 @@
     <UseWinUI>true</UseWinUI>
     <Description>$(Description) for WinUI</Description>
     <GenerateLibraryLayout>True</GenerateLibraryLayout>
-    <IncludeXamlFilesInNugetPackage>False</IncludeXamlFilesInNugetPackage>
+    <IncludeXamlFilesInNugetPackage>False</IncludeXamlFilesInNugetPackage> <!-- we need to do this manually because the linked files ends up in the wrong folders -->
     <DisableEmbeddedXbf>false</DisableEmbeddedXbf>
     <Nullable>enable</Nullable>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <IsAotCompatible>true</IsAotCompatible>
-    <EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
     <WindowsSdkPackageVersion>10.0.19041.38</WindowsSdkPackageVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <PublishAot>True</PublishAot>
