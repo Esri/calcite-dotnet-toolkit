@@ -1,4 +1,5 @@
-﻿using Microsoft.UI.Xaml;
+﻿using System;
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 
 namespace Esri.Calcite.WinUI
@@ -7,7 +8,7 @@ namespace Esri.Calcite.WinUI
     {
         public CalciteFontIconSource()
         {
-            FontFamily = CalciteResources.CalciteUIFont;
+            FontFamily = CalciteResources.CalciteUIFont_Small;
         }
 
         public CalciteIcon Icon
@@ -23,6 +24,12 @@ namespace Esri.Calcite.WinUI
             DependencyProperty.Register(nameof(Icon), typeof(CalciteIcon), typeof(CalciteFontIconSource),
                 new PropertyMetadata(default(CalciteIcon), (s, e) => ((CalciteFontIconSource)s).OnIconPropertyChanged()));
 
+        private void OnIconPropertyChanged()
+        {
+            char code = (char)(int)Icon;
+            base.Glyph = code.ToString();
+        }
+
         public CalciteIconScale Scale
         {
             get { return (CalciteIconScale)GetValue(ScaleProperty); }
@@ -30,12 +37,17 @@ namespace Esri.Calcite.WinUI
         }
 
         public static readonly DependencyProperty ScaleProperty =
-            DependencyProperty.Register(nameof(Scale), typeof(CalciteIconScale), typeof(CalciteFontIconSource), new PropertyMetadata(CalciteIconScale.Small, (s, e) => ((CalciteFontIconSource)s).OnIconPropertyChanged()));
+            DependencyProperty.Register(nameof(Scale), typeof(CalciteIconScale), typeof(CalciteFontIconSource), new PropertyMetadata(CalciteIconScale.Small, (s, e) => ((CalciteFontIconSource)s).OnScalePropertyChanged()));
 
-        private void OnIconPropertyChanged()
+        private void OnScalePropertyChanged()
         {
-            char code = (char)((int)Icon + (int)Scale);
-            base.Glyph = code.ToString();
+            base.FontFamily = Scale switch
+            {
+                CalciteIconScale.Large => CalciteResources.CalciteUIFont_Large,
+                CalciteIconScale.Medium => CalciteResources.CalciteUIFont_Medium,
+                CalciteIconScale.Small => CalciteResources.CalciteUIFont_Small,
+                _ => CalciteResources.CalciteUIFont_Small,
+            };
         }
     }
 }

@@ -3,7 +3,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:WpfTests">
 
-
     <ResourceDictionary.MergedDictionaries>
         <calcite:CalciteResources xmlns:calcite="http://schemas.esri.com/calcite/2024" Theme="Light" />
     </ResourceDictionary.MergedDictionaries>
@@ -74,8 +73,8 @@
                             HorizontalAlignment="Right"
                             VerticalAlignment="Top"
                             ToolTip="Copy">
-                            <TextBlock Text="{StaticResource CalciteUIIcons_Glyph_Copy_16}" FontSize="16"
-                                FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
+                            <TextBlock Text="{StaticResource CalciteUIIcons_Glyph_Copy}" FontSize="16"
+                                FontFamily="{StaticResource CalciteUIIconsSmallFontFamily}" />
                         </Button>
                         <Popup
                             x:Name="PART_StatusPopup"

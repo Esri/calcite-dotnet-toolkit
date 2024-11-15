@@ -52,7 +52,7 @@ namespace IconXamlGenerator
                 var entry = iconEntries.FirstOrDefault(f => f.Key  == name + (isFilled ? "-f" : ""));
                 if(entry is null)
                 {
-                    Console.WriteLine($"Warning: Codepoint {name}={glyph} does not have a matching SVG");
+                    Console.WriteLine($"Warning: Codepoint {name}={glyph} does not have a matching icon entry");
                     continue;
                 }
                 if (size == "16")
@@ -62,9 +62,20 @@ namespace IconXamlGenerator
                 else if (size == "32")
                     entry.Glyph32 = glyph;
             }
+            foreach (var entry in iconEntries)
+            {
+                if (entry.Glyph16 != entry.Glyph24 || entry.Glyph16 != entry.Glyph32 || entry.Glyph24 != entry.Glyph32)
+                {
+                    Console.WriteLine($"ERROR: {entry.Key} has different glyph values for 16, 24, and 32");
+                    throw new Exception($"ERROR: {entry.Key} has different glyph values for 16, 24, and 32");
+                }
+            }
             List<string> missingIds = new List<string>();
             foreach (var entry in iconEntries)
             {
+                if (entry.S16.Contains("opacity") || entry.S24.Contains("opacity") || entry.S32.Contains("opacity"))
+                    continue; // Opacity icons not supported, so skipping those here
+
                 if (entry.Glyph16 == 0 && !string.IsNullOrEmpty(entry.S16))
                 {
                     missingIds.Add($"{entry.Key}-16");
@@ -90,13 +101,12 @@ namespace IconXamlGenerator
                 }
                 Console.WriteLine("***");
 
-                Console.ForegroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 foreach (var id in missingIds.OrderBy(s => s))
                 {
-                    Console.WriteLine($"ERROR: {id} is missing a codepoint");
+                    Console.WriteLine($"Warning: {id} is missing a glyph entry");
                 }
                 Console.ResetColor();
-                throw new InvalidOperationException("Missing codepoints logged to the console");
             }
             return iconEntries;
         }

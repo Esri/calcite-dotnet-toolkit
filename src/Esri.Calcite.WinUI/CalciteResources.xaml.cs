@@ -6,7 +6,9 @@ namespace Esri.Calcite.WinUI;
 
 public sealed partial class CalciteResources : ResourceDictionary
 {
-    internal static Microsoft.UI.Xaml.Media.FontFamily CalciteUIFont = new Microsoft.UI.Xaml.Media.FontFamily("ms-appx:///Esri.Calcite.WinUI/Fonts/calcite-ui-icons.ttf#calcite-ui-icons");
+    internal static Microsoft.UI.Xaml.Media.FontFamily CalciteUIFont_Small = new Microsoft.UI.Xaml.Media.FontFamily("ms-appx:///Esri.Calcite.WinUI/Fonts/calcite-ui-icons-16.ttf#calcite-ui-icons-16");
+    internal static Microsoft.UI.Xaml.Media.FontFamily CalciteUIFont_Medium = new Microsoft.UI.Xaml.Media.FontFamily("ms-appx:///Esri.Calcite.WinUI/Fonts/calcite-ui-icons-24.ttf#calcite-ui-icons-24");
+    internal static Microsoft.UI.Xaml.Media.FontFamily CalciteUIFont_Large = new Microsoft.UI.Xaml.Media.FontFamily("ms-appx:///Esri.Calcite.WinUI/Fonts/calcite-ui-icons-32.ttf#calcite-ui-icons-32");
 
     public CalciteResources()
     {

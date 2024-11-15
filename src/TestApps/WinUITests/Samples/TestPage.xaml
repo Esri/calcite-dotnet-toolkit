@@ -17,7 +17,7 @@
             <!--<TextBlock Text="AppBarButton:" />
         <AppBarButton>
             <AppBarButton.Icon>
-                <FontIcon Glyph="{StaticResource CalciteUIIcons_Glyph_Map_24}" FontFamily="{StaticResource CalciteUIIconsFontFamily}"/>
+                <FontIcon Glyph="{StaticResource CalciteUIIcons_Glyph_Map}" FontFamily="{StaticResource CalciteUIIconsMediumFontFamily}"/>
             </AppBarButton.Icon>
         </AppBarButton>-->
             <TextBlock Text="CommandBar/AppBarButton using CalciteFontIconSource:" />

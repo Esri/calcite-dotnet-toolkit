@@ -40,7 +40,7 @@ namespace Esri.Calcite.WPF.Helpers
                     FormattedText text = new FormattedText(code.ToString(),
                         CultureInfo.CurrentCulture,
                         FlowDirection.LeftToRight,
-                        CalciteResources.CalciteUIFont.GetTypefaces().First(),
+                        CalciteResources.CalciteUISmallFont.GetTypefaces().First(),
                        16,
                        Brushes.Black, 96);
                     Geometry geometry = text.BuildGeometry(new Point(0, 0));

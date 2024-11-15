@@ -20,11 +20,19 @@ namespace Esri.Calcite.WPF
 
         public override object? ProvideValue(IServiceProvider serviceProvider)
         {
-            char code = (char)((int)Icon + (int)Scale);
+            var font = Scale switch
+            {
+                CalciteIconScale.Small => CalciteResources.CalciteUISmallFont,
+                CalciteIconScale.Large => CalciteResources.CalciteUILargeFont,
+                CalciteIconScale.Medium => CalciteResources.CalciteUIMediumFont,
+                _ => CalciteResources.CalciteUIMediumFont,
+            };
+
+            char code = (char)(int)Icon;
             FormattedText text = new FormattedText(code.ToString(),
                     CultureInfo.CurrentCulture,
                     FlowDirection.LeftToRight,
-                    CalciteResources.CalciteUIFont.GetTypefaces().First(),
+                    font.GetTypefaces().First(),
                     ((int)Scale + 1) * 16,
                     Brushes.Black, 96);
             Geometry geometry = text.BuildGeometry(new Point(5, 5));

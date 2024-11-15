@@ -25,15 +25,15 @@
                                 <cal:CalciteFontIconSource Icon="{x:Bind Icon}" FontSize="16" Scale="Small" />
                             </IconSourceElement.IconSource>
                         </IconSourceElement>-->
-                        <TextBlock Text="{x:Bind Glyph16}" Width="80" ToolTipService.ToolTip="{x:Bind GlyphHex16}"
-                           FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top"
-                           FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
-                        <TextBlock Text="{x:Bind Glyph24}" Width="80" ToolTipService.ToolTip="{x:Bind GlyphHex24}"
-                           FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top"
-                           FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
-                        <TextBlock Text="{x:Bind Glyph32}" Width="80" ToolTipService.ToolTip="{x:Bind GlyphHex32}"
-                                   FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top"
-                                   FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
+                        <TextBlock Text="{x:Bind Glyph}" Width="80" ToolTipService.ToolTip="{x:Bind GlyphHex}"
+                           FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                           FontFamily="{StaticResource CalciteUIIconsSmallFontFamily}" />
+                        <TextBlock Text="{x:Bind Glyph}" Width="80" ToolTipService.ToolTip="{x:Bind GlyphHex}"
+                           FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                           FontFamily="{StaticResource CalciteUIIconsMediumFontFamily}" />
+                        <TextBlock Text="{x:Bind Glyph}" Width="80" ToolTipService.ToolTip="{x:Bind GlyphHex}"
+                                   FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Bottom"
+                                   FontFamily="{StaticResource CalciteUIIconsLargeFontFamily}" />
                         <TextBlock Text="{x:Bind Name}" VerticalAlignment="Center" />
                     </StackPanel>
                 </DataTemplate>

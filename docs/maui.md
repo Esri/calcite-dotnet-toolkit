@@ -58,13 +58,13 @@ Brushes and colors can be referenced as static resources.
 For a full list of calcite brushes and colors see [Color and Brush resources](brushes.md).
 
 ## Symbol Font
-`CalciteUIIconsFontFamily` FontFamily is a font with a set of symbols generated from the [Calcite UI Icons repo](https://github.com/Esri/calcite-ui-icons).
-This font FontFamily can directly be referred to by its name `CalciteUIIconsFontFamily`.
+`CalciteUIIconsSmallFontFamily`, `CalciteUIIconsMediumFontFamily` and `CalciteUIIconsLargeFontFamily` FontFamilies are fonts with a set of symbols generated from the [Calcite UI Icons repo](https://github.com/Esri/calcite-ui-icons).
+This font FontFamily can directly be referred to by its name `CalciteUIIcons[Small/Medium/Large]FontFamily`.
 
 Example:
 ```xml
-<Label Text="{StaticResource CalciteUIIcons_Glyph_Map_24}" 
-	   FontFamily="CalciteUIIconsFontFamily" />
+<Label Text="{StaticResource CalciteUIIcons_Glyph_Map}" 
+	   FontFamily="CalciteUIIconsMediumFontFamily" />
 ```
 
 For a full list of Glyph Resource IDs refer to the sample apps and the [Calcite-UI-Icons](https://github.com/Esri/calcite-ui-icons) repo.

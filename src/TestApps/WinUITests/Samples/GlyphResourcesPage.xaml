@@ -16,8 +16,14 @@
                         <StackPanel Orientation="Horizontal" BorderThickness="0,0,0,1" BorderBrush="Black">
                             <FontIcon Glyph="{x:Bind Glyph}"  Width="100"
                                    FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top"
-                                   FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
-                            <TextBlock Text="{x:Bind Key}" VerticalAlignment="Center" />
+                                   FontFamily="{StaticResource CalciteUIIconsSmallFontFamily}" />
+                        <FontIcon Glyph="{x:Bind Glyph}"  Width="100"
+                                   FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top"
+                                   FontFamily="{StaticResource CalciteUIIconsMediumFontFamily}" />
+                        <FontIcon Glyph="{x:Bind Glyph}"  Width="100"
+                                   FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top"
+                                   FontFamily="{StaticResource CalciteUIIconsLargeFontFamily}" />
+                        <TextBlock Text="{x:Bind Key}" VerticalAlignment="Center" />
                         </StackPanel>
                     <!--<IconSourceElement Width="16" Height="16" Foreground="Red" >
                             <IconSourceElement.IconSource>

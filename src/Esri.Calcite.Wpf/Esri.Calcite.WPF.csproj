@@ -12,7 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Resource Include="..\..\GeneratedResources\*.ttf" Link="Fonts\%(Filename)%(Extension)" />
+    <Resource Include="..\..\fonts\*.ttf" Link="Fonts\%(Filename)%(Extension)" />
     <None Include="README.txt" Pack="True" PackagePath="\" />
     <None Include="..\..\docs\wpf.md" Link="README.md" Pack="True" PackagePath="\README.md" />
     <Page Include="..\..\GeneratedResources\WPF\**\*.xaml" Link="%(RecursiveDir)\%(Filename).xaml">

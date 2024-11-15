@@ -35,7 +35,7 @@
                     <NavigationViewItem.Icon>
                         <IconSourceElement Height="24" >
                             <IconSourceElement.IconSource>
-                                <cal:CalciteFontIconSource Icon="BrushTip" FontSize="24" Scale="Small" />
+                                <cal:CalciteFontIconSource Icon="BrushTip" FontSize="24" Scale="Medium" />
                             </IconSourceElement.IconSource>
                         </IconSourceElement>
                     </NavigationViewItem.Icon>

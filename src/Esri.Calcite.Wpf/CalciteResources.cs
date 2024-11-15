@@ -15,7 +15,9 @@ namespace Esri.Calcite.WPF
     /// </summary>
     public class CalciteResources : ResourceDictionary
     {
-        internal static readonly System.Windows.Media.FontFamily CalciteUIFont = new System.Windows.Media.FontFamily(new Uri("pack://application:,,,/Esri.Calcite.WPF;component/Fonts/"), "./calcite-ui-icons.ttf#calcite-ui-icons");
+        internal static readonly System.Windows.Media.FontFamily CalciteUISmallFont = new System.Windows.Media.FontFamily(new Uri("pack://application:,,,/Esri.Calcite.WPF;component/Fonts/"), "./calcite-ui-icons-16.ttf#calcite-ui-icons-16");
+        internal static readonly System.Windows.Media.FontFamily CalciteUIMediumFont = new System.Windows.Media.FontFamily(new Uri("pack://application:,,,/Esri.Calcite.WPF;component/Fonts/"), "./calcite-ui-icons-24.ttf#calcite-ui-icons-24");
+        internal static readonly System.Windows.Media.FontFamily CalciteUILargeFont = new System.Windows.Media.FontFamily(new Uri("pack://application:,,,/Esri.Calcite.WPF;component/Fonts/"), "./calcite-ui-icons-32.ttf#calcite-ui-icons-32");
 
         private readonly WeakEventListener<CalciteResources, object, object, Microsoft.Win32.UserPreferenceChangingEventArgs> userPreferenceHandler;
         private readonly Dispatcher _CurrentDispatcher;

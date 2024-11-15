@@ -1,5 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <FontFamily x:Key="CalciteUIIconsFontFamily">ms-appx:///Esri.Calcite.WinUI/Fonts/calcite-ui-icons.ttf#calcite-ui-icons</FontFamily>
+    <FontFamily x:Key="CalciteUIIconsSmallFontFamily">ms-appx:///Esri.Calcite.WinUI/Fonts/calcite-ui-icons-16.ttf#calcite-ui-icons-16</FontFamily>
+    <FontFamily x:Key="CalciteUIIconsMediumFontFamily">ms-appx:///Esri.Calcite.WinUI/Fonts/calcite-ui-icons-24.ttf#calcite-ui-icons-24</FontFamily>
+    <FontFamily x:Key="CalciteUIIconsLargeFontFamily">ms-appx:///Esri.Calcite.WinUI/Fonts/calcite-ui-icons-32.ttf#calcite-ui-icons-32</FontFamily>
 
 </ResourceDictionary>

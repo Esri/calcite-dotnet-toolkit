@@ -4,7 +4,7 @@
     {
         public CalciteIconImageSource()
         {
-            base.FontFamily = "CalciteUIIconsFontFamily";
+            base.FontFamily = AppHostBuilderExtensions.CalciteUIIconsSmallFontFamily;
         }
 
         private CalciteIconScale _scale = CalciteIconScale.Small;

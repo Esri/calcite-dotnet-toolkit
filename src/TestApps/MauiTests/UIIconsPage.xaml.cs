@@ -31,4 +31,4 @@ public class IconEntry
     public string GlyphHex => $"&#x{GlyphId.ToString("x2")};";
     public int GlyphId => (int)Icon;
     public string Name => Icon.ToString();
-}}
+}

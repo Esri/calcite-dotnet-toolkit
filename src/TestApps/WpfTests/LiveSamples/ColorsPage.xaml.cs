@@ -23,7 +23,7 @@ namespace WpfTests.Samples
         public ColorsPage()
         {
             InitializeComponent();
-            var dic = Application.Current.Resources.MergedDictionaries.OfType<ResourceDictionary>().First();
+            var dic = Application.Current.Resources.MergedDictionaries.OfType<CalciteResources>().First();
             var colors = dic.MergedDictionaries.OfType<ResourceDictionary>().Where(r => r.Source.OriginalString == @".\Colors\Colors.xaml").First();
            
             var light = dic.MergedDictionaries.OfType<ResourceDictionary>().Where(r => r.Source.OriginalString == @".\Colors\Colors.Light.xaml");

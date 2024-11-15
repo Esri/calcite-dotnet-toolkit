@@ -21,13 +21,11 @@ namespace Esri.Calcite.WPF
 
         private static SolidColorBrush DefaultBrush = new SolidColorBrush(Colors.Black);
 
-        public CalciteIconScale Scale { get; set; } = CalciteIconScale.Small;
-
         public override object? ProvideValue(IServiceProvider serviceProvider)
         {
             if (Icon is null)
                 return null;
-            char code = (char)((int)Icon + (int)Scale);
+            char code = (char)(int)Icon;
             return code.ToString();
         }
     }

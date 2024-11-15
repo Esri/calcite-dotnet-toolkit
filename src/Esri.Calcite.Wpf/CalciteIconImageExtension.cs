@@ -30,11 +30,18 @@ namespace Esri.Calcite.WPF
         {
             if (Icon is null)
                 return null;
-            char code = (char)((int)Icon + (int)Scale);
+            var font = Scale switch
+            {
+                CalciteIconScale.Small => CalciteResources.CalciteUISmallFont,
+                CalciteIconScale.Large => CalciteResources.CalciteUILargeFont,
+                CalciteIconScale.Medium => CalciteResources.CalciteUIMediumFont,
+                _ => CalciteResources.CalciteUIMediumFont,
+            };
+            char code = (char)(int)Icon;
             var tb = new TextBlock
             {
                 Text = code.ToString(),
-                FontFamily = CalciteResources.CalciteUIFont,
+                FontFamily = font,
                 Foreground = Brush ?? DefaultBrush
             };
             var geometryDrawing = new GeometryDrawing

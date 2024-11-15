@@ -47,10 +47,10 @@
             <ProgressRing HorizontalAlignment="Left" />
             <TextBlock Text="TabView" />
             <TabView Height="200" BorderBrush="{ThemeResource TabViewBorderBrush}" BorderThickness="1,0,1,1" >
-                <TabViewItem Header="Tab 1" IconSource="{cal:CalciteIconSource Icon=Map}">
+                <TabViewItem Header="Tab 1" IconSource="{cal:CalciteIconSource Icon=Map, Scale=Small}">
                     <RichEditBox Header="RichEditBox" PlaceholderText="Tab 1 Content" Margin="10" UseSystemFocusVisuals="False" />
                 </TabViewItem>
-                <TabViewItem Header="Tab 2" IconSource="{cal:CalciteIconSource Icon=Layers}" >
+                <TabViewItem Header="Tab 2" IconSource="{cal:CalciteIconSource Icon=Layers, Scale=Small}" >
                     <TextBlock Text="Tab 2 Content" Margin="10" />
                 </TabViewItem>
             </TabView>

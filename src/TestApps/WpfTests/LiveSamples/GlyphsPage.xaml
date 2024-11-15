@@ -20,32 +20,32 @@
                     Header="Icon Name"
                     IsReadOnly="True" />
                 <DataGridTextColumn
-                    Binding="{Binding Glyph16}"
+                    Binding="{Binding Glyph}"
                     Header="Small" FontSize="40" 
-                    IsReadOnly="True"  FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
+                    IsReadOnly="True"  FontFamily="{StaticResource CalciteUIIconsSmallFontFamily}" />
                 <DataGridTextColumn
-                    Binding="{Binding Glyph24}"
+                    Binding="{Binding Glyph}"
                     Header="Medium" FontSize="40" 
-                    IsReadOnly="True"  FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
+                    IsReadOnly="True"  FontFamily="{StaticResource CalciteUIIconsMediumFontFamily}" />
                 <DataGridTextColumn
-                    Binding="{Binding Glyph32}"
+                    Binding="{Binding Glyph}"
                     Header="Large" FontSize="40" 
-                    IsReadOnly="True"  FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
+                    IsReadOnly="True"  FontFamily="{StaticResource CalciteUIIconsLargeFontFamily}" />
             </DataGrid.Columns>
         </DataGrid>
         <!--<ListView x:Name="MyGridView" SelectionMode="Single" Grid.Row="1">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal" >
-                        <TextBlock Text="{Binding Glyph16}" Width="80" ToolTipService.ToolTip="{Binding GlyphHex16}"
+                        <TextBlock Text="{Binding Glyph}" Width="80" ToolTipService.ToolTip="{Binding GlyphHex16}"
      FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top"
-     FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
-                        <TextBlock Text="{Binding Glyph24}" Width="80" ToolTipService.ToolTip="{Binding GlyphHex24}"
+     FontFamily="{StaticResource CalciteUIIconsSmallFontFamily}" />
+                        <TextBlock Text="{Binding Glyph}" Width="80" ToolTipService.ToolTip="{Binding GlyphHex24}"
      FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top"
-     FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
-                        <TextBlock Text="{Binding Glyph32}" Width="80" ToolTipService.ToolTip="{Binding GlyphHex32}"
+     FontFamily="{StaticResource CalciteUIIconsMediumFontFamily}" />
+                        <TextBlock Text="{Binding Glyph}" Width="80" ToolTipService.ToolTip="{Binding GlyphHex32}"
              FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top"
-             FontFamily="{StaticResource CalciteUIIconsFontFamily}" />
+             FontFamily="{StaticResource CalciteUIIconsLargeFontFamily}" />
                         <TextBlock Text="{Binding Name}" VerticalAlignment="Center" />
                     </StackPanel>
                 </DataTemplate>

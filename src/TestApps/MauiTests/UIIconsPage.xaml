@@ -13,16 +13,16 @@
         <CollectionView x:Name="collectionView" Grid.Row="1" Margin="20,5" ItemSizingStrategy="MeasureFirstItem" >
         <CollectionView.ItemTemplate>
             <DataTemplate>
-                        <Label Text="{Binding Glyph16}" WidthRequest="80" ToolTipProperties.Text="{Binding GlyphHex16}"
-                <HorizontalStackLayout x:DataType="local:IconEntry">
+                <HorizontalStackLayout x:DataType="local:IconEntry" HeightRequest="40">
+                        <Label Text="{Binding Glyph}" WidthRequest="80" ToolTipProperties.Text="{Binding GlyphHex}"
                             FontSize="40" HorizontalOptions="Center" VerticalOptions="Start"
-                            FontFamily="CalciteUIIconsFontFamily" />
-                        <Label Text="{Binding Glyph24}" WidthRequest="80" ToolTipProperties.Text="{Binding GlyphHex24}"
+                            FontFamily="CalciteUIIconsSmallFontFamily" />
+                        <Label Text="{Binding Glyph}" WidthRequest="80" ToolTipProperties.Text="{Binding GlyphHex}"
                             FontSize="40" HorizontalOptions="Center" VerticalOptions="Start"
-                            FontFamily="CalciteUIIconsFontFamily" />
-                        <Label Text="{Binding Glyph32}" WidthRequest="80" ToolTipProperties.Text="{Binding GlyphHex32}"
+                            FontFamily="CalciteUIIconsMediumFontFamily" />
+                        <Label Text="{Binding Glyph}" WidthRequest="80" ToolTipProperties.Text="{Binding GlyphHex}"
                             FontSize="40" HorizontalOptions="Center" VerticalOptions="Start"
-                            FontFamily="CalciteUIIconsFontFamily" />
+                            FontFamily="CalciteUIIconsLargeFontFamily" />
                         <Label Text="{Binding Name}" VerticalOptions="Center" />
                     </HorizontalStackLayout>
             </DataTemplate>
