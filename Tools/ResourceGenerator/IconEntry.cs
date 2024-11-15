@@ -71,24 +71,13 @@ namespace IconXamlGenerator
                 }
             }
             List<string> missingIds = new List<string>();
-            foreach (var entry in iconEntries)
+            foreach (var entry in iconEntries.Where(e => e.Glyph == 0))
             {
                 if (entry.S16.Contains("opacity") || entry.S24.Contains("opacity") || entry.S32.Contains("opacity"))
                     continue; // Opacity icons not supported, so skipping those here
-
-                if (entry.Glyph16 == 0 && !string.IsNullOrEmpty(entry.S16))
-                {
-                    missingIds.Add($"{entry.Key}-16");
-                }
-                if (entry.Glyph24 == 0 && !string.IsNullOrEmpty(entry.S24))
-                {
-                    missingIds.Add($"{entry.Key}-24");
-                }
-                if (entry.Glyph32 == 0 && !string.IsNullOrEmpty(entry.S32))
-                {
-                    missingIds.Add($"{entry.Key}-32");
-                }
+                missingIds.Add(entry.Key);
             }
+            iconEntries.RemoveAll(i=> i.Glyph == 0);
             Console.ResetColor();
             if (missingIds.Count > 0)
             {
@@ -111,6 +100,7 @@ namespace IconXamlGenerator
             return iconEntries;
         }
         public bool IsFilled => Key.EndsWith("-f");
+        public ushort Glyph => Glyph16 != Glyph24 || Glyph16 != Glyph32 || Glyph24 != Glyph32 ? throw new Exception("Glyph ID mismatch") : Glyph16;
         public ushort Glyph16 { get; set; }
         public ushort Glyph24 { get; set; }
         public ushort Glyph32 { get; set; }

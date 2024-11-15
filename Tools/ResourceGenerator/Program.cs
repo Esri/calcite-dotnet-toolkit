@@ -172,7 +172,7 @@ void GenerateGlyphsXaml(IList<IconEntry> icons, string filename, string format)
     xamlOutput.WriteLine(xamlHeader);
     foreach (var icon in icons)
     {
-        xamlOutput.WriteLine($"    <{xamlType} x:Key=\"CalciteUIIcons_Glyph_{icon.ResourceName}\">&#x{icon.Glyph16.ToString("x4")};</{xamlType}> ");
+        xamlOutput.WriteLine($"    <{xamlType} x:Key=\"CalciteUIIcons_Glyph_{icon.ResourceName}\">&#x{icon.Glyph.ToString("x4")};</{xamlType}> ");
         xamlOutput.Flush();
     }
     xamlOutput.WriteLine("</ResourceDictionary>");

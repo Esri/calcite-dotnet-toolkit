@@ -80,30 +80,6 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	AZUp = 59148,
 
-	/// <summary>A3 Landscape</summary>
-	/// <remarks>Category: Document<br/>
-	/// Alias: 3.28.7, document, text, file, page, letter, number</remarks>
-	/// <release>3.28.7</release>
-	A3Landscape = 0,
-
-	/// <summary>A3 Portrait</summary>
-	/// <remarks>Category: Document<br/>
-	/// Alias: 3.28.7, document, file, text, portrait</remarks>
-	/// <release>3.28.7</release>
-	A3Portrait = 0,
-
-	/// <summary>A4 Landscape</summary>
-	/// <remarks>Category: Document<br/>
-	/// Alias: 3.28.7, document, number, file, text, landscape</remarks>
-	/// <release>3.28.7</release>
-	A4Landscape = 0,
-
-	/// <summary>A4 Portrait</summary>
-	/// <remarks>Category: Document<br/>
-	/// Alias: 3.28.7, document, file, text, portrait, letter</remarks>
-	/// <release>3.28.7</release>
-	A4Portrait = 0,
-
 	/// <summary>Absolute Direction</summary>
 	/// <remarks>Category: GIS<br/>
 	/// Alias: 3.25.3, gis, arrows, compass, needle, directions, movement, rotate</remarks>
@@ -194,12 +170,6 @@ public enum CalciteIcon : ushort
 	/// <release>3.25.2</release>
 	AddRasterVariable = 59163,
 
-	/// <summary>Add Rasters</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: 3.25.2, gis, raster function template, adding, rasters, browsers, function, data source, layers</remarks>
-	/// <release>3.25.2</release>
-	AddRasters = 0,
-
 	/// <summary>Add Reaction</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.21.8, generic, smile, happy, face, emoji, like, response, smile, like, satisfied</remarks>
@@ -259,30 +229,6 @@ public enum CalciteIcon : ushort
 	/// Alias: 2.5.1, image, pencil, edit, note, imagery, mark-up, draw, photo, picture</remarks>
 	/// <release>2.5.1</release>
 	AnnotateTool = 59173,
-
-	/// <summary>Ansi A Landscape</summary>
-	/// <remarks>Category: Document<br/>
-	/// Alias: 3.28.7, document, file, text, landscape, letter, alphabet</remarks>
-	/// <release>3.28.7</release>
-	AnsiALandscape = 0,
-
-	/// <summary>Ansi A Portrait</summary>
-	/// <remarks>Category: Document<br/>
-	/// Alias: 3.28.7, document, file, text, portrait, letter</remarks>
-	/// <release>3.28.7</release>
-	AnsiAPortrait = 0,
-
-	/// <summary>Ansi B Landscape</summary>
-	/// <remarks>Category: Document<br/>
-	/// Alias: 3.28.7, document, letter, file, text, alphabet, landscape</remarks>
-	/// <release>3.28.7</release>
-	AnsiBLandscape = 0,
-
-	/// <summary>Ansi B Portrait</summary>
-	/// <remarks>Category: Document<br/>
-	/// Alias: 3.28.7, document, file, letter, page, portrait</remarks>
-	/// <release>3.28.7</release>
-	AnsiBPortrait = 0,
 
 	/// <summary>Antenna Height</summary>
 	/// <remarks>Category: GIS<br/>
@@ -698,12 +644,6 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	BoxChart = 59242,
 
-	/// <summary>Box Chart Series</summary>
-	/// <remarks>Category: Charts and Graphs<br/>
-	/// Alias: 3.24.6, charts and graphs, data, plot, box plot, summarize, interval scales, analysis, variability, values, charts</remarks>
-	/// <release>3.24.6</release>
-	BoxChartSeries = 0,
-
 	/// <summary>Brackets</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.28.1, generic, code, coding, programmer, syntax, script, html</remarks>
@@ -745,12 +685,6 @@ public enum CalciteIcon : ushort
 	/// Alias: 1.5.0, windows, os, window</remarks>
 	/// <release>1.5</release>
 	Browser = 59249,
-
-	/// <summary>Browser Map</summary>
-	/// <remarks>Category: Windows<br/>
-	/// Alias: 3.20.3 , windows, os, map, location, desktop, layout, web map, application, mapping software</remarks>
-	/// <release>3.20.3 </release>
-	BrowserMap = 0,
 
 	/// <summary>Brush Mark</summary>
 	/// <remarks>Category: Objects<br/>
@@ -902,12 +836,6 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	CaretUp = 59274,
 
-	/// <summary>Catalog Dataset</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: 3.22.1, gis, data, layers, sublayers, dataset, catalog</remarks>
-	/// <release>3.22.1</release>
-	CatalogDataset = 0,
-
 	/// <summary>Center Align</summary>
 	/// <remarks>Category: Text<br/>
 	/// Alias: 3.17.7, text, typography, alignment, paragraph, type, body text, format, justification, justify</remarks>
@@ -931,12 +859,6 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.15.2, objects, paper, award, certification, passed, achievement, diploma, ribbon</remarks>
 	/// <release>3.15.2</release>
 	Certificate = 59278,
-
-	/// <summary>Change Detection</summary>
-	/// <remarks>Category: Generic<br/>
-	/// Alias: 3.19.4, generic, arrow, map element, switch, selection, transform, mapping, maps</remarks>
-	/// <release>3.19.4</release>
-	ChangeDetection = 0,
 
 	/// <summary>Change Font Size</summary>
 	/// <remarks>Category: Text<br/>
@@ -1112,12 +1034,6 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	Circle = 59307,
 
-	/// <summary>Circle Area</summary>
-	/// <remarks>Category: Generic<br/>
-	/// Alias: 3.10.0, circle area</remarks>
-	/// <release>3.10.0</release>
-	CircleArea = 0,
-
 	/// <summary>Circle Disallowed</summary>
 	/// <remarks>Category: Symbols<br/>
 	/// Alias: 1.5.0, symbols, ban, cancel, none, null, no entry, empty, not allowed, banned, not prohibited</remarks>
@@ -1171,12 +1087,6 @@ public enum CalciteIcon : ushort
 	/// Alias: gis, 3.17.1, geoai, classify</remarks>
 	/// <release>3.17.1</release>
 	ClassifyObjects = 59316,
-
-	/// <summary>Classify Pixels</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: gis, 3.17.1, geoai</remarks>
-	/// <release>3.17.1</release>
-	ClassifyPixels = 0,
 
 	/// <summary>Clear Selection</summary>
 	/// <remarks>Category: GIS<br/>
@@ -1244,12 +1154,6 @@ public enum CalciteIcon : ushort
 	/// <release>3.17.6</release>
 	Cloudy = 59329,
 
-	/// <summary>Clustering</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: 3.5.0, maps, groups, gatherings, data, clusters</remarks>
-	/// <release>3.5.0</release>
-	Clustering = 0,
-
 	/// <summary>Code</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 1.5.0, generic, developer, script, programmer, css, javascript, js, html, python, ruby</remarks>
@@ -1291,18 +1195,6 @@ public enum CalciteIcon : ushort
 	/// Alias: 1.5.0, gis, image, map</remarks>
 	/// <release>1.5</release>
 	Collection = 59336,
-
-	/// <summary>Color Coded Map</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: 3.25.2, gis, map, area, selection, perimeter</remarks>
-	/// <release>3.25.2</release>
-	ColorCodedMap = 0,
-
-	/// <summary>Color Correction</summary>
-	/// <remarks>Category: Generic<br/>
-	/// Alias: 2.5.3, adjust, color, adjustment, value, color correction</remarks>
-	/// <release>2.5.3</release>
-	ColorCorrection = 0,
 
 	/// <summary>Column Settings</summary>
 	/// <remarks>Category: Generic<br/>
@@ -1544,23 +1436,11 @@ public enum CalciteIcon : ushort
 	/// <release>3.2.0</release>
 	CursorPlus = 59381,
 
-	/// <summary>Cursor Selection</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: 3.25.2, gis, generic, pointer over selection</remarks>
-	/// <release>3.25.2</release>
-	CursorSelection = 0,
-
 	/// <summary>Curve</summary>
 	/// <remarks>Category: Geometry Editing<br/>
 	/// Alias: 3.25.2, geometry editing, web editor, angles, select, points, curves, lines</remarks>
 	/// <release>3.25.2</release>
 	Curve = 59382,
-
-	/// <summary>Custom Print</summary>
-	/// <remarks>Category: Document<br/>
-	/// Alias: 3.28.7, document, file, page, customize, print, pencil, edit</remarks>
-	/// <release>3.28.7</release>
-	CustomPrint = 0,
 
 	/// <summary>Cut And Fill Volume Calculation</summary>
 	/// <remarks>Category: GIS<br/>
@@ -1615,12 +1495,6 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.16.7, generic, database, search, locate, find, analyze, identify, browse</remarks>
 	/// <release>3.16.7</release>
 	DataMagnifyingGlass = 59391,
-
-	/// <summary>Data Raster</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: gis, 3.17.1, geoai, database, data, raster</remarks>
-	/// <release>3.17.1</release>
-	DataRaster = 0,
 
 	/// <summary>Date Time</summary>
 	/// <remarks>Category: Lists<br/>
@@ -1742,18 +1616,6 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	Disembark = 59411,
 
-	/// <summary>Display Selection Lock</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: 3.17.6, gis, area, lock, select</remarks>
-	/// <release>3.17.6</release>
-	DisplaySelectionLock = 0,
-
-	/// <summary>Display Selection Unlock</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: 3.17.6, gis, area, unlock, select</remarks>
-	/// <release>3.17.6</release>
-	DisplaySelectionUnlock = 0,
-
 	/// <summary>Dissolve Features</summary>
 	/// <remarks>Category: GIS<br/>
 	/// Alias: 3.19.0, gis, shapes, map, area, merge, combine, polygons, unite</remarks>
@@ -1801,12 +1663,6 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.27.2, text, precision, digits, data, type</remarks>
 	/// <release>3.27.2</release>
 	DoubleFloat = 59419,
-
-	/// <summary>Download</summary>
-	/// <remarks>Category: Generic<br/>
-	/// Alias: 1.5.0, generic, cloud, arrow, import</remarks>
-	/// <release>1.5</release>
-	Download = 0,
 
 	/// <summary>Download To</summary>
 	/// <remarks>Category: Arrows<br/>
@@ -2246,12 +2102,6 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	FileReport = 59494,
 
-	/// <summary>File Report Generic</summary>
-	/// <remarks>Category: Files<br/>
-	/// Alias: 3.26.5, files, documents, text, information, archive, data</remarks>
-	/// <release>3.26.5</release>
-	FileReportGeneric = 0,
-
 	/// <summary>File Shape</summary>
 	/// <remarks>Category: Files<br/>
 	/// Alias: 3.16.0, files, file type, file format, vector file, shapefile, vector data</remarks>
@@ -2329,12 +2179,6 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.25.8, knowledge graph, filters, expanding, link chart, data model</remarks>
 	/// <release>3.25.8</release>
 	FilterExpand = 59507,
-
-	/// <summary>Find Path</summary>
-	/// <remarks>Category: Knowledge Graph<br/>
-	/// Alias:  3.20.6, knowledge graph, magnifying glass, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model, route</remarks>
-	/// <release> 3.20.6</release>
-	FindPath = 0,
 
 	/// <summary>Fingerprint</summary>
 	/// <remarks>Category: Generic<br/>
@@ -2540,24 +2384,6 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	Forward = 59544,
 
-	/// <summary>Four By One Grid</summary>
-	/// <remarks>Category: Windows<br/>
-	/// Alias: 3.25.7, windows, screen, gallery, select, single, row, columns, images</remarks>
-	/// <release>3.25.7</release>
-	FourByOneGrid = 0,
-
-	/// <summary>Four By Three Grid</summary>
-	/// <remarks>Category: Windows<br/>
-	/// Alias: 3.25.7, windows, screen, gallery, select, multiple, row, columns, images</remarks>
-	/// <release>3.25.7</release>
-	FourByThreeGrid = 0,
-
-	/// <summary>Four By Two Grid</summary>
-	/// <remarks>Category: Windows<br/>
-	/// Alias: 3.25.7, windows, screen, gallery, select, multiple, row, columns, images</remarks>
-	/// <release>3.25.7</release>
-	FourByTwoGrid = 0,
-
 	/// <summary>Frame Export</summary>
 	/// <remarks>Category: Media<br/>
 	/// Alias: 3.26.5, media, video, film, arrow, clip, tape, extract, mp4, file, save, motion, play</remarks>
@@ -2569,12 +2395,6 @@ public enum CalciteIcon : ushort
 	/// Alias: 1.5.0, gis, draw, polygon, pencil, lasso, squiggle, doodle</remarks>
 	/// <release>1.5</release>
 	Freehand = 59546,
-
-	/// <summary>Freehand Area</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: 1.7.0, draw, shape, gis, map, distance</remarks>
-	/// <release>1.7.0</release>
-	FreehandArea = 0,
 
 	/// <summary>Frown</summary>
 	/// <remarks>Category: Generic<br/>
@@ -2732,12 +2552,6 @@ public enum CalciteIcon : ushort
 	/// <release>3.26.1</release>
 	GraphBoxMeanLines = 59572,
 
-	/// <summary>Graph Box Side By Side</summary>
-	/// <remarks>Category: Charts and Graphs<br/>
-	/// Alias: 3.26.1, Charts and graphs, box, plot, version, management, lines, branch, edit, rectangle, mean</remarks>
-	/// <release>3.26.1</release>
-	GraphBoxSideBySide = 0,
-
 	/// <summary>Graph Guides</summary>
 	/// <remarks>Category: Charts and Graphs<br/>
 	/// Alias:  3.21.1, charts and graphs, guides, chart, guide, data, diagram, visualization</remarks>
@@ -2761,12 +2575,6 @@ public enum CalciteIcon : ushort
 	/// Alias: 1.5.0, charts-and-graphs, bars, bar chart, diagram, visualization, average, line chart</remarks>
 	/// <release>1.5</release>
 	GraphMovingAverage = 59576,
-
-	/// <summary>Graph Pie Slice</summary>
-	/// <remarks>Category: Charts and Graphs<br/>
-	/// Alias:  3.21.1, charts and graphs, pie, chart, slice, data, diagram, visualization</remarks>
-	/// <release> 3.21.1</release>
-	GraphPieSlice = 0,
 
 	/// <summary>Graph Scatter Plot</summary>
 	/// <remarks>Category: Charts and Graphs<br/>
@@ -2857,18 +2665,6 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.0.0, forms, delete group, group x, remove group, clear group</remarks>
 	/// <release>3.0.0-beta.6</release>
 	GroupX = 59591,
-
-	/// <summary>H3 Hexagon</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: 3.22.9, gis, shapes, map, area, angles, pattern, tile, square, indexing, coordinates, square meter, resolution, datasets, precision, modeling flow</remarks>
-	/// <release>3.22.9</release>
-	H3Hexagon = 0,
-
-	/// <summary>Halo</summary>
-	/// <remarks>Category: Generic<br/>
-	/// Alias: 3.16.6, generic, glow, shadow, drop shadow, box, square, light</remarks>
-	/// <release>3.16.6</release>
-	Halo = 0,
 
 	/// <summary>Hamburger</summary>
 	/// <remarks>Category: Generic<br/>
@@ -3044,12 +2840,6 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	HighwayChangeRight = 59620,
 
-	/// <summary>Hillshade Effect</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: 1.5.0, map</remarks>
-	/// <release>1.5</release>
-	HillshadeEffect = 0,
-
 	/// <summary>Home</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 1.5.0, generic, index, navigation, start, homepage</remarks>
@@ -3086,24 +2876,6 @@ public enum CalciteIcon : ushort
 	/// <release>3.17.1</release>
 	ImageChips = 59626,
 
-	/// <summary>Image Collection Explorer</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: 3.24.5, gis, raster, images, filter, collection, selection, dataset</remarks>
-	/// <release>3.24.5</release>
-	ImageCollectionExplorer = 0,
-
-	/// <summary>Image Display Order</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: 3.17.0, gis, mosaic, raster, imagery, overlap, ground, re-order, stack, overlay</remarks>
-	/// <release>3.17.0</release>
-	ImageDisplayOrder = 0,
-
-	/// <summary>Image Layer</summary>
-	/// <remarks>Category: Layers<br/>
-	/// Alias: 3.25.2, layers, raster, gis, image, imagery, layer type</remarks>
-	/// <release>3.25.2</release>
-	ImageLayer = 0,
-
 	/// <summary>Image Magnifying Glass</summary>
 	/// <remarks>Category: Media<br/>
 	/// Alias: 3.24.7, media, photo, zoom, image search, picture, photograph, imagery, locate, analyze, inspect</remarks>
@@ -3133,12 +2905,6 @@ public enum CalciteIcon : ushort
 	/// Alias: 2.5.4, image segmentation, geoprocessing, image classification, group images, pixels</remarks>
 	/// <release>2.5.4</release>
 	ImageSegmentation = 59631,
-
-	/// <summary>Image Server</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: 3.20.7, gis, images, servers, photos, media, imagery, connections, networks</remarks>
-	/// <release>3.20.7</release>
-	ImageServer = 0,
 
 	/// <summary>Image Space</summary>
 	/// <remarks>Category: GIS<br/>
@@ -3211,12 +2977,6 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.18.1, objects, summit, mountain, flag, goals, tent, camp, achievement, target, objectives, accomplishment, climb, plan, project</remarks>
 	/// <release>3.18.1</release>
 	Initiative = 59643,
-
-	/// <summary>Initiative Template</summary>
-	/// <remarks>Category: Objects<br/>
-	/// Alias: 3.18.1, objects, summit, mountain, flag, goals, tent, camp, achievement, target, objectives, climb, plan project, list, item, pattern</remarks>
-	/// <release>3.18.1</release>
-	InitiativeTemplate = 0,
 
 	/// <summary>Insets</summary>
 	/// <remarks>Category: Windows<br/>
@@ -3313,12 +3073,6 @@ public enum CalciteIcon : ushort
 	/// Alias:  3.20.6, knowledge graph, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model, scale, sun, link</remarks>
 	/// <release> 3.20.6</release>
 	KnowledgeGraphNew = 59660,
-
-	/// <summary>Knowledge Graph Relationship</summary>
-	/// <remarks>Category: Knowledge Graph<br/>
-	/// Alias:  3.20.6, knowledge graph, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model, scale, link</remarks>
-	/// <release> 3.20.6</release>
-	KnowledgeGraphRelationship = 0,
 
 	/// <summary>Knowledge Layer</summary>
 	/// <remarks>Category: Knowledge Graph<br/>
@@ -4148,12 +3902,6 @@ public enum CalciteIcon : ushort
 	/// <release>3.1.0</release>
 	Mu = 59800,
 
-	/// <summary>Multidimensional Raster</summary>
-	/// <remarks>Category: Generic<br/>
-	/// Alias: 3.20.0, generic, cubes, dimensions, squares, 3d, object, boxes</remarks>
-	/// <release>3.20.0</release>
-	MultidimensionalRaster = 0,
-
 	/// <summary>Multiple Variables</summary>
 	/// <remarks>Category: Symbols<br/>
 	/// Alias: 3.18.1, symbols, shapes, variety, geometry, filled, outline, diversity, difference, variation, mixed, changes, combo, collection</remarks>
@@ -4466,12 +4214,6 @@ public enum CalciteIcon : ushort
 	/// <release>3.19.0</release>
 	OverlapFeatures = 59852,
 
-	/// <summary>Overview</summary>
-	/// <remarks>Category: Generic<br/>
-	/// Alias: 2.5.3, raster, gallery, map, collection</remarks>
-	/// <release>2.5.3</release>
-	Overview = 0,
-
 	/// <summary>Overwrite Features</summary>
 	/// <remarks>Category: Layers<br/>
 	/// Alias: 3.22.4, layers, maps, gis, mapping, location, data, feature layers, replace, update, refresh</remarks>
@@ -4754,12 +4496,6 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	Polygon = 59899,
 
-	/// <summary>Polygon Area</summary>
-	/// <remarks>Category: Generic<br/>
-	/// Alias: 3.10.0, polygon area</remarks>
-	/// <release>3.10.0</release>
-	PolygonArea = 0,
-
 	/// <summary>Polygon Line Check</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.0.0, vertices, polygon line check, check mark, points</remarks>
@@ -4934,12 +4670,6 @@ public enum CalciteIcon : ushort
 	/// <release>3.3.0</release>
 	Quote = 59928,
 
-	/// <summary>Radial Tree Link Chart Layout</summary>
-	/// <remarks>Category: Knowledge Graph<br/>
-	/// Alias: 3.23.6, knowledge graph, link chart, spatial analysis, data, data model</remarks>
-	/// <release>3.23.6</release>
-	RadialTreeLinkChartLayout = 0,
-
 	/// <summary>Rain</summary>
 	/// <remarks>Category: Weather<br/>
 	/// Alias: 3.17.6, generic, clouds, weather, sky, forecast, temperature, environment, nature, precipitation, wind, stormy, clouds</remarks>
@@ -4976,18 +4706,6 @@ public enum CalciteIcon : ushort
 	/// <release>3.19.2</release>
 	Rangefinder = 59935,
 
-	/// <summary>Raster Analysis</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: 3.19.0, gis, tools, analytics, map, processing, hammer, imagery, pixels</remarks>
-	/// <release>3.19.0</release>
-	RasterAnalysis = 0,
-
-	/// <summary>Raster Function</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: 3.21.9, GIS, fx, edit, raster, modify</remarks>
-	/// <release>3.21.9</release>
-	RasterFunction = 0,
-
 	/// <summary>Raster Function Template</summary>
 	/// <remarks>Category: GIS<br/>
 	/// Alias: 3.21.9, GIS, fx, edit, raster, modify</remarks>
@@ -5018,12 +4736,6 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	Rectangle = 59941,
 
-	/// <summary>Rectangle Area</summary>
-	/// <remarks>Category: Generic<br/>
-	/// Alias: 3.10.0, rectangle area</remarks>
-	/// <release>3.10.0</release>
-	RectangleArea = 0,
-
 	/// <summary>Rectangle Plus</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 1.5.0, generic, draw, sketch, create rectangle, new rectangle, add rectangle, box</remarks>
@@ -5047,12 +4759,6 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.15.1, arrows, forward</remarks>
 	/// <release>1.5</release>
 	Redo = 59945,
-
-	/// <summary>Refresh</summary>
-	/// <remarks>Category: Arrows<br/>
-	/// Alias: 1.5.0, arrows, reload, sync</remarks>
-	/// <release>1.5</release>
-	Refresh = 0,
 
 	/// <summary>Refresh (Filled)</summary>
 	/// <remarks>Category: Arrows<br/>
@@ -5137,12 +4843,6 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.27.3, geometry editing, lines, points, reshape, add, angles</remarks>
 	/// <release>3.27.3</release>
 	ReshapeAddGeometry = 59959,
-
-	/// <summary>Reshape Subtract Geometry</summary>
-	/// <remarks>Category: Geometry Editing<br/>
-	/// Alias: 3.27.3, geometry editing, subtract, reshape, lines, points, angles</remarks>
-	/// <release>3.27.3</release>
-	ReshapeSubtractGeometry = 0,
 
 	/// <summary>Reshape Tool</summary>
 	/// <remarks>Category: Geometry Editing<br/>
@@ -5348,12 +5048,6 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	Running = 59994,
 
-	/// <summary>Running Outline</summary>
-	/// <remarks>Category: People<br/>
-	/// Alias: 3.22.1, people, sport, person, exercise, activity, movement, human</remarks>
-	/// <release>3.22.1</release>
-	RunningOutline = 0,
-
 	/// <summary>Rural Driving Distance</summary>
 	/// <remarks>Category: GIS<br/>
 	/// Alias: 3.16.8, gis, travel, drive, car, vehicle, route, length, measure, navigate, arrows, destination, desert</remarks>
@@ -5510,23 +5204,11 @@ public enum CalciteIcon : ushort
 	/// <release>3.18.3</release>
 	Select = 60020,
 
-	/// <summary>Select By Attributes</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: 3.27.3, gis, select, select text, attributes, tags</remarks>
-	/// <release>3.27.3</release>
-	SelectByAttributes = 0,
-
 	/// <summary>Select Category</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 1.5.0, generic, qualitative, checkboxes, tiles, grid, choices, categories</remarks>
 	/// <release>1.5</release>
 	SelectCategory = 60021,
-
-	/// <summary>Select Column</summary>
-	/// <remarks>Category: Generic<br/>
-	/// Alias: 3.27.2, generic, select, columns, choose, table</remarks>
-	/// <release>3.27.2</release>
-	SelectColumn = 0,
 
 	/// <summary>Select Range</summary>
 	/// <remarks>Category: Generic<br/>
@@ -5534,29 +5216,11 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	SelectRange = 60022,
 
-	/// <summary>Select Visible</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: 3.17.6, gis, visible, area, select</remarks>
-	/// <release>3.17.6</release>
-	SelectVisible = 0,
-
 	/// <summary>Selected Items Filter</summary>
 	/// <remarks>Category: Lists<br/>
 	/// Alias: 3.14.6, selected items filter, lists, filter selection, filter selected items</remarks>
 	/// <release>3.14.6</release>
 	SelectedItemsFilter = 60023,
-
-	/// <summary>Selection</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: 3.25.2, gis, generic, map, area</remarks>
-	/// <release>3.25.2</release>
-	Selection = 0,
-
-	/// <summary>Selection Filter</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: 3.25.2, gis, selection filter, filter by selection, filter selection, funnel</remarks>
-	/// <release>3.25.2</release>
-	SelectionFilter = 0,
 
 	/// <summary>Selection Manager</summary>
 	/// <remarks>Category: Windows<br/>
@@ -5569,12 +5233,6 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.25.2, generic, web editor, pin, feature, selecting, click, choose, options, activate</remarks>
 	/// <release>3.25.2</release>
 	SelectionSet = 60025,
-
-	/// <summary>Selection X</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: 3.25.2, gis, selection x, delete selection, remove selection</remarks>
-	/// <release>3.25.2</release>
-	SelectionX = 0,
 
 	/// <summary>Send</summary>
 	/// <remarks>Category: Objects<br/>
@@ -5732,12 +5390,6 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	SignOut = 60051,
 
-	/// <summary>Simple Link Chart Layout</summary>
-	/// <remarks>Category: Knowledge Graph<br/>
-	/// Alias: 3.23.6, knowledge graph, link chart, spatial data, spatial analysis, data model</remarks>
-	/// <release>3.23.6</release>
-	SimpleLinkChartLayout = 0,
-
 	/// <summary>Sky Plot</summary>
 	/// <remarks>Category: Charts and Graphs<br/>
 	/// Alias: 3.13.0, charts and graphs, graphs, sky plot, skyplot, graphic, satellites, elevation, azimuth, data, analysis, tracking, visualization</remarks>
@@ -5803,12 +5455,6 @@ public enum CalciteIcon : ushort
 	/// Alias: Generic, 3.16.5, drawing, snapping, magnet</remarks>
 	/// <release>3.16.5</release>
 	SnapToGrid = 60062,
-
-	/// <summary>Snap To Pixel</summary>
-	/// <remarks>Category: Generic<br/>
-	/// Alias: Generic, 3.16.5, magnet, raster, drawing</remarks>
-	/// <release>3.16.5</release>
-	SnapToPixel = 0,
 
 	/// <summary>Snap To Point</summary>
 	/// <remarks>Category: Generic<br/>
@@ -5966,12 +5612,6 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	Square = 60088,
 
-	/// <summary>Square Area</summary>
-	/// <remarks>Category: Generic<br/>
-	/// Alias: 3.10.0, square area</remarks>
-	/// <release>3.10.0</release>
-	SquareArea = 0,
-
 	/// <summary>Square Inset Large</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.28.8, generic, shape, symbol, square</remarks>
@@ -6086,12 +5726,6 @@ public enum CalciteIcon : ushort
 	/// <release>2.5.3</release>
 	String = 60107,
 
-	/// <summary>Styling</summary>
-	/// <remarks>Category: Objects<br/>
-	/// Alias: 3.27.4, objects, paint, color, tool</remarks>
-	/// <release>3.27.0</release>
-	Styling = 0,
-
 	/// <summary>Sub Fields</summary>
 	/// <remarks>Category: Forms<br/>
 	/// Alias: 3.28.1, forms, items, elements, fields, table, levels</remarks>
@@ -6158,41 +5792,11 @@ public enum CalciteIcon : ushort
 	/// <release>3.27.8</release>
 	Subtype = 60118,
 
-	/// <summary>Suitability Analysis Output</summary>
-	/// <remarks>Category: Windows<br/>
-	/// Alias: 1.8.0, map, area, selection, perimeter</remarks>
-	/// <release>1.8.0</release>
-	SuitabilityAnalysisOutput = 0,
-
-	/// <summary>Summarize Center And Dispersion 1</summary>
-	/// <remarks>Category: Generic<br/>
-	/// Alias: 3.22.0, generic, summarize, range, selections, selected, focus, area, center, ellipse, central, distance</remarks>
-	/// <release>3.22.0</release>
-	SummarizeCenterAndDispersion1 = 0,
-
-	/// <summary>Summarize Center And Dispersion 2</summary>
-	/// <remarks>Category: Generic<br/>
-	/// Alias: 3.22.0, generic, summarize, range, selections, selected, focus, area, center, ellipse, central, distance</remarks>
-	/// <release>3.22.0</release>
-	SummarizeCenterAndDispersion2 = 0,
-
-	/// <summary>Summarize Center And Dispersion 3</summary>
-	/// <remarks>Category: Generic<br/>
-	/// Alias: 3.22.0, generic, summarize, range, selections, selected, focus, area, center, ellipse, central, distance</remarks>
-	/// <release>3.22.0</release>
-	SummarizeCenterAndDispersion3 = 0,
-
 	/// <summary>Summary</summary>
 	/// <remarks>Category: Text<br/>
 	/// Alias: 1.5.0, text</remarks>
 	/// <release>1.5</release>
 	Summary = 60119,
-
-	/// <summary>Superimpose</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: 3.15.0, gis, building, image, 3d, raster</remarks>
-	/// <release>3.15.0</release>
-	Superimpose = 0,
 
 	/// <summary>Superscript</summary>
 	/// <remarks>Category: Text<br/>
@@ -6266,12 +5870,6 @@ public enum CalciteIcon : ushort
 	/// <release>3.27.0</release>
 	Templates = 60131,
 
-	/// <summary>Temporary</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: 3.25.2, gis, online model builder, time, arrow, fraction, clock, limit, short term</remarks>
-	/// <release>3.25.2</release>
-	Temporary = 0,
-
 	/// <summary>Terminal</summary>
 	/// <remarks>Category: Windows<br/>
 	/// Alias: 3.17.8, window, operating system, programming languages, coding, developer, command line, bash, shell, scripts</remarks>
@@ -6344,24 +5942,6 @@ public enum CalciteIcon : ushort
 	/// <release>3.23.2</release>
 	TextSolidUnderline = 60143,
 
-	/// <summary>Three By One Grid</summary>
-	/// <remarks>Category: Windows<br/>
-	/// Alias: 3.25.7, windows, screen, gallery, select, single, row, columns, images</remarks>
-	/// <release>3.25.7</release>
-	ThreeByOneGrid = 0,
-
-	/// <summary>Three By Three Grid</summary>
-	/// <remarks>Category: Windows<br/>
-	/// Alias: 3.25.7, windows, screen, gallery, select, multiple, row, columns, images</remarks>
-	/// <release>3.25.7</release>
-	ThreeByThreeGrid = 0,
-
-	/// <summary>Three By Two Grid</summary>
-	/// <remarks>Category: Windows<br/>
-	/// Alias: 3.25.7, windows, screen, gallery, select, multiple, row, columns, images</remarks>
-	/// <release>3.25.7</release>
-	ThreeByTwoGrid = 0,
-
 	/// <summary>Thumbs Down</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.16.9, generic, disapproval, dislike, unhappy, rating, feedback, unhelpful, hand, reject, fail, dissatisfied, disapprove</remarks>
@@ -6386,23 +5966,11 @@ public enum CalciteIcon : ushort
 	/// <release>3.25.2</release>
 	TileLayer = 60147,
 
-	/// <summary>Tiled Imagery Layer</summary>
-	/// <remarks>Category: Layers<br/>
-	/// Alias: 3.25.2, layers, gis, tiled, image, imagery, layer type</remarks>
-	/// <release>3.25.2</release>
-	TiledImageryLayer = 0,
-
 	/// <summary>Time Filter</summary>
 	/// <remarks>Category: GIS<br/>
 	/// Alias: 3.25.5, clock, gis, watch, screen</remarks>
 	/// <release>3.25.5</release>
 	TimeFilter = 60148,
-
-	/// <summary>Time Zone</summary>
-	/// <remarks>Category: Objects<br/>
-	/// Alias: 3.23.4, objects, event, time, international, schedule, appointment</remarks>
-	/// <release>3.23.4</release>
-	TimeZone = 0,
 
 	/// <summary>Timer</summary>
 	/// <remarks>Category: Objects<br/>
@@ -6458,23 +6026,11 @@ public enum CalciteIcon : ushort
 	/// <release>3.25.2</release>
 	Trace = 60158,
 
-	/// <summary>Transparency</summary>
-	/// <remarks>Category: Generic<br/>
-	/// Alias: 1.5.0, opacity, filters</remarks>
-	/// <release>1.5</release>
-	Transparency = 0,
-
 	/// <summary>Transverse Hexagon</summary>
 	/// <remarks>Category: GIS<br/>
 	/// Alias: 3.22.9, gis, shapes, map, area, angles, pattern, tile, square, indexing, coordinates, resolution, datasets, precision</remarks>
 	/// <release>3.22.9</release>
 	TransverseHexagon = 60163,
-
-	/// <summary>Trapezoid Area</summary>
-	/// <remarks>Category: Generic<br/>
-	/// Alias: 3.21.0, generic, shapes, symbols, geometry, draw, view</remarks>
-	/// <release>3.21.0</release>
-	TrapezoidArea = 0,
 
 	/// <summary>Trash</summary>
 	/// <remarks>Category: Objects<br/>
@@ -6793,12 +6349,6 @@ public enum CalciteIcon : ushort
 	/// Alias: 1.6.5, eye, generic, shown, preview, visible, unhide, sight, see</remarks>
 	/// <release>1.6.5</release>
 	ViewVisible = 60217,
-
-	/// <summary>Viewshed</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: 3.12.1, viewshed, line of sights, visible, building, eye</remarks>
-	/// <release>3.12.1</release>
-	Viewshed = 0,
 
 	/// <summary>Walk Through Door</summary>
 	/// <remarks>Category: Directions<br/>
