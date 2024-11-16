@@ -8,92 +8,100 @@
         <ResourceDictionary Source="..\Shared\Fonts.xaml" />
         <ResourceDictionary Source="..\Shared\Sizes.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    <ControlTemplate x:Key="CalciteBaseButtonTemplate" TargetType="ButtonBase">
-        <Border
-            x:Name="bg"
-            Padding="{StaticResource ButtonBorderOffset}"
-            Background="{Binding Path=(ca:AttachedBrushes.BackgroundNormal), RelativeSource={RelativeSource Mode=Self}}"
-            BorderBrush="{Binding Path=(ca:AttachedBrushes.BorderNormal), RelativeSource={RelativeSource Mode=Self}}"
-            BorderThickness="{StaticResource ButtonBorderThickness}"
-            Cursor="{DynamicResource CalciteActionCursor}">
-            <Grid>
-                <Grid
-                    Margin="{StaticResource ButtonPadding}"
-                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto" />
-                        <ColumnDefinition Width="Auto" />
-                    </Grid.ColumnDefinitions>
-                    <Path
-                        x:Name="PART_Icon"
-                        VerticalAlignment="Center"
-                        Data="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(ca:Calcite.Icon)}"
-                        Fill="{TemplateBinding Foreground}" />
-                    <ContentPresenter
-                        x:Name="content"
-                        Grid.Column="1"
-                        Margin="{StaticResource ButtonPadding}"
-                        VerticalAlignment="Center"
-                        Content="{TemplateBinding Content}"
-                        TextBlock.Foreground="{TemplateBinding Foreground}" />
-                </Grid>
-            </Grid>
-        </Border>
-        <ControlTemplate.Triggers>
-            <Trigger Property="ca:Calcite.Icon" Value="{x:Null}">
-                <Setter TargetName="PART_Icon" Property="Visibility" Value="Collapsed" />
-            </Trigger>
-            <Trigger Property="Content" Value="{x:Null}">
-                <Setter TargetName="content" Property="Visibility" Value="Collapsed" />
-            </Trigger>
-            <Trigger Property="Content" Value="">
-                <Setter TargetName="content" Property="Visibility" Value="Collapsed" />
-            </Trigger>
-            <Trigger Property="IsMouseOver" Value="False">
-                <Setter Property="Foreground" Value="{Binding Path=(ca:AttachedBrushes.ForegroundNormal), RelativeSource={RelativeSource Self}}" />
-            </Trigger>
-            <Trigger Property="IsMouseOver" Value="True">
-                <Setter TargetName="bg" Property="BorderBrush" Value="{Binding Path=(ca:AttachedBrushes.BorderHover), RelativeSource={RelativeSource Self}}" />
-                <Setter TargetName="bg" Property="Background" Value="{Binding Path=(ca:AttachedBrushes.BackgroundHover), RelativeSource={RelativeSource Self}}" />
-                <Setter Property="Foreground" Value="{Binding Path=(ca:AttachedBrushes.ForegroundHover), RelativeSource={RelativeSource Self}}" />
-                <Setter TargetName="bg" Property="BorderThickness" Value="2" />
-                <Setter TargetName="bg" Property="Padding" Value="0" />
-            </Trigger>
-            <Trigger Property="IsPressed" Value="True">
-                <Setter TargetName="bg" Property="BorderBrush" Value="{Binding Path=(ca:AttachedBrushes.BorderPress), RelativeSource={RelativeSource Self}}" />
-                <Setter TargetName="bg" Property="Background" Value="{Binding Path=(ca:AttachedBrushes.BackgroundPress), RelativeSource={RelativeSource Self}}" />
-                <Setter Property="Foreground" Value="{Binding Path=(ca:AttachedBrushes.ForegroundPress), RelativeSource={RelativeSource Self}}" />
-                <Setter TargetName="bg" Property="BorderThickness" Value="2" />
-                <Setter TargetName="bg" Property="Padding" Value="0" />
-            </Trigger>
-            <Trigger Property="IsEnabled" Value="False">
-                <Setter TargetName="bg" Property="Opacity" Value="0.8" />
-            </Trigger>
-            <Trigger Property="IsEnabled" Value="True">
-                <Setter TargetName="bg" Property="Opacity" Value="1" />
-            </Trigger>
-            <Trigger Property="ToggleButton.IsChecked" Value="True">
-                <Setter TargetName="bg" Property="Background" Value="{Binding Path=(ca:AttachedBrushes.BackgroundPress), RelativeSource={RelativeSource Self}}" />
-                <Setter Property="Foreground" Value="{Binding Path=(ca:AttachedBrushes.ForegroundPress), RelativeSource={RelativeSource Self}}" />
-            </Trigger>
-        </ControlTemplate.Triggers>
-    </ControlTemplate>
+
+    <!--  Button padding should take button border offset into account (e.g. +1 to get desired effect of 8,4,8,4)  -->
+    <Thickness x:Key="CalciteButtonPadding">7,0,7,0</Thickness>
+    
     <Style x:Key="InternalButtonBaseStyle" TargetType="ButtonBase">
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="VerticalAlignment" Value="Top" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
-        <Setter Property="Padding" Value="{StaticResource ButtonPadding}" />
+        <Setter Property="Padding" Value="{StaticResource CalciteButtonPadding}" />
         <Setter Property="MinHeight" Value="28" />
         <Setter Property="Cursor" Value="{DynamicResource CalciteActionCursor}" />
-        <Setter Property="Template" Value="{StaticResource CalciteBaseButtonTemplate}" />
+        <Setter Property="Template" >
+            <Setter.Value>
+                <ControlTemplate TargetType="ButtonBase">
+                    <Border
+                        x:Name="bg"
+                        Padding="1"
+                        Background="{Binding Path=(ca:AttachedBrushes.BackgroundNormal), RelativeSource={RelativeSource Mode=Self}}"
+                        BorderBrush="{Binding Path=(ca:AttachedBrushes.BorderNormal), RelativeSource={RelativeSource Mode=Self}}"
+                        BorderThickness="1"
+                        Cursor="{DynamicResource CalciteActionCursor}">
+                        <Grid>
+                            <Grid
+                               Margin="{StaticResource CalciteButtonPadding}"
+                               HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                               VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <Path
+                                     x:Name="PART_Icon"
+                                     VerticalAlignment="Center"
+                                     Data="{Binding RelativeSource={RelativeSource Mode=Self}, Path=(ca:Calcite.Icon)}"
+                                     Fill="{TemplateBinding Foreground}" />
+                                <ContentPresenter
+                                     x:Name="content"
+                                     Grid.Column="1"
+                                     Margin="{StaticResource CalciteButtonPadding}"
+                                     VerticalAlignment="Center"
+                                     Content="{TemplateBinding Content}"
+                                     TextBlock.Foreground="{TemplateBinding Foreground}" />
+                            </Grid>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="ca:Calcite.Icon" Value="{x:Null}">
+                            <Setter TargetName="PART_Icon" Property="Visibility" Value="Collapsed" />
+                        </Trigger>
+                        <Trigger Property="Content" Value="{x:Null}">
+                            <Setter TargetName="content" Property="Visibility" Value="Collapsed" />
+                        </Trigger>
+                        <Trigger Property="Content" Value="">
+                            <Setter TargetName="content" Property="Visibility" Value="Collapsed" />
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="False">
+                            <Setter Property="Foreground" Value="{Binding Path=(ca:AttachedBrushes.ForegroundNormal), RelativeSource={RelativeSource Self}}" />
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="bg" Property="BorderBrush" Value="{Binding Path=(ca:AttachedBrushes.BorderHover), RelativeSource={RelativeSource Self}}" />
+                            <Setter TargetName="bg" Property="Background" Value="{Binding Path=(ca:AttachedBrushes.BackgroundHover), RelativeSource={RelativeSource Self}}" />
+                            <Setter Property="Foreground" Value="{Binding Path=(ca:AttachedBrushes.ForegroundHover), RelativeSource={RelativeSource Self}}" />
+                            <Setter TargetName="bg" Property="BorderThickness" Value="2" />
+                            <Setter TargetName="bg" Property="Padding" Value="0" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="bg" Property="BorderBrush" Value="{Binding Path=(ca:AttachedBrushes.BorderPress), RelativeSource={RelativeSource Self}}" />
+                            <Setter TargetName="bg" Property="Background" Value="{Binding Path=(ca:AttachedBrushes.BackgroundPress), RelativeSource={RelativeSource Self}}" />
+                            <Setter Property="Foreground" Value="{Binding Path=(ca:AttachedBrushes.ForegroundPress), RelativeSource={RelativeSource Self}}" />
+                            <Setter TargetName="bg" Property="BorderThickness" Value="2" />
+                            <Setter TargetName="bg" Property="Padding" Value="0" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="bg" Property="Opacity" Value="0.8" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="True">
+                            <Setter TargetName="bg" Property="Opacity" Value="1" />
+                        </Trigger>
+                        <Trigger Property="ToggleButton.IsChecked" Value="True">
+                            <Setter TargetName="bg" Property="Background" Value="{Binding Path=(ca:AttachedBrushes.BackgroundPress), RelativeSource={RelativeSource Self}}" />
+                            <Setter Property="Foreground" Value="{Binding Path=(ca:AttachedBrushes.ForegroundPress), RelativeSource={RelativeSource Self}}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
         <Style.Triggers>
             <Trigger Property="ca:AttachedFormData.IsInForm" Value="True">
                 <Setter Property="Margin" Value="{DynamicResource FormChildMargin}" />
             </Trigger>
         </Style.Triggers>
     </Style>
+
     <Style
         x:Key="CalcitePrimaryButtonBaseStyle"
         BasedOn="{StaticResource InternalButtonBaseStyle}"

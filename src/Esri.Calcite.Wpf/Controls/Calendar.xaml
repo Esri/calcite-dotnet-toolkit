@@ -7,12 +7,11 @@
         <ResourceDictionary Source="..\Shared\Fonts.xaml" />
         <ResourceDictionary Source="..\Shared\Sizes.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    <Duration x:Key="commonAnimationDuration">0:0:0.1</Duration>
     <Style x:Key="CalciteCalendarDateHaloBase" TargetType="Rectangle">
-        <Setter Property="RadiusX" Value="{StaticResource CalendarDateHighlightRadius}" />
-        <Setter Property="RadiusY" Value="{StaticResource CalendarDateHighlightRadius}" />
-        <Setter Property="Width" Value="{StaticResource CalendarDateHighlightSize}" />
-        <Setter Property="Height" Value="{StaticResource CalendarDateHighlightSize}" />
+        <Setter Property="RadiusX" Value="12" />
+        <Setter Property="RadiusY" Value="12" />
+        <Setter Property="Width" Value="24" />
+        <Setter Property="Height" Value="24" />
         <Setter Property="HorizontalAlignment" Value="Center" />
         <Setter Property="VerticalAlignment" Value="Center" />
         <Setter Property="Opacity" Value="0" />
@@ -21,10 +20,10 @@
         x:Key="CalciteCalendarMonthHaloBase"
         BasedOn="{StaticResource CalciteCalendarDateHaloBase}"
         TargetType="Rectangle">
-        <Setter Property="Width" Value="{StaticResource CalendarMonthYearHighlightSize}" />
-        <Setter Property="Height" Value="{StaticResource CalendarMonthYearHighlightSize}" />
-        <Setter Property="RadiusX" Value="{StaticResource CalendarMonthYearHighlightRadius}" />
-        <Setter Property="RadiusY" Value="{StaticResource CalendarMonthYearHighlightRadius}" />
+        <Setter Property="Width" Value="42" />
+        <Setter Property="Height" Value="42" />
+        <Setter Property="RadiusX" Value="21" />
+        <Setter Property="RadiusY" Value="21" />
     </Style>
 
     <!--  Style for the days of a month.  -->
@@ -57,7 +56,7 @@
                                 HorizontalAlignment="Center"
                                 VerticalAlignment="Center"
                                 FontWeight="Light"
-                                FontSize="{StaticResource CalendarDayButtonFontSize}"
+                                FontSize="12"
                                 Text="{Binding Day}"
                                 TextAlignment="Center"
                                 TextElement.Foreground="{DynamicResource CalciteUIText2Brush}" />
@@ -66,7 +65,7 @@
                                 HorizontalAlignment="Center"
                                 VerticalAlignment="Center"
                                 FontWeight="Light"
-                                FontSize="{StaticResource CalendarDayButtonFontSize}"
+                                FontSize="12"
                                 Opacity="0"
                                 Text="{Binding Day}"
                                 TextAlignment="Center"
@@ -105,7 +104,7 @@
                                             Storyboard.TargetName="HighlightBackground"
                                             Storyboard.TargetProperty="Opacity"
                                             To="1"
-                                            Duration="{StaticResource commonAnimationDuration}" />
+                                            Duration="0:0:0.1" />
                                         <!--  Todo: consider adding a highlight text (text-1-color) and animating that visibility as well  -->
                                     </Storyboard>
                                 </BeginStoryboard>
@@ -117,7 +116,7 @@
                                             Storyboard.TargetName="HighlightBackground"
                                             Storyboard.TargetProperty="Opacity"
                                             To="0"
-                                            Duration="{StaticResource commonAnimationDuration}" />
+                                            Duration="0:0:0.1" />
                                         <!--  Todo: consider adding a highlight text (text-1-color) and animating that visibility as well  -->
                                     </Storyboard>
                                 </BeginStoryboard>
@@ -131,17 +130,17 @@
                                             Storyboard.TargetName="NormalText"
                                             Storyboard.TargetProperty="Opacity"
                                             To="0"
-                                            Duration="{StaticResource commonAnimationDuration}" />
+                                            Duration="0:0:0.1" />
                                         <DoubleAnimation
                                             Storyboard.TargetName="SelectedText"
                                             Storyboard.TargetProperty="Opacity"
                                             To="1"
-                                            Duration="{StaticResource commonAnimationDuration}" />
+                                            Duration="0:0:0.1" />
                                         <DoubleAnimation
                                             Storyboard.TargetName="SelectedBackground"
                                             Storyboard.TargetProperty="Opacity"
                                             To="1"
-                                            Duration="{StaticResource commonAnimationDuration}" />
+                                            Duration="0:0:0.1" />
                                         <!--  Todo: consider adding a highlight text (text-1-color) and animating that visibility as well  -->
                                     </Storyboard>
                                 </BeginStoryboard>
@@ -153,17 +152,17 @@
                                             Storyboard.TargetName="NormalText"
                                             Storyboard.TargetProperty="Opacity"
                                             To="1"
-                                            Duration="{StaticResource commonAnimationDuration}" />
+                                            Duration="0:0:0.1" />
                                         <DoubleAnimation
                                             Storyboard.TargetName="SelectedText"
                                             Storyboard.TargetProperty="Opacity"
                                             To="0"
-                                            Duration="{StaticResource commonAnimationDuration}" />
+                                            Duration="0:0:0.1" />
                                         <DoubleAnimation
                                             Storyboard.TargetName="SelectedBackground"
                                             Storyboard.TargetProperty="Opacity"
                                             To="0"
-                                            Duration="{StaticResource commonAnimationDuration}" />
+                                            Duration="0:0:0.1" />
                                         <!--  Todo: consider adding a highlight text (text-1-color) and animating that visibility as well  -->
                                     </Storyboard>
                                 </BeginStoryboard>
@@ -209,7 +208,7 @@
                                 Opacity="0"
                                 TextBlock.TextAlignment="Center"
                                 TextElement.FontWeight="Light"
-                                TextElement.FontSize="{StaticResource CalendarMonthButtonFontSize}" />
+                                TextElement.FontSize="12" />
                             <ContentPresenter
                                 x:Name="SelectedText"
                                 HorizontalAlignment="Center"
@@ -217,7 +216,7 @@
                                 Opacity="0"
                                 TextBlock.TextAlignment="Center"
                                 TextElement.FontWeight="Light"
-                                TextElement.FontSize="{StaticResource CalendarMonthButtonFontSize}"
+                                TextElement.FontSize="12"
                                 TextElement.Foreground="{DynamicResource CalciteUIForegroundBrandContrastBrush}" />
 
                         </Grid>
@@ -240,17 +239,17 @@
                                             Storyboard.TargetName="PushBackground"
                                             Storyboard.TargetProperty="Opacity"
                                             To="0.8"
-                                            Duration="{StaticResource commonAnimationDuration}" />
+                                            Duration="0:0:0.1" />
                                         <DoubleAnimation
                                             Storyboard.TargetName="HighlightText"
                                             Storyboard.TargetProperty="Opacity"
                                             To="1"
-                                            Duration="{StaticResource commonAnimationDuration}" />
+                                            Duration="0:0:0.1" />
                                         <DoubleAnimation
                                             Storyboard.TargetName="NormalText"
                                             Storyboard.TargetProperty="Opacity"
                                             To="0"
-                                            Duration="{StaticResource commonAnimationDuration}" />
+                                            Duration="0:0:0.1" />
                                     </Storyboard>
                                 </BeginStoryboard>
                             </Trigger.EnterActions>
@@ -261,17 +260,17 @@
                                             Storyboard.TargetName="PushBackground"
                                             Storyboard.TargetProperty="Opacity"
                                             To="0"
-                                            Duration="{StaticResource commonAnimationDuration}" />
+                                            Duration="0:0:0.1" />
                                         <DoubleAnimation
                                             Storyboard.TargetName="HighlightText"
                                             Storyboard.TargetProperty="Opacity"
                                             To="0"
-                                            Duration="{StaticResource commonAnimationDuration}" />
+                                            Duration="0:0:0.1" />
                                         <DoubleAnimation
                                             Storyboard.TargetName="NormalText"
                                             Storyboard.TargetProperty="Opacity"
                                             To="1"
-                                            Duration="{StaticResource commonAnimationDuration}" />
+                                            Duration="0:0:0.1" />
                                     </Storyboard>
                                 </BeginStoryboard>
                             </Trigger.ExitActions>
@@ -284,17 +283,17 @@
                                             Storyboard.TargetName="HighlightBackground"
                                             Storyboard.TargetProperty="Opacity"
                                             To="1"
-                                            Duration="{StaticResource commonAnimationDuration}" />
+                                            Duration="0:0:0.1" />
                                         <DoubleAnimation
                                             Storyboard.TargetName="HighlightText"
                                             Storyboard.TargetProperty="Opacity"
                                             To="1"
-                                            Duration="{StaticResource commonAnimationDuration}" />
+                                            Duration="0:0:0.1" />
                                         <DoubleAnimation
                                             Storyboard.TargetName="NormalText"
                                             Storyboard.TargetProperty="Opacity"
                                             To="0"
-                                            Duration="{StaticResource commonAnimationDuration}" />
+                                            Duration="0:0:0.1" />
                                     </Storyboard>
                                 </BeginStoryboard>
                             </Trigger.EnterActions>
@@ -305,17 +304,17 @@
                                             Storyboard.TargetName="HighlightBackground"
                                             Storyboard.TargetProperty="Opacity"
                                             To="0"
-                                            Duration="{StaticResource commonAnimationDuration}" />
+                                            Duration="0:0:0.1" />
                                         <DoubleAnimation
                                             Storyboard.TargetName="HighlightText"
                                             Storyboard.TargetProperty="Opacity"
                                             To="0"
-                                            Duration="{StaticResource commonAnimationDuration}" />
+                                            Duration="0:0:0.1" />
                                         <DoubleAnimation
                                             Storyboard.TargetName="NormalText"
                                             Storyboard.TargetProperty="Opacity"
                                             To="1"
-                                            Duration="{StaticResource commonAnimationDuration}" />
+                                            Duration="0:0:0.1" />
                                     </Storyboard>
                                 </BeginStoryboard>
                             </Trigger.ExitActions>
@@ -326,7 +325,7 @@
         </Setter>
     </Style>
     <!--  Button to go to the next or previous month or year.  -->
-    <ControlTemplate x:Key="NextPreviousButtonTemplate" TargetType="{x:Type Button}">
+    <ControlTemplate x:Key="CalciteCalendarItemStyle_NextPreviousButtonTemplate" TargetType="{x:Type Button}">
         <Grid
             x:Name="backgroundGrid"
             Background="{DynamicResource CalciteUIBackground1Brush}"
@@ -337,9 +336,9 @@
                 Opacity="0" />
             <Grid
                 x:Name="pathGrid"
-                Width="{StaticResource CalendarButtonInnerContainerWidth}"
-                Height="{StaticResource CalendarButtonInnerContainerHeight}"
-                Margin="{StaticResource CalendarButtonInnerContainerMargin}">
+                Width="16"
+                Height="16"
+                Margin="8,0,8,0">
                 <ContentPresenter />
             </Grid>
         </Grid>
@@ -362,7 +361,7 @@
                                 Storyboard.TargetName="HighlightBackground"
                                 Storyboard.TargetProperty="Opacity"
                                 To="1"
-                                Duration="{StaticResource commonAnimationDuration}" />
+                                Duration="0:0:0.1" />
                         </Storyboard>
                     </BeginStoryboard>
                 </MultiTrigger.EnterActions>
@@ -373,7 +372,7 @@
                                 Storyboard.TargetName="HighlightBackground"
                                 Storyboard.TargetProperty="Opacity"
                                 To="0"
-                                Duration="{StaticResource commonAnimationDuration}" />
+                                Duration="0:0:0.1" />
                         </Storyboard>
                     </BeginStoryboard>
                 </MultiTrigger.ExitActions>
@@ -382,7 +381,7 @@
     </ControlTemplate>
 
     <!--  Button to go up a level to the year or decade.  -->
-    <ControlTemplate x:Key="HeaderButtonTemplate" TargetType="{x:Type Button}">
+    <ControlTemplate x:Key="CalciteCalendarItemStyle_HeaderButtonTemplate" TargetType="{x:Type Button}">
         <Grid Background="Transparent" Cursor="{DynamicResource CalciteActionCursor}">
             <ContentPresenter
                 x:Name="buttonContent"
@@ -417,12 +416,12 @@
                                 Storyboard.TargetName="buttonContentHighlight"
                                 Storyboard.TargetProperty="Opacity"
                                 To="1"
-                                Duration="{StaticResource commonAnimationDuration}" />
+                                Duration="0:0:0.1" />
                             <DoubleAnimation
                                 Storyboard.TargetName="buttonContent"
                                 Storyboard.TargetProperty="Opacity"
                                 To="0"
-                                Duration="{StaticResource commonAnimationDuration}" />
+                                Duration="0:0:0.1" />
                         </Storyboard>
                     </BeginStoryboard>
                 </Trigger.EnterActions>
@@ -433,12 +432,12 @@
                                 Storyboard.TargetName="buttonContentHighlight"
                                 Storyboard.TargetProperty="Opacity"
                                 To="0"
-                                Duration="{StaticResource commonAnimationDuration}" />
+                                Duration="0:0:0.1" />
                             <DoubleAnimation
                                 Storyboard.TargetName="buttonContent"
                                 Storyboard.TargetProperty="Opacity"
                                 To="1"
-                                Duration="{StaticResource commonAnimationDuration}" />
+                                Duration="0:0:0.1" />
                         </Storyboard>
                     </BeginStoryboard>
                 </Trigger.ExitActions>
@@ -479,8 +478,8 @@
                 TextOptions.TextRenderingMode="Aliased" />
                         </DataTemplate>
                         <Style x:Key="pathButtonStyle" TargetType="{x:Type Path}">
-                            <Setter Property="Height" Value="{StaticResource CalendarButtonInnerPathHeight}" />
-                            <Setter Property="Width" Value="{StaticResource CalendarButtonInnerPathWidth}" />
+                            <Setter Property="Height" Value="8" />
+                            <Setter Property="Width" Value="5.41" />
                             <Setter Property="Fill" Value="{DynamicResource CalciteUIText3Brush}" />
                             <Setter Property="Stretch" Value="Uniform" />
                             <Setter Property="HorizontalAlignment" Value="Center" />
@@ -508,7 +507,7 @@
                                 Grid.Row="0"
                                 VerticalAlignment="Stretch"
                                 Focusable="False"
-                                Template="{StaticResource NextPreviousButtonTemplate}">
+                                Template="{StaticResource CalciteCalendarItemStyle_NextPreviousButtonTemplate}">
                                 <Path Data="{c:CalciteIconGeometry Icon=ChevronLeft, Scale=Small}" Style="{StaticResource pathButtonStyle}" />
                             </Button>
                             <!--  TODO - update sizes for different scales, themes  -->
@@ -522,7 +521,7 @@
                                 FontFamily="{TemplateBinding FontFamily}"
                                 FontWeight="{TemplateBinding FontWeight}"
                                 Foreground="{DynamicResource CalciteUIText1Brush}"
-                                Template="{StaticResource HeaderButtonTemplate}" />
+                                Template="{StaticResource CalciteCalendarItemStyle_HeaderButtonTemplate}" />
                             <Button
                                 x:Name="PART_NextButton"
                                 Grid.Row="0"
@@ -530,7 +529,7 @@
                                 Margin="0"
                                 VerticalAlignment="Stretch"
                                 Focusable="False"
-                                Template="{StaticResource NextPreviousButtonTemplate}">
+                                Template="{StaticResource CalciteCalendarItemStyle_NextPreviousButtonTemplate}">
                                 <Path Data="{c:CalciteIconGeometry Icon=ChevronRight, Scale=Small}" Style="{StaticResource pathButtonStyle}" />
                             </Button>
                             <Border
@@ -609,62 +608,7 @@
         <Setter Property="Margin" Value="0" />
     </Style>
 
-    <ControlTemplate x:Key="InnerCalendarTemplate" TargetType="{x:Type Calendar}">
-        <Border
-            x:Name="PART_Root"
-            Padding="0"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Stretch"
-            Background="{TemplateBinding Background}"
-            BorderBrush="{TemplateBinding BorderBrush}"
-            BorderThickness="{TemplateBinding BorderThickness}"
-            ClipToBounds="True"
-            CornerRadius="0">
-
-            <CalendarItem
-                x:Name="PART_CalendarItem"
-                Background="{TemplateBinding Background}"
-                Foreground="{TemplateBinding Foreground}"
-                Style="{TemplateBinding CalendarItemStyle}" />
-        </Border>
-    </ControlTemplate>
-    <ControlTemplate x:Key="InnerCalendarRoundedTemplate" TargetType="{x:Type Calendar}">
-        <StackPanel x:Name="PART_Root" HorizontalAlignment="Center">
-            <StackPanel.Effect>
-                <DropShadowEffect
-                    BlurRadius="8"
-                    Opacity="0.1"
-                    RenderingBias="Quality"
-                    ShadowDepth="4"
-                    Color="Black" />
-            </StackPanel.Effect>
-            <Border
-                Margin="8"
-                Background="{TemplateBinding BorderBrush}"
-                BorderBrush="{TemplateBinding BorderBrush}"
-                BorderThickness="0"
-                CornerRadius="4">
-
-                <Border
-                    Margin="1"
-                    Background="{TemplateBinding Background}"
-                    BorderBrush="{TemplateBinding BorderBrush}"
-                    BorderThickness="{TemplateBinding BorderThickness}"
-                    CornerRadius="4">
-
-                    <CalendarItem
-                        x:Name="PART_CalendarItem"
-                        Background="{TemplateBinding Background}"
-                        ClipToBounds="True"
-                        Foreground="{TemplateBinding Foreground}"
-                        Style="{TemplateBinding CalendarItemStyle}" />
-                </Border>
-            </Border>
-        </StackPanel>
-    </ControlTemplate>
-
     <Style x:Key="CalciteCalendarStyle" TargetType="{x:Type Calendar}">
-        <Setter Property="Template" Value="{StaticResource InnerCalendarTemplate}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="HorizontalAlignment" Value="Left" />
         <Setter Property="VerticalAlignment" Value="Top" />
@@ -676,6 +620,28 @@
         <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder3Brush}" />
         <Setter Property="OverridesDefaultStyle" Value="True" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Calendar}">
+                    <Border
+                      x:Name="PART_Root"
+                      Padding="0"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Stretch"
+                      Background="{TemplateBinding Background}"
+                      BorderBrush="{TemplateBinding BorderBrush}"
+                      BorderThickness="{TemplateBinding BorderThickness}"
+                      ClipToBounds="True"
+                      CornerRadius="0">
+                        <CalendarItem
+                           x:Name="PART_CalendarItem"
+                           Background="{TemplateBinding Background}"
+                           Foreground="{TemplateBinding Foreground}"
+                           Style="{TemplateBinding CalendarItemStyle}" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
         <Style.Triggers>
             <Trigger Property="ca:AttachedFormData.IsInForm" Value="True">
                 <Setter Property="Margin" Value="{DynamicResource FormChildMargin}" />
@@ -686,7 +652,42 @@
         x:Key="CalciteCalendarRoundStyle"
         BasedOn="{StaticResource CalciteCalendarStyle}"
         TargetType="{x:Type Calendar}">
-        <Setter Property="Template" Value="{StaticResource InnerCalendarRoundedTemplate}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Calendar}">
+                    <StackPanel x:Name="PART_Root" HorizontalAlignment="Center">
+                        <StackPanel.Effect>
+                            <DropShadowEffect
+                             BlurRadius="8"
+                             Opacity="0.1"
+                             RenderingBias="Quality"
+                             ShadowDepth="4"
+                             Color="Black" />
+                        </StackPanel.Effect>
+                        <Border
+                         Margin="8"
+                         Background="{TemplateBinding BorderBrush}"
+                         BorderBrush="{TemplateBinding BorderBrush}"
+                         BorderThickness="0"
+                         CornerRadius="4">
+                            <Border
+                             Margin="1"
+                             Background="{TemplateBinding Background}"
+                             BorderBrush="{TemplateBinding BorderBrush}"
+                             BorderThickness="{TemplateBinding BorderThickness}"
+                             CornerRadius="4">
+                                <CalendarItem
+                                 x:Name="PART_CalendarItem"
+                                 Background="{TemplateBinding Background}"
+                                 ClipToBounds="True"
+                                 Foreground="{TemplateBinding Foreground}"
+                                 Style="{TemplateBinding CalendarItemStyle}" />
+                            </Border>
+                        </Border>
+                    </StackPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
     </Style>
 
 </ResourceDictionary>

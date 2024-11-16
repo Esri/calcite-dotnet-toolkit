@@ -81,7 +81,7 @@
         </Setter>
     </Style>
 
-    <Style x:Key="TreeViewItemFocusVisual">
+    <Style x:Key="CalciteTreeViewItemFocusVisualStyle">
         <Setter Property="Control.Template">
             <Setter.Value>
                 <ControlTemplate>
@@ -97,10 +97,10 @@
         </Setter>
     </Style>
 
-    <Style x:Key="{x:Type TreeViewItem}" TargetType="{x:Type TreeViewItem}">
+    <Style x:Key="CalciteTreeViewItem" TargetType="{x:Type TreeViewItem}">
         <Setter Property="Cursor" Value="{DynamicResource CalciteActionCursor}" />
         <Setter Property="Margin" Value="0,7,0,0" />
-        <Setter Property="FocusVisualStyle" Value="{StaticResource TreeViewItemFocusVisual}" />
+        <Setter Property="FocusVisualStyle" Value="{StaticResource CalciteTreeViewItemFocusVisualStyle}" />
         <Setter Property="Foreground" Value="{DynamicResource CalciteUIText3Brush}" />
         <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
         <Setter Property="Template">

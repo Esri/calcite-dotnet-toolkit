@@ -102,23 +102,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style
-        x:Key="CalciteToolBarButtonAlt"
-        BasedOn="{StaticResource CalciteToolBarButtonBase}"
-        TargetType="{x:Type ButtonBase}">
-        <Setter Property="MinWidth" Value="32" />
-        <Setter Property="Height" Value="32" />
-        <Setter Property="Margin" Value="0" />
-        <Setter Property="HorizontalAlignment" Value="Stretch" />
-        <Setter Property="HorizontalContentAlignment" Value="Left" />
-        <Setter Property="ca:AttachedBrushes.BackgroundHover" Value="#40eaeaea" />
-        <Setter Property="ca:AttachedBrushes.ForegroundNormal" Value="{DynamicResource CalciteUIText3Brush}" />
-        <Setter Property="ca:AttachedBrushes.ForegroundHover" Value="{DynamicResource CalciteUIText1Brush}" />
-        <Setter Property="ca:AttachedBrushes.BackgroundNormal" Value="Transparent" />
-        <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteUIForegroundBrandContrastBrush}" />
-        <Setter Property="ca:AttachedBrushes.BackgroundPress" Value="{DynamicResource CalciteUIBrandBrush}" />
-    </Style>
-
+   
     <Style
         x:Key="{x:Static ToolBar.ButtonStyleKey}"
         BasedOn="{StaticResource CalciteToolBarButtonBase}"
@@ -347,7 +331,7 @@
         </Setter>
     </Style>
 
-    <Style x:Key="{x:Type ToolBarTray}" TargetType="{x:Type ToolBarTray}">
+    <Style x:Key="CalciteToolbarTray" TargetType="{x:Type ToolBarTray}">
         <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
     </Style>

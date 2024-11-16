@@ -15,7 +15,7 @@
             </BulletDecorator.Bullet>
             <ContentPresenter
                 x:Name="ContentPresenterPart"
-                Margin="{DynamicResource BulletControlInnerMargin}"
+                Margin="4,0,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Center"
                 RecognizesAccessKey="True" />

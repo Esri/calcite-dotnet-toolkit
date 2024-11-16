@@ -5,7 +5,6 @@
     >
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Styles/Fonts.xaml" />
-        <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Styles/Sizes.xaml" />
         <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Styles/Brushes.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
@@ -21,6 +20,8 @@
     <StaticResource x:Key="ButtonBorderBrushPointerOver" ResourceKey="CalciteUIBrandHoverBrush" />
     <StaticResource x:Key="ButtonBorderBrushPressed" ResourceKey="CalciteUIBrandPressBrush" />
     <!--<StaticResource x:Key="ButtonBorderBrushDisabled" ResourceKey="SystemControlDisabledTransparentBrush" />-->
+    <!--  Button padding should take button border offset into account (e.g. +1 to get desired effect of 8,4,8,4)  -->
+    <Thickness x:Key="CalciteButtonPadding">7,3,7,3</Thickness>
 
 
     <Style TargetType="Button" x:Key="CalciteButtonStyle" BasedOn="{StaticResource DefaultButtonStyle}">
@@ -28,7 +29,7 @@
         <Setter Property="VerticalAlignment" Value="Top" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
-        <Setter Property="Padding" Value="{StaticResource ButtonPadding}" />
+        <Setter Property="Padding" Value="{StaticResource CalciteButtonPadding}" />
         <Setter Property="MinHeight" Value="28" />
         <Setter Property="CornerRadius" Value="0" />
         <Setter Property="cal:CalciteResources.StyleResources">

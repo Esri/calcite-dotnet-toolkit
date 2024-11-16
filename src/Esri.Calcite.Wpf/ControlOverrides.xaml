@@ -7,6 +7,7 @@
     </ResourceDictionary.MergedDictionaries>
     <!-- Overrides the default styling of controls -->
     <Style BasedOn="{StaticResource CalciteTreeViewStyle}" TargetType="TreeView" />
+    <Style BasedOn="{StaticResource CalciteTreeViewItem}" TargetType="TreeViewItem" />
     <Style BasedOn="{StaticResource CalciteTextBoxStyle}" TargetType="TextBox" />
     <Style BasedOn="{StaticResource CalcitePasswordBoxStyle}" TargetType="PasswordBox" />
     <Style BasedOn="{StaticResource CalciteTabStyle}" TargetType="TabControl" />
@@ -39,4 +40,6 @@
     <Style BasedOn="{StaticResource CalciteListBoxStyle}" TargetType="ListBox" />
     <Style BasedOn="{StaticResource CalciteScrollBarStyle}" TargetType="{x:Type ScrollBar}"/>
     <Style BasedOn="{StaticResource CalciteScrollViewerStyle}" TargetType="{x:Type ScrollViewer}"/>
+    <Style BasedOn="{StaticResource CalciteComboboxItem}" TargetType="{x:Type ComboBoxItem}" />
+    <Style BasedOn="{StaticResource CalciteToolbarTray}" TargetType="{x:Type ToolBarTray}" />
 </ResourceDictionary>

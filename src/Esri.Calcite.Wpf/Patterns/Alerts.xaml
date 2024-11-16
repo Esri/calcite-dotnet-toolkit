@@ -2,8 +2,8 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="..\Controls\Buttons.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    <Thickness x:Key="AlertBorderThickness">0,2,0,0</Thickness>
-    <Style x:Key="AlertBorderBase" TargetType="GroupBox">
+
+    <Style x:Key="CalciteAlertBorderBase" TargetType="GroupBox">
         <Setter Property="OverridesDefaultStyle" Value="True" />
         <Setter Property="MinHeight" Value="64" />
         <Setter Property="Padding" Value="16,12,16,12" />
@@ -12,7 +12,7 @@
         <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="MinWidth" Value="80" />
         <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
-        <Setter Property="BorderThickness" Value="{StaticResource AlertBorderThickness}" />
+        <Setter Property="BorderThickness" Value="0,2,0,0" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="GroupBox">
@@ -57,25 +57,25 @@
     </Style>
     <Style
         x:Key="Pattern.Alert.Tint"
-        BasedOn="{StaticResource AlertBorderBase}"
+        BasedOn="{StaticResource CalciteAlertBorderBase}"
         TargetType="GroupBox">
         <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
     </Style>
     <Style
         x:Key="Pattern.Alert.Danger"
-        BasedOn="{StaticResource AlertBorderBase}"
+        BasedOn="{StaticResource CalciteAlertBorderBase}"
         TargetType="GroupBox">
         <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIDangerBrush}" />
     </Style>
     <Style
         x:Key="Pattern.Alert.Warning"
-        BasedOn="{StaticResource AlertBorderBase}"
+        BasedOn="{StaticResource CalciteAlertBorderBase}"
         TargetType="GroupBox">
         <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIWarningBrush}" />
     </Style>
     <Style
         x:Key="Pattern.Alert.Success"
-        BasedOn="{StaticResource AlertBorderBase}"
+        BasedOn="{StaticResource CalciteAlertBorderBase}"
         TargetType="GroupBox">
         <Setter Property="BorderBrush" Value="{DynamicResource CalciteUISuccessBrush}" />
     </Style>
