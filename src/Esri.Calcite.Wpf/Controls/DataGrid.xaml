@@ -30,7 +30,7 @@
         </Setter>
         <Setter Property="cm:GridHelpers.CheckBoxColumnStyle">
             <Setter.Value>
-                <Style BasedOn="{StaticResource CalciteCheckboxStyle}" TargetType="CheckBox">
+                <Style BasedOn="{StaticResource CalciteCheckBoxStyle}" TargetType="CheckBox">
                     <Setter Property="HorizontalAlignment" Value="Center" />
                 </Style>
             </Setter.Value>

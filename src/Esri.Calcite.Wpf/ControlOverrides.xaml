@@ -16,7 +16,7 @@
     <Style BasedOn="{StaticResource CalciteProgressBarStyle}" TargetType="ProgressBar" />
     <Style BasedOn="{StaticResource CalciteListViewStyle}" TargetType="ListView" />
     <Style BasedOn="{StaticResource CalciteComboBoxStyle}" TargetType="ComboBox" />
-    <Style BasedOn="{StaticResource CalciteCheckboxStyle}" TargetType="CheckBox" />
+    <Style BasedOn="{StaticResource CalciteCheckBoxStyle}" TargetType="CheckBox" />
     <Style BasedOn="{StaticResource CalciteCalendarStyle}" TargetType="Calendar" />
     <Style BasedOn="{StaticResource CalcitePrimaryButtonBaseStyle}" TargetType="Button" />
     <Style BasedOn="{StaticResource CalcitePrimaryButtonBaseStyle}" TargetType="ToggleButton" />

@@ -71,7 +71,7 @@
         </Setter>
     </Style>
 
-    <ControlTemplate x:Key="CalciteVerticalScrollBar" TargetType="{x:Type ScrollBar}">
+    <ControlTemplate x:Key="CalciteVerticalScrollBarTemplate" TargetType="{x:Type ScrollBar}">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition MaxHeight="16" />
@@ -113,7 +113,7 @@
         </Grid>
     </ControlTemplate>
 
-    <ControlTemplate x:Key="CalciteHorizontalScrollBar" TargetType="{x:Type ScrollBar}">
+    <ControlTemplate x:Key="CalciteHorizontalScrollBarTemplate" TargetType="{x:Type ScrollBar}">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition MaxWidth="18" />
@@ -162,12 +162,12 @@
             <Trigger Property="Orientation" Value="Horizontal">
                 <Setter Property="Width" Value="Auto" />
                 <Setter Property="Height" Value="16" />
-                <Setter Property="Template" Value="{StaticResource CalciteHorizontalScrollBar}" />
+                <Setter Property="Template" Value="{StaticResource CalciteHorizontalScrollBarTemplate}" />
             </Trigger>
             <Trigger Property="Orientation" Value="Vertical">
                 <Setter Property="Width" Value="16" />
                 <Setter Property="Height" Value="Auto" />
-                <Setter Property="Template" Value="{StaticResource CalciteVerticalScrollBar}" />
+                <Setter Property="Template" Value="{StaticResource CalciteVerticalScrollBarTemplate}" />
             </Trigger>
         </Style.Triggers>
     </Style>

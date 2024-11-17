@@ -111,7 +111,7 @@
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
-    <Style x:Key="CalciteCheckboxStyle" TargetType="{x:Type CheckBox}">
+    <Style x:Key="CalciteCheckBoxStyle" TargetType="{x:Type CheckBox}">
         <Setter Property="SnapsToDevicePixels" Value="true" />
         <Setter Property="OverridesDefaultStyle" Value="true" />
         <Setter Property="Cursor" Value="{DynamicResource CalciteActionCursor}" />
