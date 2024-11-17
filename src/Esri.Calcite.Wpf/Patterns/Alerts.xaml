@@ -56,25 +56,25 @@
         </Setter>
     </Style>
     <Style
-        x:Key="Pattern.Alert.Tint"
+        x:Key="CalciteBrandAlertGroupBoxStyle"
         BasedOn="{StaticResource CalciteAlertBorderBase}"
         TargetType="GroupBox">
         <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
     </Style>
     <Style
-        x:Key="Pattern.Alert.Danger"
+        x:Key="CalciteDangerAlertGroupBoxStyle"
         BasedOn="{StaticResource CalciteAlertBorderBase}"
         TargetType="GroupBox">
         <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIDangerBrush}" />
     </Style>
     <Style
-        x:Key="Pattern.Alert.Warning"
+        x:Key="CalciteWarningAlertGroupBoxStyle"
         BasedOn="{StaticResource CalciteAlertBorderBase}"
         TargetType="GroupBox">
         <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIWarningBrush}" />
     </Style>
     <Style
-        x:Key="Pattern.Alert.Success"
+        x:Key="CalciteSuccessAlertGroupBoxStyle"
         BasedOn="{StaticResource CalciteAlertBorderBase}"
         TargetType="GroupBox">
         <Setter Property="BorderBrush" Value="{DynamicResource CalciteUISuccessBrush}" />

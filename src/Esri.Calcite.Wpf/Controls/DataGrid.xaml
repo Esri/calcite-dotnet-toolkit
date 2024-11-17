@@ -295,7 +295,7 @@
     </Style>
 
     <!--  Style and template for the resize control on the DataGridColumnHeader.  -->
-    <Style x:Key="ColumnHeaderGripperStyle" TargetType="{x:Type Thumb}">
+    <Style x:Key="ColumnHeaderGripperThumbStyle" TargetType="{x:Type Thumb}">
         <Setter Property="Width" Value="8" />
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="Cursor" Value="SizeWE" />
@@ -330,11 +330,11 @@
                         <Thumb
                             x:Name="PART_LeftHeaderGripper"
                             HorizontalAlignment="Left"
-                            Style="{DynamicResource ColumnHeaderGripperStyle}" />
+                            Style="{DynamicResource ColumnHeaderGripperThumbStyle}" />
                         <Thumb
                             x:Name="PART_RightHeaderGripper"
                             HorizontalAlignment="Right"
-                            Style="{DynamicResource ColumnHeaderGripperStyle}" />
+                            Style="{DynamicResource ColumnHeaderGripperThumbStyle}" />
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>

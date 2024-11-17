@@ -175,7 +175,7 @@
     </Style>
 
     <!--  Style for the months of a year and years of a decade.  -->
-    <Style x:Key="CalendarButtonStyle" TargetType="CalendarButton">
+    <Style x:Key="CalciteCalendarButtonStyle" TargetType="CalendarButton">
         <Setter Property="HorizontalContentAlignment" Value="Center" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="Template">
@@ -614,7 +614,7 @@
         <Setter Property="VerticalAlignment" Value="Top" />
         <Setter Property="FontWeight" Value="Light" />
         <Setter Property="CalendarDayButtonStyle" Value="{StaticResource CalendarDayButtonStyleBase}" />
-        <Setter Property="CalendarButtonStyle" Value="{StaticResource CalendarButtonStyle}" />
+        <Setter Property="CalendarButtonStyle" Value="{StaticResource CalciteCalendarButtonStyle}" />
         <Setter Property="CalendarItemStyle" Value="{StaticResource CalciteCalendarItemStyle}" />
         <Setter Property="Foreground" Value="{DynamicResource CalciteUIText3Brush}" />
         <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />

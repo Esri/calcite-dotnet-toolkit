@@ -82,7 +82,7 @@
                             IsOpen="False"
                             Placement="Center"
                             PlacementTarget="{Binding ElementName=PART_CopyButton}">
-                            <GroupBox Header="Copied to clipboard!" Style="{DynamicResource Pattern.Alert.Success}" />
+                            <GroupBox Header="Copied to clipboard!" Style="{DynamicResource CalciteSuccessAlertGroupBoxStyle}" />
                         </Popup>
                     </Grid>
                 </ControlTemplate>

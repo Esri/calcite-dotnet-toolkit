@@ -7,7 +7,7 @@
         <!--<ResourceDictionary Source=".\Calendar.xaml" />-->
     </ResourceDictionary.MergedDictionaries>
     
-    <Style x:Key="DatePickerTextBoxButton" TargetType="Button">
+    <Style x:Key="CalciteDatePickerTextBoxButtonStyle" TargetType="Button">
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="ButtonBase">
@@ -47,7 +47,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <Style x:Key="DatePickerTextBoxBase" TargetType="DatePickerTextBox">
+    <Style x:Key="CalciteDatePickerTextBoxStyle" TargetType="DatePickerTextBox">
         <Setter Property="OverridesDefaultStyle" Value="True" />
         <Setter Property="Template">
             <Setter.Value>
@@ -105,7 +105,7 @@
                     Width="28"
                     Height="28"
                     Focusable="False"
-                    Style="{StaticResource DatePickerTextBoxButton}">
+                    Style="{StaticResource CalciteDatePickerTextBoxButtonStyle}">
                     <Path
                         x:Name="PathIcon"
                         Fill="{DynamicResource CalciteUIText1Brush}"
@@ -122,7 +122,7 @@
                     Padding="0"
                     HorizontalAlignment="Stretch"
                     Focusable="False"
-                    Style="{StaticResource DatePickerTextBoxBase}" />
+                    Style="{StaticResource CalciteDatePickerTextBoxStyle}" />
 
                 <Popup
                     x:Name="PART_Popup"

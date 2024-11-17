@@ -41,7 +41,7 @@
     </Style>
 
     <!--  Not an override but used by ComboBox template  -->
-    <Style x:Key="ComboBoxToggleButton" TargetType="ToggleButton">
+    <Style x:Key="CalciteComboBoxToggleButtonStyle" TargetType="ToggleButton">
         <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder3Brush}" />
         <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
         <Setter Property="BorderThickness" Value="1" />
@@ -154,7 +154,7 @@
                             Focusable="false"
                             Foreground="{TemplateBinding Foreground}"
                             IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
-                            Style="{StaticResource ComboBoxToggleButton}">
+                            Style="{StaticResource CalciteComboBoxToggleButtonStyle}">
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="Auto" />

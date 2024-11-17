@@ -5,7 +5,7 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="..\Shared\Fonts.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    <Style x:Key="ListBoxItemStyle" TargetType="ListBoxItem">
+    <Style x:Key="CalciteListBoxItemStyle" TargetType="ListBoxItem">
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="Padding" Value="8" />
         <Setter Property="Cursor" Value="{DynamicResource CalciteActionCursor}" />
@@ -64,7 +64,7 @@
         </Setter>
     </Style>
     <Style TargetType="ListBox" x:Key="CalciteListBoxStyle">
-        <Setter Property="ItemContainerStyle" Value="{StaticResource ListBoxItemStyle}" />
+        <Setter Property="ItemContainerStyle" Value="{StaticResource CalciteListBoxItemStyle}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="Margin" Value="0" />
         <Setter Property="VerticalAlignment" Value="Top" />

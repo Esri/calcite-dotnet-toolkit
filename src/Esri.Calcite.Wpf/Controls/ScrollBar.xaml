@@ -44,7 +44,7 @@
         </Setter>
     </Style>
 
-    <Style x:Key="ScrollBarThumb" TargetType="{x:Type Thumb}">
+    <Style x:Key="CalciteScrollBarThumbStyle" TargetType="{x:Type Thumb}">
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="OverridesDefaultStyle" Value="true" />
         <Setter Property="IsTabStop" Value="false" />
@@ -98,7 +98,7 @@
                         Background="{DynamicResource CalciteUIBackgroundBrush}"
                         BorderBrush="{DynamicResource CalciteUIBorder3Brush}"
                         Foreground="{DynamicResource CalciteUIBrandBrush}"
-                        Style="{StaticResource ScrollBarThumb}" />
+                        Style="{StaticResource CalciteScrollBarThumbStyle}" />
                 </Track.Thumb>
                 <Track.IncreaseRepeatButton>
                     <RepeatButton Command="ScrollBar.PageDownCommand" Style="{StaticResource ScrollBarPageButton}" />
@@ -140,7 +140,7 @@
                         Background="{DynamicResource CalciteUIBackgroundBrush}"
                         BorderBrush="{DynamicResource CalciteUIBorder3Brush}"
                         Foreground="{DynamicResource CalciteUIText1Brush}"
-                        Style="{StaticResource ScrollBarThumb}" />
+                        Style="{StaticResource CalciteScrollBarThumbStyle}" />
                 </Track.Thumb>
                 <Track.IncreaseRepeatButton>
                     <RepeatButton Command="ScrollBar.PageRightCommand" Style="{StaticResource ScrollBarPageButton}" />
