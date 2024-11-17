@@ -72,7 +72,7 @@
         <Setter Property="Template" Value="{StaticResource CalciteThumbTemplate}" />
     </Style>
 
-    <ControlTemplate x:Key="CalciteSliderVerticalTemplate" TargetType="{x:Type Slider}">
+    <ControlTemplate x:Key="CalciteVerticalSliderTemplate" TargetType="{x:Type Slider}">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />

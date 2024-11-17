@@ -97,7 +97,7 @@
         </Setter>
     </Style>
 
-    <Style x:Key="CalciteTreeViewItem" TargetType="{x:Type TreeViewItem}">
+    <Style x:Key="CalciteTreeViewItemStyle" TargetType="{x:Type TreeViewItem}">
         <Setter Property="Cursor" Value="{DynamicResource CalciteActionCursor}" />
         <Setter Property="Margin" Value="0,7,0,0" />
         <Setter Property="FocusVisualStyle" Value="{StaticResource CalciteTreeViewItemFocusVisualStyle}" />

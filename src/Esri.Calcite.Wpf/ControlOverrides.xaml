@@ -7,7 +7,7 @@
     </ResourceDictionary.MergedDictionaries>
     <!-- Overrides the default styling of controls -->
     <Style BasedOn="{StaticResource CalciteTreeViewStyle}" TargetType="TreeView" />
-    <Style BasedOn="{StaticResource CalciteTreeViewItem}" TargetType="TreeViewItem" />
+    <Style BasedOn="{StaticResource CalciteTreeViewItemStyle}" TargetType="TreeViewItem" />
     <Style BasedOn="{StaticResource CalciteTextBoxStyle}" TargetType="TextBox" />
     <Style BasedOn="{StaticResource CalcitePasswordBoxStyle}" TargetType="PasswordBox" />
     <Style BasedOn="{StaticResource CalciteTabControlStyle}" TargetType="TabControl" />
@@ -24,7 +24,7 @@
     <Style BasedOn="{StaticResource CalciteDatePickerStyle}" TargetType="DatePicker" />
     <Style BasedOn="{StaticResource CalciteStatusBarStyle}" TargetType="StatusBar" />
     <Style BasedOn="{StaticResource CalciteExpanderStyle}" TargetType="Expander" />
-    <Style BasedOn="{StaticResource CalciteToolTip}" TargetType="ToolTip" />
+    <Style BasedOn="{StaticResource CalciteToolTipStyle}" TargetType="ToolTip" />
     <Style BasedOn="{StaticResource CalciteDataGridCellStyle}" TargetType="DataGridCell" />
     <Style BasedOn="{StaticResource CalciteDataGridColumnHeaderStyle}" TargetType="{x:Type DataGridColumnHeader}" />
     <Style BasedOn="{StaticResource CalciteDataGridRowStyle}" TargetType="DataGridRow" />
@@ -32,7 +32,7 @@
     <Style BasedOn="{StaticResource CalciteDataGridStyle}" TargetType="DataGrid" />
     <Style BasedOn="{StaticResource CalciteContentPresenterStyle}" TargetType="ContentPresenter" />
     <!--<Style BasedOn="{StaticResource CalciteColorPickerStyle}" TargetType="calcite:CalciteColorPicker" />-->
-    <Style BasedOn="{StaticResource CalciteToolBar}" TargetType="ToolBar" />
+    <Style BasedOn="{StaticResource CalciteToolBarStyle}" TargetType="ToolBar" />
     <Style BasedOn="{StaticResource CalciteDocumentViewerStyle}" TargetType="DocumentViewer" />
     <Style BasedOn="{StaticResource CalciteStatusBarItemStyle}" TargetType="StatusBarItem" />
     <Style BasedOn="{StaticResource CalciteGroupBoxStyle}" TargetType="GroupBox" />
@@ -41,5 +41,5 @@
     <Style BasedOn="{StaticResource CalciteScrollBarStyle}" TargetType="{x:Type ScrollBar}"/>
     <Style BasedOn="{StaticResource CalciteScrollViewerStyle}" TargetType="{x:Type ScrollViewer}"/>
     <Style BasedOn="{StaticResource CalciteComboBoxItemStyle}" TargetType="{x:Type ComboBoxItem}" />
-    <Style BasedOn="{StaticResource CalciteToolbarTray}" TargetType="{x:Type ToolBarTray}" />
+    <Style BasedOn="{StaticResource CalciteToolBarTrayStyle}" TargetType="{x:Type ToolBarTray}" />
 </ResourceDictionary>

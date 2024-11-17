@@ -79,9 +79,9 @@ For a full list of Glyph Resource IDs refer to the sample apps and the [Calcite-
 - TextBlock: `CalciteTextBlockStyle`
 - DatePicker: `CalciteDatePickerStyle`
 - StatusBar: `CalciteStatusBarStyle`
-- Expander: `CalciteExpander`
-- ToolTip: `CalciteToolTip`
+- Expander: `CalciteExpanderStyle`
+- ToolTip: `CalciteToolTipStyle`
 - DataGrid: `CalciteDataGridStyle`
-- ToolBar: `CalciteToolBar`
+- ToolBar: `CalciteToolBarStyle`
 - DocumentViewer: `CalciteDocumentViewerStyle`
 - StatusBarItem: `CalciteStatusBarItemStyle`
