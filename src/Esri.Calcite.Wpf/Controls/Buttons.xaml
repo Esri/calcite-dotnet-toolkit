@@ -12,7 +12,7 @@
     <!--  Button padding should take button border offset into account (e.g. +1 to get desired effect of 8,4,8,4)  -->
     <Thickness x:Key="CalciteButtonPadding">7,0,7,0</Thickness>
     
-    <Style x:Key="InternalButtonBaseStyle" TargetType="ButtonBase">
+    <Style x:Key="CalciteCommonButtonBaseStyle" TargetType="ButtonBase">
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="VerticalAlignment" Value="Top" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
@@ -104,7 +104,7 @@
 
     <Style
         x:Key="CalcitePrimaryButtonBaseStyle"
-        BasedOn="{StaticResource InternalButtonBaseStyle}"
+        BasedOn="{StaticResource CalciteCommonButtonBaseStyle}"
         TargetType="ButtonBase">
         <Setter Property="ca:AttachedBrushes.BackgroundHover" Value="{DynamicResource CalciteUIBrandHoverBrush}" />
         <Setter Property="ca:AttachedBrushes.BackgroundNormal" Value="{DynamicResource CalciteUIBrandBrush}" />
@@ -118,7 +118,7 @@
     </Style>
     <Style
         x:Key="CalciteSecondaryButtonBaseStyle"
-        BasedOn="{StaticResource InternalButtonBaseStyle}"
+        BasedOn="{StaticResource CalciteCommonButtonBaseStyle}"
         TargetType="ButtonBase">
         <Setter Property="ca:AttachedBrushes.BackgroundHover" Value="Transparent" />
         <Setter Property="ca:AttachedBrushes.BackgroundNormal" Value="Transparent" />
@@ -132,7 +132,7 @@
     </Style>
     <Style
         x:Key="CalciteDangerButtonBaseStyle"
-        BasedOn="{StaticResource InternalButtonBaseStyle}"
+        BasedOn="{StaticResource CalciteCommonButtonBaseStyle}"
         TargetType="ButtonBase">
         <Setter Property="ca:AttachedBrushes.BackgroundHover" Value="{DynamicResource CalciteUIDangerHoverBrush}" />
         <Setter Property="ca:AttachedBrushes.BackgroundNormal" Value="{DynamicResource CalciteUIDangerBrush}" />
@@ -147,7 +147,7 @@
     </Style>
     <Style
         x:Key="CalciteDangerSecondaryButtonBaseStyle"
-        BasedOn="{StaticResource InternalButtonBaseStyle}"
+        BasedOn="{StaticResource CalciteCommonButtonBaseStyle}"
         TargetType="ButtonBase">
         <Setter Property="ca:AttachedBrushes.BackgroundHover" Value="Transparent" />
         <Setter Property="ca:AttachedBrushes.BackgroundNormal" Value="Transparent" />
@@ -162,7 +162,7 @@
     </Style>
     <Style
         x:Key="CalciteChromeButtonBaseStyle"
-        BasedOn="{StaticResource InternalButtonBaseStyle}"
+        BasedOn="{StaticResource CalciteCommonButtonBaseStyle}"
         TargetType="ButtonBase">
         <Setter Property="cm:AttachedBrushes.BackgroundHover" Value="{DynamicResource CalciteUIBackground2Brush}" />
         <Setter Property="cm:AttachedBrushes.BackgroundNormal" Value="{DynamicResource CalciteUIBackground3Brush}" />

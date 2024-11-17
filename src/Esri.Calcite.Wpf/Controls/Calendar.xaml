@@ -27,7 +27,7 @@
     </Style>
 
     <!--  Style for the days of a month.  -->
-    <Style x:Key="CalendarDayButtonStyleBase" TargetType="CalendarDayButton">
+    <Style x:Key="CalciteCalendarDayButtonStyle" TargetType="CalendarDayButton">
         <Setter Property="HorizontalContentAlignment" Value="Center" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="Template">
@@ -613,7 +613,7 @@
         <Setter Property="HorizontalAlignment" Value="Left" />
         <Setter Property="VerticalAlignment" Value="Top" />
         <Setter Property="FontWeight" Value="Light" />
-        <Setter Property="CalendarDayButtonStyle" Value="{StaticResource CalendarDayButtonStyleBase}" />
+        <Setter Property="CalendarDayButtonStyle" Value="{StaticResource CalciteCalendarDayButtonStyle}" />
         <Setter Property="CalendarButtonStyle" Value="{StaticResource CalciteCalendarButtonStyle}" />
         <Setter Property="CalendarItemStyle" Value="{StaticResource CalciteCalendarItemStyle}" />
         <Setter Property="Foreground" Value="{DynamicResource CalciteUIText3Brush}" />
