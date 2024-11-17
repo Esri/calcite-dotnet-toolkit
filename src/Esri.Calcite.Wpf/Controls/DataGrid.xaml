@@ -280,22 +280,8 @@
         </Setter>
     </Style>
 
-    <!--  Style and template for the resize control on the DataGridRowHeader.  -->
-    <Style x:Key="RowHeaderGripperStyle" TargetType="{x:Type Thumb}">
-        <Setter Property="Height" Value="8" />
-        <Setter Property="Background" Value="Transparent" />
-        <Setter Property="Cursor" Value="SizeNS" />
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type Thumb}">
-                    <Border Padding="{TemplateBinding Padding}" Background="{TemplateBinding Background}" />
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
-
     <!--  Style and template for the resize control on the DataGridColumnHeader.  -->
-    <Style x:Key="ColumnHeaderGripperThumbStyle" TargetType="{x:Type Thumb}">
+    <Style x:Key="CalciteDataGridColumnHeaderGripperThumbStyle" TargetType="{x:Type Thumb}">
         <Setter Property="Width" Value="8" />
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="Cursor" Value="SizeWE" />
@@ -330,11 +316,11 @@
                         <Thumb
                             x:Name="PART_LeftHeaderGripper"
                             HorizontalAlignment="Left"
-                            Style="{DynamicResource ColumnHeaderGripperThumbStyle}" />
+                            Style="{DynamicResource CalciteDataGridColumnHeaderGripperThumbStyle}" />
                         <Thumb
                             x:Name="PART_RightHeaderGripper"
                             HorizontalAlignment="Right"
-                            Style="{DynamicResource ColumnHeaderGripperThumbStyle}" />
+                            Style="{DynamicResource CalciteDataGridColumnHeaderGripperThumbStyle}" />
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>

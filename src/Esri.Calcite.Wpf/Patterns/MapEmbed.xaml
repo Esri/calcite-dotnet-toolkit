@@ -45,7 +45,7 @@
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
-    <Style x:Key="Patterns.Panel.OverMap" TargetType="GroupBox">
+    <Style x:Key="CalcitePanelGroupBoxStyle" TargetType="GroupBox">
         <Setter Property="HorizontalAlignment" Value="Right" />
         <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder3Brush}" />
@@ -55,26 +55,15 @@
         <Setter Property="MinWidth" Value="200" />
         <Setter Property="Template" Value="{StaticResource CalciteFormBodyGroupBoxTemplate}" />
     </Style>
-    <Style x:Key="Pattern.Panel.SideOfMap" TargetType="GroupBox">
-        <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder3Brush}" />
-        <Setter Property="HorizontalAlignment" Value="Right" />
+    <Style x:Key="CalcitePanelFormGroupBoxStyle" TargetType="GroupBox" BasedOn="{StaticResource CalcitePanelGroupBoxStyle}">
+        <Setter Property="ca:AttachedFormData.IsInForm" Value="True" />
+    </Style>
+    <Style
+        x:Key="CalciteSidePanelFormGroupBoxStyle"
+        BasedOn="{StaticResource CalcitePanelFormGroupBoxStyle}"
+        TargetType="GroupBox">
         <Setter Property="VerticalAlignment" Value="Stretch" />
-        <Setter Property="Margin" Value="0" />
         <Setter Property="Padding" Value="0" />
-        <Setter Property="MinWidth" Value="200" />
-        <Setter Property="Template" Value="{StaticResource CalciteFormBodyGroupBoxTemplate}" />
-    </Style>
-    <Style
-        x:Key="Pattern.Panel.SideOfMapWithForm"
-        BasedOn="{StaticResource Pattern.Panel.SideOfMap}"
-        TargetType="GroupBox">
-        <Setter Property="ca:AttachedFormData.IsInForm" Value="True" />
-    </Style>
-    <Style
-        x:Key="Patterns.Panel.OverMapWithForm"
-        BasedOn="{StaticResource Patterns.Panel.OverMap}"
-        TargetType="GroupBox">
-        <Setter Property="ca:AttachedFormData.IsInForm" Value="True" />
+        <Setter Property="Margin" Value="0" />
     </Style>
 </ResourceDictionary>

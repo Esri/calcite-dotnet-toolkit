@@ -4,7 +4,7 @@
         <ColumnDefinition Width="Auto" />
     </Grid.ColumnDefinitions>
     <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Beige" />
-    <GroupBox Grid.Column="1" MinHeight="800" VerticalAlignment="Stretch" Header="Map Options" Style="{DynamicResource Pattern.Panel.SideOfMapWithForm}">
+    <GroupBox Grid.Column="1" MinHeight="800" VerticalAlignment="Stretch" Header="Map Options" Style="{DynamicResource CalciteSidePanelFormGroupBoxStyle}">
         <StackPanel>
             <GroupBox Header="Scale" Style="{DynamicResource Pattern.Forms.LabelOnTop}">
                 <Slider />

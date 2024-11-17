@@ -1,5 +1,5 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <Style x:Key="ScrollBarLineButton" TargetType="{x:Type RepeatButton}">
+    <Style x:Key="CalciteScrollBarLineRepeatButtonStyle" TargetType="{x:Type RepeatButton}">
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="OverridesDefaultStyle" Value="true" />
         <Setter Property="Focusable" Value="false" />
@@ -30,7 +30,7 @@
         </Setter>
     </Style>
 
-    <Style x:Key="ScrollBarPageButton" TargetType="{x:Type RepeatButton}">
+    <Style x:Key="CalciteScrollBarPageRepeatButtonStyle" TargetType="{x:Type RepeatButton}">
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="OverridesDefaultStyle" Value="true" />
         <Setter Property="IsTabStop" Value="false" />
@@ -84,13 +84,13 @@
                 Command="ScrollBar.LineUpCommand"
                 Content="M 0 4 L 8 4 L 4 0 Z"
                 Cursor="{DynamicResource CalciteActionCursor}"
-                Style="{StaticResource ScrollBarLineButton}" />
+                Style="{StaticResource CalciteScrollBarLineRepeatButtonStyle}" />
             <Track
                 x:Name="PART_Track"
                 Grid.Row="1"
                 IsDirectionReversed="true">
                 <Track.DecreaseRepeatButton>
-                    <RepeatButton Command="ScrollBar.PageUpCommand" Style="{StaticResource ScrollBarPageButton}" />
+                    <RepeatButton Command="ScrollBar.PageUpCommand" Style="{StaticResource CalciteScrollBarPageRepeatButtonStyle}" />
                 </Track.DecreaseRepeatButton>
                 <Track.Thumb>
                     <Thumb
@@ -101,7 +101,7 @@
                         Style="{StaticResource CalciteScrollBarThumbStyle}" />
                 </Track.Thumb>
                 <Track.IncreaseRepeatButton>
-                    <RepeatButton Command="ScrollBar.PageDownCommand" Style="{StaticResource ScrollBarPageButton}" />
+                    <RepeatButton Command="ScrollBar.PageDownCommand" Style="{StaticResource CalciteScrollBarPageRepeatButtonStyle}" />
                 </Track.IncreaseRepeatButton>
             </Track>
             <RepeatButton
@@ -109,7 +109,7 @@
                 Command="ScrollBar.LineDownCommand"
                 Content="M 0 0 L 4 4 L 8 0 Z"
                 Cursor="Hand"
-                Style="{StaticResource ScrollBarLineButton}" />
+                Style="{StaticResource CalciteScrollBarLineRepeatButtonStyle}" />
         </Grid>
     </ControlTemplate>
 
@@ -126,13 +126,13 @@
                 Width="18"
                 Command="ScrollBar.LineLeftCommand"
                 Content="M 4 0 L 4 8 L 0 4 Z"
-                Style="{StaticResource ScrollBarLineButton}" />
+                Style="{StaticResource CalciteScrollBarLineRepeatButtonStyle}" />
             <Track
                 x:Name="PART_Track"
                 Grid.Column="1"
                 IsDirectionReversed="False">
                 <Track.DecreaseRepeatButton>
-                    <RepeatButton Command="ScrollBar.PageLeftCommand" Style="{StaticResource ScrollBarPageButton}" />
+                    <RepeatButton Command="ScrollBar.PageLeftCommand" Style="{StaticResource CalciteScrollBarPageRepeatButtonStyle}" />
                 </Track.DecreaseRepeatButton>
                 <Track.Thumb>
                     <Thumb
@@ -143,7 +143,7 @@
                         Style="{StaticResource CalciteScrollBarThumbStyle}" />
                 </Track.Thumb>
                 <Track.IncreaseRepeatButton>
-                    <RepeatButton Command="ScrollBar.PageRightCommand" Style="{StaticResource ScrollBarPageButton}" />
+                    <RepeatButton Command="ScrollBar.PageRightCommand" Style="{StaticResource CalciteScrollBarPageRepeatButtonStyle}" />
                 </Track.IncreaseRepeatButton>
             </Track>
             <RepeatButton
@@ -151,7 +151,7 @@
                 Width="18"
                 Command="ScrollBar.LineRightCommand"
                 Content="M 0 0 L 4 4 L 0 8 Z"
-                Style="{StaticResource ScrollBarLineButton}" />
+                Style="{StaticResource CalciteScrollBarLineRepeatButtonStyle}" />
         </Grid>
     </ControlTemplate>
 
