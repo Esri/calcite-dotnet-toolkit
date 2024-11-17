@@ -4,7 +4,7 @@
     xmlns:c="clr-namespace:Esri.Calcite.WPF"
     xmlns:ca="clr-namespace:Esri.Calcite.WPF.Helpers">
     
-    <ControlTemplate x:Key="CalciteCheckboxTemplate" TargetType="{x:Type CheckBox}">
+    <ControlTemplate x:Key="CalciteCheckBoxTemplate" TargetType="{x:Type CheckBox}">
         <BulletDecorator Background="Transparent" UseLayoutRounding="True">
             <BulletDecorator.Bullet>
                 <Border
@@ -116,7 +116,7 @@
         <Setter Property="OverridesDefaultStyle" Value="true" />
         <Setter Property="Cursor" Value="{DynamicResource CalciteActionCursor}" />
         <Setter Property="FocusVisualStyle" Value="{DynamicResource CheckBoxFocusVisual}" />
-        <Setter Property="Template" Value="{StaticResource CalciteCheckboxTemplate}" />
+        <Setter Property="Template" Value="{StaticResource CalciteCheckBoxTemplate}" />
         <Style.Triggers>
             <Trigger Property="ca:AttachedFormData.IsInForm" Value="True">
                 <Setter Property="Margin" Value="{DynamicResource FormChildMargin}" />

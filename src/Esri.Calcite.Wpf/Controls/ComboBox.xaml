@@ -8,7 +8,7 @@
     </ResourceDictionary.MergedDictionaries>
 
     <!--  Implicit control styles  -->
-    <Style x:Key="CalciteComboboxItem" TargetType="ComboBoxItem">
+    <Style x:Key="CalciteComboBoxItemStyle" TargetType="ComboBoxItem">
         <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="VerticalAlignment" Value="Stretch" />
         <Setter Property="OverridesDefaultStyle" Value="true" />
@@ -98,7 +98,7 @@
         </Setter>
     </Style>
     <!--  Not an override but used by ComboBox template  -->
-    <ControlTemplate x:Key="CalciteComboBoxInnerTextBoxStyle" TargetType="TextBox">
+    <ControlTemplate x:Key="CalciteComboBoxInnerTextBoxTemplate" TargetType="TextBox">
         <Border
             Name="Border"
             Padding="{TemplateBinding Padding}"
@@ -191,7 +191,7 @@
                             Foreground="{DynamicResource CalciteUIText1Brush}"
                             IsReadOnly="{TemplateBinding IsReadOnly}"
                             Style="{x:Null}"
-                            Template="{StaticResource CalciteComboBoxInnerTextBoxStyle}"
+                            Template="{StaticResource CalciteComboBoxInnerTextBoxTemplate}"
                             Visibility="Hidden" />
                         <Popup
                             Name="Popup"

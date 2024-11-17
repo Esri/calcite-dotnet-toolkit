@@ -45,7 +45,7 @@
             </Setter.Value>
         </Setter>
     </Style>
-    <ControlTemplate x:Key="CalciteTabTemplate" TargetType="{x:Type TabControl}">
+    <ControlTemplate x:Key="CalciteTabControlTemplate" TargetType="{x:Type TabControl}">
         <Grid KeyboardNavigation.TabNavigation="Local">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
@@ -111,11 +111,11 @@
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <Style x:Key="CalciteTabStyle" TargetType="{x:Type TabControl}">
+    <Style x:Key="CalciteTabControlStyle" TargetType="{x:Type TabControl}">
         <Setter Property="OverridesDefaultStyle" Value="True" />
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="ItemContainerStyle" Value="{StaticResource CalciteTabItemStyle}" />
-        <Setter Property="Template" Value="{StaticResource CalciteTabTemplate}" />
+        <Setter Property="Template" Value="{StaticResource CalciteTabControlTemplate}" />
     </Style>
 
 

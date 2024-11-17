@@ -37,7 +37,7 @@
     <!--<Style BasedOn="{StaticResource CalciteColorPickerStyle}" TargetType="calcite:CalciteColorPicker" />-->
     <Style
         x:Key="{x:Static StatusBar.SeparatorStyleKey}"
-        BasedOn="{StaticResource CalciteSeparator}"
+        BasedOn="{StaticResource CalciteSeparatorStyle}"
         TargetType="{x:Type Separator}" />
     
 

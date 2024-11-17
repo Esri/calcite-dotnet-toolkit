@@ -10,7 +10,7 @@
     </ResourceDictionary.MergedDictionaries>
 
     <!--  Style and template for the DataGrid.  -->
-    <Style x:Key="CalciteDataGrid" TargetType="DataGrid">
+    <Style x:Key="CalciteDataGridStyle" TargetType="DataGrid">
         <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder1Brush}" />
         <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />

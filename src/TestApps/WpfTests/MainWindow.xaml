@@ -16,7 +16,7 @@
         </Grid.RowDefinitions>
         <TabControl
             x:Name="ParentTabControl"
-            Style="{DynamicResource CalciteTabStyle}"
+            Style="{DynamicResource CalciteTabControlStyle}"
             TabStripPlacement="Left">
             <!--<TabItem Header="Windows">
                 <samples1:WindowsPage />

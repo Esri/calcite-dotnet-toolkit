@@ -9,7 +9,7 @@
         <ResourceDictionary Source="..\Colors\Brushes.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
-    <Style x:Key="CalciteDocumentViewer" TargetType="{x:Type DocumentViewer}">
+    <Style x:Key="CalciteDocumentViewerStyle" TargetType="{x:Type DocumentViewer}">
         <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
         <Setter Property="Background" Value="{DynamicResource CalciteUIBackgroundBrush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder1Brush}" />

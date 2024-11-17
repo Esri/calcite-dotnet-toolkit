@@ -24,7 +24,7 @@ namespace WpfTests.Samples
         {
             InitializeComponent();
             var dic = Application.Current.Resources.MergedDictionaries.OfType<CalciteResources>().First();
-            var brushes = dic.MergedDictionaries.OfType<ResourceDictionary>().Where(r => r.Source.OriginalString == @".\Colors\Brushes.xaml").First();           
+            var brushes = dic.MergedDictionaries.OfType<ResourceDictionary>().Where(r => r.Source.OriginalString == @".\Colors\Brushes.xaml").First();
             foreach (var key in brushes.Keys)
             {
                 icons.Add((string)key, brushes[key]);

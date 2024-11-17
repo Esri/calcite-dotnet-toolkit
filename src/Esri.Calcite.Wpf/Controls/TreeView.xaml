@@ -22,7 +22,7 @@
         </Border>
     </ControlTemplate>
 
-    <Style x:Key="CalciteExpandCollapseToggleStyle" TargetType="ToggleButton">
+    <Style x:Key="CalciteExpandCollapseToggleButtonStyle" TargetType="ToggleButton">
         <Setter Property="Focusable" Value="False" />
         <Setter Property="Template">
             <Setter.Value>
@@ -136,7 +136,7 @@
                             Background="Transparent"
                             ClickMode="Press"
                             IsChecked="{Binding IsExpanded, RelativeSource={RelativeSource TemplatedParent}}"
-                            Style="{StaticResource CalciteExpandCollapseToggleStyle}" />
+                            Style="{StaticResource CalciteExpandCollapseToggleButtonStyle}" />
                         <Border
                             x:Name="Bd"
                             Grid.Column="1"

@@ -32,7 +32,7 @@
         </Setter>
         <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
     </Style>
-    <Style x:Key="CalcitePanelGroupBox" TargetType="GroupBox">
+    <Style x:Key="CalcitePanelGroupBoxStyle" TargetType="GroupBox">
         <Setter Property="Template" >
             <Setter.Value>
                 <ControlTemplate TargetType="GroupBox">

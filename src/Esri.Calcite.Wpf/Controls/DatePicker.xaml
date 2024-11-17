@@ -143,7 +143,7 @@
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
-    <Style x:Key="CalciteDatePicker" TargetType="DatePicker">
+    <Style x:Key="CalciteDatePickerStyle" TargetType="DatePicker">
         <Setter Property="OverridesDefaultStyle" Value="True" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="BorderThickness" Value="1" />
@@ -156,7 +156,7 @@
         <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder2Brush}" />
         <Setter Property="Template" Value="{StaticResource CalciteDatePickerTemplate}" />
 
-        <Setter Property="CalendarStyle" Value="{StaticResource CalciteCalendarRoundStyle}" />
+        <Setter Property="CalendarStyle" Value="{StaticResource CalciteRoundCalendarStyle}" />
         <Style.Triggers>
             <Trigger Property="ca:AttachedFormData.IsInForm" Value="True">
                 <Setter Property="Margin" Value="{DynamicResource FormChildMargin}" />
