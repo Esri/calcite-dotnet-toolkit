@@ -62,7 +62,9 @@ For a full list of Glyph Resource IDs refer to the sample apps and the [Calcite-
 
 ## Control styles
 
-- Buttons: `CalcitePrimaryButtonStyle`, `CalciteSecondaryButtonStyle`, `CalciteDangerButtonStyle`, `CalciteDangerSecondaryButtonStyle`
+List of default control styles. These styles are applied implicitly unless implicit styles are disabled.
+
+- Button: `CalcitePrimaryButtonBaseStyle` 
 - TreeView: `CalciteTreeViewStyle`
 - TextBox: `CalciteTextBoxStyle`
 - PasswordBox: `CalcitePasswordBoxStyle`
@@ -85,3 +87,20 @@ For a full list of Glyph Resource IDs refer to the sample apps and the [Calcite-
 - ToolBar: `CalciteToolBarStyle`
 - DocumentViewer: `CalciteDocumentViewerStyle`
 - StatusBarItem: `CalciteStatusBarItemStyle`
+
+| Style | Target Type | Description |
+| --- | --- | --- | --- |
+| `CalcitePrimaryButtonStyle` | `ButtonBase` | Primary button style |
+| `CalciteSecondaryButtonBaseStyle` | `ButtonBase` | Secondary button style |
+| `CalciteDangerButtonBaseStyle` | `ButtonBase` | Danger button style |
+| `CalciteDangerSecondaryButtonBaseStyle` | `ButtonBase` | Danger secondary button style |
+| `CalciteFormBorderStyle` | `Border` |   |
+| `CalciteFormExpanderStyle` | `Expander` |   |
+| `CalciteBrandAlertGroupBoxStyle` | `GroupBox` |   |
+| `CalciteDangerAlertGroupBoxStyle` | `GroupBox` |   |
+| `CalciteLabeledGroupBoxStyle` | `GroupBox` |   |
+| `CalciteSidePanelFormGroupBoxStyle` | `GroupBox` |   |
+| `CalciteSuccessAlertGroupBoxStyle` | `GroupBox` |   |
+| `CalciteWarningAlertGroupBoxStyle` | `GroupBox` |   |
+| `CalciteActionPadToolBarStyle` | `Toolbar` |   |
+| `CalciteVerticalToolBarStyle` | `Toolbar` |   |
