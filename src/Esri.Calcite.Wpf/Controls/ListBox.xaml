@@ -72,7 +72,7 @@
         <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder3Brush}" />
         <Style.Triggers>
             <Trigger Property="ca:AttachedFormData.IsInForm" Value="True">
-                <Setter Property="Margin" Value="{DynamicResource FormChildMargin}" />
+                <Setter Property="Margin" Value="{DynamicResource CalciteFormMargin}" />
             </Trigger>
         </Style.Triggers>
     </Style>

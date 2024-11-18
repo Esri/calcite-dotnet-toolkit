@@ -7,7 +7,7 @@
         <ResourceDictionary Source="..\Shared\Fonts.xaml" />
         <ResourceDictionary Source="..\Shared\Sizes.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    <Style x:Key="CalciteCalendarDateHaloBase" TargetType="Rectangle">
+    <Style x:Key="CalciteCalendarDateRectangleStyle" TargetType="Rectangle">
         <Setter Property="RadiusX" Value="12" />
         <Setter Property="RadiusY" Value="12" />
         <Setter Property="Width" Value="24" />
@@ -17,8 +17,8 @@
         <Setter Property="Opacity" Value="0" />
     </Style>
     <Style
-        x:Key="CalciteCalendarMonthHaloBase"
-        BasedOn="{StaticResource CalciteCalendarDateHaloBase}"
+        x:Key="CalciteCalendarMonthRectangleStyle"
+        BasedOn="{StaticResource CalciteCalendarDateRectangleStyle}"
         TargetType="Rectangle">
         <Setter Property="Width" Value="42" />
         <Setter Property="Height" Value="42" />
@@ -39,16 +39,16 @@
                             x:Name="TodayBackground"
                             Fill="{DynamicResource CalciteUIBrandPressBrush}"
                             Opacity="0"
-                            Style="{StaticResource CalciteCalendarDateHaloBase}" />
+                            Style="{StaticResource CalciteCalendarDateRectangleStyle}" />
                         <Rectangle
                             x:Name="HighlightBackground"
                             Fill="{DynamicResource CalciteUIBackground2Brush}"
-                            Style="{StaticResource CalciteCalendarDateHaloBase}" />
+                            Style="{StaticResource CalciteCalendarDateRectangleStyle}" />
                         <Rectangle
                             x:Name="SelectedBackground"
                             Fill="{DynamicResource CalciteUIBrandBrush}"
-                            Style="{StaticResource CalciteCalendarDateHaloBase}" />
-                        <Rectangle x:Name="Blackout" Style="{StaticResource CalciteCalendarDateHaloBase}" />
+                            Style="{StaticResource CalciteCalendarDateRectangleStyle}" />
+                        <Rectangle x:Name="Blackout" Style="{StaticResource CalciteCalendarDateRectangleStyle}" />
                         <!--  Date text  -->
                         <Grid x:Name="IsActiveWrapper">
                             <TextBlock
@@ -76,7 +76,7 @@
                             x:Name="DayButtonFocusVisual"
                             Fill="{DynamicResource CalciteUIBrandBrush}"
                             IsHitTestVisible="false"
-                            Style="{StaticResource CalciteCalendarDateHaloBase}"
+                            Style="{StaticResource CalciteCalendarDateRectangleStyle}"
                             Visibility="Collapsed" />
                     </Grid>
                     <ControlTemplate.Triggers>
@@ -185,15 +185,15 @@
                         <Rectangle
                             x:Name="HighlightBackground"
                             Fill="{DynamicResource CalciteUIBackground3Brush}"
-                            Style="{StaticResource CalciteCalendarMonthHaloBase}" />
+                            Style="{StaticResource CalciteCalendarMonthRectangleStyle}" />
                         <Rectangle
                             x:Name="PushBackground"
                             Fill="{DynamicResource CalciteUIBrandPressBrush}"
-                            Style="{StaticResource CalciteCalendarMonthHaloBase}" />
+                            Style="{StaticResource CalciteCalendarMonthRectangleStyle}" />
                         <Rectangle
                             x:Name="SelectedBackground"
                             Fill="{DynamicResource CalciteUIBrandBrush}"
-                            Style="{StaticResource CalciteCalendarMonthHaloBase}" />
+                            Style="{StaticResource CalciteCalendarMonthRectangleStyle}" />
                         <Grid x:Name="IsActiveWrapper">
                             <ContentPresenter
                                 x:Name="NormalText"
@@ -644,7 +644,7 @@
         </Setter>
         <Style.Triggers>
             <Trigger Property="ca:AttachedFormData.IsInForm" Value="True">
-                <Setter Property="Margin" Value="{DynamicResource FormChildMargin}" />
+                <Setter Property="Margin" Value="{DynamicResource CalciteFormMargin}" />
             </Trigger>
         </Style.Triggers>
     </Style>

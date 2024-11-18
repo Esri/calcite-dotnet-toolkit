@@ -3,6 +3,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:system="clr-namespace:System;assembly=mscorlib">
     <!--  Forms Pattern: 8px space between controls, 16px space around edges  -->
-    <Thickness x:Key="FormChildMargin">0,0,4,4</Thickness>
-    <Thickness x:Key="FormParentPadding">8,8,4,4</Thickness>
+    <Thickness x:Key="CalciteFormMargin">0,0,4,4</Thickness>
+    <Thickness x:Key="CalciteFormPadding">8,8,4,4</Thickness>
 </ResourceDictionary>

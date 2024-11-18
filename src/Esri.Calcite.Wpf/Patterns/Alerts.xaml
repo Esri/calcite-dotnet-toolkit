@@ -3,7 +3,7 @@
         <ResourceDictionary Source="..\Controls\Buttons.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
-    <Style x:Key="CalciteAlertBorderBase" TargetType="GroupBox">
+    <Style x:Key="CalciteAlertBaseBorderStyle" TargetType="GroupBox">
         <Setter Property="OverridesDefaultStyle" Value="True" />
         <Setter Property="MinHeight" Value="64" />
         <Setter Property="Padding" Value="16,12,16,12" />
@@ -57,25 +57,25 @@
     </Style>
     <Style
         x:Key="CalciteBrandAlertGroupBoxStyle"
-        BasedOn="{StaticResource CalciteAlertBorderBase}"
+        BasedOn="{StaticResource CalciteAlertBaseBorderStyle}"
         TargetType="GroupBox">
         <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
     </Style>
     <Style
         x:Key="CalciteDangerAlertGroupBoxStyle"
-        BasedOn="{StaticResource CalciteAlertBorderBase}"
+        BasedOn="{StaticResource CalciteAlertBaseBorderStyle}"
         TargetType="GroupBox">
         <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIDangerBrush}" />
     </Style>
     <Style
         x:Key="CalciteWarningAlertGroupBoxStyle"
-        BasedOn="{StaticResource CalciteAlertBorderBase}"
+        BasedOn="{StaticResource CalciteAlertBaseBorderStyle}"
         TargetType="GroupBox">
         <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIWarningBrush}" />
     </Style>
     <Style
         x:Key="CalciteSuccessAlertGroupBoxStyle"
-        BasedOn="{StaticResource CalciteAlertBorderBase}"
+        BasedOn="{StaticResource CalciteAlertBaseBorderStyle}"
         TargetType="GroupBox">
         <Setter Property="BorderBrush" Value="{DynamicResource CalciteUISuccessBrush}" />
     </Style>

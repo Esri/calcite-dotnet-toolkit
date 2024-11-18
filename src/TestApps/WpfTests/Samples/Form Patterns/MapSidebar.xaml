@@ -6,10 +6,10 @@
     <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Beige" />
     <GroupBox Grid.Column="1" MinHeight="800" VerticalAlignment="Stretch" Header="Map Options" Style="{DynamicResource CalciteSidePanelFormGroupBoxStyle}">
         <StackPanel>
-            <GroupBox Header="Scale" Style="{DynamicResource Pattern.Forms.LabelOnTop}">
+            <GroupBox Header="Scale" Style="{DynamicResource CalciteLabeledGroupBoxStyle}">
                 <Slider />
             </GroupBox>
-            <GroupBox Header="Basemap" Style="{DynamicResource Pattern.Forms.LabelOnTop}">
+            <GroupBox Header="Basemap" Style="{DynamicResource CalciteLabeledGroupBoxStyle}">
                 <StackPanel>
                     <RadioButton Content="Streets" />
                     <RadioButton Content="Imagery" />

@@ -60,7 +60,7 @@
         <Setter Property="Template" Value="{StaticResource CalciteRadioButtonTemplate}" />
         <Style.Triggers>
             <Trigger Property="ca:AttachedFormData.IsInForm" Value="True">
-                <Setter Property="Margin" Value="{DynamicResource FormChildMargin}" />
+                <Setter Property="Margin" Value="{DynamicResource CalciteFormMargin}" />
             </Trigger>
         </Style.Triggers>
     </Style>

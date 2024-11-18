@@ -2,10 +2,10 @@
     <Border MinWidth="400" MinHeight="400" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Beige" />
     <GroupBox Header="Map Options" Style="{DynamicResource CalcitePanelFormGroupBoxStyle}">
         <StackPanel>
-            <GroupBox Header="Scale" Style="{DynamicResource Pattern.Forms.LabelOnTop}">
+            <GroupBox Header="Scale" Style="{DynamicResource CalciteLabeledGroupBoxStyle}">
                 <Slider />
             </GroupBox>
-            <Expander Header="Item title" Style="{DynamicResource ExpanderWithForm}">
+            <Expander Header="Item title" Style="{DynamicResource CalciteFormExpanderStyle}">
                 <StackPanel>
                     <RadioButton Content="Streets" />
                     <RadioButton Content="Imagery" />
@@ -15,7 +15,7 @@
                     <CheckBox Content="Enable phasers" />
                 </StackPanel>
             </Expander>
-            <GroupBox Header="Basemap" Style="{DynamicResource Pattern.Forms.LabelOnTop}">
+            <GroupBox Header="Basemap" Style="{DynamicResource CalciteLabeledGroupBoxStyle}">
                 <StackPanel>
                     <RadioButton Content="Streets" />
                     <RadioButton Content="Imagery" />

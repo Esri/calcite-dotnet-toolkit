@@ -3,7 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:ca="clr-namespace:Esri.Calcite.WPF.Helpers">
 
-    <Style x:Key="Pattern.Forms.LabelOnTop" TargetType="GroupBox">
+    <Style x:Key="CalciteLabeledGroupBoxStyle" TargetType="GroupBox">
         <Setter Property="Margin" Value="0" />
         <Setter Property="Template">
             <Setter.Value>
@@ -38,13 +38,13 @@
         </Setter>
         <Style.Triggers>
             <Trigger Property="ca:AttachedFormData.IsInForm" Value="True">
-                <!--<Setter Property="Margin" Value="{DynamicResource FormChildMargin}" />-->
+                <!--<Setter Property="Margin" Value="{DynamicResource CalciteFormMargin}" />-->
             </Trigger>
         </Style.Triggers>
     </Style>
 
-    <Style x:Key="Pattern.Forms.Container" TargetType="Border">
-        <Setter Property="Padding" Value="{DynamicResource FormParentPadding}" />
+    <Style x:Key="CalciteFormBorderStyle" TargetType="Border">
+        <Setter Property="Padding" Value="{DynamicResource CalciteFormPadding}" />
         <Setter Property="ca:AttachedFormData.IsInForm" Value="True" />
     </Style>
 

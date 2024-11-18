@@ -41,7 +41,7 @@
                 <Setter TargetName="bd_header" Property="Visibility" Value="Collapsed" />
             </Trigger>
             <Trigger Property="ca:AttachedFormData.IsInForm" Value="True">
-                <Setter TargetName="bd_body" Property="Padding" Value="{DynamicResource FormParentPadding}" />
+                <Setter TargetName="bd_body" Property="Padding" Value="{DynamicResource CalciteFormPadding}" />
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>

@@ -77,7 +77,7 @@
                 <Setter Property="Background" Value="{DynamicResource CalciteUIBackground2Brush}" />
             </Trigger>
             <Trigger Property="ca:AttachedFormData.IsInForm" Value="True">
-                <Setter Property="Margin" Value="{DynamicResource FormChildMargin}" />
+                <Setter Property="Margin" Value="{DynamicResource CalciteFormMargin}" />
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -147,7 +147,7 @@
                 </MultiTrigger.Setters>
             </MultiTrigger>
             <Trigger Property="ca:AttachedFormData.IsInForm" Value="True">
-                <Setter Property="Margin" Value="{DynamicResource FormChildMargin}" />
+                <Setter Property="Margin" Value="{DynamicResource CalciteFormMargin}" />
             </Trigger>
         </Style.Triggers>
     </Style>

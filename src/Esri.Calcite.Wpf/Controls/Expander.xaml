@@ -125,15 +125,15 @@
         </Setter>
         <Style.Triggers>
             <Trigger Property="ca:AttachedFormData.IsInForm" Value="True">
-                <Setter Property="Margin" Value="{DynamicResource FormChildMargin}" />
+                <Setter Property="Margin" Value="{DynamicResource CalciteFormMargin}" />
             </Trigger>
         </Style.Triggers>
     </Style>
     <Style
-        x:Key="ExpanderWithForm"
+        x:Key="CalciteFormExpanderStyle"
         BasedOn="{StaticResource CalciteExpanderStyle}"
         TargetType="Expander">
-        <Setter Property="Padding" Value="{DynamicResource FormParentPadding}" />
+        <Setter Property="Padding" Value="{DynamicResource CalciteFormPadding}" />
         <Setter Property="ca:AttachedFormData.IsInForm" Value="True" />
     </Style>
 </ResourceDictionary>
