@@ -7,6 +7,9 @@ using System.Windows;
 
 namespace Esri.Calcite.WPF.Helpers
 {
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+    [System.ComponentModel.Browsable(false)]
+    [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
     public static class AttachedFormData
     {
         public static bool GetIsInForm(DependencyObject obj) => (bool)obj.GetValue(IsInFormProperty);
@@ -15,4 +18,5 @@ namespace Esri.Calcite.WPF.Helpers
         public static readonly DependencyProperty IsInFormProperty =
             DependencyProperty.RegisterAttached("IsInForm", typeof(bool), typeof(AttachedFormData), new FrameworkPropertyMetadata(false, FrameworkPropertyMetadataOptions.Inherits));
     }
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
 }

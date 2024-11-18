@@ -22,6 +22,9 @@ namespace Esri.Calcite.WPF
         private readonly WeakEventListener<CalciteResources, object, object, Microsoft.Win32.UserPreferenceChangingEventArgs> userPreferenceHandler;
         private readonly Dispatcher _CurrentDispatcher;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CalciteResources"/> class.
+        /// </summary>
         public CalciteResources()
         {
             userPreferenceHandler = new WeakEventListener<CalciteResources, object, object, Microsoft.Win32.UserPreferenceChangingEventArgs>(this, null);
@@ -43,6 +46,9 @@ namespace Esri.Calcite.WPF
 
         private AppTheme m_Theme;
 
+        /// <summary>
+        /// Gets or sets the theme for the resources.
+        /// </summary>
         public AppTheme Theme
         {
             get { return m_Theme; }
@@ -108,10 +114,23 @@ namespace Esri.Calcite.WPF
 
     }
 
+    /// <summary>
+    /// Theme for the application
+    /// </summary>
+    /// <seealso cref="CalciteResources.Theme"/>
     public enum AppTheme
     {
+        /// <summary>
+        /// Defaults to the system theme
+        /// </summary>
         Default,
+        /// <summary>
+        /// Light theme
+        /// </summary>
         Light,
+        /// <summary>
+        /// Dark theme
+        /// </summary>
         Dark
     }
 }

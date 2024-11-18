@@ -1,5 +1,4 @@
-﻿using System;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
 using System.Windows;
@@ -7,6 +6,9 @@ using System.Windows.Media;
 
 namespace Esri.Calcite.WPF.Helpers
 {
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+    [System.ComponentModel.Browsable(false)]
+    [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
     public static class Calcite
     {
         [EditorBrowsable(EditorBrowsableState.Never)]
@@ -52,4 +54,5 @@ namespace Esri.Calcite.WPF.Helpers
             }
         }
     }
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
 }

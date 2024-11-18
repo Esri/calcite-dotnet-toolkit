@@ -14,10 +14,17 @@ namespace Esri.Calcite.WPF
     [MarkupExtensionReturnType(typeof(Geometry))]
     public class CalciteIconGeometryExtension : StaticResourceExtension
     {
+        /// <summary>
+        /// Gets or sets the Icon to convert to a <see cref="Geometry"/>.
+        /// </summary>
         public CalciteIcon Icon { get; set; }
 
+        /// <summary>
+        /// Gets or sets the icon scale / detail.
+        /// </summary>
         public CalciteIconScale Scale { get; set; } = CalciteIconScale.Small;
 
+        /// <inheritdoc />
         public override object? ProvideValue(IServiceProvider serviceProvider)
         {
             var font = Scale switch

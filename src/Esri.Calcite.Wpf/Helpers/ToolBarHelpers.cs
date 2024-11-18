@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 
 namespace Esri.Calcite.WPF.Helpers
 {
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+    [System.ComponentModel.Browsable(false)]
+    [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
     public static class ToolBarHelpers
     {
         public static bool GetIsExpanded(DependencyObject obj) => (bool)obj.GetValue(IsExpandedProperty);
@@ -21,4 +19,5 @@ namespace Esri.Calcite.WPF.Helpers
         public static readonly DependencyProperty ShowExpanderProperty =
             DependencyProperty.RegisterAttached("ShowExpander", typeof(bool), typeof(ToolBarHelpers), new FrameworkPropertyMetadata(false));
     }
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
 }

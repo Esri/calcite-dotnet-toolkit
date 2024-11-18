@@ -17,10 +17,14 @@ namespace Esri.Calcite.WPF
     [MarkupExtensionReturnType(typeof(string))]
     public class CalciteIconGlyphExtension : StaticResourceExtension
     {
+        /// <summary>
+        /// Gets or sets the Icon to convert to a <see cref="string"/> Glyph.
+        /// </summary>
         public CalciteIcon? Icon { get; set; }
 
         private static SolidColorBrush DefaultBrush = new SolidColorBrush(Colors.Black);
 
+        /// <inheritdoc />
         public override object? ProvideValue(IServiceProvider serviceProvider)
         {
             if (Icon is null)

@@ -1,15 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Media;
 
 namespace Esri.Calcite.WPF.Helpers
 {
+    /// <summary>
+    /// A set of attached properties for brushes that are used to control style behaviors in the controls.
+    /// </summary>
+    [System.ComponentModel.Browsable(false)]
+    [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
     public static class AttachedBrushes
     {
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
         public static Brush GetForegroundNormal(DependencyObject obj) => (Brush)obj.GetValue(ForegroundNormalProperty);
         public static void SetForegroundNormal(DependencyObject obj, Brush value) => obj.SetValue(ForegroundNormalProperty, value);
 
@@ -55,5 +56,6 @@ namespace Esri.Calcite.WPF.Helpers
 
         public static readonly DependencyProperty BorderPressProperty =
             DependencyProperty.RegisterAttached("BorderPress", typeof(Brush), typeof(AttachedBrushes), new FrameworkPropertyMetadata(null, FrameworkPropertyMetadataOptions.Inherits));
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
     }
 }

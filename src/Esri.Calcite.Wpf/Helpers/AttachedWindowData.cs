@@ -7,6 +7,9 @@ using System.Windows;
 
 namespace Esri.Calcite.WPF.Helpers
 {
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+    [System.ComponentModel.Browsable(false)]
+    [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
     public static class AttachedWindowData
     {
         public static FrameworkElement? GetWindowTitleBarCenteredInset (DependencyObject obj) => obj.GetValue(WindowTitleBarCenteredInsetProperty) as FrameworkElement;
@@ -37,4 +40,5 @@ namespace Esri.Calcite.WPF.Helpers
         public static readonly DependencyProperty ShowNoProperty =
             DependencyProperty.RegisterAttached("ShowNo", typeof(bool), typeof(AttachedWindowData), new FrameworkPropertyMetadata(false, FrameworkPropertyMetadataOptions.OverridesInheritanceBehavior));
     }
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
 }

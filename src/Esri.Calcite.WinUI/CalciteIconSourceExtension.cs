@@ -12,14 +12,27 @@ namespace Esri.Calcite.WinUI
     [MarkupExtensionReturnType(ReturnType = typeof(CalciteFontIconSource))]
     public partial class CalciteIconSourceExtension : MarkupExtension
     {
+        /// <summary>
+        /// Gets or sets the Icon to convert to a <see cref="CalciteFontIconSource"/>.
+        /// </summary>
         public CalciteIcon Icon { get; set; }
 
+        /// <summary>
+        /// Gets or sets the brush to use for the icon.
+        /// </summary>
         public Brush? Foreground { get; set; }
 
+        /// <summary>
+        /// Gets or sets the icon scale / detail.
+        /// </summary>
         public CalciteIconScale Scale { get; set; } = CalciteIconScale.Medium;
 
+        /// <summary>
+        /// Gets or sets the size of the symbol.
+        /// </summary>
         public double SymbolSize { get; set; } = 24;
 
+        /// <inheritdoc />
         protected override object? ProvideValue()
         {
             var source = new CalciteFontIconSource() {

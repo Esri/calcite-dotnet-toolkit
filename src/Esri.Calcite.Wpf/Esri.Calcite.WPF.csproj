@@ -9,6 +9,7 @@
     <LangVersion>10.0</LangVersion>
     <Description>$(Description) for WPF</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

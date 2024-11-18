@@ -17,15 +17,29 @@ namespace Esri.Calcite.WPF
     [MarkupExtensionReturnType(typeof(DrawingImage))]
     public class CalciteIconImageExtension : StaticResourceExtension
     {
+        /// <summary>
+        /// Gets or sets the Icon to convert to a <see cref="DrawingImage"/>.
+        /// </summary>
         public CalciteIcon? Icon { get; set; }
 
+        /// <summary>
+        /// Gets or sets the brush to use for the icon.
+        /// </summary>
         public Brush? Brush { get; set; }
 
         private static SolidColorBrush DefaultBrush = new SolidColorBrush(Colors.Black);
 
+        /// <summary>
+        /// Gets or sets the icon scale / detail.
+        /// </summary>
         public CalciteIconScale Scale { get; set; } = CalciteIconScale.Small;
+
+        /// <summary>
+        /// Gets or sets the size of the symbol.
+        /// </summary>
         public double SymbolSize { get; set; } = 16;
 
+        /// <inheritdoc />
         public override object? ProvideValue(IServiceProvider serviceProvider)
         {
             if (Icon is null)

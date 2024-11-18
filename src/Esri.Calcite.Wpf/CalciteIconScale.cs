@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Esri.Calcite.WPF
 {
     /// <summary>
-    /// Calcite Icon scale. Why 3 Sizes? More info on what happens when you scale vector based icons <see cref="https://github.com/Esri/calcite-ui-icons/wiki/What-Happens-When-You-Scale-Vector-Based-Icons">here</see>.
+    /// Calcite Icon scale. Why 3 Sizes? More info on what happens when you scale vector based icons <see href="https://github.com/Esri/calcite-ui-icons/wiki/What-Happens-When-You-Scale-Vector-Based-Icons">here</see>.
     /// </summary>
     public enum CalciteIconScale
     {
