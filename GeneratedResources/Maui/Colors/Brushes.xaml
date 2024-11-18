@@ -4,9 +4,9 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    <SolidColorBrush x:Key="CalciteUIBrandBrush" Color="{AppThemeBinding Dark={StaticResource CalciteUIBrandDarkColor}, Light={StaticResource CalciteUIBrandLightColor}}" />
-    <SolidColorBrush x:Key="CalciteUIBrandHoverBrush" Color="{AppThemeBinding Dark={StaticResource CalciteUIBrandHoverDarkColor}, Light={StaticResource CalciteUIBrandHoverLightColor}}" />
-    <SolidColorBrush x:Key="CalciteUIBrandPressBrush" Color="{AppThemeBinding Dark={StaticResource CalciteUIBrandPressDarkColor}, Light={StaticResource CalciteUIBrandPressLightColor}}" />
+    <SolidColorBrush x:Key="CalciteUIBrandBrush" Color="{AppThemeBinding Dark={x:DynamicResource CalciteUIBrandDarkColor}, Light={x:DynamicResource CalciteUIBrandLightColor}}" />
+    <SolidColorBrush x:Key="CalciteUIBrandHoverBrush" Color="{AppThemeBinding Dark={x:DynamicResource CalciteUIBrandHoverDarkColor}, Light={x:DynamicResource CalciteUIBrandHoverLightColor}}" />
+    <SolidColorBrush x:Key="CalciteUIBrandPressBrush" Color="{AppThemeBinding Dark={x:DynamicResource CalciteUIBrandPressDarkColor}, Light={x:DynamicResource CalciteUIBrandPressLightColor}}" />
     <SolidColorBrush x:Key="CalciteUIBackgroundBrush" Color="{AppThemeBinding Dark={StaticResource CalciteUIBackgroundDarkColor}, Light={StaticResource CalciteUIBackgroundLightColor}}" />
     <SolidColorBrush x:Key="CalciteUIBackground1Brush" Color="{AppThemeBinding Dark={StaticResource CalciteUIBackground1DarkColor}, Light={StaticResource CalciteUIBackground1LightColor}}" />
     <SolidColorBrush x:Key="CalciteUIBackground2Brush" Color="{AppThemeBinding Dark={StaticResource CalciteUIBackground2DarkColor}, Light={StaticResource CalciteUIBackground2LightColor}}" />

@@ -10,6 +10,15 @@
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
                 <CalciteResources xmlns="http://schemas.esri.com/calcite/2024"/>
+                <!-- Override brand color: -->
+                <!--<ResourceDictionary>
+                    <Color x:Key="CalciteUIBrandDarkColor">Green</Color>
+                    <Color x:Key="CalciteUIBrandLightColor">DarkGreen</Color>
+                    <Color x:Key="CalciteUIBrandHoverDarkColor">Yellow</Color>
+                    <Color x:Key="CalciteUIBrandHoverLightColor">Orange</Color>
+                    <Color x:Key="CalciteUIBrandPressDarkColor">Red</Color>
+                    <Color x:Key="CalciteUIBrandPressLightColor">DarkRed</Color>
+                </ResourceDictionary>-->
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

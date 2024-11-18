@@ -18,6 +18,8 @@
 
     <Style TargetType="CheckBox" BasedOn="{StaticResource CalciteCheckBoxStyle}" />
 
+    <Style TargetType="RadioButton" BasedOn="{StaticResource CalciteRadioButtonStyle}" />
+
     <Style TargetType="Label" BasedOn="{StaticResource CalciteLabelStyle}" />
 
     <Style TargetType="ProgressBar" BasedOn="{StaticResource CalciteProgressBarStyle}" />
