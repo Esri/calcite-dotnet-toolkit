@@ -62,45 +62,48 @@ For a full list of Glyph Resource IDs refer to the sample apps and the [Calcite-
 
 ## Control styles
 
-List of default control styles. These styles are applied implicitly unless implicit styles are disabled.
+List of default control styles. These styles are applied implicitly unless implicit styles are disabled (`IsCalciteImplicitStylingEnabled = false`).
 
 - Button: `CalcitePrimaryButtonBaseStyle` 
-- TreeView: `CalciteTreeViewStyle`
-- TextBox: `CalciteTextBoxStyle`
-- PasswordBox: `CalcitePasswordBoxStyle`
-- TabControl: `CalciteTabControlStyle`
-- Slider: `CalciteSliderStyle`
-- RadioButton: `CalciteRadioButtonStyle`
-- ProgressBar: `CalciteProgressBarStyle`
-- ListView: `CalciteListViewStyle`
-- ComboBox: `CalciteComboBoxStyle`
-- CheckBox: `CalciteCheckBoxStyle`
 - Calendar: `CalciteCalendarStyle`
-- Button: `CalcitePrimaryButtonBaseStyle`
-- ToggleButton: `CalcitePrimaryButtonBaseStyle`
-- TextBlock: `CalciteTextBlockStyle`
-- DatePicker: `CalciteDatePickerStyle`
-- StatusBar: `CalciteStatusBarStyle`
-- Expander: `CalciteExpanderStyle`
-- ToolTip: `CalciteToolTipStyle`
+- CheckBox: `CalciteCheckBoxStyle`
+- ComboBox: `CalciteComboBoxStyle`
 - DataGrid: `CalciteDataGridStyle`
-- ToolBar: `CalciteToolBarStyle`
+- DatePicker: `CalciteDatePickerStyle`
 - DocumentViewer: `CalciteDocumentViewerStyle`
+- Expander: `CalciteExpanderStyle`
+- GroupBox: `CalciteGroupBoxStyle`
+- ListView: `CalciteListViewStyle`
+- PasswordBox: `CalcitePasswordBoxStyle`
+- ProgressBar: `CalciteProgressBarStyle`
+- RadioButton: `CalciteRadioButtonStyle`
+- Slider: `CalciteSliderStyle`
+- StatusBar: `CalciteStatusBarStyle`
 - StatusBarItem: `CalciteStatusBarItemStyle`
+- TabControl: `CalciteTabControlStyle`
+- TextBlock: `CalciteTextBlockStyle`
+- TextBox: `CalciteTextBoxStyle`
+- ToggleButton: `CalcitePrimaryButtonBaseStyle`
+- ToolBar: `CalciteToolBarStyle`
+- ToolTip: `CalciteToolTipStyle`
+- TreeView: `CalciteTreeViewStyle`
 
-| Style | Target Type | Description |
+| Style | Target Type | Description | Example |
 | --- | --- | --- | --- |
-| `CalcitePrimaryButtonStyle` | `ButtonBase` | Primary button style |
-| `CalciteSecondaryButtonBaseStyle` | `ButtonBase` | Secondary button style |
-| `CalciteDangerButtonBaseStyle` | `ButtonBase` | Danger button style |
-| `CalciteDangerSecondaryButtonBaseStyle` | `ButtonBase` | Danger secondary button style |
-| `CalciteFormBorderStyle` | `Border` |   |
-| `CalciteFormExpanderStyle` | `Expander` |   |
-| `CalciteBrandAlertGroupBoxStyle` | `GroupBox` |   |
-| `CalciteDangerAlertGroupBoxStyle` | `GroupBox` |   |
-| `CalciteLabeledGroupBoxStyle` | `GroupBox` |   |
-| `CalciteSidePanelFormGroupBoxStyle` | `GroupBox` |   |
-| `CalciteSuccessAlertGroupBoxStyle` | `GroupBox` |   |
-| `CalciteWarningAlertGroupBoxStyle` | `GroupBox` |   |
-| `CalciteActionPadToolBarStyle` | `Toolbar` |   |
-| `CalciteVerticalToolBarStyle` | `Toolbar` |   |
+| `CalcitePrimaryButtonStyle` | `ButtonBase` | Primary button style | ![image](https://github.com/user-attachments/assets/b77103d7-57f8-4ce8-8fea-36ecb4db3d44) |
+| `CalciteSecondaryButtonBaseStyle` | `ButtonBase` | Secondary button style | ![image](https://github.com/user-attachments/assets/58ed445a-bb98-4a3b-8af5-c25ef0e913b8) |
+| `CalciteDangerButtonBaseStyle` | `ButtonBase` | Danger button style | ![image](https://github.com/user-attachments/assets/3c4b8471-14ec-46b0-ae0f-6aa537ed324e) |
+| `CalciteDangerSecondaryButtonBaseStyle` | `ButtonBase` | Danger secondary button style | ![image](https://github.com/user-attachments/assets/e6387373-7d76-46b9-891c-51d618201155) |
+| `CalciteFormBorderStyle` | `Border` | Applies the default form padding to contained elements |    |
+| `CalciteFormExpanderStyle` | `Expander` | GroupBox with extra padding for form elements  | ![image](https://github.com/user-attachments/assets/bbe7ce07-c88c-4317-bf1f-cff2146a72b6) |
+| `CalciteBrandAlertGroupBoxStyle` | `GroupBox` | GroupBox with a brand color top line | ![image](https://github.com/user-attachments/assets/e16da37c-1973-4075-9204-d8592f604407) |
+| `CalciteSuccessAlertGroupBoxStyle` | `GroupBox` | GroupBox with a brand color top line | ![image](https://github.com/user-attachments/assets/d88a7840-7a3d-4691-9412-ba494fc4726e) |
+| `CalciteWarningAlertGroupBoxStyle` | `GroupBox` | GroupBox with a yellow top line for warnings | ![image](https://github.com/user-attachments/assets/8ed03e84-1154-4f12-ad49-220d328e3465) |
+| `CalciteDangerAlertGroupBoxStyle` | `GroupBox` | GroupBox with a red top line for warnings | ![image](https://github.com/user-attachments/assets/fa14ea31-db14-4edc-be38-7cf0805261a4) |
+| `CalcitePanelGroupBoxStyle` | `GroupBox` | A simple header/content group box style | ![image](https://github.com/user-attachments/assets/a9253f91-5f1e-43b1-8550-72de7ddc8da8) |
+| `CalciteSidePanelFormGroupBoxStyle` | `GroupBox` | Same as CalcitePanelGroupBoxStyle but for side panels with no margin or drop shadows |   |
+| `CalciteGroupBoxStyle` | `GroupBox` | The default group box style | ![image](https://github.com/user-attachments/assets/71e53a15-de77-4b82-89f6-6add504868e3) |
+| `CalciteLabeledGroupBoxStyle` | `GroupBox` | Bold Header for simple grouping of sub-elements | ![image](https://github.com/user-attachments/assets/9aff9e57-ca78-4ed2-b016-56e6c1c9cfcd) |
+| `CalciteActionPadToolBarStyle` | `Toolbar` | Same as the default toolbar but with a drop shadow to place on top of other view areas  | ![image](https://github.com/user-attachments/assets/da65ce4f-671d-46e7-9dcc-99a025c9b412) |
+| `CalciteVerticalToolBarStyle` | `Toolbar` |   |   |
+
