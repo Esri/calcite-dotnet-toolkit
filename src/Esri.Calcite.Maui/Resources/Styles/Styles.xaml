@@ -159,12 +159,6 @@
         <Setter Property="Color" Value="{AppThemeBinding Light={x:DynamicResource CalciteUIBrandLightColor}, Dark={x:DynamicResource CalciteUIBrandDarkColor}}" />
     </Style>
 
-    <Style TargetType="RadioButton" x:Key="CalciteRadioButtonStyle">
-        <Setter Property="ca:CalciteResourceHelper.Color" Value="{AppThemeBinding Light={x:DynamicResource CalciteUIBrandLightColor}, Dark={x:DynamicResource CalciteUIBrandDarkColor}}" />
-        <Setter Property="ca:CalciteResourceHelper.HoverColor" Value="{AppThemeBinding Light={x:DynamicResource CalciteUIBrandHoverLightColor}, Dark={x:DynamicResource CalciteUIBrandHoverDarkColor}}" />
-        <Setter Property="ca:CalciteResourceHelper.PressedColor" Value="{AppThemeBinding Light={x:DynamicResource CalciteUIBrandPressLightColor}, Dark={x:DynamicResource CalciteUIBrandPressDarkColor}}" />
-    </Style>
-
     <!--<Style TargetType="DatePicker">
         <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray900}, Dark={StaticResource White}}" />
         <Setter Property="BackgroundColor" Value="Transparent" />
@@ -185,8 +179,34 @@
             </VisualStateGroupList>
         </Setter>
     </Style>
-
-    <Style TargetType="Editor">
+-->
+    <Style TargetType="Editor" x:Key="CalciteEditorStyle">
+         <Setter Property="ca:CalciteResourceHelper.Color" Value="{AppThemeBinding Light={x:DynamicResource CalciteUIBrandLightColor}, Dark={x:DynamicResource CalciteUIBrandDarkColor}}" />
+         <!--
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />
+        <Setter Property="BackgroundColor" Value="Transparent" />
+        <Setter Property="FontFamily" Value="OpenSansRegular"/>
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="PlaceholderColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray500}}" />
+        <Setter Property="MinimumHeightRequest" Value="44"/>
+        <Setter Property="MinimumWidthRequest" Value="44"/>
+        <Setter Property="VisualStateManager.VisualStateGroups">
+            <VisualStateGroupList>
+                <VisualStateGroup x:Name="CommonStates">
+                    <VisualState x:Name="Normal" />
+                    <VisualState x:Name="Disabled">
+                        <VisualState.Setters>
+                            <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray300}, Dark={StaticResource Gray600}}" />
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateGroupList>
+        </Setter>-->
+    </Style>
+ 
+    <Style TargetType="Entry" x:Key="CalciteEntryStyle">
+        <Setter Property="ca:CalciteResourceHelper.Color" Value="{AppThemeBinding Light={x:DynamicResource CalciteUIBrandLightColor}, Dark={x:DynamicResource CalciteUIBrandDarkColor}}" />
+        <!--
         <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />
         <Setter Property="BackgroundColor" Value="Transparent" />
         <Setter Property="FontFamily" Value="OpenSansRegular"/>
@@ -206,30 +226,9 @@
                 </VisualStateGroup>
             </VisualStateGroupList>
         </Setter>
+        -->
     </Style>
-
-    <Style TargetType="Entry">
-        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />
-        <Setter Property="BackgroundColor" Value="Transparent" />
-        <Setter Property="FontFamily" Value="OpenSansRegular"/>
-        <Setter Property="FontSize" Value="14" />
-        <Setter Property="PlaceholderColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray500}}" />
-        <Setter Property="MinimumHeightRequest" Value="44"/>
-        <Setter Property="MinimumWidthRequest" Value="44"/>
-        <Setter Property="VisualStateManager.VisualStateGroups">
-            <VisualStateGroupList>
-                <VisualStateGroup x:Name="CommonStates">
-                    <VisualState x:Name="Normal" />
-                    <VisualState x:Name="Disabled">
-                        <VisualState.Setters>
-                            <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray300}, Dark={StaticResource Gray600}}" />
-                        </VisualState.Setters>
-                    </VisualState>
-                </VisualStateGroup>
-            </VisualStateGroupList>
-        </Setter>
-    </Style>
-
+<!--
     <Style TargetType="Frame">
         <Setter Property="HasShadow" Value="False" />
         <Setter Property="BorderColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray950}}" />
@@ -307,7 +306,14 @@
             </VisualStateGroupList>
         </Setter>-->
     </Style>
-<!--
+    
+    <Style TargetType="RadioButton" x:Key="CalciteRadioButtonStyle">
+        <Setter Property="ca:CalciteResourceHelper.Color" Value="{AppThemeBinding Light={x:DynamicResource CalciteUIBrandLightColor}, Dark={x:DynamicResource CalciteUIBrandDarkColor}}" />
+        <Setter Property="ca:CalciteResourceHelper.HoverColor" Value="{AppThemeBinding Light={x:DynamicResource CalciteUIBrandHoverLightColor}, Dark={x:DynamicResource CalciteUIBrandHoverDarkColor}}" />
+        <Setter Property="ca:CalciteResourceHelper.PressedColor" Value="{AppThemeBinding Light={x:DynamicResource CalciteUIBrandPressLightColor}, Dark={x:DynamicResource CalciteUIBrandPressDarkColor}}" />
+    </Style>
+
+    <!--
     <Style TargetType="RadioButton">
         <Setter Property="BackgroundColor" Value="Transparent"/>
         <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />

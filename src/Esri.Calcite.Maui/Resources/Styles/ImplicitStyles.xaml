@@ -18,6 +18,10 @@
 
     <Style TargetType="CheckBox" BasedOn="{StaticResource CalciteCheckBoxStyle}" />
 
+    <Style TargetType="Entry" BasedOn="{StaticResource CalciteEntryStyle}" />
+
+    <Style TargetType="Editor" BasedOn="{StaticResource CalciteEditorStyle}" />
+
     <Style TargetType="RadioButton" BasedOn="{StaticResource CalciteRadioButtonStyle}" />
 
     <Style TargetType="Label" BasedOn="{StaticResource CalciteLabelStyle}" />
