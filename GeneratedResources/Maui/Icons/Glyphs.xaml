@@ -321,6 +321,8 @@
     <x:String x:Key="CalciteUIIcons_Glyph_ExclamationMarkCircle">&#xe844;</x:String> 
     <x:String x:Key="CalciteUIIcons_Glyph_ExclamationMarkTriangleFilled">&#xe845;</x:String> 
     <x:String x:Key="CalciteUIIcons_Glyph_ExclamationMarkTriangle">&#xe846;</x:String> 
+    <x:String x:Key="CalciteUIIcons_Glyph_ExclamationPointFilled">&#xe847;</x:String> 
+    <x:String x:Key="CalciteUIIcons_Glyph_ExclamationPoint">&#xe848;</x:String> 
     <x:String x:Key="CalciteUIIcons_Glyph_ExitHighwayLeft">&#xe849;</x:String> 
     <x:String x:Key="CalciteUIIcons_Glyph_ExitHighwayRight">&#xe84a;</x:String> 
     <x:String x:Key="CalciteUIIcons_Glyph_Expand">&#xe84b;</x:String> 

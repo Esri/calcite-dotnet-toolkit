@@ -234,6 +234,8 @@ void GenerateCalciteIconEnum(IList<IconEntry> icons, string filename, string _na
     using StreamWriter iconsEnumOutput = new StreamWriter(filename);
     iconsEnumOutput.WriteLine($"namespace {_namespace};");
     iconsEnumOutput.WriteLine();
+	iconsEnumOutput.WriteLine("/// <summary>A collection of Calcite UI Icons.</summary>");
+	iconsEnumOutput.WriteLine("/// <remarks>The enum <c>UInt16</c> values correspond to the character code in the Calcite symbol font.</remarks>");
     iconsEnumOutput.WriteLine("public enum CalciteIcon : ushort");
     iconsEnumOutput.WriteLine("{");
 

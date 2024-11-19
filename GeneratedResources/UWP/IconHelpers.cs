@@ -326,6 +326,8 @@ internal static class IconHelpers
 			case CalciteIcon.ExclamationMarkCircle: return "ExclamationMarkCircle";
 			case CalciteIcon.ExclamationMarkTriangleFilled: return "ExclamationMarkTriangleFilled";
 			case CalciteIcon.ExclamationMarkTriangle: return "ExclamationMarkTriangle";
+			case CalciteIcon.ExclamationPointFilled: return "ExclamationPointFilled";
+			case CalciteIcon.ExclamationPoint: return "ExclamationPoint";
 			case CalciteIcon.ExitHighwayLeft: return "ExitHighwayLeft";
 			case CalciteIcon.ExitHighwayRight: return "ExitHighwayRight";
 			case CalciteIcon.Expand: return "Expand";

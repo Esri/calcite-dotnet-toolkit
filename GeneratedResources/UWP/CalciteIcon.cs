@@ -1,5 +1,7 @@
 namespace Esri.Calcite.UWP;
 
+/// <summary>A collection of Calcite UI Icons.</summary>
+/// <remarks>The enum <c>UInt16</c> values correspond to the character code in the Calcite symbol font.</remarks>
 public enum CalciteIcon : ushort
 {
 	/// <summary>One Half Times</summary>
@@ -1921,6 +1923,18 @@ public enum CalciteIcon : ushort
 	/// Alias: 1.5.0, symbols, warning, alert</remarks>
 	/// <release>1.5</release>
 	ExclamationMarkTriangle = 59462,
+
+	/// <summary>Exclamation Point (Filled)</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 3.29.0, symbols, sign, text, type, attribution, warning, invalid, high priority, important, error</remarks>
+	/// <release>3.29.0</release>
+	ExclamationPointFilled = 59463,
+
+	/// <summary>Exclamation Point</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 3.29.0, symbols, sign, text, type, attribution, warning, invalid, high priority, important, error</remarks>
+	/// <release>3.29.0</release>
+	ExclamationPoint = 59464,
 
 	/// <summary>Exit Highway Left</summary>
 	/// <remarks>Category: Directions<br/>
