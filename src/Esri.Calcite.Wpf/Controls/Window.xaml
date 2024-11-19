@@ -1,0 +1,11 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ca="clr-namespace:Esri.Calcite.WPF.Helpers"
+    xmlns:cm="clr-namespace:Esri.Calcite.WPF.Helpers"
+    xmlns:c="clr-namespace:Esri.Calcite.WPF">
+    <Style x:Key="CalciteWindowStyle" TargetType="Window">
+        <Setter Property="Background" Value="{DynamicResource CalciteUIBackgroundBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
+    </Style>
+</ResourceDictionary>

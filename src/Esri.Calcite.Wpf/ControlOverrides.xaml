@@ -42,4 +42,8 @@
     <Style BasedOn="{StaticResource CalciteScrollViewerStyle}" TargetType="{x:Type ScrollViewer}"/>
     <Style BasedOn="{StaticResource CalciteComboBoxItemStyle}" TargetType="{x:Type ComboBoxItem}" />
     <Style BasedOn="{StaticResource CalciteToolBarTrayStyle}" TargetType="{x:Type ToolBarTray}" />
+    <Style BasedOn="{StaticResource CalciteWindowStyle}" TargetType="{x:Type Window}" />
+    <Style BasedOn="{StaticResource CalciteMenuStyle}" TargetType="{x:Type Menu}" />
+    <Style BasedOn="{StaticResource CalciteMenuItemStyle}" TargetType="{x:Type MenuItem}" />
+    
 </ResourceDictionary>

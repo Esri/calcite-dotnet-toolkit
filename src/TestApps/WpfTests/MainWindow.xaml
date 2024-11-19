@@ -6,15 +6,25 @@
         xmlns:ca="http://schemas.esri.com/calcite/2024"
         xmlns:samples1="clr-namespace:WpfTests.Samples"
         xmlns:local="clr-namespace:WpfTests"
-        mc:Ignorable="d"
-            Style="{DynamicResource CalciteWindow}"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid Background="{DynamicResource CalciteUIBackgroundBrush}">
+        mc:Ignorable="d" Style="{StaticResource CalciteWindowStyle}"
+        Title="Calcite WPF Test App" Height="450" Width="800">
+    <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <TabControl
+        <Menu>
+            <MenuItem Header="File">
+                <MenuItem Header="Exit" IsChecked="True">
+                    <MenuItem.Icon>
+                        <TextBlock Text="{ca:CalciteIconGlyph Icon=X}" FontFamily="{StaticResource CalciteUIIconsMediumFontFamily}" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="GitHub" />
+            </MenuItem>
+        </Menu>
+        <TabControl Grid.Row="1"
             x:Name="ParentTabControl"
             Style="{DynamicResource CalciteTabControlStyle}"
             TabStripPlacement="Left">
@@ -37,7 +47,7 @@
                 <samples1:DataGridPage />
             </TabItem>
         </TabControl>
-        <StatusBar Grid.Row="1">
+        <StatusBar Grid.Row="2">
             <StatusBarItem>
                 <ToggleButton
                     x:Name="LightToggle"

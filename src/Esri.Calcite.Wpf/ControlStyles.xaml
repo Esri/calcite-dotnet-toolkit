@@ -33,6 +33,8 @@
         <ResourceDictionary Source=".\Controls\ToolBar.xaml" />
         <!-- <ResourceDictionary Source=".\Controls\CalciteColorPicker.xaml" /> -->
         <ResourceDictionary Source=".\Controls\DocumentViewer.xaml" />
+        <ResourceDictionary Source=".\Controls\Window.xaml" />
+        <ResourceDictionary Source=".\Controls\Menu.xaml" />
     </ResourceDictionary.MergedDictionaries>
     <!--<Style BasedOn="{StaticResource CalciteColorPickerStyle}" TargetType="calcite:CalciteColorPicker" />-->
     <Style
