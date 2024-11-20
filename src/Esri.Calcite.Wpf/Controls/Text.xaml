@@ -4,6 +4,8 @@
     </ResourceDictionary.MergedDictionaries>
     <Style x:Key="CalciteTextBlockStyle" TargetType="TextBlock">
         <Setter Property="TextWrapping" Value="Wrap" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
+        <Setter Property="FontSize" Value="12" />
     </Style>
     <Style TargetType="Label" x:Key="CalciteLabelStyle">
         <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />

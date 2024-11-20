@@ -3,4 +3,5 @@
     <TextBox />
     <TextBox IsEnabled="False" Text="Disabled" />
     <PasswordBox Password="Passw0rd" />
+    <TextBlock Text="TextBlock" />
 </StackPanel>
