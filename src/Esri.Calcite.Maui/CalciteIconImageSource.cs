@@ -15,8 +15,13 @@
             set
             {
                 _scale = value;
-                char code = (char)((int)Icon + (int)Scale);
-                base.Glyph = code.ToString();
+                base.FontFamily = value switch
+                {
+                    CalciteIconScale.Small => AppHostBuilderExtensions.CalciteUIIconsSmallFontFamily,
+                    CalciteIconScale.Medium => AppHostBuilderExtensions.CalciteUIIconsMediumFontFamily,
+                    CalciteIconScale.Large => AppHostBuilderExtensions.CalciteUIIconsLargeFontFamily,
+                        _ => AppHostBuilderExtensions.CalciteUIIconsSmallFontFamily
+                };
             }
         }
 
@@ -28,7 +33,7 @@
             set
             {
                 _icon = value;
-                char code = (char)((int)Icon + (int)Scale);
+                char code = (char)(int)Icon;
                 base.Glyph = code.ToString();
             }
         }
