@@ -34,7 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
-      <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.240829007" />
+      <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.240923002" />
       <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.756" />
       <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2651.64" IncludeAssets="none" /> <!-- Work around bug in webview package, and we don't really need this anyway -->
   </ItemGroup>
