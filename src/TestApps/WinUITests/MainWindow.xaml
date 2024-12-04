@@ -6,9 +6,30 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:cal="using:Esri.Calcite.WinUI"
+    xmlns:ex="using:WinUIEx"
     mc:Ignorable="d" Title="Esri.Calcite.WinUI">
     <Grid>
-        <NavigationView IsPaneOpen="True" PaneTitle="Pane here" PaneDisplayMode="Left" OpenPaneLength="200" SelectionChanged="NavigationView_SelectionChanged">
+        <Grid.Resources>
+            <Thickness x:Key="NavigationViewHeaderMargin">20,10,0,10</Thickness>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Border Background="{StaticResource CalciteUIBrandBrush}" />
+        <ex:TitleBar Title="Calcite for WinUI 3" IsPaneToggleButtonVisible="True" PaneToggleRequested="TitleBar_PaneToggleRequested" RequestedTheme="Dark" >
+            <ex:TitleBar.Resources>
+                <SolidColorBrush x:Key="ToggleSwitchFillOff">#33000000</SolidColorBrush>
+                <SolidColorBrush x:Key="ToggleSwitchFillOn">#33000000</SolidColorBrush>
+            </ex:TitleBar.Resources>
+            <ex:TitleBar.Footer>
+                <ToggleSwitch HorizontalAlignment="Right" 
+                              VerticalAlignment="Center" Toggled="ToggleSwitch_Toggled" BorderThickness="1"
+                              Margin="0,0,0,0" Grid.Row="1" OnContent="Dark Mode" OffContent="Light Mode" />
+            </ex:TitleBar.Footer>
+        </ex:TitleBar>
+        <NavigationView x:Name="NavView" Grid.Row="1" IsPaneOpen="True" IsBackButtonVisible="Collapsed" IsPaneToggleButtonVisible="False" PaneTitle="Samples"
+                        PaneDisplayMode="Left" OpenPaneLength="200" SelectionChanged="NavigationView_SelectionChanged" IsSettingsVisible="False">
             <NavigationView.MenuItems>
                 <NavigationViewItem Content="Icons" Tag="UIIconsPage"  >
                     <NavigationViewItem.Icon>
@@ -51,10 +72,28 @@
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
             </NavigationView.MenuItems>
-            <Frame Margin="0,0,0,0" x:Name="contentFrame" />
+            <Frame Margin="0,0,0,0" x:Name="contentFrame">
+                <Frame.ContentTransitions>
+                    <TransitionCollection>
+                        <NavigationThemeTransition/>
+                    </TransitionCollection>
+                </Frame.ContentTransitions>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                <TextBlock Text="Calcite for WinUI 3" HorizontalAlignment="Left" Margin="20,10" Style="{StaticResource HeaderTextBlockStyle}" />
+                    <ScrollViewer Grid.Row="1" Padding="20">
+                        <RichTextBlock VerticalAlignment="Top" TextAlignment="Start">
+                            <RichTextBlock.Blocks>
+                                <Paragraph>Test</Paragraph>
+                            </RichTextBlock.Blocks>
+                        </RichTextBlock>
+                    </ScrollViewer>
+                </Grid>
+            </Frame>
         </NavigationView>
-    
-        <ToggleSwitch Header="Dark Mode" HorizontalAlignment="Left" VerticalAlignment="Bottom" Toggled="ToggleSwitch_Toggled" Margin="10,0,0,50" />
 
     </Grid>
 </Window>

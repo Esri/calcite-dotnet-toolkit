@@ -24,6 +24,8 @@ namespace WinUITests
         public MainWindow()
         {
             this.InitializeComponent();
+            this.ExtendsContentIntoTitleBar = true;
+            WinUIEx.WindowManager.Get(this).PersistenceId = "MainWindow";
             this.SystemBackdrop = new MicaBackdrop();
         }
 
@@ -52,6 +54,11 @@ namespace WinUITests
                         contentFrame.Navigate(pageType);
                 }
             }
+        }
+
+        private void TitleBar_PaneToggleRequested(WinUIEx.TitleBar sender, object args)
+        {
+            NavView.IsPaneOpen = !NavView.IsPaneOpen;
         }
     }
 }
