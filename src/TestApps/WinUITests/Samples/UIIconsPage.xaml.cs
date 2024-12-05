@@ -41,7 +41,7 @@ namespace WinUITests.Samples
         {
             if(e.Key == Windows.System.VirtualKey.Enter)
             {
-                gridView.ItemsSource = icons.Where(i => i.Name.Contains(search.Text.Trim(), StringComparison.InvariantCultureIgnoreCase));
+                gridView.ItemsSource = icons.Where(i => i.Name.Contains(search.Text.Trim(), StringComparison.InvariantCultureIgnoreCase)).ToList();
             }
         }
 
