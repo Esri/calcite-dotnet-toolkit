@@ -38,10 +38,16 @@
             </Border>
             <ActivityIndicator WidthRequest="30" HeightRequest="30" HorizontalOptions="Start" IsRunning="True" />
             <Switch IsToggled="True" />
-            <Slider WidthRequest="200" Minimum="0" Maximum="100" HorizontalOptions="Start" />
+            <Slider WidthRequest="200" Minimum="0" Maximum="100" Value="50" HorizontalOptions="Start" />
             <ProgressBar Progress=".5" WidthRequest="200" HorizontalOptions="Start" />
-            <Entry Text="Entry" />
-            <Editor Text="Editor" WidthRequest="200" HeightRequest="100" />
+            <HorizontalStackLayout>
+                <Entry Text="Entry" WidthRequest="200" />
+                <Entry Text="Disabled Entry" WidthRequest="200" IsEnabled="False" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Editor Text="Editor" WidthRequest="200" HeightRequest="100" />
+                <Editor Text="Disabled Editor" IsEnabled="False" WidthRequest="200" HeightRequest="100" />
+            </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
 

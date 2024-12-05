@@ -15,5 +15,10 @@
             else
                 Application.Current!.UserAppTheme = AppTheme.Light;
         }
+
+        private void GitHubButton_Clicked(object sender, EventArgs e)
+        {
+            // TODO
+        }
     }
 }
