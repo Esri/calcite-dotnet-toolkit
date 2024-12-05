@@ -12,12 +12,21 @@
     <Grid>
         <Grid.Resources>
             <DataTemplate x:Key="BrushTemplate" x:DataType="local:BrushItem">
-                <StackPanel Orientation="Horizontal" BorderThickness="0,0,0,1" BorderBrush="Black">
-                    <Border Width="100" Height="50" BorderBrush="{ThemeResource ApplicationForegroundThemeBrush}" BorderThickness="1" Margin="0,5,5,5" Background="{x:Bind Value}"/>
-                    <TextBlock Text="{x:Bind Key}" VerticalAlignment="Center" />
-                </StackPanel>
+                <Grid  BorderThickness="0,0,0,1" BorderBrush="Black">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Border Height="50" BorderBrush="{ThemeResource ApplicationForegroundThemeBrush}" BorderThickness="1" Margin="0,5,5,5" Background="{x:Bind Value}" Grid.Column="0"/>
+                    <TextBox Text="{x:Bind Markup}" VerticalAlignment="Center" Grid.Column="1"  Style="{StaticResource SelectableTextBlockStyle}"/>
+                    <Button HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Column="3" Padding="2" Style="{StaticResource CalciteSecondaryButtonStyle}"
+                            Click="CopyButton_Click">
+                        <IconSourceElement IconSource="{cal:CalciteIconSource Icon=Copy}" />
+                    </Button>
+                </Grid>
             </DataTemplate>
         </Grid.Resources>
-        <ListView x:Name="gridView" ItemTemplate="{StaticResource BrushTemplate}" Margin="10" />
+        <ListView x:Name="gridView" ItemTemplate="{StaticResource BrushTemplate}" Margin="10" SelectionMode="None" />
     </Grid>
 </Page>

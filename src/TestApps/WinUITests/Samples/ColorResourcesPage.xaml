@@ -10,47 +10,32 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Grid.Resources>
-            <DataTemplate x:Key="ColorTemplate" x:DataType="local:ColorItem">
-                <StackPanel Orientation="Horizontal" BorderThickness="0,0,0,1" BorderBrush="{ThemeResource CalciteUIBorder1Brush}">
-                    <Border Width="100" Height="50" BorderBrush="{ThemeResource ApplicationForegroundThemeBrush}" BorderThickness="1" Margin="0,5,5,5">
-                        <Border.Background>
-                            <SolidColorBrush Color="{x:Bind Value}" />
-                        </Border.Background>
-                    </Border>
-                    <TextBlock Text="{x:Bind Key}" VerticalAlignment="Center" />
-                </StackPanel>
-            </DataTemplate>
-        </Grid.Resources>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
-        <ListView x:Name="gridView" RequestedTheme="Light" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="10" >
+        <ListView x:Name="gridView3" Grid.ColumnSpan="2" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="10">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="local:ColorItem">
-                    <StackPanel Orientation="Horizontal" BorderThickness="0,0,0,1" BorderBrush="{ThemeResource CalciteUIBorder1Brush}">
-                        <Border Width="100" Height="50" BorderBrush="{ThemeResource ApplicationForegroundThemeBrush}" BorderThickness="1" Margin="0,5,5,5">
+                    <Grid BorderThickness="0,0,0,1" BorderBrush="{ThemeResource CalciteUIBorder1Brush}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0" Height="50" BorderBrush="{ThemeResource ApplicationForegroundThemeBrush}" BorderThickness="1,1,0,1" Margin="0,5" ToolTipService.ToolTip="Light Mode">
                             <Border.Background>
-                                <SolidColorBrush Color="{x:Bind Value}" />
+                                <SolidColorBrush Color="{x:Bind LightValue}" />
                             </Border.Background>
                         </Border>
-                        <TextBlock Text="{x:Bind Key}" VerticalAlignment="Center" />
-                    </StackPanel>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <ListView x:Name="gridView2" Grid.Column="1" RequestedTheme="Dark" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="10">
-            <ListView.ItemTemplate>
-                <DataTemplate x:DataType="local:ColorItem">
-                    <StackPanel Orientation="Horizontal" BorderThickness="0,0,0,1" BorderBrush="{ThemeResource CalciteUIBorder1Brush}">
-                        <Border Width="100" Height="50" BorderBrush="{ThemeResource ApplicationForegroundThemeBrush}" BorderThickness="1" Margin="0,5,5,5">
+                        <Border Grid.Column="1" Height="50" BorderBrush="{ThemeResource ApplicationForegroundThemeBrush}" BorderThickness="0,1,1,1" Margin="0,5" ToolTipService.ToolTip="Dark Mode">
                             <Border.Background>
-                                <SolidColorBrush Color="{x:Bind Value}" />
+                                <SolidColorBrush Color="{x:Bind DarkValue}" />
                             </Border.Background>
                         </Border>
-                        <TextBlock Text="{x:Bind Key}" VerticalAlignment="Center" />
-                    </StackPanel>
+                        <TextBox Grid.Column="2" IsReadOnly="True" Text="{x:Bind Markup}"
+                                 BorderBrush="Transparent" Background="Transparent" VerticalAlignment="Center" Style="{StaticResource SelectableTextBlockStyle}" />
+                        <Button HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Column="3" Padding="2" Style="{StaticResource CalciteSecondaryButtonStyle}" Click="CopyButton_Click">
+                            <IconSourceElement IconSource="{cal:CalciteIconSource Icon=Copy}" />
+                        </Button>
+                    </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

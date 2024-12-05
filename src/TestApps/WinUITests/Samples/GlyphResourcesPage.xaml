@@ -17,13 +17,13 @@
                             <FontIcon Glyph="{x:Bind Glyph}"  Width="100"
                                    FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top"
                                    FontFamily="{StaticResource CalciteUIIconsSmallFontFamily}" />
-                        <FontIcon Glyph="{x:Bind Glyph}"  Width="100"
+                            <FontIcon Glyph="{x:Bind Glyph}"  Width="100"
                                    FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top"
                                    FontFamily="{StaticResource CalciteUIIconsMediumFontFamily}" />
-                        <FontIcon Glyph="{x:Bind Glyph}"  Width="100"
+                            <FontIcon Glyph="{x:Bind Glyph}"  Width="100"
                                    FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top"
                                    FontFamily="{StaticResource CalciteUIIconsLargeFontFamily}" />
-                        <TextBlock Text="{x:Bind Key}" VerticalAlignment="Center" />
+                            <TextBox Text="{x:Bind Markup}" VerticalAlignment="Center" Style="{StaticResource SelectableTextBlockStyle}" />
                         </StackPanel>
                     <!--<IconSourceElement Width="16" Height="16" Foreground="Red" >
                             <IconSourceElement.IconSource>

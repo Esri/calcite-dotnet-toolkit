@@ -2,9 +2,9 @@ using Microsoft.UI.Xaml.Controls;
 
 namespace WinUITests.Samples
 {
-    public sealed partial class ControlStylesPage : Page
+    public sealed partial class MarkupExtensionsPage : Page
     {
-        public ControlStylesPage()
+        public MarkupExtensionsPage()
         {
             this.InitializeComponent();
         }

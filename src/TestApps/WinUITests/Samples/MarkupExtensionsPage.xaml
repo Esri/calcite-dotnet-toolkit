@@ -2,7 +2,7 @@
 <!-- Licensed under the MIT License. -->
 
 <Page
-    x:Class="WinUITests.Samples.TestPage"
+    x:Class="WinUITests.Samples.MarkupExtensionsPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:WinUITests.Samples"
@@ -14,12 +14,6 @@
     <Grid>
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
             
-            <!--<TextBlock Text="AppBarButton:" />
-        <AppBarButton>
-            <AppBarButton.Icon>
-                <FontIcon Glyph="{StaticResource CalciteUIIcons_Glyph_Map}" FontFamily="{StaticResource CalciteUIIconsMediumFontFamily}"/>
-            </AppBarButton.Icon>
-        </AppBarButton>-->
             <TextBlock Text="CommandBar/AppBarButton using CalciteFontIconSource:" />
             <CommandBar IsOpen="True">
                 <CommandBar.PrimaryCommands>
@@ -52,7 +46,7 @@
                     </AppBarButton>
                 </CommandBar.PrimaryCommands>
             </CommandBar>
-            <!--<Path Data="{StaticResource CalciteUIIcons_Glyph_1_8x_32}" Width="100" Height="100" Fill="Blue" />-->
+            
             <TextBlock Text="IconSourceElement:" Margin="0,20,0,0" />
             <Border BorderBrush="{StaticResource CalciteUIBrandBrush}" BorderThickness="1" HorizontalAlignment="Left">
                 <IconSourceElement Width="32" Height="32">
@@ -69,14 +63,7 @@
             <IconSourceElement Width="32" Height="32" IconSource="{cal:CalciteIconSource Icon=Map, Scale=Small}" />
 
             <TextBlock Text="CalciteSymbolIcon" />
-            <cal:SymbolIcon Symbol="Map" IconScale="Large"  />
-
-            <!--<IconSourceElement IconSource="{StaticResource calcite_pathicon_lock_f_32}" />-->
-            <!--<cal:CalciteFontIconSource Icon="LayerBasemap" FontSize="24" Scale="Medium" />
-            <IconSourceElement.IconSource>
-                <cal:CalciteSymbolIconSource Symbol="LayerBasemap" />
-            </IconSourceElement.IconSource>
-        </IconSourceElement>-->
+            <cal:SymbolIcon Symbol="Map" IconScale="Large" />
 
         </StackPanel>
     </Grid>

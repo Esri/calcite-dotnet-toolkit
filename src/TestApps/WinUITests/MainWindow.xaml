@@ -3,6 +3,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:WinUITests"
+    xmlns:samples="using:WinUITests.Samples"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:cal="using:Esri.Calcite.WinUI"
@@ -31,6 +32,7 @@
         <NavigationView x:Name="NavView" Grid.Row="1" IsPaneOpen="True" IsBackButtonVisible="Collapsed" IsPaneToggleButtonVisible="False" PaneTitle="Samples"
                         PaneDisplayMode="Left" OpenPaneLength="200" SelectionChanged="NavigationView_SelectionChanged" IsSettingsVisible="False">
             <NavigationView.MenuItems>
+                <NavigationViewItem Content="Home" Icon="{cal:CalciteIconSourceElement Icon=Home}" />
                 <NavigationViewItem Content="Icons" Tag="UIIconsPage"  >
                     <NavigationViewItem.Icon>
                         <IconSourceElement>
@@ -63,14 +65,7 @@
                 </NavigationViewItem>
                 <NavigationViewItem Content="Button Styles" Tag="ButtonStylesPage" Icon="{cal:CalciteIconSourceElement Icon=ListButton}" />
                 <NavigationViewItem Content="Control Styles" Tag="ControlStylesPage" Icon="Bullets" />
-
-                <NavigationViewItem Content="Tests" Tag="TestPage" >
-                    <NavigationViewItem.Icon>
-                        <IconSourceElement>
-                            <FontIconSource Glyph="&#xe90f;" FontFamily="Segoe MDL2 Assets" />
-                        </IconSourceElement>
-                    </NavigationViewItem.Icon>
-                </NavigationViewItem>
+                <NavigationViewItem Content="Markup Extensions" Tag="MarkupExtensionsPage"  Icon="{cal:CalciteIconSourceElement Icon=Code}" />
             </NavigationView.MenuItems>
             <Frame Margin="0,0,0,0" x:Name="contentFrame">
                 <Frame.ContentTransitions>
@@ -78,34 +73,6 @@
                         <NavigationThemeTransition/>
                     </TransitionCollection>
                 </Frame.ContentTransitions>
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="250" />
-                        <RowDefinition />
-                    </Grid.RowDefinitions>
-                    <Grid Background="{StaticResource CalciteUIBackground3Brush}">
-                        <StackPanel VerticalAlignment="Center" Margin="20,10" >
-                            <TextBlock Text="WinUI 3" HorizontalAlignment="Left" Style="{StaticResource SubheaderTextBlockStyle}" />
-                            <TextBlock Text="Calcite for .NET" HorizontalAlignment="Left" Style="{StaticResource HeaderTextBlockStyle}" />
-                        </StackPanel>
-                        <Path Data="M39.87 36.956l-.796.084-.358-3.36a7.572 7.572 0 0 0-7.546-6.78h-9.317a7.61 7.61 0 0 0-7.572 7.075L13.022 50.6a2.484 2.484 0 0 0 2.478 2.664h.4v3.322a2.516 2.516 0 0 0 2.514 2.514H34v.8H18.414a3.318 3.318 0 0 1-3.314-3.314v-2.547a3.284 3.284 0 0 1-2.876-3.499l1.26-16.623a8.412 8.412 0 0 1 8.369-7.817h9.317a8.372 8.372 0 0 1 8.342 7.497zM18.1 12a8.9 8.9 0 1 1 8.9 8.9 8.91 8.91 0 0 1-8.9-8.9zm.8 0A8.1 8.1 0 1 0 27 3.9a8.109 8.109 0 0 0-8.1 8.1zm12.344 36.01l6.372 6.374-.565.566-6.94-6.94 6.657-6.655.565.567zm15.383-0.5l-.565.566 6.372 6.373-6.089 6.09.566.565 6.655-6.655zm-17.373 10.517l.774.2 5.385-20.88-.774-.199z"
-                          Stroke="{StaticResource CalciteUIText1Brush}" StrokeThickness="3" Width="128" Height="128" Stretch="Uniform"
-                          HorizontalAlignment="Right" Margin="20" Opacity=".75" />
-                    </Grid>
-                    <ScrollViewer Grid.Row="1" Padding="20">
-                        <RichTextBlock VerticalAlignment="Top" TextAlignment="Start">
-                            <RichTextBlock.Blocks>
-                                <Paragraph>
-                                    Functional Test app for Esri Calcite styles resources for .NET inspired by the Calcite Design System.
-                                    <LineBreak />
-                                </Paragraph>
-                                <Paragraph>
-                                    <Hyperlink NavigateUri="https://www.github.com/esri/calcite-dotnet">Visit Calcite for .NET on GitHub</Hyperlink>
-                                </Paragraph>
-                            </RichTextBlock.Blocks>
-                        </RichTextBlock>
-                    </ScrollViewer>
-                </Grid>
             </Frame>
         </NavigationView>
 

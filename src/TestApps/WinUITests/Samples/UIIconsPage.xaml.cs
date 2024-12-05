@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.DataTransfer;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 
@@ -43,6 +44,46 @@ namespace WinUITests.Samples
                 gridView.ItemsSource = icons.Where(i => i.Name.Contains(search.Text.Trim(), StringComparison.InvariantCultureIgnoreCase));
             }
         }
+
+        private void CopyHexCode_Click(object sender, RoutedEventArgs e)
+        {
+            var icon = (sender as FrameworkElement).DataContext as IconEntry;
+            DataPackage dataPackage = new DataPackage();
+            dataPackage.SetText(icon.GlyphHex);
+            Clipboard.SetContent(dataPackage);
+        }
+
+        private void CopyName_Click(object sender, RoutedEventArgs e)
+        {
+            var icon = (sender as FrameworkElement).DataContext as IconEntry;
+            DataPackage dataPackage = new DataPackage();
+            dataPackage.SetText(icon.Name);
+            Clipboard.SetContent(dataPackage);
+        }
+
+        private void CopyIconSource_Click(object sender, RoutedEventArgs e)
+        {
+            var icon = (sender as FrameworkElement).DataContext as IconEntry;
+            DataPackage dataPackage = new DataPackage();
+            dataPackage.SetText($"{{cal:CalciteIconSource Icon={Name}, Scale=Small, SymbolSize=16}}");
+            Clipboard.SetContent(dataPackage);
+        }
+
+        private void CopyIconSourceElement_Click(object sender, RoutedEventArgs e)
+        {
+            var icon = (sender as FrameworkElement).DataContext as IconEntry;
+            DataPackage dataPackage = new DataPackage();
+            dataPackage.SetText($"{{cal:CalciteIconSourceElement Icon={Name}, Scale=Small, SymbolSize=16}}");
+            Clipboard.SetContent(dataPackage);
+        }
+
+        private void CopySymbolIcon_Click(object sender, RoutedEventArgs e)
+        {
+            var icon = (sender as FrameworkElement).DataContext as IconEntry;
+            DataPackage dataPackage = new DataPackage();
+            dataPackage.SetText($"<cal:SymbolIcon Symbol=\"{icon.Name}\" IconScale=\"Large\" />");
+            Clipboard.SetContent(dataPackage);
+        }
     }
 
     public class IconEntry
@@ -52,5 +93,6 @@ namespace WinUITests.Samples
         public string GlyphHex => $"&#x{GlyphId.ToString("x2")};";
         public int GlyphId => (int)Icon;
         public string Name => Icon.ToString();
+        
     }
 }

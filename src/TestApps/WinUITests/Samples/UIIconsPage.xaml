@@ -19,23 +19,37 @@
         <ListView x:Name="gridView" Grid.Row="1">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="local:IconEntry">
-                    <StackPanel Orientation="Horizontal" BorderBrush="Black" BorderThickness="0,0,0,1" >
-                        <!--<IconSourceElement Width="50" Height="50" Foreground="Red">
-                            <IconSourceElement.IconSource>
-                                <cal:CalciteFontIconSource Icon="{x:Bind Icon}" FontSize="16" Scale="Small" />
-                            </IconSourceElement.IconSource>
-                        </IconSourceElement>-->
-                        <TextBlock Text="{x:Bind Glyph}" Width="80" ToolTipService.ToolTip="{x:Bind GlyphHex}"
+                    <Grid BorderBrush="Black" BorderThickness="0,0,0,1" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="80" />
+                            <ColumnDefinition Width="80" />
+                            <ColumnDefinition Width="80" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{x:Bind Glyph}" Grid.Column="0" ToolTipService.ToolTip="{x:Bind GlyphHex}"
                            FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" 
                            FontFamily="{StaticResource CalciteUIIconsSmallFontFamily}" />
-                        <TextBlock Text="{x:Bind Glyph}" Width="80" ToolTipService.ToolTip="{x:Bind GlyphHex}"
+                        <TextBlock Text="{x:Bind Glyph}" Grid.Column="1" ToolTipService.ToolTip="{x:Bind GlyphHex}"
                            FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" 
                            FontFamily="{StaticResource CalciteUIIconsMediumFontFamily}" />
-                        <TextBlock Text="{x:Bind Glyph}" Width="80" ToolTipService.ToolTip="{x:Bind GlyphHex}"
+                        <TextBlock Text="{x:Bind Glyph}" Grid.Column="2" ToolTipService.ToolTip="{x:Bind GlyphHex}"
                                    FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Bottom"
                                    FontFamily="{StaticResource CalciteUIIconsLargeFontFamily}" />
-                        <TextBlock Text="{x:Bind Name}" VerticalAlignment="Center" />
-                    </StackPanel>
+                        <TextBox Text="{x:Bind Name}" Grid.Column="3" VerticalAlignment="Center" Style="{StaticResource SelectableTextBlockStyle}" />
+                        <Button HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Column="3" Padding="2" Style="{StaticResource CalciteSecondaryButtonStyle}">
+                            <IconSourceElement IconSource="{cal:CalciteIconSource Icon=Copy}" />
+                            <Button.Flyout>
+                                <MenuFlyout>
+                                    <MenuFlyoutItem Text="Copy Enum Name" Click="CopyName_Click" />
+                                    <MenuFlyoutItem Text="Copy Hex Code" Click="CopyHexCode_Click" />
+                                    <MenuFlyoutItem Text="Copy IconSource Markup Extension" Click="CopyIconSource_Click" />
+                                    <MenuFlyoutItem Text="Copy IconSourceElement Markup Extension" Click="CopyIconSourceElement_Click" />
+                                    <MenuFlyoutItem Text="Copy SymbolIcon UI Control" Click="CopySymbolIcon_Click" />
+                                </MenuFlyout>
+                            </Button.Flyout>
+                        </Button>
+                    </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

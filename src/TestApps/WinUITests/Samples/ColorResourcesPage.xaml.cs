@@ -1,21 +1,9 @@
-// Copyright (c) Microsoft Corporation and Contributors.
-// Licensed under the MIT License.
-
 using Esri.Calcite.WinUI;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Controls.Primitives;
-using Microsoft.UI.Xaml.Data;
-using Microsoft.UI.Xaml.Input;
-using Microsoft.UI.Xaml.Media;
-using Microsoft.UI.Xaml.Navigation;
-using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
+using Windows.ApplicationModel.DataTransfer;
 
 namespace WinUITests.Samples
 {
@@ -28,14 +16,37 @@ namespace WinUITests.Samples
             var rd = calciteResource.MergedDictionaries.Where(m => m.Source.OriginalString == "ms-appx:///Esri.Calcite.WinUI/Colors/Colors.xaml")?.First();
             var rdDark = ((ResourceDictionary)rd.ThemeDictionaries["Default"]);
             var rdLight = ((ResourceDictionary)rd.ThemeDictionaries["Light"]);
-            gridView.ItemsSource = rdLight.OrderBy(r => r.Key).Concat(rd.OrderBy(r=>r.Key)).Select(r=> new ColorItem() {  Key = (string)r.Key, Value = (Windows.UI.Color)r.Value }).ToList(); //ToList to avoid exception in AoT mode;
-            gridView2.ItemsSource = rdDark.OrderBy(r => r.Key).Concat(rd.OrderBy(r => r.Key)).Select(r => new ColorItem() { Key = (string)r.Key, Value = (Windows.UI.Color)r.Value }).ToList(); //ToList to avoid exception in AoT mode;
+            List<ColorItem> items = rdLight.OrderBy(r => r.Key).Concat(rd.OrderBy(r => r.Key)).Select(r => new ColorItem() { Key = (string)r.Key, LightValue = (Windows.UI.Color)r.Value, DarkValue = (Windows.UI.Color)r.Value }).ToList(); //ToList to avoid exception in AoT mode;==
+            foreach(var item in rdDark)
+            {
+                items.First(f => f.Key == (string)item.Key).DarkValue = (Windows.UI.Color)item.Value;
+            }
+            gridView3.ItemsSource = items;
+        }
+
+        private void CopyButton_Click(object sender, RoutedEventArgs e)
+        {
+            var color = (sender as FrameworkElement).DataContext as ColorItem;
+            DataPackage dataPackage = new DataPackage();
+            dataPackage.SetText(color.Markup);
+            Clipboard.SetContent(dataPackage);
         }
     }
 
     public class ColorItem
     {
         public string Key { get; set; }
-        public Windows.UI.Color Value { get; set; }
+        public Windows.UI.Color LightValue { get; set; }
+        public Windows.UI.Color DarkValue { get; set; }
+        public string Markup
+        {
+            get
+            {
+                if (LightValue != DarkValue)
+                    return $"{{ThemeResource {Key}}}";
+                else
+                    return $"{{StaticResource {Key}}}";
+            }
+        }
     }
 }
