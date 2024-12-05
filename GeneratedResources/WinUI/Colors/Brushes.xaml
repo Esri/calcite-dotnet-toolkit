@@ -3,8 +3,6 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Colors/Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    <ResourceDictionary.ThemeDictionaries>
-        <ResourceDictionary x:Key="Default">
             <SolidColorBrush x:Key="CalciteUIBrandBrush" Color="{ThemeResource CalciteUIBrandColor}" />
             <SolidColorBrush x:Key="CalciteUIBrandHoverBrush" Color="{ThemeResource CalciteUIBrandHoverColor}" />
             <SolidColorBrush x:Key="CalciteUIBrandPressBrush" Color="{ThemeResource CalciteUIBrandPressColor}" />
@@ -28,6 +26,4 @@
             <SolidColorBrush x:Key="CalciteUIDangerBrush" Color="{ThemeResource CalciteUIDangerColor}" />
             <SolidColorBrush x:Key="CalciteUIDangerHoverBrush" Color="{ThemeResource CalciteUIDangerHoverColor}" />
             <SolidColorBrush x:Key="CalciteUIDangerPressBrush" Color="{ThemeResource CalciteUIDangerPressColor}" />
-        </ResourceDictionary>
-    </ResourceDictionary.ThemeDictionaries>
 </ResourceDictionary>

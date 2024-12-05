@@ -127,11 +127,6 @@ void GenerateColors(string colorsScss, string pathToOutput, string format)
     else if (format == "Maui")
         brushOutput.WriteLine($"        <ResourceDictionary Source=\"Colors.xaml\" />");
     brushOutput.WriteLine("    </ResourceDictionary.MergedDictionaries>");
-    if (format == "WinUI" || format == "UWP")
-    {
-        brushOutput.WriteLine("    <ResourceDictionary.ThemeDictionaries>");
-        brushOutput.WriteLine("        <ResourceDictionary x:Key=\"Default\">");
-    }
     foreach (var dark in darkColors)
     {
         var name = dark.Key.Replace("-dark", "");
@@ -143,11 +138,6 @@ void GenerateColors(string colorsScss, string pathToOutput, string format)
             brushOutput.WriteLine($"    <SolidColorBrush x:Key=\"{toResourceName(name, "Brush")}\" Color=\"{{DynamicResource {toResourceName(name, "Color")}}}\" />");
         else if(format == "WinUI" || format == "UWP")
             brushOutput.WriteLine($"            <SolidColorBrush x:Key=\"{toResourceName(name, "Brush")}\" Color=\"{{ThemeResource {toResourceName(name, "Color")}}}\" />");
-    }
-    if (format == "WinUI" || format == "UWP")
-    {
-        brushOutput.WriteLine("        </ResourceDictionary>");
-        brushOutput.WriteLine("    </ResourceDictionary.ThemeDictionaries>");
     }
     brushOutput.WriteLine("</ResourceDictionary>");
     brushOutput.Flush();
