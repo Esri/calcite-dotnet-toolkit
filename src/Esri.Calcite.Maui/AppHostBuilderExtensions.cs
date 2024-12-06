@@ -26,9 +26,9 @@ namespace Esri.Calcite.Maui
             builder = builder.ConfigureMauiHandlers(delegate (IMauiHandlersCollection a)
             {
             }).ConfigureFonts(fonts =>
-                 fonts.AddEmbeddedResourceFont(typeof(AppHostBuilderExtensions).Assembly, "calcite-ui-icons-16.ttf", CalciteUIIconsSmallFontFamily)
-                      .AddEmbeddedResourceFont(typeof(AppHostBuilderExtensions).Assembly, "calcite-ui-icons-24.ttf", CalciteUIIconsMediumFontFamily)
-                      .AddEmbeddedResourceFont(typeof(AppHostBuilderExtensions).Assembly, "calcite-ui-icons-32.ttf", CalciteUIIconsLargeFontFamily));
+                 fonts.AddFont("calcite-ui-icons-16.ttf", CalciteUIIconsSmallFontFamily)
+                      .AddFont("calcite-ui-icons-24.ttf", CalciteUIIconsMediumFontFamily)
+                      .AddFont("calcite-ui-icons-32.ttf", CalciteUIIconsLargeFontFamily));
             CustomMappings.ConfigureMappings();
             return builder;
         }

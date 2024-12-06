@@ -1,0 +1,5 @@
+<Project>
+  <ItemGroup>
+     <MauiFont Include="$(MSBuildThisFileDirectory)../../Assets/Fonts/*.*" />
+  </ItemGroup>
+</Project>

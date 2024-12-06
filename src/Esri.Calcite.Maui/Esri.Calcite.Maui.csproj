@@ -12,7 +12,8 @@
     </PropertyGroup>
 
     <ItemGroup>    
-      <EmbeddedResource Include="..\..\fonts\*.ttf" Link="Resources\Fonts\%(Filename)%(Extension)" />
+      <MauiFont Include="..\..\fonts\*.ttf" Link="Assets\Fonts\%(Filename)%(Extension)" />
+      <None Include="..\..\fonts\*.ttf" Pack="True" PackagePath="Assets/Fonts/" />
       <Compile Include="..\..\GeneratedResources\Maui\*.cs" Link="GeneratedResources\%(RecursiveDir)%(Filename)%(Extension)" />
       <None Include="README.txt" Pack="True" PackagePath="\" />
       <None Include="..\..\docs\maui.md" Link="README.md" Pack="True" PackagePath="\README.md" />
@@ -25,6 +26,10 @@
             <Generator>MSBuild:Compile</Generator>
             <Link>Resources\Styles\%(Filename).xaml</Link>
         </MauiXaml>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="build\net8.0\Esri.Calcite.Maui.targets" Pack="True" PackagePath="build\net8.0\;buildTransitive\net8.0\" />
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Microsoft.Maui.Controls" Version="8.0.3" Condition="$(TargetFramework.StartsWith('net8.0'))" />
