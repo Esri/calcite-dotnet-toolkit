@@ -11,8 +11,10 @@ namespace Esri.Calcite.Maui
 #if WINDOWS
             RadioButtonHandler.Mapper.AppendToMapping("Color", MapRadioButtonOuterEllipseChecked);
             RadioButtonHandler.Mapper.AppendToMapping("Color2", MapRadioButtonCheckGlyphFill);
+            RadioButtonHandler.Mapper.AppendToMapping("Color3", MapRadioButtonOuterEllipseStroke);
             RadioButtonHandler.Mapper.AppendToMapping("HoverColor", MapRadioButtonOuterEllipseCheckedHover);
             RadioButtonHandler.Mapper.AppendToMapping("PressedColor", MapRadioButtonOuterEllipseCheckedPressed);
+
             EntryHandler.Mapper.AppendToMapping("Color", MapTextControlBorderBrush);
             EntryHandler.Mapper.AppendToMapping("Color2", MapTextControlBorderBrushDisabled);
             EntryHandler.Mapper.AppendToMapping("HoverColor", MapTextControlBackgroundPointerOver);
@@ -64,7 +66,8 @@ namespace Esri.Calcite.Maui
             {
                 if (CalciteResourceHelper.GetColor2(bo) is Color c)
                 {
-                    handler.PlatformView.Resources["RadioButtonCheckGlyphFill"] = c.ToPlatform();
+                    handler.PlatformView.Resources["RadioButtonCheckGlyphFill"] = 
+                    handler.PlatformView.Resources["RadioButtonCheckGlyphFillPointerOver"] = c.ToPlatform();
                 }
             }
         }
@@ -80,6 +83,20 @@ namespace Esri.Calcite.Maui
                 }
             }
         }
+        internal static void MapRadioButtonOuterEllipseStroke(IRadioButtonHandler handler, IRadioButton view)
+        {
+            if (view is BindableObject bo)
+            {
+                if (CalciteResourceHelper.GetColor3(bo) is Color c)
+                {
+                    handler.PlatformView.Resources["RadioButtonOuterEllipseStroke"] =
+                    handler.PlatformView.Resources["RadioButtonOuterEllipseStrokePointerOver"] =
+                    handler.PlatformView.Resources["RadioButtonOuterEllipseStrokePressed"] =
+                    handler.PlatformView.Resources["RadioButtonOuterEllipseStrokeDisabled"] = c.ToPlatform();
+                }
+            }
+        }
+        
 
         internal static void MapRadioButtonOuterEllipseCheckedPressed(IRadioButtonHandler handler, IRadioButton view)
         {

@@ -316,6 +316,7 @@
         <Setter Property="TextColor" Value="{AppThemeBinding Light={x:DynamicResource CalciteUIText1LightColor}, Dark={x:DynamicResource CalciteUIText1DarkColor}}" />
         <Setter Property="ca:CalciteResourceHelper.Color" Value="{AppThemeBinding Light={x:DynamicResource CalciteUIBrandLightColor}, Dark={x:DynamicResource CalciteUIBrandDarkColor}}" />
         <Setter Property="ca:CalciteResourceHelper.Color2" Value="White" />
+        <Setter Property="ca:CalciteResourceHelper.Color3" Value="{AppThemeBinding Light={x:DynamicResource CalciteUIBorder1LightColor}, Dark={x:DynamicResource CalciteUIBorder1DarkColor}}" />
         <Setter Property="ca:CalciteResourceHelper.HoverColor" Value="{AppThemeBinding Light={x:DynamicResource CalciteUIBrandHoverLightColor}, Dark={x:DynamicResource CalciteUIBrandHoverDarkColor}}" />
         <Setter Property="ca:CalciteResourceHelper.PressedColor" Value="{AppThemeBinding Light={x:DynamicResource CalciteUIBrandPressLightColor}, Dark={x:DynamicResource CalciteUIBrandPressDarkColor}}" />
     </Style>

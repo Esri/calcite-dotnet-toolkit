@@ -20,6 +20,14 @@ namespace Esri.Calcite.Maui
         public static readonly BindableProperty Color2Property =
             BindableProperty.CreateAttached("Color2", typeof(Color), typeof(CalciteResourceHelper), null);
 
+
+        public static Color GetColor3(BindableObject obj) => (Color)obj.GetValue(Color3Property);
+
+        public static void SetColor3(BindableObject obj, Color value) => obj.SetValue(Color3Property, value);
+
+        public static readonly BindableProperty Color3Property =
+            BindableProperty.CreateAttached("Color3", typeof(Color), typeof(CalciteResourceHelper), null);
+
         public static Color GetHoverColor(BindableObject obj)
         {
             return (Color)obj.GetValue(HoverColorProperty);
