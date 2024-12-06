@@ -157,6 +157,7 @@
 
     <Style TargetType="CheckBox" x:Key="CalciteCheckBoxStyle">
         <Setter Property="Color" Value="{AppThemeBinding Light={x:DynamicResource CalciteUIBrandLightColor}, Dark={x:DynamicResource CalciteUIBrandDarkColor}}" />
+        <Setter Property="ca:CalciteResourceHelper.Color2" Value="White" />
     </Style>
 
     <!--<Style TargetType="DatePicker">

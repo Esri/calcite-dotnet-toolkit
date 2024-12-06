@@ -24,7 +24,7 @@ namespace Esri.Calcite.Maui
             EditorHandler.Mapper.AppendToMapping("HoverColor", MapTextControlBackgroundPointerOver);
             EditorHandler.Mapper.AppendToMapping("PressedColor", MapTextControlBorderBrushFocused);
             SliderHandler.Mapper.AppendToMapping("Color", MapSliderOuterThumbBackground);
-
+            CheckBoxHandler.Mapper.AppendToMapping("Color2", MapCheckBoxCheckGlyphForeground);
 #endif
         }
 
@@ -102,10 +102,10 @@ namespace Esri.Calcite.Maui
         {
             if (view is BindableObject bo)
             {
-                if (CalciteResourceHelper.GetPressedColor(bo) is Color hoverColor)
+                if (CalciteResourceHelper.GetPressedColor(bo) is Color pressedColor)
                 {
                     handler.PlatformView.Resources["RadioButtonOuterEllipseCheckedFillPointerOver"] =
-                    handler.PlatformView.Resources["RadioButtonOuterEllipseCheckedStrokePointerOver"] = hoverColor.ToPlatform();
+                    handler.PlatformView.Resources["RadioButtonOuterEllipseCheckedStrokePointerOver"] = pressedColor.ToPlatform();
                 }
             }
         }
@@ -114,11 +114,22 @@ namespace Esri.Calcite.Maui
         {
             if (view is BindableObject bo)
             {
-                if (CalciteResourceHelper.GetHoverColor(bo) is Color pressedColor)
+                if (CalciteResourceHelper.GetHoverColor(bo) is Color hoverColor)
                 {
                     handler.PlatformView.Resources["RadioButtonOuterEllipseCheckedFillPressed"] =
-                    handler.PlatformView.Resources["RadioButtonOuterEllipseCheckedStrokePressed"] = pressedColor.ToPlatform();
+                    handler.PlatformView.Resources["RadioButtonOuterEllipseCheckedStrokePressed"] = hoverColor.ToPlatform();
                 }
+            }
+        }
+
+
+        internal static void MapCheckBoxCheckGlyphForeground(ICheckBoxHandler handler, ICheckBox view)
+        {
+            if (view is BindableObject bo && CalciteResourceHelper.GetColor2(bo) is Color color)
+            {
+                handler.PlatformView.Resources["CheckBoxCheckGlyphForegroundChecked"] =
+                handler.PlatformView.Resources["CheckBoxCheckGlyphForegroundCheckedPressed"] =
+                handler.PlatformView.Resources["CheckBoxCheckGlyphForegroundCheckedPointerOver"] = color.ToPlatform();
             }
         }
 
