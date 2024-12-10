@@ -17,35 +17,35 @@
         <ScrollViewer>
             <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20">
                 <TextBlock Text="Default Button" />
-                <StackPanel Orientation="Horizontal" >
-                    <Button Content="Calcite style button" />
-                    <Button Content="Calcite style button" IsEnabled="False" />
-                    <TextBox Style="{StaticResource SelectableTextBlockStyle}" Text="&lt;Button /&gt;"/>
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Calcite style button" Margin="0,0,10,0" MinWidth="200" />
+                    <Button Content="Calcite style button" IsEnabled="False" Margin="0,0,10,0" MinWidth="200" />
+                    <TextBlock Style="{StaticResource CodeTextBlock}" Text="&lt;Button /&gt;"/>
                 </StackPanel>
                 <TextBlock Text="Default ToggleButton" />
                 <StackPanel Orientation="Horizontal" >
-                    <ToggleButton Content="Toggle Button Checked" IsChecked="True" />
-                    <ToggleButton Content="Toggle Button Unchecked" />
-                    <TextBox Style="{StaticResource SelectableTextBlockStyle}" Text="&lt;ToggleButton /&gt;"/>
+                    <ToggleButton Content="Toggle Button Checked" IsChecked="True" Margin="0,0,10,0" MinWidth="200" />
+                    <ToggleButton Content="Toggle Button Unchecked" Margin="0,0,10,0" MinWidth="200" />
+                    <TextBlock Style="{StaticResource CodeTextBlock}" Text="&lt;ToggleButton /&gt;"/>
                 </StackPanel>
 
                 <TextBlock Text="Button Styles" />
                 <StackPanel Orientation="Horizontal" >
-                    <Button Style="{StaticResource CalcitePrimaryButtonStyle}" Content="CalcitePrimaryButtonStyle" />
-                    <TextBox Style="{StaticResource SelectableTextBlockStyle}" Text="&lt;Button Style=&quot;{StaticResource CalcitePrimaryButtonStyle}&quot; /&gt;"/>
+                    <Button Style="{StaticResource CalcitePrimaryButtonStyle}" Content="CalcitePrimaryButtonStyle" Margin="0,0,10,0" MinWidth="200" />
+                    <TextBlock Style="{StaticResource CodeTextBlock}" Text="&lt;Button Style=&quot;{StaticResource CalcitePrimaryButtonStyle}&quot; /&gt;"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
-                    <Button Style="{StaticResource CalciteSecondaryButtonStyle}" Content="CalciteSecondaryButtonStyle" />
-                    <TextBox Style="{StaticResource SelectableTextBlockStyle}" Text="&lt;Button Style=&quot;{StaticResource CalciteSecondaryButtonStyle}&quot; /&gt;"/>
+                    <Button Style="{StaticResource CalciteSecondaryButtonStyle}" Content="CalciteSecondaryButtonStyle" Margin="0,0,10,0" MinWidth="200" />
+                    <TextBlock Style="{StaticResource CodeTextBlock}" Text="&lt;Button Style=&quot;{StaticResource CalciteSecondaryButtonStyle}&quot; /&gt;"/>
                 </StackPanel>
                 <TextBlock Text="Danger Button" />
                 <StackPanel Orientation="Horizontal" >
-                    <Button Style="{StaticResource CalciteDangerButtonStyle}" Content="CalciteDangerButtonStyle" />
-                    <TextBox Style="{StaticResource SelectableTextBlockStyle}" Text="&lt;Button Style=&quot;{StaticResource CalciteDangerButtonStyle}&quot; /&gt;"/>
+                    <Button Style="{StaticResource CalciteDangerButtonStyle}" Content="CalciteDangerButtonStyle" Margin="0,0,10,0" MinWidth="200" />
+                    <TextBlock Style="{StaticResource CodeTextBlock}" Text="&lt;Button Style=&quot;{StaticResource CalciteDangerButtonStyle}&quot; /&gt;"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
-                    <Button Style="{StaticResource CalciteDangerSecondaryButtonStyle}" Content="CalciteDangerSecondaryButtonStyle" />
-                    <TextBox Style="{StaticResource SelectableTextBlockStyle}" Text="&lt;Button Style=&quot;{StaticResource CalciteDangerSecondaryButtonStyle}&quot; /&gt;"/>
+                    <Button Style="{StaticResource CalciteDangerSecondaryButtonStyle}" Content="CalciteDangerSecondaryButtonStyle" Margin="0,0,10,0" MinWidth="200" />
+                    <TextBlock Style="{StaticResource CodeTextBlock}" Text="&lt;Button Style=&quot;{StaticResource CalciteDangerSecondaryButtonStyle}&quot; /&gt;"/>
                 </StackPanel>
             </StackPanel>
         </ScrollViewer>

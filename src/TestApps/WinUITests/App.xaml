@@ -17,17 +17,9 @@
                 </XamlControlsResources>
             </ResourceDictionary.MergedDictionaries>
             <!-- Other app resources here -->
-            <Style TargetType="TextBox" x:Key="SelectableTextBlockStyle">
+            <Style TargetType="TextBlock" x:Key="CodeTextBlock">
                 <Setter Property="FontFamily" Value="Cascadia Code, Courier New" />
-                <Setter Property="Template">
-                    <Setter.Value>
-                        <ControlTemplate >
-                            <ScrollViewer x:Name="ContentElement" Grid.Row="1" Grid.Column="0"
-                               HorizontalScrollMode="{TemplateBinding ScrollViewer.HorizontalScrollMode}" HorizontalScrollBarVisibility="{TemplateBinding ScrollViewer.HorizontalScrollBarVisibility}" VerticalScrollMode="{TemplateBinding ScrollViewer.VerticalScrollMode}" VerticalScrollBarVisibility="{TemplateBinding ScrollViewer.VerticalScrollBarVisibility}" IsHorizontalRailEnabled="{TemplateBinding ScrollViewer.IsHorizontalRailEnabled}" IsVerticalRailEnabled="{TemplateBinding ScrollViewer.IsVerticalRailEnabled}" IsDeferredScrollingEnabled="{TemplateBinding ScrollViewer.IsDeferredScrollingEnabled}" Margin="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}"
-                               Foreground="{TemplateBinding Foreground}" IsTabStop="False" AutomationProperties.AccessibilityView="Raw" ZoomMode="Disabled" />
-                        </ControlTemplate>
-                    </Setter.Value>
-                </Setter>
+                <Setter Property="IsTextSelectionEnabled" Value="True" />
             </Style>
         </ResourceDictionary>
     </Application.Resources>

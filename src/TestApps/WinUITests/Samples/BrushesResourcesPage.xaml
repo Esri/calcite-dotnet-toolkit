@@ -19,7 +19,7 @@
                         <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
                     <Border Height="50" BorderBrush="{ThemeResource ApplicationForegroundThemeBrush}" BorderThickness="1" Margin="0,5,5,5" Background="{x:Bind Value}" Grid.Column="0"/>
-                    <TextBox Text="{x:Bind Markup}" VerticalAlignment="Center" Grid.Column="1"  Style="{StaticResource SelectableTextBlockStyle}"/>
+                    <TextBlock Text="{x:Bind Markup}" VerticalAlignment="Center" Grid.Column="1"  Style="{StaticResource CodeTextBlock}"/>
                     <Button HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Column="3" Padding="2" Style="{StaticResource CalciteSecondaryButtonStyle}"
                             Click="CopyButton_Click">
                         <IconSourceElement IconSource="{cal:CalciteIconSource Icon=Copy}" />
