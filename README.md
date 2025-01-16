@@ -1,5 +1,5 @@
 # Calcite
-Styles resources for .NET XAML Frameworks (WPF, WinUI & .NET MAUI) inspired by the [Calcite Design System](https://github.com/Esri/calcite-design-system).
+Style resources for .NET XAML Frameworks (WPF, WinUI & .NET MAUI) inspired by the [Calcite Design System](https://github.com/Esri/calcite-design-system).
 
 # Documentation
  - [Brush and color resources](docs/brushes.md)
