@@ -1,4 +1,4 @@
-# Calcite
+# Calcite for .NET
 Style resources for .NET XAML Frameworks (WPF, WinUI & .NET MAUI) inspired by the [Calcite Design System](https://github.com/Esri/calcite-design-system).
 
 # Documentation
