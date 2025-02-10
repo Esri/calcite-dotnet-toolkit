@@ -124,7 +124,25 @@ namespace IconXamlGenerator
                 return csname;
             }
         }
-        public string PrettyName => CamelCase(Name, false) + (IsFilled ? " (Filled)" : "");
+        public string PrettyName
+        {
+            get
+            {
+                switch(Name)
+                {
+                    case "one-half-times": return "1/2x";
+                    case "one-fourth-times": return "1/4x";
+                    case "one-eighth-times": return "1/8x";
+                    case "one-time": return "1x";
+                    case "two-times": return "2x";
+                    case "four-times": return "4x";
+                    case "eigth-times": return "8x";
+                    default:
+                        return CamelCase(Name, false) + (IsFilled ? " (Filled)" : "");
+                }
+                
+            }
+        }
         public string? Alias { get; set; }
         public string? Category { get; set; }
         public string? Release { get; set; }

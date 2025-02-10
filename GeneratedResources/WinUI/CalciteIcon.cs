@@ -4,25 +4,25 @@ namespace Esri.Calcite.WinUI;
 /// <remarks>The enum <c>UInt16</c> values correspond to the character code in the Calcite symbol font.</remarks>
 public enum CalciteIcon : ushort
 {
-	/// <summary>One Half Times</summary>
+	/// <summary>1/2x</summary>
 	/// <remarks>Category: Numbers<br/>
 	/// Alias: 3.19.9, numbers, playback speed, one half times, slowed down, fraction</remarks>
 	/// <release>3.19.9</release>
 	OneHalfTimes = 59136,
 
-	/// <summary>One Fourth Times</summary>
+	/// <summary>1/4x</summary>
 	/// <remarks>Category: Numbers<br/>
 	/// Alias: 3.19.9, numbers, playback speed, one fourth times, slowed down, fraction, 25 percent</remarks>
 	/// <release>3.19.9</release>
 	OneFourthTimes = 59137,
 
-	/// <summary>One Eighth Times</summary>
+	/// <summary>1/8x</summary>
 	/// <remarks>Category: Numbers<br/>
 	/// Alias: 3.19.9, numbers, playback speed, one eighth times, slowed down, fraction</remarks>
 	/// <release>3.19.9</release>
 	OneEighthTimes = 59138,
 
-	/// <summary>One Time</summary>
+	/// <summary>1x</summary>
 	/// <remarks>Category: Numbers<br/>
 	/// Alias: 3.19.9, numbers, playback speed, one time, slowed down, speed up</remarks>
 	/// <release>3.19.9</release>
@@ -34,7 +34,7 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	_2DExplore = 59140,
 
-	/// <summary>Two Times</summary>
+	/// <summary>2x</summary>
 	/// <remarks>Category: Numbers<br/>
 	/// Alias: 3.19.9, numbers, two times, speed up, second, double time</remarks>
 	/// <release>3.19.9</release>
@@ -52,13 +52,13 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	_3DGlasses = 59143,
 
-	/// <summary>Four Times</summary>
+	/// <summary>4x</summary>
 	/// <remarks>Category: Numbers<br/>
 	/// Alias: 3.19.9, numbers, playback speed, four times, speed up</remarks>
 	/// <release>3.19.9</release>
 	FourTimes = 59144,
 
-	/// <summary>Eigth Times</summary>
+	/// <summary>8x</summary>
 	/// <remarks>Category: Numbers<br/>
 	/// Alias: 3.19.9, numbers, playback speed, eight times, speed up</remarks>
 	/// <release>3.19.9</release>
