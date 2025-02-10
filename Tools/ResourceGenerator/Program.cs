@@ -160,7 +160,7 @@ void GenerateGlyphsXaml(IList<IconEntry> icons, string filename, string format)
     string xamlType = format == "WPF" ? "system:String" : "x:String";
     using StreamWriter xamlOutput = new StreamWriter(filename);
     xamlOutput.WriteLine(xamlHeader);
-    foreach (var icon in icons)
+    foreach (var icon in icons.OrderBy(i=>i.Name))
     {
         xamlOutput.WriteLine($"    <{xamlType} x:Key=\"CalciteUIIcons_Glyph_{icon.ResourceName}\">&#x{icon.Glyph.ToString("x4")};</{xamlType}> ");
         xamlOutput.Flush();
@@ -224,18 +224,18 @@ void GenerateCalciteIconEnum(IList<IconEntry> icons, string filename, string _na
     using StreamWriter iconsEnumOutput = new StreamWriter(filename);
     iconsEnumOutput.WriteLine($"namespace {_namespace};");
     iconsEnumOutput.WriteLine();
-	iconsEnumOutput.WriteLine("/// <summary>A collection of Calcite UI Icons.</summary>");
-	iconsEnumOutput.WriteLine("/// <remarks>The enum <c>UInt16</c> values correspond to the character code in the Calcite symbol font.</remarks>");
+    iconsEnumOutput.WriteLine("/// <summary>A collection of Calcite UI Icons.</summary>");
+    iconsEnumOutput.WriteLine("/// <remarks>The enum <c>UInt16</c> values correspond to the character code in the Calcite symbol font.</remarks>");
     iconsEnumOutput.WriteLine("public enum CalciteIcon : ushort");
     iconsEnumOutput.WriteLine("{");
 
-    foreach (var icon in icons)
+    foreach (var icon in icons.OrderBy(i=>i.Glyph))
     {   
         string? alias = icon.Alias.Replace(Environment.NewLine, "");
         iconsEnumOutput.WriteLine($"\t/// <summary>{icon.PrettyName}</summary>");
         iconsEnumOutput.WriteLine($"\t/// <remarks>Category: {icon.Category}<br/>\n\t/// Alias: {alias}</remarks>");
         iconsEnumOutput.WriteLine($"\t/// <release>{icon.Release}</release>");
-        iconsEnumOutput.WriteLine($"\t{icon.CSName} = {icon.Glyph16},");
+        iconsEnumOutput.WriteLine($"\t{icon.CSName} = {icon.Glyph},");
         iconsEnumOutput.WriteLine();
         iconsEnumOutput.Flush();
     }
@@ -257,7 +257,7 @@ static void GenerateCalciteHelper(IList<IconEntry> icons, string filename, strin
     iconHelpersOutput.WriteLine("\t{");
     iconHelpersOutput.WriteLine("\t\tswitch(icon)");
     iconHelpersOutput.WriteLine("\t\t{");
-    foreach (var icon in icons)
+    foreach (var icon in icons.OrderBy(i=>i.Glyph))
         iconHelpersOutput.WriteLine($"\t\t\tcase CalciteIcon.{icon.CSName}: return \"{icon.ResourceName}\";");
 
     iconHelpersOutput.WriteLine("\t\t}");

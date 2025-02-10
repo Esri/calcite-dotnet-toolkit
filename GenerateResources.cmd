@@ -1,5 +1,6 @@
 rmdir GeneratedResources /S /Q
-dotnet run --project Tools\ResourceGenerator\ResourceGenerator.csproj calcite-ui-icons\docs\icons.json fonts\calcite-ui-icons-codepoints.json calcite-colors\dist\colors.scss GeneratedResources\WPF WPF
-dotnet run --project Tools\ResourceGenerator\ResourceGenerator.csproj calcite-ui-icons\docs\icons.json fonts\calcite-ui-icons-codepoints.json calcite-colors\dist\colors.scss GeneratedResources\Maui Maui
-dotnet run --project Tools\ResourceGenerator\ResourceGenerator.csproj calcite-ui-icons\docs\icons.json fonts\calcite-ui-icons-codepoints.json calcite-colors\dist\colors.scss GeneratedResources\WinUI WinUI
-dotnet run --project Tools\ResourceGenerator\ResourceGenerator.csproj calcite-ui-icons\docs\icons.json fonts\calcite-ui-icons-codepoints.json calcite-colors\dist\colors.scss GeneratedResources\UWP UWP
+
+dotnet run --project Tools\ResourceGenerator\ResourceGenerator.csproj ..\calcite-design-system\packages\calcite-ui-icons\\docs\keywords.json ..\calcite-design-system\packages\calcite-ui-icons\fantasticonrc.json calcite-colors\dist\colors.scss GeneratedResources\WPF WPF
+dotnet run --project Tools\ResourceGenerator\ResourceGenerator.csproj ..\calcite-design-system\packages\calcite-ui-icons\\docs\keywords.json ..\calcite-design-system\packages\calcite-ui-icons\fantasticonrc.json calcite-colors\dist\colors.scss GeneratedResources\Maui Maui
+dotnet run --project Tools\ResourceGenerator\ResourceGenerator.csproj ..\calcite-design-system\packages\calcite-ui-icons\\docs\keywords.json ..\calcite-design-system\packages\calcite-ui-icons\fantasticonrc.json calcite-colors\dist\colors.scss GeneratedResources\WinUI WinUI
+dotnet run --project Tools\ResourceGenerator\ResourceGenerator.csproj ..\calcite-design-system\packages\calcite-ui-icons\\docs\keywords.json ..\calcite-design-system\packages\calcite-ui-icons\fantasticonrc.json calcite-colors\dist\colors.scss GeneratedResources\UWP UWP

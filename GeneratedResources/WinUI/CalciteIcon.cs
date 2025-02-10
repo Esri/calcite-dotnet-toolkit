@@ -196,12 +196,6 @@ public enum CalciteIcon : ushort
 	/// <release>3.0.0</release>
 	AddressBook = 59167,
 
-	/// <summary>Alert Off Circle (Filled)</summary>
-	/// <remarks>Category: Objects<br/>
-	/// Alias: 3.24.2, objects, bell, no notifications, silent, vibrate, unsubscribe, turn off, no alarm, no announcements</remarks>
-	/// <release>3.24.2</release>
-	AlertOffCircleFilled = 59168,
-
 	/// <summary>All Servers</summary>
 	/// <remarks>Category: GIS<br/>
 	/// Alias: 3.20.7, gis, connections, connected, networks</remarks>
@@ -526,23 +520,11 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	BearRight = 59222,
 
-	/// <summary>Beginning (Filled)</summary>
-	/// <remarks>Category: Media<br/>
-	/// Alias: 1.5.0, start, first, media</remarks>
-	/// <release>1.5</release>
-	BeginningFilled = 59223,
-
 	/// <summary>Beginning</summary>
 	/// <remarks>Category: Media<br/>
 	/// Alias: 1.5.0, start, first, media</remarks>
 	/// <release>1.5</release>
 	Beginning = 59224,
-
-	/// <summary>Bell (Filled)</summary>
-	/// <remarks>Category: Objects<br/>
-	/// Alias: 3.14.5, objects, notification, alert, alarm, bell</remarks>
-	/// <release>3.14.5</release>
-	BellFilled = 59225,
 
 	/// <summary>Bell</summary>
 	/// <remarks>Category: Objects<br/>
@@ -892,12 +874,6 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	Check = 59283,
 
-	/// <summary>Check Circle (Filled)</summary>
-	/// <remarks>Category: Symbols<br/>
-	/// Alias: 1.5.0, symbols, check, mark, selected, circle</remarks>
-	/// <release>1.5</release>
-	CheckCircleFilled = 59284,
-
 	/// <summary>Check Circle</summary>
 	/// <remarks>Category: Symbols<br/>
 	/// Alias: 1.5.0, symbols, check, mark, selected, circle</remarks>
@@ -921,12 +897,6 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.15.2, objects, safety, insurance, protection, insured, secure, security, anti-virus, cybersecurity, defense, protected, warranty, coverage</remarks>
 	/// <release>3.15.2</release>
 	CheckShield = 59288,
-
-	/// <summary>Check Square (Filled)</summary>
-	/// <remarks>Category: Symbols<br/>
-	/// Alias: 1.5.0, symbols, done, box, select, tick, check mark, toggle, confirm, correct, selected</remarks>
-	/// <release>1.5</release>
-	CheckSquareFilled = 59289,
 
 	/// <summary>Check Square</summary>
 	/// <remarks>Category: Symbols<br/>
@@ -1024,12 +994,6 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	ChordDiagram = 59305,
 
-	/// <summary>Circle (Filled)</summary>
-	/// <remarks>Category: Generic<br/>
-	/// Alias: 1.5.0, generic, radio, shape, empty, button</remarks>
-	/// <release>1.5</release>
-	CircleFilled = 59306,
-
 	/// <summary>Circle</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 1.5.0, generic, radio, shape, empty, button</remarks>
@@ -1060,23 +1024,11 @@ public enum CalciteIcon : ushort
 	/// <release>3.28.8</release>
 	CircleInsetSmall = 59311,
 
-	/// <summary>Circle Pause (Filled)</summary>
-	/// <remarks>Category: Symbols<br/>
-	/// Alias: 3.23.0, symbols, stop, hold, pausing, waiting, slow, status</remarks>
-	/// <release>3.23.0</release>
-	CirclePauseFilled = 59312,
-
 	/// <summary>Circle Pause</summary>
 	/// <remarks>Category: Symbols<br/>
 	/// Alias: 3.23.0, symbols, stop, hold, pausing, waiting, slow, status</remarks>
 	/// <release>3.23.0</release>
 	CirclePause = 59313,
-
-	/// <summary>Circle Stop (Filled)</summary>
-	/// <remarks>Category: Symbols<br/>
-	/// Alias: 3.24.1, symbols, cube, stop, halt, end, finish, button</remarks>
-	/// <release>3.24.1</release>
-	CircleStopFilled = 59314,
 
 	/// <summary>Circle Stop</summary>
 	/// <remarks>Category: Symbols<br/>
@@ -1131,6 +1083,12 @@ public enum CalciteIcon : ushort
 	/// Alias: 1.5.0, objects, time, date, sort, ascending</remarks>
 	/// <release>1.5</release>
 	ClockUp = 59323,
+
+	/// <summary>Closed Caption</summary>
+	/// <remarks>Category: Media<br/>
+	/// Alias: 3.29.3, media, media, audio, video, display, text, information</remarks>
+	/// <release>3.29.3</release>
+	ClosedCaption = 59325,
 
 	/// <summary>Cloud</summary>
 	/// <remarks>Category: Symbols<br/>
@@ -1282,6 +1240,30 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	ConfigurePopup = 59350,
 
+	/// <summary>Connection End Left</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.29.5, generic, line, point, connect, end, left</remarks>
+	/// <release>3.29.5</release>
+	ConnectionEndLeft = 59351,
+
+	/// <summary>Connection End Right</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.29.5, generic, line, point, connect, right, end</remarks>
+	/// <release>3.29.5</release>
+	ConnectionEndRight = 59352,
+
+	/// <summary>Connection Middle</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.29.5, generic, line, point, middle, connect</remarks>
+	/// <release>3.29.5</release>
+	ConnectionMiddle = 59353,
+
+	/// <summary>Connection To Connection</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.29.5, generic, connect, two points, line</remarks>
+	/// <release>3.29.5</release>
+	ConnectionToConnection = 59354,
+
 	/// <summary>Console</summary>
 	/// <remarks>Category: Windows<br/>
 	/// Alias: 1.5.0, windows, app-studio, terminal</remarks>
@@ -1299,6 +1281,12 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.3.0, image wrap, content inline, image inline</remarks>
 	/// <release>3.3.0</release>
 	ContentInline = 59357,
+
+	/// <summary>Content Inline Right</summary>
+	/// <remarks>Category: Windows<br/>
+	/// Alias: 3.32.0, windows, text, line, image inline, right, image wrap</remarks>
+	/// <release>3.32.0</release>
+	ContentInlineRight = 59358,
 
 	/// <summary>Content Large</summary>
 	/// <remarks>Category: Windows<br/>
@@ -1852,12 +1840,6 @@ public enum CalciteIcon : ushort
 	/// <release>3.25.2</release>
 	EnableDisableFeatureSelection = 59450,
 
-	/// <summary>End (Filled)</summary>
-	/// <remarks>Category: Media<br/>
-	/// Alias: 1.5.0, media</remarks>
-	/// <release>1.5</release>
-	EndFilled = 59451,
-
 	/// <summary>End</summary>
 	/// <remarks>Category: Media<br/>
 	/// Alias: 1.5.0, media</remarks>
@@ -1900,23 +1882,11 @@ public enum CalciteIcon : ushort
 	/// <release>3.0.0</release>
 	Event = 59458,
 
-	/// <summary>Exclamation Mark Circle (Filled)</summary>
-	/// <remarks>Category: Symbols<br/>
-	/// Alias: 1.5.0, symbols, invalid, error, broken</remarks>
-	/// <release>1.5</release>
-	ExclamationMarkCircleFilled = 59459,
-
 	/// <summary>Exclamation Mark Circle</summary>
 	/// <remarks>Category: Symbols<br/>
 	/// Alias: 1.5.0, symbols, invalid, error, broken</remarks>
 	/// <release>1.5</release>
 	ExclamationMarkCircle = 59460,
-
-	/// <summary>Exclamation Mark Triangle (Filled)</summary>
-	/// <remarks>Category: Symbols<br/>
-	/// Alias: 1.5.0, symbols, warning, alert</remarks>
-	/// <release>1.5</release>
-	ExclamationMarkTriangleFilled = 59461,
 
 	/// <summary>Exclamation Mark Triangle</summary>
 	/// <remarks>Category: Symbols<br/>
@@ -2200,6 +2170,18 @@ public enum CalciteIcon : ushort
 	/// <release>3.17.0</release>
 	Fingerprint = 59508,
 
+	/// <summary>Flag</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 3.29.1, objects, signal, flag, sign, important, warning, alert, caution</remarks>
+	/// <release>3.29.1</release>
+	Flag = 59510,
+
+	/// <summary>Flag Slash</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 3.29.1, objects, flag, cancel, stop, slash, signal, remove, important, alert</remarks>
+	/// <release>3.29.1</release>
+	FlagSlash = 59511,
+
 	/// <summary>Flash</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 1.5.0, generic, light, lightning bolt, lightning, weather, severe weather, sky, forecast, thunder, stormy, highlight, flashing</remarks>
@@ -2386,12 +2368,6 @@ public enum CalciteIcon : ushort
 	/// <release>3.16.6</release>
 	FormFieldOff = 59542,
 
-	/// <summary>Forward (Filled)</summary>
-	/// <remarks>Category: Media<br/>
-	/// Alias: 1.5.0, media</remarks>
-	/// <release>1.5</release>
-	ForwardFilled = 59543,
-
 	/// <summary>Forward</summary>
 	/// <remarks>Category: Media<br/>
 	/// Alias: 1.5.0, media</remarks>
@@ -2517,12 +2493,6 @@ public enum CalciteIcon : ushort
 	/// Alias: 1.5.0, gis, locate, current location, tracking</remarks>
 	/// <release>1.5</release>
 	GpsOff = 59564,
-
-	/// <summary>Gps On (Filled)</summary>
-	/// <remarks>Category: GIS<br/>
-	/// Alias: 1.5.0, gis, locate, current location, tracking</remarks>
-	/// <release>1.5</release>
-	GpsOnFilled = 59565,
 
 	/// <summary>Gps On</summary>
 	/// <remarks>Category: GIS<br/>
@@ -2721,12 +2691,6 @@ public enum CalciteIcon : ushort
 	/// Alias: 1.5.0, objects, headphones, customer, service, representative, support</remarks>
 	/// <release>1.5</release>
 	Headset = 59598,
-
-	/// <summary>Heart (Filled)</summary>
-	/// <remarks>Category: Generic<br/>
-	/// Alias: 3.19.9, generic, shape, love, favorite, valentine, gift, like</remarks>
-	/// <release>3.19.9</release>
-	HeartFilled = 59599,
 
 	/// <summary>Heart</summary>
 	/// <remarks>Category: Generic<br/>
@@ -2968,12 +2932,6 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	Infographic = 59639,
 
-	/// <summary>Information (Filled)</summary>
-	/// <remarks>Category: Symbols<br/>
-	/// Alias: 1.5.0, symbols, about, help, tooltip</remarks>
-	/// <release>1.5</release>
-	InformationFilled = 59640,
-
 	/// <summary>Information</summary>
 	/// <remarks>Category: Symbols<br/>
 	/// Alias: 1.5.0, symbols, about, help, tooltip</remarks>
@@ -3027,6 +2985,12 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.22.3, layers, join, data, information, combine, multiple</remarks>
 	/// <release>3.22.3</release>
 	JoinedViewLayer = 59649,
+
+	/// <summary>Justify</summary>
+	/// <remarks>Category: Lists<br/>
+	/// Alias: 3.29.6, lists, alignment, typography, paragraph, type, body text, format, justification</remarks>
+	/// <release>3.29.6</release>
+	Justify = 59650,
 
 	/// <summary>Key</summary>
 	/// <remarks>Category: Objects<br/>
@@ -3142,17 +3106,17 @@ public enum CalciteIcon : ushort
 	/// <release>3.17.0</release>
 	LassoSelect = 59669,
 
-	/// <summary>Launch</summary>
-	/// <remarks>Category: Arrows<br/>
-	/// Alias: 1.5.0, arrows, open in new window, open, external link, expand</remarks>
-	/// <release>1.5</release>
-	Launch = 59671,
-
 	/// <summary>Launch 2</summary>
 	/// <remarks>Category: Arrows<br/>
 	/// Alias: 3.25.2, arrows, raster function template, open in new window, open, external link, expand, launching</remarks>
 	/// <release>3.25.2</release>
 	Launch2 = 59670,
+
+	/// <summary>Launch</summary>
+	/// <remarks>Category: Arrows<br/>
+	/// Alias: 1.5.0, arrows, open in new window, open, external link, expand</remarks>
+	/// <release>1.5</release>
+	Launch = 59671,
 
 	/// <summary>Layer</summary>
 	/// <remarks>Category: Layers<br/>
@@ -3171,6 +3135,12 @@ public enum CalciteIcon : ushort
 	/// Alias: 1.5.0, layers, broken</remarks>
 	/// <release>1.5</release>
 	LayerBroken = 59674,
+
+	/// <summary>Layer Connection</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 3.29.2, layers, plug, top, connection, network, properties</remarks>
+	/// <release>3.29.2</release>
+	LayerConnection = 59675,
 
 	/// <summary>Layer Filter</summary>
 	/// <remarks>Category: Layers<br/>
@@ -3256,6 +3226,12 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	LayerZoomTo = 59689,
 
+	/// <summary>Layers (Filled)</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 3.32.0, layers, arcgis, filled</remarks>
+	/// <release>3.32.0</release>
+	LayersFilled = 59690,
+
 	/// <summary>Layers</summary>
 	/// <remarks>Category: Layers<br/>
 	/// Alias: 1.5.0, layers</remarks>
@@ -3267,12 +3243,6 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.0.0, layers editable, pencil, customizable layers, read and write layers</remarks>
 	/// <release>3.0.0-beta.6</release>
 	LayersEditable = 59692,
-
-	/// <summary>Layers (Filled)</summary>
-	/// <remarks>Category: Layers<br/>
-	/// Alias: 3.27.6, layers, arcgis, filled</remarks>
-	/// <release>3.27.6</release>
-	LayersFilled = 59690,
 
 	/// <summary>Layers Reference</summary>
 	/// <remarks>Category: Layers<br/>
@@ -3544,12 +3514,6 @@ public enum CalciteIcon : ushort
 	/// <release>2.7.0</release>
 	Locator = 59737,
 
-	/// <summary>Lock (Filled)</summary>
-	/// <remarks>Category: Objects<br/>
-	/// Alias: 1.5.0, objects, secure, guarded, permission, security, restricted, privacy</remarks>
-	/// <release>1.5</release>
-	LockFilled = 59738,
-
 	/// <summary>Lock</summary>
 	/// <remarks>Category: Objects<br/>
 	/// Alias: 1.5.0, objects, secure, guarded, permission, security, restricted, privacy</remarks>
@@ -3718,17 +3682,17 @@ public enum CalciteIcon : ushort
 	/// <release>3.27.7</release>
 	MembersBrackets = 59766,
 
-	/// <summary>Merge</summary>
-	/// <remarks>Category: Generic<br/>
-	/// Alias: 3.0.0, combine, unite, consolidate</remarks>
-	/// <release>3.0.0</release>
-	Merge = 59768,
-
 	/// <summary>Merge 2</summary>
 	/// <remarks>Category: Arrows<br/>
 	/// Alias: 3.25.2, arrows, generic, merging, combine, connect, involve</remarks>
 	/// <release>3.25.2</release>
 	Merge2 = 59767,
+
+	/// <summary>Merge</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.0.0, combine, unite, consolidate</remarks>
+	/// <release>3.0.0</release>
+	Merge = 59768,
 
 	/// <summary>Merge Details</summary>
 	/// <remarks>Category: Generic<br/>
@@ -3796,23 +3760,11 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	Minus = 59779,
 
-	/// <summary>Minus Circle (Filled)</summary>
-	/// <remarks>Category: Symbols<br/>
-	/// Alias: 3.24.2, symbols, stop, delete, remove, restricted, subtract</remarks>
-	/// <release>3.24.2</release>
-	MinusCircleFilled = 59780,
-
 	/// <summary>Minus Circle</summary>
 	/// <remarks>Category: Symbols<br/>
 	/// Alias: 3.24.2, symbols, stop, delete, remove, restricted, subtract</remarks>
 	/// <release>3.24.2</release>
 	MinusCircle = 59781,
-
-	/// <summary>Minus Square (Filled)</summary>
-	/// <remarks>Category: Symbols<br/>
-	/// Alias: 3.23.6, symbols, hyphen, line, filled, subtract</remarks>
-	/// <release>3.23.6</release>
-	MinusSquareFilled = 59782,
 
 	/// <summary>Minus Square</summary>
 	/// <remarks>Category: Symbols<br/>
@@ -3861,6 +3813,12 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.27.2, knowledge graph, edit, model, change, modify</remarks>
 	/// <release>3.27.2</release>
 	ModelEdit = 59790,
+
+	/// <summary>Model History</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.32.0, gis, history, time, edit</remarks>
+	/// <release>3.32.0</release>
+	ModelHistory = 59791,
 
 	/// <summary>Modify Associations</summary>
 	/// <remarks>Category: GIS<br/>
@@ -4312,12 +4270,6 @@ public enum CalciteIcon : ushort
 	/// <release>3.28.0</release>
 	PasteWithoutAttribute = 59866,
 
-	/// <summary>Pause (Filled)</summary>
-	/// <remarks>Category: Media<br/>
-	/// Alias: 1.5.0, media</remarks>
-	/// <release>1.5</release>
-	PauseFilled = 59867,
-
 	/// <summary>Pause</summary>
 	/// <remarks>Category: Media<br/>
 	/// Alias: 1.5.0, media</remarks>
@@ -4390,17 +4342,17 @@ public enum CalciteIcon : ushort
 	/// <release>3.1.0</release>
 	Percent = 59879,
 
-	/// <summary>Person</summary>
-	/// <remarks>Category: People<br/>
-	/// Alias: 1.5.0, standing, stand, men, women, man, woman, people</remarks>
-	/// <release>1.5</release>
-	Person = 59881,
-
 	/// <summary>Person 2</summary>
 	/// <remarks>Category: People<br/>
 	/// Alias: 3.0.0, da vinci man, human being, body, health, person 2, standing, exercise</remarks>
 	/// <release>3.0.0</release>
 	Person2 = 59880,
+
+	/// <summary>Person</summary>
+	/// <remarks>Category: People<br/>
+	/// Alias: 1.5.0, standing, stand, men, women, man, woman, people</remarks>
+	/// <release>1.5</release>
+	Person = 59881,
 
 	/// <summary>Personal Homepage</summary>
 	/// <remarks>Category: Generic<br/>
@@ -4432,12 +4384,6 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	PinPlus = 59886,
 
-	/// <summary>Pin Tear (Filled)</summary>
-	/// <remarks>Category: Generic<br/>
-	/// Alias: 3.16.1, generic, location, map pin, map marker, destination, dropped pin, drop pin</remarks>
-	/// <release>3.16.1</release>
-	PinTearFilled = 59887,
-
 	/// <summary>Pin Tear</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.16.1, generic, location, map pin, map marker, destination, dropped pin, drop pin</remarks>
@@ -4461,12 +4407,6 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.0.0, blueprint, layout, measurements, perimeter, width, height, boundary, interior, scale</remarks>
 	/// <release>3.0.0</release>
 	Plans = 59891,
-
-	/// <summary>Play (Filled)</summary>
-	/// <remarks>Category: Media<br/>
-	/// Alias: 1.5.0, media, run, test</remarks>
-	/// <release>1.5</release>
-	PlayFilled = 59892,
 
 	/// <summary>Play</summary>
 	/// <remarks>Category: Media<br/>
@@ -4660,12 +4600,6 @@ public enum CalciteIcon : ushort
 	/// <release>3.25.8</release>
 	Query = 59924,
 
-	/// <summary>Question (Filled)</summary>
-	/// <remarks>Category: Symbols<br/>
-	/// Alias: 1.5.0, symbols, faq, unknown, help, hint</remarks>
-	/// <release>1.5</release>
-	QuestionFilled = 59925,
-
 	/// <summary>Question</summary>
 	/// <remarks>Category: Symbols<br/>
 	/// Alias: 1.5.0, symbols, faq, unknown, help, hint</remarks>
@@ -4726,6 +4660,12 @@ public enum CalciteIcon : ushort
 	/// <release>3.21.9</release>
 	RasterFunctionTemplate = 59936,
 
+	/// <summary>Raster Function Template History</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.32.0, gis, edit, modify, raster, fx, template, text</remarks>
+	/// <release>3.32.0</release>
+	RasterFunctionTemplateHistory = 59937,
+
 	/// <summary>Raster Function Template Play</summary>
 	/// <remarks>Category: GIS<br/>
 	/// Alias: 3.25.5, gis, function, window, launch, media, editor, pane, share</remarks>
@@ -4776,8 +4716,8 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Refresh (Filled)</summary>
 	/// <remarks>Category: Arrows<br/>
-	/// Alias: 3.22.5, arrows, fill, circles, updates, arrows, repeat</remarks>
-	/// <release>3.22.5</release>
+	/// Alias: 3.32.0, arrows, fill, circles, updates, arrows, repeat</remarks>
+	/// <release>3.32.0</release>
 	RefreshFilled = 59946,
 
 	/// <summary>Register</summary>
@@ -4875,12 +4815,6 @@ public enum CalciteIcon : ushort
 	/// Alias: gis, 3.17.1, geoai, train</remarks>
 	/// <release>3.17.1</release>
 	Retrain = 59962,
-
-	/// <summary>Reverse (Filled)</summary>
-	/// <remarks>Category: Media<br/>
-	/// Alias: 1.5.0, media</remarks>
-	/// <release>1.5</release>
-	ReverseFilled = 59963,
 
 	/// <summary>Reverse</summary>
 	/// <remarks>Category: Media<br/>
@@ -5032,17 +4966,17 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	RouteTo = 59988,
 
+	/// <summary>Rss (Filled)</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.32.0, generic, follow, subscribe, square, web, feed, users, app, applications, updates, websites, unfollow, unsubscribe</remarks>
+	/// <release>3.32.0</release>
+	RssFilled = 59989,
+
 	/// <summary>Rss</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.26.2, generic, follow, subscribe, square, web, feed, users, app, applications, updates, websites, unfollow, unsubscribe</remarks>
 	/// <release>3.26.2</release>
 	Rss = 59990,
-
-	/// <summary>Rss (Filled)</summary>
-	/// <remarks>Category: Generic<br/>
-	/// Alias: 3.26.2, generic, follow, subscribe, square, web, feed, users, app, applications, updates, websites, unfollow, unsubscribe</remarks>
-	/// <release>3.26.2</release>
-	RssFilled = 59989,
 
 	/// <summary>Rtl Elements Align</summary>
 	/// <remarks>Category: Windows<br/>
@@ -5060,7 +4994,13 @@ public enum CalciteIcon : ushort
 	/// <remarks>Category: People<br/>
 	/// Alias: 1.5.0, sport, people, person, exercise, activity</remarks>
 	/// <release>1.5</release>
-	Running = 59994,
+	Running = 59993,
+
+	/// <summary>Running Outline</summary>
+	/// <remarks>Category: People<br/>
+	/// Alias: 3.22.1, people, sport, person, exercise, activity, movement, human</remarks>
+	/// <release>3.22.1</release>
+	RunningOutline = 59994,
 
 	/// <summary>Rural Driving Distance</summary>
 	/// <remarks>Category: GIS<br/>
@@ -5614,12 +5554,6 @@ public enum CalciteIcon : ushort
 	/// <release>3.25.2</release>
 	SplitUnits = 60086,
 
-	/// <summary>Square (Filled)</summary>
-	/// <remarks>Category: Generic<br/>
-	/// Alias: 1.5.0, generic, shapes, box, container</remarks>
-	/// <release>1.5</release>
-	SquareFilled = 60087,
-
 	/// <summary>Square</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 1.5.0, generic, shapes, box, container</remarks>
@@ -5662,12 +5596,6 @@ public enum CalciteIcon : ushort
 	/// <release>3.22.1</release>
 	StairsUp = 60094,
 
-	/// <summary>Star (Filled)</summary>
-	/// <remarks>Category: Symbols<br/>
-	/// Alias: 3.3.0, symbols, favorite, rate, rating</remarks>
-	/// <release>3.3.0</release>
-	StarFilled = 60095,
-
 	/// <summary>Star</summary>
 	/// <remarks>Category: Symbols<br/>
 	/// Alias: 3.3.0, symbols, favorite, rate, rating</remarks>
@@ -5685,12 +5613,6 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.25.2, symbols, online model builder, stopping, slow, stopped, hold</remarks>
 	/// <release>3.25.2</release>
 	Stop = 60098,
-
-	/// <summary>Stop Square (Filled)</summary>
-	/// <remarks>Category: Media<br/>
-	/// Alias: 3.24.1, media, cube, stop, halt, end, finish</remarks>
-	/// <release>3.24.1</release>
-	StopSquareFilled = 60099,
 
 	/// <summary>Stop Square</summary>
 	/// <remarks>Category: Media<br/>
@@ -5746,17 +5668,17 @@ public enum CalciteIcon : ushort
 	/// <release>3.28.1</release>
 	SubFields = 60108,
 
-	/// <summary>Subheading 1</summary>
-	/// <remarks>Category: Text<br/>
-	/// Alias: 3.21.7, text, heading, subheading, layout, title, words, list, bold text, large text, numbers</remarks>
-	/// <release>3.21.7</release>
-	Subheading1 = 60110,
-
 	/// <summary>Subheading</summary>
 	/// <remarks>Category: Text<br/>
 	/// Alias: 3.3.0, text, sub heading, subheader</remarks>
 	/// <release>3.3.0</release>
 	Subheading = 60109,
+
+	/// <summary>Subheading 1</summary>
+	/// <remarks>Category: Text<br/>
+	/// Alias: 3.21.7, text, heading, subheading, layout, title, words, list, bold text, large text, numbers</remarks>
+	/// <release>3.21.7</release>
+	Subheading1 = 60110,
 
 	/// <summary>Subheading 2</summary>
 	/// <remarks>Category: Text<br/>
@@ -6016,6 +5938,12 @@ public enum CalciteIcon : ushort
 	/// <release>3.16.2</release>
 	ToggleOn = 60153,
 
+	/// <summary>Tool History</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.32.0, gis, history, time, past, action, tool</remarks>
+	/// <release>3.32.0</release>
+	ToolHistory = 60154,
+
 	/// <summary>Touch</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.17.8, generic, hand, screen, technology, click, move</remarks>
@@ -6039,6 +5967,24 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.25.2, geometry editing, web editor, tracing, edges, lines, points, angles, cover</remarks>
 	/// <release>3.25.2</release>
 	Trace = 60158,
+
+	/// <summary>Trace Path</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.29.4, gis, tracing, lines, points, edges, path, copy</remarks>
+	/// <release>3.29.4</release>
+	TracePath = 60159,
+
+	/// <summary>Trace Path Complete</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.29.4, gis, lines, path, completion, edges, points, tracing</remarks>
+	/// <release>3.29.4</release>
+	TracePathComplete = 60160,
+
+	/// <summary>Transcript</summary>
+	/// <remarks>Category: Media<br/>
+	/// Alias: 3.29.3, media, captions, text, video, display, speech</remarks>
+	/// <release>3.29.3</release>
+	Transcript = 60162,
 
 	/// <summary>Transverse Hexagon</summary>
 	/// <remarks>Category: GIS<br/>
@@ -6256,6 +6202,12 @@ public enum CalciteIcon : ushort
 	/// <release>3.18.6</release>
 	UtilityNetworkTrace = 60198,
 
+	/// <summary>Validate</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 3.32.0, symbols, check, circle, validated, arrow, complete</remarks>
+	/// <release>3.32.0</release>
+	Validate = 60199,
+
 	/// <summary>Validate Utility Network Topology</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.28.0, generic, networking, points, dots, lines, circles, connected, connection, selection, collecting data, running analysis, confirm, check, approved, validated</remarks>
@@ -6466,23 +6418,11 @@ public enum CalciteIcon : ushort
 	/// <release>3.1.0</release>
 	XBar = 60235,
 
-	/// <summary>X Circle (Filled)</summary>
-	/// <remarks>Category: Symbols<br/>
-	/// Alias: 3.8.1, symbols, delete, remove, close</remarks>
-	/// <release>3.8.1</release>
-	XCircleFilled = 60236,
-
 	/// <summary>X Circle</summary>
 	/// <remarks>Category: Symbols<br/>
 	/// Alias: 3.8.1, symbols, delete, remove, close</remarks>
 	/// <release>3.8.1</release>
 	XCircle = 60237,
-
-	/// <summary>X Octagon (Filled)</summary>
-	/// <remarks>Category: Symbols<br/>
-	/// Alias: 3.11.0, x octagon, invalid, error, broken, critical, denied, restricted</remarks>
-	/// <release>3.11.0</release>
-	XOctagonFilled = 60238,
 
 	/// <summary>X Octagon</summary>
 	/// <remarks>Category: Symbols<br/>
@@ -6513,5 +6453,509 @@ public enum CalciteIcon : ushort
 	/// Alias: 1.5.0, arrows, scale, level of detail, lod, focus, re-adjust, readjust, view, target</remarks>
 	/// <release>1.5</release>
 	ZoomToObject = 60243,
+
+	/// <summary>3D Building</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 3.32.0, objects, three dimesional, infrastructure</remarks>
+	/// <release>3.32.0</release>
+	_3DBuilding = 60244,
+
+	/// <summary>3D Building Parameter</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.32.0, gis, three dimensional, building, infrastructure, parameter, text, parantheses</remarks>
+	/// <release>3.32.0</release>
+	_3DBuildingParameter = 60245,
+
+	/// <summary>Browser Map</summary>
+	/// <remarks>Category: Windows<br/>
+	/// Alias: 3.20.3 , windows, os, map, location, desktop, layout, web map, application, mapping software</remarks>
+	/// <release>3.20.3 </release>
+	BrowserMap = 60246,
+
+	/// <summary>Buffer Point</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.33.0, gis, point, dot, circles, area, location, cushion, shield, shock, range, space, expanse, sphere, round</remarks>
+	/// <release>3.33.0</release>
+	BufferPoint = 60247,
+
+	/// <summary>Buffer Polyline</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.33.0, gis, line, area, location, cushion, shield, shock, range, space, expanse, intersection, offset, outline</remarks>
+	/// <release>3.33.0</release>
+	BufferPolyline = 60248,
+
+	/// <summary>Contour</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.33.0, gis, contour map, topographic, relief map, lines, height, curve, deliniation, outline, profile</remarks>
+	/// <release>3.33.0</release>
+	Contour = 60249,
+
+	/// <summary>Dashboard Graph</summary>
+	/// <remarks>Category: Windows<br/>
+	/// Alias: 3.32.0, windows, measure, objects, statistics, measurements</remarks>
+	/// <release>3.32.0</release>
+	DashboardGraph = 60250,
+
+	/// <summary>Divide</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 3.32.0, symbols, sign, math, split, halve, cut</remarks>
+	/// <release>3.32.0</release>
+	Divide = 60251,
+
+	/// <summary>Download</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 1.5.0, generic, cloud, arrow, import</remarks>
+	/// <release>1.5</release>
+	Download = 60252,
+
+	/// <summary>Drag Resize Horizontal</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.33.0, generic, dragging, resize, resizing, length, direction, panels, sidebar, horizontally</remarks>
+	/// <release>3.33.0</release>
+	DragResizeHorizontal = 60253,
+
+	/// <summary>Drag Resize Vertical</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.33.0, generic, dragging, resize, resizing, height, direction, panels, sidebar, vertically</remarks>
+	/// <release>3.33.0</release>
+	DragResizeVertical = 60254,
+
+	/// <summary>Initiative Template</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 3.18.1, objects, summit, mountain, flag, goals, tent, camp, achievement, target, objectives, climb, plan project, list, item, pattern</remarks>
+	/// <release>3.18.1</release>
+	InitiativeTemplate = 60255,
+
+	/// <summary>N Variable</summary>
+	/// <remarks>Category: Text<br/>
+	/// Alias: 3.32.0, text, variables, math, calculation, letter</remarks>
+	/// <release>3.32.0</release>
+	NVariable = 60256,
+
+	/// <summary>Offset</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.33.0, gis, dashed, expand, line, area, location, cushion, shield, shock, range, space, expanse, intersection, outline</remarks>
+	/// <release>3.33.0</release>
+	Offset = 60257,
+
+	/// <summary>Parcel</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.32.0, gis, features, assets, data, points, lines</remarks>
+	/// <release>3.32.0</release>
+	Parcel = 60258,
+
+	/// <summary>Parcel Parameter</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.32.0, gis, feature, data, points, lines, assets</remarks>
+	/// <release>3.32.0</release>
+	ParcelParameter = 60259,
+
+	/// <summary>Portal Other</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.33.0, gis, layers, data, reference, enterprise</remarks>
+	/// <release>3.33.0</release>
+	PortalOther = 60260,
+
+	/// <summary>Radial Tree Link Chart Layout</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 3.23.6, knowledge graph, link chart, spatial analysis, data, data model</remarks>
+	/// <release>3.23.6</release>
+	RadialTreeLinkChartLayout = 60261,
+
+	/// <summary>Refresh</summary>
+	/// <remarks>Category: Arrows<br/>
+	/// Alias: 1.5.0, arrows, reload, sync</remarks>
+	/// <release>1.5</release>
+	Refresh = 60262,
+
+	/// <summary>Spaces</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.32.0, gis, lines, grid, workspace, work mode</remarks>
+	/// <release>3.32.0</release>
+	Spaces = 60263,
+
+	/// <summary>Spaces Parameter</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.32.0, gis, forms, display, space, text</remarks>
+	/// <release>3.32.0</release>
+	SpacesParameter = 60264,
+
+	/// <summary>Square Brackets X</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.32.0, gis, code, syntax, script, text, letter</remarks>
+	/// <release>3.32.0</release>
+	SquareBracketsX = 60265,
+
+	/// <summary>User Risk</summary>
+	/// <remarks>Category: People<br/>
+	/// Alias: 3.33.0, people, risk, population, caution, danger, user</remarks>
+	/// <release>3.33.0</release>
+	UserRisk = 60266,
+
+	/// <summary>Web Adapter</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.32.0, gis, web, diagram, nodes, storage, servers, transfer</remarks>
+	/// <release>3.32.0</release>
+	WebAdapter = 60267,
+
+	/// <summary>Zoning Parameter</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 3.32.0, gis, forms, variable, text, letter</remarks>
+	/// <release>3.32.0</release>
+	ZoningParameter = 60268,
+
+	/// <summary>2D</summary>
+	/// <remarks>Category: Numbers<br/>
+	/// Alias: 4.0.0, numbers, flat</remarks>
+	/// <release>4.0.0</release>
+	_2D = 60269,
+
+	/// <summary>3D</summary>
+	/// <remarks>Category: Numbers<br/>
+	/// Alias: 4.0.0, numbers, interactive</remarks>
+	/// <release>4.0.0</release>
+	_3D = 60270,
+
+	/// <summary>Area Hash Filled Plus</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.0.0, generic, add, adding, select, selected, construction, space</remarks>
+	/// <release>4.0.0</release>
+	AreaHashFilledPlus = 60271,
+
+	/// <summary>Area Hash Filled</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.0.0, generic, select, selected, construction, space</remarks>
+	/// <release>4.0.0</release>
+	AreaHashFilled = 60272,
+
+	/// <summary>Bulldozer Area</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 4.0.0, objects, dirt, construction, building, deconstruction, mover</remarks>
+	/// <release>4.0.0</release>
+	BulldozerArea = 60273,
+
+	/// <summary>Bulldozer</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 4.0.0, objects, dirt, construction, building, deconstruction, mover</remarks>
+	/// <release>4.0.0</release>
+	Bulldozer = 60274,
+
+	/// <summary>Bus</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 4.0.0, objects, transportation, public transit, vehicle</remarks>
+	/// <release>4.0.0</release>
+	Bus = 60275,
+
+	/// <summary>Circle Area Hash Filled</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 4.0.0, gis, select, map, area</remarks>
+	/// <release>4.0.0</release>
+	CircleAreaHashFilled = 60276,
+
+	/// <summary>Cube Plus</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 4.0.0, objects, 3d, add, interactive</remarks>
+	/// <release>4.0.0</release>
+	CubePlus = 60277,
+
+	/// <summary>Government Building</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.0.0, generic, place, architecture, place</remarks>
+	/// <release>4.0.0</release>
+	GovernmentBuilding = 60278,
+
+	/// <summary>Layout Duplicate</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.0.0, generic, object, multiply</remarks>
+	/// <release>4.0.0</release>
+	LayoutDuplicate = 60279,
+
+	/// <summary>Medical</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 4.0.0, symbols, pharmacy, health, cross, medicine</remarks>
+	/// <release>4.0.0</release>
+	Medical = 60280,
+
+	/// <summary>Money</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 4.0.0, symbols, cash, finance</remarks>
+	/// <release>4.0.0</release>
+	Money = 60281,
+
+	/// <summary>Person View</summary>
+	/// <remarks>Category: People<br/>
+	/// Alias: 4.0.0, people, interactive, interacting, 3d, rotate</remarks>
+	/// <release>4.0.0</release>
+	PersonView = 60282,
+
+	/// <summary>Pie Chart Section Hash Filled</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 4.0.0, gis, graph, selected, area</remarks>
+	/// <release>4.0.0</release>
+	PieChartSectionHashFilled = 60283,
+
+	/// <summary>Shapes 2D 3D</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 4.0.0, objects, cube, pyramid, circle, objects</remarks>
+	/// <release>4.0.0</release>
+	Shapes2D3D = 60284,
+
+	/// <summary>Soccer</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 4.0.0, objects, activities, sports, ball, activity</remarks>
+	/// <release>4.0.0</release>
+	Soccer = 60285,
+
+	/// <summary>Speech Bubble Empty</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.0.0, generic, talk, chat, faq, information</remarks>
+	/// <release>4.0.0</release>
+	SpeechBubbleEmpty = 60286,
+
+	/// <summary>Square Hash Filled Area</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 4.0.0, gis, duplicate, selected, object, area, construction, map</remarks>
+	/// <release>4.0.0</release>
+	SquareHashFilledArea = 60287,
+
+	/// <summary>Square Hash Filled</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 4.0.0, gis, select, map, area</remarks>
+	/// <release>4.0.0</release>
+	SquareHashFilled = 60288,
+
+	/// <summary>Tree</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 4.0.0, objects, landscape, area, park</remarks>
+	/// <release>4.0.0</release>
+	Tree = 60289,
+
+	/// <summary>Water Drop</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 4.0.0, objects, droplet, h2o</remarks>
+	/// <release>4.0.0</release>
+	WaterDrop = 60290,
+
+	/// <summary>White Cursor Selection</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 4.0.0, gis, select, map, area</remarks>
+	/// <release>4.0.0</release>
+	WhiteCursorSelection = 60291,
+
+	/// <summary>Wind</summary>
+	/// <remarks>Category: Weather<br/>
+	/// Alias: 4.0.0, weather, weather, conditions, forecast</remarks>
+	/// <release>4.0.0</release>
+	Wind = 60292,
+
+	/// <summary>Uncollapse Relationships</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, points, model, select, nodes</remarks>
+	/// <release>4.0.0</release>
+	UncollapseRelationships = 61697,
+
+	/// <summary>Uncollapse Entities</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, points, model, select, nodes</remarks>
+	/// <release>4.0.0</release>
+	UncollapseEntities = 61698,
+
+	/// <summary>Single Timeline</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, points, model, select, add, nodes, clock, time</remarks>
+	/// <release>4.0.0</release>
+	SingleTimeline = 61699,
+
+	/// <summary>Show Link Chart Root Nodes</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, view, area, nodes, distance, select, model</remarks>
+	/// <release>4.0.0</release>
+	ShowLinkChartRootNodes = 61700,
+
+	/// <summary>Show Link Chart Nonspatial Data</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, eye, view, points, model, select, nodes</remarks>
+	/// <release>4.0.0</release>
+	ShowLinkChartNonspatialData = 61701,
+
+	/// <summary>Show Data</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, view, server, memory</remarks>
+	/// <release>4.0.0</release>
+	ShowData = 61702,
+
+	/// <summary>Select Root Chart Nodes</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, view, area, nodes, distance, select, model</remarks>
+	/// <release>4.0.0</release>
+	SelectRootChartNodes = 61703,
+
+	/// <summary>Select Nonspatial Data</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, points, model, select, add, nodes</remarks>
+	/// <release>4.0.0</release>
+	SelectNonspatialData = 61704,
+
+	/// <summary>Plug Connection</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 4.0.0, objects, connect, power, relation, union, bond, adapter, service</remarks>
+	/// <release>4.0.0</release>
+	PlugConnection = 61705,
+
+	/// <summary>Multi Timeline</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, points, model, select, add, nodes, clock, time</remarks>
+	/// <release>4.0.0</release>
+	MultiTimeline = 61706,
+
+	/// <summary>Link Chart Tools</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, points, model, select, nodes, wrench</remarks>
+	/// <release>4.0.0</release>
+	LinkChartTools = 61707,
+
+	/// <summary>Link Chart Sync Selection</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, points, model, select, add, nodes</remarks>
+	/// <release>4.0.0</release>
+	LinkChartSyncSelection = 61708,
+
+	/// <summary>Link Chart Select Between</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, points, model, add, nodes</remarks>
+	/// <release>4.0.0</release>
+	LinkChartSelectBetween = 61709,
+
+	/// <summary>Link Chart Find Between</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, points, model, select, add, nodes</remarks>
+	/// <release>4.0.0</release>
+	LinkChartFindBetween = 61710,
+
+	/// <summary>Link Chart Connect</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, points, model, select, add, nodes</remarks>
+	/// <release>4.0.0</release>
+	LinkChartConnect = 61711,
+
+	/// <summary>Link Chart Connect From</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, points, model, select, add, nodes</remarks>
+	/// <release>4.0.0</release>
+	LinkChartConnectFrom = 61712,
+
+	/// <summary>Link Chart Connect Between</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, points, model, select, add, nodes</remarks>
+	/// <release>4.0.0</release>
+	LinkChartConnectBetween = 61713,
+
+	/// <summary>Link Chart Collapse Ends</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, close, delete, points, model, select, add to, nodes</remarks>
+	/// <release>4.0.0</release>
+	LinkChartCollapseEnds = 61714,
+
+	/// <summary>Link Chart Centrality</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, calculator, filter, points, model, select, add to, nodes</remarks>
+	/// <release>4.0.0</release>
+	LinkChartCentrality = 61715,
+
+	/// <summary>Link Chart Apply To</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, points, model, select, add, nodes</remarks>
+	/// <release>4.0.0</release>
+	LinkChartApplyTo = 61716,
+
+	/// <summary>Hide Link Chart Root Nodes</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, points, model, select, remove, nodes, area, distance</remarks>
+	/// <release>4.0.0</release>
+	HideLinkChartRootNodes = 61717,
+
+	/// <summary>Hide Link Chart Nonspatial Data</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, points, model, select, remove, nodes</remarks>
+	/// <release>4.0.0</release>
+	HideLinkChartNonspatialData = 61718,
+
+	/// <summary>Hide Data</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, server, memory</remarks>
+	/// <release>4.0.0</release>
+	HideData = 61719,
+
+	/// <summary>Find Add Path</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, points, model, select, add to, nodes</remarks>
+	/// <release>4.0.0</release>
+	FindAddPath = 61720,
+
+	/// <summary>Filtered Find Add Path</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, filter, points, model, select, add to, nodes</remarks>
+	/// <release>4.0.0</release>
+	FilteredFindAddPath = 61721,
+
+	/// <summary>Editing Trim To Length</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, area, nodes, distance, select, model</remarks>
+	/// <release>4.0.0</release>
+	EditingTrimToLength = 61722,
+
+	/// <summary>Community Detection</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, calculator, filter, points, model, select, add to, nodes</remarks>
+	/// <release>4.0.0</release>
+	CommunityDetection = 61723,
+
+	/// <summary>Collapse Relationships</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, points, model, select, add, nodes, simplify, condense</remarks>
+	/// <release>4.0.0</release>
+	CollapseRelationships = 61724,
+
+	/// <summary>Collapse Entities</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, points, model, select, add, nodes, simplify, condense</remarks>
+	/// <release>4.0.0</release>
+	CollapseEntities = 61725,
+
+	/// <summary>Cluster Radius</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, area, nodes, distance, select, model</remarks>
+	/// <release>4.0.0</release>
+	ClusterRadius = 61726,
+
+	/// <summary>Add Link Chart Root Nodes</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.0.0, knowledge graph, filter, points, model, select, add to, nodes, area, distance </remarks>
+	/// <release>4.0.0</release>
+	AddLinkChartRootNodes = 61727,
+
+	/// <summary>Utility Network Layer</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 4.0.0, layers, networking, lines, circles, points, dots, connection, connected, running-analysis</remarks>
+	/// <release>4.0.0</release>
+	UtilityNetworkLayer = 61728,
+
+	/// <summary>Crosshair</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 4.0.0, gis, dot, lines, reticule, scope, target, aim, marker, goal, point</remarks>
+	/// <release>4.0.0</release>
+	Crosshair = 61729,
+
+	/// <summary>Hammer Lock</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 4.0.0, objects, lock, tool, combination, secure</remarks>
+	/// <release>4.0.0</release>
+	HammerLock = 61730,
+
+	/// <summary>Hammer Coin</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 4.0.0, objects, tool, mallet, cash, change, currency</remarks>
+	/// <release>4.0.0</release>
+	HammerCoin = 61731,
 
 }

@@ -13,7 +13,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Resource Include="..\..\fonts\*.ttf" Link="Fonts\%(Filename)%(Extension)" />
+    <Resource Include="$(MSBuildThisFileDirectory)..\..\fonts\$(CalciteUIIconsVersion)\package\fonts\*.ttf" Link="Fonts\%(Filename)%(Extension)" />
     <None Include="README.txt" Pack="True" PackagePath="\" />
     <None Include="..\..\docs\wpf.md" Link="README.md" Pack="True" PackagePath="\README.md" />
     <Page Include="..\..\GeneratedResources\WPF\**\*.xaml" Link="%(RecursiveDir)\%(Filename).xaml">
@@ -21,4 +21,7 @@
     </Page>
     <Compile Include="..\..\GeneratedResources\Wpf\*.cs" Link="%(RecursiveDir)%(Filename)%(Extension)" />
   </ItemGroup>
+
+  
+  <Target Name="GetResources" BeforeTargets="Build" DependsOnTargets="DownloadFonts" />
 </Project>

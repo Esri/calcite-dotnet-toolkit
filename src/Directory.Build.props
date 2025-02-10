@@ -15,6 +15,7 @@
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
         <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+        <CalciteUIIconsVersion>4.0.0</CalciteUIIconsVersion>
     </PropertyGroup>
 
     <ItemGroup Condition="'$(IsPackable)'=='true'">
@@ -24,4 +25,21 @@
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
         <PackageReference Include="Nerdbank.GitVersioning" Version="3.6.133" PrivateAssets="all" />
     </ItemGroup>
+      <Target Name="DownloadFonts" Condition="!Exists('$(MSBuildThisFileDirectory)..\fonts\esri-calcite-ui-icons\$(CalciteUIIconsVersion)\package\fonts')">
+        <PropertyGroup>
+            <CalciteUIIconsReleaseUrl>https://github.com/Esri/calcite-design-system/releases/download/%40esri%2Fcalcite-ui-icons%40$(CalciteUIIconsVersion)/esri-calcite-ui-icons-$(CalciteUIIconsVersion).tgz</CalciteUIIconsReleaseUrl>
+        </PropertyGroup>
+        <DownloadFile SourceUrl="$(CalciteUIIconsReleaseUrl)" SkipUnchangedFiles="True"
+                      DestinationFileName="esri-calcite-ui-icons.tgz"
+                      DestinationFolder="$(MSBuildThisFileDirectory)..\fonts\$(CalciteUIIconsVersion)"
+                      Condition="!Exists('$(MSBuildThisFileDirectory)..\fonts\$(CalciteUIIconsVersion)\esri-calcite-ui-icons.tgz')" />
+        <Exec Command="tar -xf esri-calcite-ui-icons.tgz --include=&quot;*.ttf&quot;"
+              WorkingDirectory="$(MSBuildThisFileDirectory)..\fonts\$(CalciteUIIconsVersion)\" IgnoreExitCode="true" />
+        <Error Condition="!Exists('$(MSBuildThisFileDirectory)..\fonts\$(CalciteUIIconsVersion)\package\fonts\calcite-ui-icons-16.ttf')"
+               Text="Failed to get 'calcite-ui-icons-16.ttf'" />
+        <Error Condition="!Exists('$(MSBuildThisFileDirectory)..\fonts\$(CalciteUIIconsVersion)\package\fonts\calcite-ui-icons-24.ttf')"
+               Text="Failed to get 'calcite-ui-icons-24.ttf'" />
+        <Error Condition="!Exists('$(MSBuildThisFileDirectory)..\fonts\$(CalciteUIIconsVersion)\package\fonts\calcite-ui-icons-32.ttf')"
+               Text="Failed to get 'calcite-ui-icons-32" />
+    </Target>
 </Project>

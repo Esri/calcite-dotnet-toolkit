@@ -14,9 +14,8 @@ namespace IconXamlGenerator
         public static IList<IconEntry> LoadFromJson(string pathToJson, string pathToGlyphList)
         {
             var inputText = System.IO.File.ReadAllText(pathToJson);
-            var output = (JObject)JsonConvert.DeserializeObject(inputText)!;
+            var icons = (JObject)JsonConvert.DeserializeObject(inputText)!;
 
-            JObject icons = (JObject)(output["icons"] ?? throw new InvalidOperationException("'icons' not found in json"));
             List<IconEntry> iconEntries = new List<IconEntry>();
             foreach (var icon in icons)
             {
@@ -25,9 +24,6 @@ namespace IconXamlGenerator
                 var entry = new IconEntry() {
                     Key = name,
 
-                    S16 = icon.Value["16"]?.ToString() ?? throw new InvalidOperationException("'16' not found in json"),
-                    S24 = icon.Value["24"]?.ToString() ?? throw new InvalidOperationException("'24' not found in json"),
-                    S32 = icon.Value["32"]?.ToString() ?? throw new InvalidOperationException("'32' not found in json"),
                     Alias = string.Join(", ", icon.Value["alias"]!.ToArray().Select(v => v.ToString())),
                     Category = icon.Value["category"]?.ToString(),
                     Release = icon.Value["release"]?.ToString(),
@@ -36,7 +32,7 @@ namespace IconXamlGenerator
                 iconEntries.Add(entry);
             }
             inputText = System.IO.File.ReadAllText(pathToGlyphList);
-            output = JsonConvert.DeserializeObject(inputText) as JObject;
+            var output = JsonConvert.DeserializeObject(inputText) as JObject;
             var codepoints = output!["codepoints"] as JObject ?? throw new InvalidOperationException("'codepoints' not found in json");
             foreach (var item in codepoints!)
             {
@@ -46,8 +42,7 @@ namespace IconXamlGenerator
                 {
                     key = key.Substring(0, key.LastIndexOf('-'));
                 }
-                var name = key.Substring(0, key.LastIndexOf('-'));
-                var size = key.Substring(key.LastIndexOf('-') + 1);
+                var name = key;
                 var glyph = (ushort)item.Value;
                 var entry = iconEntries.FirstOrDefault(f => f.Key  == name + (isFilled ? "-f" : ""));
                 if(entry is null)
@@ -55,26 +50,11 @@ namespace IconXamlGenerator
                     Console.WriteLine($"Warning: Codepoint {name}={glyph} does not have a matching icon entry");
                     continue;
                 }
-                if (size == "16")
-                    entry.Glyph16 = glyph;
-                else if (size == "24")
-                    entry.Glyph24 = glyph;
-                else if (size == "32")
-                    entry.Glyph32 = glyph;
-            }
-            foreach (var entry in iconEntries)
-            {
-                if (entry.Glyph16 != entry.Glyph24 || entry.Glyph16 != entry.Glyph32 || entry.Glyph24 != entry.Glyph32)
-                {
-                    Console.WriteLine($"ERROR: {entry.Key} has different glyph values for 16, 24, and 32");
-                    throw new Exception($"ERROR: {entry.Key} has different glyph values for 16, 24, and 32");
-                }
+                entry.Glyph = glyph;
             }
             List<string> missingIds = new List<string>();
             foreach (var entry in iconEntries.Where(e => e.Glyph == 0))
             {
-                if (entry.S16.Contains("opacity") || entry.S24.Contains("opacity") || entry.S32.Contains("opacity"))
-                    continue; // Opacity icons not supported, so skipping those here
                 missingIds.Add(entry.Key);
             }
             iconEntries.RemoveAll(i=> i.Glyph == 0);
@@ -83,7 +63,7 @@ namespace IconXamlGenerator
             {
                 Console.WriteLine("*** Missing entries ***");
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                var nextGlyphID = iconEntries.Max(i => Math.Max(Math.Max(i.Glyph16, i.Glyph24), i.Glyph32)) + 1;
+                var nextGlyphID = iconEntries.Max(i => i.Glyph) + 1;
                 foreach(var id in missingIds.OrderBy(s=>s))
                 {
                     Console.WriteLine($"    \"{id}\": {nextGlyphID++}, ");
@@ -100,10 +80,7 @@ namespace IconXamlGenerator
             return iconEntries;
         }
         public bool IsFilled => Key.EndsWith("-f");
-        public ushort Glyph => Glyph16 != Glyph24 || Glyph16 != Glyph32 || Glyph24 != Glyph32 ? throw new Exception("Glyph ID mismatch") : Glyph16;
-        public ushort Glyph16 { get; set; }
-        public ushort Glyph24 { get; set; }
-        public ushort Glyph32 { get; set; }
+        public ushort Glyph { get; set; }
         public bool MultiPath { get; set; }
         public string Name
         {
@@ -131,9 +108,6 @@ namespace IconXamlGenerator
         }
         public string ResourceName => CamelCase(Name, true) + (IsFilled ? "Filled" : "");
         public required string Key { get; set; }
-        public required string S16 { get; set; }
-        public required string S24 { get; set; }
-        public required string S32 { get; set; }
         public string CSName
         {
             get

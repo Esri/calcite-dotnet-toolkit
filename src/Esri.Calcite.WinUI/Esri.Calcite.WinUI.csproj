@@ -18,7 +18,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-      <Content Include="..\..\fonts\*.ttf" Link="Fonts\%(Filename)%(Extension)" PackagePath="lib\$(ShortTargetFramework)\$(PackageId)\Fonts\%(Filename)%(Extension);contentFiles\any\$(ShortTargetFramework)\$(PackageId)\Fonts\%(Filename)%(Extension)" />
+      <Content Include="$(MSBuildThisFileDirectory)..\..\fonts\$(CalciteUIIconsVersion)\package\fonts\*.ttf" Link="Fonts\%(Filename)%(Extension)" PackagePath="lib\$(ShortTargetFramework)\$(PackageId)\Fonts\%(Filename)%(Extension);contentFiles\any\$(ShortTargetFramework)\$(PackageId)\Fonts\%(Filename)%(Extension)" />
       <None Remove="Styles\Controls\TreeView.xaml" />
     <Compile Include="..\..\GeneratedResources\WinUI\*.cs" Link="GeneratedResources\%(RecursiveDir)%(Filename)%(Extension)" />
   </ItemGroup>
@@ -38,4 +38,6 @@
       <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.756" />
       <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2651.64" IncludeAssets="none" /> <!-- Work around bug in webview package, and we don't really need this anyway -->
   </ItemGroup>
+  
+  <Target Name="GetResources" BeforeTargets="Build" DependsOnTargets="DownloadFonts" />
 </Project>
