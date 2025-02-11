@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Carbon.Css" Version="0.70.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
@@ -16,5 +15,6 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 
+  
 
 </Project>

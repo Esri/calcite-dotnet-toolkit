@@ -5,7 +5,7 @@
     xmlns:cm="clr-namespace:Esri.Calcite.WPF.Helpers"
     xmlns:c="clr-namespace:Esri.Calcite.WPF">
     <Style x:Key="CalciteWindowStyle" TargetType="Window">
-        <Setter Property="Background" Value="{DynamicResource CalciteUIBackgroundBrush}" />
-        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteBackgroundBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteText1Brush}" />
     </Style>
 </ResourceDictionary>

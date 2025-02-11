@@ -10,9 +10,9 @@
     </ResourceDictionary.MergedDictionaries>
 
     <Style x:Key="CalciteDocumentViewerStyle" TargetType="{x:Type DocumentViewer}">
-        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
-        <Setter Property="Background" Value="{DynamicResource CalciteUIBackgroundBrush}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder1Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteText1Brush}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteBorder1Brush}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="Template">
@@ -62,7 +62,7 @@
                             <ScrollViewer
                                 x:Name="PART_ContentHost"
                                 Grid.Row="1"
-                                Background="{DynamicResource CalciteUIBackgroundBrush}"
+                                Background="{DynamicResource CalciteBackgroundBrush}"
                                 CanContentScroll="true"
                                 HorizontalScrollBarVisibility="Auto"
                                 IsTabStop="true" />

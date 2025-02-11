@@ -11,20 +11,20 @@
 
     <!--  Style and template for the DataGrid.  -->
     <Style x:Key="CalciteDataGridStyle" TargetType="DataGrid">
-        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder1Brush}" />
-        <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteText1Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteBorder1Brush}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteBackground1Brush}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="RowDetailsVisibilityMode" Value="VisibleWhenSelected" />
         <Setter Property="ScrollViewer.CanContentScroll" Value="true" />
         <Setter Property="ScrollViewer.PanningMode" Value="Both" />
         <Setter Property="Stylus.IsFlicksEnabled" Value="False" />
-        <Setter Property="HorizontalGridLinesBrush" Value="{DynamicResource CalciteUIBorder2Brush}" />
-        <Setter Property="VerticalGridLinesBrush" Value="{DynamicResource CalciteUIBorder2Brush}" />
+        <Setter Property="HorizontalGridLinesBrush" Value="{DynamicResource CalciteBorder2Brush}" />
+        <Setter Property="VerticalGridLinesBrush" Value="{DynamicResource CalciteBorder2Brush}" />
         <Setter Property="cm:GridHelpers.TextColumnStyle">
             <Setter.Value>
                 <Style TargetType="TextBlock">
-                    <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
+                    <Setter Property="Foreground" Value="{DynamicResource CalciteText1Brush}" />
                 </Style>
             </Setter.Value>
         </Setter>
@@ -143,7 +143,7 @@
                                 <VisualState x:Name="Current">
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="border" Storyboard.TargetProperty="(BorderBrush).Color">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource CalciteUIBrandColor}" />
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource CalciteBrandColor}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -165,7 +165,7 @@
                     <TextBlock
                         Margin="2,0,0,0"
                         VerticalAlignment="Center"
-                        Foreground="{DynamicResource CalciteUIDangerBrush}"
+                        Foreground="{DynamicResource CalciteStatusDangerBrush}"
                         Text="!" />
                 </ControlTemplate>
             </Setter.Value>
@@ -197,14 +197,14 @@
                                 <VisualState x:Name="Normal">
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="DGR_Border" Storyboard.TargetProperty="(Panel.Background).Color">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource CalciteUIBackground1Color}" />
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource CalciteBackground1Color}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
                                 <VisualState x:Name="Normal_Selected">
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="DGR_Border" Storyboard.TargetProperty="(Panel.Background).Color">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource CalciteUIBackground2Color}" />
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource CalciteBackground2Color}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -212,7 +212,7 @@
                                 <VisualState x:Name="Unfocused_Selected">
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="DGR_Border" Storyboard.TargetProperty="(Panel.Background).Color">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource CalciteUIBackground2Color}" />
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource CalciteBackground2Color}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -220,7 +220,7 @@
                                 <VisualState x:Name="Normal_Editing">
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="DGR_Border" Storyboard.TargetProperty="(Panel.Background).Color">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource CalciteUIBackground2Color}" />
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource CalciteBackground2Color}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -228,7 +228,7 @@
                                 <VisualState x:Name="MouseOver_Editing">
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="DGR_Border" Storyboard.TargetProperty="(Panel.Background).Color">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource CalciteUIBackground2Color}" />
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource CalciteBackground2Color}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -236,7 +236,7 @@
                                 <VisualState x:Name="MouseOver_Unfocused_Editing">
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="DGR_Border" Storyboard.TargetProperty="(Panel.Background).Color">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource CalciteUIBackground2Color}" />
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource CalciteBackground2Color}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -244,7 +244,7 @@
                                 <VisualState x:Name="Unfocused_Editing">
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="DGR_Border" Storyboard.TargetProperty="(Panel.Background).Color">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource CalciteUIBackground2Color}" />
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource CalciteBackground2Color}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -252,7 +252,7 @@
                                 <VisualState x:Name="MouseOver">
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="DGR_Border" Storyboard.TargetProperty="(Panel.Background).Color">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource CalciteUIBackground2Color}" />
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource CalciteBackground2Color}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -260,7 +260,7 @@
                                 <VisualState x:Name="MouseOver_Selected">
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="DGR_Border" Storyboard.TargetProperty="(Panel.Background).Color">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource CalciteUIBackground2Color}" />
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource CalciteBackground2Color}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -268,7 +268,7 @@
                                 <VisualState x:Name="MouseOver_Unfocused_Selected">
                                     <Storyboard>
                                         <ColorAnimationUsingKeyFrames Storyboard.TargetName="DGR_Border" Storyboard.TargetProperty="(Panel.Background).Color">
-                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource CalciteUIBackground2Color}" />
+                                            <EasingColorKeyFrame KeyTime="0" Value="{DynamicResource CalciteBackground2Color}" />
                                         </ColorAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
@@ -303,8 +303,8 @@
                     <Grid>
                         <Border
                             x:Name="columnHeaderBorder"
-                            Background="{DynamicResource CalciteUIBackground1Brush}"
-                            BorderBrush="{DynamicResource CalciteUIBorder1Brush}"
+                            Background="{DynamicResource CalciteBackground1Brush}"
+                            BorderBrush="{DynamicResource CalciteBorder1Brush}"
                             BorderThickness="0,0,1,1">
                             <ContentPresenter
                                 Margin="{TemplateBinding Padding}"

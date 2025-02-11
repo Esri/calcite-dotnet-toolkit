@@ -11,8 +11,8 @@
                 <ControlTemplate TargetType="GroupBox">
                     <Border
                         Padding="8"
-                        Background="{DynamicResource CalciteUIBackground1Brush}"
-                        BorderBrush="{DynamicResource CalciteUIBorder3Brush}"
+                        Background="{DynamicResource CalciteBackground1Brush}"
+                        BorderBrush="{DynamicResource CalciteBorder3Brush}"
                         BorderThickness="1">
                         <Grid>
                             <Grid.RowDefinitions>
@@ -24,14 +24,14 @@
                                 RecognizesAccessKey="True"
                                 TextElement.FontWeight="Medium"
                                 TextElement.FontSize="14"
-                                TextElement.Foreground="{DynamicResource CalciteUIBrandBrush}" />
+                                TextElement.Foreground="{DynamicResource CalciteBrandBrush}" />
                             <ContentPresenter Grid.Row="1" Margin="0,8,0,0" />
                         </Grid>
                     </Border>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteText1Brush}" />
     </Style>
     <Style x:Key="CalcitePanelGroupBoxStyle" TargetType="GroupBox">
         <Setter Property="HorizontalAlignment" Value="Right" />
@@ -39,8 +39,8 @@
         <Setter Property="Margin" Value="8" />
         <Setter Property="Padding" Value="8" />
         <Setter Property="VerticalAlignment" Value="Top" />
-        <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder3Brush}" />
-        <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteBorder3Brush}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteBackground1Brush}" />
         <Setter Property="Template" >
             <Setter.Value>
                 <ControlTemplate TargetType="GroupBox">
@@ -52,7 +52,7 @@
                         <Border
                             Grid.Row="0"
                             Padding="8"
-                            Background="{DynamicResource CalciteUIBackgroundBrush}"
+                            Background="{DynamicResource CalciteBackgroundBrush}"
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="1">
                             <ContentPresenter
@@ -72,7 +72,7 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteText1Brush}" />
 
     </Style>
 

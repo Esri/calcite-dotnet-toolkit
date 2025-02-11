@@ -24,10 +24,10 @@ If you just want access to the resources and explicit styles, but not inherit an
 Brushes and colors can be referenced as dynamic resources.
 
 ```xml
-<Border Background="{DynamicResource CalciteUIBrandBrush}">
+<Border Background="{DynamicResource CalciteBrandBrush}">
   <TextBlock Text="Hello Calcite">
      <TextBlock.Foreground>
-        <SolidColorBrush Color="{DynamicResource CalciteUITextInverseColor} />
+        <SolidColorBrush Color="{DynamicResource CalciteTextInverseColor} />
      </TextBlock.Foreground>
   </TextBlock>
 </Border>

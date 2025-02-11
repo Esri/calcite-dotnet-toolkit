@@ -6,12 +6,12 @@
     xmlns:c="clr-namespace:Esri.Calcite.WPF">
 
     <Style x:Key="CalciteMenuStyle" TargetType="Menu">
-        <Setter Property="Background" Value="{DynamicResource CalciteUIBackground2Brush}" />
-        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteBackground2Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteText1Brush}" />
     </Style>
     <Style x:Key="CalciteMenuItemStyle" TargetType="MenuItem">
-        <Setter Property="Background" Value="{DynamicResource CalciteUIBackground2Brush}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBackground2Brush}" />
-        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteBackground2Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteBackground2Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteText1Brush}" />
     </Style>
 </ResourceDictionary>

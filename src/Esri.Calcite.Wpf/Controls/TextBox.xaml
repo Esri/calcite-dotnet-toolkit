@@ -7,7 +7,7 @@
         <ResourceDictionary Source="..\Shared\Fonts.xaml" />
     </ResourceDictionary.MergedDictionaries>
     <Style x:Key="CalciteTextBoxStyle" TargetType="TextBox">
-        <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteBackground1Brush}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="FontSize" Value="12" />
         <Setter Property="Padding" Value="4" />
@@ -16,10 +16,10 @@
         <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="Cursor" Value="IBeam" />
         <Setter Property="TextWrapping" Value="Wrap" />
-        <Setter Property="CaretBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder2Brush}" />
-        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
-        <Setter Property="SelectionBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
+        <Setter Property="CaretBrush" Value="{DynamicResource CalciteBrandBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteBorder2Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteText1Brush}" />
+        <Setter Property="SelectionBrush" Value="{DynamicResource CalciteBrandBrush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type TextBoxBase}">
@@ -70,11 +70,11 @@
                     <Condition Property="IsReadOnly" Value="False" />
                 </MultiTrigger.Conditions>
                 <MultiTrigger.Setters>
-                    <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
+                    <Setter Property="BorderBrush" Value="{DynamicResource CalciteBrandBrush}" />
                 </MultiTrigger.Setters>
             </MultiTrigger>
             <Trigger Property="IsReadOnly" Value="True">
-                <Setter Property="Background" Value="{DynamicResource CalciteUIBackground2Brush}" />
+                <Setter Property="Background" Value="{DynamicResource CalciteBackground2Brush}" />
             </Trigger>
             <Trigger Property="ca:AttachedFormData.IsInForm" Value="True">
                 <Setter Property="Margin" Value="{DynamicResource CalciteFormMargin}" />
@@ -82,7 +82,7 @@
         </Style.Triggers>
     </Style>
     <Style x:Key="CalcitePasswordBoxStyle" TargetType="PasswordBox">
-        <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteBackground1Brush}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="FontSize" Value="12" />
         <Setter Property="Padding" Value="4" />
@@ -90,10 +90,10 @@
         <Setter Property="MinHeight" Value="28" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="Cursor" Value="IBeam" />
-        <Setter Property="CaretBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder2Brush}" />
-        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
-        <Setter Property="SelectionBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
+        <Setter Property="CaretBrush" Value="{DynamicResource CalciteBrandBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteBorder2Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteText1Brush}" />
+        <Setter Property="SelectionBrush" Value="{DynamicResource CalciteBrandBrush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type PasswordBox}">
@@ -143,7 +143,7 @@
                     <Condition Property="IsFocused" Value="True" />
                 </MultiTrigger.Conditions>
                 <MultiTrigger.Setters>
-                    <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
+                    <Setter Property="BorderBrush" Value="{DynamicResource CalciteBrandBrush}" />
                 </MultiTrigger.Setters>
             </MultiTrigger>
             <Trigger Property="ca:AttachedFormData.IsInForm" Value="True">

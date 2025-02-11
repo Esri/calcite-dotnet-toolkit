@@ -10,8 +10,8 @@
                         Width="{TemplateBinding Width}"
                         Height="{TemplateBinding Height}"
                         Margin="8"
-                        Background="{DynamicResource CalciteUIBackgroundBrush}"
-                        BorderBrush="{DynamicResource CalciteUIBrandPressBrush}"
+                        Background="{DynamicResource CalciteBackgroundBrush}"
+                        BorderBrush="{DynamicResource CalciteBrandPressBrush}"
                         BorderThickness="1">
                         <Border.Effect>
                             <DropShadowEffect

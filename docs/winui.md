@@ -22,10 +22,10 @@ If you don't want the default implicit Calcite styles, place the `CalciteResourc
 Brushes and colors can be referenced as static resources.
 
 ```xml
-<Border Background="{ThemeResource CalciteUIBrandBrush}">
+<Border Background="{ThemeResource CalciteBrandBrush}">
   <TextBlock Text="Hello Calcite">
      <TextBlock.Foreground>
-        <SolidColorBrush Color="{ThemeResource CalciteUITextInverseColor} />
+        <SolidColorBrush Color="{ThemeResource CalciteTextInverseColor} />
      </TextBlock.Foreground>
   </TextBlock>
 </Border>

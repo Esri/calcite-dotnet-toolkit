@@ -5,30 +5,30 @@
 
     <ResourceDictionary.ThemeDictionaries>
         <ResourceDictionary x:Key ="Default" >
-            <Color x:Key="CalciteUITextOnBrandColor">White</Color>
-            <SolidColorBrush x:Key="CalciteUITextOnBrandBrush" Color="{StaticResource CalciteUITextOnBrandColor}" />
+            <Color x:Key="CalciteTextOnBrandColor">White</Color>
+            <SolidColorBrush x:Key="CalciteTextOnBrandBrush" Color="{StaticResource CalciteTextOnBrandColor}" />
         </ResourceDictionary>
         <ResourceDictionary x:Key ="Light" >
-            <Color x:Key="CalciteUITextOnBrandColor">White</Color>
-            <SolidColorBrush x:Key="CalciteUITextOnBrandBrush" Color="{StaticResource CalciteUITextOnBrandColor}" />
+            <Color x:Key="CalciteTextOnBrandColor">White</Color>
+            <SolidColorBrush x:Key="CalciteTextOnBrandBrush" Color="{StaticResource CalciteTextOnBrandColor}" />
         </ResourceDictionary>
     </ResourceDictionary.ThemeDictionaries>
     
-    <!--<StaticResource x:Key="SystemControlForegroundBaseHighBrush" ResourceKey="CalciteUIText1Brush" />
+    <!--<StaticResource x:Key="SystemControlForegroundBaseHighBrush" ResourceKey="CalciteText1Brush" />
 
 
-    <StaticResource x:Key="SystemAccentColor" ResourceKey="CalciteUIBrandColor" />-->
-    <ThemeResource x:Key="SolidBackgroundFillColorBase" ResourceKey="CalciteUIBackgroundColor" />
+    <StaticResource x:Key="SystemAccentColor" ResourceKey="CalciteBrandColor" />-->
+    <ThemeResource x:Key="SolidBackgroundFillColorBase" ResourceKey="CalciteBackgroundColor" />
 
     <!--<Color x:Key="SystemAltHighColor">#FF000000</Color>
     <Color x:Key="SystemAltLowColor">#33000000</Color>
     <Color x:Key="SystemAltMediumColor">#99000000</Color>
     <Color x:Key="SystemAltMediumHighColor">#CC000000</Color>
     <Color x:Key="SystemAltMediumLowColor">#66000000</Color>-->
-    <ThemeResource x:Key="SystemBaseHighColor" ResourceKey="CalciteUIText1Color" />
-    <ThemeResource x:Key="SystemBaseLowColor" ResourceKey="CalciteUIText2Color" />
-    <ThemeResource x:Key="SystemBaseMediumColor" ResourceKey="CalciteUIBrandHoverColor" />
-    <ThemeResource x:Key="SystemBaseMediumHighColor" ResourceKey="CalciteUIBrandPressColor" />
+    <ThemeResource x:Key="SystemBaseHighColor" ResourceKey="CalciteText1Color" />
+    <ThemeResource x:Key="SystemBaseLowColor" ResourceKey="CalciteText2Color" />
+    <ThemeResource x:Key="SystemBaseMediumColor" ResourceKey="CalciteBrandHoverColor" />
+    <ThemeResource x:Key="SystemBaseMediumHighColor" ResourceKey="CalciteBrandPressColor" />
     <!--<Color x:Key="SystemBaseMediumLowColor">#66FFFFFF</Color>
     <Color x:Key="SystemChromeAltLowColor">#FFF2F2F2</Color>
     <Color x:Key="SystemChromeBlackHighColor">#FF000000</Color>
@@ -45,33 +45,33 @@
     <Color x:Key="SystemChromeGrayColor">#FF767676</Color>
     <Color x:Key="SystemListLowColor">#19FFFFFF</Color>
     <Color x:Key="SystemListMediumColor">#33FFFFFF</Color>-->
-    <ThemeResource x:Key="SystemErrorTextColor" ResourceKey="CalciteUIDangerColor" />
+    <ThemeResource x:Key="SystemErrorTextColor" ResourceKey="CalciteStatusDangerColor" />
 
 
-    <ThemeResource x:Key="TextFillColorPrimaryBrush" ResourceKey="CalciteUIText1Brush" />
-    <ThemeResource x:Key="TextFillColorSecondaryBrush" ResourceKey="CalciteUIText2Brush" />
-    <ThemeResource x:Key="TextFillColorTertiaryBrush" ResourceKey="CalciteUIText3Brush" />
+    <ThemeResource x:Key="TextFillColorPrimaryBrush" ResourceKey="CalciteText1Brush" />
+    <ThemeResource x:Key="TextFillColorSecondaryBrush" ResourceKey="CalciteText2Brush" />
+    <ThemeResource x:Key="TextFillColorTertiaryBrush" ResourceKey="CalciteText3Brush" />
 
     <!--Accent Text - recommended for links-->
-    <ThemeResource x:Key="AccentTextFillColorPrimaryBrush" ResourceKey="CalciteUIBrandBrush" />
-    <ThemeResource x:Key="AccentTextFillColorSecondaryBrush" ResourceKey="CalciteUIBrandHoverBrush" />
-    <ThemeResource x:Key="AccentTextFillColorTertiaryBrush" ResourceKey="CalciteUIBrandPressBrush" />
-    <!--<StaticResource x:Key="AccentTextFillColorDisabledBrush" ResourceKey="CalciteUIBrandBrush" />-->
+    <ThemeResource x:Key="AccentTextFillColorPrimaryBrush" ResourceKey="CalciteBrandBrush" />
+    <ThemeResource x:Key="AccentTextFillColorSecondaryBrush" ResourceKey="CalciteBrandHoverBrush" />
+    <ThemeResource x:Key="AccentTextFillColorTertiaryBrush" ResourceKey="CalciteBrandPressBrush" />
+    <!--<StaticResource x:Key="AccentTextFillColorDisabledBrush" ResourceKey="CalciteBrandBrush" />-->
     <!--Text on Accent - Used for text on accent colored controls or fills-->
-    <StaticResource x:Key="TextOnAccentFillColorPrimaryBrush" ResourceKey="CalciteUITextOnBrandBrush" />
-    <StaticResource x:Key="TextOnAccentFillColorSecondaryBrush" ResourceKey="CalciteUITextOnBrandBrush" />
-    <StaticResource x:Key="TextOnAccentFillColorDisabledBrush" ResourceKey="CalciteUITextOnBrandBrush" />
-    <StaticResource x:Key="TextOnAccentFillColorSelectedTextBrush" ResourceKey="CalciteUITextOnBrandBrush" />
+    <StaticResource x:Key="TextOnAccentFillColorPrimaryBrush" ResourceKey="CalciteTextOnBrandBrush" />
+    <StaticResource x:Key="TextOnAccentFillColorSecondaryBrush" ResourceKey="CalciteTextOnBrandBrush" />
+    <StaticResource x:Key="TextOnAccentFillColorDisabledBrush" ResourceKey="CalciteTextOnBrandBrush" />
+    <StaticResource x:Key="TextOnAccentFillColorSelectedTextBrush" ResourceKey="CalciteTextOnBrandBrush" />
 
     <!--Accent Fill Used for accent fills on controls-->
-    <StaticResource x:Key="AccentFillColorDefaultBrush" ResourceKey="CalciteUIBrandBrush" />
-    <StaticResource x:Key="AccentFillColorSecondaryBrush" ResourceKey="CalciteUIBrandHoverBrush" />
-    <StaticResource x:Key="AccentFillColorTertiaryBrush" ResourceKey="CalciteUIBrandPressBrush" />
-    <!--<StaticResource x:Key="AccentFillColorDisabledBrush" ResourceKey="CalciteUIBrandBrush" />-->
-    <StaticResource x:Key="AccentFillColorSelectedTextBackgroundBrush" ResourceKey="CalciteUIBrandHoverBrush" />
+    <StaticResource x:Key="AccentFillColorDefaultBrush" ResourceKey="CalciteBrandBrush" />
+    <StaticResource x:Key="AccentFillColorSecondaryBrush" ResourceKey="CalciteBrandHoverBrush" />
+    <StaticResource x:Key="AccentFillColorTertiaryBrush" ResourceKey="CalciteBrandPressBrush" />
+    <!--<StaticResource x:Key="AccentFillColorDisabledBrush" ResourceKey="CalciteBrandBrush" />-->
+    <StaticResource x:Key="AccentFillColorSelectedTextBackgroundBrush" ResourceKey="CalciteBrandHoverBrush" />
 
     <!--TabView-->
-    <StaticResource x:Key="TabViewItemHeaderBackgroundSelected" ResourceKey="CalciteUIBrandBrush" />
+    <StaticResource x:Key="TabViewItemHeaderBackgroundSelected" ResourceKey="CalciteBrandBrush" />
     <!--<SolidColorBrush x:Key="TabViewItemHeaderBackgroundSelected" Color="Green" />-->
     <StaticResource x:Key="TabViewItemHeaderForegroundSelected" ResourceKey="TextOnAccentFillColorPrimaryBrush" />
     <StaticResource x:Key="TabViewItemHeaderSelectedCloseButtonForeground" ResourceKey="TextOnAccentFillColorPrimaryBrush" />

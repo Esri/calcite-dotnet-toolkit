@@ -16,7 +16,7 @@
                         HorizontalAlignment="Stretch"
                         VerticalAlignment="Stretch"
                         Background="Transparent"
-                        BorderBrush="{DynamicResource CalciteUIBorder2Brush}"
+                        BorderBrush="{DynamicResource CalciteBorder2Brush}"
                         BorderThickness="0,0,1,0"
                         Cursor="{DynamicResource CalciteActionCursor}">
                         <Grid>
@@ -31,10 +31,10 @@
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="bg" Property="Background" Value="{DynamicResource CalciteUIBackground2Brush}" />
+                            <Setter TargetName="bg" Property="Background" Value="{DynamicResource CalciteBackground2Brush}" />
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">
-                            <Setter TargetName="bg" Property="Background" Value="{DynamicResource CalciteUIBackground3Brush}" />
+                            <Setter TargetName="bg" Property="Background" Value="{DynamicResource CalciteBackground3Brush}" />
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="False">
                             <Setter TargetName="bg" Property="Opacity" Value="0.8" />
@@ -73,7 +73,7 @@
                             Visibility="Collapsed" />
                         <Border
                             x:Name="FocusVisual"
-                            BorderBrush="{DynamicResource CalciteUIBrandHoverBrush}"
+                            BorderBrush="{DynamicResource CalciteBrandHoverBrush}"
                             BorderThickness="0"
                             CornerRadius="0"
                             IsHitTestVisible="False"
@@ -108,7 +108,7 @@
                     Style="{StaticResource CalciteDatePickerTextBoxButtonStyle}">
                     <Path
                         x:Name="PathIcon"
-                        Fill="{DynamicResource CalciteUIText1Brush}"
+                        Fill="{DynamicResource CalciteText1Brush}"
                         Data="{c:CalciteIconGeometry Icon=Calendar}"
                         Stretch="Uniform"
                         HorizontalAlignment="Center"
@@ -138,7 +138,7 @@
         <ControlTemplate.Triggers>
             <Trigger Property="IsEnabled" Value="False" />
             <Trigger Property="IsFocused" Value="True">
-                <Setter TargetName="PART_Border" Property="BorderBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
+                <Setter TargetName="PART_Border" Property="BorderBrush" Value="{DynamicResource CalciteBrandBrush}" />
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
@@ -151,9 +151,9 @@
         <Setter Property="VerticalAlignment" Value="Top" />
         <Setter Property="Height" Value="28" />
         <Setter Property="Focusable" Value="True" />
-        <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
-        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder2Brush}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteBackground1Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteText1Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteBorder2Brush}" />
         <Setter Property="Template" Value="{StaticResource CalciteDatePickerTemplate}" />
 
         <Setter Property="CalendarStyle" Value="{StaticResource CalciteRoundCalendarStyle}" />
@@ -162,7 +162,7 @@
                 <Setter Property="Margin" Value="{DynamicResource CalciteFormMargin}" />
             </Trigger>
             <Trigger Property="IsKeyboardFocusWithin" Value="True">
-                <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBrandBrush}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource CalciteBrandBrush}" />
             </Trigger>
         </Style.Triggers>
     </Style>

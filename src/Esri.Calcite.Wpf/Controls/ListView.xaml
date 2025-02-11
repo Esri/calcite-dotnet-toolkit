@@ -11,12 +11,12 @@
         <Setter Property="Padding" Value="8" />
         <Setter Property="Cursor" Value="{DynamicResource CalciteActionCursor}" />
         <Setter Property="Background" Value="Transparent" />
-        <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder3Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteBorder3Brush}" />
         <Setter Property="BorderThickness" Value="0,0,0,1" />
         <Setter Property="HorizontalContentAlignment" Value="Stretch" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="Margin" Value="0" />
-        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteText1Brush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ListViewItem}">
@@ -38,26 +38,26 @@
                             <MultiTrigger.Conditions>
                                 <Condition Property="IsMouseOver" Value="True" />
                             </MultiTrigger.Conditions>
-                            <Setter Property="Background" Value="{DynamicResource CalciteUIBackground2Brush}" />
+                            <Setter Property="Background" Value="{DynamicResource CalciteBackground2Brush}" />
                         </MultiTrigger>
                         <MultiTrigger>
                             <MultiTrigger.Conditions>
                                 <Condition Property="Selector.IsSelectionActive" Value="False" />
                                 <Condition Property="IsSelected" Value="True" />
                             </MultiTrigger.Conditions>
-                            <Setter TargetName="Bd" Property="Background" Value="{DynamicResource CalciteUIBrandPressBrush}" />
-                            <Setter TargetName="ContentPart" Property="TextElement.Foreground" Value="{DynamicResource CalciteUIForegroundBrandContrastBrush}" />
+                            <Setter TargetName="Bd" Property="Background" Value="{DynamicResource CalciteBrandPressBrush}" />
+                            <Setter TargetName="ContentPart" Property="TextElement.Foreground" Value="{DynamicResource CalciteForegroundBrandContrastBrush}" />
                         </MultiTrigger>
                         <MultiTrigger>
                             <MultiTrigger.Conditions>
                                 <Condition Property="Selector.IsSelectionActive" Value="True" />
                                 <Condition Property="IsSelected" Value="True" />
                             </MultiTrigger.Conditions>
-                            <Setter TargetName="Bd" Property="Background" Value="{DynamicResource CalciteUIBrandBrush}" />
-                            <Setter TargetName="ContentPart" Property="TextElement.Foreground" Value="{DynamicResource CalciteUIForegroundBrandContrastBrush}" />
+                            <Setter TargetName="Bd" Property="Background" Value="{DynamicResource CalciteBrandBrush}" />
+                            <Setter TargetName="ContentPart" Property="TextElement.Foreground" Value="{DynamicResource CalciteForegroundBrandContrastBrush}" />
                         </MultiTrigger>
                         <Trigger Property="IsEnabled" Value="False">
-                            <Setter TargetName="Bd" Property="TextElement.Foreground" Value="{DynamicResource CalciteUIText3Brush}" />
+                            <Setter TargetName="Bd" Property="TextElement.Foreground" Value="{DynamicResource CalciteText3Brush}" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -69,8 +69,8 @@
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="Margin" Value="0" />
         <Setter Property="VerticalAlignment" Value="Top" />
-        <Setter Property="Background" Value="{DynamicResource CalciteUIBackgroundBrush}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder3Brush}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteBorder3Brush}" />
         <Style.Triggers>
             <Trigger Property="ca:AttachedFormData.IsInForm" Value="True">
                 <Setter Property="Margin" Value="{DynamicResource CalciteFormMargin}" />

@@ -37,16 +37,16 @@
                         <!--  Shown below date  -->
                         <Rectangle
                             x:Name="TodayBackground"
-                            Fill="{DynamicResource CalciteUIBrandPressBrush}"
+                            Fill="{DynamicResource CalciteBrandPressBrush}"
                             Opacity="0"
                             Style="{StaticResource CalciteCalendarDateRectangleStyle}" />
                         <Rectangle
                             x:Name="HighlightBackground"
-                            Fill="{DynamicResource CalciteUIBackground2Brush}"
+                            Fill="{DynamicResource CalciteBackground2Brush}"
                             Style="{StaticResource CalciteCalendarDateRectangleStyle}" />
                         <Rectangle
                             x:Name="SelectedBackground"
-                            Fill="{DynamicResource CalciteUIBrandBrush}"
+                            Fill="{DynamicResource CalciteBrandBrush}"
                             Style="{StaticResource CalciteCalendarDateRectangleStyle}" />
                         <Rectangle x:Name="Blackout" Style="{StaticResource CalciteCalendarDateRectangleStyle}" />
                         <!--  Date text  -->
@@ -59,7 +59,7 @@
                                 FontSize="12"
                                 Text="{Binding Day}"
                                 TextAlignment="Center"
-                                TextElement.Foreground="{DynamicResource CalciteUIText2Brush}" />
+                                TextElement.Foreground="{DynamicResource CalciteText2Brush}" />
                             <TextBlock
                                 x:Name="SelectedText"
                                 HorizontalAlignment="Center"
@@ -69,12 +69,12 @@
                                 Opacity="0"
                                 Text="{Binding Day}"
                                 TextAlignment="Center"
-                                TextElement.Foreground="{DynamicResource CalciteUITextInverseBrush}" />
+                                TextElement.Foreground="{DynamicResource CalciteTextInverseBrush}" />
                         </Grid>
                         <!--  Shown on top of date  -->
                         <Rectangle
                             x:Name="DayButtonFocusVisual"
-                            Fill="{DynamicResource CalciteUIBrandBrush}"
+                            Fill="{DynamicResource CalciteBrandBrush}"
                             IsHitTestVisible="false"
                             Style="{StaticResource CalciteCalendarDateRectangleStyle}"
                             Visibility="Collapsed" />
@@ -184,15 +184,15 @@
                     <Grid Cursor="{DynamicResource CalciteActionCursor}">
                         <Rectangle
                             x:Name="HighlightBackground"
-                            Fill="{DynamicResource CalciteUIBackground3Brush}"
+                            Fill="{DynamicResource CalciteBackground3Brush}"
                             Style="{StaticResource CalciteCalendarMonthRectangleStyle}" />
                         <Rectangle
                             x:Name="PushBackground"
-                            Fill="{DynamicResource CalciteUIBrandPressBrush}"
+                            Fill="{DynamicResource CalciteBrandPressBrush}"
                             Style="{StaticResource CalciteCalendarMonthRectangleStyle}" />
                         <Rectangle
                             x:Name="SelectedBackground"
-                            Fill="{DynamicResource CalciteUIBrandBrush}"
+                            Fill="{DynamicResource CalciteBrandBrush}"
                             Style="{StaticResource CalciteCalendarMonthRectangleStyle}" />
                         <Grid x:Name="IsActiveWrapper">
                             <ContentPresenter
@@ -217,7 +217,7 @@
                                 TextBlock.TextAlignment="Center"
                                 TextElement.FontWeight="Light"
                                 TextElement.FontSize="12"
-                                TextElement.Foreground="{DynamicResource CalciteUIForegroundBrandContrastBrush}" />
+                                TextElement.Foreground="{DynamicResource CalciteForegroundBrandContrastBrush}" />
 
                         </Grid>
                     </Grid>
@@ -328,11 +328,11 @@
     <ControlTemplate x:Key="CalciteCalendarItemStyle_NextPreviousButtonTemplate" TargetType="{x:Type Button}">
         <Grid
             x:Name="backgroundGrid"
-            Background="{DynamicResource CalciteUIBackground1Brush}"
+            Background="{DynamicResource CalciteBackground1Brush}"
             Cursor="{DynamicResource CalciteActionCursor}">
             <Grid
                 x:Name="HighlightBackground"
-                Background="{DynamicResource CalciteUIBackground2Brush}"
+                Background="{DynamicResource CalciteBackground2Brush}"
                 Opacity="0" />
             <Grid
                 x:Name="pathGrid"
@@ -347,7 +347,7 @@
                 <Setter TargetName="pathGrid" Property="Opacity" Value="0" />
             </Trigger>
             <Trigger Property="IsPressed" Value="True">
-                <Setter TargetName="HighlightBackground" Property="Background" Value="{DynamicResource CalciteUIBackground3Brush}" />
+                <Setter TargetName="HighlightBackground" Property="Background" Value="{DynamicResource CalciteBackground3Brush}" />
             </Trigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
@@ -403,7 +403,7 @@
                 Opacity="0"
                 TextElement.FontSize="{TemplateBinding FontSize}"
                 TextElement.FontWeight="{TemplateBinding FontWeight}"
-                TextElement.Foreground="{DynamicResource CalciteUIBrandBrush}"
+                TextElement.Foreground="{DynamicResource CalciteBrandBrush}"
                 TextOptions.TextFormattingMode="Ideal"
                 TextOptions.TextRenderingMode="Auto" />
         </Grid>
@@ -457,7 +457,7 @@
                             <Setter Property="FontSize" Value="12" />
                             <Setter Property="LineHeight" Value="12" />
                             <Setter Property="FontWeight" Value="Light" />
-                            <Setter Property="Foreground" Value="{DynamicResource CalciteUIText1Brush}" />
+                            <Setter Property="Foreground" Value="{DynamicResource CalciteText1Brush}" />
                         </Style>
                         <!--  TODO - adjust size for different control sizes  -->
                         <DataTemplate x:Key="{x:Static CalendarItem.DayTitleTemplateResourceKey}">
@@ -468,7 +468,7 @@
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 FontWeight="Medium"
-                Foreground="{DynamicResource CalciteUIText2Brush}"
+                Foreground="{DynamicResource CalciteText2Brush}"
                 LineHeight="12"
                 LineStackingStrategy="BlockLineHeight"
                 Style="{StaticResource TextBlockStyle}"
@@ -480,7 +480,7 @@
                         <Style x:Key="pathButtonStyle" TargetType="{x:Type Path}">
                             <Setter Property="Height" Value="8" />
                             <Setter Property="Width" Value="5.41" />
-                            <Setter Property="Fill" Value="{DynamicResource CalciteUIText3Brush}" />
+                            <Setter Property="Fill" Value="{DynamicResource CalciteText3Brush}" />
                             <Setter Property="Stretch" Value="Uniform" />
                             <Setter Property="HorizontalAlignment" Value="Center" />
                             <Setter Property="VerticalAlignment" Value="Center" />
@@ -520,7 +520,7 @@
                                 Focusable="False"
                                 FontFamily="{TemplateBinding FontFamily}"
                                 FontWeight="{TemplateBinding FontWeight}"
-                                Foreground="{DynamicResource CalciteUIText1Brush}"
+                                Foreground="{DynamicResource CalciteText1Brush}"
                                 Template="{StaticResource CalciteCalendarItemStyle_HeaderButtonTemplate}" />
                             <Button
                                 x:Name="PART_NextButton"
@@ -535,7 +535,7 @@
                             <Border
                                 Grid.Row="1"
                                 Grid.ColumnSpan="3"
-                                BorderBrush="{DynamicResource CalciteUIBorder1Brush}"
+                                BorderBrush="{DynamicResource CalciteBorder1Brush}"
                                 BorderThickness="0,1,0,0" />
                             <Grid
                                 x:Name="PART_MonthView"
@@ -616,9 +616,9 @@
         <Setter Property="CalendarDayButtonStyle" Value="{StaticResource CalciteCalendarDayButtonStyle}" />
         <Setter Property="CalendarButtonStyle" Value="{StaticResource CalciteCalendarButtonStyle}" />
         <Setter Property="CalendarItemStyle" Value="{StaticResource CalciteCalendarItemStyle}" />
-        <Setter Property="Foreground" Value="{DynamicResource CalciteUIText3Brush}" />
-        <Setter Property="Background" Value="{DynamicResource CalciteUIBackground1Brush}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource CalciteUIBorder3Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteText3Brush}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteBackground1Brush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteBorder3Brush}" />
         <Setter Property="OverridesDefaultStyle" Value="True" />
         <Setter Property="Template">
             <Setter.Value>

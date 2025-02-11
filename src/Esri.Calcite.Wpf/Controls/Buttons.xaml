@@ -106,15 +106,15 @@
         x:Key="CalcitePrimaryButtonBaseStyle"
         BasedOn="{StaticResource CalciteCommonButtonBaseStyle}"
         TargetType="ButtonBase">
-        <Setter Property="ca:AttachedBrushes.BackgroundHover" Value="{DynamicResource CalciteUIBrandHoverBrush}" />
-        <Setter Property="ca:AttachedBrushes.BackgroundNormal" Value="{DynamicResource CalciteUIBrandBrush}" />
-        <Setter Property="ca:AttachedBrushes.BackgroundPress" Value="{DynamicResource CalciteUIBrandPressBrush}" />
-        <Setter Property="ca:AttachedBrushes.BorderNormal" Value="{DynamicResource CalciteUIBrandBrush}" />
-        <Setter Property="ca:AttachedBrushes.BorderHover" Value="{DynamicResource CalciteUIBrandHoverBrush}" />
-        <Setter Property="ca:AttachedBrushes.BorderPress" Value="{DynamicResource CalciteUIBrandPressBrush}" />
-        <Setter Property="ca:AttachedBrushes.ForegroundNormal" Value="{DynamicResource CalciteUIForegroundBrandContrastBrush}" />
-        <Setter Property="ca:AttachedBrushes.ForegroundHover" Value="{DynamicResource CalciteUIForegroundBrandContrastBrush}" />
-        <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteUIForegroundBrandContrastBrush}" />
+        <Setter Property="ca:AttachedBrushes.BackgroundHover" Value="{DynamicResource CalciteBrandHoverBrush}" />
+        <Setter Property="ca:AttachedBrushes.BackgroundNormal" Value="{DynamicResource CalciteBrandBrush}" />
+        <Setter Property="ca:AttachedBrushes.BackgroundPress" Value="{DynamicResource CalciteBrandPressBrush}" />
+        <Setter Property="ca:AttachedBrushes.BorderNormal" Value="{DynamicResource CalciteBrandBrush}" />
+        <Setter Property="ca:AttachedBrushes.BorderHover" Value="{DynamicResource CalciteBrandHoverBrush}" />
+        <Setter Property="ca:AttachedBrushes.BorderPress" Value="{DynamicResource CalciteBrandPressBrush}" />
+        <Setter Property="ca:AttachedBrushes.ForegroundNormal" Value="{DynamicResource CalciteForegroundBrandContrastBrush}" />
+        <Setter Property="ca:AttachedBrushes.ForegroundHover" Value="{DynamicResource CalciteForegroundBrandContrastBrush}" />
+        <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteForegroundBrandContrastBrush}" />
     </Style>
     <Style
         x:Key="CalciteSecondaryButtonBaseStyle"
@@ -123,27 +123,27 @@
         <Setter Property="ca:AttachedBrushes.BackgroundHover" Value="Transparent" />
         <Setter Property="ca:AttachedBrushes.BackgroundNormal" Value="Transparent" />
         <Setter Property="ca:AttachedBrushes.BackgroundPress" Value="Transparent" />
-        <Setter Property="ca:AttachedBrushes.BorderNormal" Value="{DynamicResource CalciteUIBrandBrush}" />
-        <Setter Property="ca:AttachedBrushes.BorderHover" Value="{DynamicResource CalciteUIBrandHoverBrush}" />
-        <Setter Property="ca:AttachedBrushes.BorderPress" Value="{DynamicResource CalciteUIBrandPressBrush}" />
-        <Setter Property="ca:AttachedBrushes.ForegroundNormal" Value="{DynamicResource CalciteUIBrandBrush}" />
-        <Setter Property="ca:AttachedBrushes.ForegroundHover" Value="{DynamicResource CalciteUIBrandHoverBrush}" />
-        <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteUIBrandPressBrush}" />
+        <Setter Property="ca:AttachedBrushes.BorderNormal" Value="{DynamicResource CalciteBrandBrush}" />
+        <Setter Property="ca:AttachedBrushes.BorderHover" Value="{DynamicResource CalciteBrandHoverBrush}" />
+        <Setter Property="ca:AttachedBrushes.BorderPress" Value="{DynamicResource CalciteBrandPressBrush}" />
+        <Setter Property="ca:AttachedBrushes.ForegroundNormal" Value="{DynamicResource CalciteBrandBrush}" />
+        <Setter Property="ca:AttachedBrushes.ForegroundHover" Value="{DynamicResource CalciteBrandHoverBrush}" />
+        <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteBrandPressBrush}" />
     </Style>
     <Style
         x:Key="CalciteDangerButtonBaseStyle"
         BasedOn="{StaticResource CalciteCommonButtonBaseStyle}"
         TargetType="ButtonBase">
-        <Setter Property="ca:AttachedBrushes.BackgroundHover" Value="{DynamicResource CalciteUIDangerHoverBrush}" />
-        <Setter Property="ca:AttachedBrushes.BackgroundNormal" Value="{DynamicResource CalciteUIDangerBrush}" />
-        <Setter Property="ca:AttachedBrushes.BackgroundPress" Value="{DynamicResource CalciteUIDangerPressBrush}" />
-        <Setter Property="ca:AttachedBrushes.BorderNormal" Value="{DynamicResource CalciteUIDangerBrush}" />
-        <Setter Property="ca:AttachedBrushes.BorderHover" Value="{DynamicResource CalciteUIDangerHoverBrush}" />
-        <Setter Property="ca:AttachedBrushes.BorderPress" Value="{DynamicResource CalciteUIDangerPressBrush}" />
+        <Setter Property="ca:AttachedBrushes.BackgroundHover" Value="{DynamicResource CalciteStatusDangerHoverBrush}" />
+        <Setter Property="ca:AttachedBrushes.BackgroundNormal" Value="{DynamicResource CalciteStatusDangerBrush}" />
+        <Setter Property="ca:AttachedBrushes.BackgroundPress" Value="{DynamicResource CalciteStatusDangerPressBrush}" />
+        <Setter Property="ca:AttachedBrushes.BorderNormal" Value="{DynamicResource CalciteStatusDangerBrush}" />
+        <Setter Property="ca:AttachedBrushes.BorderHover" Value="{DynamicResource CalciteStatusDangerHoverBrush}" />
+        <Setter Property="ca:AttachedBrushes.BorderPress" Value="{DynamicResource CalciteStatusDangerPressBrush}" />
         <!--  TODO if needed: DangerOffsetBrush  -->
-        <Setter Property="ca:AttachedBrushes.ForegroundNormal" Value="{DynamicResource CalciteUIForegroundBrandContrastBrush}" />
-        <Setter Property="ca:AttachedBrushes.ForegroundHover" Value="{DynamicResource CalciteUITextInverseBrush}" />
-        <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteUITextInverseBrush}" />
+        <Setter Property="ca:AttachedBrushes.ForegroundNormal" Value="{DynamicResource CalciteForegroundBrandContrastBrush}" />
+        <Setter Property="ca:AttachedBrushes.ForegroundHover" Value="{DynamicResource CalciteTextInverseBrush}" />
+        <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteTextInverseBrush}" />
     </Style>
     <Style
         x:Key="CalciteDangerSecondaryButtonBaseStyle"
@@ -152,27 +152,27 @@
         <Setter Property="ca:AttachedBrushes.BackgroundHover" Value="Transparent" />
         <Setter Property="ca:AttachedBrushes.BackgroundNormal" Value="Transparent" />
         <Setter Property="ca:AttachedBrushes.BackgroundPress" Value="Transparent" />
-        <Setter Property="ca:AttachedBrushes.BorderNormal" Value="{DynamicResource CalciteUIDangerBrush}" />
-        <Setter Property="ca:AttachedBrushes.BorderHover" Value="{DynamicResource CalciteUIDangerHoverBrush}" />
-        <Setter Property="ca:AttachedBrushes.BorderPress" Value="{DynamicResource CalciteUIDangerPressBrush}" />
-        <Setter Property="ca:AttachedBrushes.ForegroundNormal" Value="{DynamicResource CalciteUIDangerBrush}" />
-        <Setter Property="ca:AttachedBrushes.ForegroundHover" Value="{DynamicResource CalciteUIDangerHoverBrush}" />
-        <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteUIDangerPressBrush}" />
+        <Setter Property="ca:AttachedBrushes.BorderNormal" Value="{DynamicResource CalciteStatusDangerBrush}" />
+        <Setter Property="ca:AttachedBrushes.BorderHover" Value="{DynamicResource CalciteStatusDangerHoverBrush}" />
+        <Setter Property="ca:AttachedBrushes.BorderPress" Value="{DynamicResource CalciteStatusDangerPressBrush}" />
+        <Setter Property="ca:AttachedBrushes.ForegroundNormal" Value="{DynamicResource CalciteStatusDangerBrush}" />
+        <Setter Property="ca:AttachedBrushes.ForegroundHover" Value="{DynamicResource CalciteStatusDangerHoverBrush}" />
+        <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteStatusDangerPressBrush}" />
 
     </Style>
     <Style
         x:Key="CalciteChromeButtonBaseStyle"
         BasedOn="{StaticResource CalciteCommonButtonBaseStyle}"
         TargetType="ButtonBase">
-        <Setter Property="cm:AttachedBrushes.BackgroundHover" Value="{DynamicResource CalciteUIBackground2Brush}" />
-        <Setter Property="cm:AttachedBrushes.BackgroundNormal" Value="{DynamicResource CalciteUIBackground3Brush}" />
-        <Setter Property="cm:AttachedBrushes.BackgroundPress" Value="{DynamicResource CalciteUIBackground1Brush}" />
-        <Setter Property="cm:AttachedBrushes.BorderNormal" Value="{DynamicResource CalciteUIBackground3Brush}" />
-        <Setter Property="cm:AttachedBrushes.BorderHover" Value="{DynamicResource CalciteUIBackground2Brush}" />
-        <Setter Property="cm:AttachedBrushes.BorderPress" Value="{DynamicResource CalciteUIBackground1Brush}" />
-        <Setter Property="cm:AttachedBrushes.ForegroundNormal" Value="{DynamicResource CalciteUIText1Brush}" />
-        <Setter Property="cm:AttachedBrushes.ForegroundHover" Value="{DynamicResource CalciteUIText1Brush}" />
-        <Setter Property="cm:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteUIText1Brush}" />
+        <Setter Property="cm:AttachedBrushes.BackgroundHover" Value="{DynamicResource CalciteBackground2Brush}" />
+        <Setter Property="cm:AttachedBrushes.BackgroundNormal" Value="{DynamicResource CalciteBackground3Brush}" />
+        <Setter Property="cm:AttachedBrushes.BackgroundPress" Value="{DynamicResource CalciteBackground1Brush}" />
+        <Setter Property="cm:AttachedBrushes.BorderNormal" Value="{DynamicResource CalciteBackground3Brush}" />
+        <Setter Property="cm:AttachedBrushes.BorderHover" Value="{DynamicResource CalciteBackground2Brush}" />
+        <Setter Property="cm:AttachedBrushes.BorderPress" Value="{DynamicResource CalciteBackground1Brush}" />
+        <Setter Property="cm:AttachedBrushes.ForegroundNormal" Value="{DynamicResource CalciteText1Brush}" />
+        <Setter Property="cm:AttachedBrushes.ForegroundHover" Value="{DynamicResource CalciteText1Brush}" />
+        <Setter Property="cm:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteText1Brush}" />
     </Style>
 
 </ResourceDictionary>

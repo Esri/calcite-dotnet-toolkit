@@ -24,13 +24,13 @@
                                TextBlock.TextAlignment="Left"
                                TextBlock.FontWeight="Medium"
                                TextElement.FontSize="12"
-                               TextElement.Foreground="{DynamicResource CalciteUIText1Brush}" />
+                               TextElement.Foreground="{DynamicResource CalciteText1Brush}" />
                         </Border>
                         <Border x:Name="bd_body" Grid.Row="1">
                             <ContentPresenter
                             TextBlock.TextAlignment="Center"
                             TextElement.FontSize="12"
-                            TextElement.Foreground="{DynamicResource CalciteUIText1Brush}" />
+                            TextElement.Foreground="{DynamicResource CalciteText1Brush}" />
                         </Border>
                     </Grid>
                 </ControlTemplate>

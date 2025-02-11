@@ -1,9 +1,10 @@
-﻿using Carbon.Css;
-using IconXamlGenerator;
+﻿using IconXamlGenerator;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 var pathToJson = args[0];
 var pathToGlyphList = args[1];
-var colorsSccs = args[2];
+var designTokens = args[2];
 var pathToOutput = args[3];
 var format = args[4];
 
@@ -14,7 +15,8 @@ if(!Directory.Exists(pathToOutput))
 if(!Directory.Exists(Path.Combine(pathToOutput, "Colors")))
     Directory.CreateDirectory(Path.Combine(pathToOutput, "Colors"));
 
-GenerateColors(colorsSccs, Path.Combine(pathToOutput, "Colors"), format);
+
+GenerateColors(designTokens, Path.Combine(pathToOutput, "Colors"), format);
 
 if(!Directory.Exists(Path.Combine(pathToOutput, "Icons")))
     Directory.CreateDirectory(Path.Combine(pathToOutput, "Icons"));
@@ -23,59 +25,47 @@ GenerateGlyphsXaml(icons, Path.Combine(pathToOutput, "Icons", "Glyphs.xaml"), fo
 GenerateCalciteIconEnum(icons, Path.Combine(pathToOutput, $"CalciteIcon.cs"), "Esri.Calcite." + format);
 GenerateCalciteHelper(icons, Path.Combine(pathToOutput, $"IconHelpers.cs"), "Esri.Calcite." + format);
 
-void GenerateColors(string colorsScss, string pathToOutput, string format)
+
+void GenerateColors(string pathToDesignTokensRepo, string pathToOutput, string format)
 {
-    var scss = StyleSheet.FromFile(new FileInfo(colorsScss));
-    var darkColors = new Dictionary<string, CssAssignment>();
-    var lightColors = new Dictionary<string, CssAssignment>();
+    var darkColors = new Dictionary<string, string>();
+    var lightColors = new Dictionary<string, string>();
     string xamlHeader = GetXamlHeader(format);
     using StreamWriter xamlOutput = new StreamWriter(Path.Combine(pathToOutput, "Colors.xaml"));
     xamlOutput.WriteLine(xamlHeader);
-    Func<string, string, string> toResourceName = (cssname, resourceType) =>
+
+    var colors = ResourceGenerator.DesignTokens.GenerateDesignTokens(pathToDesignTokensRepo);
+
+    Func<string, string, string> toResourceName = (name, resourceType) =>
     {
-        if (cssname.StartsWith("ui-foreground-"))
+        if (name.StartsWith("Foreground"))
         {
             // Foreground colors are actually background colors
             // meant for cards, panels etc. This is confusing in a XAML context
             // where 'foreground' is usally referring to text color so renaming
             // the color resources here
-            cssname = cssname.Replace("ui-foreground-", "ui-background-");
+            name = name.Replace("Foreground", "Background");
         }
-        var parts = cssname.Replace("ui-", "UI-").Split("-");
-        var name = string.Join("", parts.Select(p =>
-         p switch
-         {
-             "v" => "ChartVibrant",
-             "h" => "ChartHigh",
-             "m" => "ChartMedium",
-             "l" => "ChartLow",
-             "d" => "ChartDark",
-             "blk" => "ChartGray",
-             "bb" => "Blue",
-             "br" => "Brown",
-             "gb" => "GreenBlue",
-             "gg" => "Green",
-             "yg" => "YellowGreen",
-             "yy" => "Yellow",
-             "oy" => "OrangeYellow",
-             "oo" => "Orange",
-             "ro" => "RedOrange",
-             "rr" => "Red",
-             "pk" => "Pink",
-             "vr" => "VioletRed",
-             "vv" => "Violet",
-             _ => p.Substring(0, 1).ToUpper() + p.Substring(1)
-         }));
         return $"Calcite{name}{resourceType}";
     };
-    foreach (var c in scss.Children.OfType<CssAssignment>())
+
+    foreach (var color in colors.OrderBy(c => c.Tier + c.DesignTokenId))
     {
-        if (c.Name.EndsWith("-dark"))
-            darkColors.Add(c.Name, c);
-        if (c.Name.EndsWith("-light"))
-            lightColors.Add(c.Name, c);
-        xamlOutput.WriteLine($"    <Color x:Key=\"{toResourceName(c.Name, "Color")}\">{c.Value}</Color>");
-        xamlOutput.Flush();
+        if (color.DarkValue is not null)
+        {
+            darkColors.Add(color.ResourceId, color.DarkValue);
+            xamlOutput.WriteLine($"    <Color x:Key=\"{toResourceName(color.ResourceId, "DarkColor")}\">{color.DarkValue}</Color>");
+        }
+        if (color.LightValue is not null)
+        {
+            lightColors.Add(color.ResourceId, color.LightValue);
+            xamlOutput.WriteLine($"    <Color x:Key=\"{toResourceName(color.ResourceId, "LightColor")}\">{color.LightValue}</Color>");
+        }
+        else
+        {
+            xamlOutput.WriteLine($"    <Color x:Key=\"{toResourceName(color.ResourceId, "Color")}\">{color.Value}</Color>");
+            xamlOutput.Flush();
+        }
     }
     if (format == "WinUI" || format == "UWP")
     {
@@ -83,13 +73,13 @@ void GenerateColors(string colorsScss, string pathToOutput, string format)
         xamlOutput.WriteLine("        <ResourceDictionary x:Key =\"Default\" >");
         foreach (var c in darkColors)
         {
-            xamlOutput.WriteLine($"            <StaticResource x:Key=\"{toResourceName(c.Key.Replace("-dark", ""), "Color")}\" ResourceKey=\"{toResourceName(c.Key, "Color")}\" />");
+            xamlOutput.WriteLine($"            <StaticResource x:Key=\"{toResourceName(c.Key, "Color")}\" ResourceKey=\"{toResourceName(c.Key, "DarkColor")}\" />");
         }
         xamlOutput.WriteLine("        </ResourceDictionary>");
         xamlOutput.WriteLine("        <ResourceDictionary x:Key =\"Light\" >");
         foreach (var c in lightColors)
         {
-            xamlOutput.WriteLine($"            <StaticResource x:Key=\"{toResourceName(c.Key.Replace("-light", ""), "Color")}\" ResourceKey=\"{toResourceName(c.Key, "Color")}\" />");
+            xamlOutput.WriteLine($"            <StaticResource x:Key=\"{toResourceName(c.Key, "Color")}\" ResourceKey=\"{toResourceName(c.Key, "LightColor")}\" />");
         }
         xamlOutput.WriteLine("        </ResourceDictionary>");
         xamlOutput.WriteLine("    </ResourceDictionary.ThemeDictionaries>");
@@ -101,14 +91,14 @@ void GenerateColors(string colorsScss, string pathToOutput, string format)
 
     if (format == "WPF")
     {
-        Action<Dictionary<string, CssAssignment>, string> writeXaml = (colors, filename) =>
+        Action<Dictionary<string, string>, string> writeXaml = (colors, filename) =>
         {
             using StreamWriter output = new StreamWriter(Path.Combine(pathToOutput, filename));
             output.WriteLine(xamlHeader);
             foreach (var c in colors)
             {
                 var name = c.Key.Replace("-dark", "").Replace("-light", "");
-                output.WriteLine($"    <Color x:Key=\"{toResourceName(name, "Color")}\">{c.Value.Value}</Color>");
+                output.WriteLine($"    <Color x:Key=\"{toResourceName(name, "Color")}\">{c.Value}</Color>");
                 output.Flush();
             }
             output.WriteLine("</ResourceDictionary>");
@@ -129,11 +119,11 @@ void GenerateColors(string colorsScss, string pathToOutput, string format)
     brushOutput.WriteLine("    </ResourceDictionary.MergedDictionaries>");
     foreach (var dark in darkColors)
     {
-        var name = dark.Key.Replace("-dark", "");
-        if (!lightColors.ContainsKey(name + "-light")) continue;
-        var light = lightColors[name + "-light"];
+        var name = dark.Key;
+        if (!lightColors.ContainsKey(name)) continue;
+        var light = lightColors[name];
         if (format == "Maui")
-            brushOutput.WriteLine($"    <SolidColorBrush x:Key=\"{toResourceName(name, "Brush")}\" Color=\"{{AppThemeBinding Dark={{StaticResource {toResourceName(dark.Key, "Color")}}}, Light={{StaticResource {toResourceName(name + "-light", "Color")}}}}}\" />");
+            brushOutput.WriteLine($"    <SolidColorBrush x:Key=\"{toResourceName(name, "Brush")}\" Color=\"{{AppThemeBinding Dark={{StaticResource {toResourceName(dark.Key, "DarkColor")}}}, Light={{StaticResource {toResourceName(name, "LightColor")}}}}}\" />");
         else if(format == "WPF")
             brushOutput.WriteLine($"    <SolidColorBrush x:Key=\"{toResourceName(name, "Brush")}\" Color=\"{{DynamicResource {toResourceName(name, "Color")}}}\" />");
         else if(format == "WinUI" || format == "UWP")

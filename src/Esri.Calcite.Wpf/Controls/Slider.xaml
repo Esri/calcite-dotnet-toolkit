@@ -21,13 +21,13 @@
             x:Name="Ellipse"
             Width="{TemplateBinding Width}"
             Height="{TemplateBinding Height}"
-            Fill="{DynamicResource CalciteUIBackgroundBrush}"
-            Stroke="{DynamicResource CalciteUIText3Brush}"
+            Fill="{DynamicResource CalciteBackgroundBrush}"
+            Stroke="{DynamicResource CalciteText3Brush}"
             StrokeThickness="2" />
         <ControlTemplate.Triggers>
             <Trigger Property="IsDragging" Value="True">
-                <Setter TargetName="Ellipse" Property="Stroke" Value="{DynamicResource CalciteUIBrandBrush}" />
-                <Setter TargetName="Ellipse" Property="Fill" Value="{DynamicResource CalciteUIBrandBrush}" />
+                <Setter TargetName="Ellipse" Property="Stroke" Value="{DynamicResource CalciteBrandBrush}" />
+                <Setter TargetName="Ellipse" Property="Fill" Value="{DynamicResource CalciteBrandBrush}" />
             </Trigger>
             <!--  Hover light  -->
             <MultiTrigger>
@@ -36,7 +36,7 @@
                     <Condition Property="IsDragging" Value="False" />
                 </MultiTrigger.Conditions>
                 <MultiTrigger.Setters>
-                    <Setter TargetName="Ellipse" Property="Stroke" Value="{DynamicResource CalciteUIBrandBrush}" />
+                    <Setter TargetName="Ellipse" Property="Stroke" Value="{DynamicResource CalciteBrandBrush}" />
                 </MultiTrigger.Setters>
                 <MultiTrigger.EnterActions>
                     <BeginStoryboard>
@@ -84,7 +84,7 @@
                 Grid.Column="1"
                 Width="2"
                 Margin="0"
-                Background="{DynamicResource CalciteUIText3Brush}"
+                Background="{DynamicResource CalciteText3Brush}"
                 BorderThickness="0" />
             <ProgressBar
                 x:Name="InnerProgress"
@@ -103,7 +103,7 @@
                 Grid.Column="1"
                 Width="4"
                 HorizontalAlignment="Center"
-                Fill="{DynamicResource CalciteUIText3Brush}"
+                Fill="{DynamicResource CalciteText3Brush}"
                 Placement="Left"
                 SnapsToDevicePixels="True"
                 Visibility="Collapsed" />
@@ -122,7 +122,7 @@
                 x:Name="BottomTick"
                 Grid.Column="2"
                 Width="4"
-                Fill="{DynamicResource CalciteUIText3Brush}"
+                Fill="{DynamicResource CalciteText3Brush}"
                 Placement="Right"
                 SnapsToDevicePixels="True"
                 Visibility="Collapsed" />
@@ -153,7 +153,7 @@
                 Grid.Row="1"
                 Height="2"
                 Margin="0"
-                Background="{DynamicResource CalciteUIBorder3Brush}"
+                Background="{DynamicResource CalciteBorder3Brush}"
                 BorderThickness="0" />
             <ProgressBar
                 x:Name="InnerProgress"
@@ -171,7 +171,7 @@
                 Grid.Row="1"
                 Height="4"
                 VerticalAlignment="Center"
-                Fill="{DynamicResource CalciteUIText3Brush}"
+                Fill="{DynamicResource CalciteText3Brush}"
                 Placement="Top"
                 SnapsToDevicePixels="True"
                 Visibility="Collapsed" />
@@ -190,7 +190,7 @@
                 x:Name="BottomTick"
                 Grid.Row="2"
                 Height="4"
-                Fill="{DynamicResource CalciteUIText3Brush}"
+                Fill="{DynamicResource CalciteText3Brush}"
                 Placement="Bottom"
                 SnapsToDevicePixels="True"
                 Visibility="Collapsed" />
@@ -212,7 +212,7 @@
         <Setter Property="SnapsToDevicePixels" Value="true" />
         <Setter Property="OverridesDefaultStyle" Value="true" />
         <Setter Property="Cursor" Value="{DynamicResource CalciteActionCursor}" />
-        <Setter Property="Foreground" Value="{DynamicResource CalciteUIBrandBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteBrandBrush}" />
         <Style.Triggers>
             <Trigger Property="Orientation" Value="Vertical">
                 <Setter Property="Template" Value="{StaticResource CalciteVerticalSliderTemplate}" />

@@ -2,7 +2,7 @@
   "profiles": {
     "IconXamlGenerator": {
       "commandName": "Project",
-      "commandLineArgs": "..\\\\..\\\\..\\\\..\\\\..\\\\calcite-design-system\\\\packages\\\\calcite-ui-icons\\\\docs\\\\keywords.json ..\\\\..\\\\..\\\\..\\\\..\\\\calcite-design-system\\\\packages\\\\calcite-ui-icons\\\\fantasticonrc.json ..\\\\..\\\\..\\\\..\\\\..\\\\calcite-colors\\dist\\colors.scss ..\\\\..\\\\..\\\\..\\\\..\\\\GeneratedResources\\\\Wpf\\\\ WPF"
+      "commandLineArgs": "..\\\\..\\\\..\\\\..\\\\..\\\\calcite-design-system\\\\packages\\\\calcite-ui-icons\\\\docs\\\\keywords.json ..\\\\..\\\\..\\\\..\\\\..\\\\calcite-design-system\\\\packages\\\\calcite-ui-icons\\\\fantasticonrc.json ..\\\\..\\\\..\\\\..\\\\..\\\\calcite-design-system\\\\packages\\\\calcite-design-tokens ..\\\\..\\\\..\\\\..\\\\..\\\\GeneratedResources\\\\WinUI\\\\ WinUI"
     }
   }
 }

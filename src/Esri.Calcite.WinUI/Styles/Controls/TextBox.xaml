@@ -6,16 +6,15 @@
         <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Colors/Brushes.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
-    <StaticResource x:Key="TextControlBorderBrush" ResourceKey="CalciteUIBorder2Brush" />
-    <StaticResource x:Key="TextControlBackground" ResourceKey="CalciteUIBackground1Brush" />
-    <StaticResource x:Key="TextControlSelectionHighlightColor" ResourceKey="CalciteUITextHighlightBrush" />
+    <StaticResource x:Key="TextControlBorderBrush" ResourceKey="CalciteBorder2Brush" />
+    <StaticResource x:Key="TextControlBackground" ResourceKey="CalciteBackground1Brush" />
 
     <LinearGradientBrush x:Key="TextControlElevationBorderFocusedBrush" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,2">
         <LinearGradientBrush.RelativeTransform>
             <ScaleTransform ScaleY="-1" CenterY="0.5" />
         </LinearGradientBrush.RelativeTransform>
         <LinearGradientBrush.GradientStops>
-            <GradientStop Offset="1.0" Color="{ThemeResource CalciteUIBrandColor}" />
+            <GradientStop Offset="1.0" Color="{ThemeResource CalciteBrandColor}" />
             <GradientStop Offset="1.0" Color="{StaticResource ControlStrokeColorDefault}" />
         </LinearGradientBrush.GradientStops>
     </LinearGradientBrush>

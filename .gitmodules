@@ -1,6 +1,3 @@
-[submodule "calcite-colors"]
-	path = calcite-colors
-	url = https://github.com/Esri/calcite-colors
 [submodule "calcite-design-system"]
 	path = calcite-design-system
 	url = https://github.com/Esri/calcite-design-system

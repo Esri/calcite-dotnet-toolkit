@@ -18,7 +18,7 @@
                 <ContentPresenter
                     ContentSource="Header"
                     TextElement.FontSize="14"
-                    TextElement.Foreground="{DynamicResource CalciteUIText1Brush}" />
+                    TextElement.Foreground="{DynamicResource CalciteText1Brush}" />
             </Border>
             <Border
                 x:Name="bd_body"

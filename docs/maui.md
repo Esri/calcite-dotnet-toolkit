@@ -50,8 +50,8 @@ If you don't want the default implicit Calcite styles, place the `CalciteResourc
 Brushes and colors can be referenced as static resources.
 
 ```xml
-<Border Background="{StaticResource CalciteUIBrandBrush}">
-  <Label Text="Hello Calcite" TextColor="{AppThemeBinding Light={StaticResource CalciteUITextInverseLightColor}, Dark={StaticResource CalciteUITextInverseDarkColor}}" />
+<Border Background="{StaticResource CalciteBrandBrush}">
+  <Label Text="Hello Calcite" TextColor="{AppThemeBinding Light={StaticResource CalciteTextInverseLightColor}, Dark={StaticResource CalciteTextInverseDarkColor}}" />
 </Border>
 ```
 
