@@ -48,7 +48,7 @@
             </CommandBar>
             
             <TextBlock Text="IconSourceElement:" Margin="0,20,0,0" />
-            <Border BorderBrush="{StaticResource CalciteUIBrandBrush}" BorderThickness="1" HorizontalAlignment="Left">
+            <Border BorderBrush="{StaticResource CalciteBrandBrush}" BorderThickness="1" HorizontalAlignment="Left">
                 <IconSourceElement Width="32" Height="32">
                     <IconSourceElement.IconSource>
                         <cal:CalciteFontIconSource Icon="Map" FontSize="32" Scale="Large" />

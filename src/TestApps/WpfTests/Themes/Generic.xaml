@@ -20,7 +20,7 @@
                         <Border
                             MinWidth="150"
                             Padding="8"
-                            BorderBrush="{DynamicResource CalciteUIBorder3Brush}"
+                            BorderBrush="{DynamicResource CalciteBorder3Brush}"
                             BorderThickness="1">
                             <Border.Background>
                                 <VisualBrush
@@ -29,11 +29,11 @@
                                     Viewport="0,0,16,16"
                                     ViewportUnits="Absolute">
                                     <VisualBrush.Visual>
-                                        <Border Background="{DynamicResource CalciteUIBackground2Brush}">
+                                        <Border Background="{DynamicResource CalciteBackground2Brush}">
                                             <Path
                                                 Width="16"
                                                 Height="16"
-                                                Fill="{DynamicResource CalciteUIBorder1Brush}"
+                                                Fill="{DynamicResource CalciteBorder1Brush}"
                                                 Stretch="None"
                                                 StrokeThickness="0">
                                                 <Path.Data>
@@ -55,14 +55,14 @@
                         <Border
                             Grid.Column="2"
                             Padding="0,0,48,0"
-                            Background="{DynamicResource CalciteUIBackgroundBrush}"
-                            BorderBrush="{DynamicResource CalciteUIBorder3Brush}"
+                            Background="{DynamicResource CalciteBackgroundBrush}"
+                            BorderBrush="{DynamicResource CalciteBorder3Brush}"
                             BorderThickness="0,1,1,1">
                             <TextBox
                                 x:Name="PART_CodeDisplay"
                                 Background="Transparent"
                                 FontFamily="Consolas"
-                                Foreground="{DynamicResource CalciteUIText1Brush}"
+                                Foreground="{DynamicResource CalciteText1Brush}"
                                 TextWrapping="NoWrap" />
                         </Border>
                         <Button

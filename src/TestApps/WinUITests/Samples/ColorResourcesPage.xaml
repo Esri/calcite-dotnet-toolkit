@@ -13,7 +13,7 @@
         <ListView x:Name="gridView3" Grid.ColumnSpan="2" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="10">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="local:ColorItem">
-                    <Grid BorderThickness="0,0,0,1" BorderBrush="{ThemeResource CalciteUIBorder1Brush}">
+                    <Grid BorderThickness="0,0,0,1" BorderBrush="{ThemeResource CalciteBorder1Brush}">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="50" />
                             <ColumnDefinition Width="50" />
