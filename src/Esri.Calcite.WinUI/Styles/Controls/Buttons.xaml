@@ -8,17 +8,17 @@
         <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Styles/Brushes.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
-    <StaticResource x:Key="ButtonBackground" ResourceKey="CalciteBrandBrush" />
-    <StaticResource x:Key="ButtonBackgroundPointerOver" ResourceKey="CalciteBrandHoverBrush" />
-    <StaticResource x:Key="ButtonBackgroundPressed" ResourceKey="CalciteBrandPressBrush" />
+    <StaticResource x:Key="ButtonBackground" ResourceKey="CalciteBackground3Brush" />
+    <StaticResource x:Key="ButtonBackgroundPointerOver" ResourceKey="CalciteBackground2Brush" />
+    <StaticResource x:Key="ButtonBackgroundPressed" ResourceKey="CalciteBackground1Brush" />
     <!--<StaticResource x:Key="ButtonBackgroundDisabled" ResourceKey="SystemControlBackgroundBaseLowBrush" />-->
-    <StaticResource x:Key="ButtonForeground" ResourceKey="CalciteTextOnBrandBrush" />
-    <StaticResource x:Key="ButtonForegroundPointerOver" ResourceKey="CalciteTextOnBrandBrush" />
-    <StaticResource x:Key="ButtonForegroundPressed" ResourceKey="CalciteTextOnBrandBrush" />
+    <StaticResource x:Key="ButtonForeground" ResourceKey="CalciteText1Brush" />
+    <StaticResource x:Key="ButtonForegroundPointerOver" ResourceKey="CalciteText1Brush" />
+    <StaticResource x:Key="ButtonForegroundPressed" ResourceKey="CalciteText1Brush" />
     <!--<StaticResource x:Key="ButtonForegroundDisabled" ResourceKey="SystemControlDisabledBaseMediumLowBrush" />-->
-    <StaticResource x:Key="ButtonBorderBrush" ResourceKey="CalciteBrandBrush" />
-    <StaticResource x:Key="ButtonBorderBrushPointerOver" ResourceKey="CalciteBrandHoverBrush" />
-    <StaticResource x:Key="ButtonBorderBrushPressed" ResourceKey="CalciteBrandPressBrush" />
+    <StaticResource x:Key="ButtonBorderBrush" ResourceKey="CalciteBackground3Brush" />
+    <StaticResource x:Key="ButtonBorderBrushPointerOver" ResourceKey="CalciteBackground2Brush" />
+    <StaticResource x:Key="ButtonBorderBrushPressed" ResourceKey="CalciteBackground1Brush" />
     <!--<StaticResource x:Key="ButtonBorderBrushDisabled" ResourceKey="SystemControlDisabledTransparentBrush" />-->
     <!--  Button padding should take button border offset into account (e.g. +1 to get desired effect of 8,4,8,4)  -->
     <Thickness x:Key="CalciteButtonPadding">7,3,7,3</Thickness>
@@ -32,6 +32,9 @@
         <Setter Property="Padding" Value="{StaticResource CalciteButtonPadding}" />
         <Setter Property="MinHeight" Value="28" />
         <Setter Property="CornerRadius" Value="0" />
+    </Style>
+
+    <Style TargetType="Button" x:Key="CalcitePrimaryButtonStyle" BasedOn="{StaticResource CalciteButtonStyle}" >
         <Setter Property="cal:CalciteResources.StyleResources">
             <Setter.Value>
                 <ResourceDictionary>
@@ -48,8 +51,6 @@
             </Setter.Value>
         </Setter>
     </Style>
-
-    <Style TargetType="Button" x:Key="CalcitePrimaryButtonStyle" BasedOn="{StaticResource CalciteButtonStyle}" />
 
     <Style TargetType="Button" x:Key="CalciteSecondaryButtonStyle" BasedOn="{StaticResource CalciteButtonStyle}">
         <Setter Property="cal:CalciteResources.StyleResources">
@@ -106,5 +107,5 @@
     </Style>
 
     <!-- Implicit style -->
-    <Style TargetType="Button" BasedOn="{StaticResource CalcitePrimaryButtonStyle}" />
+    <Style TargetType="Button" BasedOn="{StaticResource CalciteButtonStyle}" />
 </ResourceDictionary>

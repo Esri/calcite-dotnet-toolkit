@@ -12,6 +12,7 @@
 
             <HorizontalStackLayout>
                 <Button Text="Default Button Style" />
+                <Button Text="Default Button Style" IsEnabled="False" />
             </HorizontalStackLayout>
             <HorizontalStackLayout>
                 <Button Text="CalcitePrimaryButtonStyle" Style="{StaticResource CalcitePrimaryButtonStyle}" />

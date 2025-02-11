@@ -52,15 +52,13 @@
                 <ToggleButton
                     x:Name="LightToggle"
                     Content="Dark Mode"
-                    ca:Calcite.Symbol="Moon"
-                    Style="{DynamicResource CalciteChromeButtonBaseStyle}" />
+                    ca:Calcite.Symbol="Moon" />
             </StatusBarItem>
             <StatusBarItem>
                 <ToggleButton
                     x:Name="StyleToggle"
                     Content="Enable Default Style"
-                    ca:Calcite.Symbol="BrushMark" IsChecked="True"
-                    Style="{DynamicResource CalciteChromeButtonBaseStyle}" />
+                    ca:Calcite.Symbol="BrushMark" IsChecked="True" />
             </StatusBarItem>
         </StatusBar>
         <!--<Path Data="{calcite:CalciteIconGeometry Icon=Map, SymbolSize=16}" Fill="Red" Width="100" Height="100"/>-->

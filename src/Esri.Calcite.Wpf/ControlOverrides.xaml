@@ -18,8 +18,8 @@
     <Style BasedOn="{StaticResource CalciteComboBoxStyle}" TargetType="ComboBox" />
     <Style BasedOn="{StaticResource CalciteCheckBoxStyle}" TargetType="CheckBox" />
     <Style BasedOn="{StaticResource CalciteCalendarStyle}" TargetType="Calendar" />
-    <Style BasedOn="{StaticResource CalcitePrimaryButtonBaseStyle}" TargetType="Button" />
-    <Style BasedOn="{StaticResource CalcitePrimaryButtonBaseStyle}" TargetType="ToggleButton" />
+    <Style BasedOn="{StaticResource CalciteButtonBaseStyle}" TargetType="Button" />
+    <Style BasedOn="{StaticResource CalciteButtonBaseStyle}" TargetType="ToggleButton" />
     <Style BasedOn="{StaticResource CalciteTextBlockStyle}" TargetType="TextBlock" />
     <Style BasedOn="{StaticResource CalciteDatePickerStyle}" TargetType="DatePicker" />
     <Style BasedOn="{StaticResource CalciteStatusBarStyle}" TargetType="StatusBar" />

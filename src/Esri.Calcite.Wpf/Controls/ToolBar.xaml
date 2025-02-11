@@ -11,7 +11,7 @@
 
     <Style
         x:Key="CalciteToolBarButtonBaseStyle"
-        BasedOn="{StaticResource CalciteChromeButtonBaseStyle}"
+        BasedOn="{StaticResource CalciteButtonBaseStyle}"
         TargetType="{x:Type ButtonBase}">
         <Setter Property="MinWidth" Value="32" />
         <Setter Property="Height" Value="32" />
