@@ -111,3 +111,9 @@ List of default control styles. These styles are applied implicitly unless impli
 | `CalciteActionPadToolBarStyle` | `Toolbar` | Same as the default toolbar but with a drop shadow to place on top of other view areas  | ![image](https://github.com/user-attachments/assets/da65ce4f-671d-46e7-9dcc-99a025c9b412) |
 | `CalciteVerticalToolBarStyle` | `Toolbar` |   |   |
 
+### Known Issues
+
+When using dark mode, the background of the Window instances will not change due to [this WPF bug](https://github.com/dotnet/wpf/issues/10461) causing the default Window style to not get applied. To work around this issue, explicitly set the Window style on your Window:
+```xml
+<Window Style="{StaticResource CalciteWindowStyle}" >
+```
