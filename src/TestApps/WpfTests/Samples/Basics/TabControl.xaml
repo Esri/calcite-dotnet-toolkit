@@ -1,0 +1,17 @@
+<TabControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" >
+    <TabItem Header="Tab 1">
+        <StackPanel>
+            <TextBlock Text="This is the content of Tab 1." />
+        </StackPanel>
+    </TabItem>
+        <TabItem Header="Tab 2">
+            <StackPanel>
+                <TextBlock Text="This is the content of Tab 2."/>
+            </StackPanel>
+        </TabItem>
+    <TabItem Header="Tab 2">
+        <StackPanel>
+            <TextBlock Text="This is the content of Tab 3." />
+        </StackPanel>
+    </TabItem>
+</TabControl>
