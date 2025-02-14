@@ -131,6 +131,7 @@
         <Setter Property="ca:AttachedBrushes.ForegroundHover" Value="{DynamicResource CalciteForegroundBrandContrastBrush}" />
         <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteForegroundBrandContrastBrush}" />
     </Style>
+    
     <Style
         x:Key="CalciteSecondaryButtonBaseStyle"
         BasedOn="{StaticResource CalciteCommonButtonBaseStyle}"
@@ -145,6 +146,7 @@
         <Setter Property="ca:AttachedBrushes.ForegroundHover" Value="{DynamicResource CalciteBrandHoverBrush}" />
         <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteBrandPressBrush}" />
     </Style>
+    
     <Style
         x:Key="CalciteDangerButtonBaseStyle"
         BasedOn="{StaticResource CalciteCommonButtonBaseStyle}"
@@ -160,6 +162,7 @@
         <Setter Property="ca:AttachedBrushes.ForegroundHover" Value="{DynamicResource CalciteTextInverseBrush}" />
         <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteTextInverseBrush}" />
     </Style>
+    
     <Style
         x:Key="CalciteDangerSecondaryButtonBaseStyle"
         BasedOn="{StaticResource CalciteCommonButtonBaseStyle}"
@@ -173,8 +176,12 @@
         <Setter Property="ca:AttachedBrushes.ForegroundNormal" Value="{DynamicResource CalciteStatusDangerBrush}" />
         <Setter Property="ca:AttachedBrushes.ForegroundHover" Value="{DynamicResource CalciteStatusDangerHoverBrush}" />
         <Setter Property="ca:AttachedBrushes.ForegroundPress" Value="{DynamicResource CalciteStatusDangerPressBrush}" />
-
     </Style>
-  
+
+    <!-- Aliased styles to make naming simpler to remember for Buttons (ie without Base prefix) and also bring consistency to other UI Frameworks -->
+    <Style x:Key="CalcitePrimaryButtonStyle" BasedOn="{StaticResource CalcitePrimaryButtonBaseStyle}" TargetType="Button" />
+    <Style x:Key="CalciteSecondaryButtonStyle" BasedOn="{StaticResource CalciteSecondaryButtonBaseStyle}" TargetType="Button" />
+    <Style x:Key="CalciteDangerButtonStyle" BasedOn="{StaticResource CalciteDangerButtonBaseStyle}" TargetType="Button" />
+    <Style x:Key="CalciteDangerSecondaryButtonStyle" BasedOn="{StaticResource CalciteDangerSecondaryButtonBaseStyle}" TargetType="Button" />
 
 </ResourceDictionary>
