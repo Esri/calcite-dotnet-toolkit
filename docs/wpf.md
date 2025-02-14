@@ -64,7 +64,7 @@ For a full list of Glyph Resource IDs refer to the sample apps and the [Calcite-
 
 List of default control styles. These styles are applied implicitly unless implicit styles are disabled (`IsCalciteImplicitStylingEnabled = false`).
 
-- Button: `CalcitePrimaryButtonBaseStyle` 
+- Button: `CalciteButtonBaseStyle` 
 - Calendar: `CalciteCalendarStyle`
 - CheckBox: `CalciteCheckBoxStyle`
 - ComboBox: `CalciteComboBoxStyle`
@@ -83,17 +83,21 @@ List of default control styles. These styles are applied implicitly unless impli
 - TabControl: `CalciteTabControlStyle`
 - TextBlock: `CalciteTextBlockStyle`
 - TextBox: `CalciteTextBoxStyle`
-- ToggleButton: `CalcitePrimaryButtonBaseStyle`
+- ToggleButton: `CalciteButtonBaseStyle`
 - ToolBar: `CalciteToolBarStyle`
 - ToolTip: `CalciteToolTipStyle`
 - TreeView: `CalciteTreeViewStyle`
 
 | Style | Target Type | Description | Example |
 | --- | --- | --- | --- |
-| `CalcitePrimaryButtonStyle` | `ButtonBase` | Primary button style | ![image](https://github.com/user-attachments/assets/b77103d7-57f8-4ce8-8fea-36ecb4db3d44) |
+| `CalcitePrimaryButtonBaseStyle` | `ButtonBase` | Primary button style | ![image](https://github.com/user-attachments/assets/b77103d7-57f8-4ce8-8fea-36ecb4db3d44) |
+| `CalcitePrimaryButtonStyle` | `Button` | Primary button style | ![image](https://github.com/user-attachments/assets/b77103d7-57f8-4ce8-8fea-36ecb4db3d44) |
 | `CalciteSecondaryButtonBaseStyle` | `ButtonBase` | Secondary button style | ![image](https://github.com/user-attachments/assets/58ed445a-bb98-4a3b-8af5-c25ef0e913b8) |
+| `CalciteSecondaryButtonStyle` | `Button` | Secondary button style | ![image](https://github.com/user-attachments/assets/58ed445a-bb98-4a3b-8af5-c25ef0e913b8) |
 | `CalciteDangerButtonBaseStyle` | `ButtonBase` | Danger button style | ![image](https://github.com/user-attachments/assets/3c4b8471-14ec-46b0-ae0f-6aa537ed324e) |
+| `CalciteDangerButtonStyle` | `Button` | Danger button style | ![image](https://github.com/user-attachments/assets/3c4b8471-14ec-46b0-ae0f-6aa537ed324e) |
 | `CalciteDangerSecondaryButtonBaseStyle` | `ButtonBase` | Danger secondary button style | ![image](https://github.com/user-attachments/assets/e6387373-7d76-46b9-891c-51d618201155) |
+| `CalciteDangerSecondaryButtonStyle` | `Button` | Danger secondary button style | ![image](https://github.com/user-attachments/assets/e6387373-7d76-46b9-891c-51d618201155) |
 | `CalciteFormBorderStyle` | `Border` | Applies the default form padding to contained elements |    |
 | `CalciteFormExpanderStyle` | `Expander` | GroupBox with extra padding for form elements  | ![image](https://github.com/user-attachments/assets/bbe7ce07-c88c-4317-bf1f-cff2146a72b6) |
 | `CalciteBrandAlertGroupBoxStyle` | `GroupBox` | GroupBox with a brand color top line | ![image](https://github.com/user-attachments/assets/e16da37c-1973-4075-9204-d8592f604407) |
