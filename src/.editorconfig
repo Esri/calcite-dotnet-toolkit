@@ -1,0 +1,356 @@
+﻿[*.cs]
+
+#### Opt-out rules (justification required) ####
+
+# CA1001: Types that own disposable fields should be disposable (Justification: we cant make our whole public API disposable just because CoreWrapper is disposable)
+dotnet_diagnostic.CA1001.severity = none
+# CA1200: Avoid using cref tags with a prefix (Justification: prefixes are necessary for DocFX)
+dotnet_diagnostic.CA1200.severity = none
+# CA1805: Do not initialize unnecessarily (Justification: it's harmless to initialize a field to null, false, or 0 for clarity)
+dotnet_diagnostic.CA1805.severity = none
+# CA1711: Identifiers should not use a reserved suffix (Justification: This would prevent us from using -Attribute, -Dictionary, or -Stop in type names)
+dotnet_diagnostic.CA1711.severity = none
+# CA1720: Identifiers should not contain type names (Justification: This does not work with our FieldType, PixelType, GeoprocessingParameterType, etc)
+dotnet_diagnostic.CA1720.severity = none
+
+
+
+#### Disable suggestions to use .NET 5+ only features (until we drop NETFX/UWP) ####
+
+# CA1510: Use ArgumentNullException throw helper
+dotnet_diagnostic.CA1510.severity = none
+# CA1511: Use ArgumentException throw helper
+dotnet_diagnostic.CA1511.severity = none
+# CA1512: Use 'ArgumentOutOfRangeException.ThrowIfNegative' instead of explicitly throwing a new exception instance
+dotnet_diagnostic.CA1512.severity = none
+# CA1513: Use ObjectDisposedException throw helper
+dotnet_diagnostic.CA1513.severity = none
+# CA1835: Prefer the memory-based overloads of ReadAsync/WriteAsync methods in stream-based classes
+dotnet_diagnostic.CA1835.severity = none
+# CA1837: Use Environment.ProcessId instead of Process.GetCurrentProcess().Id
+dotnet_diagnostic.CA1837.severity = none
+# CA1840: Use Environment.CurrentManagedThreadId instead of Thread.CurrentThread.ManagedThreadId
+dotnet_diagnostic.CA1840.severity = none
+# CA1845: Use span-based 'string.Concat'
+dotnet_diagnostic.CA1845.severity = none
+# CA1846: Prefer AsSpan over Substring
+dotnet_diagnostic.CA1846.severity = none
+# CA1847: Use String.Contains(char) instead of String.Contains(string) with single characters
+dotnet_diagnostic.CA1847.severity = none
+# CA1850: Prefer static HashData method over ComputeHash
+dotnet_diagnostic.CA1850.severity = none
+# CA1863: Use 'CompositeFormat'
+dotnet_diagnostic.CA1863.severity = none
+# CA1864: Prefer the 'IDictionary.TryAdd(TKey, TValue)' method
+dotnet_diagnostic.CA1864.severity = none
+# CA1865: Use 'string.Method(char)' instead of 'string.Method(string)' for string with single char (codefix)
+dotnet_diagnostic.CA1865.severity = none
+# CA1866: Use 'string.Method(char)' instead of 'string.Method(string)' for string with single char (no codefix)
+dotnet_diagnostic.CA1866.severity = none
+# CA2249: Consider using String.Contains instead of String.IndexOf (StringComparison overload)
+dotnet_diagnostic.CA2249.severity = none
+# IDE0070: Use 'System.HashCode.Combine'
+dotnet_diagnostic.IDE0070.severity = none
+# SYSLIB1045: Use GeneratedRegexAttribute to generate the regular expression implementation at compile time.
+dotnet_diagnostic.SYSLIB1045.severity = none
+
+
+
+#### Actionable warnings that should be fixed or suppressed first ####
+
+# CA1010: Collections should implement generic interface
+dotnet_diagnostic.CA1010.severity = suggestion
+# CA1018: Mark attributes with AttributeUsageAttribute
+dotnet_diagnostic.CA1018.severity = suggestion
+# CA1041: Provide ObsoleteAttribute message
+dotnet_diagnostic.CA1041.severity = suggestion
+# CA1716: Identifiers should not match keywords
+dotnet_diagnostic.CA1716.severity = suggestion
+# CA1806: Do not ignore method results
+dotnet_diagnostic.CA1806.severity = suggestion
+# CA2011: Do not assign property within its setter
+dotnet_diagnostic.CA2011.severity = suggestion
+# CA2016: Forward the CancellationToken parameter to methods that take one
+dotnet_diagnostic.CA2016.severity = suggestion
+# CA2208: Instantiate argument exceptions correctly
+dotnet_diagnostic.CA2208.severity = suggestion
+# CA2215: Dispose methods should call base class dispose
+dotnet_diagnostic.CA2215.severity = suggestion
+# IDE0035: Remove unreachable code
+dotnet_diagnostic.IDE0035.severity = suggestion
+# IDE0051: Remove unused private member
+dotnet_diagnostic.IDE0051.severity = suggestion
+# CA5350: Do Not Use Weak Cryptographic Algorithms
+dotnet_diagnostic.CA5350.severity = none
+
+
+
+#### Suggestions that can be turned into warnings once we address existing violations ####
+
+# CA1068: CancellationToken parameters must come last
+dotnet_diagnostic.CA1068.severity = suggestion
+# CA13XX: Globalization warnings
+dotnet_diagnostic.CA1303.severity = suggestion
+dotnet_diagnostic.CA1304.severity = suggestion
+dotnet_diagnostic.CA1305.severity = suggestion
+dotnet_diagnostic.CA1307.severity = suggestion
+dotnet_diagnostic.CA1308.severity = suggestion
+dotnet_diagnostic.CA1309.severity = suggestion
+dotnet_diagnostic.CA1310.severity = suggestion
+dotnet_diagnostic.CA1311.severity = suggestion
+# CA1507: Use nameof in place of string
+dotnet_diagnostic.CA1507.severity = suggestion
+# CA1725: Parameter names should match base declaration
+dotnet_diagnostic.CA1725.severity = suggestion
+# CA1822: Mark members as static
+dotnet_diagnostic.CA1822.severity = suggestion
+# CA1824: Mark assemblies with NeutralResourcesLanguageAttribute
+dotnet_diagnostic.CA1824.severity = suggestion
+# CA1825: Avoid zero-length array allocations
+dotnet_diagnostic.CA1825.severity = suggestion
+# CA1838: Avoid StringBuilder parameters for P/Invokes
+dotnet_diagnostic.CA1838.severity = suggestion
+# CA1840: Use Environment.CurrentManagedThreadId instead of Thread.CurrentThread.ManagedThreadId
+dotnet_diagnostic.CA1840.severity = suggestion
+# CA1844: Provide memory-based overrides of async methods when subclassing 'Stream'
+dotnet_diagnostic.CA1844.severity = suggestion
+# CA1847: Use String.Contains(char) instead of String.Contains(string) with single characters
+dotnet_diagnostic.CA1847.severity = suggestion
+# CA1852: Seal internal types
+dotnet_diagnostic.CA1852.severity = suggestion
+# CA1854: Prefer the IDictionary.TryGetValue(TKey, out TValue) method
+dotnet_diagnostic.CA1854.severity = suggestion
+# CA1859: Use concrete types when possible for improved performance
+dotnet_diagnostic.CA1859.severity = suggestion
+# CA1860: Avoid using 'Enumerable.Any()' extension method
+dotnet_diagnostic.CA1860.severity = suggestion
+# CA1861: Avoid constant arrays as arguments
+dotnet_diagnostic.CA1861.severity = suggestion
+# CA1862: Use the 'StringComparison' method overloads to perform case-insensitive string comparisons
+dotnet_diagnostic.CA1862.severity = suggestion
+# CA2101: Specify marshalling for P/Invoke string arguments
+dotnet_diagnostic.CA2101.severity = suggestion
+# CA2201: Do not raise reserved exception types
+dotnet_diagnostic.CA2201.severity = suggestion
+# CA2251: Use String.Equals over String.Compare
+dotnet_diagnostic.CA2251.severity = suggestion
+# CA5392: Use DefaultDllImportSearchPaths attribute for P/Invokes
+dotnet_diagnostic.CA5392.severity = suggestion
+# IDE0039: Use local function instead of lambda
+dotnet_diagnostic.IDE0039.severity = suggestion
+# IDE0051: Remove unused private member
+dotnet_diagnostic.IDE0051.severity = suggestion
+# IDE0060: Remove unused parameter (private)
+dotnet_diagnostic.IDE0060.severity = suggestion
+
+
+
+
+#### Disable breaking-change suggestions on public APIs ####
+
+# CA1822: Mark members as static
+dotnet_code_quality.CA1822.api_surface = private, internal
+# CA1070: Do not declare event fields as virtual
+dotnet_code_quality.CA1070.api_surface = private, internal
+# CA1725: Parameter names should match base declaration
+dotnet_code_quality.CA1725.api_surface = private, internal
+
+
+
+#### Opt into code style rules ####
+
+# IDE0036: Order modifiers
+dotnet_diagnostic.IDE0036.severity = warning
+# IDE0055: Formatting rule violation
+dotnet_diagnostic.IDE0055.severity = suggestion
+# IDE0073: Require file header
+dotnet_diagnostic.IDE0073.severity = warning
+# IDE1006: Naming style violation
+dotnet_diagnostic.IDE1006.severity = suggestion
+# CA1051: Do not declare visible instance fields
+dotnet_diagnostic.CA1051.severity = warning
+# CA1012: Abstract types should not have public constructors
+dotnet_diagnostic.CA1012.severity = warning
+# CS1591: Missing XML comment for publicly visible type or member
+dotnet_diagnostic.CS1591.severity = warning
+
+
+
+#### Code style preferences ####
+
+# Whitespace
+tab_width = 4
+indent_size = 4
+end_of_line = crlf
+trim_trailing_whitespace = true
+insert_final_newline = true
+csharp_indent_labels = one_less_than_current
+csharp_style_allow_blank_lines_between_consecutive_braces_experimental = true:silent
+csharp_style_allow_blank_line_after_colon_in_constructor_initializer_experimental = true:silent
+csharp_style_allow_blank_line_after_token_in_conditional_expression_experimental = true:silent
+csharp_style_allow_blank_line_after_token_in_arrow_expression_clause_experimental = true:silent
+csharp_space_around_binary_operators = before_and_after
+
+csharp_using_directive_placement = outside_namespace:silent
+csharp_prefer_braces = true:silent
+csharp_prefer_simple_default_expression = true:suggestion
+csharp_prefer_simple_using_statement = true:suggestion
+csharp_prefer_static_local_function = true:suggestion
+csharp_preferred_modifier_order = public, private, protected, internal, file, static, extern, new, virtual, abstract, sealed, override, readonly, unsafe, required, volatile, async
+
+csharp_style_namespace_declarations = block_scoped:silent
+csharp_style_prefer_method_group_conversion = true:silent
+csharp_style_prefer_top_level_statements = true:silent
+csharp_style_prefer_primary_constructors = true:suggestion
+csharp_style_expression_bodied_methods = false:silent
+csharp_style_expression_bodied_constructors = false:silent
+csharp_style_expression_bodied_operators = false:silent
+csharp_style_expression_bodied_properties = true:silent
+csharp_style_expression_bodied_indexers = true:silent
+csharp_style_expression_bodied_accessors = true:silent
+csharp_style_expression_bodied_lambdas = true:silent
+csharp_style_expression_bodied_local_functions = false:silent
+csharp_style_throw_expression = true:suggestion
+csharp_style_prefer_null_check_over_type_check = true:suggestion
+csharp_style_prefer_local_over_anonymous_function = true:warning
+csharp_style_prefer_index_operator = true:suggestion
+csharp_style_prefer_range_operator = true:suggestion
+csharp_style_implicit_object_creation_when_type_is_apparent = true:suggestion
+csharp_style_prefer_tuple_swap = true:suggestion
+csharp_style_prefer_utf8_string_literals = true:suggestion
+csharp_style_inlined_variable_declaration = true:suggestion
+csharp_style_deconstructed_variable_declaration = true:suggestion
+csharp_style_unused_value_assignment_preference = discard_variable:suggestion
+csharp_style_unused_value_expression_statement_preference = discard_variable:silent
+csharp_style_prefer_readonly_struct = true:suggestion
+csharp_style_prefer_readonly_struct_member = true:suggestion
+csharp_style_conditional_delegate_call = true:suggestion
+csharp_style_prefer_switch_expression = true:suggestion
+csharp_style_prefer_pattern_matching = true:silent
+csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
+csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
+csharp_style_prefer_not_pattern = true:suggestion
+csharp_style_prefer_extended_property_pattern = true:suggestion
+csharp_style_var_when_type_is_apparent = true:silent
+csharp_style_var_for_built_in_types = false:silent
+csharp_style_var_elsewhere = false:silent
+
+dotnet_code_quality_unused_parameters = non_public:warning
+
+dotnet_style_operator_placement_when_wrapping = beginning_of_line
+dotnet_style_coalesce_expression = true:suggestion
+dotnet_style_null_propagation = true:suggestion
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:suggestion
+dotnet_style_prefer_auto_properties = true:silent
+dotnet_style_object_initializer = true:suggestion
+dotnet_style_collection_initializer = true:suggestion
+dotnet_style_prefer_simplified_boolean_expressions = true:suggestion
+dotnet_style_prefer_conditional_expression_over_assignment = true:silent
+dotnet_style_prefer_conditional_expression_over_return = true:silent
+dotnet_style_explicit_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
+dotnet_style_prefer_compound_assignment = true:suggestion
+dotnet_style_prefer_simplified_interpolation = true:suggestion
+dotnet_style_prefer_collection_expression = when_types_loosely_match:suggestion
+dotnet_style_namespace_match_folder = true:suggestion
+dotnet_style_readonly_field = true:suggestion
+dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
+dotnet_style_predefined_type_for_member_access = true:suggestion
+dotnet_style_require_accessibility_modifiers = for_non_interface_members:warning
+dotnet_style_allow_multiple_blank_lines_experimental = true:silent
+dotnet_style_allow_statement_immediately_after_block_experimental = true:silent
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
+dotnet_style_qualification_for_field = false:suggestion
+dotnet_style_qualification_for_property = false:suggestion
+dotnet_style_qualification_for_method = false:suggestion
+dotnet_style_qualification_for_event = false:suggestion
+
+file_header_template = COPYRIGHT © 2016 ESRI\n\nTRADE SECRETS: ESRI PROPRIETARY AND CONFIDENTIAL\nUnpublished material - all rights reserved under the\nCopyright Laws of the United States and applicable international\nlaws, treaties, and conventions.\n\nFor additional information, contact:\nEnvironmental Systems Research Institute, Inc.\nAttn: Contracts and Legal Services Department\n380 New York Street\nRedlands, California, 92373\nUSA\n\nemail: contracts@esri.com
+
+#### Naming rules ####
+
+# name all constant fields using PascalCase
+dotnet_naming_rule.constant_fields_should_be_pascal_case.severity = warning
+dotnet_naming_rule.constant_fields_should_be_pascal_case.symbols  = constant_fields
+dotnet_naming_rule.constant_fields_should_be_pascal_case.style    = pascal_case_style
+dotnet_naming_symbols.constant_fields.applicable_kinds   = field
+dotnet_naming_symbols.constant_fields.required_modifiers = const
+dotnet_naming_style.pascal_case_style.capitalization = pascal_case
+
+# static fields should have s_ prefix
+dotnet_naming_rule.static_fields_should_have_prefix.severity = warning
+dotnet_naming_rule.static_fields_should_have_prefix.symbols  = static_fields
+dotnet_naming_rule.static_fields_should_have_prefix.style    = static_prefix_style
+dotnet_naming_symbols.static_fields.applicable_kinds   = field
+dotnet_naming_symbols.static_fields.required_modifiers = static
+dotnet_naming_symbols.static_fields.applicable_accessibilities = private, internal, private_protected
+dotnet_naming_style.static_prefix_style.required_prefix = s_
+dotnet_naming_style.static_prefix_style.capitalization = camel_case
+
+# internal and private fields should be _camelCase
+dotnet_naming_rule.camel_case_for_private_internal_fields.severity = warning
+dotnet_naming_rule.camel_case_for_private_internal_fields.symbols  = private_internal_fields
+dotnet_naming_rule.camel_case_for_private_internal_fields.style    = camel_case_underscore_style
+dotnet_naming_symbols.private_internal_fields.applicable_kinds = field
+dotnet_naming_symbols.private_internal_fields.applicable_accessibilities = private, internal
+dotnet_naming_style.camel_case_underscore_style.required_prefix = _
+dotnet_naming_style.camel_case_underscore_style.capitalization = camel_case
+
+# types should use PascalCase
+dotnet_naming_rule.types_should_be_pascal_case.severity = warning
+dotnet_naming_rule.types_should_be_pascal_case.symbols  = types
+dotnet_naming_rule.types_should_be_pascal_case.style    = pascal_case_style
+dotnet_naming_symbols.types.applicable_kinds = class,struct,interface,enum
+dotnet_naming_style.pascal_case_style.capitalization = pascal_case
+
+# Non-field members should be PascalCase
+dotnet_naming_rule.non_field_members_should_be_pascal_case.severity = warning
+dotnet_naming_rule.non_field_members_should_be_pascal_case.symbols  = non_field_members
+dotnet_naming_rule.non_field_members_should_be_pascal_case.style    = pascal_case_style
+dotnet_naming_symbols.non_field_members.applicable_kinds = property,event,method
+
+# async methods should end with Async
+dotnet_naming_rule.async_methods_should_end_with_async.severity = warning
+dotnet_naming_rule.async_methods_should_end_with_async.symbols  = async_methods
+dotnet_naming_rule.async_methods_should_end_with_async.style    = end_with_async_style
+dotnet_naming_symbols.async_methods.applicable_kinds = method
+dotnet_naming_symbols.async_methods.required_modifiers = async
+dotnet_naming_style.end_with_async_style.required_suffix = Async
+dotnet_naming_style.end_with_async_style.capitalization = pascal_case
+
+# interfaces should start with I
+dotnet_naming_rule.interfaces_should_start_with_i.severity = warning
+dotnet_naming_rule.interfaces_should_start_with_i.symbols  = interfaces
+dotnet_naming_rule.interfaces_should_start_with_i.style    = start_with_i_style
+dotnet_naming_symbols.interfaces.applicable_kinds = interface
+dotnet_naming_style.start_with_i_style.required_prefix = I
+dotnet_naming_style.start_with_i_style.capitalization = pascal_case
+
+# Generic type parameters should be prefixed with T
+dotnet_naming_rule.generic_parameters_should_be_prefixed.severity = warning
+dotnet_naming_rule.generic_parameters_should_be_prefixed.symbols  = generic_parameters
+dotnet_naming_rule.generic_parameters_should_be_prefixed.style    = generic_parameter_style
+dotnet_naming_symbols.generic_parameters.applicable_kinds = type_parameter
+dotnet_naming_style.generic_parameter_style.required_prefix = T
+dotnet_naming_style.generic_parameter_style.capitalization = pascal_case
+csharp_prefer_system_threading_lock = true:suggestion
+[*.{cs,vb}]
+dotnet_style_coalesce_expression = true:suggestion
+dotnet_style_null_propagation = true:suggestion
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:suggestion
+dotnet_style_prefer_auto_properties = true:silent
+dotnet_style_object_initializer = true:suggestion
+dotnet_style_collection_initializer = true:suggestion
+dotnet_style_prefer_simplified_boolean_expressions = true:suggestion
+dotnet_style_prefer_conditional_expression_over_assignment = true:silent
+dotnet_style_prefer_conditional_expression_over_return = true:silent
+dotnet_style_explicit_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_tuple_names = true:suggestion
+dotnet_style_operator_placement_when_wrapping = beginning_of_line
+tab_width = 4
+indent_size = 4
+end_of_line = crlf
