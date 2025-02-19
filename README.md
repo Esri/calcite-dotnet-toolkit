@@ -33,7 +33,7 @@ Esri welcomes contributions from anyone and everyone. Please see our [guidelines
 
 ## License
 
-COPYRIGHT © 2024 Esri
+COPYRIGHT © 2025 Esri
 
 All rights reserved under the copyright laws of the United States and applicable international laws, treaties, and conventions.
 
