@@ -1,7 +1,7 @@
 ﻿namespace Esri.Calcite.WinUI
 {
     /// <summary>
-    /// Calcite Icon scale. Why 3 Sizes? More info on what happens when you scale vector based icons <see cref="https://github.com/Esri/calcite-ui-icons/wiki/What-Happens-When-You-Scale-Vector-Based-Icons">here</see>.
+    /// Calcite Icon scale. Why 3 Sizes? More info on what happens when you scale vector based icons <a href="https://github.com/Esri/calcite-ui-icons/wiki/What-Happens-When-You-Scale-Vector-Based-Icons">here</a>.
     /// </summary>
     public enum CalciteIconScale
     {

@@ -4,6 +4,9 @@ using System;
 
 namespace Esri.Calcite.WinUI;
 
+/// <summary>
+/// Containes the collection of Calcite resources that can be used in a WinUI application.
+/// </summary>
 public sealed partial class CalciteResources : ResourceDictionary
 {
     internal static Microsoft.UI.Xaml.Media.FontFamily CalciteUIFont_Small = new Microsoft.UI.Xaml.Media.FontFamily("ms-appx:///Esri.Calcite.WinUI/Fonts/calcite-ui-icons-16.ttf#calcite-ui-icons-16");
@@ -18,16 +21,29 @@ public sealed partial class CalciteResources : ResourceDictionary
         this.InitializeComponent();
     }
 
+    /// <summary>
+    /// Gets additional style resources for the specified <see cref="DependencyObject"/>.
+    /// </summary>
+    /// <param name="obj">The depenency object to get resources from.</param>
+    /// <returns>Resource dictionary attached to the object.</returns>
     public static ResourceDictionary GetStyleResources(DependencyObject obj)
     {
         return (ResourceDictionary)obj.GetValue(StyleResourcesProperty);
     }
 
+    /// <summary>
+    /// Sets additional style resources for the specified <see cref="DependencyObject"/>.
+    /// </summary>
+    /// <param name="obj">The depenency object to set resources on.</param>
+    /// <param name="value">The resource dictionary to attach</param>
     public static void SetStyleResources(DependencyObject obj, ResourceDictionary value)
     {
         obj.SetValue(StyleResourcesProperty, value);
     }
 
+    /// <summary>
+    /// Identifies the <c>StyleResources</c> attached property.
+    /// </summary>
     public static readonly DependencyProperty StyleResourcesProperty =
         DependencyProperty.RegisterAttached("StyleResources", typeof(ResourceDictionary), typeof(CalciteResources),
             new PropertyMetadata(null, (s, e) => OnStyleResourcesChanged(s, e.OldValue as ResourceDictionary, e.NewValue as ResourceDictionary)));
