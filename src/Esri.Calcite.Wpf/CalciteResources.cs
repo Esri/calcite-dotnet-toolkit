@@ -81,6 +81,7 @@ namespace Esri.Calcite.WPF
             {
                 Source = new Uri("/Esri.Calcite.WPF;component/CalciteResourcesLight.xaml", UriKind.RelativeOrAbsolute);
             }
+            ApplyDefaultStyling(IsCalciteImplicitStylingEnabled);
         }
 
         private bool m_IsCalciteImplicitStylingEnabled = true;
@@ -96,22 +97,26 @@ namespace Esri.Calcite.WPF
                 if (m_IsCalciteImplicitStylingEnabled != value)
                 {
                     m_IsCalciteImplicitStylingEnabled = value;
-                    var resourceoverride = MergedDictionaries.FirstOrDefault(d => d.Source.OriginalString.EndsWith("Overrides.xaml"));
-                    if (resourceoverride is not null)
-                    {
-                        if (value)
-                        {
-                            resourceoverride.Source = new Uri("/Esri.Calcite.WPF;component/ControlOverrides.xaml", UriKind.RelativeOrAbsolute);
-                        }
-                        else if (!value)
-                        {
-                            resourceoverride.Source = new Uri("/Esri.Calcite.WPF;component/ControlNoOverrides.xaml", UriKind.RelativeOrAbsolute);
-                        }
-                    }
+                    ApplyDefaultStyling(value);
                 }
             }
         }
 
+        private void ApplyDefaultStyling(bool value)
+        {
+            var resourceoverride = MergedDictionaries.FirstOrDefault(d => d.Source.OriginalString.EndsWith("Overrides.xaml"));
+            if (resourceoverride is not null)
+            {
+                if (value)
+                {
+                    resourceoverride.Source = new Uri("/Esri.Calcite.WPF;component/ControlOverrides.xaml", UriKind.RelativeOrAbsolute);
+                }
+                else if (!value)
+                {
+                    resourceoverride.Source = new Uri("/Esri.Calcite.WPF;component/ControlNoOverrides.xaml", UriKind.RelativeOrAbsolute);
+                }
+            }
+        }
     }
 
     /// <summary>
