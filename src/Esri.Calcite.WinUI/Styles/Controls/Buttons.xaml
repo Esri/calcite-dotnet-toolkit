@@ -69,6 +69,23 @@
             </Setter.Value>
         </Setter>
     </Style>
+    <Style TargetType="Button" x:Key="CalciteInverseButtonStyle" BasedOn="{StaticResource CalciteButtonStyle}">
+        <Setter Property="cal:CalciteResources.StyleResources">
+            <Setter.Value>
+                <ResourceDictionary>
+                    <StaticResource x:Key="ButtonBackground" ResourceKey="CalciteInverseBrush" />
+                    <StaticResource x:Key="ButtonBackgroundPointerOver" ResourceKey="CalciteInverseHoverBrush"/>
+                    <StaticResource x:Key="ButtonBackgroundPressed" ResourceKey="CalciteInversePressBrush"/>
+                    <StaticResource x:Key="ButtonBorderBrush" ResourceKey="CalciteInverseBrush" />
+                    <StaticResource x:Key="ButtonBorderBrushPointerOver" ResourceKey="CalciteInverseHoverBrush" />
+                    <StaticResource x:Key="ButtonBorderBrushPressed" ResourceKey="CalciteInversePressBrush" />
+                    <StaticResource x:Key="ButtonForeground" ResourceKey="CalciteBackground1Brush" />
+                    <StaticResource x:Key="ButtonForegroundPointerOver" ResourceKey="CalciteBackground1Brush" />
+                    <StaticResource x:Key="ButtonForegroundPressed" ResourceKey="CalciteBackground1Brush" />
+                </ResourceDictionary>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
     <Style x:Key="CalciteDangerButtonStyle" BasedOn="{StaticResource CalciteButtonStyle}" TargetType="Button">
         <Setter Property="cal:CalciteResources.StyleResources">

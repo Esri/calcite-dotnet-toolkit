@@ -269,7 +269,7 @@ dotnet_style_qualification_for_property = false:suggestion
 dotnet_style_qualification_for_method = false:suggestion
 dotnet_style_qualification_for_event = false:suggestion
 
-file_header_template = COPYRIGHT © 2016 ESRI\n\nTRADE SECRETS: ESRI PROPRIETARY AND CONFIDENTIAL\nUnpublished material - all rights reserved under the\nCopyright Laws of the United States and applicable international\nlaws, treaties, and conventions.\n\nFor additional information, contact:\nEnvironmental Systems Research Institute, Inc.\nAttn: Contracts and Legal Services Department\n380 New York Street\nRedlands, California, 92373\nUSA\n\nemail: contracts@esri.com
+file_header_template = COPYRIGHT © 2025 Esri\nAll rights reserved under the copyright laws of the United States and applicable international laws, treaties, and conventions.\nThis material is licensed for use under the Esri Master License Agreement (MLA), and is bound by the terms of that agreement.\nYou may redistribute and use this code without modification, provided you adhere to the terms of the MLA and include this copyright notice.\n\nSee use restrictions at http://www.esri.com/legal/pdfs/mla_e204_e300/english\n\nFor additional information, contact: Environmental Systems Research Institute, Inc.\nAttn: Contracts and Legal Services Department 380 New York Street Redlands, California, USA 92373 USA. email: contracts@esri.com
 
 #### Naming rules ####
 
