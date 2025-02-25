@@ -1,5 +1,5 @@
 <Project>
   <ItemGroup>
-     <MauiFont Include="$(MSBuildThisFileDirectory)../../Assets/Fonts/*.*" />
+     <MauiFont Include="$(MSBuildThisFileDirectory)..\..\Assets\Fonts\*.*" />
   </ItemGroup>
 </Project>

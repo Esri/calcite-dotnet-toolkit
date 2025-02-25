@@ -46,9 +46,6 @@
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
 		
-		<!-- This is normally done by the nuget.package but won't work with projecet reference on iOS '-->
-		<MauiFont Include="..\..\..\fonts\*.ttf" Link="Assets\Fonts\%(Filename)%(Extension)"  Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'"/>
-
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
@@ -60,7 +57,9 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\..\Esri.Calcite.Maui\Esri.Calcite.Maui.csproj" />
-	</ItemGroup>
+        <!-- This is normally done by the nuget.package build.targets file, but instead we simulate it here so project references work '-->
+        <MauiFont Include="$(MSBuildThisFileDirectory)..\..\..\fonts\$(CalciteUIIconsVersion)\package\fonts\*.ttf" Link="Assets\Fonts\%(Filename)%(Extension)" />
+    </ItemGroup>
 
 	<ItemGroup>
 	  <Compile Update="BrushesPage.xaml.cs">
