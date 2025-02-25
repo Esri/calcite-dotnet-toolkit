@@ -22,8 +22,8 @@
         <None Include="$(MSBuildThisFileDirectory)icon.png" Pack="True" PackagePath="\$(PackageIcon)" IsVisible="false" />
         <None Include="$(MSBuildThisFileDirectory)..\LICENSE.md" Pack="True" PackagePath="\LICENSE.md" IsVisible="false" />
         
-        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
-        <PackageReference Include="Nerdbank.GitVersioning" Version="3.6.133" PrivateAssets="all" />
+        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+        <PackageReference Include="Nerdbank.GitVersioning" Version="3.7.115" PrivateAssets="all" />
     </ItemGroup>
       <Target Name="DownloadFonts" Condition="!Exists('$(MSBuildThisFileDirectory)..\fonts\esri-calcite-ui-icons\$(CalciteUIIconsVersion)\package\fonts')">
         <PropertyGroup>
