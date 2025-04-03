@@ -206,6 +206,12 @@ public enum CalciteIcon : ushort
 	/// <release>3.0.0</release>
 	AddressBook = 59167,
 
+	/// <summary>Alert Off Circle (Filled)</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 3.24.2, objects, bell, no notifications, silent, vibrate, unsubscribe, turn off, no alarm, no announcements, filled</remarks>
+	/// <release>3.24.2</release>
+	AlertOffCircleFilled = 59168,
+
 	/// <summary>All Servers</summary>
 	/// <remarks>Category: GIS<br/>
 	/// Alias: 3.20.7, gis, connections, connected, networks</remarks>
@@ -530,11 +536,23 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	BearRight = 59222,
 
+	/// <summary>Beginning (Filled)</summary>
+	/// <remarks>Category: Media<br/>
+	/// Alias: 1.5.0, start, first, media, filled</remarks>
+	/// <release>1.5</release>
+	BeginningFilled = 59223,
+
 	/// <summary>Beginning</summary>
 	/// <remarks>Category: Media<br/>
 	/// Alias: 1.5.0, start, first, media</remarks>
 	/// <release>1.5</release>
 	Beginning = 59224,
+
+	/// <summary>Bell (Filled)</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 3.14.5, objects, notification, alert, alarm, bell, filled</remarks>
+	/// <release>3.14.5</release>
+	BellFilled = 59225,
 
 	/// <summary>Bell</summary>
 	/// <remarks>Category: Objects<br/>
@@ -884,6 +902,12 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	Check = 59283,
 
+	/// <summary>Check Circle (Filled)</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 1.5.0, symbols, check, mark, selected, circle, filled</remarks>
+	/// <release>1.5</release>
+	CheckCircleFilled = 59284,
+
 	/// <summary>Check Circle</summary>
 	/// <remarks>Category: Symbols<br/>
 	/// Alias: 1.5.0, symbols, check, mark, selected, circle</remarks>
@@ -907,6 +931,12 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.15.2, objects, safety, insurance, protection, insured, secure, security, anti-virus, cybersecurity, defense, protected, warranty, coverage</remarks>
 	/// <release>3.15.2</release>
 	CheckShield = 59288,
+
+	/// <summary>Check Square (Filled)</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 1.5.0, symbols, done, box, select, tick, check mark, toggle, confirm, correct, selected, filled</remarks>
+	/// <release>1.5</release>
+	CheckSquareFilled = 59289,
 
 	/// <summary>Check Square</summary>
 	/// <remarks>Category: Symbols<br/>
@@ -1004,6 +1034,12 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	ChordDiagram = 59305,
 
+	/// <summary>Circle (Filled)</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 1.5.0, generic, radio, shape, empty, button, filled</remarks>
+	/// <release>1.5</release>
+	CircleFilled = 59306,
+
 	/// <summary>Circle</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 1.5.0, generic, radio, shape, empty, button</remarks>
@@ -1034,11 +1070,23 @@ public enum CalciteIcon : ushort
 	/// <release>3.28.8</release>
 	CircleInsetSmall = 59311,
 
+	/// <summary>Circle Pause (Filled)</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 3.23.0, symbols, stop, hold, pausing, waiting, slow, status, filled</remarks>
+	/// <release>3.23.0</release>
+	CirclePauseFilled = 59312,
+
 	/// <summary>Circle Pause</summary>
 	/// <remarks>Category: Symbols<br/>
 	/// Alias: 3.23.0, symbols, stop, hold, pausing, waiting, slow, status</remarks>
 	/// <release>3.23.0</release>
 	CirclePause = 59313,
+
+	/// <summary>Circle Stop (Filled)</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 3.24.1, symbols, cube, stop, halt, end, finish, button, filled</remarks>
+	/// <release>3.24.1</release>
+	CircleStopFilled = 59314,
 
 	/// <summary>Circle Stop</summary>
 	/// <remarks>Category: Symbols<br/>
@@ -1093,6 +1141,12 @@ public enum CalciteIcon : ushort
 	/// Alias: 1.5.0, objects, time, date, sort, ascending</remarks>
 	/// <release>1.5</release>
 	ClockUp = 59323,
+
+	/// <summary>Closed Caption (Filled)</summary>
+	/// <remarks>Category: Media<br/>
+	/// Alias: 3.29.3, media, media, audio, video, display, text, information, filled</remarks>
+	/// <release>3.29.3</release>
+	ClosedCaptionFilled = 59324,
 
 	/// <summary>Closed Caption</summary>
 	/// <remarks>Category: Media<br/>
@@ -1850,6 +1904,12 @@ public enum CalciteIcon : ushort
 	/// <release>3.25.2</release>
 	EnableDisableFeatureSelection = 59450,
 
+	/// <summary>End (Filled)</summary>
+	/// <remarks>Category: Media<br/>
+	/// Alias: 1.5.0, media, filled</remarks>
+	/// <release>1.5</release>
+	EndFilled = 59451,
+
 	/// <summary>End</summary>
 	/// <remarks>Category: Media<br/>
 	/// Alias: 1.5.0, media</remarks>
@@ -1892,11 +1952,23 @@ public enum CalciteIcon : ushort
 	/// <release>3.0.0</release>
 	Event = 59458,
 
+	/// <summary>Exclamation Mark Circle (Filled)</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 1.5.0, symbols, invalid, error, broken, filled</remarks>
+	/// <release>1.5</release>
+	ExclamationMarkCircleFilled = 59459,
+
 	/// <summary>Exclamation Mark Circle</summary>
 	/// <remarks>Category: Symbols<br/>
 	/// Alias: 1.5.0, symbols, invalid, error, broken</remarks>
 	/// <release>1.5</release>
 	ExclamationMarkCircle = 59460,
+
+	/// <summary>Exclamation Mark Triangle (Filled)</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 1.5.0, symbols, warning, alert, filled</remarks>
+	/// <release>1.5</release>
+	ExclamationMarkTriangleFilled = 59461,
 
 	/// <summary>Exclamation Mark Triangle</summary>
 	/// <remarks>Category: Symbols<br/>
@@ -2180,6 +2252,12 @@ public enum CalciteIcon : ushort
 	/// <release>3.17.0</release>
 	Fingerprint = 59508,
 
+	/// <summary>Flag (Filled)</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 3.29.1, objects, signal, flag, sign, important, warning, alert, caution, filled</remarks>
+	/// <release>3.29.1</release>
+	FlagFilled = 59509,
+
 	/// <summary>Flag</summary>
 	/// <remarks>Category: Objects<br/>
 	/// Alias: 3.29.1, objects, signal, flag, sign, important, warning, alert, caution</remarks>
@@ -2378,6 +2456,12 @@ public enum CalciteIcon : ushort
 	/// <release>3.16.6</release>
 	FormFieldOff = 59542,
 
+	/// <summary>Forward (Filled)</summary>
+	/// <remarks>Category: Media<br/>
+	/// Alias: 1.5.0, media, filled</remarks>
+	/// <release>1.5</release>
+	ForwardFilled = 59543,
+
 	/// <summary>Forward</summary>
 	/// <remarks>Category: Media<br/>
 	/// Alias: 1.5.0, media</remarks>
@@ -2503,6 +2587,12 @@ public enum CalciteIcon : ushort
 	/// Alias: 1.5.0, gis, locate, current location, tracking</remarks>
 	/// <release>1.5</release>
 	GpsOff = 59564,
+
+	/// <summary>Gps On (Filled)</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 1.5.0, gis, locate, current location, tracking, filled</remarks>
+	/// <release>1.5</release>
+	GpsOnFilled = 59565,
 
 	/// <summary>Gps On</summary>
 	/// <remarks>Category: GIS<br/>
@@ -2701,6 +2791,12 @@ public enum CalciteIcon : ushort
 	/// Alias: 1.5.0, objects, headphones, customer, service, representative, support</remarks>
 	/// <release>1.5</release>
 	Headset = 59598,
+
+	/// <summary>Heart (Filled)</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.19.9, generic, shape, love, favorite, valentine, gift, like, filled</remarks>
+	/// <release>3.19.9</release>
+	HeartFilled = 59599,
 
 	/// <summary>Heart</summary>
 	/// <remarks>Category: Generic<br/>
@@ -2941,6 +3037,12 @@ public enum CalciteIcon : ushort
 	/// Alias: 1.5.0, generic, shapes, visualization</remarks>
 	/// <release>1.5</release>
 	Infographic = 59639,
+
+	/// <summary>Information (Filled)</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 1.5.0, symbols, about, help, tooltip, filled</remarks>
+	/// <release>1.5</release>
+	InformationFilled = 59640,
 
 	/// <summary>Information</summary>
 	/// <remarks>Category: Symbols<br/>
@@ -3524,6 +3626,12 @@ public enum CalciteIcon : ushort
 	/// <release>2.7.0</release>
 	Locator = 59737,
 
+	/// <summary>Lock (Filled)</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 1.5.0, objects, secure, guarded, permission, security, restricted, privacy, filled</remarks>
+	/// <release>1.5</release>
+	LockFilled = 59738,
+
 	/// <summary>Lock</summary>
 	/// <remarks>Category: Objects<br/>
 	/// Alias: 1.5.0, objects, secure, guarded, permission, security, restricted, privacy</remarks>
@@ -3770,11 +3878,23 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	Minus = 59779,
 
+	/// <summary>Minus Circle (Filled)</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 3.24.2, symbols, stop, delete, remove, restricted, subtract, filled</remarks>
+	/// <release>3.24.2</release>
+	MinusCircleFilled = 59780,
+
 	/// <summary>Minus Circle</summary>
 	/// <remarks>Category: Symbols<br/>
 	/// Alias: 3.24.2, symbols, stop, delete, remove, restricted, subtract</remarks>
 	/// <release>3.24.2</release>
 	MinusCircle = 59781,
+
+	/// <summary>Minus Square (Filled)</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 3.23.6, symbols, hyphen, line, filled, subtract, filled</remarks>
+	/// <release>3.23.6</release>
+	MinusSquareFilled = 59782,
 
 	/// <summary>Minus Square</summary>
 	/// <remarks>Category: Symbols<br/>
@@ -4280,6 +4400,12 @@ public enum CalciteIcon : ushort
 	/// <release>3.28.0</release>
 	PasteWithoutAttribute = 59866,
 
+	/// <summary>Pause (Filled)</summary>
+	/// <remarks>Category: Media<br/>
+	/// Alias: 1.5.0, media, filled</remarks>
+	/// <release>1.5</release>
+	PauseFilled = 59867,
+
 	/// <summary>Pause</summary>
 	/// <remarks>Category: Media<br/>
 	/// Alias: 1.5.0, media</remarks>
@@ -4394,6 +4520,12 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	PinPlus = 59886,
 
+	/// <summary>Pin Tear (Filled)</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.16.1, generic, location, map pin, map marker, destination, dropped pin, drop pin, filled</remarks>
+	/// <release>3.16.1</release>
+	PinTearFilled = 59887,
+
 	/// <summary>Pin Tear</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.16.1, generic, location, map pin, map marker, destination, dropped pin, drop pin</remarks>
@@ -4417,6 +4549,12 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.0.0, blueprint, layout, measurements, perimeter, width, height, boundary, interior, scale</remarks>
 	/// <release>3.0.0</release>
 	Plans = 59891,
+
+	/// <summary>Play (Filled)</summary>
+	/// <remarks>Category: Media<br/>
+	/// Alias: 1.5.0, media, run, test, filled</remarks>
+	/// <release>1.5</release>
+	PlayFilled = 59892,
 
 	/// <summary>Play</summary>
 	/// <remarks>Category: Media<br/>
@@ -4610,6 +4748,12 @@ public enum CalciteIcon : ushort
 	/// <release>3.25.8</release>
 	Query = 59924,
 
+	/// <summary>Question (Filled)</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 1.5.0, symbols, faq, unknown, help, hint, filled</remarks>
+	/// <release>1.5</release>
+	QuestionFilled = 59925,
+
 	/// <summary>Question</summary>
 	/// <remarks>Category: Symbols<br/>
 	/// Alias: 1.5.0, symbols, faq, unknown, help, hint</remarks>
@@ -4627,6 +4771,9 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.3.0, quotation marks, reference</remarks>
 	/// <release>3.3.0</release>
 	Quote = 59928,
+
+	/// <summary>Radial Tree Link Chart Yayout</summary>
+	RadialTreeLinkChartYayout = 59929,
 
 	/// <summary>Rain</summary>
 	/// <remarks>Category: Weather<br/>
@@ -4825,6 +4972,12 @@ public enum CalciteIcon : ushort
 	/// Alias: gis, 3.17.1, geoai, train</remarks>
 	/// <release>3.17.1</release>
 	Retrain = 59962,
+
+	/// <summary>Reverse (Filled)</summary>
+	/// <remarks>Category: Media<br/>
+	/// Alias: 1.5.0, media, filled</remarks>
+	/// <release>1.5</release>
+	ReverseFilled = 59963,
 
 	/// <summary>Reverse</summary>
 	/// <remarks>Category: Media<br/>
@@ -5564,6 +5717,12 @@ public enum CalciteIcon : ushort
 	/// <release>3.25.2</release>
 	SplitUnits = 60086,
 
+	/// <summary>Square (Filled)</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 1.5.0, generic, shapes, box, container, filled</remarks>
+	/// <release>1.5</release>
+	SquareFilled = 60087,
+
 	/// <summary>Square</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: 1.5.0, generic, shapes, box, container</remarks>
@@ -5606,6 +5765,12 @@ public enum CalciteIcon : ushort
 	/// <release>3.22.1</release>
 	StairsUp = 60094,
 
+	/// <summary>Star (Filled)</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 3.3.0, symbols, favorite, rate, rating, filled</remarks>
+	/// <release>3.3.0</release>
+	StarFilled = 60095,
+
 	/// <summary>Star</summary>
 	/// <remarks>Category: Symbols<br/>
 	/// Alias: 3.3.0, symbols, favorite, rate, rating</remarks>
@@ -5623,6 +5788,12 @@ public enum CalciteIcon : ushort
 	/// Alias: 3.25.2, symbols, online model builder, stopping, slow, stopped, hold</remarks>
 	/// <release>3.25.2</release>
 	Stop = 60098,
+
+	/// <summary>Stop Square (Filled)</summary>
+	/// <remarks>Category: Media<br/>
+	/// Alias: 3.24.1, media, cube, stop, halt, end, finish, filled</remarks>
+	/// <release>3.24.1</release>
+	StopSquareFilled = 60099,
 
 	/// <summary>Stop Square</summary>
 	/// <remarks>Category: Media<br/>
@@ -5990,6 +6161,12 @@ public enum CalciteIcon : ushort
 	/// <release>3.29.4</release>
 	TracePathComplete = 60160,
 
+	/// <summary>Transcript (Filled)</summary>
+	/// <remarks>Category: Media<br/>
+	/// Alias: 3.29.3, media, captions, text, video, display, speech, filled</remarks>
+	/// <release>3.29.3</release>
+	TranscriptFilled = 60161,
+
 	/// <summary>Transcript</summary>
 	/// <remarks>Category: Media<br/>
 	/// Alias: 3.29.3, media, captions, text, video, display, speech</remarks>
@@ -6356,6 +6533,9 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	Web = 60222,
 
+	/// <summary>Web Adaptor</summary>
+	WebAdaptor = 60223,
+
 	/// <summary>Webhook</summary>
 	/// <remarks>Category: Symbols<br/>
 	/// Alias: 3.14.0, symbols, web hook, event, information, manage, create, http request, payload, application, push</remarks>
@@ -6428,11 +6608,23 @@ public enum CalciteIcon : ushort
 	/// <release>3.1.0</release>
 	XBar = 60235,
 
+	/// <summary>X Circle (Filled)</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 3.8.1, symbols, delete, remove, close, filled</remarks>
+	/// <release>3.8.1</release>
+	XCircleFilled = 60236,
+
 	/// <summary>X Circle</summary>
 	/// <remarks>Category: Symbols<br/>
 	/// Alias: 3.8.1, symbols, delete, remove, close</remarks>
 	/// <release>3.8.1</release>
 	XCircle = 60237,
+
+	/// <summary>X Octagon (Filled)</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 3.11.0, x octagon, invalid, error, broken, critical, denied, restricted, filled</remarks>
+	/// <release>3.11.0</release>
+	XOctagonFilled = 60238,
 
 	/// <summary>X Octagon</summary>
 	/// <remarks>Category: Symbols<br/>

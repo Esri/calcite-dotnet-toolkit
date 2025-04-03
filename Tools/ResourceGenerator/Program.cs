@@ -231,10 +231,12 @@ void GenerateCalciteIconEnum(IList<IconEntry> icons, string filename, string _na
 
     foreach (var icon in icons.OrderBy(i=>i.Glyph))
     {   
-        string? alias = icon.Alias.Replace(Environment.NewLine, "");
+        string? alias = icon.Alias?.Replace(Environment.NewLine, "");
         iconsEnumOutput.WriteLine($"\t/// <summary>{icon.PrettyName}</summary>");
-        iconsEnumOutput.WriteLine($"\t/// <remarks>Category: {icon.Category}<br/>\n\t/// Alias: {alias}</remarks>");
-        iconsEnumOutput.WriteLine($"\t/// <release>{icon.Release}</release>");
+        if(!string.IsNullOrEmpty(icon.Category))
+            iconsEnumOutput.WriteLine($"\t/// <remarks>Category: {icon.Category}<br/>\n\t/// Alias: {alias}</remarks>");
+        if (!string.IsNullOrEmpty(icon.Release))
+            iconsEnumOutput.WriteLine($"\t/// <release>{icon.Release}</release>");
         iconsEnumOutput.WriteLine($"\t{icon.CSName} = {icon.Glyph},");
         iconsEnumOutput.WriteLine();
         iconsEnumOutput.Flush();

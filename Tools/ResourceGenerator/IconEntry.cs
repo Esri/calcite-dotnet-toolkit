@@ -55,10 +55,29 @@ namespace IconXamlGenerator
                 var name = key;
                 var glyph = (ushort)item.Value;
                 var entry = iconEntries.FirstOrDefault(f => f.Key  == name + (isFilled ? "-f" : ""));
+                if(entry is null && isFilled) // Sometimes the filled version is missing. Find the non-filled version instead and clone it
+                {
+                    var entry2 = iconEntries.FirstOrDefault(f => f.Key == name);
+                    if (entry2 is not null)
+                    {
+                        var filled = new IconEntry()
+                        {
+                            Key = name + "-f",
+                            Alias = entry2.Alias + ", filled",
+                            Category = entry2.Category,
+                            Release = entry2.Release,
+                            MultiPath = entry2.MultiPath,
+                        };
+                        iconEntries.Add(filled);
+                        entry = filled;
+                    }
+                }
                 if(entry is null)
                 {
+                    // A description of the icon wasn't found in keywords.json file
                     Console.WriteLine($"Warning: Codepoint {name}={glyph} does not have a matching icon entry");
-                    continue;
+                    entry = new IconEntry() { Key = name + (isFilled ? "-f" : "") };
+                    iconEntries.Add(entry);
                 }
                 entry.Glyph = glyph;
             }
