@@ -1169,7 +1169,6 @@
     <system:String x:Key="CalciteUIIcons_Glyph_WaterDrop">&#xeb82;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Web">&#xeb3e;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_WebAdapter">&#xeb6b;</system:String> 
-    <system:String x:Key="CalciteUIIcons_Glyph_WebAdaptor">&#xeb3f;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Webhook">&#xeb40;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Wheelchair">&#xeb41;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_WhiteCursorSelection">&#xeb83;</system:String> 

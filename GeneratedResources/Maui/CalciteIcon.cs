@@ -6530,9 +6530,6 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	Web = 60222,
 
-	/// <summary>Web Adaptor</summary>
-	WebAdaptor = 60223,
-
 	/// <summary>Webhook</summary>
 	/// <remarks>Category: Symbols<br/>
 	/// Alias: 3.14.0, symbols, web hook, event, information, manage, create, http request, payload, application, push</remarks>

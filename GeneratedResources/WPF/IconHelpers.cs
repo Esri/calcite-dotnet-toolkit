@@ -1102,7 +1102,6 @@ internal static class IconHelpers
 			case CalciteIcon.WalkingDistance: return "WalkingDistance";
 			case CalciteIcon.WalkingTime: return "WalkingTime";
 			case CalciteIcon.Web: return "Web";
-			case CalciteIcon.WebAdaptor: return "WebAdaptor";
 			case CalciteIcon.Webhook: return "Webhook";
 			case CalciteIcon.Wheelchair: return "Wheelchair";
 			case CalciteIcon.WidgetsGroup: return "WidgetsGroup";
