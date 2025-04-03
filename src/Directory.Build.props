@@ -16,6 +16,9 @@
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
         <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
         <CalciteUIIconsVersion>4.0.0</CalciteUIIconsVersion>
+        <PackageReleaseNotes>
+            - Added missing icons entries (Issue #3).
+        </PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup Condition="'$(IsPackable)'=='true'">

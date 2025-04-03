@@ -32,6 +32,7 @@
     <system:String x:Key="CalciteUIIcons_Glyph_AddText">&#xe71d;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_AddToModel">&#xe71e;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_AddressBook">&#xe71f;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_AlertOffCircleFilled">&#xe720;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_AllServers">&#xe721;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Altitude">&#xe722;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Analysis">&#xe723;</system:String> 
@@ -89,7 +90,9 @@
     <system:String x:Key="CalciteUIIcons_Glyph_BearLeft">&#xe755;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_BearRight">&#xe756;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Beginning">&#xe758;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_BeginningFilled">&#xe757;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Bell">&#xe75a;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_BellFilled">&#xe759;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_BellOff">&#xe75b;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Beta">&#xe75c;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Biking">&#xe75d;</system:String> 
@@ -154,10 +157,12 @@
     <system:String x:Key="CalciteUIIcons_Glyph_ChartMagnifyingGlass">&#xe792;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Check">&#xe793;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_CheckCircle">&#xe795;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_CheckCircleFilled">&#xe794;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_CheckExtent">&#xe796;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_CheckLayer">&#xe797;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_CheckShield">&#xe798;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_CheckSquare">&#xe79a;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_CheckSquareFilled">&#xe799;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_ChevronDown">&#xe79b;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_ChevronDownLeft">&#xe79c;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_ChevronDownRight">&#xe79d;</system:String> 
@@ -174,13 +179,16 @@
     <system:String x:Key="CalciteUIIcons_Glyph_ChevronsUp">&#xe7a8;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_ChordDiagram">&#xe7a9;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Circle">&#xe7ab;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_CircleFilled">&#xe7aa;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_CircleAreaHashFilled">&#xeb74;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_CircleDisallowed">&#xe7ac;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_CircleInsetLarge">&#xe7ad;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_CircleInsetMedium">&#xe7ae;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_CircleInsetSmall">&#xe7af;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_CirclePause">&#xe7b1;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_CirclePauseFilled">&#xe7b0;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_CircleStop">&#xe7b3;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_CircleStopFilled">&#xe7b2;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_ClassifyObjects">&#xe7b4;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_ClearSelection">&#xe7b5;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Clipboard">&#xe7b6;</system:String> 
@@ -190,6 +198,7 @@
     <system:String x:Key="CalciteUIIcons_Glyph_ClockForward">&#xe7ba;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_ClockUp">&#xe7bb;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_ClosedCaption">&#xe7bd;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_ClosedCaptionFilled">&#xe7bc;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Cloud">&#xe7be;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_CloudData">&#xe7bf;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_CloudServer">&#xe7c0;</system:String> 
@@ -330,6 +339,7 @@
     <system:String x:Key="CalciteUIIcons_Glyph_EmployeeId">&#xe839;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_EnableDisableFeatureSelection">&#xe83a;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_End">&#xe83c;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_EndFilled">&#xe83b;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Envelope">&#xe83d;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Erase">&#xe83e;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Escalator">&#xe83f;</system:String> 
@@ -337,7 +347,9 @@
     <system:String x:Key="CalciteUIIcons_Glyph_EscalatorUp">&#xe841;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Event">&#xe842;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_ExclamationMarkCircle">&#xe844;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_ExclamationMarkCircleFilled">&#xe843;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_ExclamationMarkTriangle">&#xe846;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_ExclamationMarkTriangleFilled">&#xe845;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_ExclamationPoint">&#xe848;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_ExclamationPointFilled">&#xe847;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_ExitHighwayLeft">&#xe849;</system:String> 
@@ -387,6 +399,7 @@
     <system:String x:Key="CalciteUIIcons_Glyph_FindAddPath">&#xf118;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Fingerprint">&#xe874;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Flag">&#xe876;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_FlagFilled">&#xe875;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_FlagSlash">&#xe877;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Flash">&#xe878;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Flip">&#xe879;</system:String> 
@@ -420,6 +433,7 @@
     <system:String x:Key="CalciteUIIcons_Glyph_FormFieldMultiline">&#xe895;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_FormFieldOff">&#xe896;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Forward">&#xe898;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_ForwardFilled">&#xe897;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_FourTimes">&#xe708;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_FrameExport">&#xe899;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Freehand">&#xe89a;</system:String> 
@@ -443,6 +457,7 @@
     <system:String x:Key="CalciteUIIcons_Glyph_GovernmentBuilding">&#xeb76;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_GpsOff">&#xe8ac;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_GpsOn">&#xe8ae;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_GpsOnFilled">&#xe8ad;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_GraphAxis">&#xe8af;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_GraphBar">&#xe8b1;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_GraphBar100Stacked">&#xe8b0;</system:String> 
@@ -478,6 +493,7 @@
     <system:String x:Key="CalciteUIIcons_Glyph_HeadingRtl">&#xe8cd;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Headset">&#xe8ce;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Heart">&#xe8d0;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_HeartFilled">&#xe8cf;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_HeatChart">&#xe8d1;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_HeavyRain">&#xe8d2;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_HeavySnow">&#xe8d3;</system:String> 
@@ -521,6 +537,7 @@
     <system:String x:Key="CalciteUIIcons_Glyph_Indicator">&#xe8f6;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Infographic">&#xe8f7;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Information">&#xe8f9;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_InformationFilled">&#xe8f8;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_InformationLetter">&#xe8fa;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Initiative">&#xe8fb;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_InitiativeTemplate">&#xeb5f;</system:String> 
@@ -630,6 +647,7 @@
     <system:String x:Key="CalciteUIIcons_Glyph_LocationSharingOff">&#xe958;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Locator">&#xe959;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Lock">&#xe95b;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_LockFilled">&#xe95a;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_LtrElementsAlign">&#xe95c;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_LtrParagraphAlign">&#xe95d;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_MagnifyingGlass">&#xe95e;</system:String> 
@@ -672,7 +690,9 @@
     <system:String x:Key="CalciteUIIcons_Glyph_MinimumGraph">&#xe982;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Minus">&#xe983;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_MinusCircle">&#xe985;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_MinusCircleFilled">&#xe984;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_MinusSquare">&#xe987;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_MinusSquareFilled">&#xe986;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_MiscellaneousCollection">&#xe988;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_MissionServer">&#xe989;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Mobile">&#xe98a;</system:String> 
@@ -767,6 +787,7 @@
     <system:String x:Key="CalciteUIIcons_Glyph_PasteWithAttribute">&#xe9d9;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_PasteWithoutAttribute">&#xe9da;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Pause">&#xe9dc;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_PauseFilled">&#xe9db;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Pen">&#xe9dd;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_PenMark">&#xe9de;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_PenMarkPlus">&#xe9df;</system:String> 
@@ -788,10 +809,12 @@
     <system:String x:Key="CalciteUIIcons_Glyph_Pin">&#xe9ed;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_PinPlus">&#xe9ee;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_PinTear">&#xe9f0;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_PinTearFilled">&#xe9ef;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Pins">&#xe9f1;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Plane">&#xe9f2;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Plans">&#xe9f3;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Play">&#xe9f5;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_PlayFilled">&#xe9f4;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_PlugConnection">&#xf109;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Plus">&#xe9f6;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_PlusCircle">&#xe9f7;</system:String> 
@@ -826,6 +849,7 @@
     <system:String x:Key="CalciteUIIcons_Glyph_QtCode">&#xea13;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Query">&#xea14;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Question">&#xea16;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_QuestionFilled">&#xea15;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_QuestionMark">&#xea17;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Quote">&#xea18;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_RadialTreeLinkChartLayout">&#xeb65;</system:String> 
@@ -864,6 +888,7 @@
     <system:String x:Key="CalciteUIIcons_Glyph_ResizeArea">&#xea39;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Retrain">&#xea3a;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Reverse">&#xea3c;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_ReverseFilled">&#xea3b;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Rfid">&#xea3d;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Rhombus">&#xea3e;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Ribbon">&#xea3f;</system:String> 
@@ -998,6 +1023,7 @@
     <system:String x:Key="CalciteUIIcons_Glyph_SplitGeometry">&#xeab5;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_SplitUnits">&#xeab6;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Square">&#xeab8;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_SquareFilled">&#xeab7;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_SquareBracketsX">&#xeb69;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_SquareHashFilled">&#xeb80;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_SquareHashFilledArea">&#xeb7f;</system:String> 
@@ -1008,9 +1034,11 @@
     <system:String x:Key="CalciteUIIcons_Glyph_StairsDown">&#xeabd;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_StairsUp">&#xeabe;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Star">&#xeac0;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_StarFilled">&#xeabf;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_StarCircle">&#xeac1;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Stop">&#xeac2;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_StopSquare">&#xeac4;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_StopSquareFilled">&#xeac3;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Storage">&#xeac5;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_StoredAsNewQuery">&#xeac6;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_StoredQuery">&#xeac7;</system:String> 
@@ -1072,6 +1100,7 @@
     <system:String x:Key="CalciteUIIcons_Glyph_TracePath">&#xeaff;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_TracePathComplete">&#xeb00;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Transcript">&#xeb02;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_TranscriptFilled">&#xeb01;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_TransverseHexagon">&#xeb03;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Trash">&#xeb04;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Tree">&#xeb81;</system:String> 
@@ -1140,6 +1169,7 @@
     <system:String x:Key="CalciteUIIcons_Glyph_WaterDrop">&#xeb82;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Web">&#xeb3e;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_WebAdapter">&#xeb6b;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_WebAdaptor">&#xeb3f;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Webhook">&#xeb40;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_Wheelchair">&#xeb41;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_WhiteCursorSelection">&#xeb83;</system:String> 
@@ -1155,7 +1185,9 @@
     <system:String x:Key="CalciteUIIcons_Glyph_XAxisGuide">&#xeb4a;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_XBar">&#xeb4b;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_XCircle">&#xeb4d;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_XCircleFilled">&#xeb4c;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_XOctagon">&#xeb4f;</system:String> 
+    <system:String x:Key="CalciteUIIcons_Glyph_XOctagonFilled">&#xeb4e;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_YAxisGuide">&#xeb50;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_ZoningParameter">&#xeb6c;</system:String> 
     <system:String x:Key="CalciteUIIcons_Glyph_ZoomInFixed">&#xeb51;</system:String> 
