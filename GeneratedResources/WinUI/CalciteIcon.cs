@@ -4772,9 +4772,6 @@ public enum CalciteIcon : ushort
 	/// <release>3.3.0</release>
 	Quote = 59928,
 
-	/// <summary>Radial Tree Link Chart Yayout</summary>
-	RadialTreeLinkChartYayout = 59929,
-
 	/// <summary>Rain</summary>
 	/// <remarks>Category: Weather<br/>
 	/// Alias: 3.17.6, generic, clouds, weather, sky, forecast, temperature, environment, nature, precipitation, wind, stormy, clouds</remarks>

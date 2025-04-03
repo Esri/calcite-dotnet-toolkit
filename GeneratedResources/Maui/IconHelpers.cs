@@ -809,7 +809,6 @@ internal static class IconHelpers
 			case CalciteIcon.Question: return "Question";
 			case CalciteIcon.QuestionMark: return "QuestionMark";
 			case CalciteIcon.Quote: return "Quote";
-			case CalciteIcon.RadialTreeLinkChartYayout: return "RadialTreeLinkChartYayout";
 			case CalciteIcon.Rain: return "Rain";
 			case CalciteIcon.RainSnow: return "RainSnow";
 			case CalciteIcon.RainThunder: return "RainThunder";

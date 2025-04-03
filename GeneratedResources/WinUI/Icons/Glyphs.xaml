@@ -851,7 +851,6 @@
     <x:String x:Key="CalciteUIIcons_Glyph_QuestionMark">&#xea17;</x:String> 
     <x:String x:Key="CalciteUIIcons_Glyph_Quote">&#xea18;</x:String> 
     <x:String x:Key="CalciteUIIcons_Glyph_RadialTreeLinkChartLayout">&#xeb65;</x:String> 
-    <x:String x:Key="CalciteUIIcons_Glyph_RadialTreeLinkChartYayout">&#xea19;</x:String> 
     <x:String x:Key="CalciteUIIcons_Glyph_Rain">&#xea1a;</x:String> 
     <x:String x:Key="CalciteUIIcons_Glyph_RainSnow">&#xea1b;</x:String> 
     <x:String x:Key="CalciteUIIcons_Glyph_RainThunder">&#xea1c;</x:String> 
