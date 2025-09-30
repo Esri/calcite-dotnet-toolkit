@@ -28,7 +28,6 @@
         <ResourceDictionary Source=".\Controls\Expander.xaml" />
         <ResourceDictionary Source=".\Shared\Sizes.xaml" />
         <ResourceDictionary Source=".\Shared\Cursor.xaml" />
-        <ResourceDictionary Source=".\Controls\ContentPresenter.xaml" />
         <ResourceDictionary Source=".\Controls\ToolTip.xaml" />
         <ResourceDictionary Source=".\Controls\ToolBar.xaml" />
         <!-- <ResourceDictionary Source=".\Controls\CalciteColorPicker.xaml" /> -->
