@@ -6,7 +6,7 @@
     </ResourceDictionary.MergedDictionaries>
 
     <Style TargetType="GroupBox" x:Key="CalciteGroupBoxStyle">
-        <Setter Property="Template" >
+        <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="GroupBox">
                     <Border
@@ -21,10 +21,15 @@
                             </Grid.RowDefinitions>
                             <ContentPresenter
                                 ContentSource="Header"
-                                RecognizesAccessKey="True"
-                                TextElement.FontWeight="Medium"
-                                TextElement.FontSize="14"
-                                TextElement.Foreground="{DynamicResource CalciteBrandBrush}" />
+                                RecognizesAccessKey="True">
+                                <ContentPresenter.Resources>
+                                    <Style TargetType="TextBlock" BasedOn="{StaticResource CalciteTextBlockStyle}">
+                                        <Setter Property="FontSize" Value="14" />
+                                        <Setter Property="FontWeight" Value="Medium" />
+                                        <Setter Property="Foreground" Value="{DynamicResource CalciteBrandBrush}" />
+                                    </Style>
+                                </ContentPresenter.Resources>
+                            </ContentPresenter>
                             <ContentPresenter Grid.Row="1" Margin="0,8,0,0" />
                         </Grid>
                     </Border>
@@ -41,7 +46,7 @@
         <Setter Property="VerticalAlignment" Value="Top" />
         <Setter Property="BorderBrush" Value="{DynamicResource CalciteBorder3Brush}" />
         <Setter Property="Background" Value="{DynamicResource CalciteBackground1Brush}" />
-        <Setter Property="Template" >
+        <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="GroupBox">
                     <Grid>
@@ -73,7 +78,6 @@
             </Setter.Value>
         </Setter>
         <Setter Property="Foreground" Value="{DynamicResource CalciteText1Brush}" />
-
     </Style>
 
     <Style x:Key="CalcitePanelFormGroupBoxStyle" TargetType="GroupBox" BasedOn="{StaticResource CalcitePanelGroupBoxStyle}">
