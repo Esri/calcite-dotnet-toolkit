@@ -30,7 +30,6 @@
     <Style BasedOn="{StaticResource CalciteDataGridRowStyle}" TargetType="DataGridRow" />
     <Style BasedOn="{StaticResource CalciteDataGridColumnHeadersPresenterStyle}" TargetType="{x:Type DataGridColumnHeadersPresenter}" />
     <Style BasedOn="{StaticResource CalciteDataGridStyle}" TargetType="DataGrid" />
-    <Style BasedOn="{StaticResource CalciteContentPresenterStyle}" TargetType="ContentPresenter" />
     <!--<Style BasedOn="{StaticResource CalciteColorPickerStyle}" TargetType="calcite:CalciteColorPicker" />-->
     <Style BasedOn="{StaticResource CalciteToolBarStyle}" TargetType="ToolBar" />
     <Style BasedOn="{StaticResource CalciteDocumentViewerStyle}" TargetType="DocumentViewer" />
@@ -38,12 +37,11 @@
     <Style BasedOn="{StaticResource CalciteGroupBoxStyle}" TargetType="GroupBox" />
     <Style BasedOn="{StaticResource CalciteLabelStyle}" TargetType="Label" />
     <Style BasedOn="{StaticResource CalciteListBoxStyle}" TargetType="ListBox" />
-    <Style BasedOn="{StaticResource CalciteScrollBarStyle}" TargetType="{x:Type ScrollBar}"/>
-    <Style BasedOn="{StaticResource CalciteScrollViewerStyle}" TargetType="{x:Type ScrollViewer}"/>
+    <Style BasedOn="{StaticResource CalciteScrollBarStyle}" TargetType="{x:Type ScrollBar}" />
+    <Style BasedOn="{StaticResource CalciteScrollViewerStyle}" TargetType="{x:Type ScrollViewer}" />
     <Style BasedOn="{StaticResource CalciteComboBoxItemStyle}" TargetType="{x:Type ComboBoxItem}" />
     <Style BasedOn="{StaticResource CalciteToolBarTrayStyle}" TargetType="{x:Type ToolBarTray}" />
     <Style BasedOn="{StaticResource CalciteWindowStyle}" TargetType="{x:Type Window}" />
     <Style BasedOn="{StaticResource CalciteMenuStyle}" TargetType="{x:Type Menu}" />
     <Style BasedOn="{StaticResource CalciteMenuItemStyle}" TargetType="{x:Type MenuItem}" />
-    
 </ResourceDictionary>
