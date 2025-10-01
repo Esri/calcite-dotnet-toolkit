@@ -42,9 +42,14 @@
                                 Background="Transparent"
                                 BorderThickness="0">
                                 <ContentPresenter
-                                    ContentSource="Header"
-                                    TextBlock.TextAlignment="Left"
-                                    TextBlock.FontWeight="Medium" />
+                                    ContentSource="Header">
+                                    <ContentPresenter.Resources>
+                                        <Style TargetType="TextBlock" BasedOn="{StaticResource CalciteTextBlockStyle}">
+                                            <Setter Property="TextAlignment" Value="Left" />
+                                            <Setter Property="FontWeight" Value="Medium" />
+                                        </Style>
+                                    </ContentPresenter.Resources>
+                                </ContentPresenter>
                             </Border>
                             <Border x:Name="bd_body" Grid.Row="1">
                                 <ContentPresenter />

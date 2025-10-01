@@ -16,9 +16,14 @@
                 BorderBrush="{TemplateBinding BorderBrush}"
                 BorderThickness="{TemplateBinding BorderThickness}">
                 <ContentPresenter
-                    ContentSource="Header"
-                    TextElement.FontSize="14"
-                    TextElement.Foreground="{DynamicResource CalciteText1Brush}" />
+                    ContentSource="Header">
+                    <ContentPresenter.Resources>
+                        <Style TargetType="TextBlock" BasedOn="{StaticResource CalciteTextBlockStyle}">
+                            <Setter Property="FontSize" Value="14" />
+                            <Setter Property="Foreground" Value="{DynamicResource CalciteText1Brush}" />
+                        </Style>
+                    </ContentPresenter.Resources>
+                </ContentPresenter>
             </Border>
             <Border
                 x:Name="bd_body"

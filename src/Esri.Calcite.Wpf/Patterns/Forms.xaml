@@ -14,23 +14,28 @@
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
                         <Border
-                        x:Name="bd_header"
-                        Grid.Row="0"
-                        Margin="0,0,0,4"
-                        Background="Transparent"
-                        BorderThickness="0">
+                            x:Name="bd_header"
+                            Grid.Row="0"
+                            Margin="0,0,0,4"
+                            Background="Transparent"
+                            BorderThickness="0">
                             <ContentPresenter
-                               ContentSource="Header"
-                               TextBlock.TextAlignment="Left"
-                               TextBlock.FontWeight="Medium"
-                               TextElement.FontSize="12"
-                               TextElement.Foreground="{DynamicResource CalciteText1Brush}" />
+                               ContentSource="Header">
+                                <ContentPresenter.Resources>
+                                    <Style TargetType="TextBlock" BasedOn="{StaticResource CalciteTextBlockStyle}">
+                                        <Setter Property="TextAlignment" Value="Left" />
+                                        <Setter Property="FontSize" Value="12" />
+                                        <Setter Property="FontWeight" Value="Medium" />
+                                        <Setter Property="Foreground" Value="{DynamicResource CalciteText1Brush}" />
+                                    </Style>
+                                </ContentPresenter.Resources>
+                            </ContentPresenter>
                         </Border>
                         <Border x:Name="bd_body" Grid.Row="1">
                             <ContentPresenter
-                            TextBlock.TextAlignment="Center"
-                            TextElement.FontSize="12"
-                            TextElement.Foreground="{DynamicResource CalciteText1Brush}" />
+                                TextBlock.TextAlignment="Center"
+                                TextElement.FontSize="12"
+                                TextElement.Foreground="{DynamicResource CalciteText1Brush}" />
                         </Border>
                     </Grid>
                 </ControlTemplate>
