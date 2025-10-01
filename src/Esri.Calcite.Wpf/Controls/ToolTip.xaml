@@ -2,6 +2,7 @@
     <Style x:Key="CalciteToolTipStyle" TargetType="ToolTip">
         <Setter Property="OverridesDefaultStyle" Value="true" />
         <Setter Property="HasDropShadow" Value="True" />
+        <Setter Property="Foreground" Value="{DynamicResource CalciteText1Brush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="ToolTip">
@@ -34,5 +35,4 @@
             </Setter.Value>
         </Setter>
     </Style>
-
 </ResourceDictionary>
