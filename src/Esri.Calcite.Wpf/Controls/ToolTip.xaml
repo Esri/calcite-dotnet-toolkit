@@ -3,6 +3,8 @@
         <Setter Property="OverridesDefaultStyle" Value="true" />
         <Setter Property="HasDropShadow" Value="True" />
         <Setter Property="Foreground" Value="{DynamicResource CalciteText1Brush}" />
+        <Setter Property="Background" Value="{DynamicResource CalciteBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource CalciteBrandPressBrush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="ToolTip">
@@ -11,8 +13,8 @@
                         Width="{TemplateBinding Width}"
                         Height="{TemplateBinding Height}"
                         Margin="8"
-                        Background="{DynamicResource CalciteBackgroundBrush}"
-                        BorderBrush="{DynamicResource CalciteBrandPressBrush}"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
                         BorderThickness="1">
                         <Border.Effect>
                             <DropShadowEffect
