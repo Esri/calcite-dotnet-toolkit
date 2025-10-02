@@ -11,7 +11,7 @@
             <GridView>
                 <GridViewColumn Header="Title" DisplayMemberBinding="{Binding Title}" />
                 <GridViewColumn Header="Date" DisplayMemberBinding="{Binding TimeStamp}" />
-                <GridViewColumn Header="Numerc int" DisplayMemberBinding="{Binding CountValue}" />
+                <GridViewColumn Header="Numeric int" DisplayMemberBinding="{Binding CountValue}" />
                 <GridViewColumn Header="Numeric double" DisplayMemberBinding="{Binding CurrencyValue}" />
             </GridView>
         </ListView.View>
