@@ -27,11 +27,12 @@
                         BorderBrush="{TemplateBinding BorderBrush}"
                         BorderThickness="{TemplateBinding BorderThickness}"
                         SnapsToDevicePixels="true">
-                        <ContentPresenter
+                        <GridViewRowPresenter
                             x:Name="ContentPart"
                             HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                             VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" TextBlock.FontWeight="Light"/>
+                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                            TextBlock.FontWeight="Light" />
                     </Border>
                     <ControlTemplate.Triggers>
                         <MultiTrigger>
@@ -75,7 +76,9 @@
             <Trigger Property="ca:AttachedFormData.IsInForm" Value="True">
                 <Setter Property="Margin" Value="{DynamicResource CalciteFormMargin}" />
             </Trigger>
+            <Trigger Property="View" Value="{x:Null}">
+                <Setter Property="ItemContainerStyle" Value="{StaticResource CalciteListBoxItemStyle}" />
+            </Trigger>
         </Style.Triggers>
     </Style>
-
 </ResourceDictionary>

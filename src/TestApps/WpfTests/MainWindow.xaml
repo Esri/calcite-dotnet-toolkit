@@ -46,6 +46,9 @@
             <TabItem Header="DataGrid">
                 <samples1:DataGridPage />
             </TabItem>
+            <TabItem Header="GridView">
+                <samples1:GridViewPage />
+            </TabItem>
         </TabControl>
         <StatusBar Grid.Row="2">
             <StatusBarItem>
@@ -61,12 +64,11 @@
                     ca:Calcite.Symbol="BrushMark" IsChecked="True" />
             </StatusBarItem>
         </StatusBar>
-        <!--<Path Data="{calcite:CalciteIconGeometry Icon=Map, SymbolSize=16}" Fill="Red" Width="100" Height="100"/>-->
+        <!--<Path Data="{calcite:CalciteIconGeometry Icon=Map, SymbolSize=16}" Fill="Red" Width="100" Height="100" />-->
         <Path Data="M18.217 2.951a1.897 1.897 0 0 0-3.337-.005L2.261 26.198A1.897 1.897 0 0 0 3.93 29h25.148a1.897 1.897 0 0 0 1.67-2.797zM16 10h1v11h-1zm.5 15.5a1 1 0 1 1 1-1 1.002 1.002 0 0 1-1 1z"
               Fill="Black" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Collapsed" />
 
         <!--<Image Source="{calcite:CalciteIconImage Icon=AddLayer, SymbolSize=32}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="32" Height="32" />-->
         <!--<Button Content="Button" ca:Calcite.Symbol="Layer" HorizontalAlignment="Center" VerticalAlignment="Center" />-->
     </Grid>
-
 </Window>
