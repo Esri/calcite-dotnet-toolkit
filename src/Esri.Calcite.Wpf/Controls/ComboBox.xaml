@@ -82,7 +82,7 @@
                                 Data="{c:CalciteIconGeometry Icon=CaretDown, Scale=Small}"
                                 Stretch="Uniform"
                                 Stroke="{DynamicResource CalciteText1Brush}"
-                                Fill="Transparent"/>
+                                Fill="Transparent" />
                         </Border>
                     </Grid>
                     <ControlTemplate.Triggers>
@@ -140,7 +140,7 @@
         <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto" />
         <Setter Property="ScrollViewer.CanContentScroll" Value="true" />
         <Setter Property="Cursor" Value="{DynamicResource ActionCursor}" />
-        <Setter Property="MinWidth" Value="128" />
+        <Setter Property="MinWidth" Value="64" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="ComboBox">
