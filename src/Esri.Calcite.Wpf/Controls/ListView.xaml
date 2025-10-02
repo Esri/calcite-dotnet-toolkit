@@ -106,23 +106,24 @@
                 <ControlTemplate TargetType="{x:Type GridViewColumnHeader}">
                     <Grid>
                         <Border
-                        x:Name="HeaderBorder"
-                        Background="{DynamicResource CalciteBackground1Brush}"
-                        BorderBrush="{DynamicResource CalciteBorder1Brush}"
-                        BorderThickness="0,0,1,1">
+                            x:Name="HeaderBorder"
+                            Background="{DynamicResource CalciteBackground1Brush}"
+                            BorderBrush="{DynamicResource CalciteBorder1Brush}"
+                            BorderThickness="0,0,1,1">
                             <ContentPresenter
                                 Name="HeaderContent"
-                            Margin="{TemplateBinding Padding}"
-                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                                Margin="{TemplateBinding Padding}"
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                TextElement.Foreground="{DynamicResource CalciteText1Brush}"/>
                         </Border>
 
                         <Thumb
-                        x:Name="PART_HeaderGripper"
+                            x:Name="PART_HeaderGripper"
                             HorizontalAlignment="Right"
                             Cursor="SizeWE"
-                        Style="{DynamicResource CalciteGridViewColumnHeaderGripperThumbStyle}" />
+                            Style="{DynamicResource CalciteGridViewColumnHeaderGripperThumbStyle}" />
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>
