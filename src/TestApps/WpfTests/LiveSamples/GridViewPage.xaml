@@ -6,8 +6,7 @@
              xmlns:local="clr-namespace:WpfTests.Samples"
              mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="800">
-    <ListView x:Name="MyGridView"
-              AlternationCount="2">
+    <ListView x:Name="MyGridView">
         <ListView.View>
             <GridView>
                 <GridViewColumn Header="Title" DisplayMemberBinding="{Binding Title}" />

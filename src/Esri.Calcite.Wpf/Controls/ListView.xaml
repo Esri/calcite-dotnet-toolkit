@@ -65,6 +65,7 @@
             </Setter.Value>
         </Setter>
     </Style>
+
     <Style x:Key="CalciteListViewStyle" TargetType="{x:Type ListView}">
         <Setter Property="ItemContainerStyle" Value="{StaticResource CalciteListItemViewContainerStyle}" />
         <Setter Property="BorderThickness" Value="1" />
@@ -80,5 +81,51 @@
                 <Setter Property="ItemContainerStyle" Value="{StaticResource CalciteListBoxItemStyle}" />
             </Trigger>
         </Style.Triggers>
+    </Style>
+
+    <!--  Style and template for the resize control on the GridViewColumnHeader.  -->
+    <Style x:Key="CalciteGridViewColumnHeaderGripperThumbStyle" TargetType="{x:Type Thumb}">
+        <Setter Property="Width" Value="8" />
+        <Setter Property="Background" Value="Transparent" />
+        <!-- The Cursor property is not actually honored as it is overwritten in the source code (see https://github.com/dotnet/wpf/blob/main/src/Microsoft.DotNet.Wpf/src/PresentationFramework/System/Windows/Controls/GridViewColumnHeader.cs#L735) -->
+        <Setter Property="Cursor" Value="SizeWE" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Thumb}">
+                    <Border Padding="{TemplateBinding Padding}" Background="{TemplateBinding Background}" />
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type GridViewColumnHeader}" x:Key="CalciteGridViewColumnHeaderStyle">
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="Padding" Value="8" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type GridViewColumnHeader}">
+                    <Grid>
+                        <Border
+                        x:Name="HeaderBorder"
+                        Background="{DynamicResource CalciteBackground1Brush}"
+                        BorderBrush="{DynamicResource CalciteBorder1Brush}"
+                        BorderThickness="0,0,1,1">
+                            <ContentPresenter
+                                Name="HeaderContent"
+                            Margin="{TemplateBinding Padding}"
+                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                        </Border>
+
+                        <Thumb
+                        x:Name="PART_HeaderGripper"
+                            HorizontalAlignment="Right"
+                            Cursor="SizeWE"
+                        Style="{DynamicResource CalciteGridViewColumnHeaderGripperThumbStyle}" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
     </Style>
 </ResourceDictionary>

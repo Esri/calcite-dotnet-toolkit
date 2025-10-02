@@ -15,6 +15,7 @@
     <Style BasedOn="{StaticResource CalciteRadioButtonStyle}" TargetType="RadioButton" />
     <Style BasedOn="{StaticResource CalciteProgressBarStyle}" TargetType="ProgressBar" />
     <Style BasedOn="{StaticResource CalciteListViewStyle}" TargetType="ListView" />
+    <Style BasedOn="{StaticResource CalciteGridViewColumnHeaderStyle}" TargetType="GridViewColumnHeader" />
     <Style BasedOn="{StaticResource CalciteComboBoxStyle}" TargetType="ComboBox" />
     <Style BasedOn="{StaticResource CalciteCheckBoxStyle}" TargetType="CheckBox" />
     <Style BasedOn="{StaticResource CalciteCalendarStyle}" TargetType="Calendar" />
