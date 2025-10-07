@@ -6,6 +6,6 @@
         <Setter Property="TextWrapping" Value="Wrap" />
     </Style>
     <Style TargetType="Label" x:Key="CalciteLabelStyle">
-        <Setter Property="FontSize" Value="12" />
+        <Setter Property="FontSize" Value="{x:Static SystemFonts.CaptionFontSize}" />
     </Style>
 </ResourceDictionary>

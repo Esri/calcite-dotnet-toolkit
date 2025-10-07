@@ -23,13 +23,13 @@
                                ContentSource="Header"
                                TextBlock.TextAlignment="Left"
                                TextBlock.FontWeight="Medium"
-                               TextElement.FontSize="12"
+                               TextElement.FontSize="{x:Static SystemFonts.CaptionFontSize}"
                                TextElement.Foreground="{DynamicResource CalciteText1Brush}" />
                         </Border>
                         <Border x:Name="bd_body" Grid.Row="1">
                             <ContentPresenter
                             TextBlock.TextAlignment="Center"
-                            TextElement.FontSize="12"
+                            TextElement.FontSize="{x:Static SystemFonts.CaptionFontSize}"
                             TextElement.Foreground="{DynamicResource CalciteText1Brush}" />
                         </Border>
                     </Grid>
