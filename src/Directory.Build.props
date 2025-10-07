@@ -15,9 +15,10 @@
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
         <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
-        <CalciteUIIconsVersion>4.0.0</CalciteUIIconsVersion>
+        <CalciteUIIconsVersion>4.3.0</CalciteUIIconsVersion>
         <PackageReleaseNotes>
             - Added missing icons entries (Issue #3).
+            - Upgraded Calcite Icons to version 4.3.0: https://github.com/Esri/calcite-design-system/releases/tag/%40esri%2Fcalcite-ui-icons%404.3.0
         </PackageReleaseNotes>
     </PropertyGroup>
 

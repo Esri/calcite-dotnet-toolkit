@@ -437,13 +437,13 @@ public enum CalciteIcon : ushort
 	/// <summary>Asterisk Large</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: Generic, 3.21.6, asterisk, required, symbol, large, star, starburst</remarks>
-	/// <release> 3.21.6</release>
+	/// <release>3.21.6</release>
 	AsteriskLarge = 59206,
 
 	/// <summary>Asterisk Small</summary>
 	/// <remarks>Category: Generic<br/>
 	/// Alias: Generic, 3.21.6, asterisk, required, symbol, small, star, starburst</remarks>
-	/// <release> 3.21.6</release>
+	/// <release>3.21.6</release>
 	AsteriskSmall = 59207,
 
 	/// <summary>Attachment</summary>
@@ -880,7 +880,7 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Channels</summary>
 	/// <remarks>Category: Generic<br/>
-	/// Alias: 3.23.6, generic, discussion, api, chat, teams, text, post, social </remarks>
+	/// Alias: 3.23.6, generic, discussion, api, chat, teams, text, post, social</remarks>
 	/// <release>3.23.6</release>
 	Channels = 59280,
 
@@ -1281,9 +1281,9 @@ public enum CalciteIcon : ushort
 	ConferenceRoom = 59346,
 
 	/// <summary>Configure</summary>
-	/// <remarks>Category:  Generic<br/>
+	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.19.1, generic, data, window, gear, tool, settings, manage, tools, wrench, options, list, menu</remarks>
-	/// <release> 3.19.1</release>
+	/// <release>3.19.1</release>
 	Configure = 59347,
 
 	/// <summary>Configure Editing</summary>
@@ -1294,7 +1294,7 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Configure Grid Unit</summary>
 	/// <remarks>Category: GIS<br/>
-	/// Alias: 3.25.2, gis, indoors, grids, modify, gear, changes, units, spaces </remarks>
+	/// Alias: 3.25.2, gis, indoors, grids, modify, gear, changes, units, spaces</remarks>
 	/// <release>3.25.2</release>
 	ConfigureGridUnit = 59349,
 
@@ -1390,7 +1390,7 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Contingent Values</summary>
 	/// <remarks>Category: Forms<br/>
-	/// Alias: 3.18.6, forms, table, value, connected, levels, field, forms, dependent, conditional </remarks>
+	/// Alias: 3.18.6, forms, table, value, connected, levels, field, forms, dependent, conditional</remarks>
 	/// <release>3.18.6</release>
 	ContingentValues = 59365,
 
@@ -1563,15 +1563,15 @@ public enum CalciteIcon : ushort
 	Debug = 59393,
 
 	/// <summary>Debug Script</summary>
-	/// <remarks>Category:  Generic<br/>
+	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.19.1, generic, bug, search, find, magnifying glass, locate, diagnose, troubleshoot, issues, fix, solve, technology, analyze, inspect, errors, detect, hardware, software</remarks>
-	/// <release> 3.19.1</release>
+	/// <release>3.19.1</release>
 	DebugScript = 59394,
 
 	/// <summary>Decrease Link Chart Symbol Size</summary>
 	/// <remarks>Category: Knowledge Graph<br/>
-	/// Alias:  3.20.6, knowledge graph, circle, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model</remarks>
-	/// <release> 3.20.6</release>
+	/// Alias: 3.20.6, knowledge graph, circle, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model</remarks>
+	/// <release>3.20.6</release>
 	DecreaseLinkChartSymbolSize = 59395,
 
 	/// <summary>Deep Learning</summary>
@@ -1641,9 +1641,9 @@ public enum CalciteIcon : ushort
 	DiamondInsetSmall = 59406,
 
 	/// <summary>Dimensions</summary>
-	/// <remarks>Category:  Generic<br/>
-	/// Alias:  3.20.4,  generic, measure, size, scale, width, height, dimensions</remarks>
-	/// <release> 3.20.4</release>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 3.20.4, generic, measure, size, scale, width, height, dimensions</remarks>
+	/// <release>3.20.4</release>
 	Dimensions = 59407,
 
 	/// <summary>Dimensions Unit</summary>
@@ -2158,8 +2158,8 @@ public enum CalciteIcon : ushort
 
 	/// <summary>File Ppt</summary>
 	/// <remarks>Category: Files<br/>
-	/// Alias: 3.20.3 , files, ppt, esri, definition, format, extension, collection, presentations, .pptx, powerpoint, microsoft, file type</remarks>
-	/// <release>3.20.3 </release>
+	/// Alias: 3.20.3, files, ppt, esri, definition, format, extension, collection, presentations, .pptx, powerpoint, microsoft, file type</remarks>
+	/// <release>3.20.3</release>
 	FilePpt = 59493,
 
 	/// <summary>File Report</summary>
@@ -2182,8 +2182,8 @@ public enum CalciteIcon : ushort
 
 	/// <summary>File Sqlite</summary>
 	/// <remarks>Category: Files<br/>
-	/// Alias: 3.20.3 , files, sqlite, feather, esri, definition, format, extension, collection, file type</remarks>
-	/// <release>3.20.3 </release>
+	/// Alias: 3.20.3, files, sqlite, feather, esri, definition, format, extension, collection, file type</remarks>
+	/// <release>3.20.3</release>
 	FileSqlite = 59497,
 
 	/// <summary>File Text</summary>
@@ -2230,8 +2230,8 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Files Csv Collection</summary>
 	/// <remarks>Category: Files<br/>
-	/// Alias: 3.20.3 , files, csv, esri, definition, format, extension, collection, file type</remarks>
-	/// <release>3.20.3 </release>
+	/// Alias: 3.20.3, files, csv, esri, definition, format, extension, collection, file type</remarks>
+	/// <release>3.20.3</release>
 	FilesCsvCollection = 59505,
 
 	/// <summary>Filter</summary>
@@ -2554,8 +2554,8 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Geographic Link Chart Layout</summary>
 	/// <remarks>Category: Knowledge Graph<br/>
-	/// Alias:  3.20.6, knowledge graph, map, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model, layout</remarks>
-	/// <release> 3.20.6</release>
+	/// Alias: 3.20.6, knowledge graph, map, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model, layout</remarks>
+	/// <release>3.20.6</release>
 	GeographicLinkChartLayout = 59559,
 
 	/// <summary>Geonet</summary>
@@ -2602,8 +2602,8 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Graph Axis</summary>
 	/// <remarks>Category: Charts and Graphs<br/>
-	/// Alias:  3.21.1, charts and graphs, axis, chart, x, y, data, diagram, visualization</remarks>
-	/// <release> 3.21.1</release>
+	/// Alias: 3.21.1, charts and graphs, axis, chart, x, y, data, diagram, visualization</remarks>
+	/// <release>3.21.1</release>
 	GraphAxis = 59567,
 
 	/// <summary>Graph Bar 100 Stacked</summary>
@@ -2638,8 +2638,8 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Graph Guides</summary>
 	/// <remarks>Category: Charts and Graphs<br/>
-	/// Alias:  3.21.1, charts and graphs, guides, chart, guide, data, diagram, visualization</remarks>
-	/// <release> 3.21.1</release>
+	/// Alias: 3.21.1, charts and graphs, guides, chart, guide, data, diagram, visualization</remarks>
+	/// <release>3.21.1</release>
 	GraphGuides = 59573,
 
 	/// <summary>Graph Histogram</summary>
@@ -2650,8 +2650,8 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Graph Line Series</summary>
 	/// <remarks>Category: Charts and Graphs<br/>
-	/// Alias:  3.21.1, charts and graphs, lines, chart, data, diagram, visualization</remarks>
-	/// <release> 3.21.1</release>
+	/// Alias: 3.21.1, charts and graphs, lines, chart, data, diagram, visualization</remarks>
+	/// <release>3.21.1</release>
 	GraphLineSeries = 59575,
 
 	/// <summary>Graph Moving Average</summary>
@@ -3022,8 +3022,8 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Increase Link Chart Symbol Size</summary>
 	/// <remarks>Category: Knowledge Graph<br/>
-	/// Alias:  3.20.6, knowledge graph, circle, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model, scale</remarks>
-	/// <release> 3.20.6</release>
+	/// Alias: 3.20.6, knowledge graph, circle, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model, scale</remarks>
+	/// <release>3.20.6</release>
 	IncreaseLinkChartSymbolSize = 59637,
 
 	/// <summary>Indicator</summary>
@@ -3082,8 +3082,8 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Investigation</summary>
 	/// <remarks>Category: Generic<br/>
-	/// Alias:  3.25.2, generic, knowledge graph, briefcase, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model</remarks>
-	/// <release> 3.25.2</release>
+	/// Alias: 3.25.2, generic, knowledge graph, briefcase, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model</remarks>
+	/// <release>3.25.2</release>
 	Investigation = 59647,
 
 	/// <summary>Italicize</summary>
@@ -3124,20 +3124,20 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Knowledge Graph</summary>
 	/// <remarks>Category: Knowledge Graph<br/>
-	/// Alias:  3.20.6, knowledge graph, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model, link</remarks>
-	/// <release> 3.20.6</release>
+	/// Alias: 3.20.6, knowledge graph, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model, link</remarks>
+	/// <release>3.20.6</release>
 	KnowledgeGraph = 59654,
 
 	/// <summary>Knowledge Graph Dashboard</summary>
 	/// <remarks>Category: Knowledge Graph<br/>
-	/// Alias:  3.20.6, knowledge graph, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model, scale, monitor, link</remarks>
-	/// <release> 3.20.6</release>
+	/// Alias: 3.20.6, knowledge graph, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model, scale, monitor, link</remarks>
+	/// <release>3.20.6</release>
 	KnowledgeGraphDashboard = 59655,
 
 	/// <summary>Knowledge Graph Data Model</summary>
 	/// <remarks>Category: Knowledge Graph<br/>
-	/// Alias:  3.20.6, knowledge graph, database canister, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model, scale, gear, data, link</remarks>
-	/// <release> 3.20.6</release>
+	/// Alias: 3.20.6, knowledge graph, database canister, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model, scale, gear, data, link</remarks>
+	/// <release>3.20.6</release>
 	KnowledgeGraphDataModel = 59656,
 
 	/// <summary>Knowledge Graph Data Store</summary>
@@ -3148,26 +3148,26 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Knowledge Graph Export</summary>
 	/// <remarks>Category: Knowledge Graph<br/>
-	/// Alias:  3.20.6, knowledge graph, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model, scale, link, up, arrow</remarks>
-	/// <release> 3.20.6</release>
+	/// Alias: 3.20.6, knowledge graph, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model, scale, link, up, arrow</remarks>
+	/// <release>3.20.6</release>
 	KnowledgeGraphExport = 59658,
 
 	/// <summary>Knowledge Graph Import</summary>
 	/// <remarks>Category: Knowledge Graph<br/>
-	/// Alias:  3.20.6, knowledge graph, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model, scale, link, down, arrow</remarks>
-	/// <release> 3.20.6</release>
+	/// Alias: 3.20.6, knowledge graph, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model, scale, link, down, arrow</remarks>
+	/// <release>3.20.6</release>
 	KnowledgeGraphImport = 59659,
 
 	/// <summary>Knowledge Graph New</summary>
 	/// <remarks>Category: Knowledge Graph<br/>
-	/// Alias:  3.20.6, knowledge graph, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model, scale, sun, link</remarks>
-	/// <release> 3.20.6</release>
+	/// Alias: 3.20.6, knowledge graph, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model, scale, sun, link</remarks>
+	/// <release>3.20.6</release>
 	KnowledgeGraphNew = 59660,
 
 	/// <summary>Knowledge Layer</summary>
 	/// <remarks>Category: Knowledge Graph<br/>
-	/// Alias:  3.20.6, knowledge graph, layer type, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model, scale</remarks>
-	/// <release> 3.20.6</release>
+	/// Alias: 3.20.6, knowledge graph, layer type, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model, scale</remarks>
+	/// <release>3.20.6</release>
 	KnowledgeLayer = 59661,
 
 	/// <summary>Knowledge Server</summary>
@@ -3190,8 +3190,8 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Label Off</summary>
 	/// <remarks>Category: Objects<br/>
-	/// Alias:  3.20.6, objects, turn off, hide, remove, labels, disappear</remarks>
-	/// <release> 3.20.6</release>
+	/// Alias: 3.20.6, objects, turn off, hide, remove, labels, disappear</remarks>
+	/// <release>3.20.6</release>
 	LabelOff = 59665,
 
 	/// <summary>Language</summary>
@@ -3202,7 +3202,7 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Language Translate</summary>
 	/// <remarks>Category: Generic<br/>
-	/// Alias: 3.17.8, communication, interchange, lexicon, conversation, word, countries </remarks>
+	/// Alias: 3.17.8, communication, interchange, lexicon, conversation, word, countries</remarks>
 	/// <release>3.17.8</release>
 	LanguageTranslate = 59667,
 
@@ -3514,8 +3514,8 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Link Chart</summary>
 	/// <remarks>Category: Knowledge Graph<br/>
-	/// Alias:  3.20.6, knowledge graph, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model, scale, link, select</remarks>
-	/// <release> 3.20.6</release>
+	/// Alias: 3.20.6, knowledge graph, link chart, relationships, spatial data, non spatial data, query, spatial analysis, investigation, data model, scale, link, select</remarks>
+	/// <release>3.20.6</release>
 	LinkChart = 59719,
 
 	/// <summary>Link Chart Expand</summary>
@@ -4168,13 +4168,13 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Number Circle 4 (Filled)</summary>
 	/// <remarks>Category: Numbers<br/>
-	/// Alias: 3.22.3, numbers, filled,  circle, list item, number circle 4, fourth item, fifth step, ranking, 4, four</remarks>
+	/// Alias: 3.22.3, numbers, filled, circle, list item, number circle 4, fourth item, fifth step, ranking, 4, four</remarks>
 	/// <release>3.22.3</release>
 	NumberCircle4Filled = 59828,
 
 	/// <summary>Number Circle 4</summary>
 	/// <remarks>Category: Numbers<br/>
-	/// Alias: 3.19.4, numbers,  circle, 4, four</remarks>
+	/// Alias: 3.19.4, numbers, circle, 4, four</remarks>
 	/// <release>3.19.4</release>
 	NumberCircle4 = 59829,
 
@@ -4492,7 +4492,7 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Personal Homepage</summary>
 	/// <remarks>Category: Generic<br/>
-	/// Alias:  3.20.8, generic, Generic,  3.20.8, home, user, house, person, single </remarks>
+	/// Alias: 3.20.8, generic, Generic, 3.20.8, home, user, house, person, single</remarks>
 	/// <release>3.20.8</release>
 	PersonalHomepage = 59882,
 
@@ -4689,9 +4689,9 @@ public enum CalciteIcon : ushort
 	ProcessingTemplates = 59914,
 
 	/// <summary>Profile Variables</summary>
-	/// <remarks>Category:  Generic<br/>
+	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.19.1, generic, variables, math, equation, x, mathematics, parentheses, calculation</remarks>
-	/// <release> 3.19.1</release>
+	/// <release>3.19.1</release>
 	ProfileVariables = 59915,
 
 	/// <summary>Project Mission</summary>
@@ -4772,6 +4772,9 @@ public enum CalciteIcon : ushort
 	/// <release>3.3.0</release>
 	Quote = 59928,
 
+	/// <summary>Radial Tree Link Chart Yayout</summary>
+	RadialTreeLinkChartYayout = 59929,
+
 	/// <summary>Rain</summary>
 	/// <remarks>Category: Weather<br/>
 	/// Alias: 3.17.6, generic, clouds, weather, sky, forecast, temperature, environment, nature, precipitation, wind, stormy, clouds</remarks>
@@ -4828,7 +4831,7 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Read Only Non Editable</summary>
 	/// <remarks>Category: Objects<br/>
-	/// Alias: 3.21.2, objects, pencil, do not, backslash, prohibited, don't edit </remarks>
+	/// Alias: 3.21.2, objects, pencil, do not, backslash, prohibited, don't edit</remarks>
 	/// <release>3.21.2</release>
 	ReadOnlyNonEditable = 59939,
 
@@ -5212,7 +5215,7 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Satellite 3 (Filled)</summary>
 	/// <remarks>Category: Objects<br/>
-	/// Alias: 3.20.2, objects, artificial satellite, communications, remote sensing, signal, on, off, fill </remarks>
+	/// Alias: 3.20.2, objects, artificial satellite, communications, remote sensing, signal, on, off, fill</remarks>
 	/// <release>3.20.2</release>
 	Satellite3Filled = 60003,
 
@@ -5997,9 +6000,9 @@ public enum CalciteIcon : ushort
 	TerritoryBufferDistance = 60133,
 
 	/// <summary>Test Data</summary>
-	/// <remarks>Category:  Generic<br/>
+	/// <remarks>Category: Generic<br/>
 	/// Alias: 3.19.1, generic, script, search, test, testing, review, scroll, code, check mark, find</remarks>
-	/// <release> 3.19.1</release>
+	/// <release>3.19.1</release>
 	TestData = 60134,
 
 	/// <summary>Text</summary>
@@ -6286,7 +6289,7 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Update Project</summary>
 	/// <remarks>Category: Objects<br/>
-	/// Alias:  3.23.4, objects, briefcase, arrows, portfolio case, refresh, update, projects</remarks>
+	/// Alias: 3.23.4, objects, briefcase, arrows, portfolio case, refresh, update, projects</remarks>
 	/// <release>3.23.4</release>
 	UpdateProject = 60182,
 
@@ -6530,6 +6533,9 @@ public enum CalciteIcon : ushort
 	/// <release>1.5</release>
 	Web = 60222,
 
+	/// <summary>Web Adaptor</summary>
+	WebAdaptor = 60223,
+
 	/// <summary>Webhook</summary>
 	/// <remarks>Category: Symbols<br/>
 	/// Alias: 3.14.0, symbols, web hook, event, information, manage, create, http request, payload, application, push</remarks>
@@ -6664,8 +6670,8 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Browser Map</summary>
 	/// <remarks>Category: Windows<br/>
-	/// Alias: 3.20.3 , windows, os, map, location, desktop, layout, web map, application, mapping software</remarks>
-	/// <release>3.20.3 </release>
+	/// Alias: 3.20.3, windows, os, map, location, desktop, layout, web map, application, mapping software</remarks>
+	/// <release>3.20.3</release>
 	BrowserMap = 60246,
 
 	/// <summary>Buffer Point</summary>
@@ -7126,7 +7132,7 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Add Link Chart Root Nodes</summary>
 	/// <remarks>Category: Knowledge Graph<br/>
-	/// Alias: 4.0.0, knowledge graph, filter, points, model, select, add to, nodes, area, distance </remarks>
+	/// Alias: 4.0.0, knowledge graph, filter, points, model, select, add to, nodes, area, distance</remarks>
 	/// <release>4.0.0</release>
 	AddLinkChartRootNodes = 61727,
 
@@ -7153,5 +7159,527 @@ public enum CalciteIcon : ushort
 	/// Alias: 4.0.0, objects, tool, mallet, cash, change, currency</remarks>
 	/// <release>4.0.0</release>
 	HammerCoin = 61731,
+
+	/// <summary>Dual Image Location</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 4.0.0, gis, location, direction, two, position, site</remarks>
+	/// <release>4.0.0</release>
+	DualImageLocation = 61732,
+
+	/// <summary>Dual Image Distance</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 4.0.0, gis, distance, two, gap, span, reach</remarks>
+	/// <release>4.0.0</release>
+	DualImageDistance = 61733,
+
+	/// <summary>Dual Image Area</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 4.0.0, gis, area, zone, region, two, image</remarks>
+	/// <release>4.0.0</release>
+	DualImageArea = 61734,
+
+	/// <summary>Language 2</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.0.1, generic, speech, dialect, tongue, vernacular</remarks>
+	/// <release>4.0.1</release>
+	Language2 = 61735,
+
+	/// <summary>Browser Plus</summary>
+	/// <remarks>Category: Windows<br/>
+	/// Alias: 4.1.0, windows, web, add, explore, table</remarks>
+	/// <release>4.1.0</release>
+	BrowserPlus = 61736,
+
+	/// <summary>Browser Join</summary>
+	/// <remarks>Category: Windows<br/>
+	/// Alias: 4.1.0, windows, web, explore, combine, tables</remarks>
+	/// <release>4.1.0</release>
+	BrowserJoin = 61737,
+
+	/// <summary>Variable Plus</summary>
+	/// <remarks>Category: Text<br/>
+	/// Alias: 4.1.1, text, add, changeable, fluctating, inconstant</remarks>
+	/// <release>4.1.1</release>
+	VariablePlus = 61738,
+
+	/// <summary>Table Set</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.1.1, generic, setting, cover, arrangement, columns, features</remarks>
+	/// <release>4.1.1</release>
+	TableSet = 61739,
+
+	/// <summary>String Set</summary>
+	/// <remarks>Category: Text<br/>
+	/// Alias: 4.1.1, text, chain, sequence, series, group, collection</remarks>
+	/// <release>4.1.1</release>
+	StringSet = 61740,
+
+	/// <summary>Parameters</summary>
+	/// <remarks>Category: Text<br/>
+	/// Alias: 4.1.1, text, framework, limitation, restriction, specification</remarks>
+	/// <release>4.1.1</release>
+	Parameters = 61741,
+
+	/// <summary>Parameters Plus</summary>
+	/// <remarks>Category: Text<br/>
+	/// Alias: 4.1.1, text, framework, restriction, guideline, limit</remarks>
+	/// <release>4.1.1</release>
+	ParametersPlus = 61742,
+
+	/// <summary>Parameters Gear</summary>
+	/// <remarks>Category: Text<br/>
+	/// Alias: 4.1.1, text, limit, guideline, criteria, tool</remarks>
+	/// <release>4.1.1</release>
+	ParametersGear = 61743,
+
+	/// <summary>Multiple Variables Set</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 4.1.1, symbols, changeable, many, numbers</remarks>
+	/// <release>4.1.1</release>
+	MultipleVariablesSet = 61744,
+
+	/// <summary>Map Information</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 4.1.1, gis, map, guide, instructions</remarks>
+	/// <release>4.1.1</release>
+	MapInformation = 61745,
+
+	/// <summary>Layer Set</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 4.1.1, layers, tier, stack, bed, stratum</remarks>
+	/// <release>4.1.1</release>
+	LayerSet = 61746,
+
+	/// <summary>Double Float Set</summary>
+	/// <remarks>Category: Text<br/>
+	/// Alias: 4.1.1, text, floating, precision, memory</remarks>
+	/// <release>4.1.1</release>
+	DoubleFloatSet = 61747,
+
+	/// <summary>Video Learning</summary>
+	/// <remarks>Category: Education<br/>
+	/// Alias: 4.2.0, education, video, learning, visual, coffee, playback, relax, record, clip, cup, warm</remarks>
+	/// <release>4.2.0</release>
+	VideoLearning = 61748,
+
+	/// <summary>Storymap Experience</summary>
+	/// <remarks>Category: Education<br/>
+	/// Alias: 4.2.0, education, web, app, logo, app, product</remarks>
+	/// <release>4.2.0</release>
+	StorymapExperience = 61749,
+
+	/// <summary>Mooc</summary>
+	/// <remarks>Category: Education<br/>
+	/// Alias: 4.2.0, education, courses, training, online, graduation, class</remarks>
+	/// <release>4.2.0</release>
+	Mooc = 61750,
+
+	/// <summary>Learning Web Course</summary>
+	/// <remarks>Category: Education<br/>
+	/// Alias: 4.2.0, education, learning, web, course, online, virtual, internet, interactive, cloud</remarks>
+	/// <release>4.2.0</release>
+	LearningWebCourse = 61751,
+
+	/// <summary>Learning Steps</summary>
+	/// <remarks>Category: Education<br/>
+	/// Alias: 4.2.0, education, learning, plan, steps, workflow, planner, number, chronological</remarks>
+	/// <release>4.2.0</release>
+	LearningSteps = 61752,
+
+	/// <summary>Learning Gis Workflow</summary>
+	/// <remarks>Category: Education<br/>
+	/// Alias: 4.2.0, education, learning, gis, lab, workflow, plan, interact, system, roadmap, productivity, map</remarks>
+	/// <release>4.2.0</release>
+	LearningGisWorkflow = 61753,
+
+	/// <summary>E Learning Gis</summary>
+	/// <remarks>Category: Education<br/>
+	/// Alias: 4.2.0, education, learning, gis, presenter, online, video, virtual, asynchronous</remarks>
+	/// <release>4.2.0</release>
+	ELearningGis = 61754,
+
+	/// <summary>Document Learning</summary>
+	/// <remarks>Category: Education<br/>
+	/// Alias: 4.2.0, education, document, learning, pencil, note, folder, write, class</remarks>
+	/// <release>4.2.0</release>
+	DocumentLearning = 61755,
+
+	/// <summary>Classroom Gis</summary>
+	/// <remarks>Category: Education<br/>
+	/// Alias: 4.2.0, education, classroom, gis, presenter, desk, podium, map, teacher</remarks>
+	/// <release>4.2.0</release>
+	ClassroomGis = 61756,
+
+	/// <summary>Mosaic Method None</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 4.2.0, gis, nothing, uncombined, unblended, separated, disassembled</remarks>
+	/// <release>4.2.0</release>
+	MosaicMethodNone = 61757,
+
+	/// <summary>Spike Data Visualization</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.2.0, generic, display, raster, interactive, data</remarks>
+	/// <release>4.2.0</release>
+	SpikeDataVisualization = 61758,
+
+	/// <summary>Spike Data Visualization Outlined Open</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.2.1, generic, display, raster, data, interactive</remarks>
+	/// <release>4.2.1</release>
+	SpikeDataVisualizationOutlinedOpen = 61759,
+
+	/// <summary>Spike Data Visualization Outlined (Filled)</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.2.0, generic, display, raster, interactive, data, filled</remarks>
+	/// <release>4.2.0</release>
+	SpikeDataVisualizationOutlinedFilled = 61760,
+
+	/// <summary>Spike Data Visualization Open</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.2.0, generic, display, raster, interactive, data, open, shape</remarks>
+	/// <release>4.2.0</release>
+	SpikeDataVisualizationOpen = 61761,
+
+	/// <summary>Transfer</summary>
+	/// <remarks>Category: People<br/>
+	/// Alias: 4.2.1, people, move, shift, remove, conduct, transmit</remarks>
+	/// <release>4.2.1</release>
+	Transfer = 61762,
+
+	/// <summary>Tapestry</summary>
+	/// <remarks>Category: Brand<br/>
+	/// Alias: 4.2.1, brand, segmentation, data, classification, group</remarks>
+	/// <release>4.2.1</release>
+	Tapestry = 61763,
+
+	/// <summary>Spike Data Visualization Outlined Open (Filled)</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.2.1, generic, display, raster, data, interactive, filled</remarks>
+	/// <release>4.2.1</release>
+	SpikeDataVisualizationOutlinedOpenFilled = 61764,
+
+	/// <summary>Subheading 5 Rtl</summary>
+	/// <remarks>Category: Text<br/>
+	/// Alias: 4.2.1, text, type, subtitle, script, headline, caption</remarks>
+	/// <release>4.2.1</release>
+	Subheading5Rtl = 61765,
+
+	/// <summary>Subheading 4 Rtl</summary>
+	/// <remarks>Category: Text<br/>
+	/// Alias: 4.2.1, text, type, subtitle, script, headline, caption</remarks>
+	/// <release>4.2.1</release>
+	Subheading4Rtl = 61766,
+
+	/// <summary>Subheading 3 Rtl</summary>
+	/// <remarks>Category: Text<br/>
+	/// Alias: 4.2.1, text, type, subtitle, script, headline, caption</remarks>
+	/// <release>4.2.1</release>
+	Subheading3Rtl = 61767,
+
+	/// <summary>Subheading 2 Rtl</summary>
+	/// <remarks>Category: Text<br/>
+	/// Alias: 4.2.1, text, type, subtitle, script, headline, caption</remarks>
+	/// <release>4.2.1</release>
+	Subheading2Rtl = 61768,
+
+	/// <summary>Subheading 1 Rtl</summary>
+	/// <remarks>Category: Text<br/>
+	/// Alias: 4.2.1, text, type, subtitle, script, headline, caption</remarks>
+	/// <release>4.2.1</release>
+	Subheading1Rtl = 61769,
+
+	/// <summary>Sequential Navigation</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.3.0, generic, sequence, gps, location, direction</remarks>
+	/// <release>4.3.0</release>
+	SequentialNavigation = 61770,
+
+	/// <summary>Image Navigation</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.3.0, generic, gps, image, location, direction</remarks>
+	/// <release>4.3.0</release>
+	ImageNavigation = 61771,
+
+	/// <summary>Directional Navigation</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.3.0, generic, direction, gps, location, instructions</remarks>
+	/// <release>4.3.0</release>
+	DirectionalNavigation = 61772,
+
+	/// <summary>Content Side By Side Right</summary>
+	/// <remarks>Category: Windows<br/>
+	/// Alias: 4.3.0, windows, table, content, html, css</remarks>
+	/// <release>4.3.0</release>
+	ContentSideBySideRight = 61773,
+
+	/// <summary>Location Label</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 4.3.0, gis, marker, navigation, map, identify, data</remarks>
+	/// <release>4.3.0</release>
+	LocationLabel = 61774,
+
+	/// <summary>Tangent Curve</summary>
+	/// <remarks>Category: Geometry Editing<br/>
+	/// Alias: 4.3.0, geometry editing, create, segments, points, circular</remarks>
+	/// <release>4.3.0</release>
+	TangentCurve = 61775,
+
+	/// <summary>End Point Arc Segment</summary>
+	/// <remarks>Category: Geometry Editing<br/>
+	/// Alias: 4.3.0, geometry editing, circular, create, typing, define, point</remarks>
+	/// <release>4.3.0</release>
+	EndPointArcSegment = 61776,
+
+	/// <summary>Bezier Curve</summary>
+	/// <remarks>Category: Geometry Editing<br/>
+	/// Alias: 4.3.0, geometry editing, nonlinear, create, shape, angle, height</remarks>
+	/// <release>4.3.0</release>
+	BezierCurve = 61777,
+
+	/// <summary>Arrow Curve Tool</summary>
+	/// <remarks>Category: Geometry Editing<br/>
+	/// Alias: 4.3.0, geometry editing, tool, map, points, midpoint, line</remarks>
+	/// <release>4.3.0</release>
+	ArrowCurveTool = 61778,
+
+	/// <summary>Arc Segment</summary>
+	/// <remarks>Category: Geometry Editing<br/>
+	/// Alias: 4.3.0, geometry editing, create, location, point, radius, pass</remarks>
+	/// <release>4.3.0</release>
+	ArcSegment = 61779,
+
+	/// <summary>Dimensions Centered</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.3.0, generic, alignment, placement, position, settings</remarks>
+	/// <release>4.3.0</release>
+	DimensionsCentered = 61780,
+
+	/// <summary>Person Magnifying Glass</summary>
+	/// <remarks>Category: People<br/>
+	/// Alias: 4.3.0, people, launch, preview, information, magnify, user</remarks>
+	/// <release>4.3.0</release>
+	PersonMagnifyingGlass = 61781,
+
+	/// <summary>Arrow Right 10</summary>
+	/// <remarks>Category: Arrows<br/>
+	/// Alias: 4.3.0, arrows, skip, ahead, time, scrub, direction</remarks>
+	/// <release>4.3.0</release>
+	ArrowRight10 = 61782,
+
+	/// <summary>Arrow Left 10</summary>
+	/// <remarks>Category: Arrows<br/>
+	/// Alias: 4.3.0, arrows, video, direction, scrub, time</remarks>
+	/// <release>4.3.0</release>
+	ArrowLeft10 = 61783,
+
+	/// <summary>Magic Wand</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 4.3.0, objects, effects, edit, image</remarks>
+	/// <release>4.3.0</release>
+	MagicWand = 61784,
+
+	/// <summary>Catalog</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.3.0, generic, organize, search, content, filter, folders</remarks>
+	/// <release>4.3.0</release>
+	Catalog = 61785,
+
+	/// <summary>Envelope (Filled)</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 1.5.0, objects, send, email, contact information, filled</remarks>
+	/// <release>1.5</release>
+	EnvelopeFilled = 61786,
+
+	/// <summary>Video Data Store</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 4.3.0, gis, publish, enhancements, manage, retrieve</remarks>
+	/// <release>4.3.0</release>
+	VideoDataStore = 61787,
+
+	/// <summary>Topology</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.3.0, generic, spaces, shape, points, math</remarks>
+	/// <release>4.3.0</release>
+	Topology = 61788,
+
+	/// <summary>Relationship Class</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 4.3.0, gis, store, fields, features, table, geodatabase</remarks>
+	/// <release>4.3.0</release>
+	RelationshipClass = 61789,
+
+	/// <summary>Range Domain</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 4.3.0, gis, values, output, geodatabase, schema</remarks>
+	/// <release>4.3.0</release>
+	RangeDomain = 61790,
+
+	/// <summary>Point Along A Line</summary>
+	/// <remarks>Category: Geometry Editing<br/>
+	/// Alias: 4.3.0, geometry editing, tool, layer, interval, distance</remarks>
+	/// <release>4.3.0</release>
+	PointAlongALine = 61791,
+
+	/// <summary>Parcel Dataset</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.3.0, generic, collection, attributes, information, polygons</remarks>
+	/// <release>4.3.0</release>
+	ParcelDataset = 61792,
+
+	/// <summary>Midpoint</summary>
+	/// <remarks>Category: Geometry Editing<br/>
+	/// Alias: 4.3.0, geometry editing, point, divide, segmemt, equal</remarks>
+	/// <release>4.3.0</release>
+	Midpoint = 61793,
+
+	/// <summary>Line Intersection</summary>
+	/// <remarks>Category: Geometry Editing<br/>
+	/// Alias: 4.3.0, geometry editing, lines, cross, point, single, angles</remarks>
+	/// <release>4.3.0</release>
+	LineIntersection = 61794,
+
+	/// <summary>Line And Circle Intersection</summary>
+	/// <remarks>Category: Geometry Editing<br/>
+	/// Alias: 4.3.0, geometry editing, shape, points, equation, substitue</remarks>
+	/// <release>4.3.0</release>
+	LineAndCircleIntersection = 61795,
+
+	/// <summary>Layer Multipoint</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 4.3.0, layers, data-structures, connect, network, geodatabase</remarks>
+	/// <release>4.3.0</release>
+	LayerMultipoint = 61796,
+
+	/// <summary>Layer Multipatch</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 4.3.0, layers, collection, boundary, object, geodatabase</remarks>
+	/// <release>4.3.0</release>
+	LayerMultipatch = 61797,
+
+	/// <summary>Layer Dimension</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 4.3.0, layers, elements, color, compare, geodatabase,schema</remarks>
+	/// <release>4.3.0</release>
+	LayerDimension = 61798,
+
+	/// <summary>Layer Annotation</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 4.3.0, layers, text, visual, label, geodatabase</remarks>
+	/// <release>4.3.0</release>
+	LayerAnnotation = 61799,
+
+	/// <summary>Intersection</summary>
+	/// <remarks>Category: Geometry Editing<br/>
+	/// Alias: 4.3.0, geometry editing, points, figures, overlap, cross, line</remarks>
+	/// <release>4.3.0</release>
+	Intersection = 61800,
+
+	/// <summary>Geometric Network</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 4.3.0, gis, edges, junctions, points, network</remarks>
+	/// <release>4.3.0</release>
+	GeometricNetwork = 61801,
+
+	/// <summary>Feature Dataset</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 4.3.0, gis, geodatabase, schema, compare, tools</remarks>
+	/// <release>4.3.0</release>
+	FeatureDataset = 61802,
+
+	/// <summary>Coded Value Domain</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 4.3.0, gis, geodatabase, schema, compare, tool</remarks>
+	/// <release>4.3.0</release>
+	CodedValueDomain = 61803,
+
+	/// <summary>Circle Intersection</summary>
+	/// <remarks>Category: Geometry Editing<br/>
+	/// Alias: 4.3.0, geometry editing, calculate, compare, distance, sum, difference</remarks>
+	/// <release>4.3.0</release>
+	CircleIntersection = 61804,
+
+	/// <summary>Autocomplete Polygon</summary>
+	/// <remarks>Category: Geometry Editing<br/>
+	/// Alias: 4.3.0, geometry editing, feature, boundary, shapes, tool</remarks>
+	/// <release>4.3.0</release>
+	AutocompletePolygon = 61805,
+
+	/// <summary>Assign Classification</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.3.0, generic, presentation, top-secret, protection, unclassified</remarks>
+	/// <release>4.3.0</release>
+	AssignClassification = 61806,
+
+	/// <summary>List Check Rtl</summary>
+	/// <remarks>Category: Lists<br/>
+	/// Alias: 4.3.0, lists, points, read, align, tasks</remarks>
+	/// <release>4.3.0</release>
+	ListCheckRtl = 61807,
+
+	/// <summary>List Check All Rtl</summary>
+	/// <remarks>Category: Lists<br/>
+	/// Alias: 4.3.0, lists, points, text, align, read</remarks>
+	/// <release>4.3.0</release>
+	ListCheckAllRtl = 61808,
+
+	/// <summary>Video Metadata</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 4.3.0, objects, technology, workflow, publishing, feature</remarks>
+	/// <release>4.3.0</release>
+	VideoMetadata = 61809,
+
+	/// <summary>Security Camera</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 4.3.0, objects, safety, surveillance, monitor, technology</remarks>
+	/// <release>4.3.0</release>
+	SecurityCamera = 61810,
+
+	/// <summary>Livestream Video Protocols</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 4.3.0, objects, technology, delivery, standardized, rules, data, internet</remarks>
+	/// <release>4.3.0</release>
+	LivestreamVideoProtocols = 61811,
+
+	/// <summary>Camera Sensor</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 4.3.0, objects, technology, workflow, video, feature</remarks>
+	/// <release>4.3.0</release>
+	CameraSensor = 61812,
+
+	/// <summary>Camera Sensor Map</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 4.3.0, objects, technology, workflow, video, publish, layers</remarks>
+	/// <release>4.3.0</release>
+	CameraSensorMap = 61813,
+
+	/// <summary>Camera Sensor Layer</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 4.3.0, objects, technology, workflow, publish, video, feature</remarks>
+	/// <release>4.3.0</release>
+	CameraSensorLayer = 61814,
+
+	/// <summary>Shopping Cart Plus</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 4.3.0, objects, items, store, buggy, trolley, basket, add, video</remarks>
+	/// <release>4.3.0</release>
+	ShoppingCartPlus = 61815,
+
+	/// <summary>Shopping Cart (Filled)</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 1.5.0, objects, purchase, buy, market, items, filled</remarks>
+	/// <release>1.5</release>
+	ShoppingCartFilled = 61816,
+
+	/// <summary>Carousel Frames</summary>
+	/// <remarks>Category: Windows<br/>
+	/// Alias: 4.3.0, windows, storytelling, frames, story-maps</remarks>
+	/// <release>4.3.0</release>
+	CarouselFrames = 61817,
+
+	/// <summary>Layer 3D</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 4.3.0, layers, 3D-object-layer, building-layer, mesh-layer, point-cloud-layer, gaussian-splat-layer, voxel-layer, point-layer</remarks>
+	/// <release>4.3.0</release>
+	Layer3D = 61818,
 
 }

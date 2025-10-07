@@ -20,41 +20,49 @@ namespace ResourceGenerator
 {
     internal static class DesignTokens
     {
+        public enum ColorType
+        {
+            Core,
+            SemanticDark,
+            SemanticLight,
+        }
         public class ColorEntry
         {
             public string DesignTokenId { get; set; }
             public string ResourceId => ColorTokenToString(DesignTokenId);
             public string? Value => Json["value"] is not JObject ? Json["value"].ToString() : null;
-            public string? DarkValue => Json["value"] is JObject ? ((JObject)Json["value"])["dark"].ToString() : null;
-            public string? LightValue => Json["value"] is JObject ? ((JObject)Json["value"])["light"].ToString() : null;
-            public string? Tier => Json["attributes"] is JObject ? ((JObject)((JObject)Json["attributes"])["calcite-schema"])["tier"].ToString() : null;
             public string? System => Json["attributes"] is JObject ? ((JObject)((JObject)Json["attributes"])["calcite-schema"])["system"].ToString() : null;
             public string? Group => Json["attributes"] is JObject ? ((JObject)((JObject)Json["attributes"])["calcite-schema"])["group"].ToString() : null;
             public JObject Json { get; set; }
-            public override string ToString() => $"{ResourceId} = {Value ?? $"{LightValue}/{DarkValue}" }";
+            public ColorType Type { get; set; }
+            public override string ToString() => $"{ResourceId} = {Value}";
 
-            public void UpdateReferenceColors(Dictionary<string, ColorEntry> entries)
+            public void UpdateReferenceColors(Dictionary<string, ColorEntry> entries, Dictionary<string, ColorEntry> coreEntries)
             {
-                if(Value is not null) Json["value"] = GetColor(Value, entries);
-                if (DarkValue is not null) ((JObject)Json["value"])["dark"] = GetColor(DarkValue, entries);
-                if (LightValue is not null) ((JObject)Json["value"])["light"] = GetColor(LightValue, entries);
+                if (Value is not null) Json["value"] = GetColor(Value, entries, coreEntries);
             }
-            private string GetColor(string value, Dictionary<string,ColorEntry> entries)
+            private string GetColor(string value, Dictionary<string,ColorEntry> entries, Dictionary<string, ColorEntry> coreEntries)
             {
                 if (value is not null && value.StartsWith('{') && value.EndsWith('}'))
                 {
                     var key = value.Substring(1, value.Length - 2);
                     if (entries.ContainsKey(key))
                         return entries[key].Value;
+                    if (coreEntries.ContainsKey(key))
+                        return coreEntries[key].Value;
                 }
                 if (value.StartsWith("rgba(") && value.EndsWith(')'))
                 {
                     value = value.Substring(5, value.Length - 6);
                     var parts = value.Split(",");
-                    var color = GetColor(parts[0].Trim(), entries);
+                    var color = GetColor(parts[0].Trim(), entries, coreEntries);
                     var opacity = double.Parse(parts[1].Trim().TrimEnd('}').Split('.').Last());
                     color = $"#{((int)Math.Round(opacity / 100 * 255)).ToString("x2")}{color.Substring(1)}";
                     return color; //TODO: Opacity
+                }
+                if(value.StartsWith('{') && value.EndsWith('}'))
+                {
+                    
                 }
                 return value;
             }
@@ -63,12 +71,13 @@ namespace ResourceGenerator
 
         public static IEnumerable<ColorEntry> GenerateDesignTokens(string designTokensFolder)
         {
-            var coreColorsFile = Path.Combine(designTokensFolder, "src\\core\\color.json");
-            string semanticColorsFile = Path.Combine(designTokensFolder, @"src\semantic\color.json");
+            var coreColorsFile = Path.Combine(designTokensFolder, "src\\tokens\\core\\color.json");
+            string semanticColorsLightFile = Path.Combine(designTokensFolder, @"src\tokens\semantic\color\light.json");
+            string semanticColorsDarkFile = Path.Combine(designTokensFolder, @"src\tokens\semantic\color\dark.json");
 
             // Load all tokens for later lookup
             JObject coretokens = new JObject();
-            foreach (var file in Directory.GetFiles(Path.Combine(designTokensFolder, "src\\core"), "*.json"))
+            foreach (var file in Directory.GetFiles(Path.Combine(designTokensFolder, "src\\tokens\\core"), "*.json"))
             {
                 var json = (JObject)JsonConvert.DeserializeObject(File.ReadAllText(file))!;
                 coretokens.Merge(json);
@@ -99,10 +108,13 @@ namespace ResourceGenerator
             }
 
             // Parse semantic colors
-            var semanticColorsJson = (JObject)JsonConvert.DeserializeObject(File.ReadAllText(semanticColorsFile))!; 
-            var semantic = (JObject)((JObject)semanticColorsJson["semantic"]!)["color"]!;
-            var semanticColors = new Dictionary<string, ColorEntry>();
-            foreach (var item in semantic)
+            var semanticColorsLightJson = (JObject)JsonConvert.DeserializeObject(File.ReadAllText(semanticColorsLightFile))!;
+            var semanticColorsDarkJson = (JObject)JsonConvert.DeserializeObject(File.ReadAllText(semanticColorsDarkFile))!;
+            var semanticLight = (JObject)((JObject)semanticColorsLightJson["semantic"]!)["color"]!;
+            var semanticDark = (JObject)((JObject)semanticColorsDarkJson["semantic"]!)["color"]!;
+            var semanticColorsLight = new Dictionary<string, ColorEntry>();
+            var semanticColorsDark = new Dictionary<string, ColorEntry>();
+            foreach (var item in semanticLight)
             {
                 string group = item.Key;
                 foreach (var member in (JObject)item.Value!)
@@ -112,23 +124,48 @@ namespace ResourceGenerator
                     {
                         if (GetColor((JObject)member.Value, out string color))
                         {
-                            semanticColors.Add($"semantic.color.{group}.{name}", new ColorEntry { DesignTokenId = $"{group}.{name}", Json = (JObject)member.Value });
+                            semanticColorsLight.Add($"semantic.color.{group}.{name}", new ColorEntry { DesignTokenId = $"{group}.{name}", Json = (JObject)member.Value, Type = ColorType.SemanticLight });
                         }
                         else
                             foreach (var entry in (JObject)member.Value)
                             {
                                 if (GetColor((JObject)entry.Value, out color))
-                                    semanticColors.Add($"semantic.color.{group}.{name}.{entry.Key}", new ColorEntry { DesignTokenId = $"{group}.{name}.{entry.Key}", Json = (JObject)entry.Value });
+                                    semanticColorsLight.Add($"semantic.color.{group}.{name}.{entry.Key}", new ColorEntry { DesignTokenId = $"{group}.{name}.{entry.Key}", Json = (JObject)entry.Value, Type = ColorType.SemanticLight });
                             }
                     }
                 }
             }
-            foreach(var item in semanticColors)
+            foreach (var item in semanticDark)
             {
-                item.Value.UpdateReferenceColors(colors);
+                string group = item.Key;
+                foreach (var member in (JObject)item.Value!)
+                {
+                    string name = member.Key;
+                    if (member.Value is JObject)
+                    {
+                        if (GetColor((JObject)member.Value, out string color))
+                        {
+                            semanticColorsDark.Add($"semantic.color.{group}.{name}", new ColorEntry { DesignTokenId = $"{group}.{name}", Json = (JObject)member.Value, Type = ColorType.SemanticDark });
+                        }
+                        else
+                            foreach (var entry in (JObject)member.Value)
+                            {
+                                if (GetColor((JObject)entry.Value, out color))
+                                    semanticColorsDark.Add($"semantic.color.{group}.{name}.{entry.Key}", new ColorEntry { DesignTokenId = $"{group}.{name}.{entry.Key}", Json = (JObject)entry.Value, Type = ColorType.SemanticDark });
+                            }
+                    }
+                }
+            }
+            foreach (var item in semanticColorsLight)
+            {
+                item.Value.UpdateReferenceColors(semanticColorsLight, colors);
+            }
+            foreach (var item in semanticColorsDark)
+            {
+                item.Value.UpdateReferenceColors(semanticColorsDark, colors);
             }
 
-            return colors.Values.Concat(semanticColors.Values);
+            return colors.Values.Concat(semanticColorsLight.Values).Concat(semanticColorsDark.Values);
         }
 
         private static string ColorTokenToString(string color)
