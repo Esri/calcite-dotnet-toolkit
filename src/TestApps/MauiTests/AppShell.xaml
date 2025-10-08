@@ -19,13 +19,8 @@
             </Frame>
             <Label Text="Calcite" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Subtitle" />
             <Label Text="for .NET MAUI"  HorizontalOptions="Center" FontSize="Caption" />
-            <Button Text="Visit GitHub" Clicked="GitHubButton_Clicked" Margin="20" >
+            <Button Text="Visit GitHub" Clicked="GitHubButton_Clicked" Margin="20">
             </Button>
         </StackLayout>
     </Shell.FlyoutContent>
-
-    <Shell.ToolbarItems>
-        <ToolbarItem Text="Toggle Darkmode"
-                     IconImageSource="{calcite:CalciteIconImage Icon=Moon}" Clicked="ToolbarItem_Clicked" />
-    </Shell.ToolbarItems>
 </Shell>
