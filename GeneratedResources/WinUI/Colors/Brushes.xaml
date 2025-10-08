@@ -4,6 +4,7 @@
         <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Colors/Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
             <SolidColorBrush x:Key="CalciteBackgroundBrush" Color="{ThemeResource CalciteBackgroundColor}" />
+            <SolidColorBrush x:Key="CalciteBackgroundNoneBrush" Color="{ThemeResource CalciteBackgroundNoneColor}" />
             <SolidColorBrush x:Key="CalciteBorder1Brush" Color="{ThemeResource CalciteBorder1Color}" />
             <SolidColorBrush x:Key="CalciteBorder2Brush" Color="{ThemeResource CalciteBorder2Color}" />
             <SolidColorBrush x:Key="CalciteBorder3Brush" Color="{ThemeResource CalciteBorder3Color}" />
@@ -14,6 +15,7 @@
             <SolidColorBrush x:Key="CalciteBrandHoverBrush" Color="{ThemeResource CalciteBrandHoverColor}" />
             <SolidColorBrush x:Key="CalciteBrandPressBrush" Color="{ThemeResource CalciteBrandPressColor}" />
             <SolidColorBrush x:Key="CalciteBrandUnderlineBrush" Color="{ThemeResource CalciteBrandUnderlineColor}" />
+            <SolidColorBrush x:Key="CalciteFocusBrush" Color="{ThemeResource CalciteFocusColor}" />
             <SolidColorBrush x:Key="CalciteBackground1Brush" Color="{ThemeResource CalciteBackground1Color}" />
             <SolidColorBrush x:Key="CalciteBackground2Brush" Color="{ThemeResource CalciteBackground2Color}" />
             <SolidColorBrush x:Key="CalciteBackground3Brush" Color="{ThemeResource CalciteBackground3Color}" />
@@ -33,14 +35,18 @@
             <SolidColorBrush x:Key="CalciteStatusWarningBrush" Color="{ThemeResource CalciteStatusWarningColor}" />
             <SolidColorBrush x:Key="CalciteStatusWarningHoverBrush" Color="{ThemeResource CalciteStatusWarningHoverColor}" />
             <SolidColorBrush x:Key="CalciteStatusWarningPressBrush" Color="{ThemeResource CalciteStatusWarningPressColor}" />
+            <SolidColorBrush x:Key="CalciteSurfaceHighlightBrush" Color="{ThemeResource CalciteSurfaceHighlightColor}" />
             <SolidColorBrush x:Key="CalciteText1Brush" Color="{ThemeResource CalciteText1Color}" />
             <SolidColorBrush x:Key="CalciteText2Brush" Color="{ThemeResource CalciteText2Color}" />
             <SolidColorBrush x:Key="CalciteText3Brush" Color="{ThemeResource CalciteText3Color}" />
+            <SolidColorBrush x:Key="CalciteTextHighlightBrush" Color="{ThemeResource CalciteTextHighlightColor}" />
             <SolidColorBrush x:Key="CalciteTextInverseBrush" Color="{ThemeResource CalciteTextInverseColor}" />
             <SolidColorBrush x:Key="CalciteTextLinkBrush" Color="{ThemeResource CalciteTextLinkColor}" />
             <SolidColorBrush x:Key="CalciteTransparentBrush" Color="{ThemeResource CalciteTransparentColor}" />
             <SolidColorBrush x:Key="CalciteTransparentHoverBrush" Color="{ThemeResource CalciteTransparentHoverColor}" />
             <SolidColorBrush x:Key="CalciteTransparentPressBrush" Color="{ThemeResource CalciteTransparentPressColor}" />
+            <SolidColorBrush x:Key="CalciteTransparentInverseHoverBrush" Color="{ThemeResource CalciteTransparentInverseHoverColor}" />
+            <SolidColorBrush x:Key="CalciteTransparentInversePressBrush" Color="{ThemeResource CalciteTransparentInversePressColor}" />
             <SolidColorBrush x:Key="CalciteTransparentScrimBrush" Color="{ThemeResource CalciteTransparentScrimColor}" />
             <SolidColorBrush x:Key="CalciteTransparentTintBrush" Color="{ThemeResource CalciteTransparentTintColor}" />
 </ResourceDictionary>

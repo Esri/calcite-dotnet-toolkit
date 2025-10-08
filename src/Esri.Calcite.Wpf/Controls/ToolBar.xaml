@@ -61,7 +61,7 @@
                                     Margin="8,0,0,0"
                                     VerticalAlignment="Center"
                                     Content="{TemplateBinding Content}"
-                                    TextBlock.FontSize="12"
+                                    TextBlock.FontSize="{x:Static SystemFonts.CaptionFontSize}"
                                     TextBlock.Foreground="{TemplateBinding Foreground}"
                                     TextBlock.LineHeight="16"
                                     TextBlock.LineStackingStrategy="BlockLineHeight" TextBlock.FontWeight="Medium"

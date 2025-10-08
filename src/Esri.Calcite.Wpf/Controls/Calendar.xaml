@@ -56,7 +56,7 @@
                                 HorizontalAlignment="Center"
                                 VerticalAlignment="Center"
                                 FontWeight="Light"
-                                FontSize="12"
+                                FontSize="{x:Static SystemFonts.CaptionFontSize}"
                                 Text="{Binding Day}"
                                 TextAlignment="Center"
                                 TextElement.Foreground="{DynamicResource CalciteText2Brush}" />
@@ -65,7 +65,7 @@
                                 HorizontalAlignment="Center"
                                 VerticalAlignment="Center"
                                 FontWeight="Light"
-                                FontSize="12"
+                                FontSize="{x:Static SystemFonts.CaptionFontSize}"
                                 Opacity="0"
                                 Text="{Binding Day}"
                                 TextAlignment="Center"
@@ -208,7 +208,7 @@
                                 Opacity="0"
                                 TextBlock.TextAlignment="Center"
                                 TextElement.FontWeight="Light"
-                                TextElement.FontSize="12" />
+                                TextElement.FontSize="{x:Static SystemFonts.CaptionFontSize}" />
                             <ContentPresenter
                                 x:Name="SelectedText"
                                 HorizontalAlignment="Center"
@@ -216,7 +216,7 @@
                                 Opacity="0"
                                 TextBlock.TextAlignment="Center"
                                 TextElement.FontWeight="Light"
-                                TextElement.FontSize="12"
+                                TextElement.FontSize="{x:Static SystemFonts.CaptionFontSize}"
                                 TextElement.Foreground="{DynamicResource CalciteForegroundBrandContrastBrush}" />
 
                         </Grid>

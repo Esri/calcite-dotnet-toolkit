@@ -1,8 +1,24 @@
 {
   "profiles": {
-    "IconXamlGenerator": {
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    },
+    "Generate WinUI Resources": {
       "commandName": "Project",
       "commandLineArgs": "..\\\\..\\\\..\\\\..\\\\..\\\\calcite-design-system\\\\packages\\\\calcite-ui-icons\\\\docs\\\\keywords.json ..\\\\..\\\\..\\\\..\\\\..\\\\calcite-design-system\\\\packages\\\\calcite-ui-icons\\\\fantasticonrc.json ..\\\\..\\\\..\\\\..\\\\..\\\\calcite-design-system\\\\packages\\\\calcite-design-tokens ..\\\\..\\\\..\\\\..\\\\..\\\\GeneratedResources\\\\WinUI\\\\ WinUI"
+    },
+    "Generate WPF Resources": {
+      "commandName": "Project",
+      "commandLineArgs": "..\\\\..\\\\..\\\\..\\\\..\\\\calcite-design-system\\\\packages\\\\calcite-ui-icons\\\\docs\\\\keywords.json ..\\\\..\\\\..\\\\..\\\\..\\\\calcite-design-system\\\\packages\\\\calcite-ui-icons\\\\fantasticonrc.json ..\\\\..\\\\..\\\\..\\\\..\\\\calcite-design-system\\\\packages\\\\calcite-design-tokens ..\\\\..\\\\..\\\\..\\\\..\\\\GeneratedResources\\\\WPF\\\\ WPF"
+    },
+    "Generate MAUI Resources": {
+      "commandName": "Project",
+      "commandLineArgs": "..\\\\..\\\\..\\\\..\\\\..\\\\calcite-design-system\\\\packages\\\\calcite-ui-icons\\\\docs\\\\keywords.json ..\\\\..\\\\..\\\\..\\\\..\\\\calcite-design-system\\\\packages\\\\calcite-ui-icons\\\\fantasticonrc.json ..\\\\..\\\\..\\\\..\\\\..\\\\calcite-design-system\\\\packages\\\\calcite-design-tokens ..\\\\..\\\\..\\\\..\\\\..\\\\GeneratedResources\\\\Maui\\\\ Maui"
+    },
+    "Generate UWP Resources": {
+      "commandName": "Project",
+      "commandLineArgs": "..\\\\..\\\\..\\\\..\\\\..\\\\calcite-design-system\\\\packages\\\\calcite-ui-icons\\\\docs\\\\keywords.json ..\\\\..\\\\..\\\\..\\\\..\\\\calcite-design-system\\\\packages\\\\calcite-ui-icons\\\\fantasticonrc.json ..\\\\..\\\\..\\\\..\\\\..\\\\calcite-design-system\\\\packages\\\\calcite-design-tokens ..\\\\..\\\\..\\\\..\\\\..\\\\GeneratedResources\\\\UWP\\\\ UWP"
     }
   }
 }

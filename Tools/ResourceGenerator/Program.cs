@@ -12,6 +12,19 @@ using IconXamlGenerator;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
+const string FileHeader = """
+// COPYRIGHT © 2025 Esri
+// All rights reserved under the copyright laws of the United States and applicable international laws, treaties, and conventions.
+// This material is licensed for use under the Esri Master License Agreement (MLA), and is bound by the terms of that agreement.
+// You may redistribute and use this code without modification, provided you adhere to the terms of the MLA and include this copyright notice.
+//
+// See use restrictions at http://www.esri.com/legal/pdfs/mla_e204_e300/english
+//
+// For additional information, contact: Environmental Systems Research Institute, Inc.
+// Attn: Contracts and Legal Services Department 380 New York Street Redlands, California, USA 92373 USA. email: contracts@esri.com
+
+""";
+
 var pathToJson = args[0];
 var pathToGlyphList = args[1];
 var designTokens = args[2];
@@ -59,17 +72,17 @@ void GenerateColors(string pathToDesignTokensRepo, string pathToOutput, string f
         return $"Calcite{name}{resourceType}";
     };
 
-    foreach (var color in colors.OrderBy(c => c.Tier + c.DesignTokenId))
+    foreach (var color in colors.OrderBy(c => c.DesignTokenId).Where(c=>c.Type == ResourceGenerator.DesignTokens.ColorType.Core).Concat(colors.OrderBy(c => c.DesignTokenId + c.Type.ToString()).Where(c => c.Type != ResourceGenerator.DesignTokens.ColorType.Core)))
     {
-        if (color.DarkValue is not null)
+        if (color.Type == ResourceGenerator.DesignTokens.ColorType.SemanticDark)
         {
-            darkColors.Add(color.ResourceId, color.DarkValue);
-            xamlOutput.WriteLine($"    <Color x:Key=\"{toResourceName(color.ResourceId, "DarkColor")}\">{color.DarkValue}</Color>");
+            darkColors.Add(color.ResourceId, color.Value);
+            xamlOutput.WriteLine($"    <Color x:Key=\"{toResourceName(color.ResourceId, "DarkColor")}\">{color.Value}</Color>");
         }
-        if (color.LightValue is not null)
+        else if (color.Type == ResourceGenerator.DesignTokens.ColorType.SemanticLight)
         {
-            lightColors.Add(color.ResourceId, color.LightValue);
-            xamlOutput.WriteLine($"    <Color x:Key=\"{toResourceName(color.ResourceId, "LightColor")}\">{color.LightValue}</Color>");
+            lightColors.Add(color.ResourceId, color.Value);
+            xamlOutput.WriteLine($"    <Color x:Key=\"{toResourceName(color.ResourceId, "LightColor")}\">{color.Value}</Color>");
         }
         else
         {
@@ -222,6 +235,7 @@ void GenerateIconsXaml(IList<IconEntry> icons, string filename, string format)
 void GenerateCalciteIconEnum(IList<IconEntry> icons, string filename, string _namespace)
 {
     using StreamWriter iconsEnumOutput = new StreamWriter(filename);
+    iconsEnumOutput.WriteLine(FileHeader);
     iconsEnumOutput.WriteLine($"namespace {_namespace};");
     iconsEnumOutput.WriteLine();
     iconsEnumOutput.WriteLine("/// <summary>A collection of Calcite UI Icons.</summary>");
@@ -250,7 +264,7 @@ void GenerateCalciteIconEnum(IList<IconEntry> icons, string filename, string _na
 static void GenerateCalciteHelper(IList<IconEntry> icons, string filename, string _namespace)
 {
     using StreamWriter iconHelpersOutput = new StreamWriter(filename);
-
+    iconHelpersOutput.WriteLine(FileHeader);
     iconHelpersOutput.WriteLine($"namespace {_namespace};");
     iconHelpersOutput.WriteLine();
     iconHelpersOutput.WriteLine("internal static class IconHelpers");
