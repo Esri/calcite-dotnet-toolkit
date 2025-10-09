@@ -514,7 +514,7 @@
 
     <Style TargetType="Shell" ApplyToDerivedTypes="True" x:Key="CalciteShellStyle">
         <Setter Property="Shell.BackgroundColor" Value="{AppThemeBinding Light={x:DynamicResource CalciteBrandLightColor}, Dark={x:DynamicResource CalciteBrandDarkColor}}" />
-        <Setter Property="Shell.ForegroundColor" Value="{AppThemeBinding Light={x:DynamicResource CalciteBrandLightColor}, Dark={x:DynamicResource CalciteBrandDarkColor}}" />
+        <Setter Property="Shell.ForegroundColor" Value="{OnPlatform Default=White, WinUI={AppThemeBinding Light={StaticResource CalciteTextInverseDarkColor}, Dark={StaticResource CalciteBackgroundLightColor}}}" />
         <Setter Property="Shell.TitleColor" Value="White" />
         <!--<Setter Property="Shell.DisabledColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray950}}" />-->
         <Setter Property="Shell.UnselectedColor" Value="{AppThemeBinding Light={StaticResource CalciteText3LightColor}, Dark={StaticResource CalciteText2DarkColor}}" />
