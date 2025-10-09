@@ -13,15 +13,16 @@
         <ShellContent Title="Brushes" ContentTemplate="{DataTemplate local:BrushesPage}" Route="Brush" />
     </FlyoutItem>
     <Shell.FlyoutContent>
-        <StackLayout HorizontalOptions="Fill" Padding="20" WidthRequest="320">
-            <Frame CornerRadius="25" Padding="0" WidthRequest="50" HeightRequest="50" Background="{StaticResource CalciteBrandLightColor}">
-                <Image Source="{calcite:CalciteIconImage Icon=BrushTip, Size=30, Scale=Large,Color=White}" WidthRequest="30" />
-            </Frame>
-            <Label Text="Calcite" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Subtitle" />
-            <Label Text="for .NET MAUI"  HorizontalOptions="Center" FontSize="Caption" />
-            <Button Text="Visit GitHub" Clicked="GitHubButton_Clicked" Margin="20" >
-            </Button>
-        </StackLayout>
+        <ContentView>
+                <StackLayout HorizontalOptions="Fill" Padding="20" WidthRequest="320">
+                <Frame CornerRadius="25" Padding="0" WidthRequest="50" HeightRequest="50" Background="{StaticResource CalciteBrandLightColor}">
+                    <Image Source="{calcite:CalciteIconImage Icon=BrushTip, Size=30, Scale=Large,Color=White}" WidthRequest="30" />
+                </Frame>
+                <Label Text="Calcite" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Subtitle" />
+                    <Label Text="for .NET MAUI"  HorizontalOptions="Center" FontSize="Caption" />
+                    <Button Text="Visit GitHub" Clicked="GitHubButton_Clicked" Margin="20" />
+                </StackLayout>
+            </ContentView>
     </Shell.FlyoutContent>
 
     <Shell.ToolbarItems>
