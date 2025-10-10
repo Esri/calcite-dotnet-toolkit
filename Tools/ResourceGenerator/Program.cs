@@ -134,12 +134,15 @@ void GenerateColors(string pathToDesignTokensRepo, string pathToOutput, string f
     // Brushes
     using var brushOutput = new StreamWriter(Path.Combine(pathToOutput, "Brushes.xaml"));
     brushOutput.WriteLine(xamlHeader);
-    brushOutput.WriteLine("    <ResourceDictionary.MergedDictionaries>");
-    if (format == "WinUI" || format == "UWP")
-        brushOutput.WriteLine($"        <ResourceDictionary Source=\"ms-appx:///Esri.Calcite.{format}/Colors/Colors.xaml\" />");
-    else if (format == "Maui")
-        brushOutput.WriteLine($"        <ResourceDictionary Source=\"Colors.xaml\" />");
-    brushOutput.WriteLine("    </ResourceDictionary.MergedDictionaries>");
+    if (format != "WinUI")
+    {
+        brushOutput.WriteLine("    <ResourceDictionary.MergedDictionaries>");
+        if (format == "UWP")
+            brushOutput.WriteLine($"        <ResourceDictionary Source=\"ms-appx:///Esri.Calcite.{format}/Colors/Colors.xaml\" />");
+        else if (format == "Maui")
+            brushOutput.WriteLine($"        <ResourceDictionary Source=\"Colors.xaml\" />");
+        brushOutput.WriteLine("    </ResourceDictionary.MergedDictionaries>");
+    }
     foreach (var dark in darkColors)
     {
         var name = dark.Key;
