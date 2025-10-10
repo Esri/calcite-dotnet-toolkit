@@ -111,6 +111,24 @@ List of default control styles. These styles are applied implicitly unless impli
 | `CalciteActionPadToolBarStyle` | `Toolbar` | Same as the default toolbar but with a drop shadow to place on top of other view areas  | ![image](https://github.com/user-attachments/assets/da65ce4f-671d-46e7-9dcc-99a025c9b412) |
 | `CalciteVerticalToolBarStyle` | `Toolbar` |   |   |
 
+### Changing the brand colors
+If you want to change the blue brand colors to match your own branding, redefine the following `Color` brushes after declaring the `CalciteResources` in `App.xaml`:
+
+```xml
+<Application.Resources>
+    <ResourceDictionary>
+        <ResourceDictionary.MergedDictionaries>
+            <CalciteResources xmlns="http://schemas.esri.com/calcite/2024" Theme="Light" />
+        </ResourceDictionary.MergedDictionaries>
+        <!-- Overriding brand brushes: -->
+        <Color x:Key="CalciteBrandColor">#7938B6</Color>
+        <Color x:Key="CalciteBrandHoverColor">#652E98</Color>
+        <Color x:Key="CalciteBrandPressColor">#51247A</Color>
+        <Color x:Key="CalciteBrandUnderlineColor">#7938B6</Color>
+    </ResourceDictionary>
+</Application.Resources>
+```
+
 ### Known Issues
 
 When using dark mode, the background of the Window instances will not change due to [this WPF bug](https://github.com/dotnet/wpf/issues/10461) causing the default Window style to not get applied. To work around this issue, explicitly set the Window style on your Window:

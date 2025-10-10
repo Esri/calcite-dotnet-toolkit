@@ -100,3 +100,36 @@ The markup extensions `CalciteIconSourceElementExtension` and `CalciteIconSource
 
 - Buttons: `CalcitePrimaryButtonStyle`, `CalciteSecondaryButtonStyle`, `CalciteDangerButtonStyle`, `CalciteDangerSecondaryButtonStyle`
 - TextBox: `CalciteTextBoxStyle`
+
+
+### Changing the brand colors
+If you want to change the blue brand colors to match your own branding, redefine the following `Color` brushes below the `XamlControlsResources` in `App.xaml`:
+
+```xml
+<Application.Resources>
+    <ResourceDictionary>
+        <ResourceDictionary.MergedDictionaries>
+            <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" >
+                <XamlControlsResources.MergedDictionaries>
+                    <CalciteResources xmlns="using:Esri.Calcite.WinUI"  />
+                </XamlControlsResources.MergedDictionaries>
+            </XamlControlsResources>
+            <ResourceDictionary>
+                <!-- Override brand colors -->
+                <ResourceDictionary.ThemeDictionaries>
+                    <ResourceDictionary x:Key="Default">
+                        <Color x:Key="CalciteBrandColor" >#8F53CA</Color>
+                        <Color x:Key="CalciteBrandHoverColor" >#7938B6</Color>
+                        <Color x:Key="CalciteBrandPressColor" >#652E98</Color>
+                    </ResourceDictionary>
+                    <ResourceDictionary x:Key="Dark">
+                        <Color x:Key="CalciteBrandColor" >#7938B6</Color>
+                        <Color x:Key="CalciteBrandHoverColor" >#652E98</Color>
+                        <Color x:Key="CalciteBrandPressColor" >#51247A</Color>
+                    </ResourceDictionary>
+                </ResourceDictionary.ThemeDictionaries>
+            </ResourceDictionary>
+        </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+</Application.Resources>
+```

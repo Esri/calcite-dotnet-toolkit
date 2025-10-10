@@ -101,3 +101,27 @@ For a full list of Glyph Resource IDs refer to the sample apps and the [Calcite-
 - Shell: `CalciteShellStyle`
 - NavigationPage: `CalciteNavigationPageStyle`
 - TabbedPage: `CalciteTabbedPageStyle`
+
+### Changing the brand colors
+If you want to change the blue brand colors to match your own branding, redefine the following `Color` brushes after declaring the `CalciteResources` in `App.xaml`:
+
+```xml
+<Application.Resources>
+    <ResourceDictionary>
+        <ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+            <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            <CalciteResources xmlns="http://schemas.esri.com/calcite/2024"/>
+            <!-- Override brand color: -->
+            <ResourceDictionary>
+                <Color x:Key="CalciteBrandDarkColor">#8F53CA</Color>
+                <Color x:Key="CalciteBrandLightColor">#7938B6</Color>
+                <Color x:Key="CalciteBrandHoverDarkColor">#7938B6</Color>
+                <Color x:Key="CalciteBrandHoverLightColor">#652E98</Color>
+                <Color x:Key="CalciteBrandPressDarkColor">#652E98</Color>
+                <Color x:Key="CalciteBrandPressLightColor">#51247A</Color>
+            </ResourceDictionary>
+        </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+</Application.Resources>
+```
