@@ -1,6 +1,10 @@
 ﻿<ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Styles/Fonts.xaml" />
+        <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Colors/Brushes.xaml" />
+    </ResourceDictionary.MergedDictionaries>
 
     <StaticResource x:Key="TextControlBorderBrush" ResourceKey="CalciteBorder2Brush" />
     <StaticResource x:Key="TextControlBackground" ResourceKey="CalciteBackground1Brush" />

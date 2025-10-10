@@ -3,6 +3,10 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:cal="using:Esri.Calcite.WinUI"
     >
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Styles/Fonts.xaml" />
+        <ResourceDictionary Source="ms-appx:///Esri.Calcite.WinUI/Styles/Brushes.xaml" />
+    </ResourceDictionary.MergedDictionaries>
 
     <StaticResource x:Key="ButtonBackground" ResourceKey="CalciteBackground3Brush" />
     <StaticResource x:Key="ButtonBackgroundPointerOver" ResourceKey="CalciteBackground2Brush" />
