@@ -23,8 +23,7 @@
                 </Border>
                 <Label Text="Calcite" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Subtitle" />
                 <Label Text="for .NET MAUI"  HorizontalOptions="Center" FontSize="Caption" />
-                <Button Text="Visit GitHub" Clicked="GitHubButton_Clicked" Margin="20">
-                </Button>
+                <Button Text="Visit GitHub" Clicked="GitHubButton_Clicked" Margin="20" />
             </StackLayout>
         </ContentView>
     </Shell.FlyoutContent>
