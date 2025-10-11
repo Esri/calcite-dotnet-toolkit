@@ -14,15 +14,18 @@
     </FlyoutItem>
     <Shell.FlyoutContent>
         <ContentView>
-                <StackLayout HorizontalOptions="Fill" Padding="20" WidthRequest="320">
-                <Frame CornerRadius="25" Padding="0" WidthRequest="50" HeightRequest="50" Background="{StaticResource CalciteBrandLightColor}">
+            <StackLayout HorizontalOptions="Fill" Padding="20" WidthRequest="320">
+                <Border Padding="0" WidthRequest="50" HeightRequest="50" Background="{StaticResource CalciteBrandLightColor}">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="25" />
+                    </Border.StrokeShape>
                     <Image Source="{calcite:CalciteIconImage Icon=BrushTip, Size=30, Scale=Large,Color=White}" WidthRequest="30" />
-                </Frame>
+                </Border>
                 <Label Text="Calcite" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Subtitle" />
-                    <Label Text="for .NET MAUI"  HorizontalOptions="Center" FontSize="Caption" />
-                    <Button Text="Visit GitHub" Clicked="GitHubButton_Clicked" Margin="20" />
-                </StackLayout>
-            </ContentView>
+                <Label Text="for .NET MAUI"  HorizontalOptions="Center" FontSize="Caption" />
+                <Button Text="Visit GitHub" Clicked="GitHubButton_Clicked" Margin="20" />
+            </StackLayout>
+        </ContentView>
     </Shell.FlyoutContent>
 
     <Shell.ToolbarItems>
