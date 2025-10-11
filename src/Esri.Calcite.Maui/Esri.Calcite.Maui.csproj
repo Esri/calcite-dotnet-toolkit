@@ -26,7 +26,11 @@
             <Link>Resources\Styles\%(Filename).xaml</Link>
         </MauiXaml>
     </ItemGroup>
-
+	
+	<ItemGroup>
+		<None Include="build\net9.0\Esri.Calcite.Maui.targets" Pack="True" PackagePath="build\net9.0\;buildTransitive\net9.0\" />
+	</ItemGroup>
+	
     <ItemGroup>
         <PackageReference Include="Microsoft.Maui.Controls" Version="9.0.0" Condition="$(TargetFramework.StartsWith('net9.0'))" />
     </ItemGroup>
