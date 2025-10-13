@@ -26,7 +26,4 @@
         <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="TextWrapping" Value="Wrap" />
     </Style>
-    
-    <Style TargetType="TextBox" BasedOn="{StaticResource CalciteTextBoxStyle}" />
-
 </ResourceDictionary>

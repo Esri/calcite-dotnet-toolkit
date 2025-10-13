@@ -15,7 +15,8 @@
                         <CalciteResources xmlns="using:Esri.Calcite.WinUI" />
                     </XamlControlsResources.MergedDictionaries>
                 </XamlControlsResources>
-                
+                <CalciteOverrides xmlns="using:Esri.Calcite.WinUI" />
+
                 <!-- Merge in XAML resource overrides -->
                 <ResourceDictionary>
                     <!-- Override brand colors -->

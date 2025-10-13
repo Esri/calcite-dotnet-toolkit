@@ -2,8 +2,9 @@
 
 ## Usage<a name="usage" />
 
-Add the CalciteResources ResourceDictionary to your App.xaml Merged Directionary resources inside the default `XamlControlsResources` to get access
-to default styles and resources. Dark/Light mode is automatically handled and adjust to system or app settings.
+Add the `CalciteResources` ResourceDictionary to your App.xaml MergedDictionary resources inside the default `XamlControlsResources` to get access
+to default styles and resources. Dark/Light mode is automatically handled and adjust to system or app settings. Additionally add the `CalciteOverrides`
+ResourceDictionary outside of `XamlControlResources` to apply implicit Calcite styles to relevant controls.
 
 ```xml
     <ResourceDictionary.MergedDictionaries>
@@ -12,10 +13,11 @@ to default styles and resources. Dark/Light mode is automatically handled and ad
                 <CalciteResources xmlns="using:Esri.Calcite.WinUI" />
             </XamlControlsResources.MergedDictionaries>
         </XamlControlsResources>
+        <CalciteOverrides xmlns="using:Esri.Calcite.WinUI" />
     </ResourceDictionary.MergedDictionaries>
 ```
 
-If you don't want the default implicit Calcite styles, place the `CalciteResources` entry in App.xaml outside and before the `XamlControlsResources` entry.
+If you don't want the default implicit Calcite styles, remove `CalciteOverrides`.
 
 ## Using Brush resources
 

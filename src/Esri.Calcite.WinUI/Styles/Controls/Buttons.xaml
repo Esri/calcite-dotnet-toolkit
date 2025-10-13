@@ -118,7 +118,4 @@
             </Setter.Value>
         </Setter>
     </Style>
-
-    <!-- Implicit style -->
-    <Style TargetType="Button" BasedOn="{StaticResource CalciteButtonStyle}" />
 </ResourceDictionary>
