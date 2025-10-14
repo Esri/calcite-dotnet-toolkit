@@ -82,7 +82,7 @@
                             <Setter TargetName="bg" Property="Padding" Value="0" />
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="False">
-                            <Setter TargetName="bg" Property="Opacity" Value="0.8" />
+                            <Setter TargetName="bg" Property="Opacity" Value="0.5" />
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="True">
                             <Setter TargetName="bg" Property="Opacity" Value="1" />

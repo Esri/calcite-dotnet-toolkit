@@ -1,1 +1,4 @@
-﻿<Button xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">Test Passed</Button>
+﻿<StackPanel xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <Button xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Margin="0,0,0,5">Default Enabled</Button>
+    <Button xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" IsEnabled="False">Default Disabled</Button>
+</StackPanel>
