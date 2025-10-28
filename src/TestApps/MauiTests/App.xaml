@@ -12,12 +12,12 @@
                 <CalciteResources xmlns="http://schemas.esri.com/calcite/2024"/>
                 <!-- Override brand color: -->
                 <!--<ResourceDictionary>
-                    <Color x:Key="CalciteUIBrandDarkColor">Green</Color>
-                    <Color x:Key="CalciteUIBrandLightColor">DarkGreen</Color>
-                    <Color x:Key="CalciteUIBrandHoverDarkColor">Yellow</Color>
-                    <Color x:Key="CalciteUIBrandHoverLightColor">Orange</Color>
-                    <Color x:Key="CalciteUIBrandPressDarkColor">Red</Color>
-                    <Color x:Key="CalciteUIBrandPressLightColor">DarkRed</Color>
+                    <Color x:Key="CalciteBrandDarkColor">Green</Color>
+                    <Color x:Key="CalciteBrandLightColor">DarkGreen</Color>
+                    <Color x:Key="CalciteBrandHoverDarkColor">Yellow</Color>
+                    <Color x:Key="CalciteBrandHoverLightColor">Orange</Color>
+                    <Color x:Key="CalciteBrandPressDarkColor">Red</Color>
+                    <Color x:Key="CalciteBrandPressLightColor">DarkRed</Color>
                 </ResourceDictionary>-->
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
