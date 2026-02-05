@@ -69,12 +69,12 @@
                     </VisualState>
                     <VisualState Name="PointerOver">
                         <VisualState.Setters>
-                            <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={x:DynamicResource CalciteBrandHoverDarkColor}, Light={x:DynamicResource CalciteBrandHoverLightColor}}" />
+                            <Setter Property="Background" Value="{AppThemeBinding Dark={x:DynamicResource CalciteBrandHoverDarkColor}, Light={x:DynamicResource CalciteBrandHoverLightColor}}" />
                         </VisualState.Setters>
                     </VisualState>
                     <VisualState Name="Pressed">
                         <VisualState.Setters>
-                            <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={x:DynamicResource CalciteBrandPressDarkColor}, Light={x:DynamicResource CalciteBrandPressLightColor}}" />
+                            <Setter Property="Background" Value="{AppThemeBinding Dark={x:DynamicResource CalciteBrandPressDarkColor}, Light={x:DynamicResource CalciteBrandPressLightColor}}" />
                         </VisualState.Setters>
                     </VisualState>
                     <VisualState Name="Disabled">
@@ -101,12 +101,12 @@
                     </VisualState>
                     <VisualState Name="PointerOver">
                         <VisualState.Setters>
-                            <Setter Property="Background" Value="{StaticResource CalciteBackground2Brush}" />
+                            <Setter Property="Background" Value="{AppThemeBinding Dark={StaticResource CalciteBackground2DarkColor}, Light={StaticResource CalciteBackground2LightColor}}" />
                         </VisualState.Setters>
                     </VisualState>
                     <VisualState Name="Pressed">
                         <VisualState.Setters>
-                            <Setter Property="Background" Value="{StaticResource CalciteBackground3Brush}" />
+                            <Setter Property="Background" Value="{AppThemeBinding Dark={StaticResource CalciteBackground3DarkColor}, Light={StaticResource CalciteBackground3LightColor}}" />
                         </VisualState.Setters>
                     </VisualState>
                     <VisualState Name="Disabled">
@@ -134,12 +134,12 @@
                     </VisualState>
                     <VisualState Name="PointerOver">
                         <VisualState.Setters>
-                            <Setter Property="Background" Value="{StaticResource CalciteStatusDangerHoverBrush}" />
+                            <Setter Property="Background" Value="{AppThemeBinding Dark={StaticResource CalciteStatusDangerHoverDarkColor}, Light={StaticResource CalciteStatusDangerHoverLightColor}}" />
                         </VisualState.Setters>
                     </VisualState>
                     <VisualState Name="Pressed">
                         <VisualState.Setters>
-                            <Setter Property="Background" Value="{StaticResource CalciteStatusDangerPressBrush}" />
+                            <Setter Property="Background" Value="{AppThemeBinding Dark={StaticResource CalciteStatusDangerPressDarkColor}, Light={StaticResource CalciteStatusDangerPressLightColor}}" />
                         </VisualState.Setters>
                     </VisualState>
                     <VisualState Name="Disabled">
@@ -167,12 +167,12 @@
                     </VisualState>
                     <VisualState Name="PointerOver">
                         <VisualState.Setters>
-                            <Setter Property="Background" Value="{StaticResource CalciteBackground2Brush}" />
+                            <Setter Property="Background" Value="{AppThemeBinding Dark={StaticResource CalciteBackground2DarkColor}, Light={StaticResource CalciteBackground2LightColor}}" />
                         </VisualState.Setters>
                     </VisualState>
                     <VisualState Name="Pressed">
                         <VisualState.Setters>
-                            <Setter Property="Background" Value="{StaticResource CalciteBackground3Brush}" />
+                            <Setter Property="Background" Value="{AppThemeBinding Dark={StaticResource CalciteBackground3DarkColor}, Light={StaticResource CalciteBackground3LightColor}}" />
                         </VisualState.Setters>
                     </VisualState>
                     <VisualState Name="Disabled">
