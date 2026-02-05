@@ -36,6 +36,10 @@
     <SolidColorBrush x:Key="CalciteStatusWarningBrush" Color="{DynamicResource CalciteStatusWarningColor}" />
     <SolidColorBrush x:Key="CalciteStatusWarningHoverBrush" Color="{DynamicResource CalciteStatusWarningHoverColor}" />
     <SolidColorBrush x:Key="CalciteStatusWarningPressBrush" Color="{DynamicResource CalciteStatusWarningPressColor}" />
+    <SolidColorBrush x:Key="CalciteSurface1Brush" Color="{DynamicResource CalciteSurface1Color}" />
+    <SolidColorBrush x:Key="CalciteSurface2Brush" Color="{DynamicResource CalciteSurface2Color}" />
+    <SolidColorBrush x:Key="CalciteSurface3Brush" Color="{DynamicResource CalciteSurface3Color}" />
+    <SolidColorBrush x:Key="CalciteSurface4Brush" Color="{DynamicResource CalciteSurface4Color}" />
     <SolidColorBrush x:Key="CalciteSurfaceHighlightBrush" Color="{DynamicResource CalciteSurfaceHighlightColor}" />
     <SolidColorBrush x:Key="CalciteText1Brush" Color="{DynamicResource CalciteText1Color}" />
     <SolidColorBrush x:Key="CalciteText2Brush" Color="{DynamicResource CalciteText2Color}" />
@@ -45,9 +49,9 @@
     <SolidColorBrush x:Key="CalciteTextLinkBrush" Color="{DynamicResource CalciteTextLinkColor}" />
     <SolidColorBrush x:Key="CalciteTransparentBrush" Color="{DynamicResource CalciteTransparentColor}" />
     <SolidColorBrush x:Key="CalciteTransparentHoverBrush" Color="{DynamicResource CalciteTransparentHoverColor}" />
-    <SolidColorBrush x:Key="CalciteTransparentPressBrush" Color="{DynamicResource CalciteTransparentPressColor}" />
     <SolidColorBrush x:Key="CalciteTransparentInverseHoverBrush" Color="{DynamicResource CalciteTransparentInverseHoverColor}" />
     <SolidColorBrush x:Key="CalciteTransparentInversePressBrush" Color="{DynamicResource CalciteTransparentInversePressColor}" />
+    <SolidColorBrush x:Key="CalciteTransparentPressBrush" Color="{DynamicResource CalciteTransparentPressColor}" />
     <SolidColorBrush x:Key="CalciteTransparentScrimBrush" Color="{DynamicResource CalciteTransparentScrimColor}" />
     <SolidColorBrush x:Key="CalciteTransparentTintBrush" Color="{DynamicResource CalciteTransparentTintColor}" />
 </ResourceDictionary>

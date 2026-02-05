@@ -35,6 +35,10 @@
             <SolidColorBrush x:Key="CalciteStatusWarningBrush" Color="{ThemeResource CalciteStatusWarningColor}" />
             <SolidColorBrush x:Key="CalciteStatusWarningHoverBrush" Color="{ThemeResource CalciteStatusWarningHoverColor}" />
             <SolidColorBrush x:Key="CalciteStatusWarningPressBrush" Color="{ThemeResource CalciteStatusWarningPressColor}" />
+            <SolidColorBrush x:Key="CalciteSurface1Brush" Color="{ThemeResource CalciteSurface1Color}" />
+            <SolidColorBrush x:Key="CalciteSurface2Brush" Color="{ThemeResource CalciteSurface2Color}" />
+            <SolidColorBrush x:Key="CalciteSurface3Brush" Color="{ThemeResource CalciteSurface3Color}" />
+            <SolidColorBrush x:Key="CalciteSurface4Brush" Color="{ThemeResource CalciteSurface4Color}" />
             <SolidColorBrush x:Key="CalciteSurfaceHighlightBrush" Color="{ThemeResource CalciteSurfaceHighlightColor}" />
             <SolidColorBrush x:Key="CalciteText1Brush" Color="{ThemeResource CalciteText1Color}" />
             <SolidColorBrush x:Key="CalciteText2Brush" Color="{ThemeResource CalciteText2Color}" />
@@ -44,9 +48,9 @@
             <SolidColorBrush x:Key="CalciteTextLinkBrush" Color="{ThemeResource CalciteTextLinkColor}" />
             <SolidColorBrush x:Key="CalciteTransparentBrush" Color="{ThemeResource CalciteTransparentColor}" />
             <SolidColorBrush x:Key="CalciteTransparentHoverBrush" Color="{ThemeResource CalciteTransparentHoverColor}" />
-            <SolidColorBrush x:Key="CalciteTransparentPressBrush" Color="{ThemeResource CalciteTransparentPressColor}" />
             <SolidColorBrush x:Key="CalciteTransparentInverseHoverBrush" Color="{ThemeResource CalciteTransparentInverseHoverColor}" />
             <SolidColorBrush x:Key="CalciteTransparentInversePressBrush" Color="{ThemeResource CalciteTransparentInversePressColor}" />
+            <SolidColorBrush x:Key="CalciteTransparentPressBrush" Color="{ThemeResource CalciteTransparentPressColor}" />
             <SolidColorBrush x:Key="CalciteTransparentScrimBrush" Color="{ThemeResource CalciteTransparentScrimColor}" />
             <SolidColorBrush x:Key="CalciteTransparentTintBrush" Color="{ThemeResource CalciteTransparentTintColor}" />
 </ResourceDictionary>

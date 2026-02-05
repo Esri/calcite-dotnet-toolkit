@@ -12,7 +12,7 @@
     </PropertyGroup>
 
     <ItemGroup>    
-      <None Include="$(MSBuildThisFileDirectory)..\..\fonts\$(CalciteUIIconsVersion)\package\fonts\*.ttf" Pack="True" PackagePath="Assets/Fonts/" Link="Assets\Fonts\%(Filename)%(Extension)" />
+      <None Include="$(MSBuildThisFileDirectory)..\..\fonts\$(CalciteUIIconsVersion)\package\fonts\*.ttf" Pack="True" PackagePath="Resources/Fonts/" Link="Resources\Fonts\%(Filename)%(Extension)" />
       <Compile Include="..\..\GeneratedResources\Maui\*.cs" Link="GeneratedResources\%(RecursiveDir)%(Filename)%(Extension)" />
       <None Include="README.txt" Pack="True" PackagePath="\" />
       <None Include="..\..\docs\maui.md" Link="README.md" Pack="True" PackagePath="\README.md" />
