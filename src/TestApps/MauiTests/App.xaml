@@ -18,6 +18,9 @@
                     <Color x:Key="CalciteBrandHoverLightColor">Orange</Color>
                     <Color x:Key="CalciteBrandPressDarkColor">Red</Color>
                     <Color x:Key="CalciteBrandPressLightColor">DarkRed</Color>
+                    <SolidColorBrush x:Key="CalciteBrandBrush" Color="{AppThemeBinding Dark={StaticResource CalciteBrandDarkColor}, Light={StaticResource CalciteBrandLightColor}}" />
+                    <SolidColorBrush x:Key="CalciteBrandHoverBrush" Color="{AppThemeBinding Dark={StaticResource CalciteBrandHoverDarkColor}, Light={StaticResource CalciteBrandHoverLightColor}}" />
+                    <SolidColorBrush x:Key="CalciteBrandPressBrush" Color="{AppThemeBinding Dark={StaticResource CalciteBrandPressDarkColor}, Light={StaticResource CalciteBrandPressLightColor}}" />
                 </ResourceDictionary>-->
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
