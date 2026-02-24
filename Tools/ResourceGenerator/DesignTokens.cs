@@ -48,8 +48,17 @@ namespace ResourceGenerator
                     var key = value.Substring(1, value.Length - 2);
                     if (entries.ContainsKey(key))
                         return entries[key].Value;
-                    if (coreEntries.ContainsKey(key))
+                    else if (coreEntries.ContainsKey(key))
                         return coreEntries[key].Value;
+                    else if (entries.ContainsKey("semantic." + key))
+                        return entries["semantic." + key].Value;
+                    else if (coreEntries.ContainsKey("core." + key))
+                        return coreEntries["core." + key].Value;
+                    else
+                    {
+                        Console.WriteLine($"Unable to resolve reference color: {key}");
+                        return value;
+                    }
                 }
                 if (value.StartsWith("rgba(") && value.EndsWith(')'))
                 {
@@ -110,8 +119,8 @@ namespace ResourceGenerator
             // Parse semantic colors
             var semanticColorsLightJson = (JObject)JsonConvert.DeserializeObject(File.ReadAllText(semanticColorsLightFile))!;
             var semanticColorsDarkJson = (JObject)JsonConvert.DeserializeObject(File.ReadAllText(semanticColorsDarkFile))!;
-            var semanticLight = (JObject)((JObject)semanticColorsLightJson["semantic"]!)["color"]!;
-            var semanticDark = (JObject)((JObject)semanticColorsDarkJson["semantic"]!)["color"]!;
+            var semanticLight = (JObject)semanticColorsLightJson["color"]!;
+            var semanticDark = (JObject)semanticColorsDarkJson["color"]!;
             var semanticColorsLight = new Dictionary<string, ColorEntry>();
             var semanticColorsDark = new Dictionary<string, ColorEntry>();
             foreach (var item in semanticLight)

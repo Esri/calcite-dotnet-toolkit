@@ -57,7 +57,7 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\..\Esri.Calcite.Maui\Esri.Calcite.Maui.csproj" />
         <!-- This is normally done by the nuget.package build.targets file, but instead we simulate it here so project references work '-->
-        <MauiFont Include="$(MSBuildThisFileDirectory)..\..\..\fonts\$(CalciteUIIconsVersion)\package\fonts\*.ttf" Link="Assets\Fonts\%(Filename)%(Extension)" />
+        <MauiFont Include="$(MSBuildThisFileDirectory)..\..\..\fonts\$(CalciteUIIconsVersion)\package\fonts\*.ttf" Link="Resources\Fonts\%(Filename)%(Extension)" />
     </ItemGroup>
 
 	<ItemGroup>

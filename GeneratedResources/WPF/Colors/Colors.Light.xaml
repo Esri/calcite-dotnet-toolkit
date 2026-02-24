@@ -4,9 +4,9 @@
     xmlns:system="clr-namespace:System;assembly=mscorlib">
     <Color x:Key="CalciteBackgroundColor">#f7f7f7</Color>
     <Color x:Key="CalciteBackgroundNoneColor">#00ffffff</Color>
-    <Color x:Key="CalciteBorder1Color">#c9c9c9</Color>
-    <Color x:Key="CalciteBorder2Color">#d4d4d4</Color>
-    <Color x:Key="CalciteBorder3Color">#dedede</Color>
+    <Color x:Key="CalciteBorder1Color">#d4d4d4</Color>
+    <Color x:Key="CalciteBorder2Color">#dedede</Color>
+    <Color x:Key="CalciteBorder3Color">#ebebeb</Color>
     <Color x:Key="CalciteBorderGhostColor">#4c000000</Color>
     <Color x:Key="CalciteBorderInputColor">#949494</Color>
     <Color x:Key="CalciteBorderWhiteColor">#ffffff</Color>
@@ -28,12 +28,16 @@
     <Color x:Key="CalciteStatusInfoColor">#00619b</Color>
     <Color x:Key="CalciteStatusInfoHoverColor">#004874</Color>
     <Color x:Key="CalciteStatusInfoPressColor">#00304d</Color>
-    <Color x:Key="CalciteStatusSuccessColor">#35ac46</Color>
-    <Color x:Key="CalciteStatusSuccessHoverColor">#288835</Color>
-    <Color x:Key="CalciteStatusSuccessPressColor">#1a6324</Color>
-    <Color x:Key="CalciteStatusWarningColor">#f89927</Color>
-    <Color x:Key="CalciteStatusWarningHoverColor">#d17300</Color>
+    <Color x:Key="CalciteStatusSuccessColor">#288835</Color>
+    <Color x:Key="CalciteStatusSuccessHoverColor">#1a6324</Color>
+    <Color x:Key="CalciteStatusSuccessPressColor">#0d3f14</Color>
+    <Color x:Key="CalciteStatusWarningColor">#da7c0b</Color>
+    <Color x:Key="CalciteStatusWarningHoverColor">#c26b00</Color>
     <Color x:Key="CalciteStatusWarningPressColor">#9a5b10</Color>
+    <Color x:Key="CalciteSurface1Color">#f7f7f7</Color>
+    <Color x:Key="CalciteSurface2Color">#ffffff</Color>
+    <Color x:Key="CalciteSurface3Color">#f2f2f2</Color>
+    <Color x:Key="CalciteSurface4Color">#ebebeb</Color>
     <Color x:Key="CalciteSurfaceHighlightColor">#d6efff</Color>
     <Color x:Key="CalciteText1Color">#141414</Color>
     <Color x:Key="CalciteText2Color">#4a4a4a</Color>
@@ -43,9 +47,9 @@
     <Color x:Key="CalciteTextLinkColor">#00619b</Color>
     <Color x:Key="CalciteTransparentColor">#00000000</Color>
     <Color x:Key="CalciteTransparentHoverColor">#0a000000</Color>
-    <Color x:Key="CalciteTransparentPressColor">#14000000</Color>
     <Color x:Key="CalciteTransparentInverseHoverColor">#1fffffff</Color>
     <Color x:Key="CalciteTransparentInversePressColor">#29ffffff</Color>
+    <Color x:Key="CalciteTransparentPressColor">#14000000</Color>
     <Color x:Key="CalciteTransparentScrimColor">#d9ffffff</Color>
     <Color x:Key="CalciteTransparentTintColor">#ccffffff</Color>
 </ResourceDictionary>

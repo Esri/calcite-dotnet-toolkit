@@ -36,6 +36,10 @@
     <SolidColorBrush x:Key="CalciteStatusWarningBrush" Color="{AppThemeBinding Dark={StaticResource CalciteStatusWarningDarkColor}, Light={StaticResource CalciteStatusWarningLightColor}}" />
     <SolidColorBrush x:Key="CalciteStatusWarningHoverBrush" Color="{AppThemeBinding Dark={StaticResource CalciteStatusWarningHoverDarkColor}, Light={StaticResource CalciteStatusWarningHoverLightColor}}" />
     <SolidColorBrush x:Key="CalciteStatusWarningPressBrush" Color="{AppThemeBinding Dark={StaticResource CalciteStatusWarningPressDarkColor}, Light={StaticResource CalciteStatusWarningPressLightColor}}" />
+    <SolidColorBrush x:Key="CalciteSurface1Brush" Color="{AppThemeBinding Dark={StaticResource CalciteSurface1DarkColor}, Light={StaticResource CalciteSurface1LightColor}}" />
+    <SolidColorBrush x:Key="CalciteSurface2Brush" Color="{AppThemeBinding Dark={StaticResource CalciteSurface2DarkColor}, Light={StaticResource CalciteSurface2LightColor}}" />
+    <SolidColorBrush x:Key="CalciteSurface3Brush" Color="{AppThemeBinding Dark={StaticResource CalciteSurface3DarkColor}, Light={StaticResource CalciteSurface3LightColor}}" />
+    <SolidColorBrush x:Key="CalciteSurface4Brush" Color="{AppThemeBinding Dark={StaticResource CalciteSurface4DarkColor}, Light={StaticResource CalciteSurface4LightColor}}" />
     <SolidColorBrush x:Key="CalciteSurfaceHighlightBrush" Color="{AppThemeBinding Dark={StaticResource CalciteSurfaceHighlightDarkColor}, Light={StaticResource CalciteSurfaceHighlightLightColor}}" />
     <SolidColorBrush x:Key="CalciteText1Brush" Color="{AppThemeBinding Dark={StaticResource CalciteText1DarkColor}, Light={StaticResource CalciteText1LightColor}}" />
     <SolidColorBrush x:Key="CalciteText2Brush" Color="{AppThemeBinding Dark={StaticResource CalciteText2DarkColor}, Light={StaticResource CalciteText2LightColor}}" />
@@ -45,9 +49,9 @@
     <SolidColorBrush x:Key="CalciteTextLinkBrush" Color="{AppThemeBinding Dark={StaticResource CalciteTextLinkDarkColor}, Light={StaticResource CalciteTextLinkLightColor}}" />
     <SolidColorBrush x:Key="CalciteTransparentBrush" Color="{AppThemeBinding Dark={StaticResource CalciteTransparentDarkColor}, Light={StaticResource CalciteTransparentLightColor}}" />
     <SolidColorBrush x:Key="CalciteTransparentHoverBrush" Color="{AppThemeBinding Dark={StaticResource CalciteTransparentHoverDarkColor}, Light={StaticResource CalciteTransparentHoverLightColor}}" />
-    <SolidColorBrush x:Key="CalciteTransparentPressBrush" Color="{AppThemeBinding Dark={StaticResource CalciteTransparentPressDarkColor}, Light={StaticResource CalciteTransparentPressLightColor}}" />
     <SolidColorBrush x:Key="CalciteTransparentInverseHoverBrush" Color="{AppThemeBinding Dark={StaticResource CalciteTransparentInverseHoverDarkColor}, Light={StaticResource CalciteTransparentInverseHoverLightColor}}" />
     <SolidColorBrush x:Key="CalciteTransparentInversePressBrush" Color="{AppThemeBinding Dark={StaticResource CalciteTransparentInversePressDarkColor}, Light={StaticResource CalciteTransparentInversePressLightColor}}" />
+    <SolidColorBrush x:Key="CalciteTransparentPressBrush" Color="{AppThemeBinding Dark={StaticResource CalciteTransparentPressDarkColor}, Light={StaticResource CalciteTransparentPressLightColor}}" />
     <SolidColorBrush x:Key="CalciteTransparentScrimBrush" Color="{AppThemeBinding Dark={StaticResource CalciteTransparentScrimDarkColor}, Light={StaticResource CalciteTransparentScrimLightColor}}" />
     <SolidColorBrush x:Key="CalciteTransparentTintBrush" Color="{AppThemeBinding Dark={StaticResource CalciteTransparentTintDarkColor}, Light={StaticResource CalciteTransparentTintLightColor}}" />
 </ResourceDictionary>

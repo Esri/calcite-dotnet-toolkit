@@ -48,7 +48,7 @@
     <Color x:Key="CalciteHighSaturationOrangeYellow040Color">#fbb664</Color>
     <Color x:Key="CalciteHighSaturationOrangeYellow050Color">#f9a845</Color>
     <Color x:Key="CalciteHighSaturationOrangeYellow060Color">#f89927</Color>
-    <Color x:Key="CalciteHighSaturationOrangeYellow070Color">#c67718</Color>
+    <Color x:Key="CalciteHighSaturationOrangeYellow070Color">#da7c0b</Color>
     <Color x:Key="CalciteHighSaturationOrangeYellow080Color">#9a5b10</Color>
     <Color x:Key="CalciteHighSaturationOrangeYellow090Color">#6d3f08</Color>
     <Color x:Key="CalciteHighSaturationOrangeYellow100Color">#402300</Color>
@@ -241,6 +241,7 @@
     <Color x:Key="CalciteLowSaturationVioletL070Color">#6f6783</Color>
     <Color x:Key="CalciteLowSaturationVioletL080Color">#504b60</Color>
     <Color x:Key="CalciteLowSaturationVioletL090Color">#322e3d</Color>
+    <Color x:Key="CalciteLowSaturationVioletL100Color">#13111a</Color>
     <Color x:Key="CalciteLowSaturationVioletL1000Color">#13111a</Color>
     <Color x:Key="CalciteLowSaturationYellowGreenL010Color">#f4f7eb</Color>
     <Color x:Key="CalciteLowSaturationYellowGreenL020Color">#e3e7d8</Color>
@@ -434,7 +435,7 @@
     <Color x:Key="CalciteVibrantOrangeYellow120Color">#ffb54d</Color>
     <Color x:Key="CalciteVibrantOrangeYellow140Color">#ff9500</Color>
     <Color x:Key="CalciteVibrantOrangeYellow160Color">#e68600</Color>
-    <Color x:Key="CalciteVibrantOrangeYellow180Color">#d17300</Color>
+    <Color x:Key="CalciteVibrantOrangeYellow180Color">#c26b00</Color>
     <Color x:Key="CalciteVibrantPink120Color">#ff66c2</Color>
     <Color x:Key="CalciteVibrantPink140Color">#ff19a4</Color>
     <Color x:Key="CalciteVibrantPink160Color">#d11486</Color>
@@ -463,16 +464,16 @@
     <Color x:Key="CalciteVibrantYellow140Color">#ffee33</Color>
     <Color x:Key="CalciteVibrantYellow160Color">#f5d000</Color>
     <Color x:Key="CalciteVibrantYellow180Color">#ebba17</Color>
-    <Color x:Key="CalciteBackgroundDarkColor">#363636</Color>
+    <Color x:Key="CalciteBackgroundDarkColor">#212121</Color>
     <Color x:Key="CalciteBackgroundLightColor">#f7f7f7</Color>
     <Color x:Key="CalciteBackgroundNoneDarkColor">#00ffffff</Color>
     <Color x:Key="CalciteBackgroundNoneLightColor">#00ffffff</Color>
     <Color x:Key="CalciteBorder1DarkColor">#545454</Color>
-    <Color x:Key="CalciteBorder1LightColor">#c9c9c9</Color>
+    <Color x:Key="CalciteBorder1LightColor">#d4d4d4</Color>
     <Color x:Key="CalciteBorder2DarkColor">#4a4a4a</Color>
-    <Color x:Key="CalciteBorder2LightColor">#d4d4d4</Color>
+    <Color x:Key="CalciteBorder2LightColor">#dedede</Color>
     <Color x:Key="CalciteBorder3DarkColor">#404040</Color>
-    <Color x:Key="CalciteBorder3LightColor">#dedede</Color>
+    <Color x:Key="CalciteBorder3LightColor">#ebebeb</Color>
     <Color x:Key="CalciteBorderGhostDarkColor">#4c757575</Color>
     <Color x:Key="CalciteBorderGhostLightColor">#4c000000</Color>
     <Color x:Key="CalciteBorderInputDarkColor">#757575</Color>
@@ -491,17 +492,17 @@
     <Color x:Key="CalciteFocusLightColor">#007ac2</Color>
     <Color x:Key="CalciteBackground1DarkColor">#2b2b2b</Color>
     <Color x:Key="CalciteBackground1LightColor">#ffffff</Color>
-    <Color x:Key="CalciteBackground2DarkColor">#212121</Color>
+    <Color x:Key="CalciteBackground2DarkColor">#363636</Color>
     <Color x:Key="CalciteBackground2LightColor">#f2f2f2</Color>
-    <Color x:Key="CalciteBackground3DarkColor">#141414</Color>
+    <Color x:Key="CalciteBackground3DarkColor">#404040</Color>
     <Color x:Key="CalciteBackground3LightColor">#ebebeb</Color>
     <Color x:Key="CalciteBackgroundCurrentDarkColor">#2b465f</Color>
     <Color x:Key="CalciteBackgroundCurrentLightColor">#d6efff</Color>
     <Color x:Key="CalciteInverseDarkColor">#f7f7f7</Color>
     <Color x:Key="CalciteInverseLightColor">#363636</Color>
-    <Color x:Key="CalciteInverseHoverDarkColor">#ffffff</Color>
+    <Color x:Key="CalciteInverseHoverDarkColor">#f2f2f2</Color>
     <Color x:Key="CalciteInverseHoverLightColor">#2b2b2b</Color>
-    <Color x:Key="CalciteInversePressDarkColor">#f2f2f2</Color>
+    <Color x:Key="CalciteInversePressDarkColor">#ebebeb</Color>
     <Color x:Key="CalciteInversePressLightColor">#212121</Color>
     <Color x:Key="CalciteStatusDangerDarkColor">#FE583E</Color>
     <Color x:Key="CalciteStatusDangerLightColor">#d83020</Color>
@@ -516,17 +517,25 @@
     <Color x:Key="CalciteStatusInfoPressDarkColor">#009af2</Color>
     <Color x:Key="CalciteStatusInfoPressLightColor">#00304d</Color>
     <Color x:Key="CalciteStatusSuccessDarkColor">#36DA43</Color>
-    <Color x:Key="CalciteStatusSuccessLightColor">#35ac46</Color>
+    <Color x:Key="CalciteStatusSuccessLightColor">#288835</Color>
     <Color x:Key="CalciteStatusSuccessHoverDarkColor">#3bed52</Color>
-    <Color x:Key="CalciteStatusSuccessHoverLightColor">#288835</Color>
+    <Color x:Key="CalciteStatusSuccessHoverLightColor">#1a6324</Color>
     <Color x:Key="CalciteStatusSuccessPressDarkColor">#00b81b</Color>
-    <Color x:Key="CalciteStatusSuccessPressLightColor">#1a6324</Color>
+    <Color x:Key="CalciteStatusSuccessPressLightColor">#0d3f14</Color>
     <Color x:Key="CalciteStatusWarningDarkColor">#f89927</Color>
-    <Color x:Key="CalciteStatusWarningLightColor">#f89927</Color>
+    <Color x:Key="CalciteStatusWarningLightColor">#da7c0b</Color>
     <Color x:Key="CalciteStatusWarningHoverDarkColor">#ffb54d</Color>
-    <Color x:Key="CalciteStatusWarningHoverLightColor">#d17300</Color>
+    <Color x:Key="CalciteStatusWarningHoverLightColor">#c26b00</Color>
     <Color x:Key="CalciteStatusWarningPressDarkColor">#ff9500</Color>
     <Color x:Key="CalciteStatusWarningPressLightColor">#9a5b10</Color>
+    <Color x:Key="CalciteSurface1DarkColor">#212121</Color>
+    <Color x:Key="CalciteSurface1LightColor">#f7f7f7</Color>
+    <Color x:Key="CalciteSurface2DarkColor">#2b2b2b</Color>
+    <Color x:Key="CalciteSurface2LightColor">#ffffff</Color>
+    <Color x:Key="CalciteSurface3DarkColor">#363636</Color>
+    <Color x:Key="CalciteSurface3LightColor">#f2f2f2</Color>
+    <Color x:Key="CalciteSurface4DarkColor">#404040</Color>
+    <Color x:Key="CalciteSurface4LightColor">#ebebeb</Color>
     <Color x:Key="CalciteSurfaceHighlightDarkColor">#2b465f</Color>
     <Color x:Key="CalciteSurfaceHighlightLightColor">#d6efff</Color>
     <Color x:Key="CalciteText1DarkColor">#ffffff</Color>
@@ -545,12 +554,12 @@
     <Color x:Key="CalciteTransparentLightColor">#00000000</Color>
     <Color x:Key="CalciteTransparentHoverDarkColor">#1fffffff</Color>
     <Color x:Key="CalciteTransparentHoverLightColor">#0a000000</Color>
-    <Color x:Key="CalciteTransparentPressDarkColor">#29ffffff</Color>
-    <Color x:Key="CalciteTransparentPressLightColor">#14000000</Color>
     <Color x:Key="CalciteTransparentInverseHoverDarkColor">#0a000000</Color>
     <Color x:Key="CalciteTransparentInverseHoverLightColor">#1fffffff</Color>
     <Color x:Key="CalciteTransparentInversePressDarkColor">#14000000</Color>
     <Color x:Key="CalciteTransparentInversePressLightColor">#29ffffff</Color>
+    <Color x:Key="CalciteTransparentPressDarkColor">#29ffffff</Color>
+    <Color x:Key="CalciteTransparentPressLightColor">#14000000</Color>
     <Color x:Key="CalciteTransparentScrimDarkColor">#d9000000</Color>
     <Color x:Key="CalciteTransparentScrimLightColor">#d9ffffff</Color>
     <Color x:Key="CalciteTransparentTintDarkColor">#cc2b2b2b</Color>
@@ -589,6 +598,10 @@
             <StaticResource x:Key="CalciteStatusWarningColor" ResourceKey="CalciteStatusWarningDarkColor" />
             <StaticResource x:Key="CalciteStatusWarningHoverColor" ResourceKey="CalciteStatusWarningHoverDarkColor" />
             <StaticResource x:Key="CalciteStatusWarningPressColor" ResourceKey="CalciteStatusWarningPressDarkColor" />
+            <StaticResource x:Key="CalciteSurface1Color" ResourceKey="CalciteSurface1DarkColor" />
+            <StaticResource x:Key="CalciteSurface2Color" ResourceKey="CalciteSurface2DarkColor" />
+            <StaticResource x:Key="CalciteSurface3Color" ResourceKey="CalciteSurface3DarkColor" />
+            <StaticResource x:Key="CalciteSurface4Color" ResourceKey="CalciteSurface4DarkColor" />
             <StaticResource x:Key="CalciteSurfaceHighlightColor" ResourceKey="CalciteSurfaceHighlightDarkColor" />
             <StaticResource x:Key="CalciteText1Color" ResourceKey="CalciteText1DarkColor" />
             <StaticResource x:Key="CalciteText2Color" ResourceKey="CalciteText2DarkColor" />
@@ -598,9 +611,9 @@
             <StaticResource x:Key="CalciteTextLinkColor" ResourceKey="CalciteTextLinkDarkColor" />
             <StaticResource x:Key="CalciteTransparentColor" ResourceKey="CalciteTransparentDarkColor" />
             <StaticResource x:Key="CalciteTransparentHoverColor" ResourceKey="CalciteTransparentHoverDarkColor" />
-            <StaticResource x:Key="CalciteTransparentPressColor" ResourceKey="CalciteTransparentPressDarkColor" />
             <StaticResource x:Key="CalciteTransparentInverseHoverColor" ResourceKey="CalciteTransparentInverseHoverDarkColor" />
             <StaticResource x:Key="CalciteTransparentInversePressColor" ResourceKey="CalciteTransparentInversePressDarkColor" />
+            <StaticResource x:Key="CalciteTransparentPressColor" ResourceKey="CalciteTransparentPressDarkColor" />
             <StaticResource x:Key="CalciteTransparentScrimColor" ResourceKey="CalciteTransparentScrimDarkColor" />
             <StaticResource x:Key="CalciteTransparentTintColor" ResourceKey="CalciteTransparentTintDarkColor" />
         </ResourceDictionary>
@@ -637,6 +650,10 @@
             <StaticResource x:Key="CalciteStatusWarningColor" ResourceKey="CalciteStatusWarningLightColor" />
             <StaticResource x:Key="CalciteStatusWarningHoverColor" ResourceKey="CalciteStatusWarningHoverLightColor" />
             <StaticResource x:Key="CalciteStatusWarningPressColor" ResourceKey="CalciteStatusWarningPressLightColor" />
+            <StaticResource x:Key="CalciteSurface1Color" ResourceKey="CalciteSurface1LightColor" />
+            <StaticResource x:Key="CalciteSurface2Color" ResourceKey="CalciteSurface2LightColor" />
+            <StaticResource x:Key="CalciteSurface3Color" ResourceKey="CalciteSurface3LightColor" />
+            <StaticResource x:Key="CalciteSurface4Color" ResourceKey="CalciteSurface4LightColor" />
             <StaticResource x:Key="CalciteSurfaceHighlightColor" ResourceKey="CalciteSurfaceHighlightLightColor" />
             <StaticResource x:Key="CalciteText1Color" ResourceKey="CalciteText1LightColor" />
             <StaticResource x:Key="CalciteText2Color" ResourceKey="CalciteText2LightColor" />
@@ -646,9 +663,9 @@
             <StaticResource x:Key="CalciteTextLinkColor" ResourceKey="CalciteTextLinkLightColor" />
             <StaticResource x:Key="CalciteTransparentColor" ResourceKey="CalciteTransparentLightColor" />
             <StaticResource x:Key="CalciteTransparentHoverColor" ResourceKey="CalciteTransparentHoverLightColor" />
-            <StaticResource x:Key="CalciteTransparentPressColor" ResourceKey="CalciteTransparentPressLightColor" />
             <StaticResource x:Key="CalciteTransparentInverseHoverColor" ResourceKey="CalciteTransparentInverseHoverLightColor" />
             <StaticResource x:Key="CalciteTransparentInversePressColor" ResourceKey="CalciteTransparentInversePressLightColor" />
+            <StaticResource x:Key="CalciteTransparentPressColor" ResourceKey="CalciteTransparentPressLightColor" />
             <StaticResource x:Key="CalciteTransparentScrimColor" ResourceKey="CalciteTransparentScrimLightColor" />
             <StaticResource x:Key="CalciteTransparentTintColor" ResourceKey="CalciteTransparentTintLightColor" />
         </ResourceDictionary>

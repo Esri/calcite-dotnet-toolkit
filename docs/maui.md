@@ -103,7 +103,7 @@ For a full list of Glyph Resource IDs refer to the sample apps and the [Calcite-
 - TabbedPage: `CalciteTabbedPageStyle`
 
 ### Changing the brand colors
-If you want to change the blue brand colors to match your own branding, redefine the following `Color` brushes after declaring the `CalciteResources` in `App.xaml`:
+If you want to change the blue brand colors to match your own branding, redefine the following `Color` and `Brush` resources after declaring the `CalciteResources` in `App.xaml`:
 
 ```xml
 <Application.Resources>
@@ -120,6 +120,9 @@ If you want to change the blue brand colors to match your own branding, redefine
                 <Color x:Key="CalciteBrandHoverLightColor">#652E98</Color>
                 <Color x:Key="CalciteBrandPressDarkColor">#652E98</Color>
                 <Color x:Key="CalciteBrandPressLightColor">#51247A</Color>
+                <SolidColorBrush x:Key="CalciteBrandBrush" Color="{AppThemeBinding Dark={StaticResource CalciteBrandDarkColor}, Light={StaticResource CalciteBrandLightColor}}" />
+                <SolidColorBrush x:Key="CalciteBrandHoverBrush" Color="{AppThemeBinding Dark={StaticResource CalciteBrandHoverDarkColor}, Light={StaticResource CalciteBrandHoverLightColor}}" />
+                <SolidColorBrush x:Key="CalciteBrandPressBrush" Color="{AppThemeBinding Dark={StaticResource CalciteBrandPressDarkColor}, Light={StaticResource CalciteBrandPressLightColor}}" />
             </ResourceDictionary>
         </ResourceDictionary.MergedDictionaries>
     </ResourceDictionary>

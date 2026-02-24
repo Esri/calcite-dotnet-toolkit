@@ -1822,7 +1822,7 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Effects</summary>
 	/// <remarks>Category: Objects<br/>
-	/// Alias: 3.27.4, objects, ai, sparkle, system, machine learning</remarks>
+	/// Alias: 3.27.4, objects, ai, sparkle, system, flash, stars, constellations, flashy, shiny, machine learning</remarks>
 	/// <release>3.27.1</release>
 	Effects = 59437,
 
@@ -7324,7 +7324,7 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Spike Data Visualization Outlined Open</summary>
 	/// <remarks>Category: Generic<br/>
-	/// Alias: 4.2.1, generic, display, raster, data, interactive</remarks>
+	/// Alias: 4.2.1, generic, display, raster, interactive, data, outlined, shape, open</remarks>
 	/// <release>4.2.1</release>
 	SpikeDataVisualizationOutlinedOpen = 61759,
 
@@ -7354,7 +7354,7 @@ public enum CalciteIcon : ushort
 
 	/// <summary>Spike Data Visualization Outlined Open (Filled)</summary>
 	/// <remarks>Category: Generic<br/>
-	/// Alias: 4.2.1, generic, display, raster, data, interactive, filled</remarks>
+	/// Alias: 4.2.1, generic, display, raster, interactive, data, outlined, shape, open, filled</remarks>
 	/// <release>4.2.1</release>
 	SpikeDataVisualizationOutlinedOpenFilled = 61764,
 
@@ -7681,5 +7681,371 @@ public enum CalciteIcon : ushort
 	/// Alias: 4.3.0, layers, 3D-object-layer, building-layer, mesh-layer, point-cloud-layer, gaussian-splat-layer, voxel-layer, point-layer</remarks>
 	/// <release>4.3.0</release>
 	Layer3D = 61818,
+
+	/// <summary>Mission System Message</summary>
+	/// <remarks>Category: Brand<br/>
+	/// Alias: 4.3.0, brand, mobile, web, application, communication, data-exchange</remarks>
+	/// <release>4.3.0</release>
+	MissionSystemMessage = 61819,
+
+	/// <summary>Number Set</summary>
+	/// <remarks>Category: Text<br/>
+	/// Alias: 4.3.0, text, formatting, generate, features, data, symbols</remarks>
+	/// <release>4.3.0</release>
+	NumberSet = 61820,
+
+	/// <summary>Integer Set</summary>
+	/// <remarks>Category: Text<br/>
+	/// Alias: 4.3.0, text, storing, number, values, raster, fields</remarks>
+	/// <release>4.3.0</release>
+	IntegerSet = 61821,
+
+	/// <summary>Organize Template</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 4.4.0, gis, list, field, maps, feature, manage</remarks>
+	/// <release>4.4.0</release>
+	OrganizeTemplate = 61822,
+
+	/// <summary>Group Template</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 4.4.0, gis, list, point, entry, field, maps</remarks>
+	/// <release>4.4.0</release>
+	GroupTemplate = 61823,
+
+	/// <summary>Signal Health</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 4.4.0, gis, workflow, maintenance, ips, beacon, connectivity</remarks>
+	/// <release>4.4.0</release>
+	SignalHealth = 61824,
+
+	/// <summary>Group Content</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.4.0, generic, collaborate, organize, layers, related, join</remarks>
+	/// <release>4.4.0</release>
+	GroupContent = 61825,
+
+	/// <summary>Metadata</summary>
+	/// <remarks>Category: Files<br/>
+	/// Alias: 4.4.0, files, information, attribute, type, object, schema, technology, publishing, workflow</remarks>
+	/// <release>4.4.0</release>
+	Metadata = 61826,
+
+	/// <summary>Relative Direction Arrows</summary>
+	/// <remarks>Category: Directions<br/>
+	/// Alias: 4.4.0, directions, line, features, symbology, data</remarks>
+	/// <release>4.4.0</release>
+	RelativeDirectionArrows = 61827,
+
+	/// <summary>Partnered Collaboration</summary>
+	/// <remarks>Category: Brand<br/>
+	/// Alias: 4.4.0, brand, share, edit, content, apps, layers</remarks>
+	/// <release>4.4.0</release>
+	PartneredCollaboration = 61828,
+
+	/// <summary>Open Data</summary>
+	/// <remarks>Category: Brand<br/>
+	/// Alias: 4.4.0, brand, dashboards, charts, visualization, feature</remarks>
+	/// <release>4.4.0</release>
+	OpenData = 61829,
+
+	/// <summary>ArcGIS Solutions</summary>
+	/// <remarks>Category: Brand<br/>
+	/// Alias: 4.4.0, brand, data, geospatial, configurations, location</remarks>
+	/// <release>4.4.0</release>
+	ArcGISSolutions = 61830,
+
+	/// <summary>ArcGIS Living Atlas</summary>
+	/// <remarks>Category: Brand<br/>
+	/// Alias: 4.4.0, brand, maps, apps, data-layers, collection, imagery</remarks>
+	/// <release>4.4.0</release>
+	ArcGISLivingAtlas = 61831,
+
+	/// <summary>Star Values</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.4.0, generic, unique, analysis, attribute, field, mapping</remarks>
+	/// <release>4.4.0</release>
+	StarValues = 61832,
+
+	/// <summary>Sort Descending View</summary>
+	/// <remarks>Category: List<br/>
+	/// Alias: 4.4.0, list, tool, data, table, properties, attribute, dialog</remarks>
+	/// <release>4.4.0</release>
+	SortDescendingView = 61833,
+
+	/// <summary>Sort Ascending View</summary>
+	/// <remarks>Category: List<br/>
+	/// Alias: 4.4.0, list, table, sort, data, view, tool</remarks>
+	/// <release>4.4.0</release>
+	SortAscendingView = 61834,
+
+	/// <summary>Duplicate Values</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.4.0, generic, tool, attribute, identify, features</remarks>
+	/// <release>4.4.0</release>
+	DuplicateValues = 61835,
+
+	/// <summary>Update Table</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.4.0, generic, edit, cells, values, attribute, data</remarks>
+	/// <release>4.4.0</release>
+	UpdateTable = 61836,
+
+	/// <summary>Contingent Values Retire</summary>
+	/// <remarks>Category: Forms<br/>
+	/// Alias: 4.4.0, forms, combinations, fields, data, historical-records</remarks>
+	/// <release>4.4.0</release>
+	ContingentValuesRetire = 61837,
+
+	/// <summary>File Esl</summary>
+	/// <remarks>Category: Files<br/>
+	/// Alias: 4.4.0, files, sensing, image-analysis, content, tool, collections</remarks>
+	/// <release>4.4.0</release>
+	FileEsl = 61838,
+
+	/// <summary>Table Upload</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.4.0, generic, data, collection, web, layer, import, external</remarks>
+	/// <release>4.4.0</release>
+	TableUpload = 61839,
+
+	/// <summary>Table Download</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.4.0, generic, data, format, collection, web, layer, save</remarks>
+	/// <release>4.4.0</release>
+	TableDownload = 61840,
+
+	/// <summary>Variable Generic</summary>
+	/// <remarks>Category: Text<br/>
+	/// Alias: 4.4.0, text, values, equations, datasets, general</remarks>
+	/// <release>4.4.0</release>
+	VariableGeneric = 61841,
+
+	/// <summary>Provenance</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.4.0, knowledge graph, information, graph, knowledge, history, data-lineage</remarks>
+	/// <release>4.4.0</release>
+	Provenance = 61842,
+
+	/// <summary>Layer Wms</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 4.4.0, layers, url, map, tiles, server, interaction</remarks>
+	/// <release>4.4.0</release>
+	LayerWms = 61843,
+
+	/// <summary>Layer Wfs</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 4.4.0, layers, vector, data, web, features, format</remarks>
+	/// <release>4.4.0</release>
+	LayerWfs = 61844,
+
+	/// <summary>Layer Wcs</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 4.4.0, layers, stream, analysis, datasets, satellite, raster</remarks>
+	/// <release>4.4.0</release>
+	LayerWcs = 61845,
+
+	/// <summary>Layer Vector Tile</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 4.4.0, layers, data, points, styling, basemap, webmap</remarks>
+	/// <release>4.4.0</release>
+	LayerVectorTile = 61846,
+
+	/// <summary>Layer Subtype Group</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 4.4.0, layers, composite, feature, data, visibility</remarks>
+	/// <release>4.4.0</release>
+	LayerSubtypeGroup = 61847,
+
+	/// <summary>Layer Stream</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 4.4.0, layers, datasets, real-time, map, tracking, web</remarks>
+	/// <release>4.4.0</release>
+	LayerStream = 61848,
+
+	/// <summary>Layer Ogc</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 4.4.0, layers, data, web, connection, organization</remarks>
+	/// <release>4.4.0</release>
+	LayerOgc = 61849,
+
+	/// <summary>Layer Map Notes</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 4.4.0, layers, points, lines, polygons, features, attribute, annotation</remarks>
+	/// <release>4.4.0</release>
+	LayerMapNotes = 61850,
+
+	/// <summary>Layer Georss</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 4.4.0, layers, display, point, lines, polygons, map</remarks>
+	/// <release>4.4.0</release>
+	LayerGeorss = 61851,
+
+	/// <summary>Layer Geojson</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 4.4.0, layers, format, encoding, geographic-data, data-structures</remarks>
+	/// <release>4.4.0</release>
+	LayerGeojson = 61852,
+
+	/// <summary>Layer Csv</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 4.4.0, layers, data, web, tabular, points, file</remarks>
+	/// <release>4.4.0</release>
+	LayerCsv = 61853,
+
+	/// <summary>Layer Catalog</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 4.4.0, layers, local, shared, dataets, collection</remarks>
+	/// <release>4.4.0</release>
+	LayerCatalog = 61854,
+
+	/// <summary>Knowledge Graph Endpoint</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.4.0, knowledge graph, start, data-model, entities, access</remarks>
+	/// <release>4.4.0</release>
+	KnowledgeGraphEndpoint = 61855,
+
+	/// <summary>Globally Unique Identifier</summary>
+	/// <remarks>Category: Text<br/>
+	/// Alias: 4.4.0, text, objects, computer, datasets, systems, tracking</remarks>
+	/// <release>4.4.0</release>
+	GloballyUniqueIdentifier = 61856,
+
+	/// <summary>Find Path Origin</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.4.0, knowledge graph, network-analysis, points, graph, points, tool</remarks>
+	/// <release>4.4.0</release>
+	FindPathOrigin = 61857,
+
+	/// <summary>Find Path Include</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.4.0, knowledge graph, data, origin, destination, graph, network</remarks>
+	/// <release>4.4.0</release>
+	FindPathInclude = 61858,
+
+	/// <summary>Find Path Exclude</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.4.0, knowledge graph, network-analysis, origin, destination, barriers, restrictions</remarks>
+	/// <release>4.4.0</release>
+	FindPathExclude = 61859,
+
+	/// <summary>Find Path Destination</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.4.0, knowledge graph, endpoint, dataset, analysis, tool</remarks>
+	/// <release>4.4.0</release>
+	FindPathDestination = 61860,
+
+	/// <summary>Tools</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 4.4.0, objects, analyze, wrench, screwdriver, instrument, gadget, device</remarks>
+	/// <release>4.4.0</release>
+	Tools = 61861,
+
+	/// <summary>Template Group Point At Start</summary>
+	/// <remarks>Category: Template Group<br/>
+	/// Alias: 4.4.0, template group, feature, vertex, line, distance</remarks>
+	/// <release>4.4.0</release>
+	TemplateGroupPointAtStart = 61862,
+
+	/// <summary>Template Group Point At Every Vertex</summary>
+	/// <remarks>Category: Template Group<br/>
+	/// Alias: 4.4.0, template group, features, map, line-builder, tools</remarks>
+	/// <release>4.4.0</release>
+	TemplateGroupPointAtEveryVertex = 61863,
+
+	/// <summary>Template Group Point At Every Vertex But Start</summary>
+	/// <remarks>Category: Template Group<br/>
+	/// Alias: 4.4.0, template group, feature, line, offset, tool, attribute</remarks>
+	/// <release>4.4.0</release>
+	TemplateGroupPointAtEveryVertexButStart = 61864,
+
+	/// <summary>Template Group Point At Centroid</summary>
+	/// <remarks>Category: Template Group<br/>
+	/// Alias: 4.4.0, template group, feature, polygon, action, mass, boundary</remarks>
+	/// <release>4.4.0</release>
+	TemplateGroupPointAtCentroid = 61865,
+
+	/// <summary>Template Group Multiple Two Point Lines</summary>
+	/// <remarks>Category: Template Group<br/>
+	/// Alias: 4.4.0, template group, feature, map, layers, tool</remarks>
+	/// <release>4.4.0</release>
+	TemplateGroupMultipleTwoPointLines = 61866,
+
+	/// <summary>Template Group Multiple Lines</summary>
+	/// <remarks>Category: Template Group<br/>
+	/// Alias: 4.4.0, template group, features, sketch, workflows, infrastructure</remarks>
+	/// <release>4.4.0</release>
+	TemplateGroupMultipleLines = 61867,
+
+	/// <summary>Template Group At Start Of Line</summary>
+	/// <remarks>Category: Template Group<br/>
+	/// Alias: 4.4.0, template group, function, setting, features, point, vertex</remarks>
+	/// <release>4.4.0</release>
+	TemplateGroupAtStartOfLine = 61868,
+
+	/// <summary>Template Group At End Of Line</summary>
+	/// <remarks>Category: Template Group<br/>
+	/// Alias: 4.4.0, template group, configuration, point, feature, data, action</remarks>
+	/// <release>4.4.0</release>
+	TemplateGroupAtEndOfLine = 61869,
+
+	/// <summary>Template Group At All Vertices</summary>
+	/// <remarks>Category: Template Group<br/>
+	/// Alias: 4.4.0, template group, vertex, linear-network, boundary</remarks>
+	/// <release>4.4.0</release>
+	TemplateGroupAtAllVertices = 61870,
+
+	/// <summary>Template Group At All Vertices But Start</summary>
+	/// <remarks>Category: Template Group<br/>
+	/// Alias: 4.4.0, template group, feature, points, line, connection, layer</remarks>
+	/// <release>4.4.0</release>
+	TemplateGroupAtAllVerticesButStart = 61871,
+
+	/// <summary>Template Group At All Vertices But Start And End</summary>
+	/// <remarks>Category: Template Group<br/>
+	/// Alias: 4.4.0, template group, feature, polyline, nodes, polygon</remarks>
+	/// <release>4.4.0</release>
+	TemplateGroupAtAllVerticesButStartAndEnd = 61872,
+
+	/// <summary>Template Group At All Vertices But End</summary>
+	/// <remarks>Category: Template Group<br/>
+	/// Alias: 4.4.0, template group, segment, feature, data, points, tool</remarks>
+	/// <release>4.4.0</release>
+	TemplateGroupAtAllVerticesButEnd = 61873,
+
+	/// <summary>Template Group Along Line</summary>
+	/// <remarks>Category: Template Group<br/>
+	/// Alias: 4.4.0, template group, features, points, vertices, intervals</remarks>
+	/// <release>4.4.0</release>
+	TemplateGroupAlongLine = 61874,
+
+	/// <summary>Show Oriented Imagery</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 4.4.0, gis, layer, map, point, view, interactive</remarks>
+	/// <release>4.4.0</release>
+	ShowOrientedImagery = 61875,
+
+	/// <summary>Radial Lines</summary>
+	/// <remarks>Category: Template Group<br/>
+	/// Alias: 4.4.0, template group, linear-features, point, analysis, mapping</remarks>
+	/// <release>4.4.0</release>
+	RadialLines = 61876,
+
+	/// <summary>Point At Every Intersection</summary>
+	/// <remarks>Category: Template Group<br/>
+	/// Alias: 4.4.0, template group, tools, feature, analyze, identify, points</remarks>
+	/// <release>4.4.0</release>
+	PointAtEveryIntersection = 61877,
+
+	/// <summary>Group Off Set Start Of Line</summary>
+	/// <remarks>Category: Template Group<br/>
+	/// Alias: 4.4.0, template group, tool, point, feature, distance, place</remarks>
+	/// <release>4.4.0</release>
+	GroupOffSetStartOfLine = 61878,
+
+	/// <summary>3D Search</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.4.0, generic, algorithm, data, points, space, location</remarks>
+	/// <release>4.4.0</release>
+	_3DSearch = 61879,
 
 }
