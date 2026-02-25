@@ -122,8 +122,8 @@
 
     <Style TargetType="Button" x:Key="CalciteDangerButtonStyle" BasedOn="{StaticResource CalciteButtonStyle}" >
         <Setter Property="TextColor" Value="White" />
-        <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={DynamicResource CalciteStatusDangerDarkColor}, Light={StaticResource CalciteStatusDangerLightColor}}"/>
-        <Setter Property="BorderColor" Value="{AppThemeBinding Light={StaticResource CalciteStatusDangerLightColor}, Dark={StaticResource CalciteStatusDangerDarkColor}}" />
+        <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={x:DynamicResource CalciteStatusDangerDarkColor}, Light={x:DynamicResource CalciteStatusDangerLightColor}}"/>
+        <Setter Property="BorderColor" Value="{AppThemeBinding Light={x:DynamicResource CalciteStatusDangerLightColor}, Dark={x:DynamicResource CalciteStatusDangerDarkColor}}" />
         <Setter Property="VisualStateManager.VisualStateGroups">
             <VisualStateGroupList>
                 <VisualStateGroup Name="CommonStates">
@@ -154,9 +154,9 @@
     </Style>
 
     <Style TargetType="Button" x:Key="CalciteDangerSecondaryButtonStyle">
-        <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource CalciteStatusDangerLightColor}, Dark={StaticResource CalciteStatusDangerDarkColor}}" />
-        <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={DynamicResource CalciteBackground1DarkColor}, Light={StaticResource CalciteBackground1LightColor}}"/>
-        <Setter Property="BorderColor" Value="{AppThemeBinding Light={StaticResource CalciteStatusDangerLightColor}, Dark={StaticResource CalciteStatusDangerDarkColor}}" />
+        <Setter Property="TextColor" Value="{AppThemeBinding Light={x:DynamicResource CalciteStatusDangerLightColor}, Dark={x:DynamicResource CalciteStatusDangerDarkColor}}" />
+        <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={x:DynamicResource CalciteBackground1DarkColor}, Light={x:DynamicResource CalciteBackground1LightColor}}"/>
+        <Setter Property="BorderColor" Value="{AppThemeBinding Light={x:DynamicResource CalciteStatusDangerLightColor}, Dark={x:DynamicResource CalciteStatusDangerDarkColor}}" />
         <Setter Property="VisualStateManager.VisualStateGroups">
             <VisualStateGroupList>
                 <VisualStateGroup Name="CommonStates">
