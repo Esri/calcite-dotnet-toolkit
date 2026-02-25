@@ -106,7 +106,7 @@
                     </VisualState>
                     <VisualState Name="Pressed">
                         <VisualState.Setters>
-                            <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={StaticResource CalciteBackground3DarkColor}, Light={StaticResource CalciteBackground3LightColor}}" />
+                            <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={x:DynamicResource CalciteBackground3DarkColor}, Light={x:DynamicResource CalciteBackground3LightColor}}" />
                         </VisualState.Setters>
                     </VisualState>
                     <VisualState Name="Disabled">
