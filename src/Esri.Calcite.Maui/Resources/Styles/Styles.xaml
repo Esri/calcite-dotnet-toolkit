@@ -503,7 +503,7 @@
     </Style>-->
 
     <Style TargetType="Page" ApplyToDerivedTypes="True" x:Key="CalcitePageStyle">
-        <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={DynamicResource CalciteBackgroundDarkColor}, Light={StaticResource CalciteBackgroundLightColor}}"/>
+        <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={x:DynamicResource CalciteBackgroundDarkColor}, Light={x:DynamicResource CalciteBackgroundLightColor}}"/>
     </Style>
 
     <Style TargetType="Shell" ApplyToDerivedTypes="True" x:Key="CalciteShellStyle">
