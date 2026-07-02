@@ -208,14 +208,6 @@
                             Value="{TemplateBinding HorizontalOffset}" />
 
                     </Grid>
-                    <ControlTemplate.Triggers>
-                        <Trigger Property="ScrollableHeight" Value="0">
-                            <Setter TargetName="PART_VerticalScrollBar" Property="Visibility" Value="Collapsed" />
-                        </Trigger>
-                        <Trigger Property="ScrollableWidth" Value="0">
-                            <Setter TargetName="PART_HorizontalScrollBar" Property="Visibility" Value="Collapsed" />
-                        </Trigger>
-                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
