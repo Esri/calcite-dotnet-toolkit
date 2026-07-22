@@ -9,6 +9,10 @@
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PackageReleaseNotes>
+          $(PackageReleaseNotes)
+          - Updated to .NET 10. A minimum of .NET 10 and MAUI 10.0.0 is now required when building with the toolkit.
+        </PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>    
