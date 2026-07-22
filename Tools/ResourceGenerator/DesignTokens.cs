@@ -28,18 +28,19 @@ namespace ResourceGenerator
         }
         public class ColorEntry
         {
-            public string DesignTokenId { get; set; }
+            public required string DesignTokenId { get; set; }
             public string ResourceId => ColorTokenToString(DesignTokenId);
-            public string? Value => Json["value"] is not JObject ? Json["value"].ToString() : null;
+            public string? Value => GetTokenProperty(Json, "value") is JValue value ? value.ToString() : null;
             public string? System => Json["attributes"] is JObject ? ((JObject)((JObject)Json["attributes"])["calcite-schema"])["system"].ToString() : null;
             public string? Group => Json["attributes"] is JObject ? ((JObject)((JObject)Json["attributes"])["calcite-schema"])["group"].ToString() : null;
-            public JObject Json { get; set; }
+            public required JObject Json { get; set; }
             public ColorType Type { get; set; }
             public override string ToString() => $"{ResourceId} = {Value}";
 
             public void UpdateReferenceColors(Dictionary<string, ColorEntry> entries, Dictionary<string, ColorEntry> coreEntries)
             {
-                if (Value is not null) Json["value"] = GetColor(Value, entries, coreEntries);
+                var valuePropertyName = Json.ContainsKey("$value") ? "$value" : "value";
+                if (Value is not null) Json[valuePropertyName] = GetColor(Value, entries, coreEntries);
             }
             private string GetColor(string value, Dictionary<string,ColorEntry> entries, Dictionary<string, ColorEntry> coreEntries)
             {
@@ -100,18 +101,21 @@ namespace ResourceGenerator
             foreach (var item in core)
             {
                 string group = item.Key;
-                foreach (var member in (JObject)item.Value!)
+                if (item.Value is not JObject groupObject)
+                    continue;
+
+                foreach (var member in groupObject)
                 {
                     string name = member.Key;
-                    if (GetColor((JObject)member.Value, out string color))
+                    if (GetColor(member.Value, out string color) && member.Value is JObject colorObject)
                     {
-                        colors.Add($"core.color.{group}.{name}", new ColorEntry { DesignTokenId = $"{group}.{name}", Json = (JObject)member.Value });
+                        colors.Add($"core.color.{group}.{name}", new ColorEntry { DesignTokenId = $"{group}.{name}", Json = colorObject });
                     }
-                    else
-                        foreach (var entry in (JObject)member.Value)
+                    else if (member.Value is JObject memberObject)
+                        foreach (var entry in memberObject)
                         {
-                            if (GetColor((JObject)entry.Value, out color))
-                                colors.Add($"core.color.{group}.{name}.{entry.Key}", new ColorEntry { DesignTokenId = $"{group}.{name}.{entry.Key}", Json = (JObject)entry.Value });
+                            if (GetColor(entry.Value, out color) && entry.Value is JObject nestedColorObject)
+                                colors.Add($"core.color.{group}.{name}.{entry.Key}", new ColorEntry { DesignTokenId = $"{group}.{name}.{entry.Key}", Json = nestedColorObject });
                         }
                 }
             }
@@ -216,14 +220,22 @@ namespace ResourceGenerator
             }
             return graph;
         }
-        static bool GetColor(JObject? colorEntry, out string color)
+        static JToken? GetTokenProperty(JObject token, string propertyName)
+        {
+            return token[propertyName] ?? token["$" + propertyName];
+        }
+
+        static bool GetColor(JToken? colorEntry, out string color)
         {
             color = "";
-            if(colorEntry is null)
+            if (colorEntry is not JObject colorObject)
                 return false;
-            if (colorEntry.ContainsKey("value") && colorEntry.ContainsKey("type") && colorEntry["type"].ToString() == "color")
+
+            var value = GetTokenProperty(colorObject, "value");
+            var type = GetTokenProperty(colorObject, "type");
+            if (value is JValue && type?.ToString() == "color")
             {
-                color = colorEntry["value"].ToString();
+                color = value.ToString();
                 return true;
             }
             return false;
