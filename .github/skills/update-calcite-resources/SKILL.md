@@ -196,3 +196,4 @@ Before finishing, confirm:
 - no line-ending-only files remain in the diff;
 - all required builds succeeded;
 - no temporary probe files were left in the repository.
+- Run `grep "fill:none" ./ -rl` or equivalent on `.\calcite-design-system\packages\ui-icons\icons`, and report matching files as potentially-malformed symbols
