@@ -24,11 +24,6 @@ jobs:
     
     - name: Setup Visual Studio Command Prompt
       uses: microsoft/setup-msbuild@v2.0.0
-
-    - name: Setup .NET 9.x
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: '9.0.100'
         
     - name: Build WPF
       run: |
