@@ -17,7 +17,11 @@
         <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
         <CalciteUIIconsVersion>4.5.0</CalciteUIIconsVersion>
         <PackageReleaseNotes>
-            - Added 45 new Calcite symbols by upgrading Calcite Icons to version 4.5.0: https://github.com/Esri/calcite-design-system/releases/tag/%40esri%2Fcalcite-ui-icons%404.5.0
+          - Added 45 new Calcite symbols by upgrading Calcite Icons to version 4.5.0: https://github.com/Esri/calcite-design-system/releases/tag/%40esri%2Fcalcite-ui-icons%404.5.0
+
+          Known Issues:
+          - https://github.com/Esri/calcite-design-system/issues/14871: The Publish, ReviewMap, and ShowOrientedImagery font icons have inverted colors.
+          - https://github.com/Esri/calcite-design-system/pull/14610: The ReturnToDefault and Buttons icons are malformed.
         </PackageReleaseNotes>
     </PropertyGroup>
 
