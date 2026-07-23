@@ -4077,7 +4077,7 @@ public enum CalciteIcon : ushort
 	NodesUnlink = 59812,
 
 	/// <summary>Nodes Unmerge</summary>
-	/// <remarks>Category: Arrows<br/>
+	/// <remarks>Category: Charts and Graphs<br/>
 	/// Alias: 3.25.2, arrows, separate points, separate nodes, unmerge nodes, unmerge points</remarks>
 	/// <release>3.25.2</release>
 	NodesUnmerge = 59813,
@@ -8047,5 +8047,275 @@ public enum CalciteIcon : ushort
 	/// Alias: 4.4.0, generic, algorithm, data, points, space, location</remarks>
 	/// <release>4.4.0</release>
 	_3DSearch = 61879,
+
+	/// <summary>Feature Details Set</summary>
+	/// <remarks>Category: Lists<br/>
+	/// Alias: 5.0.0, lists, collection, spatial-data, points, lines, polygons, edit, multi-value</remarks>
+	/// <release>5.0.0</release>
+	FeatureDetailsSet = 61880,
+
+	/// <summary>Conditional Rules Down</summary>
+	/// <remarks>Category: Charts and Graphs<br/>
+	/// Alias: 5.0.0, charts and graphs, automation, data, management, analysis, visualization</remarks>
+	/// <release>5.0.0</release>
+	ConditionalRulesDown = 61881,
+
+	/// <summary>Add To Video Layer</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 5.0.0, layers, insert, publish, data, telemetry, tool</remarks>
+	/// <release>5.0.0</release>
+	AddToVideoLayer = 61882,
+
+	/// <summary>Add To Livestream Video Layer</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 5.0.0, layers, web, publish, ingest, connection-address, protocol, insert</remarks>
+	/// <release>5.0.0</release>
+	AddToLivestreamVideoLayer = 61883,
+
+	/// <summary>File Rvt</summary>
+	/// <remarks>Category: Files<br/>
+	/// Alias: 5.0.0, files, geodatabase, 3d, feature, data</remarks>
+	/// <release>5.0.0</release>
+	FileRvt = 61884,
+
+	/// <summary>File Dwg</summary>
+	/// <remarks>Category: Files<br/>
+	/// Alias: 5.0.0, files, map, geodatabase, points, polylines, annotation</remarks>
+	/// <release>5.0.0</release>
+	FileDwg = 61885,
+
+	/// <summary>File Bim</summary>
+	/// <remarks>Category: Files<br/>
+	/// Alias: 5.0.0, files, direct-read, coordinates, geodatabase, analysis, tools</remarks>
+	/// <release>5.0.0</release>
+	FileBim = 61886,
+
+	/// <summary>Wheelchair Travel Mode</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, commute, commuting, pushchair, sport, hadicapped, person, disabiltiy, activity</remarks>
+	/// <release>5.0.0</release>
+	WheelchairTravelMode = 61887,
+
+	/// <summary>Wheelchair Travel Mode (Filled)</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, commute, commuting, pushchair, sport, hadicapped, person, disabiltiy, activity, filled</remarks>
+	/// <release>5.0.0</release>
+	WheelchairTravelModeFilled = 61888,
+
+	/// <summary>Walking Travel Mode</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, stroll, stride, hike, step, person, commute, commuting, activity</remarks>
+	/// <release>5.0.0</release>
+	WalkingTravelMode = 61889,
+
+	/// <summary>Walking Travel Mode (Filled)</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, stroll, stride, hike, step, person, commute, commuting, activity, filled</remarks>
+	/// <release>5.0.0</release>
+	WalkingTravelModeFilled = 61890,
+
+	/// <summary>Truck Travel Mode</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, pickup, commute, commuting, semi-rig, deliver</remarks>
+	/// <release>5.0.0</release>
+	TruckTravelMode = 61891,
+
+	/// <summary>Truck Travel Mode (Filled)</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, pickup, commute, commuting, semi-rig, deliver, filled</remarks>
+	/// <release>5.0.0</release>
+	TruckTravelModeFilled = 61892,
+
+	/// <summary>Tram Travel Mode</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, streetcar, trolley, vehicle, track, commute, commuting</remarks>
+	/// <release>5.0.0</release>
+	TramTravelMode = 61893,
+
+	/// <summary>Tram Travel Mode (Filled)</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, streetcar, trolley, vehicle, track, commute, commuting, filled</remarks>
+	/// <release>5.0.0</release>
+	TramTravelModeFilled = 61894,
+
+	/// <summary>Train Travel Mode</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, train-station, lightspeed-rail, public-transit, vehicle, engine</remarks>
+	/// <release>5.0.0</release>
+	TrainTravelMode = 61895,
+
+	/// <summary>Train Travel Mode (Filled)</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, train-station, lightspeed-rail, public-transit, vehicle, engine, filled</remarks>
+	/// <release>5.0.0</release>
+	TrainTravelModeFilled = 61896,
+
+	/// <summary>Stroller Travel Mode</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, pushchair, baby-carriage, buggy, pram, commute, commuting</remarks>
+	/// <release>5.0.0</release>
+	StrollerTravelMode = 61897,
+
+	/// <summary>Stroller Travel Mode (Filled)</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, pushchair, baby-carriage, buggy, pram, commute, commuting, filled</remarks>
+	/// <release>5.0.0</release>
+	StrollerTravelModeFilled = 61898,
+
+	/// <summary>Shuttle Travel Mode</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, bus, automobile, vehicle, ride, commute, commuting</remarks>
+	/// <release>5.0.0</release>
+	ShuttleTravelMode = 61899,
+
+	/// <summary>Shuttle Travel Mode (Filled)</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, bus, automobile, vehicle, ride, commute, commuting, filled</remarks>
+	/// <release>5.0.0</release>
+	ShuttleTravelModeFilled = 61900,
+
+	/// <summary>Scooter Travel Mode</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, two-wheeler, bike, commute, commuting</remarks>
+	/// <release>5.0.0</release>
+	ScooterTravelMode = 61901,
+
+	/// <summary>Scooter Travel Mode (Filled)</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, two-wheeler, bike, commute, commuting, filled</remarks>
+	/// <release>5.0.0</release>
+	ScooterTravelModeFilled = 61902,
+
+	/// <summary>Motorcycle Travel Mode</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, two-wheeler, motor, ride, bike, commute, commuting, vehicle</remarks>
+	/// <release>5.0.0</release>
+	MotorcycleTravelMode = 61903,
+
+	/// <summary>Motorcycle Travel Mode (Filled)</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, two-wheeler, motor, ride, bike, commute, commuting, vehicle, filled</remarks>
+	/// <release>5.0.0</release>
+	MotorcycleTravelModeFilled = 61904,
+
+	/// <summary>Moped Travel Mode</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, bike, motorized, automobile, two-wheeler, scooter, commute, commuting, vehicle</remarks>
+	/// <release>5.0.0</release>
+	MopedTravelMode = 61905,
+
+	/// <summary>Moped Travel Mode (Filled)</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, bike, motorized, automobile, two-wheeler, scooter, commute, commuting, vehicle, filled</remarks>
+	/// <release>5.0.0</release>
+	MopedTravelModeFilled = 61906,
+
+	/// <summary>Emergency</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 5.0.0, objects, urgency, disaster, catastrophe, crisis</remarks>
+	/// <release>5.0.0</release>
+	Emergency = 61907,
+
+	/// <summary>Emergency (Filled)</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 5.0.0, objects, urgency, disaster, catastrophe, crisis, filled</remarks>
+	/// <release>5.0.0</release>
+	EmergencyFilled = 61908,
+
+	/// <summary>Car Travel Mode</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, automobile, vehicle, wheels, ride, commute, commuting, vehicle</remarks>
+	/// <release>5.0.0</release>
+	CarTravelMode = 61909,
+
+	/// <summary>Car Travel Mode (Filled)</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, automobile, vehicle, wheels, ride, commute, commuting, vehicle, filled</remarks>
+	/// <release>5.0.0</release>
+	CarTravelModeFilled = 61910,
+
+	/// <summary>Bus Travel Mode</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, motor, vehicle, automobile, public-transit, commute, commuting</remarks>
+	/// <release>5.0.0</release>
+	BusTravelMode = 61911,
+
+	/// <summary>Bus Travel Mode (Filled)</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, motor, vehicle, automobile, public-transit, commute, commuting, filled</remarks>
+	/// <release>5.0.0</release>
+	BusTravelModeFilled = 61912,
+
+	/// <summary>Bicycle Travel Mode</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, two-wheeler, ride, pedal, wheel, bike, bicycling, commute, exercise, activity</remarks>
+	/// <release>5.0.0</release>
+	BicycleTravelMode = 61913,
+
+	/// <summary>Bicycle Travel Mode (Filled)</summary>
+	/// <remarks>Category: Transportation<br/>
+	/// Alias: 5.0.0, transportation, two-wheeler, ride, pedal, wheel, bike, bicycling, commute, exercise, activity, filled</remarks>
+	/// <release>5.0.0</release>
+	BicycleTravelModeFilled = 61914,
+
+	/// <summary>Publish</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 5.0.0, generic, web, produce, issue, release, public</remarks>
+	/// <release>5.0.0</release>
+	Publish = 61915,
+
+	/// <summary>Velocity Server</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 5.0.0, gis, data, cloud, analytics, asset, sensor</remarks>
+	/// <release>5.0.0</release>
+	VelocityServer = 61916,
+
+	/// <summary>Layer Stream Setting</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 5.0.0, layers, data, queries, symbology, connect, map</remarks>
+	/// <release>5.0.0</release>
+	LayerStreamSetting = 61917,
+
+	/// <summary>ArcGIS Survey123</summary>
+	/// <remarks>Category: Brand<br/>
+	/// Alias: 5.0.0, brand, logo, glyph</remarks>
+	/// <release>5.0.0</release>
+	ArcGISSurvey123 = 61918,
+
+	/// <summary>ArcGIS Quickcapture</summary>
+	/// <remarks>Category: Brand<br/>
+	/// Alias: 5.0.0, brand, logo, glyph</remarks>
+	/// <release>5.0.0</release>
+	ArcGISQuickcapture = 61919,
+
+	/// <summary>Total Station</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 5.0.0, objects, survey, measuring, distance, data-collection</remarks>
+	/// <release>5.0.0</release>
+	TotalStation = 61920,
+
+	/// <summary>Gps Receiver</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 5.0.0, objects, navigator, locator, direction, map, tracking</remarks>
+	/// <release>5.0.0</release>
+	GpsReceiver = 61921,
+
+	/// <summary>Buttons</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 5.0.0, symbols, user-experience, keys, triggers, quickcapture</remarks>
+	/// <release>5.0.0</release>
+	Buttons = 61922,
+
+	/// <summary>Review Map</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 5.0.0, gis, data, compliance, communication, verify, evaluate, analyze map</remarks>
+	/// <release>5.0.0</release>
+	ReviewMap = 61923,
+
+	/// <summary>Return To Default</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 5.0.0, symbols, settings, reset, layout, start</remarks>
+	/// <release>5.0.0</release>
+	ReturnToDefault = 61924,
 
 }
