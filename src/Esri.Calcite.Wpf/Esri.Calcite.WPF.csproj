@@ -24,7 +24,6 @@
     <Compile Include="..\..\GeneratedResources\Wpf\*.cs" Link="%(RecursiveDir)%(Filename)%(Extension)" />
   </ItemGroup>
 
-  <!-- Run DownloadFonts before parallel framework builds are dispatched to avoid locked file errors. -->
-  <Target Name="GetResources" BeforeTargets="Restore;DispatchToInnerBuild" DependsOnTargets="DownloadFonts"/>
+  <Target Name="GetResources" BeforeTargets="Restore" DependsOnTargets="DownloadFonts"/>
 
 </Project>
