@@ -24,7 +24,12 @@ jobs:
     
     - name: Setup Visual Studio Command Prompt
       uses: microsoft/setup-msbuild@v2.0.0
-        
+
+    - name: Setup .NET 10.x
+      uses: actions/setup-dotnet@v5.4.0
+      with:
+        dotnet-version: '10.0.302'
+
     - name: Build WPF
       run: |
         msbuild /restore /t:Build src\Esri.Calcite.WPF\Esri.Calcite.WPF.csproj /p:Configuration=Release
