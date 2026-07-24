@@ -25,6 +25,10 @@ jobs:
     - name: Setup Visual Studio Command Prompt
       uses: microsoft/setup-msbuild@v2.0.0
         
+    - name: Get Fonts
+      run: |
+        msbuild /t:GetResources src\Esri.Calcite.WPF\Esri.Calcite.WPF.csproj /p:Configuration=Release
+
     - name: Build WPF
       run: |
         msbuild /restore /t:Build src\Esri.Calcite.WPF\Esri.Calcite.WPF.csproj /p:Configuration=Release
