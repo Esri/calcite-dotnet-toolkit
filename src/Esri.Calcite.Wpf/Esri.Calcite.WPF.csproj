@@ -13,7 +13,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Resource Include="$(MSBuildThisFileDirectory)..\..\fonts\$(CalciteUIIconsVersion)\package\fonts\*.ttf" Link="Fonts\%(Filename)%(Extension)" />
     <None Include="README.txt" Pack="True" PackagePath="\" />
     <None Include="..\..\docs\wpf.md" Link="README.md" Pack="True" PackagePath="\README.md" />
     <Page Include="..\..\GeneratedResources\WPF\**\*.xaml" Link="%(RecursiveDir)\%(Filename).xaml">
@@ -22,6 +21,14 @@
     <Compile Include="..\..\GeneratedResources\Wpf\*.cs" Link="%(RecursiveDir)%(Filename)%(Extension)" />
   </ItemGroup>
 
-  
-  <Target Name="GetResources" BeforeTargets="Build" DependsOnTargets="DownloadFonts" />
+  <!-- Run DownloadFonts before parallel framework builds are dispatched to avoid locked file errors. -->
+  <Target Name="GetResources" BeforeTargets="DispatchToInnerBuilds" DependsOnTargets="DownloadFonts"/>
+
+  <Target Name="SetFontPaths" BeforeTargets="PrepareForBuild">
+    <ItemGroup>
+      <Resource Include="$(MSBuildThisFileDirectory)..\..\fonts\$(CalciteUIIconsVersion)\package\fonts\calcite-ui-icons-16.ttf" Link="Fonts\calcite-ui-icons-16.ttf" />
+      <Resource Include="$(MSBuildThisFileDirectory)..\..\fonts\$(CalciteUIIconsVersion)\package\fonts\calcite-ui-icons-24.ttf" Link="Fonts\calcite-ui-icons-24.ttf" />
+      <Resource Include="$(MSBuildThisFileDirectory)..\..\fonts\$(CalciteUIIconsVersion)\package\fonts\calcite-ui-icons-32.ttf" Link="Fonts\calcite-ui-icons-32.ttf" />
+    </ItemGroup>
+  </Target>
 </Project>
