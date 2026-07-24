@@ -16,8 +16,10 @@
         </PackageReleaseNotes>
     </PropertyGroup>
 
-    <ItemGroup>    
-      <None Include="$(MSBuildThisFileDirectory)..\..\fonts\$(CalciteUIIconsVersion)\package\fonts\*.ttf" Pack="True" PackagePath="Resources/Fonts/" Link="Resources\Fonts\%(Filename)%(Extension)" />
+    <ItemGroup>
+      <None Include="$(MSBuildThisFileDirectory)..\..\fonts\$(CalciteUIIconsVersion)\package\fonts\calcite-ui-icons-16.ttf" Pack="True" PackagePath="Resources\Fonts" Link="Resources\Fonts\calcite-ui-icons-16.ttf" />
+      <None Include="$(MSBuildThisFileDirectory)..\..\fonts\$(CalciteUIIconsVersion)\package\fonts\calcite-ui-icons-24.ttf" Pack="True" PackagePath="Resources\Fonts" Link="Resources\Fonts\calcite-ui-icons-24.ttf" />
+      <None Include="$(MSBuildThisFileDirectory)..\..\fonts\$(CalciteUIIconsVersion)\package\fonts\calcite-ui-icons-32.ttf" Pack="True" PackagePath="Resources\Fonts" Link="Resources\Fonts\calcite-ui-icons-32.ttf" />
       <Compile Include="..\..\GeneratedResources\Maui\*.cs" Link="GeneratedResources\%(RecursiveDir)%(Filename)%(Extension)" />
       <None Include="README.txt" Pack="True" PackagePath="\" />
       <None Include="..\..\docs\maui.md" Link="README.md" Pack="True" PackagePath="\README.md" />
