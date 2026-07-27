@@ -24,6 +24,6 @@
     <Compile Include="..\..\GeneratedResources\Wpf\*.cs" Link="%(RecursiveDir)%(Filename)%(Extension)" />
   </ItemGroup>
 
-  <Target Name="GetResources" BeforeTargets="Restore" DependsOnTargets="DownloadFonts"/>
+  <Target Name="GetResources" BeforeTargets="MainResourcesGeneration" DependsOnTargets="DownloadFonts" />
 
 </Project>

@@ -32,7 +32,7 @@
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
         <PackageReference Include="Nerdbank.GitVersioning" Version="3.7.115" PrivateAssets="all" />
     </ItemGroup>
-      <Target Name="DownloadFonts" Condition="!Exists('$(MSBuildThisFileDirectory)..\fonts\esri-calcite-ui-icons\$(CalciteUIIconsVersion)\package\fonts')">
+      <Target Name="DownloadFonts" Condition="!Exists('$(MSBuildThisFileDirectory)..\fonts\$(CalciteUIIconsVersion)\package\fonts')">
         <PropertyGroup>
             <CalciteUIIconsReleaseUrl>https://github.com/Esri/calcite-design-system/releases/download/%40esri%2Fcalcite-ui-icons%40$(CalciteUIIconsVersion)/esri-calcite-ui-icons-$(CalciteUIIconsVersion).tgz</CalciteUIIconsReleaseUrl>
         </PropertyGroup>
