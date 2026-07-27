@@ -54,13 +54,17 @@
           <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 	</ItemGroup>
 
-	<ItemGroup>
+	<ItemGroup Condition="'$(CalciteNuGetPackageVersion)' == ''">
 	  <ProjectReference Include="..\..\Esri.Calcite.Maui\Esri.Calcite.Maui.csproj" />
 	  <!-- This is normally done by the nuget.package build.targets file, but instead we simulate it here so project references work -->
       <MauiFont Include="$(MSBuildThisFileDirectory)..\..\..\fonts\$(CalciteUIIconsVersion)\package\fonts\calcite-ui-icons-16.ttf" Link="Resources\Fonts\calcite-ui-icons-16.ttf" />
       <MauiFont Include="$(MSBuildThisFileDirectory)..\..\..\fonts\$(CalciteUIIconsVersion)\package\fonts\calcite-ui-icons-24.ttf" Link="Resources\Fonts\calcite-ui-icons-24.ttf" />
       <MauiFont Include="$(MSBuildThisFileDirectory)..\..\..\fonts\$(CalciteUIIconsVersion)\package\fonts\calcite-ui-icons-32.ttf" Link="Resources\Fonts\calcite-ui-icons-32.ttf" />
     </ItemGroup>
+
+	<ItemGroup Condition="'$(CalciteNuGetPackageVersion)' != ''">
+	  <PackageReference Include="Esri.Calcite.Maui" Version="$(CalciteNuGetPackageVersion)" />
+	</ItemGroup>
 
 	<ItemGroup>
 	  <Compile Update="BrushesPage.xaml.cs">

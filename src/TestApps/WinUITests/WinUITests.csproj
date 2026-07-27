@@ -31,8 +31,11 @@
   <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <ProjectCapability Include="Msix" />
   </ItemGroup>
-  <ItemGroup>
+  <ItemGroup Condition="'$(CalciteNuGetPackageVersion)' == ''">
     <ProjectReference Include="..\..\Esri.Calcite.WinUI\Esri.Calcite.WinUI.csproj" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(CalciteNuGetPackageVersion)' != ''">
+    <PackageReference Include="Esri.Calcite.WinUI" Version="$(CalciteNuGetPackageVersion)" />
   </ItemGroup>
  
   <!-- 

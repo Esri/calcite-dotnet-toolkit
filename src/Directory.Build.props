@@ -15,6 +15,8 @@
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
         <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+        <!-- Set to a Calcite NuGet package version to build the test apps against packages instead of project references. -->
+        <CalciteNuGetPackageVersion></CalciteNuGetPackageVersion>
         <CalciteUIIconsVersion>4.5.0</CalciteUIIconsVersion>
         <PackageReleaseNotes>
           - Added 45 new Calcite symbols by upgrading Calcite Icons to version 4.5.0: https://github.com/Esri/calcite-design-system/releases/tag/%40esri%2Fcalcite-ui-icons%404.5.0
