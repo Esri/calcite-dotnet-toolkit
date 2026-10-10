@@ -2,7 +2,7 @@
 
 ## Usage<a name="usage" />
 
-Add the CalciteResources ResourceDictionary to your App.xaml Merged Directionary resources to get access
+Add the CalciteResources ResourceDictionary to your App.xaml Merged Dictionary resources to get access
 to default styles and resources. Dark/Light mode is automatically handled and adjust to system or app settings.
 
 ```xml
