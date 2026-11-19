@@ -8318,4 +8318,232 @@ public enum CalciteIcon : ushort
 	/// <release>5.0.0</release>
 	ReturnToDefault = 61924,
 
+	/// <summary>Oriented Imagery Scene Only</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 5.0.0, gis, visualize, map, non-vertical, metaadata, interaction</remarks>
+	/// <release>5.0.0</release>
+	OrientedImagerySceneOnly = 61925,
+
+	/// <summary>Parquet Feature Layer</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 5.0.0, layers, vector data, attributes, storage, format, cloud</remarks>
+	/// <release>5.0.0</release>
+	ParquetFeatureLayer = 61926,
+
+	/// <summary>Vegetation Index</summary>
+	/// <remarks>Category: Raster<br/>
+	/// Alias: 5.0.0, raster, formula, multispectral satellite, drone imagery, quantify, density, photosynthetic</remarks>
+	/// <release>5.0.0</release>
+	VegetationIndex = 61927,
+
+	/// <summary>Soil Adjusted Vegetation Index</summary>
+	/// <remarks>Category: Raster<br/>
+	/// Alias: 5.0.0, raster, remote sensing, metric, estimate, satellite, measurement, calculate</remarks>
+	/// <release>5.0.0</release>
+	SoilAdjustedVegetationIndex = 61928,
+
+	/// <summary>Snow Index</summary>
+	/// <remarks>Category: Raster<br/>
+	/// Alias: 5.0.0, raster, geospatial data, mapping, remote sensing, analyze</remarks>
+	/// <release>5.0.0</release>
+	SnowIndex = 61929,
+
+	/// <summary>Geology Index</summary>
+	/// <remarks>Category: Raster<br/>
+	/// Alias: 5.0.0, raster, collect, integrate, analyze, spatial data, satellite images, topography, interactive map</remarks>
+	/// <release>5.0.0</release>
+	GeologyIndex = 61930,
+
+	/// <summary>Fire Index</summary>
+	/// <remarks>Category: Raster<br/>
+	/// Alias: 5.0.0, raster, data, wildfire, hazard, risk, danger, satellite</remarks>
+	/// <release>5.0.0</release>
+	FireIndex = 61931,
+
+	/// <summary>Building Index</summary>
+	/// <remarks>Category: Raster<br/>
+	/// Alias: 5.0.0, raster, density, evaluate, remote sensing, composite metrics, spatial, mapping</remarks>
+	/// <release>5.0.0</release>
+	BuildingIndex = 61932,
+
+	/// <summary>Smart Search</summary>
+	/// <remarks>Category: Symbols<br/>
+	/// Alias: 5.0.0, symbols, filter, tool, identify, datasets, variables, match</remarks>
+	/// <release>5.0.0</release>
+	SmartSearch = 61933,
+
+	/// <summary>Weather Radar</summary>
+	/// <remarks>Category: Weather<br/>
+	/// Alias: 5.0.0, weather, data, web, map, tracking, imagery</remarks>
+	/// <release>5.0.0</release>
+	WeatherRadar = 61934,
+
+	/// <summary>User Save</summary>
+	/// <remarks>Category: People<br/>
+	/// Alias: 5.0.0, people, progress, browser, web, maintain, safeguard</remarks>
+	/// <release>5.0.0</release>
+	UserSave = 61935,
+
+	/// <summary>ArcGIS Enterprise</summary>
+	/// <remarks>Category: Brand<br/>
+	/// Alias: 5.0.0, brand, logo, product</remarks>
+	/// <release>5.0.0</release>
+	ArcGISEnterprise = 61936,
+
+	/// <summary>Load Configuration</summary>
+	/// <remarks>Category: Knowledge Graph<br/>
+	/// Alias: 4.6.0, knowledge graph, table, custom, file, command, template</remarks>
+	/// <release>4.6.0</release>
+	LoadConfiguration = 61937,
+
+	/// <summary>Move And Rotate</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.6.0, generic, features, scale, web editor, values</remarks>
+	/// <release>4.6.0</release>
+	MoveAndRotate = 61938,
+
+	/// <summary>Delete And Replace Features</summary>
+	/// <remarks>Category: Layers<br/>
+	/// Alias: 4.6.0, layers, dataset, remove, automated workflows, attribute, truncate</remarks>
+	/// <release>4.6.0</release>
+	DeleteAndReplaceFeatures = 61939,
+
+	/// <summary>Spatiotemporal Catalog</summary>
+	/// <remarks>Category: Technology<br/>
+	/// Alias: 4.6.0, technology, open standard, organize, describe, geospatial data, imagery</remarks>
+	/// <release>4.6.0</release>
+	SpatiotemporalCatalog = 61940,
+
+	/// <summary>Integration</summary>
+	/// <remarks>Category: Technology<br/>
+	/// Alias: 4.6.0, technology, align, third-party, tool, feature, vertices, insert</remarks>
+	/// <release>4.6.0</release>
+	Integration = 61941,
+
+	/// <summary>Explode Geometry</summary>
+	/// <remarks>Category: Geometry Editing<br/>
+	/// Alias: 4.6.0, geometry editing, feature, disconnect, split, polygon, single-part</remarks>
+	/// <release>4.6.0</release>
+	ExplodeGeometry = 61942,
+
+	/// <summary>Ai Agents</summary>
+	/// <remarks>Category: Technology<br/>
+	/// Alias: 4.6.0, technology, artificial intelligence, machine, multiple, adaptability, automation</remarks>
+	/// <release>4.6.0</release>
+	AiAgents = 61943,
+
+	/// <summary>Ai Agent</summary>
+	/// <remarks>Category: Technology<br/>
+	/// Alias: 4.6.0, technology, adaptability, problem-solving, actions, automation, learning</remarks>
+	/// <release>4.6.0</release>
+	AiAgent = 61944,
+
+	/// <summary>Web Camera</summary>
+	/// <remarks>Category: Technology<br/>
+	/// Alias: 4.6.0, technology, monitor, live-feed, imagery, real-time</remarks>
+	/// <release>4.6.0</release>
+	WebCamera = 61945,
+
+	/// <summary>Sd Card</summary>
+	/// <remarks>Category: Technology<br/>
+	/// Alias: 4.6.0, technology, storage, device, map packages, log, data</remarks>
+	/// <release>4.6.0</release>
+	SdCard = 61946,
+
+	/// <summary>Row Group</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.6.0, generic, table, bundle, create, organize</remarks>
+	/// <release>4.6.0</release>
+	RowGroup = 61947,
+
+	/// <summary>Pi</summary>
+	/// <remarks>Category: Text<br/>
+	/// Alias: 4.6.0, text, constant, math, circle, circumference, diameter</remarks>
+	/// <release>4.6.0</release>
+	Pi = 61948,
+
+	/// <summary>Monitor Share</summary>
+	/// <remarks>Category: Technology<br/>
+	/// Alias: 4.6.0, technology, view, mirror, display, computer</remarks>
+	/// <release>4.6.0</release>
+	MonitorShare = 61949,
+
+	/// <summary>Hand Draw</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.6.0, generic, freehand, stream, edit, sketch</remarks>
+	/// <release>4.6.0</release>
+	HandDraw = 61950,
+
+	/// <summary>Envelope Open</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 4.6.0, objects, contact information, email, parcel, send</remarks>
+	/// <release>4.6.0</release>
+	EnvelopeOpen = 61951,
+
+	/// <summary>Column Group</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.6.0, generic, organize, fields, categories, database, bundle, create</remarks>
+	/// <release>4.6.0</release>
+	ColumnGroup = 61952,
+
+	/// <summary>Linked Chart</summary>
+	/// <remarks>Category: Charts and Graphs<br/>
+	/// Alias: 4.6.0, charts and graphs, view, connection, filter, nodes, relationships, maps</remarks>
+	/// <release>4.6.0</release>
+	LinkedChart = 61953,
+
+	/// <summary>Add Cell Below</summary>
+	/// <remarks>Category: GIS<br/>
+	/// Alias: 4.6.0, gis, insert, tool, notebooks, position, selection</remarks>
+	/// <release>4.6.0</release>
+	AddCellBelow = 61954,
+
+	/// <summary>Add Cell Above</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.6.0, generic, insert, selection, notebooks, tool</remarks>
+	/// <release>4.6.0</release>
+	AddCellAbove = 61955,
+
+	/// <summary>Reference Chip</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 4.6.0, objects, data source, raster, feature</remarks>
+	/// <release>4.6.0</release>
+	ReferenceChip = 61956,
+
+	/// <summary>Job Dependency</summary>
+	/// <remarks>Category: Objects<br/>
+	/// Alias: 4.6.0, objects, tasks, workflows, digital items, sequential, complete</remarks>
+	/// <release>4.6.0</release>
+	JobDependency = 61957,
+
+	/// <summary>Dictionary</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.6.0, generic, book, letter, word, list, language</remarks>
+	/// <release>4.6.0</release>
+	Dictionary = 61958,
+
+	/// <summary>Cursor Circle</summary>
+	/// <remarks>Category: Generic<br/>
+	/// Alias: 4.6.0, generic, radius, measurement, snapping tolerance, scale</remarks>
+	/// <release>4.6.0</release>
+	CursorCircle = 61959,
+
+	/// <summary>Block Height Tall</summary>
+	/// <remarks>Category: Windows<br/>
+	/// Alias: 4.6.0, windows, vector, urban planning, raster analysis</remarks>
+	/// <release>4.6.0</release>
+	BlockHeightTall = 61960,
+
+	/// <summary>Block Height Short</summary>
+	/// <remarks>Category: Windows<br/>
+	/// Alias: 4.6.0, windows, data, polygon, urban planning, remote sensing</remarks>
+	/// <release>4.6.0</release>
+	BlockHeightShort = 61961,
+
+	/// <summary>Block Height Medium</summary>
+	/// <remarks>Category: Windows<br/>
+	/// Alias: 4.6.0, windows, urban planning, land use, datasets, remote sensing, scale</remarks>
+	/// <release>4.6.0</release>
+	BlockHeightMedium = 61962,
+
 }
