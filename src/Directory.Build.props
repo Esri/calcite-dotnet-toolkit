@@ -20,7 +20,7 @@
           - Added 38 new Calcite symbols by upgrading Calcite Icons to version 4.6.0: https://github.com/Esri/calcite-design-system/releases/tag/%40esri%2Fcalcite-ui-icons%404.6.0
 
           Known Issues:
-          - The upstream icon fonts omit AiAgent at 24px and 32px, and AiAgents at 32px.
+          - The icons for AiAgent and 24px and 32px and AiAgents at 32px are not included in the font file as they have transparent parts. This is unlikely to change in a future release.
         </PackageReleaseNotes>
     </PropertyGroup>
 
